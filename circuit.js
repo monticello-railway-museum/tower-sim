@@ -17,6 +17,8 @@ class Circuit {
         this.z = math.zeros(nodes + voltageSources,
                             1,
                             'sparse');
+
+        this.usedNodes = new Set();
     }
 
     resistor(nodeA, nodeB, value) {
@@ -30,6 +32,9 @@ class Circuit {
             matrixAdd(this.A, [nodeA - 1, nodeB - 1], -G);
             matrixAdd(this.A, [nodeB - 1, nodeA - 1], -G);
         }
+
+        this.usedNodes.add(nodeA);
+        this.usedNodes.add(nodeB);
     }
 
     voltageSource(sourceNum, nodeNeg, nodePos, value) {
@@ -44,9 +49,21 @@ class Circuit {
             this.A.set([nodes + sourceNum, nodePos - 1], 1);
         }
         this.z.set([nodes + sourceNum, 0], value);
+
+        this.usedNodes.add(nodeNeg);
+        this.usedNodes.add(nodePos);
     }
 
     solve() {
+        const { nodes } = this;
+
+        for (let i = 0; i < nodes; ++i) {
+            if (!this.usedNodes.has(i + 1)) {
+                console.log('ground node', i + 1);
+                this.A.set([i, i], 1);
+            }
+        }
+        console.log(this.A.toString());
         this.x = math.multiply(math.inv(this.A), this.z);
     }
 
@@ -61,14 +78,21 @@ class Circuit {
     }
 };
 
-const cir = new Circuit(3, 1);
+module.exports = Circuit;
 
-cir.voltageSource(0, 0, 1, 1);
-cir.resistor(1, 2, 0.1);
-cir.resistor(2, 0, 1);
+// const cir = new Circuit(5, 1);
 
-cir.solve();
+// cir.voltageSource(0, 0, 1, 1);
+// cir.resistor(1, 2, 0.1);
+// cir.resistor(2, 0, 1);
 
-for (let i = 0; i < 3; ++i)
-    console.log('node', i, 'voltage:', cir.nodeVoltage(i));
-console.log('source 0 current', cir.voltageSourceCurrent(0));
+// //cir.resistor(0, 3, 1);
+// //cir.resistor(0, 4, 1);
+
+// console.log(cir.A.toString());
+
+// cir.solve();
+
+// for (let i = 0; i < 4; ++i)
+//     console.log('node', i, 'voltage:', cir.nodeVoltage(i));
+// console.log('source 0 current', cir.voltageSourceCurrent(0));
