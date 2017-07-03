@@ -1,0 +1,6044 @@
+{
+  "comps": [
+    {
+      "component": "1-2-3ASR",
+      "subnet": "Tower",
+      "location": "shelf 4",
+      "type": "relay",
+      "index": "2",
+      "contacts": "2",
+      "unused": "0",
+      "used": "2"
+    },
+    {
+      "component": "1AR",
+      "subnet": "Tower",
+      "location": "shelf 3",
+      "type": "relay",
+      "index": "10",
+      "contacts": "6",
+      "unused": "1",
+      "used": "5"
+    },
+    {
+      "component": "1ATKE",
+      "subnet": "Tower",
+      "location": "model board",
+      "type": "light",
+      "unused": "0",
+      "used": "0"
+    },
+    {
+      "component": "1GKE",
+      "subnet": "Tower",
+      "location": "model board",
+      "type": "light",
+      "unused": "0",
+      "used": "0"
+    },
+    {
+      "component": "1HDGPR",
+      "subnet": "Tower",
+      "location": "shelf 1",
+      "type": "relay",
+      "index": "10",
+      "contacts": "4",
+      "unused": "3",
+      "used": "1"
+    },
+    {
+      "component": "1HDR",
+      "subnet": "Tower",
+      "location": "shelf 2",
+      "type": "relay",
+      "index": "11",
+      "contacts": "2",
+      "unused": "0",
+      "used": "2"
+    },
+    {
+      "component": "1RGPR",
+      "subnet": "Tower",
+      "location": "shelf 2",
+      "type": "relay",
+      "index": "4",
+      "contacts": "2",
+      "unused": "0",
+      "used": "2"
+    },
+    {
+      "component": "2-3COPB",
+      "subnet": "Tower",
+      "location": "lever top",
+      "type": "button",
+      "unused": "0",
+      "used": "0"
+    },
+    {
+      "component": "2-3COSR",
+      "subnet": "Tower",
+      "location": "shelf 2",
+      "type": "relay",
+      "index": "1",
+      "contacts": "4",
+      "unused": "1",
+      "used": "3"
+    },
+    {
+      "component": "2ATKE",
+      "subnet": "Tower",
+      "location": "model board",
+      "type": "light",
+      "unused": "0",
+      "used": "0"
+    },
+    {
+      "component": "2GKE",
+      "subnet": "Tower",
+      "location": "model board",
+      "type": "light",
+      "unused": "0",
+      "used": "0"
+    },
+    {
+      "component": "2RGPR",
+      "subnet": "Tower",
+      "location": "shelf 2",
+      "type": "relay",
+      "index": "5",
+      "contacts": "4",
+      "unused": "0",
+      "used": "4"
+    },
+    {
+      "component": "2TR",
+      "subnet": "Tower",
+      "location": "shelf 3",
+      "type": "relay",
+      "index": "9",
+      "contacts": "4",
+      "unused": "0",
+      "used": "4"
+    },
+    {
+      "component": "2TR TEST TERM",
+      "subnet": "Tower",
+      "location": "shelf 3",
+      "type": "test terminal",
+      "unused": "0",
+      "used": "0"
+    },
+    {
+      "component": "2TR TRK RESISTOR",
+      "subnet": "Tower",
+      "location": "shelf 3",
+      "type": "track resistor",
+      "unused": "0",
+      "used": "0"
+    },
+    {
+      "component": "3GKE",
+      "subnet": "Tower",
+      "location": "model board",
+      "type": "light",
+      "unused": "0",
+      "used": "0"
+    },
+    {
+      "component": "3HDGPR",
+      "subnet": "Tower",
+      "location": "shelf 2",
+      "type": "relay",
+      "index": "8",
+      "contacts": "4",
+      "unused": "2",
+      "used": "2"
+    },
+    {
+      "component": "3RGPR",
+      "subnet": "Tower",
+      "location": "shelf 2",
+      "type": "relay",
+      "index": "6",
+      "contacts": "4",
+      "unused": "1",
+      "used": "3"
+    },
+    {
+      "component": "4-5ASR",
+      "subnet": "Tower",
+      "location": "shelf 2",
+      "type": "relay",
+      "index": "3",
+      "contacts": "2",
+      "unused": "0",
+      "used": "2"
+    },
+    {
+      "component": "4GKE",
+      "subnet": "Tower",
+      "location": "model board",
+      "type": "light",
+      "unused": "0",
+      "used": "0"
+    },
+    {
+      "component": "4RGPR",
+      "subnet": "Tower",
+      "location": "shelf 2",
+      "type": "relay",
+      "index": "7",
+      "contacts": "2",
+      "unused": "-1",
+      "used": "3"
+    },
+    {
+      "component": "5GKE",
+      "subnet": "Tower",
+      "location": "model board",
+      "type": "light",
+      "unused": "0",
+      "used": "0"
+    },
+    {
+      "component": "5HR",
+      "subnet": "Tower",
+      "location": "shelf 4",
+      "type": "relay",
+      "index": "1",
+      "contacts": "4",
+      "unused": "0",
+      "used": "4"
+    },
+    {
+      "component": "6LOSTER",
+      "subnet": "Tower",
+      "location": "shelf top",
+      "type": "time element (auto)",
+      "unused": "-1",
+      "used": "1"
+    },
+    {
+      "component": "6NWPPR",
+      "subnet": "Tower",
+      "location": "shelf 1",
+      "type": "relay",
+      "index": "5",
+      "contacts": "6",
+      "unused": "2",
+      "used": "4"
+    },
+    {
+      "component": "6RWPPR",
+      "subnet": "Tower",
+      "location": "shelf 1",
+      "type": "relay",
+      "index": "6",
+      "contacts": "6",
+      "unused": "2",
+      "used": "4"
+    },
+    {
+      "component": "6TE",
+      "subnet": "Tower",
+      "location": "lever top",
+      "type": "time element (manual)",
+      "unused": "-2",
+      "used": "2"
+    },
+    {
+      "component": "6TKE",
+      "subnet": "Tower",
+      "location": "model board",
+      "type": "light",
+      "unused": "0",
+      "used": "0"
+    },
+    {
+      "component": "6TPR",
+      "subnet": "Tower",
+      "location": "shelf 4",
+      "type": "relay",
+      "index": "3",
+      "contacts": "4",
+      "unused": "2",
+      "used": "2"
+    },
+    {
+      "component": "6TPSR",
+      "subnet": "Tower",
+      "location": "shelf 4",
+      "type": "relay",
+      "index": "4",
+      "contacts": "6",
+      "unused": "0",
+      "used": "6"
+    },
+    {
+      "component": "6TR",
+      "subnet": "Tower",
+      "location": "shelf 3",
+      "type": "relay",
+      "index": "8",
+      "contacts": "4",
+      "unused": "3",
+      "used": "1"
+    },
+    {
+      "component": "6TR TEST TERM",
+      "subnet": "Tower",
+      "location": "shelf 3",
+      "type": "test terminal",
+      "unused": "0",
+      "used": "0"
+    },
+    {
+      "component": "6TR TRK RESISTOR",
+      "subnet": "Tower",
+      "location": "shelf 3",
+      "type": "track resistor",
+      "unused": "0",
+      "used": "0"
+    },
+    {
+      "component": "6WCKE",
+      "subnet": "Tower",
+      "location": "model board",
+      "type": "light",
+      "unused": "0",
+      "used": "0"
+    },
+    {
+      "component": "9-10LOSTER",
+      "subnet": "Tower",
+      "location": "shelf top",
+      "type": "time element (auto)",
+      "unused": "-1",
+      "used": "1"
+    },
+    {
+      "component": "9-10TE",
+      "subnet": "Tower",
+      "location": "lever top",
+      "type": "time element (manual)",
+      "unused": "-2",
+      "used": "2"
+    },
+    {
+      "component": "9-10TKE",
+      "subnet": "Tower",
+      "location": "model board",
+      "type": "light",
+      "unused": "0",
+      "used": "0"
+    },
+    {
+      "component": "9-10TPR",
+      "subnet": "Tower",
+      "location": "shelf 3",
+      "type": "relay",
+      "index": "7",
+      "contacts": "4",
+      "unused": "2",
+      "used": "2"
+    },
+    {
+      "component": "9-10TPSR",
+      "subnet": "Tower",
+      "location": "shelf 4",
+      "type": "relay",
+      "index": "5",
+      "contacts": "6",
+      "unused": "0",
+      "used": "6"
+    },
+    {
+      "component": "9NWPR",
+      "subnet": "Tower",
+      "location": "shelf 1",
+      "type": "relay",
+      "index": "1",
+      "contacts": "6",
+      "unused": "3",
+      "used": "3"
+    },
+    {
+      "component": "9RWPR",
+      "subnet": "Tower",
+      "location": "shelf 1",
+      "type": "relay",
+      "index": "2",
+      "contacts": "6",
+      "unused": "4",
+      "used": "2"
+    },
+    {
+      "component": "9WCKE",
+      "subnet": "Tower",
+      "location": "model board",
+      "type": "light",
+      "unused": "0",
+      "used": "0"
+    },
+    {
+      "component": "10NWPR",
+      "subnet": "Tower",
+      "location": "shelf 1",
+      "type": "relay",
+      "index": "3",
+      "contacts": "6",
+      "unused": "3",
+      "used": "3"
+    },
+    {
+      "component": "10RWPR",
+      "subnet": "Tower",
+      "location": "shelf 1",
+      "type": "relay",
+      "index": "4",
+      "contacts": "6",
+      "unused": "4",
+      "used": "2"
+    },
+    {
+      "component": "10WCKE",
+      "subnet": "Tower",
+      "location": "model board",
+      "type": "light",
+      "unused": "0",
+      "used": "0"
+    },
+    {
+      "component": "12LOSTER",
+      "subnet": "Tower",
+      "location": "shelf top",
+      "type": "time element (auto)",
+      "unused": "-1",
+      "used": "1"
+    },
+    {
+      "component": "12NWPPR",
+      "subnet": "Tower",
+      "location": "shelf 1",
+      "type": "relay",
+      "index": "7",
+      "contacts": "6",
+      "unused": "2",
+      "used": "4"
+    },
+    {
+      "component": "12RWPPR",
+      "subnet": "Tower",
+      "location": "shelf 1",
+      "type": "relay",
+      "index": "8",
+      "contacts": "6",
+      "unused": "2",
+      "used": "4"
+    },
+    {
+      "component": "12TE",
+      "subnet": "Tower",
+      "location": "lever top",
+      "type": "time element (manual)",
+      "unused": "-2",
+      "used": "2"
+    },
+    {
+      "component": "12TKE",
+      "subnet": "Tower",
+      "location": "model board",
+      "type": "light",
+      "unused": "0",
+      "used": "0"
+    },
+    {
+      "component": "12TPR",
+      "subnet": "Tower",
+      "location": "shelf 3",
+      "type": "relay",
+      "index": "6",
+      "contacts": "4",
+      "unused": "2",
+      "used": "2"
+    },
+    {
+      "component": "12TPSR",
+      "subnet": "Tower",
+      "location": "shelf 4",
+      "type": "relay",
+      "index": "7",
+      "contacts": "6",
+      "unused": "0",
+      "used": "6"
+    },
+    {
+      "component": "12WCKE",
+      "subnet": "Tower",
+      "location": "model board",
+      "type": "light",
+      "unused": "0",
+      "used": "0"
+    },
+    {
+      "component": "12WCKR",
+      "subnet": "Tower",
+      "location": "shelf 4",
+      "type": "relay",
+      "index": "8",
+      "contacts": "10",
+      "unused": "0",
+      "used": "10"
+    },
+    {
+      "component": "14-15-16ASR",
+      "subnet": "Tower",
+      "location": "shelf 4",
+      "type": "relay",
+      "index": "6",
+      "contacts": "2",
+      "unused": "0",
+      "used": "2"
+    },
+    {
+      "component": "14-16COPB",
+      "subnet": "Tower",
+      "location": "lever top",
+      "type": "button",
+      "unused": "0",
+      "used": "0"
+    },
+    {
+      "component": "14-16COSR",
+      "subnet": "Tower",
+      "location": "shelf 2",
+      "type": "relay",
+      "index": "2",
+      "contacts": "4",
+      "unused": "0",
+      "used": "4"
+    },
+    {
+      "component": "14AR",
+      "subnet": "Tower",
+      "location": "shelf 4",
+      "type": "relay",
+      "index": "9",
+      "contacts": "4",
+      "unused": "1",
+      "used": "3"
+    },
+    {
+      "component": "14ATKE",
+      "subnet": "Tower",
+      "location": "model board",
+      "type": "light",
+      "unused": "0",
+      "used": "0"
+    },
+    {
+      "component": "14ATKE1",
+      "subnet": "Tower",
+      "location": "model board",
+      "type": "light",
+      "unused": "0",
+      "used": "0"
+    },
+    {
+      "component": "14ATPR",
+      "subnet": "Tower",
+      "location": "shelf 3",
+      "type": "relay",
+      "index": "4",
+      "contacts": "4",
+      "unused": "1",
+      "used": "3"
+    },
+    {
+      "component": "14ATR",
+      "subnet": "Tower",
+      "location": "shelf 3",
+      "type": "relay",
+      "index": "2",
+      "contacts": "4",
+      "unused": "2",
+      "used": "2"
+    },
+    {
+      "component": "14ATR TEST TERM",
+      "subnet": "Tower",
+      "location": "shelf 3",
+      "type": "test terminal",
+      "unused": "0",
+      "used": "0"
+    },
+    {
+      "component": "14ATR TRK RESISTOR",
+      "subnet": "Tower",
+      "location": "shelf 3",
+      "type": "track resistor",
+      "unused": "0",
+      "used": "0"
+    },
+    {
+      "component": "14BTKE",
+      "subnet": "Tower",
+      "location": "model board",
+      "type": "light",
+      "unused": "0",
+      "used": "0"
+    },
+    {
+      "component": "14BTKE1",
+      "subnet": "Tower",
+      "location": "model board",
+      "type": "light",
+      "unused": "0",
+      "used": "0"
+    },
+    {
+      "component": "14BTPR",
+      "subnet": "Tower",
+      "location": "shelf 3",
+      "type": "relay",
+      "index": "5",
+      "contacts": "4",
+      "unused": "1",
+      "used": "3"
+    },
+    {
+      "component": "14BTR",
+      "subnet": "Tower",
+      "location": "shelf 3",
+      "type": "relay",
+      "index": "3",
+      "contacts": "4",
+      "unused": "2",
+      "used": "2"
+    },
+    {
+      "component": "14BTR TEST TERM",
+      "subnet": "Tower",
+      "location": "shelf 3",
+      "type": "test terminal",
+      "unused": "0",
+      "used": "0"
+    },
+    {
+      "component": "14BTR TRK RESISTOR",
+      "subnet": "Tower",
+      "location": "shelf 3",
+      "type": "track resistor",
+      "unused": "0",
+      "used": "0"
+    },
+    {
+      "component": "14GKE",
+      "subnet": "Tower",
+      "location": "model board",
+      "type": "light",
+      "unused": "0",
+      "used": "0"
+    },
+    {
+      "component": "14HDGPR",
+      "subnet": "Tower",
+      "location": "rack",
+      "type": "relay",
+      "unused": "-1",
+      "used": "1"
+    },
+    {
+      "component": "14RGPR",
+      "subnet": "Tower",
+      "location": "rack",
+      "type": "relay",
+      "unused": "-3",
+      "used": "3"
+    },
+    {
+      "component": "15DR",
+      "subnet": "Tower",
+      "location": "rack",
+      "type": "relay",
+      "unused": "-2",
+      "used": "2"
+    },
+    {
+      "component": "15GKE",
+      "subnet": "Tower",
+      "location": "model board",
+      "type": "light",
+      "unused": "0",
+      "used": "0"
+    },
+    {
+      "component": "15HDGPR",
+      "subnet": "Tower",
+      "location": "rack",
+      "type": "relay",
+      "unused": "-2",
+      "used": "2"
+    },
+    {
+      "component": "15RGPR",
+      "subnet": "Tower",
+      "location": "rack",
+      "type": "relay",
+      "unused": "-2",
+      "used": "2"
+    },
+    {
+      "component": "16APR",
+      "subnet": "Tower",
+      "location": "shelf 3",
+      "type": "relay",
+      "index": "1",
+      "contacts": "6",
+      "unused": "0",
+      "used": "6"
+    },
+    {
+      "component": "16ATKE",
+      "subnet": "Tower",
+      "location": "model board",
+      "type": "light",
+      "unused": "0",
+      "used": "0"
+    },
+    {
+      "component": "16GKE",
+      "subnet": "Tower",
+      "location": "model board",
+      "type": "light",
+      "unused": "0",
+      "used": "0"
+    },
+    {
+      "component": "16RGPR",
+      "subnet": "Tower",
+      "location": "rack",
+      "type": "relay",
+      "unused": "-4",
+      "used": "4"
+    },
+    {
+      "component": "22HDGPR",
+      "subnet": "Tower",
+      "location": "shelf 2",
+      "type": "relay",
+      "index": "9",
+      "contacts": "4",
+      "unused": "2",
+      "used": "2"
+    },
+    {
+      "component": "23HDGPR",
+      "subnet": "Tower",
+      "location": "shelf 2",
+      "type": "relay",
+      "index": "10",
+      "contacts": "4",
+      "unused": "3",
+      "used": "1"
+    },
+    {
+      "component": "AXR",
+      "subnet": "Tower",
+      "location": "lever bed",
+      "type": "relay",
+      "contacts": "2",
+      "unused": "1",
+      "used": "1"
+    },
+    {
+      "component": "B10-TWR LVR",
+      "subnet": "Tower",
+      "location": "lever bed",
+      "type": "bus",
+      "unused": "0",
+      "used": "0"
+    },
+    {
+      "component": "B10-TWR MAIN",
+      "subnet": "Tower",
+      "location": "shelf top",
+      "type": "bus",
+      "unused": "0",
+      "used": "0"
+    },
+    {
+      "component": "B10-TWR RACK",
+      "subnet": "Tower",
+      "location": "rack",
+      "type": "bus",
+      "unused": "0",
+      "used": "0"
+    },
+    {
+      "component": "B10-TWR S1",
+      "subnet": "Tower",
+      "location": "shelf 1",
+      "type": "bus",
+      "unused": "0",
+      "used": "0"
+    },
+    {
+      "component": "B10-TWR S2",
+      "subnet": "Tower",
+      "location": "shelf 2",
+      "type": "bus",
+      "unused": "0",
+      "used": "0"
+    },
+    {
+      "component": "B10-TWR S3",
+      "subnet": "Tower",
+      "location": "shelf 3",
+      "type": "bus",
+      "unused": "0",
+      "used": "0"
+    },
+    {
+      "component": "B10-TWR S4",
+      "subnet": "Tower",
+      "location": "shelf 4",
+      "type": "bus",
+      "unused": "0",
+      "used": "0"
+    },
+    {
+      "component": "BELL",
+      "subnet": "Tower",
+      "location": "lever top",
+      "type": "bell",
+      "unused": "0",
+      "used": "0"
+    },
+    {
+      "component": "BX10-TWR",
+      "subnet": "Tower",
+      "location": "shelf top",
+      "type": "bus",
+      "unused": "0",
+      "used": "0"
+    },
+    {
+      "component": "BX110",
+      "subnet": "Tower",
+      "location": "shelf top",
+      "type": "bus",
+      "unused": "0",
+      "used": "0"
+    },
+    {
+      "component": "C-4",
+      "subnet": "Tower",
+      "location": "shelf top",
+      "type": "power supply",
+      "unused": "0",
+      "used": "0"
+    },
+    {
+      "component": "CRAGG",
+      "subnet": "Tower",
+      "location": "shelf top",
+      "type": "power supply",
+      "unused": "0",
+      "used": "0"
+    },
+    {
+      "component": "CX110",
+      "subnet": "Tower",
+      "location": "shelf top",
+      "type": "bus",
+      "unused": "0",
+      "used": "0"
+    },
+    {
+      "component": "FLOOR PB 7",
+      "subnet": "Tower",
+      "location": "lever top",
+      "type": "button",
+      "unused": "0",
+      "used": "0"
+    },
+    {
+      "component": "FLOOR PB 8",
+      "subnet": "Tower",
+      "location": "lever top",
+      "type": "button",
+      "unused": "0",
+      "used": "0"
+    },
+    {
+      "component": "FLOOR PB 11",
+      "subnet": "Tower",
+      "location": "lever top",
+      "type": "button",
+      "unused": "0",
+      "used": "0"
+    },
+    {
+      "component": "FLOOR PB 13",
+      "subnet": "Tower",
+      "location": "lever top",
+      "type": "button",
+      "unused": "0",
+      "used": "0"
+    },
+    {
+      "component": "GRP-A",
+      "subnet": "Tower",
+      "location": "shelf floor",
+      "type": "terminal",
+      "unused": "0",
+      "used": "0"
+    },
+    {
+      "component": "GRP-B",
+      "subnet": "Tower",
+      "location": "shelf floor",
+      "type": "terminal",
+      "unused": "0",
+      "used": "0"
+    },
+    {
+      "component": "GRP-C",
+      "subnet": "Tower",
+      "location": "shelf floor",
+      "type": "terminal",
+      "unused": "0",
+      "used": "0"
+    },
+    {
+      "component": "GRP-D",
+      "subnet": "Tower",
+      "location": "shelf floor",
+      "type": "terminal",
+      "unused": "0",
+      "used": "0"
+    },
+    {
+      "component": "GRP-E",
+      "subnet": "Tower",
+      "location": "shelf floor",
+      "type": "terminal",
+      "unused": "0",
+      "used": "0"
+    },
+    {
+      "component": "GRP-F",
+      "subnet": "Tower",
+      "location": "shelf floor",
+      "type": "terminal",
+      "unused": "0",
+      "used": "0"
+    },
+    {
+      "component": "GRP-G",
+      "subnet": "Tower",
+      "location": "shelf floor",
+      "type": "terminal",
+      "unused": "0",
+      "used": "0"
+    },
+    {
+      "component": "GRP-H",
+      "subnet": "Tower",
+      "location": "shelf floor",
+      "type": "terminal",
+      "unused": "0",
+      "used": "0"
+    },
+    {
+      "component": "GRP-I",
+      "subnet": "Tower",
+      "location": "shelf floor",
+      "type": "terminal",
+      "unused": "0",
+      "used": "0"
+    },
+    {
+      "component": "GRP-J",
+      "subnet": "Tower",
+      "location": "shelf floor",
+      "type": "terminal",
+      "unused": "0",
+      "used": "0"
+    },
+    {
+      "component": "LOCK-7",
+      "subnet": "Tower",
+      "location": "lever top",
+      "type": "lock",
+      "unused": "0",
+      "used": "0"
+    },
+    {
+      "component": "LOCK-8",
+      "subnet": "Tower",
+      "location": "lever top",
+      "type": "lock",
+      "unused": "0",
+      "used": "0"
+    },
+    {
+      "component": "LOCK-11",
+      "subnet": "Tower",
+      "location": "lever top",
+      "type": "lock",
+      "unused": "0",
+      "used": "0"
+    },
+    {
+      "component": "LOCK-13",
+      "subnet": "Tower",
+      "location": "lever top",
+      "type": "lock",
+      "unused": "0",
+      "used": "0"
+    },
+    {
+      "component": "LVR-1",
+      "subnet": "Tower",
+      "location": "lever bed",
+      "type": "lever",
+      "unused": "0",
+      "used": "0"
+    },
+    {
+      "component": "LVR-2",
+      "subnet": "Tower",
+      "location": "lever bed",
+      "type": "lever",
+      "unused": "0",
+      "used": "0"
+    },
+    {
+      "component": "LVR-3",
+      "subnet": "Tower",
+      "location": "lever bed",
+      "type": "lever",
+      "unused": "0",
+      "used": "0"
+    },
+    {
+      "component": "LVR-4",
+      "subnet": "Tower",
+      "location": "lever bed",
+      "type": "lever",
+      "unused": "0",
+      "used": "0"
+    },
+    {
+      "component": "LVR-5",
+      "subnet": "Tower",
+      "location": "lever bed",
+      "type": "lever",
+      "unused": "0",
+      "used": "0"
+    },
+    {
+      "component": "LVR-6",
+      "subnet": "Tower",
+      "location": "lever bed",
+      "type": "lever",
+      "unused": "0",
+      "used": "0"
+    },
+    {
+      "component": "LVR-7",
+      "subnet": "Tower",
+      "location": "lever bed",
+      "type": "lever",
+      "unused": "0",
+      "used": "0"
+    },
+    {
+      "component": "LVR-8",
+      "subnet": "Tower",
+      "location": "lever bed",
+      "type": "lever",
+      "unused": "0",
+      "used": "0"
+    },
+    {
+      "component": "LVR-9",
+      "subnet": "Tower",
+      "location": "lever bed",
+      "type": "lever",
+      "unused": "0",
+      "used": "0"
+    },
+    {
+      "component": "LVR-10",
+      "subnet": "Tower",
+      "location": "lever bed",
+      "type": "lever",
+      "unused": "0",
+      "used": "0"
+    },
+    {
+      "component": "LVR-11",
+      "subnet": "Tower",
+      "location": "lever bed",
+      "type": "lever",
+      "unused": "0",
+      "used": "0"
+    },
+    {
+      "component": "LVR-12",
+      "subnet": "Tower",
+      "location": "lever bed",
+      "type": "lever",
+      "unused": "0",
+      "used": "0"
+    },
+    {
+      "component": "LVR-13",
+      "subnet": "Tower",
+      "location": "lever bed",
+      "type": "lever",
+      "unused": "0",
+      "used": "0"
+    },
+    {
+      "component": "LVR-14",
+      "subnet": "Tower",
+      "location": "lever bed",
+      "type": "lever",
+      "unused": "0",
+      "used": "0"
+    },
+    {
+      "component": "LVR-15",
+      "subnet": "Tower",
+      "location": "lever bed",
+      "type": "lever",
+      "unused": "0",
+      "used": "0"
+    },
+    {
+      "component": "LVR-16",
+      "subnet": "Tower",
+      "location": "lever bed",
+      "type": "lever",
+      "unused": "0",
+      "used": "0"
+    },
+    {
+      "component": "N10-CASEA",
+      "subnet": "Tower",
+      "location": "rack",
+      "type": "bus",
+      "unused": "0",
+      "used": "0"
+    },
+    {
+      "component": "N10-TWR LVR",
+      "subnet": "Tower",
+      "location": "lever bed",
+      "type": "bus",
+      "unused": "0",
+      "used": "0"
+    },
+    {
+      "component": "N10-TWR MAIN",
+      "subnet": "Tower",
+      "location": "shelf top",
+      "type": "bus",
+      "unused": "0",
+      "used": "0"
+    },
+    {
+      "component": "N10-TWR MB",
+      "subnet": "Tower",
+      "location": "model board",
+      "type": "bus",
+      "unused": "0",
+      "used": "0"
+    },
+    {
+      "component": "N10-TWR RACK",
+      "subnet": "Tower",
+      "location": "rack",
+      "type": "bus",
+      "unused": "0",
+      "used": "0"
+    },
+    {
+      "component": "N10-TWR S1",
+      "subnet": "Tower",
+      "location": "shelf 1",
+      "type": "bus",
+      "unused": "0",
+      "used": "0"
+    },
+    {
+      "component": "N10-TWR S2",
+      "subnet": "Tower",
+      "location": "shelf 2",
+      "type": "bus",
+      "unused": "0",
+      "used": "0"
+    },
+    {
+      "component": "N10-TWR S3",
+      "subnet": "Tower",
+      "location": "shelf 3",
+      "type": "bus",
+      "unused": "0",
+      "used": "0"
+    },
+    {
+      "component": "N10-TWR S4",
+      "subnet": "Tower",
+      "location": "shelf 4",
+      "type": "bus",
+      "unused": "0",
+      "used": "0"
+    },
+    {
+      "component": "NB PB",
+      "subnet": "Tower",
+      "location": "lever top",
+      "type": "button",
+      "unused": "0",
+      "used": "0"
+    },
+    {
+      "component": "NX10-TWR",
+      "subnet": "Tower",
+      "location": "shelf top",
+      "type": "bus",
+      "unused": "0",
+      "used": "0"
+    },
+    {
+      "component": "SB PB",
+      "subnet": "Tower",
+      "location": "lever top",
+      "type": "button",
+      "unused": "0",
+      "used": "0"
+    }
+  ],
+  "towerWires": [
+    {
+      "signal": "B10-TWR",
+      "from": "B10-TWR S3 T10",
+      "to": "1AR 5H",
+      "page": "T2"
+    },
+    {
+      "signal": "N10-TWR",
+      "from": "N10-TWR S3 T3",
+      "to": "1AR 6H",
+      "page": "T2"
+    },
+    {
+      "signal": "**STRAP**",
+      "from": "1AR 5F",
+      "to": "1AR 6B",
+      "page": "T2"
+    },
+    {
+      "signal": "**STRAP**",
+      "from": "1AR 5B",
+      "to": "1AR 6F",
+      "page": "T2"
+    },
+    {
+      "signal": "AX-6",
+      "from": "1AR 5F",
+      "to": "2TR 3H",
+      "page": "T2"
+    },
+    {
+      "signal": "N-AX-6",
+      "from": "1AR 5B",
+      "to": "2TR 4H",
+      "page": "T2"
+    },
+    {
+      "signal": "**STRAP**",
+      "from": "2TR 3F",
+      "to": "2TR 4B",
+      "page": "T2"
+    },
+    {
+      "signal": "**STRAP**",
+      "from": "2TR 3B",
+      "to": "2TR 4F",
+      "page": "T2"
+    },
+    {
+      "signal": "AX-5",
+      "from": "2TR 3F",
+      "to": "6TPSR 5H",
+      "page": "T2"
+    },
+    {
+      "signal": "N-AX-5",
+      "from": "2TR 3B",
+      "to": "6TPSR 6H",
+      "page": "T2"
+    },
+    {
+      "signal": "**STRAP**",
+      "from": "6TPSR 5F",
+      "to": "6TPSR 6B",
+      "page": "T2"
+    },
+    {
+      "signal": "**STRAP**",
+      "from": "6TPSR 5B",
+      "to": "6TPSR 6F",
+      "page": "T2"
+    },
+    {
+      "signal": "AX-4",
+      "from": "6TPSR 5F",
+      "to": "9-10TPSR 5H",
+      "page": "T2"
+    },
+    {
+      "signal": "N-AX-4",
+      "from": "6TPSR 5B",
+      "to": "9-10TPSR 6H",
+      "page": "T2"
+    },
+    {
+      "signal": "**STRAP**",
+      "from": "9-10TPSR 5F",
+      "to": "9-10TPSR 6B",
+      "page": "T2"
+    },
+    {
+      "signal": "**STRAP**",
+      "from": "9-10TPSR 5B",
+      "to": "9-10TPSR 6F",
+      "page": "T2"
+    },
+    {
+      "signal": "AX-3",
+      "from": "9-10TPSR 5F",
+      "to": "12TPSR 5H",
+      "page": "T2"
+    },
+    {
+      "signal": "N-AX-3",
+      "from": "9-10TPSR 5B",
+      "to": "12TPSR 6H",
+      "page": "T2"
+    },
+    {
+      "signal": "**STRAP**",
+      "from": "12TPSR 5F",
+      "to": "12TPSR 6B",
+      "page": "T2"
+    },
+    {
+      "signal": "**STRAP**",
+      "from": "12TPSR 5B",
+      "to": "12TPSR 6F",
+      "page": "T2"
+    },
+    {
+      "signal": "AX-2",
+      "from": "12TPSR 5F",
+      "to": "14AR 3H",
+      "page": "T2"
+    },
+    {
+      "signal": "N-AX-2",
+      "from": "12TPSR 5B",
+      "to": "14AR 4H",
+      "page": "T2"
+    },
+    {
+      "signal": "**STRAP**",
+      "from": "14AR 3F",
+      "to": "14AR 4B",
+      "page": "T2"
+    },
+    {
+      "signal": "**STRAP**",
+      "from": "14AR 3B",
+      "to": "14AR 4F",
+      "page": "T2"
+    },
+    {
+      "signal": "AX-1",
+      "from": "14AR 3F",
+      "to": "16APR 5H",
+      "page": "T2"
+    },
+    {
+      "signal": "N-AX-1",
+      "from": "14AR 3B",
+      "to": "16APR 6H",
+      "page": "T2"
+    },
+    {
+      "signal": "**STRAP**",
+      "from": "16APR 5F",
+      "to": "16APR 6B",
+      "page": "T2"
+    },
+    {
+      "signal": "**STRAP**",
+      "from": "16APR 5B",
+      "to": "16APR 6F",
+      "page": "T2"
+    },
+    {
+      "signal": "AX",
+      "from": "16APR 5F",
+      "to": "AXR COIL+",
+      "page": "T2"
+    },
+    {
+      "signal": "N-AX",
+      "from": "16APR 5B",
+      "to": "AXR COIL-",
+      "page": "T2"
+    },
+    {
+      "signal": "B10-TWR",
+      "from": "B10-TWR LVR T18",
+      "to": "AXR 1H",
+      "page": "T2"
+    },
+    {
+      "signal": "BELL",
+      "from": "AXR 1F",
+      "to": "BELL COIL+",
+      "page": "T2"
+    },
+    {
+      "signal": "N10-TWR",
+      "from": "N10-TWR LVR T3",
+      "to": "BELL COIL-",
+      "page": "T2"
+    },
+    {
+      "signal": "2ATK",
+      "from": "2ATKE +",
+      "to": "2TR 1B",
+      "page": "T3"
+    },
+    {
+      "signal": "N-2ATK",
+      "from": "N10-TWR MB",
+      "to": "2ATKE -",
+      "page": "T3"
+    },
+    {
+      "signal": "B10-TWR",
+      "from": "B10-TWR S3 T9",
+      "to": "2TR 1H",
+      "page": "T3"
+    },
+    {
+      "signal": "BX110",
+      "from": "BX110",
+      "to": "C-4 BX",
+      "page": "T3"
+    },
+    {
+      "signal": "CX110",
+      "from": "CX110",
+      "to": "C-4 CX",
+      "page": "T3"
+    },
+    {
+      "signal": "1TN",
+      "from": "C-4 1TN",
+      "to": "2TR TEST TERM -",
+      "page": "T3"
+    },
+    {
+      "signal": "2TNX",
+      "from": "2TR TEST TERM -",
+      "to": "2TR TRK ARRESTOR -",
+      "page": "T3"
+    },
+    {
+      "signal": "2T",
+      "from": "2TR TEST TERM +",
+      "to": "2TR COIL+",
+      "page": "T3"
+    },
+    {
+      "signal": "N-2T",
+      "from": "2TR COIL-",
+      "to": "2TR TRK RESISTOR",
+      "page": "T3"
+    },
+    {
+      "signal": "**STRAP**",
+      "from": "2TR TRK RESISTOR",
+      "to": "2TR TRK RESISTOR",
+      "page": "T3"
+    },
+    {
+      "signal": "2TBX",
+      "from": "2TR TRK RESISTOR",
+      "to": "2TR TRK ARRESTOR +",
+      "page": "T3"
+    },
+    {
+      "signal": "1TB",
+      "from": "C-4 1TB",
+      "to": "2TR TRK RESISTOR",
+      "page": "T3"
+    },
+    {
+      "signal": "2TN",
+      "from": "C-4 2TN",
+      "to": "6TR TEST TERM -",
+      "page": "T3"
+    },
+    {
+      "signal": "6TNX",
+      "from": "6TR TEST TERM -",
+      "to": "GRP-E T8",
+      "page": "T3"
+    },
+    {
+      "signal": "6T",
+      "from": "6TR TEST TERM +",
+      "to": "6TR COIL+",
+      "page": "T3"
+    },
+    {
+      "signal": "N-6T",
+      "from": "6TR COIL-",
+      "to": "6TR TRK RESISTOR",
+      "page": "T3"
+    },
+    {
+      "signal": "**STRAP**",
+      "from": "6TR TRK RESISTOR",
+      "to": "6TR TRK RESISTOR",
+      "page": "T3"
+    },
+    {
+      "signal": "6TBX",
+      "from": "6TR TRK RESISTOR",
+      "to": "GRP-B T7",
+      "page": "T3"
+    },
+    {
+      "signal": "2TB",
+      "from": "C-4 2TB",
+      "to": "6TR TRK RESISTOR",
+      "page": "T3"
+    },
+    {
+      "signal": "3TN",
+      "from": "C-4 3TN",
+      "to": "14ATR TEST TERM -",
+      "page": "T3"
+    },
+    {
+      "signal": "14ATNX",
+      "from": "14ATR TEST TERM -",
+      "to": "14ATR TRK ARRESTOR -",
+      "page": "T3"
+    },
+    {
+      "signal": "14AT",
+      "from": "14ATR TEST TERM +",
+      "to": "14ATR COIL+",
+      "page": "T3"
+    },
+    {
+      "signal": "N-14AT",
+      "from": "14ATR COIL-",
+      "to": "14ATR TRK RESISTOR",
+      "page": "T3"
+    },
+    {
+      "signal": "**STRAP**",
+      "from": "14ATR TRK RESISTOR",
+      "to": "14ATR TRK RESISTOR",
+      "page": "T3"
+    },
+    {
+      "signal": "14ATBX",
+      "from": "14ATR TRK RESISTOR",
+      "to": "14ATR TRK ARRESTOR +",
+      "page": "T3"
+    },
+    {
+      "signal": "3TB",
+      "from": "C-4 3TB",
+      "to": "14ATR TRK RESISTOR",
+      "page": "T3"
+    },
+    {
+      "signal": "4TN",
+      "from": "C-4 4TN",
+      "to": "14BTR TEST TERM -",
+      "page": "T3"
+    },
+    {
+      "signal": "14BTNX",
+      "from": "14BTR TEST TERM -",
+      "to": "14BTR TRK ARRESTOR -",
+      "page": "T3"
+    },
+    {
+      "signal": "14BT",
+      "from": "14BTR TEST TERM +",
+      "to": "14BTR COIL+",
+      "page": "T3"
+    },
+    {
+      "signal": "N-14BT",
+      "from": "14BTR COIL-",
+      "to": "14BTR TRK RESISTOR",
+      "page": "T3"
+    },
+    {
+      "signal": "**STRAP**",
+      "from": "14BTR TRK RESISTOR",
+      "to": "14BTR TRK RESISTOR",
+      "page": "T3"
+    },
+    {
+      "signal": "14BTBX",
+      "from": "14BTR TRK RESISTOR",
+      "to": "14BTR TRK ARRESTOR +",
+      "page": "T3"
+    },
+    {
+      "signal": "4TB",
+      "from": "C-4 4TB",
+      "to": "14BTR TRK RESISTOR",
+      "page": "T3"
+    },
+    {
+      "signal": "B10-TWR",
+      "from": "B10-TWR S4 T4",
+      "to": "6TPSR 3H",
+      "page": "T4"
+    },
+    {
+      "signal": "6TK",
+      "from": "6TKE +",
+      "to": "6TPSR 3B",
+      "page": "T4"
+    },
+    {
+      "signal": "N-6TK",
+      "from": "N10-TWR MB",
+      "to": "6TKE -",
+      "page": "T4"
+    },
+    {
+      "signal": "7L-3",
+      "from": "6TPSR 3F",
+      "to": "1-2-3ASR 2H",
+      "page": "T4"
+    },
+    {
+      "signal": "7L-2",
+      "from": "1-2-3ASR 2F",
+      "to": "6TE 1H",
+      "page": "T4"
+    },
+    {
+      "signal": "7L-1",
+      "from": "6TE 1B",
+      "to": "FLOOR PB 7 +",
+      "page": "T4"
+    },
+    {
+      "signal": "7L",
+      "from": "FLOOR PB 7 -",
+      "to": "LOCK-7 COIL+",
+      "page": "T4"
+    },
+    {
+      "signal": "N10-TWR",
+      "from": "N10-TWR LVR T5",
+      "to": "LOCK-7 COIL-",
+      "page": "T4"
+    },
+    {
+      "signal": "B10-TWR",
+      "from": "B10-TWR S2 T2",
+      "to": "1RGPR 1H",
+      "page": "T4"
+    },
+    {
+      "signal": "1-2-3AS-B3",
+      "from": "1RGPR 1F",
+      "to": "2RGPR 1H",
+      "page": "T4"
+    },
+    {
+      "signal": "1-2-3AS-B2",
+      "from": "2RGPR 1F",
+      "to": "3RGPR 1H",
+      "page": "T4"
+    },
+    {
+      "signal": "1-2-3AS-B1",
+      "from": "3RGPR 1F",
+      "to": "6TPSR 2B",
+      "page": "T4"
+    },
+    {
+      "signal": "1-2-3AS-A1",
+      "from": "3RGPR 1F",
+      "to": "6TE 5H",
+      "page": "T4"
+    },
+    {
+      "signal": "1-2-3AS-A",
+      "from": "3RGPR 1F",
+      "to": "1-2-3ASR 1H",
+      "page": "T4"
+    },
+    {
+      "signal": "**STRAP**",
+      "from": "1-2-3ASR COIL+",
+      "to": "1-2-3ASR 1F",
+      "page": "T4"
+    },
+    {
+      "signal": "1-2-3AS-B",
+      "from": "6TPSR 2H",
+      "to": "1-2-3ASR COIL+",
+      "page": "T4"
+    },
+    {
+      "signal": "1-2-3AS",
+      "from": "6TE 5F",
+      "to": "1-2-3ASR COIL+",
+      "page": "T4"
+    },
+    {
+      "signal": "N10-TWR",
+      "from": "N10-TWR S4 T3",
+      "to": "1-2-3ASR COIL-",
+      "page": "T4"
+    },
+    {
+      "signal": "B10-TWR",
+      "from": "B10-TWR S3 T8",
+      "to": "6TR 1H",
+      "page": "T4"
+    },
+    {
+      "signal": "6TP-1",
+      "from": "6TR 1F",
+      "to": "6LOSTER 1H",
+      "page": "T4"
+    },
+    {
+      "signal": "6TP",
+      "from": "6LOSTER 1F",
+      "to": "6TPR COIL+",
+      "page": "T4"
+    },
+    {
+      "signal": "6TP-A",
+      "from": "6TR 1F",
+      "to": "6TPR 1H",
+      "page": "T4"
+    },
+    {
+      "signal": "**STRAP**",
+      "from": "6TPR COIL+",
+      "to": "6TPR 1F",
+      "page": "T4"
+    },
+    {
+      "signal": "6LOSTE",
+      "from": "6TPR 1F",
+      "to": "6LOSTER COIL+",
+      "page": "T4"
+    },
+    {
+      "signal": "N10-TWR",
+      "from": "N10-TWR MAIN T11",
+      "to": "6LOSTER COIL-",
+      "page": "T4"
+    },
+    {
+      "signal": "N10-TWR",
+      "from": "N10-TWR S4 T4",
+      "to": "6TPR COIL-",
+      "page": "T4"
+    },
+    {
+      "signal": "B10-TWR",
+      "from": "B10-TWR S4 T3",
+      "to": "6TPR 2H",
+      "page": "T4"
+    },
+    {
+      "signal": "6TPS-3",
+      "from": "6TPR 2F",
+      "to": "1RGPR 2H",
+      "page": "T4"
+    },
+    {
+      "signal": "6TPS-2",
+      "from": "1RGPR 2F",
+      "to": "2RGPR 2H",
+      "page": "T4"
+    },
+    {
+      "signal": "6TPS-1",
+      "from": "2RGPR 2F",
+      "to": "3RGPR 2H",
+      "page": "T4"
+    },
+    {
+      "signal": "6TPS",
+      "from": "3RGPR 2F",
+      "to": "6TPSR COIL+",
+      "page": "T4"
+    },
+    {
+      "signal": "6TPS-A",
+      "from": "6TPR 2F",
+      "to": "6TPSR 1H",
+      "page": "T4"
+    },
+    {
+      "signal": "**STRAP**",
+      "from": "6TPSR 1F",
+      "to": "6TPSR COIL+",
+      "page": "T4"
+    },
+    {
+      "signal": "N10-TWR",
+      "from": "N10-TWR S4 T5",
+      "to": "6TPSR COIL-",
+      "page": "T4"
+    },
+    {
+      "signal": "B10-TWR",
+      "from": "B10-TWR S4 T5",
+      "to": "9-10TPSR 3H",
+      "page": "T5"
+    },
+    {
+      "signal": "9-10TK",
+      "from": "9-10TKE +",
+      "to": "9-10TPSR 3B",
+      "page": "T5"
+    },
+    {
+      "signal": "N-9-10TK",
+      "from": "N10-TWR MB",
+      "to": "9-10TKE -",
+      "page": "T5"
+    },
+    {
+      "signal": "11L-3",
+      "from": "9-10TPSR 3F",
+      "to": "4-5ASR 2H",
+      "page": "T5"
+    },
+    {
+      "signal": "11L-2",
+      "from": "4-5ASR 2F",
+      "to": "9-10TE 1H",
+      "page": "T5"
+    },
+    {
+      "signal": "11L-1",
+      "from": "9-10TE 1B",
+      "to": "FLOOR PB 11 +",
+      "page": "T5"
+    },
+    {
+      "signal": "11L",
+      "from": "FLOOR PB 11 -",
+      "to": "LOCK-11 COIL+",
+      "page": "T5"
+    },
+    {
+      "signal": "N10-TWR",
+      "from": "N10-TWR LVR T6",
+      "to": "LOCK-11 COIL-",
+      "page": "T5"
+    },
+    {
+      "signal": "N10-TWR",
+      "from": "N10-TWR S2 T7",
+      "to": "4RGPR COIL-",
+      "page": "T5"
+    },
+    {
+      "signal": "4RGP",
+      "from": "4RGPR COIL+",
+      "to": "GRP-D T12",
+      "page": "T5"
+    },
+    {
+      "signal": "B10-TWR",
+      "from": "B10-TWR S4 T2",
+      "to": "5HR 1H",
+      "page": "T5"
+    },
+    {
+      "signal": "5GK",
+      "from": "5GKE +",
+      "to": "5HR 1F",
+      "page": "T5"
+    },
+    {
+      "signal": "N-5GK",
+      "from": "N10-TWR MB",
+      "to": "5GKE -",
+      "page": "T5"
+    },
+    {
+      "signal": "4-5AS-2",
+      "from": "5HR 1B",
+      "to": "4RGPR 1H",
+      "page": "T5"
+    },
+    {
+      "signal": "4-5AS-B1",
+      "from": "4RGPR 1F",
+      "to": "9-10TPSR 2B",
+      "page": "T5"
+    },
+    {
+      "signal": "4-5AS-1",
+      "from": "4RGPR 1F",
+      "to": "9-10TE 5H",
+      "page": "T5"
+    },
+    {
+      "signal": "4-5AS-A",
+      "from": "4RGPR 1F",
+      "to": "4-5ASR 1H",
+      "page": "T5"
+    },
+    {
+      "signal": "4-5AS-B",
+      "from": "9-10TPSR 2H",
+      "to": "4-5ASR COIL+",
+      "page": "T5"
+    },
+    {
+      "signal": "4-5AS",
+      "from": "9-10TE 5F",
+      "to": "4-5ASR COIL+",
+      "page": "T5"
+    },
+    {
+      "signal": "**STRAP**",
+      "from": "4-5ASR 1F",
+      "to": "4-5ASR COIL+",
+      "page": "T5"
+    },
+    {
+      "signal": "N10-TWR",
+      "from": "N10-TWR S2 T4",
+      "to": "4-5ASR COIL-",
+      "page": "T5"
+    },
+    {
+      "signal": "9-10TP-1A",
+      "from": "GRP-A T8",
+      "to": "9-10LOSTER 1H",
+      "page": "T5"
+    },
+    {
+      "signal": "N10-CASEA",
+      "from": "GRP-A T6",
+      "to": "N10-CASEA T1",
+      "page": "T5"
+    },
+    {
+      "signal": "9-10TP-1",
+      "from": "9-10LOSTER 1H",
+      "to": "9-10TPR 1H",
+      "page": "T5"
+    },
+    {
+      "signal": "9-10TP",
+      "from": "9-10LOSTER 1F",
+      "to": "9-10TPR COIL+",
+      "page": "T5"
+    },
+    {
+      "signal": "**STRAP**",
+      "from": "9-10TPR 1F",
+      "to": "9-10TPR COIL+",
+      "page": "T5"
+    },
+    {
+      "signal": "9-10TP-A",
+      "from": "9-10TPR 1B",
+      "to": "9-10LOSTER COIL+",
+      "page": "T5"
+    },
+    {
+      "signal": "N-9-10LOSTE",
+      "from": "N10-CASEA T8",
+      "to": "9-10LOSTER COIL-",
+      "page": "T5"
+    },
+    {
+      "signal": "N-9-10TP",
+      "from": "N10-CASEA T9",
+      "to": "9-10TPR COIL-",
+      "page": "T5"
+    },
+    {
+      "signal": "4GK",
+      "from": "4GKE +",
+      "to": "4RGPR 4B",
+      "page": "T5"
+    },
+    {
+      "signal": "N-4GK",
+      "from": "N10-TWR MB",
+      "to": "4GKE -",
+      "page": "T5"
+    },
+    {
+      "signal": "B10-TWR",
+      "from": "B10-TWR S2 T5",
+      "to": "4RGPR 4H",
+      "page": "T5"
+    },
+    {
+      "signal": "B10-TWR",
+      "from": "B10-TWR S3 T7",
+      "to": "9-10TPR 2H",
+      "page": "T5"
+    },
+    {
+      "signal": "9-10TPS-2",
+      "from": "9-10TPR 2F",
+      "to": "5HR 2H",
+      "page": "T5"
+    },
+    {
+      "signal": "9-10TPS-A",
+      "from": "9-10TPR 2F",
+      "to": "9-10TPSR 1H",
+      "page": "T5"
+    },
+    {
+      "signal": "9-10TPS-1",
+      "from": "5HR 2B",
+      "to": "4RGPR 2H",
+      "page": "T5"
+    },
+    {
+      "signal": "9-10TPS",
+      "from": "4RGPR 2F",
+      "to": "9-10TPSR COIL+",
+      "page": "T5"
+    },
+    {
+      "signal": "**STRAP**",
+      "from": "9-10TPSR 1F",
+      "to": "9-10TPSR COIL+",
+      "page": "T5"
+    },
+    {
+      "signal": "N10-TWR",
+      "from": "N10-TWR S4 T6",
+      "to": "9-10TPSR COIL-",
+      "page": "T5"
+    },
+    {
+      "signal": "B10-TWR",
+      "from": "B10-TWR S4 T7",
+      "to": "12TPSR 3H",
+      "page": "T6"
+    },
+    {
+      "signal": "12TK",
+      "from": "12TKE +",
+      "to": "12TPSR 3B",
+      "page": "T6"
+    },
+    {
+      "signal": "N-12TK",
+      "from": "N10-TWR MB",
+      "to": "12TKE -",
+      "page": "T6"
+    },
+    {
+      "signal": "13L-3",
+      "from": "12TPSR 3F",
+      "to": "14-15-16ASR 2H",
+      "page": "T6"
+    },
+    {
+      "signal": "13L-2",
+      "from": "14-15-16ASR 2F",
+      "to": "12TE 1H",
+      "page": "T6"
+    },
+    {
+      "signal": "13L-1",
+      "from": "12TE 1B",
+      "to": "FLOOR PB 13 +",
+      "page": "T6"
+    },
+    {
+      "signal": "13L",
+      "from": "FLOOR PB 13 -",
+      "to": "LOCK-13 COIL+",
+      "page": "T6"
+    },
+    {
+      "signal": "N10-TWR",
+      "from": "N10-TWR LVR T7",
+      "to": "LOCK-13 COIL-",
+      "page": "T6"
+    },
+    {
+      "signal": "B10-TWR",
+      "from": "B10-TWR RACK T?",
+      "to": "14RGPR 1H",
+      "page": "T6"
+    },
+    {
+      "signal": "14-15-16AS-B3",
+      "from": "14RGPR 1F",
+      "to": "15RGPR 1H",
+      "page": "T6"
+    },
+    {
+      "signal": "14-15-16AS-B2",
+      "from": "15RGPR 1F",
+      "to": "16RGPR 1H",
+      "page": "T6"
+    },
+    {
+      "signal": "14-15-16AS-B1",
+      "from": "16RGPR 1F",
+      "to": "12TPSR 2B",
+      "page": "T6"
+    },
+    {
+      "signal": "14-15-16AS-1",
+      "from": "16RGPR 1F",
+      "to": "12TE 5H",
+      "page": "T6"
+    },
+    {
+      "signal": "14-15-16AS-A",
+      "from": "16RGPR 1F",
+      "to": "14-15-16ASR 1H",
+      "page": "T6"
+    },
+    {
+      "signal": "14-15-16AS-B",
+      "from": "12TPSR 2H",
+      "to": "14-15-16ASR COIL+",
+      "page": "T6"
+    },
+    {
+      "signal": "14-15-16AS",
+      "from": "12TE 5F",
+      "to": "14-15-16ASR COIL+",
+      "page": "T6"
+    },
+    {
+      "signal": "**STRAP**",
+      "from": "14-15-16ASR 1F",
+      "to": "14-15-16ASR COIL+",
+      "page": "T6"
+    },
+    {
+      "signal": "N10-TWR",
+      "from": "N10-TWR S4 T7",
+      "to": "14-15-16ASR COIL-",
+      "page": "T6"
+    },
+    {
+      "signal": "12TP-1A",
+      "from": "GRP-A T9",
+      "to": "12LOSTER 1H",
+      "page": "T6"
+    },
+    {
+      "signal": "12TP-1",
+      "from": "12LOSTER 1H",
+      "to": "12TPR 1H",
+      "page": "T6"
+    },
+    {
+      "signal": "12TP",
+      "from": "12LOSTER 1F",
+      "to": "12TPR COIL+",
+      "page": "T6"
+    },
+    {
+      "signal": "**STRAP**",
+      "from": "12TPR 1F",
+      "to": "12TPR COIL+",
+      "page": "T6"
+    },
+    {
+      "signal": "12LOSTE",
+      "from": "12TPR 1B",
+      "to": "12LOSTER COIL+",
+      "page": "T6"
+    },
+    {
+      "signal": "N-12LOSTE",
+      "from": "N10-CASEA T10",
+      "to": "12LOSTER COIL-",
+      "page": "T6"
+    },
+    {
+      "signal": "N-12TP",
+      "from": "N10-CASEA T11",
+      "to": "12TPR COIL-",
+      "page": "T6"
+    },
+    {
+      "signal": "B10-TWR",
+      "from": "B10-TWR S3 T6",
+      "to": "12TPR 2H",
+      "page": "T6"
+    },
+    {
+      "signal": "12TPS-3",
+      "from": "12TPR 2F",
+      "to": "14RGPR 2H",
+      "page": "T6"
+    },
+    {
+      "signal": "12TPS-A",
+      "from": "12TPR 2F",
+      "to": "12TPSR 1H",
+      "page": "T6"
+    },
+    {
+      "signal": "12TPS-2",
+      "from": "14RGPR 2F",
+      "to": "15RGPR 2H",
+      "page": "T6"
+    },
+    {
+      "signal": "12TPS-1",
+      "from": "15RGPR 2F",
+      "to": "16RGPR 2H",
+      "page": "T6"
+    },
+    {
+      "signal": "12TPS",
+      "from": "16RGPR 2F",
+      "to": "12TPSR COIL+",
+      "page": "T6"
+    },
+    {
+      "signal": "**STRAP**",
+      "from": "12TPSR 1F",
+      "to": "12TPSR COIL+",
+      "page": "T6"
+    },
+    {
+      "signal": "N10-TWR",
+      "from": "N10-TWR S4 T8",
+      "to": "12TPSR COIL-",
+      "page": "T6"
+    },
+    {
+      "signal": "B10-TWR",
+      "from": "B10-TWR LVR T6",
+      "to": "LVR-2 T5",
+      "page": "T7"
+    },
+    {
+      "signal": "B10-TWR",
+      "from": "B10-TWR LVR T7",
+      "to": "LVR-3 T5",
+      "page": "T7"
+    },
+    {
+      "signal": "2-3COS-3",
+      "from": "LVR-2 T6",
+      "to": "2-3COPB +",
+      "page": "T7"
+    },
+    {
+      "signal": "2-3COS-3A",
+      "from": "LVR-3 T6",
+      "to": "LVR-2 T6",
+      "page": "T7"
+    },
+    {
+      "signal": "2-3COS-2",
+      "from": "2-3COPB -",
+      "to": "2RGPR 3F",
+      "page": "T7"
+    },
+    {
+      "signal": "2-3COS-1",
+      "from": "2RGPR 3H",
+      "to": "3RGPR 3F",
+      "page": "T7"
+    },
+    {
+      "signal": "2-3COS",
+      "from": "3RGPR 3H",
+      "to": "2-3COSR COIL+",
+      "page": "T7"
+    },
+    {
+      "signal": "**STRAP**",
+      "from": "2-3COSR 1F",
+      "to": "2-3COSR COIL+",
+      "page": "T7"
+    },
+    {
+      "signal": "2-3COS-A",
+      "from": "2-3COPB +",
+      "to": "2-3COSR 1H",
+      "page": "T7"
+    },
+    {
+      "signal": "N10-TWR",
+      "from": "N10-TWR S2 T2",
+      "to": "2-3COSR COIL-",
+      "page": "T7"
+    },
+    {
+      "signal": "B10-TWR",
+      "from": "B10-TWR LVR T13",
+      "to": "LVR-14 T5",
+      "page": "T7"
+    },
+    {
+      "signal": "B10-TWR",
+      "from": "B10-TWR LVR T14",
+      "to": "LVR-16 T13",
+      "page": "T7"
+    },
+    {
+      "signal": "14-16COS-3",
+      "from": "LVR-14 T6",
+      "to": "14-16COPB +",
+      "page": "T7"
+    },
+    {
+      "signal": "14-16COS-3A",
+      "from": "LVR-16 T14",
+      "to": "LVR-14 T6",
+      "page": "T7"
+    },
+    {
+      "signal": "14-16COS-2",
+      "from": "14-16COPB -",
+      "to": "14RGPR 3F",
+      "page": "T7"
+    },
+    {
+      "signal": "14-16COS-1",
+      "from": "14RGPR 3H",
+      "to": "16RGPR 3F",
+      "page": "T7"
+    },
+    {
+      "signal": "14-16COS",
+      "from": "16RGPR 3H",
+      "to": "14-16COSR COIL+",
+      "page": "T7"
+    },
+    {
+      "signal": "**STRAP**",
+      "from": "14-16COSR 1F",
+      "to": "14-16COSR COIL+",
+      "page": "T7"
+    },
+    {
+      "signal": "14-16COS-A",
+      "from": "14-16COPB +",
+      "to": "14-16COSR 1H",
+      "page": "T7"
+    },
+    {
+      "signal": "N10-TWR",
+      "from": "N10-TWR S2 T3",
+      "to": "14-16COSR COIL-",
+      "page": "T7"
+    },
+    {
+      "signal": "B10-TWR",
+      "from": "B10-TWR LVR T10",
+      "to": "LVR-6 T2",
+      "page": "T8"
+    },
+    {
+      "signal": "**STRAP**",
+      "from": "LVR-6 T2",
+      "to": "LVR-6 T3",
+      "page": "T8"
+    },
+    {
+      "signal": "6NLP-1",
+      "from": "LVR-6 T1",
+      "to": "GRP-F T2",
+      "page": "T8"
+    },
+    {
+      "signal": "6RLP-1",
+      "from": "LVR-6 T4",
+      "to": "GRP-F T3",
+      "page": "T8"
+    },
+    {
+      "signal": "N10-TWR",
+      "from": "N10-TWR MAIN T10",
+      "to": "GRP-F T1",
+      "page": "T8"
+    },
+    {
+      "signal": "1HD",
+      "from": "1HDR COIL+",
+      "to": "2TR 2F",
+      "page": "T8"
+    },
+    {
+      "signal": "1HD-A",
+      "from": "1HDR COIL+",
+      "to": "15HDGPR 1F",
+      "page": "T8"
+    },
+    {
+      "signal": "1HD-1",
+      "from": "LVR-1 T4",
+      "to": "2TR 2H",
+      "page": "T8",
+      "notes": "H-NETWORK 1HD-1"
+    },
+    {
+      "signal": "1HD-A1",
+      "from": "15HDGPR 1H",
+      "to": "16APR 2F",
+      "page": "T8"
+    },
+    {
+      "signal": "1HD-A2",
+      "from": "LVR-1 T8",
+      "to": "16APR 2H",
+      "page": "T8",
+      "notes": "H-NETWORK 1HD-A2"
+    },
+    {
+      "signal": "N-1HD",
+      "from": "1HDR COIL-",
+      "to": "N10-TWR S2 T9",
+      "page": "T8"
+    },
+    {
+      "signal": "B10-TWR",
+      "from": "B10-TWR LVR T4",
+      "to": "LVR-1 T9",
+      "page": "T8"
+    },
+    {
+      "signal": "N10-TWR",
+      "from": "N10-TWR LVR T2",
+      "to": "LVR-1 T13",
+      "page": "T8"
+    },
+    {
+      "signal": "**STRAP**",
+      "from": "LVR-1 T12",
+      "to": "LVR-1 T16",
+      "page": "T8"
+    },
+    {
+      "signal": "**STRAP**",
+      "from": "LVR-1 T10",
+      "to": "LVR-1 T11",
+      "page": "T8"
+    },
+    {
+      "signal": "**STRAP**",
+      "from": "LVR-1 T14",
+      "to": "LVR-1 T15",
+      "page": "T8"
+    },
+    {
+      "signal": "1HDP-2",
+      "from": "LVR-1 T10",
+      "to": "1HDR 1F",
+      "page": "T8"
+    },
+    {
+      "signal": "N-1HDP-2",
+      "from": "LVR-1 T14",
+      "to": "1HDR 2F",
+      "page": "T8"
+    },
+    {
+      "signal": "**STRAP**",
+      "from": "1HDR 1F",
+      "to": "1HDR 2B",
+      "page": "T8"
+    },
+    {
+      "signal": "**STRAP**",
+      "from": "1HDR 1B",
+      "to": "1HDR 2F",
+      "page": "T8"
+    },
+    {
+      "signal": "1HDP-1",
+      "from": "1HDR 1H",
+      "to": "GRP-F T4",
+      "page": "T8"
+    },
+    {
+      "signal": "N-1HDP-1",
+      "from": "1HDR 2H",
+      "to": "GRP-F T5",
+      "page": "T8"
+    },
+    {
+      "signal": "1RGP",
+      "from": "1RGPR COIL+",
+      "to": "GRP-F T6",
+      "page": "T8"
+    },
+    {
+      "signal": "N-1RGP",
+      "from": "1RGPR COIL-",
+      "to": "GRP-F T7",
+      "page": "T8"
+    },
+    {
+      "signal": "1A",
+      "from": "1AR COIL+",
+      "to": "GRP-F T10",
+      "page": "T8"
+    },
+    {
+      "signal": "N-1A",
+      "from": "1AR COIL-",
+      "to": "GRP-F T11",
+      "page": "T8"
+    },
+    {
+      "signal": "1HDGP",
+      "from": "1HDGPR COIL+",
+      "to": "GRP-F T12",
+      "page": "T8"
+    },
+    {
+      "signal": "N-1HDGP",
+      "from": "1HDGPR COIL-",
+      "to": "GRP-G T1",
+      "page": "T8"
+    },
+    {
+      "signal": "6WPP",
+      "from": "GRP-F T8",
+      "to": "6RWPPR 1H",
+      "page": "T8"
+    },
+    {
+      "signal": "N-6WPP",
+      "from": "GRP-F T9",
+      "to": "6RWPPR COIL+",
+      "page": "T8"
+    },
+    {
+      "signal": "6WPP-A",
+      "from": "6RWPPR 1H",
+      "to": "6NWPPR 1H",
+      "page": "T8"
+    },
+    {
+      "signal": "6WPP-A1",
+      "from": "6NWPPR 1B",
+      "to": "6RWPPR COIL-",
+      "page": "T8"
+    },
+    {
+      "signal": "6WPP-1",
+      "from": "6RWPPR 1B",
+      "to": "6NWPPR COIL+",
+      "page": "T8"
+    },
+    {
+      "signal": "N-6WPP-A",
+      "from": "6NWPPR COIL-",
+      "to": "6RWPPR COIL+",
+      "page": "T8"
+    },
+    {
+      "signal": "6WCK",
+      "from": "6WCKE +",
+      "to": "6NWPPR 2H",
+      "page": "T8"
+    },
+    {
+      "signal": "N-6WCK",
+      "from": "N10-TWR MB",
+      "to": "6WCKE -",
+      "page": "T8"
+    },
+    {
+      "signal": "6WCK-1",
+      "from": "6NWPPR 2F",
+      "to": "LVR-6 T6",
+      "page": "T8"
+    },
+    {
+      "signal": "6WCK-A",
+      "from": "6NWPPR 2B",
+      "to": "LVR-6 T8",
+      "page": "T8"
+    },
+    {
+      "signal": "6WCK-A1",
+      "from": "LVR-6 T7",
+      "to": "6RWPPR 2F",
+      "page": "T8"
+    },
+    {
+      "signal": "6WCK-2",
+      "from": "LVR-6 T5",
+      "to": "6RWPPR 2B",
+      "page": "T8"
+    },
+    {
+      "signal": "B10-TWR",
+      "from": "6RWPPR 2H",
+      "to": "B10-TWR S1 T4",
+      "page": "T8"
+    },
+    {
+      "signal": "1ATK",
+      "from": "1ATKE +",
+      "to": "1AR 1B",
+      "page": "T8"
+    },
+    {
+      "signal": "N-1ATK",
+      "from": "N10-TWR MB",
+      "to": "1ATKE -",
+      "page": "T8"
+    },
+    {
+      "signal": "**STRAP**",
+      "from": "1AR 1H",
+      "to": "1AR 5H",
+      "page": "T8"
+    },
+    {
+      "signal": "1GK",
+      "from": "1GKE +",
+      "to": "1HDGPR 1F",
+      "page": "T8"
+    },
+    {
+      "signal": "N-1GK",
+      "from": "N10-TWR MB",
+      "to": "1GKE -",
+      "page": "T8"
+    },
+    {
+      "signal": "B10-TWR",
+      "from": "B10-TWR S1 T6",
+      "to": "1HDGPR 1H",
+      "page": "T8"
+    },
+    {
+      "signal": "22HDGP",
+      "from": "ICJCT T?",
+      "to": "22HDGPR COIL+",
+      "page": "T9"
+    },
+    {
+      "signal": "N-22HDGP",
+      "from": "ICJCT T?",
+      "to": "22HDGPR COIL-",
+      "page": "T9"
+    },
+    {
+      "signal": "2HD-2",
+      "from": "LVR-2 T4",
+      "to": "2-3COSR 2H",
+      "page": "T9",
+      "notes": "H-NETWORK 2HD-2"
+    },
+    {
+      "signal": "2COSP",
+      "from": "2-3COSR 2F",
+      "to": "GRP-D T2",
+      "page": "T9"
+    },
+    {
+      "signal": "2HD-1",
+      "from": "2-3COSR 2B",
+      "to": "1AR 2H",
+      "page": "T9"
+    },
+    {
+      "signal": "2HD",
+      "from": "1AR 2F",
+      "to": "22HDGPR 1H",
+      "page": "T9"
+    },
+    {
+      "signal": "2D",
+      "from": "22HDGPR 1F",
+      "to": "GRP-D T3",
+      "page": "T9"
+    },
+    {
+      "signal": "2H",
+      "from": "22HDGPR 1B",
+      "to": "GRP-D T4",
+      "page": "T9"
+    },
+    {
+      "signal": "3HD-2",
+      "from": "LVR-3 T2",
+      "to": "2-3COSR 3H",
+      "page": "T9",
+      "notes": "H-NETWORK 3HD-2"
+    },
+    {
+      "signal": "3COSP",
+      "from": "2-3COSR 3F",
+      "to": "GRP-D T5",
+      "page": "T9"
+    },
+    {
+      "signal": "3HD-1",
+      "from": "2-3COSR 3B",
+      "to": "1AR 3H",
+      "page": "T9"
+    },
+    {
+      "signal": "3HD",
+      "from": "1AR 3F",
+      "to": "22HDGPR 2H",
+      "page": "T9"
+    },
+    {
+      "signal": "3D",
+      "from": "22HDGPR 2F",
+      "to": "GRP-D T6",
+      "page": "T9"
+    },
+    {
+      "signal": "3H",
+      "from": "22HDGPR 2B",
+      "to": "GRP-D T7",
+      "page": "T9"
+    },
+    {
+      "signal": "3HDGP",
+      "from": "GRP-D T10",
+      "to": "3HDGPR COIL+",
+      "page": "T9"
+    },
+    {
+      "signal": "2RGP",
+      "from": "GRP-D T9",
+      "to": "2RGPR COIL+",
+      "page": "T9"
+    },
+    {
+      "signal": "3RGP",
+      "from": "GRP-D T11",
+      "to": "3RGPR COIL+",
+      "page": "T9"
+    },
+    {
+      "signal": "N10-TWR",
+      "from": "N10-TWR S2 T8",
+      "to": "3HDGPR COIL-",
+      "page": "T9"
+    },
+    {
+      "signal": "N10-TWR",
+      "from": "N10-TWR S2 T5",
+      "to": "2RGPR COIL-",
+      "page": "T9"
+    },
+    {
+      "signal": "N10-TWR",
+      "from": "N10-TWR S2 T6",
+      "to": "3RGPR COIL-",
+      "page": "T9"
+    },
+    {
+      "signal": "2GK",
+      "from": "2GKE +",
+      "to": "2RGPR 4B",
+      "page": "T9"
+    },
+    {
+      "signal": "N-2GK",
+      "from": "N10-TWR MB",
+      "to": "2GKE -",
+      "page": "T9"
+    },
+    {
+      "signal": "B10-TWR",
+      "from": "B10-TWR S2 T3",
+      "to": "2RGPR 4H",
+      "page": "T9"
+    },
+    {
+      "signal": "3GK",
+      "from": "3GKE +",
+      "to": "3HDGPR 4F",
+      "page": "T9"
+    },
+    {
+      "signal": "N-3GK",
+      "from": "N10-TWR MB",
+      "to": "3GKE -",
+      "page": "T9"
+    },
+    {
+      "signal": "B10-TWR",
+      "from": "B10-TWR S2 T4",
+      "to": "3HDGPR 4H",
+      "page": "T9"
+    },
+    {
+      "signal": "4H",
+      "from": "LVR-4 T4",
+      "to": "GRP-D T8",
+      "page": "T10",
+      "notes": "H-NETWORK 4H"
+    },
+    {
+      "signal": "5H",
+      "from": "LVR-5 T4",
+      "to": "5HR COIL+",
+      "page": "T10",
+      "notes": "H-NETWORK 5H"
+    },
+    {
+      "signal": "N10-TWR",
+      "from": "N10-TWR S4 T2",
+      "to": "5HR COIL-",
+      "page": "T10"
+    },
+    {
+      "signal": "BX10-TWR",
+      "from": "BX10-TWR T?",
+      "to": "5HR 3H",
+      "page": "T10"
+    },
+    {
+      "signal": "5HG",
+      "from": "5HR 3F",
+      "to": "SIG5 T?",
+      "page": "T10"
+    },
+    {
+      "signal": "5RG",
+      "from": "5HR 3B",
+      "to": "SIG5 T?",
+      "page": "T10"
+    },
+    {
+      "signal": "**STRAP**",
+      "from": "5HR 3H",
+      "to": "5HR 4H",
+      "page": "T10"
+    },
+    {
+      "signal": "**STRAP**",
+      "from": "5HR 3F",
+      "to": "5HR 4F",
+      "page": "T10"
+    },
+    {
+      "signal": "**STRAP**",
+      "from": "5HR 3B",
+      "to": "5HR 4B",
+      "page": "T10"
+    },
+    {
+      "signal": "NX10-TWR",
+      "from": "NX10-TWR T?",
+      "to": "LTG RESISTER SIG5",
+      "page": "T10"
+    },
+    {
+      "signal": "5NX10",
+      "from": "LTG RESISTER SIG5",
+      "to": "SIG5 T?",
+      "page": "T10"
+    },
+    {
+      "signal": "9WCK",
+      "from": "9WCKE +",
+      "to": "9RWPR 2H",
+      "page": "T10"
+    },
+    {
+      "signal": "N-9WCK",
+      "from": "N10-TWR MB",
+      "to": "9WCKE -",
+      "page": "T10"
+    },
+    {
+      "signal": "9WCK-1",
+      "from": "9RWPR 2F",
+      "to": "LVR-9 T4",
+      "page": "T10"
+    },
+    {
+      "signal": "9WCK-A",
+      "from": "9RWPR 2B",
+      "to": "LVR-9 T2",
+      "page": "T10"
+    },
+    {
+      "signal": "9WCK-2",
+      "from": "LVR-9 T3",
+      "to": "9NWPR 2B",
+      "page": "T10"
+    },
+    {
+      "signal": "9WCK-A1",
+      "from": "LVR-9 T1",
+      "to": "9NWPR 2F",
+      "page": "T10"
+    },
+    {
+      "signal": "B10-TWR",
+      "from": "B10-TWR S1 T2",
+      "to": "9NWPR 2H",
+      "page": "T10"
+    },
+    {
+      "signal": "10WCK",
+      "from": "10WCKE +",
+      "to": "10RWPR 2H",
+      "page": "T10"
+    },
+    {
+      "signal": "N-10WCK",
+      "from": "N10-TWR MB",
+      "to": "10WCKE -",
+      "page": "T10"
+    },
+    {
+      "signal": "10WCK-1",
+      "from": "10RWPR 2F",
+      "to": "LVR-10 T4",
+      "page": "T10"
+    },
+    {
+      "signal": "10WCK-A",
+      "from": "10RWPR 2B",
+      "to": "LVR-10 T2",
+      "page": "T10"
+    },
+    {
+      "signal": "10WCK-2",
+      "from": "LVR-10 T3",
+      "to": "10NWPR 2B",
+      "page": "T10"
+    },
+    {
+      "signal": "10WCK-A1",
+      "from": "LVR-10 T1",
+      "to": "10NWPR 2F",
+      "page": "T10"
+    },
+    {
+      "signal": "B10-TWR",
+      "from": "B10-TWR S1 T3",
+      "to": "10NWPR 2H",
+      "page": "T10"
+    },
+    {
+      "signal": "B10-9SCC",
+      "from": "B10-TWR S1 T7",
+      "to": "GRP-C T7",
+      "page": "T11"
+    },
+    {
+      "signal": "N10-TWR",
+      "from": "N10-TWR S1 T2",
+      "to": "9NWPR COIL-",
+      "page": "T11"
+    },
+    {
+      "signal": "9NWP",
+      "from": "9NWPR COIL+",
+      "to": "9RWPR 1B",
+      "page": "T11"
+    },
+    {
+      "signal": "9NWP-1",
+      "from": "9RWPR 1F",
+      "to": "GRP-C T8",
+      "page": "T11"
+    },
+    {
+      "signal": "N10-TWR",
+      "from": "N10-TWR S1 T3",
+      "to": "9RWPR COIL-",
+      "page": "T11"
+    },
+    {
+      "signal": "9RWP",
+      "from": "9RWPR COIL+",
+      "to": "9NWPR 1B",
+      "page": "T11"
+    },
+    {
+      "signal": "9RWP-1",
+      "from": "9NWPR 1H",
+      "to": "GRP-C T9",
+      "page": "T11"
+    },
+    {
+      "signal": "B10-10SCC",
+      "from": "B10-TWR S1 T8",
+      "to": "GRP-C T1",
+      "page": "T11"
+    },
+    {
+      "signal": "N10-TWR",
+      "from": "N10-TWR S1 T4",
+      "to": "10NWPR COIL-",
+      "page": "T11"
+    },
+    {
+      "signal": "10NWP",
+      "from": "10NWPR COIL+",
+      "to": "10RWPR 1B",
+      "page": "T11"
+    },
+    {
+      "signal": "10NWP-1",
+      "from": "10RWPR 1F",
+      "to": "GRP-C T2",
+      "page": "T11"
+    },
+    {
+      "signal": "N10-TWR",
+      "from": "N10-TWR S1 T5",
+      "to": "10RWPR COIL-",
+      "page": "T11"
+    },
+    {
+      "signal": "10RWP",
+      "from": "10RWPR COIL+",
+      "to": "10NWPR 1B",
+      "page": "T11"
+    },
+    {
+      "signal": "10RWP-1",
+      "from": "10NWPR 1H",
+      "to": "GRP-C T3",
+      "page": "T11"
+    },
+    {
+      "signal": "14BTK",
+      "from": "14BTKE +",
+      "to": "14BTR 1B",
+      "page": "T12"
+    },
+    {
+      "signal": "N-14BTK",
+      "from": "N10-TWR MB",
+      "to": "14BTKE -",
+      "page": "T12"
+    },
+    {
+      "signal": "B10-TWR",
+      "from": "B10-TWR S3 T4",
+      "to": "14BTR 1H",
+      "page": "T12"
+    },
+    {
+      "signal": "14BTP-B1",
+      "from": "14BTR 1F",
+      "to": "SB PB +",
+      "page": "T12"
+    },
+    {
+      "signal": "14BTP-B",
+      "from": "SB PB -",
+      "to": "14BTPR COIL+",
+      "page": "T12"
+    },
+    {
+      "signal": "14BTP-1",
+      "from": "14BTR 1F",
+      "to": "14BTPR 2H",
+      "page": "T12"
+    },
+    {
+      "signal": "14BTP",
+      "from": "14BTPR 2F",
+      "to": "14BTPR COIL+",
+      "page": "T12"
+    },
+    {
+      "signal": "14BTP-A1",
+      "from": "14BTPR 2H",
+      "to": "14ATPR 8H",
+      "page": "T12"
+    },
+    {
+      "signal": "14BTP-A",
+      "from": "14ATPR 8B",
+      "to": "14BTPR COIL+",
+      "page": "T12"
+    },
+    {
+      "signal": "14BTK1",
+      "from": "14BTKE1 +",
+      "to": "14BTPR 4B",
+      "page": "T12"
+    },
+    {
+      "signal": "N-14BTK1",
+      "from": "N10-TWR MB",
+      "to": "14BTKE1 -",
+      "page": "T12"
+    },
+    {
+      "signal": "14ATK",
+      "from": "14ATKE +",
+      "to": "14ATR 1B",
+      "page": "T12"
+    },
+    {
+      "signal": "N-14ATK",
+      "from": "N10-TWR MB",
+      "to": "14ATKE -",
+      "page": "T12"
+    },
+    {
+      "signal": "B10-TWR",
+      "from": "B10-TWR S3 T3",
+      "to": "14ATR 1H",
+      "page": "T12"
+    },
+    {
+      "signal": "14ATP-B1",
+      "from": "14ATR 1F",
+      "to": "NB PB +",
+      "page": "T12"
+    },
+    {
+      "signal": "14ATP-B",
+      "from": "NB PB -",
+      "to": "14ATPR COIL+",
+      "page": "T12"
+    },
+    {
+      "signal": "14ATP-1",
+      "from": "14ATR 1F",
+      "to": "14ATPR 7H",
+      "page": "T12"
+    },
+    {
+      "signal": "14ATP",
+      "from": "14ATPR 7F",
+      "to": "14ATPR COIL+",
+      "page": "T12"
+    },
+    {
+      "signal": "14ATP-A1",
+      "from": "14ATPR 7H",
+      "to": "14BTPR 1H",
+      "page": "T12"
+    },
+    {
+      "signal": "14ATP-A",
+      "from": "14BTPR 1B",
+      "to": "14ATPR COIL+",
+      "page": "T12"
+    },
+    {
+      "signal": "14ATK1",
+      "from": "14ATKE1 +",
+      "to": "14ATPR 5B",
+      "page": "T12"
+    },
+    {
+      "signal": "N-14ATK1",
+      "from": "N10-TWR MB",
+      "to": "14ATKE1 -",
+      "page": "T12"
+    },
+    {
+      "signal": "N10-TWR",
+      "from": "N10-TWR S3 T2",
+      "to": "14BTPR COIL-",
+      "page": "T12"
+    },
+    {
+      "signal": "**STRAP**",
+      "from": "14BTPR COIL-",
+      "to": "14ATPR COIL-",
+      "page": "T12"
+    },
+    {
+      "signal": "B10-TWR",
+      "from": "B10-TWR S3 T5",
+      "to": "14BTPR 4H",
+      "page": "T12"
+    },
+    {
+      "signal": "**STRAP**",
+      "from": "14BTPR 4H",
+      "to": "14ATPR 5H",
+      "page": "T12"
+    },
+    {
+      "signal": "**STRAP**",
+      "from": "14ATR 1H",
+      "to": "14ATR 2H",
+      "page": "T12"
+    },
+    {
+      "signal": "14A-1",
+      "from": "14ATR 2F",
+      "to": "14BTR 2F",
+      "page": "T12"
+    },
+    {
+      "signal": "14A",
+      "from": "14BTR 2H",
+      "to": "14AR COIL+",
+      "page": "T12"
+    },
+    {
+      "signal": "N10-TWR",
+      "from": "N10-TWR S4 T10",
+      "to": "14AR COIL-",
+      "page": "T12"
+    },
+    {
+      "signal": "B10-TWR",
+      "from": "B10-TWR LVR T11",
+      "to": "LVR-12 T2",
+      "page": "T13"
+    },
+    {
+      "signal": "**STRAP**",
+      "from": "LVR-12 T2",
+      "to": "LVR-12 T3",
+      "page": "T13"
+    },
+    {
+      "signal": "12NLP-1",
+      "from": "LVR-12 T1",
+      "to": "GRP-A T1",
+      "page": "T13"
+    },
+    {
+      "signal": "12RLP-1",
+      "from": "LVR-12 T4",
+      "to": "GRP-A T2",
+      "page": "T13"
+    },
+    {
+      "signal": "14HD",
+      "from": "LVR-14 T4",
+      "to": "14-16COSR 2H",
+      "page": "T13",
+      "notes": "H-NETWORK 14HD"
+    },
+    {
+      "signal": "14BH-1",
+      "from": "14-16COSR 2F",
+      "to": "12WCKR 2H",
+      "page": "T13"
+    },
+    {
+      "signal": "14BH",
+      "from": "12WCKR 2F",
+      "to": "GRP-A T11",
+      "page": "T13"
+    },
+    {
+      "signal": "14AD-2",
+      "from": "14-16COSR 2B",
+      "to": "16APR 3H",
+      "page": "T13"
+    },
+    {
+      "signal": "14AD-1",
+      "from": "16APR 3F",
+      "to": "12WCKR 3H",
+      "page": "T13"
+    },
+    {
+      "signal": "14AD",
+      "from": "12WCKR 3F",
+      "to": "GRP-A T10",
+      "page": "T13"
+    },
+    {
+      "signal": "N10-CASEA",
+      "from": "N10-CASEA T2",
+      "to": "16APR COIL-",
+      "page": "T13"
+    },
+    {
+      "signal": "N10-CASEA",
+      "from": "N10-CASEA T3",
+      "to": "14RGPR COIL-",
+      "page": "T13"
+    },
+    {
+      "signal": "N10-CASEA",
+      "from": "N10-CASEA T4",
+      "to": "14HDGPR COIL-",
+      "page": "T13"
+    },
+    {
+      "signal": "N10-CASEA",
+      "from": "N10-CASEA T1",
+      "to": "GRP-A T6",
+      "page": "T13"
+    },
+    {
+      "signal": "16AP",
+      "from": "16APR COIL+",
+      "to": "GRP-A T7",
+      "page": "T13"
+    },
+    {
+      "signal": "14RGP",
+      "from": "14RGPR COIL+",
+      "to": "GRP-A T12",
+      "page": "T13"
+    },
+    {
+      "signal": "14HDGP",
+      "from": "14HDGPR COIL+",
+      "to": "GRP-B T1",
+      "page": "T13"
+    },
+    {
+      "signal": "12WPP",
+      "from": "GRP-A T4",
+      "to": "12RWPPR 1H",
+      "page": "T13"
+    },
+    {
+      "signal": "12WPP-A",
+      "from": "12RWPPR 1H",
+      "to": "12NWPPR 1H",
+      "page": "T13"
+    },
+    {
+      "signal": "12WPP-1",
+      "from": "12RWPPR 1B",
+      "to": "12NWPPR COIL+",
+      "page": "T13"
+    },
+    {
+      "signal": "12WPP-A1",
+      "from": "12NWPPR 1B",
+      "to": "12RWPPR COIL-",
+      "page": "T13"
+    },
+    {
+      "signal": "N-12WPP-A",
+      "from": "12NWPPR COIL-",
+      "to": "12RWPPR COIL+",
+      "page": "T13"
+    },
+    {
+      "signal": "N-12WPP",
+      "from": "12RWPPR COIL+",
+      "to": "GRP-A T5",
+      "page": "T13"
+    },
+    {
+      "signal": "N10-TWR",
+      "from": "N10-TWR MAIN T8",
+      "to": "GRP-A T3",
+      "page": "T13"
+    },
+    {
+      "signal": "N10-TWR",
+      "from": "N10-TWR S4 T9",
+      "to": "12WCKR COIL-",
+      "page": "T13"
+    },
+    {
+      "signal": "12WCK",
+      "from": "12WCKR COIL+",
+      "to": "12NWPPR 2H",
+      "page": "T13"
+    },
+    {
+      "signal": "12WCK-1",
+      "from": "12NWPPR 2F",
+      "to": "LVR-12 T6",
+      "page": "T13"
+    },
+    {
+      "signal": "12WCK-A",
+      "from": "12NWPPR 2B",
+      "to": "LVR-12 T8",
+      "page": "T13"
+    },
+    {
+      "signal": "12WCK-2",
+      "from": "LVR-12 T5",
+      "to": "12RWPPR 2B",
+      "page": "T13"
+    },
+    {
+      "signal": "12WCK-A1",
+      "from": "LVR-12 T7",
+      "to": "12RWPPR 2F",
+      "page": "T13"
+    },
+    {
+      "signal": "B10-TWR",
+      "from": "B10-TWR S1 T5",
+      "to": "12RWPPR 2H",
+      "page": "T13"
+    },
+    {
+      "signal": "12WCK",
+      "from": "12WCKE +",
+      "to": "12WCKR 1F",
+      "page": "T13"
+    },
+    {
+      "signal": "N-12WCK",
+      "from": "N10-TWR MB",
+      "to": "12WCKE -",
+      "page": "T13"
+    },
+    {
+      "signal": "B10-TWR",
+      "from": "B10-TWR S4 T6",
+      "to": "12WCKR 1H",
+      "page": "T13"
+    },
+    {
+      "signal": "16ATK",
+      "from": "16ATKE +",
+      "to": "16APR 1B",
+      "page": "T13"
+    },
+    {
+      "signal": "N-16ATK",
+      "from": "N10-TWR MB",
+      "to": "16ATKE -",
+      "page": "T13"
+    },
+    {
+      "signal": "B10-TWR",
+      "from": "B10-TWR S3 T2",
+      "to": "16APR 1H",
+      "page": "T13"
+    },
+    {
+      "signal": "14GK",
+      "from": "14GKE +",
+      "to": "14HDGPR 1B",
+      "page": "T13"
+    },
+    {
+      "signal": "N-14GK",
+      "from": "N10-TWR MB",
+      "to": "14GKE -",
+      "page": "T13"
+    },
+    {
+      "signal": "B10-TWR",
+      "from": "B10-TWR RACK T?",
+      "to": "14HDGPR 1H",
+      "page": "T13"
+    },
+    {
+      "signal": "15D-1",
+      "from": "LVR-15 T4",
+      "to": "16APR 4H",
+      "page": "T14",
+      "notes": "H-NETWORK 15D-1"
+    },
+    {
+      "signal": "15D",
+      "from": "16APR 4F",
+      "to": "15DR COIL+",
+      "page": "T14"
+    },
+    {
+      "signal": "N10-TWR",
+      "from": "N10-TWR RACK T?",
+      "to": "15DR COIL-",
+      "page": "T14"
+    },
+    {
+      "signal": "15HD-2",
+      "from": "LVR-15 T1",
+      "to": "15DR 1H",
+      "page": "T14",
+      "notes": "H-NETWORK 15HD-2"
+    },
+    {
+      "signal": "N10-TWR",
+      "from": "N10-TWR RACK T?",
+      "to": "15DR 2H",
+      "page": "T14"
+    },
+    {
+      "signal": "**STRAP**",
+      "from": "15DR 1B",
+      "to": "15DR 2F",
+      "page": "T14"
+    },
+    {
+      "signal": "**STRAP**",
+      "from": "15DR 1F",
+      "to": "15DR 2B",
+      "page": "T14"
+    },
+    {
+      "signal": "15HD-1",
+      "from": "15DR 1F",
+      "to": "12WCKR 4F",
+      "page": "T14"
+    },
+    {
+      "signal": "N-15HD-1",
+      "from": "15DR 2F",
+      "to": "12WCKR 5F",
+      "page": "T14"
+    },
+    {
+      "signal": "**STRAP**",
+      "from": "12WCKR 4B",
+      "to": "12WCKR 5B",
+      "page": "T14"
+    },
+    {
+      "signal": "15HD",
+      "from": "12WCKR 4H",
+      "to": "GRP-B T2",
+      "page": "T14"
+    },
+    {
+      "signal": "N-15HD",
+      "from": "12WCKR 5H",
+      "to": "GRP-B T3",
+      "page": "T14"
+    },
+    {
+      "signal": "16AHD-2",
+      "from": "LVR-16 T4",
+      "to": "14-16COSR 3H",
+      "page": "T15",
+      "notes": "H-NETWORK 16AHD-2"
+    },
+    {
+      "signal": "16BHD-1",
+      "from": "LVR-16 T8",
+      "to": "14-16COSR 4H",
+      "page": "T15",
+      "notes": "H-NETWORK 16BHD-1"
+    },
+    {
+      "signal": "**STRAP**",
+      "from": "14-16COSR 3F",
+      "to": "14-16COSR 4F",
+      "page": "T15"
+    },
+    {
+      "signal": "16COSP-1",
+      "from": "14-16COSR 3F",
+      "to": "12WCKR 6H",
+      "page": "T15"
+    },
+    {
+      "signal": "16AHD-1",
+      "from": "14-16COSR 3B",
+      "to": "14AR 1H",
+      "page": "T15"
+    },
+    {
+      "signal": "16AHD",
+      "from": "14AR 1F",
+      "to": "23HDGPR 1H",
+      "page": "T15"
+    },
+    {
+      "signal": "16AD-1",
+      "from": "23HDGPR 1F",
+      "to": "12WCKR 7H",
+      "page": "T15"
+    },
+    {
+      "signal": "16AH-1",
+      "from": "23HDGPR 1H",
+      "to": "12WCKR 8H",
+      "page": "T15"
+    },
+    {
+      "signal": "16BHD",
+      "from": "14-16COSR 4B",
+      "to": "3HDGPR 1H",
+      "page": "T15"
+    },
+    {
+      "signal": "16BD-1",
+      "from": "3HDGPR 1F",
+      "to": "12WCKR 9H",
+      "page": "T15"
+    },
+    {
+      "signal": "16BH-1",
+      "from": "3HDGPR 1H",
+      "to": "12WCKR 10H",
+      "page": "T15"
+    },
+    {
+      "signal": "16COSP",
+      "from": "12WCKR 6F",
+      "to": "GRP-B T10",
+      "page": "T15"
+    },
+    {
+      "signal": "16AD",
+      "from": "12WCKR 7F",
+      "to": "GRP-B T7",
+      "page": "T15"
+    },
+    {
+      "signal": "16AH",
+      "from": "12WCKR 8F",
+      "to": "GRP-B T6",
+      "page": "T15"
+    },
+    {
+      "signal": "16BD",
+      "from": "12WCKR 9F",
+      "to": "GRP-B T9",
+      "page": "T15"
+    },
+    {
+      "signal": "16BH",
+      "from": "12WCKR 10F",
+      "to": "GRP-B T8",
+      "page": "T15"
+    },
+    {
+      "signal": "N10-CASEA",
+      "from": "N10-CASEA T5",
+      "to": "15RGPR COIL-",
+      "page": "T15"
+    },
+    {
+      "signal": "N10-CASEA",
+      "from": "N10-CASEA T7",
+      "to": "16RGPR COIL-",
+      "page": "T15"
+    },
+    {
+      "signal": "N10-CASEA",
+      "from": "N10-CASEA T6",
+      "to": "15HDGPR COIL-",
+      "page": "T15"
+    },
+    {
+      "signal": "15RGP",
+      "from": "GRP-B T4",
+      "to": "15RGPR COIL+",
+      "page": "T15"
+    },
+    {
+      "signal": "16RGP",
+      "from": "GRP-B T11",
+      "to": "16RGPR COIL+",
+      "page": "T15"
+    },
+    {
+      "signal": "15HDGP",
+      "from": "GRP-B T5",
+      "to": "15HDGPR COIL+",
+      "page": "T15"
+    },
+    {
+      "signal": "23HDG",
+      "from": "23HDGPR COIL+",
+      "to": "ICJCT T?",
+      "page": "T15"
+    },
+    {
+      "signal": "N-23HDG",
+      "from": "23HDGPR COIL-",
+      "to": "ICJCT T?",
+      "page": "T15"
+    },
+    {
+      "signal": "15GK",
+      "from": "15GKE +",
+      "to": "15HDGPR 2F",
+      "page": "T15"
+    },
+    {
+      "signal": "N-15GK",
+      "from": "N10-TWR MB",
+      "to": "15GKE -",
+      "page": "T15"
+    },
+    {
+      "signal": "B10-TWR",
+      "from": "B10-TWR RACK T?",
+      "to": "15HDGPR 2H",
+      "page": "T15"
+    },
+    {
+      "signal": "16GK",
+      "from": "16GKE +",
+      "to": "16RGPR 4B",
+      "page": "T15"
+    },
+    {
+      "signal": "N-16GK",
+      "from": "N10-TWR MB",
+      "to": "16GKE -",
+      "page": "T15"
+    },
+    {
+      "signal": "B10-TWR",
+      "from": "B10-TWR RACK T?",
+      "to": "16RGPR 4H",
+      "page": "T15"
+    },
+    {
+      "signal": "H-1-6N-B10",
+      "from": "B10-TWR LVR T2",
+      "to": "LVR-1 T1",
+      "page": "T16"
+    },
+    {
+      "signal": "H-1-6R-B10",
+      "from": "B10-TWR LVR T3",
+      "to": "LVR-1 T5",
+      "page": "T16"
+    },
+    {
+      "signal": "**STRAP**",
+      "from": "LVR-1 T2",
+      "to": "LVR-1 T3",
+      "page": "T16"
+    },
+    {
+      "signal": "**STRAP**",
+      "from": "LVR-1 T6",
+      "to": "LVR-1 T7",
+      "page": "T16"
+    },
+    {
+      "signal": "H-1-6N",
+      "from": "LVR-1 T3",
+      "to": "6NWPPR 3F",
+      "page": "T16"
+    },
+    {
+      "signal": "H-6A",
+      "from": "6NWPPR 3H",
+      "to": "6RWPPR 3H",
+      "page": "T16"
+    },
+    {
+      "signal": "H-1-6R",
+      "from": "LVR-1 T7",
+      "to": "6RWPPR 3F",
+      "page": "T16"
+    },
+    {
+      "signal": "H-6A-A",
+      "from": "6NWPPR 3B",
+      "to": "6RWPPR 3B",
+      "page": "T16"
+    },
+    {
+      "signal": "H-6A-6B",
+      "from": "6RWPPR 3B",
+      "to": "6TPSR 4F",
+      "page": "T16"
+    },
+    {
+      "signal": "H-6A-6B-1",
+      "from": "6TPSR 4H",
+      "to": "6RWPPR 4B",
+      "page": "T16"
+    },
+    {
+      "signal": "H-6B-A",
+      "from": "6NWPPR 4B",
+      "to": "6RWPPR 4B",
+      "page": "T16"
+    },
+    {
+      "signal": "H-6R-9",
+      "from": "6RWPPR 4F",
+      "to": "LVR-3 T3",
+      "page": "T16"
+    },
+    {
+      "signal": "H-3-6R",
+      "from": "LVR-3 T1",
+      "to": "LVR-3 T3",
+      "page": "T16"
+    },
+    {
+      "signal": "H-6B",
+      "from": "6NWPPR 4H",
+      "to": "6RWPPR 4H",
+      "page": "T16"
+    },
+    {
+      "signal": "H-2-6N",
+      "from": "LVR-2 T3",
+      "to": "6NWPPR 4F",
+      "page": "T16"
+    },
+    {
+      "signal": "**STRAP**",
+      "from": "LVR-2 T3",
+      "to": "LVR-2 T2",
+      "page": "T16"
+    },
+    {
+      "signal": "H-2-6N-B10",
+      "from": "B10-TWR LVR T5",
+      "to": "LVR-2 T1",
+      "page": "T16"
+    },
+    {
+      "signal": "H-6R-9-1",
+      "from": "LVR-3 T4",
+      "to": "9-10TPSR 4H",
+      "page": "T16"
+    },
+    {
+      "signal": "**STRAP**",
+      "from": "LVR-4 T2",
+      "to": "LVR-4 T3",
+      "page": "T16"
+    },
+    {
+      "signal": "H-4-9R-B10",
+      "from": "B10-TWR LVR T8",
+      "to": "LVR-4 T1",
+      "page": "T16"
+    },
+    {
+      "signal": "H-4-9R",
+      "from": "LVR-4 T3",
+      "to": "9RWPR 3F",
+      "page": "T16"
+    },
+    {
+      "signal": "H-9",
+      "from": "9RWPR 3H",
+      "to": "9NWPR 3H",
+      "page": "T16"
+    },
+    {
+      "signal": "H-6R-9-2",
+      "from": "9-10TPSR 4F",
+      "to": "9RWPR 3B",
+      "page": "T16"
+    },
+    {
+      "signal": "H-9-A",
+      "from": "9RWPR 3B",
+      "to": "9NWPR 3B",
+      "page": "T16"
+    },
+    {
+      "signal": "H-9N-10",
+      "from": "9NWPR 3F",
+      "to": "10RWPR 3B",
+      "page": "T16"
+    },
+    {
+      "signal": "H-10",
+      "from": "10RWPR 3H",
+      "to": "10NWPR 3H",
+      "page": "T16"
+    },
+    {
+      "signal": "H-10-A",
+      "from": "10RWPR 3B",
+      "to": "10NWPR 3B",
+      "page": "T16"
+    },
+    {
+      "signal": "H-5-10R",
+      "from": "10RWPR 3F",
+      "to": "LVR-5 T3",
+      "page": "T16"
+    },
+    {
+      "signal": "**STRAP**",
+      "from": "LVR-5 T3",
+      "to": "LVR-5 T2",
+      "page": "T16"
+    },
+    {
+      "signal": "H-5-10R-B10",
+      "from": "B10-TWR LVR T9",
+      "to": "LVR-5 T1",
+      "page": "T16"
+    },
+    {
+      "signal": "H-10N-12R",
+      "from": "10NWPR 3F",
+      "to": "LVR-15 T8",
+      "page": "T16"
+    },
+    {
+      "signal": "H-10N-12R-1",
+      "from": "LVR-15 T7",
+      "to": "LVR-15 T3",
+      "page": "T16"
+    },
+    {
+      "signal": "**STRAP**",
+      "from": "LVR-15 T2",
+      "to": "LVR-15 T3",
+      "page": "T16"
+    },
+    {
+      "signal": "H-12N-14-B10",
+      "from": "B10-TWR LVR T12",
+      "to": "LVR-14 T1",
+      "page": "T16"
+    },
+    {
+      "signal": "**STRAP**",
+      "from": "LVR-14 T2",
+      "to": "LVR-14 T3",
+      "page": "T16"
+    },
+    {
+      "signal": "H-12N-14",
+      "from": "LVR-14 T3",
+      "to": "12NWPPR 3F",
+      "page": "T16"
+    },
+    {
+      "signal": "H-12A",
+      "from": "12NWPPR 3H",
+      "to": "12RWPPR 3H",
+      "page": "T16"
+    },
+    {
+      "signal": "H-12R-15",
+      "from": "LVR-15 T3",
+      "to": "12RWPPR 3F",
+      "page": "T16"
+    },
+    {
+      "signal": "H-12A-A",
+      "from": "12NWPPR 3B",
+      "to": "12RWPPR 3B",
+      "page": "T16"
+    },
+    {
+      "signal": "H-12A-12B",
+      "from": "12RWPPR 3B",
+      "to": "12TPSR 4F",
+      "page": "T16"
+    },
+    {
+      "signal": "H-12A-12B-1",
+      "from": "12TPSR 4H",
+      "to": "12RWPPR 4B",
+      "page": "T16"
+    },
+    {
+      "signal": "H-12B",
+      "from": "12NWPPR 4B",
+      "to": "12RWPPR 4B",
+      "page": "T16"
+    },
+    {
+      "signal": "H-12R-16",
+      "from": "LVR-16 T7",
+      "to": "12RWPPR 4F",
+      "page": "T16"
+    },
+    {
+      "signal": "H-12B-B",
+      "from": "12NWPPR 4H",
+      "to": "12RWPPR 4H",
+      "page": "T16"
+    },
+    {
+      "signal": "H-12N-16",
+      "from": "LVR-16 T3",
+      "to": "12NWPPR 4F",
+      "page": "T16"
+    },
+    {
+      "signal": "**STRAP**",
+      "from": "LVR-16 T3",
+      "to": "LVR-16 T2",
+      "page": "T16"
+    },
+    {
+      "signal": "**STRAP**",
+      "from": "LVR-16 T7",
+      "to": "LVR-16 T6",
+      "page": "T16"
+    },
+    {
+      "signal": "H-12N-16-B10",
+      "from": "B10-TWR LVR T16",
+      "to": "LVR-16 T1",
+      "page": "T16"
+    },
+    {
+      "signal": "H-12R-16-B10",
+      "from": "B10-TWR LVR T17",
+      "to": "LVR-16 T5",
+      "page": "T16"
+    },
+    {
+      "signal": "B10-TWR",
+      "from": "CRAGG +",
+      "to": "B10-TWR MAIN T1",
+      "page": "T18"
+    },
+    {
+      "signal": "N10-TWR",
+      "from": "CRAGG -",
+      "to": "N10-TWR MAIN T1",
+      "page": "T18"
+    },
+    {
+      "signal": "B10-TWR",
+      "from": "B10-TWR MAIN T2",
+      "to": "B10-TWR S1 T1",
+      "page": "T18"
+    },
+    {
+      "signal": "B10-TWR",
+      "from": "B10-TWR MAIN T3",
+      "to": "B10-TWR S2 T1",
+      "page": "T18"
+    },
+    {
+      "signal": "B10-TWR",
+      "from": "B10-TWR MAIN T4",
+      "to": "B10-TWR S3 T1",
+      "page": "T18"
+    },
+    {
+      "signal": "B10-TWR",
+      "from": "B10-TWR MAIN T5",
+      "to": "B10-TWR S4 T1",
+      "page": "T18"
+    },
+    {
+      "signal": "B10-TWR",
+      "from": "B10-TWR MAIN T6",
+      "to": "B10-TWR RACK T1",
+      "page": "T18"
+    },
+    {
+      "signal": "B10-TWR",
+      "from": "B10-TWR MAIN T7",
+      "to": "B10-TWR LVR T1",
+      "page": "T18"
+    },
+    {
+      "signal": "N10-TWR",
+      "from": "N10-TWR MAIN T2",
+      "to": "N10-TWR S1 T1",
+      "page": "T18"
+    },
+    {
+      "signal": "N10-TWR",
+      "from": "N10-TWR MAIN T3",
+      "to": "N10-TWR S2 T1",
+      "page": "T18"
+    },
+    {
+      "signal": "N10-TWR",
+      "from": "N10-TWR MAIN T4",
+      "to": "N10-TWR S3 T1",
+      "page": "T18"
+    },
+    {
+      "signal": "N10-TWR",
+      "from": "N10-TWR MAIN T5",
+      "to": "N10-TWR S4 T1",
+      "page": "T18"
+    },
+    {
+      "signal": "N10-TWR",
+      "from": "N10-TWR MAIN T6",
+      "to": "N10-TWR RACK T1",
+      "page": "T18"
+    },
+    {
+      "signal": "N10-TWR",
+      "from": "N10-TWR MAIN T7",
+      "to": "N10-TWR LVR T1",
+      "page": "T18"
+    },
+    {
+      "signal": "N10-TWR",
+      "from": "N10-TWR LVR T4",
+      "to": "N10-TWR MB",
+      "page": "T18"
+    }
+  ],
+  "caseAWires": [
+    {
+      "signal": "14AD",
+      "from": "T10",
+      "to": "14ADR COIL+",
+      "page": "A1"
+    },
+    {
+      "signal": "N10-TWR",
+      "from": "N10-TWR",
+      "to": "14ADR COIL-",
+      "page": "A1"
+    },
+    {
+      "signal": "14BH",
+      "from": "T11",
+      "to": "14BHR COIL+",
+      "page": "A1"
+    },
+    {
+      "signal": "N10-TWR",
+      "from": "N10-TWR",
+      "to": "14BHR COIL-",
+      "page": "A1"
+    },
+    {
+      "signal": "16AP",
+      "from": "T7",
+      "to": "16AR 1F",
+      "page": "A1"
+    },
+    {
+      "signal": "B10-CASEA",
+      "from": "16AR 1H",
+      "to": "B10-CASEA",
+      "page": "A1"
+    },
+    {
+      "signal": "B10-CASEA",
+      "from": "T37",
+      "to": "B10-CASEA",
+      "page": "A1"
+    },
+    {
+      "signal": "14HDGP",
+      "from": "T38",
+      "to": "T17",
+      "page": "A1"
+    },
+    {
+      "signal": "14RGP",
+      "from": "T39",
+      "to": "T12",
+      "page": "A1"
+    },
+    {
+      "signal": "B10-CASEA",
+      "from": "14ADR 1F",
+      "to": "B10-CASEA",
+      "page": "A1"
+    },
+    {
+      "signal": "14A-A+",
+      "from": "14ADR 1H",
+      "to": "T33",
+      "page": "A1"
+    },
+    {
+      "signal": "**STRAP**",
+      "from": "14ADR 1B",
+      "to": "14ADR 2B",
+      "page": "A1"
+    },
+    {
+      "signal": "N10-CASEA",
+      "from": "14ADR 2F",
+      "to": "N10-CASEA",
+      "page": "A1"
+    },
+    {
+      "signal": "14A-A-",
+      "from": "14ADR 2H",
+      "to": "T34",
+      "page": "A1"
+    },
+    {
+      "signal": "14A-L+",
+      "from": "BX10",
+      "to": "T29",
+      "page": "A1"
+    },
+    {
+      "signal": "14A-L-",
+      "from": "NX10",
+      "to": "T31",
+      "page": "A1"
+    },
+    {
+      "signal": "B10-CASEA",
+      "from": "14BHR 1F",
+      "to": "B10-CASEA",
+      "page": "A1"
+    },
+    {
+      "signal": "14B-A+",
+      "from": "14BHR 1H",
+      "to": "T36",
+      "page": "A1"
+    },
+    {
+      "signal": "**STRAP**",
+      "from": "14BHR 1B",
+      "to": "14BHR 2B",
+      "page": "A1"
+    },
+    {
+      "signal": "N10-CASEA",
+      "from": "14BHR 2F",
+      "to": "N10-CASEA",
+      "page": "A1"
+    },
+    {
+      "signal": "14B-A-",
+      "from": "14BHR 2H",
+      "to": "T35",
+      "page": "A1"
+    },
+    {
+      "signal": "14B-L+",
+      "from": "BX10",
+      "to": "T30",
+      "page": "A1"
+    },
+    {
+      "signal": "14B-L-",
+      "from": "NX10",
+      "to": "T32",
+      "page": "A1"
+    },
+    {
+      "signal": "12RLP-1",
+      "from": "T2",
+      "to": "12NLPR 1H",
+      "page": "A2"
+    },
+    {
+      "signal": "12RLP",
+      "from": "12NLPR 1B",
+      "to": "12RLPR COIL+",
+      "page": "A2"
+    },
+    {
+      "signal": "N10-TWR",
+      "from": "N10-TWR",
+      "to": "12RLPR COIL-",
+      "page": "A2"
+    },
+    {
+      "signal": "12NLP-1",
+      "from": "T1",
+      "to": "12RLPR 1H",
+      "page": "A2"
+    },
+    {
+      "signal": "12NLP",
+      "from": "12RLPR 1B",
+      "to": "12NLPR COIL+",
+      "page": "A2"
+    },
+    {
+      "signal": "N10-TWR",
+      "from": "N10-TWR",
+      "to": "12NLPR COIL-",
+      "page": "A2"
+    },
+    {
+      "signal": "N10-TWR",
+      "from": "N10-TWR",
+      "to": "T3",
+      "page": "A2"
+    },
+    {
+      "signal": "12WPP",
+      "from": "T4",
+      "to": "12NWPR COIL+",
+      "page": "A2"
+    },
+    {
+      "signal": "12NWP",
+      "from": "12NWPR COIL-",
+      "to": "12RWPR 1B",
+      "page": "A2"
+    },
+    {
+      "signal": "12WPP-A",
+      "from": "12NWPR COIL+",
+      "to": "12RWPR COIL-",
+      "page": "A2"
+    },
+    {
+      "signal": "12RWP",
+      "from": "12RWPR COIL+",
+      "to": "12NWPR 1B",
+      "page": "A2"
+    },
+    {
+      "signal": "12SCCWP-A",
+      "from": "12RWPR 1H",
+      "to": "12NWPR 1H",
+      "page": "A2"
+    },
+    {
+      "signal": "12SCCWP",
+      "from": "12NWPR 1H",
+      "to": "T67",
+      "page": "A2"
+    },
+    {
+      "signal": "N-12SCCWP",
+      "from": "T5",
+      "to": "T68",
+      "page": "A2"
+    },
+    {
+      "signal": "12SCC-NIO",
+      "from": "N10-CASEA",
+      "to": "T66",
+      "page": "A2"
+    },
+    {
+      "signal": "B10-CASEA",
+      "from": "B10-CASEA",
+      "to": "SCC FUSE",
+      "page": "A2"
+    },
+    {
+      "signal": "12SCC-BIO",
+      "from": "T65",
+      "to": "SCC FUSE",
+      "page": "A2"
+    },
+    {
+      "signal": "B10-CASEA",
+      "from": "B10-CASEA",
+      "to": "12NLPR 2H",
+      "page": "A2"
+    },
+    {
+      "signal": "12WC-3",
+      "from": "12NLPR 2F",
+      "to": "12NWPR 2F",
+      "page": "A2"
+    },
+    {
+      "signal": "12WC-2A",
+      "from": "12NLPR 2B",
+      "to": "12NWPR 2B",
+      "page": "A2"
+    },
+    {
+      "signal": "12WC-2",
+      "from": "12NWPR 2H",
+      "to": "12RLPR 2H",
+      "page": "A2"
+    },
+    {
+      "signal": "12WC-2A",
+      "from": "12RLPR 2F",
+      "to": "12RWPR 2F",
+      "page": "A2"
+    },
+    {
+      "signal": "12WC-1",
+      "from": "12RLPR 2B",
+      "to": "12RWPR 2B",
+      "page": "A2"
+    },
+    {
+      "signal": "12WC",
+      "from": "12RWPR 2H",
+      "to": "12WCR COIL+",
+      "page": "A2"
+    },
+    {
+      "signal": "N10-CASEA",
+      "from": "N10-CASEA",
+      "to": "12WCR COIL-",
+      "page": "A2"
+    },
+    {
+      "signal": "B10-CASEA",
+      "from": "B10-CASEA",
+      "to": "12WCR 1H",
+      "page": "A2"
+    },
+    {
+      "signal": "12WKEZ",
+      "from": "12WKEZ",
+      "to": "12WCR 1B",
+      "page": "A2"
+    },
+    {
+      "signal": "12WKE",
+      "from": "12WKE",
+      "to": "12WCR 1F",
+      "page": "A2"
+    },
+    {
+      "signal": "N10-CASEA",
+      "from": "N10-CASEA",
+      "to": "S.T.I. N10",
+      "page": "A2"
+    },
+    {
+      "signal": "15HD",
+      "from": "T18",
+      "to": "15HDR COIL+",
+      "page": "A3"
+    },
+    {
+      "signal": "N-15HD",
+      "from": "T19",
+      "to": "15HDR COIL-",
+      "page": "A3"
+    },
+    {
+      "signal": "15HDGPR",
+      "from": "T21",
+      "to": "15HDPR 1F",
+      "page": "A3"
+    },
+    {
+      "signal": "15RGPR",
+      "from": "T20",
+      "to": "15HDPR 1B",
+      "page": "A3"
+    },
+    {
+      "signal": "B10-CASEA",
+      "from": "B10-CASEA",
+      "to": "15HDPR 1H",
+      "page": "A3"
+    },
+    {
+      "signal": "12TP-1",
+      "from": "T9",
+      "to": "12TR 1F",
+      "page": "A3"
+    },
+    {
+      "signal": "B10-CASEA",
+      "from": "B10-CASEA",
+      "to": "12TR 1H",
+      "page": "A3"
+    },
+    {
+      "signal": "9-10TP-1A",
+      "from": "T8",
+      "to": "9-10TR 1F",
+      "page": "A3"
+    },
+    {
+      "signal": "B10-CASEA",
+      "from": "B10-CASEA",
+      "to": "9-10TR 1H",
+      "page": "A3"
+    },
+    {
+      "signal": "B10-CASEA",
+      "from": "B10-CASEA",
+      "to": "15HDR 1H",
+      "page": "A3"
+    },
+    {
+      "signal": "15HDPP",
+      "from": "15HDR 1F",
+      "to": "15HDPR COIL+",
+      "page": "A3"
+    },
+    {
+      "signal": "15ARG",
+      "from": "BX10",
+      "to": "T43",
+      "page": "A3"
+    },
+    {
+      "signal": "NX10",
+      "from": "NX10",
+      "to": "LTG RESISTOR",
+      "page": "A3"
+    },
+    {
+      "signal": "**STRAP**",
+      "from": "LTG RESISTOR",
+      "to": "LTG RESISTOR",
+      "page": "A3"
+    },
+    {
+      "signal": "15A-NX10",
+      "from": "LTG RESISTOR",
+      "to": "T44",
+      "page": "A3"
+    },
+    {
+      "signal": "15B-NX10",
+      "from": "LTG RESISTOR",
+      "to": "T48",
+      "page": "A3"
+    },
+    {
+      "signal": "BX10",
+      "from": "BX10",
+      "to": "15HDPR 3H",
+      "page": "A3"
+    },
+    {
+      "from": "15HDPR 3F",
+      "to": "15HDR 1P",
+      "page": "A3"
+    },
+    {
+      "signal": "15BRG",
+      "from": "15HDPR 3B",
+      "to": "T45",
+      "page": "A3"
+    },
+    {
+      "signal": "**STRAP**",
+      "from": "15HDPR 3H",
+      "to": "15HDPR 4H",
+      "page": "A3"
+    },
+    {
+      "signal": "**STRAP**",
+      "from": "15HDPR 3F",
+      "to": "15HDPR 4F",
+      "page": "A3"
+    },
+    {
+      "signal": "**STRAP**",
+      "from": "15HDPR 3B",
+      "to": "15HDPR 4B",
+      "page": "A3"
+    },
+    {
+      "signal": "15BHG",
+      "from": "15HDR 1-",
+      "to": "T46",
+      "page": "A3"
+    },
+    {
+      "signal": "15BDG",
+      "from": "15HDR 1+",
+      "to": "T47",
+      "page": "A3"
+    },
+    {
+      "signal": "**STRAP**",
+      "from": "15HDR 1P",
+      "to": "15HDR 2P",
+      "page": "A3"
+    },
+    {
+      "signal": "**STRAP**",
+      "from": "15HDR 1+",
+      "to": "15HDR 2+",
+      "page": "A3"
+    },
+    {
+      "signal": "**STRAP**",
+      "from": "15HDR 1-",
+      "to": "15HDR 2-",
+      "page": "A3"
+    },
+    {
+      "signal": "NX6",
+      "from": "NX6",
+      "to": "9-10TR TEST TERM-",
+      "page": "A3"
+    },
+    {
+      "signal": "9-10TNX",
+      "from": "9-10TR TEST TERM-",
+      "to": "T?",
+      "page": "A3"
+    },
+    {
+      "signal": "**STRAP?*",
+      "from": "9-10TR TEST TERM+",
+      "to": "9-10TR COIL+",
+      "page": "A3"
+    },
+    {
+      "from": "9-10TR COIL-",
+      "to": "9-10TR TRK RESISTOR",
+      "page": "A3"
+    },
+    {
+      "signal": "**STRAP**",
+      "from": "9-10TR TRK RESISTOR",
+      "to": "9-10TR TRK RESISTOR",
+      "page": "A3"
+    },
+    {
+      "signal": "9-10TBX",
+      "from": "9-10TR TRK RESISTOR",
+      "to": "T?",
+      "page": "A3"
+    },
+    {
+      "signal": "BX6",
+      "from": "BX6",
+      "to": "9-10TR TRK RESISTOR",
+      "page": "A3"
+    },
+    {
+      "signal": "NX6",
+      "from": "NX6",
+      "to": "12TR TEST TERM-",
+      "page": "A3"
+    },
+    {
+      "signal": "12TNX",
+      "from": "12TR TEST TERM-",
+      "to": "T?",
+      "page": "A3"
+    },
+    {
+      "signal": "**STRAP?*",
+      "from": "12TR TEST TERM+",
+      "to": "12TR COIL+",
+      "page": "A3"
+    },
+    {
+      "from": "12TR COIL-",
+      "to": "12TR TRK RESISTOR",
+      "page": "A3"
+    },
+    {
+      "signal": "**STRAP**",
+      "from": "12TR TRK RESISTOR",
+      "to": "12TR TRK RESISTOR",
+      "page": "A3"
+    },
+    {
+      "signal": "12TBX",
+      "from": "12TR TRK RESISTOR",
+      "to": "T?",
+      "page": "A3"
+    },
+    {
+      "signal": "BX6",
+      "from": "BX6",
+      "to": "12TR TRK RESISTOR",
+      "page": "A3"
+    },
+    {
+      "signal": "16AD",
+      "from": "T23",
+      "to": "16ADR COIL+",
+      "page": "A4"
+    },
+    {
+      "signal": "16AH",
+      "from": "T22",
+      "to": "16AHR COIL+",
+      "page": "A4"
+    },
+    {
+      "signal": "16BD",
+      "from": "T25",
+      "to": "16BDR COIL+",
+      "page": "A4"
+    },
+    {
+      "signal": "16BH",
+      "from": "T24",
+      "to": "16BHR COIL+",
+      "page": "A4"
+    },
+    {
+      "signal": "16COSP",
+      "from": "T26",
+      "to": "16COSPR COIL+",
+      "page": "A4"
+    },
+    {
+      "signal": "N10-TWR",
+      "from": "N10-TWR",
+      "to": "16ADR COIL-",
+      "page": "A4"
+    },
+    {
+      "signal": "N10-TWR",
+      "from": "N10-TWR",
+      "to": "16AHR COIL-",
+      "page": "A4"
+    },
+    {
+      "signal": "N10-TWR",
+      "from": "N10-TWR",
+      "to": "16BDR COIL-",
+      "page": "A4"
+    },
+    {
+      "signal": "N10-TWR",
+      "from": "N10-TWR",
+      "to": "16BHR COIL-",
+      "page": "A4"
+    },
+    {
+      "signal": "N10-TWR",
+      "from": "N10-TWR",
+      "to": "16COSPR COIL-",
+      "page": "A4"
+    },
+    {
+      "signal": "16RGP",
+      "from": "T27",
+      "to": "16COSPR 2H",
+      "page": "A4"
+    },
+    {
+      "signal": "16RGP-1",
+      "from": "16COSPR 2F",
+      "to": "16BRGPR 1H",
+      "page": "A4"
+    },
+    {
+      "signal": "16RGP-2",
+      "from": "16BRGPR 1F",
+      "to": "16ARGPR 1H",
+      "page": "A4"
+    },
+    {
+      "signal": "B10-CASEA",
+      "from": "16ARGPR 1F",
+      "to": "B10-CASEA",
+      "page": "A4"
+    },
+    {
+      "signal": "B10-CASEA",
+      "from": "B10-CASEA",
+      "to": "16ADR 1H",
+      "page": "A4"
+    },
+    {
+      "signal": "B10-CASEA",
+      "from": "B10-CASEA",
+      "to": "16AHR 1H",
+      "page": "A4"
+    },
+    {
+      "signal": "B10-CASEA",
+      "from": "B10-CASEA",
+      "to": "16BDR 1H",
+      "page": "A4"
+    },
+    {
+      "signal": "B10-CASEA",
+      "from": "B10-CASEA",
+      "to": "16BHR 1H",
+      "page": "A4"
+    },
+    {
+      "signal": "16AD 90",
+      "from": "16ADR 1F",
+      "to": "T55",
+      "page": "A4"
+    },
+    {
+      "signal": "16AH 45",
+      "from": "16AHR 1F",
+      "to": "T56",
+      "page": "A4"
+    },
+    {
+      "signal": "16BD 90",
+      "from": "16BDR 1F",
+      "to": "T58",
+      "page": "A4"
+    },
+    {
+      "signal": "16BH 45",
+      "from": "16BHR 1F",
+      "to": "T59",
+      "page": "A4"
+    },
+    {
+      "signal": "BX10",
+      "from": "BX10",
+      "to": "LTG RESISTOR",
+      "page": "A4"
+    },
+    {
+      "signal": "BX10",
+      "from": "BX10",
+      "to": "LTG RESISTOR",
+      "page": "A4"
+    },
+    {
+      "signal": "BX10",
+      "from": "BX10",
+      "to": "LTG RESISTOR",
+      "page": "A4"
+    },
+    {
+      "signal": "16A BX10",
+      "from": "LTG RESISTOR",
+      "to": "T49",
+      "page": "A4"
+    },
+    {
+      "signal": "16B BX10",
+      "from": "LTG RESISTOR",
+      "to": "T50",
+      "page": "A4"
+    },
+    {
+      "signal": "16C BX10",
+      "from": "LTG RESISTOR",
+      "to": "16COSPR 1H",
+      "page": "A4"
+    },
+    {
+      "signal": "16CRG",
+      "from": "16COSPR 1F",
+      "to": "T51",
+      "page": "A4"
+    },
+    {
+      "signal": "NX10",
+      "from": "NX10",
+      "to": "T53 STRAP",
+      "page": "A4"
+    },
+    {
+      "signal": "N10-CASEA",
+      "from": "N10-CASEA",
+      "to": "T60",
+      "page": "A4"
+    },
+    {
+      "signal": "N10-CASEA",
+      "from": "N10-CASEA",
+      "to": "T57",
+      "page": "A4"
+    },
+    {
+      "signal": "B10-CASEA",
+      "from": "B10-CASEA",
+      "to": "T61",
+      "page": "A4"
+    },
+    {
+      "signal": "N10-TWR",
+      "from": "N10-TWR",
+      "to": "16ARGPR COIL-",
+      "page": "A4"
+    },
+    {
+      "signal": "N10-TWR",
+      "from": "N10-TWR",
+      "to": "16BRGPR COIL-",
+      "page": "A4"
+    },
+    {
+      "signal": "N10-TWR",
+      "from": "N10-TWR",
+      "to": "16HDGPR COIL-",
+      "page": "A4"
+    },
+    {
+      "signal": "16A P0",
+      "from": "16ARGPR COIL+",
+      "to": "T62",
+      "page": "A4"
+    },
+    {
+      "signal": "16B P0",
+      "from": "16BRGPR COIL+",
+      "to": "T63",
+      "page": "A4"
+    },
+    {
+      "signal": "16A/16B P4590",
+      "from": "16HDGPR COIL+",
+      "to": "T64",
+      "page": "A4"
+    },
+    {
+      "signal": "16A",
+      "from": "T13",
+      "to": "16AR COIL+",
+      "page": "A4"
+    },
+    {
+      "signal": "N16-A",
+      "from": "T14",
+      "to": "16AR COIL-",
+      "page": "A4"
+    }
+  ],
+  "caseBWires": [
+    {
+      "signal": "2D",
+      "from": "T3",
+      "to": "2DR COIL+",
+      "page": "B1"
+    },
+    {
+      "signal": "2H",
+      "from": "T4",
+      "to": "2HR COIL+",
+      "page": "B1"
+    },
+    {
+      "signal": "2COSP",
+      "from": "T2",
+      "to": "2COSPR COIL+",
+      "page": "B1"
+    },
+    {
+      "signal": "N-2D",
+      "from": "N10-TWR T?",
+      "to": "2DR COIL-",
+      "page": "B1"
+    },
+    {
+      "signal": "N-2H",
+      "from": "N10-TWR T?",
+      "to": "2HR COIL-",
+      "page": "B1"
+    },
+    {
+      "signal": "N-2COSP",
+      "from": "N10-TWR T?",
+      "to": "2COSPR COIL-",
+      "page": "B1"
+    },
+    {
+      "signal": "2RGP",
+      "from": "T9",
+      "to": "2DR 1H",
+      "page": "B1"
+    },
+    {
+      "signal": "2RGP-1",
+      "from": "2DR 1F",
+      "to": "2HR 1H",
+      "page": "B1"
+    },
+    {
+      "signal": "2RGP-2",
+      "from": "2HR 1F",
+      "to": "2COSPR 1H",
+      "page": "B1"
+    },
+    {
+      "signal": "B10-TWR",
+      "from": "B10-TWR T?",
+      "to": "2COSPR 1F",
+      "page": "B1"
+    },
+    {
+      "signal": "3D",
+      "from": "T6",
+      "to": "3DR COIL+",
+      "page": "B1"
+    },
+    {
+      "signal": "3H",
+      "from": "T7",
+      "to": "3HR COIL+",
+      "page": "B1"
+    },
+    {
+      "signal": "3COSP",
+      "from": "T5",
+      "to": "3COSPR COIL+",
+      "page": "B1"
+    },
+    {
+      "signal": "N-3D",
+      "from": "N10-TWR T?",
+      "to": "3DR COIL-",
+      "page": "B1"
+    },
+    {
+      "signal": "N-3H",
+      "from": "N10-TWR T?",
+      "to": "3HR COIL-",
+      "page": "B1"
+    },
+    {
+      "signal": "N-3COSP",
+      "from": "N10-TWR T?",
+      "to": "3COSPR COIL-",
+      "page": "B1"
+    },
+    {
+      "signal": "3HDP",
+      "from": "T10",
+      "to": "3COSPR 1F",
+      "page": "B1"
+    },
+    {
+      "signal": "B10-TWR",
+      "from": "B10-TWR T?",
+      "to": "3COSPR 1H",
+      "page": "B1"
+    },
+    {
+      "signal": "B10-TWR",
+      "from": "3COSPR 1H",
+      "to": "3HR 1H",
+      "page": "B1"
+    },
+    {
+      "signal": "B10-TWR",
+      "from": "3HR 1H",
+      "to": "3DR 1H",
+      "page": "B1"
+    },
+    {
+      "from": "3COSPR 1F",
+      "to": "3HR 1F",
+      "page": "B1"
+    },
+    {
+      "from": "3HR 1F",
+      "to": "3DR 1F",
+      "page": "B1"
+    },
+    {
+      "signal": "3RGP",
+      "from": "T11",
+      "to": "3DR 2F",
+      "page": "B1"
+    },
+    {
+      "from": "3DR 2H",
+      "to": "3HR 2F",
+      "page": "B1"
+    },
+    {
+      "from": "3HR 2H",
+      "to": "3COSPR 1B",
+      "page": "B1"
+    },
+    {
+      "signal": "BX10",
+      "from": "BX10 T?",
+      "to": "2DR 3H",
+      "page": "B1"
+    },
+    {
+      "signal": "2ADGE",
+      "from": "SIG2 T?",
+      "to": "2DR 3F",
+      "page": "B1"
+    },
+    {
+      "from": "2DR 3B",
+      "to": "2HR 3H",
+      "page": "B1"
+    },
+    {
+      "signal": "2AHGE",
+      "from": "SIG2 T?",
+      "to": "2HR 3F",
+      "page": "B1"
+    },
+    {
+      "signal": "2ARGE",
+      "from": "SIG2 T?",
+      "to": "2HR 3B",
+      "page": "B1"
+    },
+    {
+      "signal": "**STRAP**",
+      "from": "2DR 3H",
+      "to": "2DR 4H",
+      "page": "B1"
+    },
+    {
+      "signal": "**STRAP**",
+      "from": "2DR 3F",
+      "to": "2DR 4F",
+      "page": "B1"
+    },
+    {
+      "signal": "**STRAP**",
+      "from": "2DR 3B",
+      "to": "2DR 4B",
+      "page": "B1"
+    },
+    {
+      "signal": "**STRAP**",
+      "from": "2HR 3H",
+      "to": "2HR 4H",
+      "page": "B1"
+    },
+    {
+      "signal": "**STRAP**",
+      "from": "2HR 3F",
+      "to": "2HR 4F",
+      "page": "B1"
+    },
+    {
+      "signal": "**STRAP**",
+      "from": "2HR 3B",
+      "to": "2HR 4B",
+      "page": "B1"
+    },
+    {
+      "signal": "BX10",
+      "from": "BX10 T?",
+      "to": "2COSPR 3H",
+      "page": "B1"
+    },
+    {
+      "signal": "2BHGE",
+      "from": "SIG2 T?",
+      "to": "2COSPR 3F",
+      "page": "B1"
+    },
+    {
+      "signal": "**STRAP**",
+      "from": "2COSPR 3H",
+      "to": "2COSPR 4H",
+      "page": "B1"
+    },
+    {
+      "signal": "**STRAP**",
+      "from": "2COSPR 3F",
+      "to": "2COSPR 4F",
+      "page": "B1"
+    },
+    {
+      "signal": "**STRAP**",
+      "from": "2COSPR 3B",
+      "to": "2COSPR 4B",
+      "page": "B1"
+    },
+    {
+      "signal": "2ANX10",
+      "from": "SIG2 T?",
+      "to": "2A LTG RESISTOR +",
+      "page": "B1"
+    },
+    {
+      "signal": "2BNX10",
+      "from": "SIG2 T?",
+      "to": "2B LTG RESISTOR +",
+      "page": "B1"
+    },
+    {
+      "signal": "**STRAP**",
+      "from": "2A LTG RESISTOR -",
+      "to": "2B LTG RESISTOR -",
+      "page": "B1"
+    },
+    {
+      "signal": "NX10",
+      "from": "NX10 T?",
+      "to": "2A LTG RESISTOR -",
+      "page": "B1"
+    },
+    {
+      "signal": "**STRAP**",
+      "from": "3DR 3H",
+      "to": "3DR 4H",
+      "page": "B1"
+    },
+    {
+      "signal": "**STRAP**",
+      "from": "3DR 3F",
+      "to": "3DR 4F",
+      "page": "B1"
+    },
+    {
+      "signal": "**STRAP**",
+      "from": "3DR 3B",
+      "to": "3DR 4B",
+      "page": "B1"
+    },
+    {
+      "signal": "**STRAP**",
+      "from": "3HR 3H",
+      "to": "3HR 4H",
+      "page": "B1"
+    },
+    {
+      "signal": "**STRAP**",
+      "from": "3HR 3F",
+      "to": "3HR 4F",
+      "page": "B1"
+    },
+    {
+      "signal": "**STRAP**",
+      "from": "3HR 3B",
+      "to": "3HR 4B",
+      "page": "B1"
+    },
+    {
+      "signal": "**STRAP**",
+      "from": "3COSPR 3H",
+      "to": "3COSPR 4H",
+      "page": "B1"
+    },
+    {
+      "signal": "**STRAP**",
+      "from": "3COSPR 3F",
+      "to": "3COSPR 4F",
+      "page": "B1"
+    },
+    {
+      "signal": "**STRAP**",
+      "from": "3COSPR 3B",
+      "to": "3COSPR 4B",
+      "page": "B1"
+    },
+    {
+      "signal": "BX10",
+      "from": "BX10 T?",
+      "to": "3COSPR 3H",
+      "page": "B1"
+    },
+    {
+      "from": "3COSPR 3F",
+      "to": "3DR 3F",
+      "page": "B1"
+    },
+    {
+      "from": "3COSPR 3B",
+      "to": "3DR 3H",
+      "page": "B1"
+    },
+    {
+      "signal": "3MGE",
+      "from": "SIG3 T?",
+      "to": "3DR 3H",
+      "page": "B1"
+    },
+    {
+      "signal": "3DGE",
+      "from": "SIG3 T?",
+      "to": "3DR 3F",
+      "page": "B1"
+    },
+    {
+      "from": "3DR 3F",
+      "to": "3COSPR 2F",
+      "page": "B1"
+    },
+    {
+      "from": "3DR 3B",
+      "to": "3HR 3H",
+      "page": "B1"
+    },
+    {
+      "signal": "3HGE",
+      "from": "SIG3 T?",
+      "to": "3HR 3F",
+      "page": "B1"
+    },
+    {
+      "from": "3HR 3B",
+      "to": "3COSPR 2B",
+      "page": "B1"
+    },
+    {
+      "signal": "3RGE",
+      "from": "SIG3 T?",
+      "to": "3COSPR 2H",
+      "page": "B1"
+    },
+    {
+      "signal": "3NX10",
+      "from": "SIG3 T?",
+      "to": "3 LTG RESISTOR +",
+      "page": "B1"
+    },
+    {
+      "signal": "NX10",
+      "from": "NX10 T?",
+      "to": "3 LTG RESISTOR -",
+      "page": "B1"
+    },
+    {
+      "signal": "BX110",
+      "from": "T?",
+      "to": "BX110 FUSE +",
+      "page": "B2"
+    },
+    {
+      "signal": "BX110-1",
+      "from": "W-10 LTG TRANS 1P",
+      "to": "BX110 FUSE -",
+      "page": "B2"
+    },
+    {
+      "signal": "CX110",
+      "from": "T?",
+      "to": "W-10 LTG TRANS 3P",
+      "page": "B2"
+    },
+    {
+      "signal": "2TNX",
+      "from": "T?",
+      "to": "???",
+      "page": "B2"
+    },
+    {
+      "signal": "2TBX",
+      "from": "T?",
+      "to": "???",
+      "page": "B2"
+    },
+    {
+      "signal": "N10-TWR",
+      "from": "Tlast",
+      "to": "N10-TWR T1",
+      "page": "B2"
+    },
+    {
+      "signal": "B10-TWR",
+      "from": "T1",
+      "to": "B10-TWR T1",
+      "page": "B2"
+    },
+    {
+      "signal": "4H",
+      "from": "T8",
+      "to": "4HR COIL+",
+      "page": "B2"
+    },
+    {
+      "signal": "N-4H",
+      "from": "N10-TWR T?",
+      "to": "4HR COIL-",
+      "page": "B2"
+    },
+    {
+      "signal": "B10-TWR",
+      "from": "B10-TWR T?",
+      "to": "4HR 1H",
+      "page": "B2"
+    },
+    {
+      "signal": "4RGP",
+      "from": "T12",
+      "to": "4HR 1B",
+      "page": "B2"
+    },
+    {
+      "signal": "BX10",
+      "from": "BX10 T?",
+      "to": "4HR 3H",
+      "page": "B2"
+    },
+    {
+      "signal": "4HGE",
+      "from": "SIG4 T?",
+      "to": "4HR 3F",
+      "page": "B2"
+    },
+    {
+      "signal": "4RGE",
+      "from": "SIG4 T?",
+      "to": "4HR 3B",
+      "page": "B2"
+    },
+    {
+      "signal": "**STRAP**",
+      "from": "4HR 3H",
+      "to": "4HR 4H",
+      "page": "B2"
+    },
+    {
+      "signal": "**STRAP**",
+      "from": "4HR 3F",
+      "to": "4HR 4F",
+      "page": "B2"
+    },
+    {
+      "signal": "**STRAP**",
+      "from": "4HR 3B",
+      "to": "4HR 4B",
+      "page": "B2"
+    },
+    {
+      "signal": "NX10",
+      "from": "NX10 T?",
+      "to": "4 LTG RESISTOR -",
+      "page": "B2"
+    },
+    {
+      "signal": "4NX10",
+      "from": "4 LTG RESISTOR +",
+      "to": "SIG4 T?",
+      "page": "B2"
+    }
+  ],
+  "caseCWires": [
+    {
+      "signal": "B10-CASE C BUS",
+      "from": "T1",
+      "to": "1TR-1F"
+    },
+    {
+      "signal": "B10-CASE C BUS",
+      "from": "T2",
+      "to": "1HDPR-3H"
+    },
+    {
+      "signal": "B10-CASE C BUS",
+      "from": "T3",
+      "to": "6WCR-1H"
+    },
+    {
+      "signal": "B10-CASE C BUS",
+      "from": "T4",
+      "to": "6NLPR-2H"
+    },
+    {
+      "signal": "B10-CASE C BUS",
+      "from": "T5",
+      "to": "6SCC FUSE"
+    },
+    {
+      "signal": "B10-CASE C BUS",
+      "from": "T6",
+      "to": "CRAGG +"
+    },
+    {
+      "signal": "N10-CASE C BUS",
+      "from": "T1",
+      "to": "1TR-2F"
+    },
+    {
+      "signal": "N10-CASE C BUS",
+      "from": "T2",
+      "to": "1HDPR-4H"
+    },
+    {
+      "signal": "N10-CASE C BUS",
+      "from": "T3",
+      "to": "6WCR -COIL"
+    },
+    {
+      "signal": "N10-CASE C BUS",
+      "from": "T4"
+    },
+    {
+      "signal": "N10-CASE C BUS",
+      "from": "T5",
+      "to": "6SCC-N10"
+    },
+    {
+      "signal": "N10-CASE C BUS",
+      "from": "T6",
+      "to": "SWITCHTENDER INDICATION"
+    },
+    {
+      "signal": "N10-CASE C BUS",
+      "from": "T7",
+      "to": "CRAGG -"
+    },
+    {
+      "signal": "N10-TOWER BUS",
+      "from": "T1",
+      "to": "LINE ARRESTOR T1"
+    },
+    {
+      "signal": "N10-TOWER BUS",
+      "from": "T2",
+      "to": "6NLPR -COIL  N-6NLP"
+    },
+    {
+      "signal": "N10-TOWER BUS",
+      "from": "T3",
+      "to": "6RLPR -COIL  N-6RLPR"
+    },
+    {
+      "signal": "1HDP-1",
+      "from": "LINE ARRESTOR T4",
+      "to": "6WCR-3F"
+    },
+    {
+      "signal": "N-1HDP-1",
+      "from": "LINE ARRESTOR T5",
+      "to": "6WCR-4F"
+    },
+    {
+      "signal": "6NLP-1",
+      "from": "LINE ARRESTOR T2",
+      "to": "6RLPR-1H"
+    },
+    {
+      "signal": "6RLP-1",
+      "from": "LINE ARRESTOR T3",
+      "to": "6NLPR-1H"
+    },
+    {
+      "signal": "1RGP",
+      "from": "LINE ARRESTOR T6",
+      "to": "1HDPR-3B"
+    },
+    {
+      "signal": "N-1RGP",
+      "from": "LINE ARRESTOR T7",
+      "to": "1HDPR-4B"
+    },
+    {
+      "signal": "6WPP",
+      "from": "LINE ARRESTOR T8",
+      "to": "6NWPR -COIL"
+    },
+    {
+      "signal": "N-6WPP",
+      "from": "LINE ARRESTOR T9",
+      "to": "LINE ARRESTOR T 24"
+    },
+    {
+      "signal": "1A",
+      "from": "LINE ARRESTOR T10",
+      "to": "1TH-1H"
+    },
+    {
+      "signal": "N-1A",
+      "from": "LINE ARRESTOR T11",
+      "to": "1TR-2H"
+    },
+    {
+      "signal": "1HDGPR",
+      "from": "LINE ARRESTOR T12",
+      "to": "1HDPR-3F"
+    },
+    {
+      "signal": "N-1HDGPR",
+      "from": "LINE ARRESTOR T13",
+      "to": "1HDPR-4F"
+    },
+    {
+      "signal": "1HDP",
+      "from": "1HDPR +COIL",
+      "to": "6WCR-3H"
+    },
+    {
+      "signal": "N-1HDP",
+      "from": "1HDPR -COIL",
+      "to": "6WCR-4H"
+    },
+    {
+      "signal": "1TMG",
+      "from": "LIGHTING TERMINAL T4",
+      "to": "6NWPR-3&4 H"
+    },
+    {
+      "signal": "1DG",
+      "from": "LIGHTING TERMINAL T1",
+      "to": "1HDPR 1P&2P +"
+    },
+    {
+      "signal": "1HG",
+      "from": "LIGHTING TERMINAL T2",
+      "to": "1HDPR 1P&2P -"
+    },
+    {
+      "signal": "1RG",
+      "from": "LIGHTING TERMINAL T3",
+      "to": "1HDPR-1&2B"
+    },
+    {
+      "signal": "NX10-MAIN",
+      "from": "LIGHTING TERMINAL T7",
+      "to": "LIGHTING RESISTOR"
+    },
+    {
+      "signal": "NX10-MARKER",
+      "from": "LIGHTING TERMINAL T8",
+      "to": "LIGHTING RESISTOR"
+    },
+    {
+      "signal": "1TMG-1",
+      "from": "6NWPR-3&4F",
+      "to": "1HDPR-P1&P2 +"
+    },
+    {
+      "signal": "6RLP",
+      "from": "6RLPR +COIL",
+      "to": "6NLPR-1B"
+    },
+    {
+      "signal": "6NLP",
+      "from": "6NLPR +COIL",
+      "to": "6RLPR-1B"
+    },
+    {
+      "signal": "6NWP",
+      "from": "6NWPR +COIL",
+      "to": "6RWPR-1B"
+    },
+    {
+      "signal": "6RWP",
+      "from": "6RWPR -COIL",
+      "to": "6NWPR-1B"
+    },
+    {
+      "signal": "6WPP-A",
+      "from": "6RWPR +COIL",
+      "to": "6NWPR -COIL"
+    },
+    {
+      "signal": "6SCCWP-A",
+      "from": "6NWPR-1H",
+      "to": "6RWPR-1H"
+    },
+    {
+      "signal": "6SCCWP",
+      "from": "LINE ARRESTOR T23",
+      "to": "6NWPR-1H"
+    },
+    {
+      "signal": "6SCC B10",
+      "from": "LINE ARRESTOR T21",
+      "to": "SCC FUSE"
+    },
+    {
+      "signal": "6WC",
+      "from": "6WCR  +COIL",
+      "to": "6RWPR-2H"
+    },
+    {
+      "signal": "6WC-1",
+      "from": "6RWPR-2B",
+      "to": "6RLPR-2B"
+    },
+    {
+      "signal": "6WC-2",
+      "from": "6RLPR-2H",
+      "to": "6NWPR-2H"
+    },
+    {
+      "signal": "6WC-2A",
+      "from": "6NWPR-2B",
+      "to": "6NLPR-2B"
+    },
+    {
+      "signal": "6WC-A",
+      "from": "6RWPR-2F",
+      "to": "6RLPR-2F"
+    },
+    {
+      "signal": "6WC-3",
+      "from": "6NWPR-2F",
+      "to": "6NLPR-2F"
+    },
+    {
+      "signal": "6WKEZ",
+      "from": "6WCR-1B",
+      "to": "SWITCHTENDER INDICATION"
+    },
+    {
+      "signal": "6WKE",
+      "from": "6WCR-1F",
+      "to": "SWITCHTENDER INDICATION"
+    },
+    {
+      "signal": "1TNX",
+      "from": "TRACK ARRESTOR",
+      "to": "1T TEST TERM"
+    },
+    {
+      "signal": "1TBX",
+      "from": "TRACK ARRESTOR",
+      "to": "1T RESISTANCE UNIT"
+    },
+    {
+      "signal": "1T",
+      "from": "1TR  +COIL",
+      "to": "1T RESISTANCE UNIT"
+    },
+    {
+      "signal": "N-1T",
+      "from": "1TR  -COIL",
+      "to": "1T TEST TERM"
+    },
+    {
+      "signal": "BX6",
+      "from": "LIGHTING TRANS",
+      "to": "1T RESISTANCE UNIT"
+    },
+    {
+      "signal": "NX6",
+      "from": "LIGHTING TRANS",
+      "to": "1T TEST TERM"
+    }
+  ],
+  "levers": [
+    {
+      "lever": "LVR-1",
+      "state": "normal",
+      "from": "T1",
+      "to": "T2"
+    },
+    {
+      "lever": "LVR-1",
+      "state": "reverse",
+      "from": "T3",
+      "to": "T4"
+    },
+    {
+      "lever": "LVR-1",
+      "state": "normal",
+      "from": "T5",
+      "to": "T6"
+    },
+    {
+      "lever": "LVR-1",
+      "state": "reverse",
+      "from": "T7",
+      "to": "T8"
+    },
+    {
+      "lever": "LVR-1",
+      "state": "reverse",
+      "from": "T9",
+      "to": "T10"
+    },
+    {
+      "lever": "LVR-1",
+      "state": "normal",
+      "from": "T11",
+      "to": "T12"
+    },
+    {
+      "lever": "LVR-1",
+      "state": "reverse",
+      "from": "T13",
+      "to": "T14"
+    },
+    {
+      "lever": "LVR-1",
+      "state": "normal",
+      "from": "T15",
+      "to": "T16"
+    },
+    {
+      "lever": "LVR-2",
+      "state": "normal",
+      "from": "T1",
+      "to": "T2"
+    },
+    {
+      "lever": "LVR-2",
+      "state": "reverse",
+      "from": "T3",
+      "to": "T4"
+    },
+    {
+      "lever": "LVR-2",
+      "state": "reverse",
+      "from": "T5",
+      "to": "T6"
+    },
+    {
+      "lever": "LVR-2",
+      "from": "T7",
+      "to": "T8"
+    },
+    {
+      "lever": "LVR-3",
+      "state": "reverse",
+      "from": "T1",
+      "to": "T2"
+    },
+    {
+      "lever": "LVR-3",
+      "state": "normal",
+      "from": "T3",
+      "to": "T4"
+    },
+    {
+      "lever": "LVR-3",
+      "state": "reverse",
+      "from": "T5",
+      "to": "T6"
+    },
+    {
+      "lever": "LVR-3",
+      "from": "T7",
+      "to": "T8"
+    },
+    {
+      "lever": "LVR-4",
+      "state": "normal",
+      "from": "T1",
+      "to": "T2"
+    },
+    {
+      "lever": "LVR-4",
+      "state": "reverse",
+      "from": "T3",
+      "to": "T4"
+    },
+    {
+      "lever": "LVR-4",
+      "from": "T5",
+      "to": "T6"
+    },
+    {
+      "lever": "LVR-4",
+      "from": "T7",
+      "to": "T8"
+    },
+    {
+      "lever": "LVR-5",
+      "state": "normal",
+      "from": "T1",
+      "to": "T2"
+    },
+    {
+      "lever": "LVR-5",
+      "state": "reverse",
+      "from": "T3",
+      "to": "T4"
+    },
+    {
+      "lever": "LVR-5",
+      "from": "T5",
+      "to": "T6"
+    },
+    {
+      "lever": "LVR-5",
+      "from": "T7",
+      "to": "T8"
+    },
+    {
+      "lever": "LVR-6",
+      "state": "normal",
+      "from": "T1",
+      "to": "T2"
+    },
+    {
+      "lever": "LVR-6",
+      "state": "reverse",
+      "from": "T3",
+      "to": "T4"
+    },
+    {
+      "lever": "LVR-6",
+      "state": "normal",
+      "from": "T5",
+      "to": "T6"
+    },
+    {
+      "lever": "LVR-6",
+      "state": "reverse",
+      "from": "T7",
+      "to": "T8"
+    },
+    {
+      "lever": "LVR-9",
+      "state": "normal",
+      "from": "T1",
+      "to": "T2"
+    },
+    {
+      "lever": "LVR-9",
+      "state": "reverse",
+      "from": "T3",
+      "to": "T4"
+    },
+    {
+      "lever": "LVR-9",
+      "from": "T5",
+      "to": "T6"
+    },
+    {
+      "lever": "LVR-9",
+      "from": "T7",
+      "to": "T8"
+    },
+    {
+      "lever": "LVR-10",
+      "state": "normal",
+      "from": "T1",
+      "to": "T2"
+    },
+    {
+      "lever": "LVR-10",
+      "state": "reverse",
+      "from": "T3",
+      "to": "T4"
+    },
+    {
+      "lever": "LVR-10",
+      "from": "T5",
+      "to": "T6"
+    },
+    {
+      "lever": "LVR-10",
+      "from": "T7",
+      "to": "T8"
+    },
+    {
+      "lever": "LVR-12",
+      "state": "normal",
+      "from": "T1",
+      "to": "T2"
+    },
+    {
+      "lever": "LVR-12",
+      "state": "reverse",
+      "from": "T3",
+      "to": "T4"
+    },
+    {
+      "lever": "LVR-12",
+      "state": "normal",
+      "from": "T5",
+      "to": "T6"
+    },
+    {
+      "lever": "LVR-12",
+      "state": "reverse",
+      "from": "T7",
+      "to": "T8"
+    },
+    {
+      "lever": "LVR-14",
+      "state": "normal",
+      "from": "T1",
+      "to": "T2"
+    },
+    {
+      "lever": "LVR-14",
+      "state": "reverse",
+      "from": "T3",
+      "to": "T4"
+    },
+    {
+      "lever": "LVR-14",
+      "state": "reverse",
+      "from": "T5",
+      "to": "T6"
+    },
+    {
+      "lever": "LVR-14",
+      "from": "T7",
+      "to": "T8"
+    },
+    {
+      "lever": "LVR-15",
+      "state": "reverse",
+      "from": "T1",
+      "to": "T2"
+    },
+    {
+      "lever": "LVR-15",
+      "state": "reverse",
+      "from": "T3",
+      "to": "T4"
+    },
+    {
+      "lever": "LVR-15",
+      "from": "T5",
+      "to": "T6"
+    },
+    {
+      "lever": "LVR-15",
+      "state": "normal",
+      "from": "T7",
+      "to": "T8"
+    },
+    {
+      "lever": "LVR-16",
+      "state": "normal",
+      "from": "T1",
+      "to": "T2"
+    },
+    {
+      "lever": "LVR-16",
+      "state": "reverse",
+      "from": "T3",
+      "to": "T4"
+    },
+    {
+      "lever": "LVR-16",
+      "state": "normal",
+      "from": "T5",
+      "to": "T6"
+    },
+    {
+      "lever": "LVR-16",
+      "state": "reverse",
+      "from": "T7",
+      "to": "T8"
+    },
+    {
+      "lever": "LVR-16",
+      "from": "T9",
+      "to": "T10"
+    },
+    {
+      "lever": "LVR-16",
+      "from": "T11",
+      "to": "T12"
+    },
+    {
+      "lever": "LVR-16",
+      "state": "reverse",
+      "from": "T13",
+      "to": "T14"
+    },
+    {
+      "lever": "LVR-16",
+      "from": "T15",
+      "to": "T16"
+    }
+  ]
+}
