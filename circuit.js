@@ -14,7 +14,6 @@ function gauss(A) {
             }
         }
 
-        console.log(i, maxEl);
         if (maxRow !== i) {
             // Swap maximum row with current row (column by column)
             for (var k=i; k<n+1; k++) {

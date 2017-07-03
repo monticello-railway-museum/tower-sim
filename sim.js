@@ -57,8 +57,8 @@ class Component {
     fixupNodes() { }
     prepare() { }
     walk(visit, terminal) { }
-    preSolve(circuit) { }
-    postSolve(circuit) { }
+    preSolve(circuit, time) { }
+    postSolve(circuit, time) { }
 }
 
 class PowerSupply extends Component {
@@ -72,8 +72,9 @@ class PowerSupply extends Component {
         visit(this.terminals['-']);
     }
 
-    preSolve(circuit) {
-        circuit.voltageSource(0, this.terminals['-'].nodeNum(), this.terminals['+'].nodeNum(), this.voltage);
+    preSolve(circuit, time) {
+        if (this.terminals['-'] && this.terminals['+'])
+            circuit.voltageSource(0, this.terminals['-'].nodeNum(), this.terminals['+'].nodeNum(), this.voltage);
     }
 }
 
@@ -111,6 +112,14 @@ class Switch extends Component {
         visit(this.terminals['+']);
         visit(this.terminals['-']);
     }
+
+    preSolve(circuit, time) {
+        if (this.state === 'closed') {
+            const fromNum = this.terminals[pair.from].nodeNum();
+            const toNum = this.terminals[pair.to].nodeNum();
+            circuit.resistor(fromNum, toNum, closed);
+        }
+    }
 }
 
 class Lever extends Component {
@@ -138,7 +147,7 @@ class Lever extends Component {
         }
     }
 
-    preSolve(circuit) {
+    preSolve(circuit, time) {
         for (let pair of this.pairs) {
             const fromNum = this.terminals[pair.from].nodeNum();
             const toNum = this.terminals[pair.to].nodeNum();
@@ -149,10 +158,17 @@ class Lever extends Component {
     }
 }
 
+function maybeSchedule(comp, time, bias, state) {
+    if (comp.schedule && comp.schedule.bias === bias && comp.schedule.state === state)
+            return;
+    comp.schedule = { time, bias, state };
+}
+
 class Relay extends Component {
     constructor(props, state = 'down') {
         super(props);
         this.state = state;
+        this.bias = 'forward';
         this.coilResistance = 100;
         this.contacts = [ ];
     }
@@ -191,33 +207,41 @@ class Relay extends Component {
         });
     }
 
-    preSolve(circuit) {
+    preSolve(circuit, time) {
         if (this.coilP && this.coilP.nodeNum() != null
             && this.coilN && this.coilN.nodeNum() != null) {
             circuit.resistor(this.coilP.nodeNum(), this.coilN.nodeNum(), this.coilResistance);
         }
         if (this.state === 'down') {
             this.contacts.forEach(c => {
-                console.log('  ', c);
                 if (c.heel.nodeNum() != null && c.back && c.back.nodeNum() != null)
                     circuit.resistor(c.heel.nodeNum(), c.back.nodeNum(), closed);
             });
         } else if (this.state === 'up') {
             this.contacts.forEach(c => {
-                console.log('  ', c);
                 if (c.heel.nodeNum() != null && c.front && c.front.nodeNum() != null)
                     circuit.resistor(c.heel.nodeNum(), c.front.nodeNum(), closed);
             });
         }
     }
 
-    postSolve(circuit) {
+    postSolve(circuit, time) {
         if (this.coilP && this.coilP.nodeNum() != null
             && this.coilN && this.coilN.nodeNum() != null) {
             const voltsP = circuit.nodeVoltage(this.coilP.nodeNum());
             const voltsN = circuit.nodeVoltage(this.coilN.nodeNum());
             const amps = (voltsP - voltsN) / this.coilResistance;
+            const bias = amps >= 0 ? 'forward' : 'reverse';
             console.log(this.name, 'coil+ volts', voltsP, 'coil- volts', voltsN, 'current', amps);
+            if (amps != 0) {
+                if (this.state === 'down')
+                    maybeSchedule(this, time + 0.2, bias, 'up');
+                else if (this.bias !== bias)
+                    maybeSchedule(this, time + 0.01, bias, 'down');
+            } else {
+                if (this.state === 'up')
+                    maybeSchedule(this, time + 0.01, bias, 'down');
+            }
         }
     }
 }
@@ -283,17 +307,25 @@ for (let wire of wires) {
     wireComponent(wire);
 }
 
+wireComponent({ from: 'N10-TWR MAIN', to: 'N10-CASEA' });
+wireComponent({ from: 'B10-TWR MAIN', to: '2TR COIL+' });
+wireComponent({ from: 'N10-TWR MAIN', to: '2TR COIL-' });
+wireComponent({ from: 'B10-TWR MAIN', to: '6TR COIL+' });
+wireComponent({ from: 'N10-TWR MAIN', to: '6TR COIL-' });
+wireComponent({ from: 'B10-TWR MAIN', to: '14ATR COIL+' });
+wireComponent({ from: 'N10-TWR MAIN', to: '14ATR COIL-' });
+wireComponent({ from: 'B10-TWR MAIN', to: '14BTR COIL+' });
+wireComponent({ from: 'N10-TWR MAIN', to: '14BTR COIL-' });
+
+wireComponent({ from: 'B10-TWR MAIN', to: '6TPSR COIL+' });
+wireComponent({ from: 'B10-TWR MAIN', to: '6NWPPR COIL+' });
+wireComponent({ from: 'N10-TWR MAIN', to: '6NWPPR COIL-' });
+
 for (let name in components) {
     components[name].fixupNodes();
 }
 
 const craggN = components['CRAGG'].terminals['-'];
-
-function maybeSchedule(comp, time, bias, state) {
-    if (comp.schedule && comp.schedule.bias === bias && comp.schedule.state === state)
-            return;
-    comp.schedule = { time, bias, state };
-}
 
 let numNodes = 0;
 const visited = new Set();
@@ -303,7 +335,6 @@ function visit(node) {
     if (!node || visited.has(node.shared))
         return;
     visited.add(node.shared);
-    // console.log('visit', node);
     node.shared.nodeNum = numNodes++;
     for (let { payload: [ comp, term ] } of node.shared.members) {
         console.log(comp.name, term);
@@ -320,21 +351,35 @@ console.log(numNodes);
 
 const Circuit = require('./circuit');
 
-let circuit = new Circuit(numNodes, 1);
-for (let comp of activeComponents) {
-    comp.preSolve(circuit);
+function sim(time) {
+    console.log(`*** sim ${time.toFixed(2)} ***`);
+
+    for (let comp of activeComponents) {
+        if (comp.schedule && comp.schedule.time <= time) {
+            console.log(comp.name, comp.schedule);
+            comp.bias = comp.schedule.bias;
+            comp.state = comp.schedule.state;
+            comp.schedule = null;
+        }
+    }
+
+    let circuit = new Circuit(numNodes, 1);
+    for (let comp of activeComponents) {
+        comp.preSolve(circuit, time);
+    }
+    console.log('pre solve');
+    circuit.solve();
+    console.log('post solve');
+    for (let node of visited) {
+        // console.log('node', Array.from(node.names).join(' '));
+        // console.log('  ', circuit.nodeVoltage(node.nodeNum), 'volts');
+    }
+    console.log('psu current', circuit.voltageSourceCurrent(0));
+    for (let comp of activeComponents) {
+        comp.postSolve(circuit, time);
+    }
 }
-console.log('pre solve');
-circuit.solve();
-console.log('post solve');
-for (let node of visited) {
-    console.log('node', Array.from(node.names).join(' '));
-    console.log('  ', circuit.nodeVoltage(node.nodeNum), 'volts');
-}
-console.log('psu current', circuit.voltageSourceCurrent(0));
-for (let comp of activeComponents) {
-    comp.postSolve(circuit);
-}
+
 
 
 // function sim(time) {
@@ -486,29 +531,29 @@ for (let comp of activeComponents) {
 //     return minImpedance;
 // }
 
-// let t = 0.0;
+let t = 0.0;
 
-// for (; t < 0.5; t += 0.05) {
-//     sim(t);
-// }
+for (; t < 0.5; t += 0.05) {
+    sim(t);
+}
 
-// components['LVR-1'].state = 'reverse';
+components['LVR-1'].state = 'reverse';
 
-// for (; t < 1.0; t += 0.05) {
-//     sim(t);
-// }
+for (; t < 1.0; t += 0.05) {
+    sim(t);
+}
 
-// components['LVR-6'].state = 'reverse';
+components['LVR-6'].state = 'reverse';
 
-// for (; t < 1.5; t += 0.05) {
-//     sim(t);
-// }
+for (; t < 1.5; t += 0.05) {
+    sim(t);
+}
 
-// components['LVR-12'].state = 'reverse';
+components['LVR-12'].state = 'reverse';
 
-// for (; t < 2.0; t += 0.05) {
-//     sim(t);
-// }
+for (; t < 2.0; t += 0.05) {
+    sim(t);
+}
 
 // for (let node of allNodes.values()) {
 //     if (node.wireLocs.length === 1)
