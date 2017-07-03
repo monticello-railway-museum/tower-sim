@@ -324,9 +324,6 @@ let circuit = new Circuit(numNodes, 1);
 for (let comp of activeComponents) {
     comp.preSolve(circuit);
 }
-for (let i = 1; i < numNodes; ++i) {
-    //circuit.resistor(0, i, 1e9);
-}
 console.log('pre solve');
 circuit.solve();
 console.log('post solve');

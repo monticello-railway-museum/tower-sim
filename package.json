@@ -1,6 +1,5 @@
 {
   "dependencies": {
-    "mathjs": "^3.14.1",
     "xlsx": "^0.10.6"
   }
 }

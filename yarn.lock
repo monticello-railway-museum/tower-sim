@@ -39,10 +39,6 @@ commander@~2.9.0:
   dependencies:
     graceful-readlink ">= 1.0.0"
 
-complex.js@2.0.4:
-  version "2.0.4"
-  resolved "https://registry.yarnpkg.com/complex.js/-/complex.js-2.0.4.tgz#d8e7cfb9652d1e853e723386421c1a0ca7a48373"
-
 concat-stream@:
   version "1.6.0"
   resolved "https://registry.yarnpkg.com/concat-stream/-/concat-stream-1.6.0.tgz#0aac662fd52be78964d5532f694784e70110acf7"
@@ -62,10 +58,6 @@ crc-32@~1.0.2:
     exit-on-epipe ""
     printj ""
 
-decimal.js@7.2.3:
-  version "7.2.3"
-  resolved "https://registry.yarnpkg.com/decimal.js/-/decimal.js-7.2.3.tgz#6434c3b8a8c375780062fc633d0d2bbdb264cc78"
-
 exit-on-epipe@, exit-on-epipe@~1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/exit-on-epipe/-/exit-on-epipe-1.0.0.tgz#f6e0579c8214d33a08109fd6e2e5c1dbc70463fc"
@@ -75,10 +67,6 @@ frac@~1.0.6:
   resolved "https://registry.yarnpkg.com/frac/-/frac-1.0.6.tgz#9a0dfc23956852a8b320623bebcf1be9ea048229"
   dependencies:
     voc ""
-
-fraction.js@4.0.0:
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/fraction.js/-/fraction.js-4.0.0.tgz#73974e2f8b51ef709536d624cc90782e2bb61274"
 
 "graceful-readlink@>= 1.0.0":
   version "1.0.1"
@@ -91,22 +79,6 @@ inherits@^2.0.3, inherits@~2.0.3:
 isarray@~1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/isarray/-/isarray-1.0.0.tgz#bb935d48582cba168c06834957a54a3e07124f11"
-
-javascript-natural-sort@0.7.1:
-  version "0.7.1"
-  resolved "https://registry.yarnpkg.com/javascript-natural-sort/-/javascript-natural-sort-0.7.1.tgz#f9e2303d4507f6d74355a73664d1440fb5a0ef59"
-
-mathjs:
-  version "3.14.1"
-  resolved "https://registry.yarnpkg.com/mathjs/-/mathjs-3.14.1.tgz#265e7c5d887a9aa7e037b7379f4f489e12e53184"
-  dependencies:
-    complex.js "2.0.4"
-    decimal.js "7.2.3"
-    fraction.js "4.0.0"
-    javascript-natural-sort "0.7.1"
-    seed-random "2.2.0"
-    tiny-emitter "2.0.0"
-    typed-function "0.10.5"
 
 printj@:
   version "1.0.0"
@@ -132,10 +104,6 @@ safe-buffer@~5.1.0, safe-buffer@~5.1.1:
   version "5.1.1"
   resolved "https://registry.yarnpkg.com/safe-buffer/-/safe-buffer-5.1.1.tgz#893312af69b2123def71f57889001671eeb2c853"
 
-seed-random@2.2.0:
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/seed-random/-/seed-random-2.2.0.tgz#2a9b19e250a817099231a5b99a4daf80b7fbed54"
-
 ssf@~0.9.4:
   version "0.9.4"
   resolved "https://registry.yarnpkg.com/ssf/-/ssf-0.9.4.tgz#8e57a98c19dbbf1edd53f0f8c9e7fd524b0f6c9c"
@@ -149,14 +117,6 @@ string_decoder@~1.0.3:
   resolved "https://registry.yarnpkg.com/string_decoder/-/string_decoder-1.0.3.tgz#0fc67d7c141825de94282dd536bec6b9bce860ab"
   dependencies:
     safe-buffer "~5.1.0"
-
-tiny-emitter@2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/tiny-emitter/-/tiny-emitter-2.0.0.tgz#bad327adb1804b42a231afa741532bd884cd09ad"
-
-typed-function@0.10.5:
-  version "0.10.5"
-  resolved "https://registry.yarnpkg.com/typed-function/-/typed-function-0.10.5.tgz#2e0f18abd065219fab694a446a65c6d1981832c0"
 
 typedarray@^0.0.6:
   version "0.0.6"
