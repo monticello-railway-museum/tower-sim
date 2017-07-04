@@ -97,8 +97,6 @@ class Circuit {
     }
 
     solve() {
-        const { nodes } = this;
-
         this.x = gauss(this.A);
     }
 

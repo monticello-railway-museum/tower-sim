@@ -36,8 +36,16 @@ class Node {
         }
     }
 
-    nodeNum() {
-        return this.shared.nodeNum;
+    setNum(netName, num) {
+        if (this.shared.netName)
+            throw new Error('circuit net already assigned');
+        this.shared.netName = netName;
+        this.shared.num = num;
+    }
+
+    num(netName) {
+        if (this.shared.netName === netName)
+            return this.shared.num;
     }
 }
 
@@ -52,6 +60,26 @@ class Component {
         for (let term in this.terminals) {
             fn(term, this.terminals[term]);
         }
+    }
+
+    resistor(circuit, nodeA, nodeB, value) {
+        const numA = nodeA && nodeA.num(circuit.netName);
+        const numB = nodeB && nodeB.num(circuit.netName);
+        if (numA && numB)
+            circuit.resistor(numA, numB, value);
+    }
+
+    voltageSource(circuit, index, nodeNeg, nodePos, value) {
+        const numNeg = nodeNeg && nodeNeg.num(circuit.netName);
+        const numPos = nodePos && nodePos.num(circuit.netName);
+        if (numNeg && numPos)
+            circuit.voltageSource(index, numNeg, numPos, value);
+    }
+
+    nodeVoltage(circuit, node) {
+        const num = node && node.num(circuit.netName);
+        if (num)
+            return circuit.nodeVoltage(num);
     }
 
     fixupNodes() { }
@@ -73,8 +101,7 @@ class PowerSupply extends Component {
     }
 
     preSolve(circuit, time) {
-        if (this.terminals['-'] && this.terminals['+'])
-            circuit.voltageSource(0, this.terminals['-'].nodeNum(), this.terminals['+'].nodeNum(), this.voltage);
+        this.voltageSource(circuit, 0, this.terminals['-'], this.terminals['+'], this.voltage);
     }
 }
 
@@ -114,11 +141,8 @@ class Switch extends Component {
     }
 
     preSolve(circuit, time) {
-        if (this.state === 'closed') {
-            const fromNum = this.terminals[pair.from].nodeNum();
-            const toNum = this.terminals[pair.to].nodeNum();
-            circuit.resistor(fromNum, toNum, closed);
-        }
+        if (this.state === 'closed')
+            this.resistor(this.terminals[pair.from], this.terminals[pair.to], closed);
     }
 }
 
@@ -149,11 +173,8 @@ class Lever extends Component {
 
     preSolve(circuit, time) {
         for (let pair of this.pairs) {
-            const fromNum = this.terminals[pair.from].nodeNum();
-            const toNum = this.terminals[pair.to].nodeNum();
-            if (this.state === pair.state && fromNum != null && toNum != null) {
-                circuit.resistor(fromNum, toNum, closed);
-            }
+            if (this.state === pair.state)
+                this.resistor(circuit, this.terminals[pair.from], this.terminals[pair.to], closed);
         }
     }
 }
@@ -208,34 +229,28 @@ class Relay extends Component {
     }
 
     preSolve(circuit, time) {
-        if (this.coilP && this.coilP.nodeNum() != null
-            && this.coilN && this.coilN.nodeNum() != null) {
-            circuit.resistor(this.coilP.nodeNum(), this.coilN.nodeNum(), this.coilResistance);
-        }
+        this.resistor(circuit, this.coilP, this.coilN, this.coilResistance);
         if (this.state === 'down') {
             this.contacts.forEach(c => {
-                if (c.heel.nodeNum() != null && c.back && c.back.nodeNum() != null)
-                    circuit.resistor(c.heel.nodeNum(), c.back.nodeNum(), closed);
+                this.resistor(circuit, c.heel, c.back, closed);
             });
         } else if (this.state === 'up') {
             this.contacts.forEach(c => {
-                if (c.heel.nodeNum() != null && c.front && c.front.nodeNum() != null)
-                    circuit.resistor(c.heel.nodeNum(), c.front.nodeNum(), closed);
+                this.resistor(circuit, c.heel, c.front, closed);
             });
         }
     }
 
     postSolve(circuit, time) {
-        if (this.coilP && this.coilP.nodeNum() != null
-            && this.coilN && this.coilN.nodeNum() != null) {
-            const voltsP = circuit.nodeVoltage(this.coilP.nodeNum());
-            const voltsN = circuit.nodeVoltage(this.coilN.nodeNum());
+        const voltsP = this.nodeVoltage(circuit, this.coilP);
+        const voltsN = this.nodeVoltage(circuit, this.coilN);
+        if (voltsP != null && voltsN != null) {
             const amps = (voltsP - voltsN) / this.coilResistance;
             const bias = amps >= 0 ? 'forward' : 'reverse';
-            console.log(this.name, 'coil+ volts', voltsP, 'coil- volts', voltsN, 'current', amps);
+            //console.log(this.name, 'coil+ volts', voltsP, 'coil- volts', voltsN, 'current', amps);
             if (amps != 0) {
                 if (this.state === 'down')
-                    maybeSchedule(this, time + 0.2, bias, 'up');
+                    maybeSchedule(this, time + 0.1, bias, 'up');
                 else if (this.bias !== bias)
                     maybeSchedule(this, time + 0.01, bias, 'down');
             } else {
