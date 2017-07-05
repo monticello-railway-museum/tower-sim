@@ -353,19 +353,19 @@ for (let wire of wires) {
     wireComponent(wire);
 }
 
-// wireComponent({ from: 'N10-TWR MAIN', to: 'N10-CASEA' });
-// wireComponent({ from: 'B10-TWR MAIN', to: '2TR COIL+' });
-// wireComponent({ from: 'N10-TWR MAIN', to: '2TR COIL-' });
-// wireComponent({ from: 'B10-TWR MAIN', to: '6TR COIL+' });
-// wireComponent({ from: 'N10-TWR MAIN', to: '6TR COIL-' });
-// wireComponent({ from: 'B10-TWR MAIN', to: '14ATR COIL+' });
-// wireComponent({ from: 'N10-TWR MAIN', to: '14ATR COIL-' });
-// wireComponent({ from: 'B10-TWR MAIN', to: '14BTR COIL+' });
-// wireComponent({ from: 'N10-TWR MAIN', to: '14BTR COIL-' });
+wireComponent({ from: 'N10-TWR MAIN', to: 'N10-CASEA' });
+wireComponent({ from: 'B10-TWR MAIN', to: '2TR COIL+' });
+wireComponent({ from: 'N10-TWR MAIN', to: '2TR COIL-' });
+wireComponent({ from: 'B10-TWR MAIN', to: '6TR COIL+' });
+wireComponent({ from: 'N10-TWR MAIN', to: '6TR COIL-' });
+wireComponent({ from: 'B10-TWR MAIN', to: '14ATR COIL+' });
+wireComponent({ from: 'N10-TWR MAIN', to: '14ATR COIL-' });
+wireComponent({ from: 'B10-TWR MAIN', to: '14BTR COIL+' });
+wireComponent({ from: 'N10-TWR MAIN', to: '14BTR COIL-' });
 
-// wireComponent({ from: 'B10-TWR MAIN', to: '6TPSR COIL+' });
-// wireComponent({ from: 'B10-TWR MAIN', to: '6NWPPR COIL+' });
-// wireComponent({ from: 'N10-TWR MAIN', to: '6NWPPR COIL-' });
+wireComponent({ from: 'B10-TWR MAIN', to: '6TPSR COIL+' });
+wireComponent({ from: 'B10-TWR MAIN', to: '6NWPPR COIL+' });
+wireComponent({ from: 'N10-TWR MAIN', to: '6NWPPR COIL-' });
 
 for (let name in components) {
     components[name].fixupNodes();
