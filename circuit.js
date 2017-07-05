@@ -54,77 +54,172 @@ function gauss(A) {
 }
 
 class Circuit {
-    constructor(numNodes, numVoltageSources) {
-        this.nodes = numNodes - 1;
-        this.voltageSources = numVoltageSources;
+    constructor(groundNode) {
+        this.groundNode = groundNode;
 
-        const { nodes, voltageSources } = this;
+        this.nodes = new Map();
+        this.vSources = new Map();
 
+        this.reset();
+    }
+
+    reset() {
+        this.nodes.clear();
+        this.vSources.clear();
         this.A = [];
-        this.A.length = nodes + voltageSources;
-        for (let i = 0; i < this.A.length; ++i) {
-            this.A[i] = [];
-            this.A[i].length = nodes + voltageSources + 1;
-            this.A[i].fill(0);
-        }
+        this.C = [];
+        this.iSourceValues = [];
+        this.vSourceValues = [];
+        this.x = undefined;
+    }
+
+    nodeNum(node) {
+        if (node === this.groundNode)
+            return null;
+        if (this.nodes.has(node))
+            return this.nodes.get(node);
+
+        const nodes = this.nodes.size;
+        const vSources = this.vSources.size;
+
+        for (let i = 0; i < nodes; ++i)
+            this.A[i][nodes] = 0;
+        const z = [];
+        z.length = nodes + 1;
+        z.fill(0);
+        this.A[nodes] = z;
+
+        for (let i = 0; i < vSources; ++i)
+            this.C[i][nodes] = 0;
+
+        this.iSourceValues[nodes] = 0;
+
+        this.nodes.set(node, nodes);
+        return nodes;
+    }
+
+    vSourceNum(vSource) {
+        if (this.vSources.has(vSource))
+            return this.vSources.get(vSource);
+
+        const nodes = this.nodes.size;
+        const vSources = this.vSources.size;
+
+        const z = [];
+        z.length = nodes;
+        z.fill(0);
+        this.C[vSources] = z;
+        this.vSourceValues[vSources] = 0;
+
+        this.vSources.set(vSource, vSources);
+        return vSources;
     }
 
     resistor(nodeA, nodeB, value) {
         const G = 1/value;
 
-        if (nodeA != 0)
-            this.A[nodeA - 1][nodeA - 1] += G;
-        if (nodeB != 0)
-            this.A[nodeB - 1][nodeB - 1] += G;
-        if (nodeA != 0 && nodeB != 0) {
-            this.A[nodeA - 1][nodeB - 1] -= G;
-            this.A[nodeB - 1][nodeA - 1] -= G;
+        const numA = this.nodeNum(nodeA);
+        const numB = this.nodeNum(nodeB);
+
+        if (numA != null)
+            this.A[numA][numA] += G;
+        if (numB != null)
+            this.A[numB][numB] += G;
+        if (numA != null && numB != null) {
+            this.A[numA][numB] -= G;
+            this.A[numB][numA] -= G;
         }
     }
 
-    voltageSource(sourceNum, nodeNeg, nodePos, value) {
+    voltageSource(source, nodeNeg, nodePos, value) {
         const { nodes, voltageSources } = this;
 
-        if (nodeNeg != 0) {
-            this.A[nodeNeg - 1][nodes + sourceNum] = -1;
-            this.A[nodes + sourceNum][nodeNeg - 1] = -1;
-        }
-        if (nodePos != 0) {
-            this.A[nodePos - 1][nodes + sourceNum] = 1;
-            this.A[nodes + sourceNum][nodePos - 1] = 1;
-        }
-        this.A[nodes + sourceNum][nodes + voltageSources] = value;
+        const numSource = this.vSourceNum(source);
+        const numNeg = this.nodeNum(nodeNeg);
+        const numPos = this.nodeNum(nodePos);
+
+        if (numNeg != null)
+            this.C[numSource][numNeg] = -1;
+        if (numPos != null)
+            this.C[numSource][numPos] = 1;
+        this.vSourceValues[numSource] = value;
+    }
+
+    currentSource(nodeNeg, nodePos, value) {
+        const numNeg = this.nodeNum(nodeNeg);
+        const numPos = this.nodeNum(nodePos);
+        
+        if (numNeg != null)
+            this.iSourceValues[nodeNeg] -= value;
+        if (numPos != null)
+            this.iSourceValues[nodePos] += value;
     }
 
     solve() {
+        const nodes = this.nodes.size;
+        const vSources = this.vSources.size;
+
+        for (let i = nodes; i < nodes + vSources; ++i)
+            this.A[i] = this.C[i - nodes];
+
+        for (let r = 0; r < nodes; ++r)
+            for (let c = 0; c < vSources; ++c)
+                this.A[r][c + nodes] = this.A[nodes + c][r];
+
+        for (let r = nodes; r < nodes + vSources; ++r)
+            for (let c = nodes; c < nodes + vSources; ++c)
+                this.A[r][c] = 0;
+
+        for (let r = 0; r < nodes; ++r)
+            this.A[r][nodes + vSources] = this.iSourceValues[r];
+        for (let n = 0; n < vSources; ++n)
+            this.A[nodes + n][nodes + vSources] = this.vSourceValues[n];
+
         this.x = gauss(this.A);
     }
 
-    nodeVoltage(node) {
-        if (node === 0)
-            return 0;
-        return this.x[node - 1];
+    inCircuit(node) {
+        return this.nodes.has(node);
     }
 
-    voltageSourceCurrent(sourceNum) {
-        return this.x[this.nodes + sourceNum];
+    nodeVoltage(node) {
+        const num = this.nodes.get(node);
+        if (node === this.groundNode)
+            return 0;
+        if (num == null)
+            return undefined;
+        return this.x[num];
+    }
+
+    voltageSourceCurrent(source) {
+        const num = this.vSources.get(source);
+        return -this.x[this.nodes.size + num];
     }
 };
 
 module.exports = Circuit;
 
-// const cir = new Circuit(5, 1);
+const cir = new Circuit('ground');
 
-// cir.voltageSource(0, 0, 1, 1);
-// cir.resistor(1, 2, 10);
-// cir.resistor(2, 0, 1);
+//cir.voltageSource(0, 0, 1, 1);
+//cir.currentSource(0, 1, 1);
+//cir.resistor(1, 2, 10);
+//cir.resistor(2, 0, 1);
 
-// cir.resistor(0, 3, 1);
-// cir.resistor(0, 4, 1);
+//cir.resistor(0, 3, 1);
+//cir.resistor(0, 4, 1);
 
-// console.log(cir.A.toString());
+// cir.resistor('ground', '1', 2);
+// cir.resistor('ground', '2', 8);
+// cir.voltageSource('V1', '1', '2', 32);
+// cir.resistor('2', '3', 4);
+// cir.voltageSource('V2', '3', 'ground', 20);
+
+// console.log(cir);
 
 // cir.solve();
+
+// console.log(cir);
 
 // for (let i = 0; i < 4; ++i)
 //     console.log('node', i, 'voltage:', cir.nodeVoltage(i));

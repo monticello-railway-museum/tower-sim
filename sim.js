@@ -1,4 +1,5 @@
 const xlsx = require('xlsx');
+const Circuit = require('./circuit');
 
 const wb = xlsx.readFile('/home/bdowning/Documents/signal netlist.ods');
 
@@ -36,16 +37,14 @@ class Node {
         }
     }
 
-    setNum(netName, num) {
-        if (this.shared.netName)
-            throw new Error('circuit net already assigned');
-        this.shared.netName = netName;
-        this.shared.num = num;
+    setCircuit(circuit) {
+        if (this.shared.circuit)
+            throw new Error('node circuit already set');
+        this.shared.circuit = circuit;
     }
 
-    num(netName) {
-        if (this.shared.netName === netName)
-            return this.shared.num;
+    circuit() {
+        return this.shared.circuit;
     }
 }
 
@@ -62,31 +61,57 @@ class Component {
         }
     }
 
-    resistor(circuit, nodeA, nodeB, value) {
-        const numA = nodeA && nodeA.num(circuit.netName);
-        const numB = nodeB && nodeB.num(circuit.netName);
-        if (numA && numB)
-            circuit.resistor(numA, numB, value);
+    resistor(nodeA, nodeB, value) {
+        if (nodeA && nodeB) {
+            const circuit = nodeA.circuit();
+            if (nodeB.circuit() !== circuit)
+                throw new Error('resistor across different circuits');
+            if (circuit)
+                circuit.resistor(nodeA.shared, nodeB.shared, value);
+        }
     }
 
-    voltageSource(circuit, index, nodeNeg, nodePos, value) {
-        const numNeg = nodeNeg && nodeNeg.num(circuit.netName);
-        const numPos = nodePos && nodePos.num(circuit.netName);
-        if (numNeg && numPos)
-            circuit.voltageSource(index, numNeg, numPos, value);
+    voltageSource(key, nodeNeg, nodePos, value) {
+        if (nodeNeg && nodePos) {
+            const circuit = nodePos.circuit();
+            if (nodeNeg.circuit() !== circuit)
+                throw new Error('voltage source across different circuits');
+            if (circuit)
+                circuit.voltageSource(key, nodeNeg.shared, nodePos.shared, value);
+        }
     }
 
-    nodeVoltage(circuit, node) {
-        const num = node && node.num(circuit.netName);
-        if (num)
-            return circuit.nodeVoltage(num);
+    currentSource(nodeNeg, nodePos, value) {
+        if (nodeNeg && nodePos) {
+            const circuit = nodePos.circuit();
+            if (nodeNeg.circuit() !== circuit)
+                throw new Error('voltage source across different circuits');
+            if (circuit)
+                circuit.currentSource(nodeNeg.shared, nodePos.shared, value);
+        }
+    }
+
+    nodeVoltage(node) {
+        if (node) {
+            const circuit = node.circuit();
+            if (circuit)
+                return circuit.nodeVoltage(node.shared);
+        }
+    }
+
+    voltageSourceCurrent(key, nodeNeg) {
+        if (nodeNeg) {
+            const circuit = nodeNeg.circuit();
+            if (circuit)
+                return circuit.voltageSourceCurrent(key);
+        }
     }
 
     fixupNodes() { }
     prepare() { }
     walk(visit, terminal) { }
-    preSolve(circuit, time) { }
-    postSolve(circuit, time) { }
+    preSolve(time) { }
+    postSolve(time) { }
 }
 
 class PowerSupply extends Component {
@@ -100,8 +125,14 @@ class PowerSupply extends Component {
         visit(this.terminals['-']);
     }
 
-    preSolve(circuit, time) {
-        this.voltageSource(circuit, 0, this.terminals['-'], this.terminals['+'], this.voltage);
+    preSolve(time) {
+        //this.currentSource(this.terminals['-'], this.terminals['+'], this.voltage);
+        this.voltageSource(this, this.terminals['-'], this.terminals['+'], this.voltage);
+    }
+
+    postSolve(time) {
+        const current = this.voltageSourceCurrent(this, this.terminals['-']);
+        console.log(this.name, 'current', current);
     }
 }
 
@@ -140,7 +171,7 @@ class Switch extends Component {
         visit(this.terminals['-']);
     }
 
-    preSolve(circuit, time) {
+    preSolve(time) {
         if (this.state === 'closed')
             this.resistor(this.terminals[pair.from], this.terminals[pair.to], closed);
     }
@@ -151,6 +182,12 @@ class Lever extends Component {
         super(props);
         this.state = state;
         this.pairs = [ ];
+        for (let lever of levers) {
+            if (lever.lever !== this.name)
+                continue;
+            if (lever.state)
+                this.pairs.push(lever);
+        }
     }
 
     walk(visit, terminal) {
@@ -163,18 +200,12 @@ class Lever extends Component {
     }
 
     prepare() {
-        for (let lever of levers) {
-            if (lever.lever !== this.name)
-                continue;
-            if (lever.state)
-                this.pairs.push(lever);
-        }
     }
 
-    preSolve(circuit, time) {
+    preSolve(time) {
         for (let pair of this.pairs) {
             if (this.state === pair.state)
-                this.resistor(circuit, this.terminals[pair.from], this.terminals[pair.to], closed);
+                this.resistor(this.terminals[pair.from], this.terminals[pair.to], closed);
         }
     }
 }
@@ -228,26 +259,26 @@ class Relay extends Component {
         });
     }
 
-    preSolve(circuit, time) {
-        this.resistor(circuit, this.coilP, this.coilN, this.coilResistance);
+    preSolve(time) {
+        this.resistor(this.coilP, this.coilN, this.coilResistance);
         if (this.state === 'down') {
             this.contacts.forEach(c => {
-                this.resistor(circuit, c.heel, c.back, closed);
+                this.resistor(c.heel, c.back, closed);
             });
         } else if (this.state === 'up') {
             this.contacts.forEach(c => {
-                this.resistor(circuit, c.heel, c.front, closed);
+                this.resistor(c.heel, c.front, closed);
             });
         }
     }
 
-    postSolve(circuit, time) {
-        const voltsP = this.nodeVoltage(circuit, this.coilP);
-        const voltsN = this.nodeVoltage(circuit, this.coilN);
+    postSolve(time) {
+        const voltsP = this.nodeVoltage(this.coilP);
+        const voltsN = this.nodeVoltage(this.coilN);
         if (voltsP != null && voltsN != null) {
             const amps = (voltsP - voltsN) / this.coilResistance;
             const bias = amps >= 0 ? 'forward' : 'reverse';
-            //console.log(this.name, 'coil+ volts', voltsP, 'coil- volts', voltsN, 'current', amps);
+            console.log(this.name, 'coil+ volts', voltsP, 'coil- volts', voltsN, 'current', amps);
             if (amps != 0) {
                 if (this.state === 'down')
                     maybeSchedule(this, time + 0.1, bias, 'up');
@@ -322,19 +353,19 @@ for (let wire of wires) {
     wireComponent(wire);
 }
 
-wireComponent({ from: 'N10-TWR MAIN', to: 'N10-CASEA' });
-wireComponent({ from: 'B10-TWR MAIN', to: '2TR COIL+' });
-wireComponent({ from: 'N10-TWR MAIN', to: '2TR COIL-' });
-wireComponent({ from: 'B10-TWR MAIN', to: '6TR COIL+' });
-wireComponent({ from: 'N10-TWR MAIN', to: '6TR COIL-' });
-wireComponent({ from: 'B10-TWR MAIN', to: '14ATR COIL+' });
-wireComponent({ from: 'N10-TWR MAIN', to: '14ATR COIL-' });
-wireComponent({ from: 'B10-TWR MAIN', to: '14BTR COIL+' });
-wireComponent({ from: 'N10-TWR MAIN', to: '14BTR COIL-' });
+// wireComponent({ from: 'N10-TWR MAIN', to: 'N10-CASEA' });
+// wireComponent({ from: 'B10-TWR MAIN', to: '2TR COIL+' });
+// wireComponent({ from: 'N10-TWR MAIN', to: '2TR COIL-' });
+// wireComponent({ from: 'B10-TWR MAIN', to: '6TR COIL+' });
+// wireComponent({ from: 'N10-TWR MAIN', to: '6TR COIL-' });
+// wireComponent({ from: 'B10-TWR MAIN', to: '14ATR COIL+' });
+// wireComponent({ from: 'N10-TWR MAIN', to: '14ATR COIL-' });
+// wireComponent({ from: 'B10-TWR MAIN', to: '14BTR COIL+' });
+// wireComponent({ from: 'N10-TWR MAIN', to: '14BTR COIL-' });
 
-wireComponent({ from: 'B10-TWR MAIN', to: '6TPSR COIL+' });
-wireComponent({ from: 'B10-TWR MAIN', to: '6NWPPR COIL+' });
-wireComponent({ from: 'N10-TWR MAIN', to: '6NWPPR COIL-' });
+// wireComponent({ from: 'B10-TWR MAIN', to: '6TPSR COIL+' });
+// wireComponent({ from: 'B10-TWR MAIN', to: '6NWPPR COIL+' });
+// wireComponent({ from: 'N10-TWR MAIN', to: '6NWPPR COIL-' });
 
 for (let name in components) {
     components[name].fixupNodes();
@@ -342,15 +373,16 @@ for (let name in components) {
 
 const craggN = components['CRAGG'].terminals['-'];
 
-let numNodes = 0;
 const visited = new Set();
 const activeComponents = new Set();
+
+const circuit = new Circuit(craggN.shared);
 
 function visit(node) {
     if (!node || visited.has(node.shared))
         return;
     visited.add(node.shared);
-    node.shared.nodeNum = numNodes++;
+    node.setCircuit(circuit);
     for (let { payload: [ comp, term ] } of node.shared.members) {
         console.log(comp.name, term);
         activeComponents.add(comp);
@@ -362,9 +394,7 @@ visit(craggN);
 for (let comp of activeComponents) {
     comp.prepare();
 }
-console.log(numNodes);
 
-const Circuit = require('./circuit');
 
 function sim(time) {
     console.log(`*** sim ${time.toFixed(2)} ***`);
@@ -378,18 +408,23 @@ function sim(time) {
         }
     }
 
-    let circuit = new Circuit(numNodes, 1);
+    circuit.reset();
     for (let comp of activeComponents) {
         comp.preSolve(circuit, time);
     }
     console.log('pre solve');
+//    console.log(circuit);
+
+    // for (let node of circuit.nodes.keys()) {
+    //     circuit.resistor(circuit.groundNode, node, 1e-3);
+    // }
     circuit.solve();
     console.log('post solve');
+//    console.log(circuit);
     for (let node of visited) {
         // console.log('node', Array.from(node.names).join(' '));
         // console.log('  ', circuit.nodeVoltage(node.nodeNum), 'volts');
     }
-    console.log('psu current', circuit.voltageSourceCurrent(0));
     for (let comp of activeComponents) {
         comp.postSolve(circuit, time);
     }
@@ -569,6 +604,7 @@ components['LVR-12'].state = 'reverse';
 for (; t < 2.0; t += 0.05) {
     sim(t);
 }
+
 
 // for (let node of allNodes.values()) {
 //     if (node.wireLocs.length === 1)
