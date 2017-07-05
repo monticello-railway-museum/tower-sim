@@ -1,6 +1,307 @@
 {
   "comps": [
     {
+      "component": "9-10TR",
+      "subnet": "Case A",
+      "type": "relay",
+      "unused": "-1",
+      "used": "1"
+    },
+    {
+      "component": "12NLPR",
+      "subnet": "Case A",
+      "type": "relay",
+      "unused": "-2",
+      "used": "2"
+    },
+    {
+      "component": "12NWPR",
+      "subnet": "Case A",
+      "type": "relay",
+      "unused": "-2",
+      "used": "2"
+    },
+    {
+      "component": "12RLPR",
+      "subnet": "Case A",
+      "type": "relay",
+      "unused": "-2",
+      "used": "2"
+    },
+    {
+      "component": "12RWPR",
+      "subnet": "Case A",
+      "type": "relay",
+      "unused": "-2",
+      "used": "2"
+    },
+    {
+      "component": "12STI",
+      "subnet": "Case A",
+      "type": "terminal",
+      "unused": "0",
+      "used": "0"
+    },
+    {
+      "component": "12TR",
+      "subnet": "Case A",
+      "type": "relay",
+      "unused": "-1",
+      "used": "1"
+    },
+    {
+      "component": "12WCR",
+      "subnet": "Case A",
+      "type": "relay",
+      "unused": "-1",
+      "used": "1"
+    },
+    {
+      "component": "14ADR",
+      "subnet": "Case A",
+      "type": "relay",
+      "unused": "-2",
+      "used": "2"
+    },
+    {
+      "component": "14BHR",
+      "subnet": "Case A",
+      "type": "relay",
+      "unused": "-2",
+      "used": "2"
+    },
+    {
+      "component": "15HDPR",
+      "subnet": "Case A",
+      "type": "relay",
+      "unused": "-3",
+      "used": "3"
+    },
+    {
+      "component": "15HDR",
+      "subnet": "Case A",
+      "type": "relay",
+      "unused": "-1",
+      "used": "1"
+    },
+    {
+      "component": "16ADR",
+      "subnet": "Case A",
+      "type": "relay",
+      "unused": "-1",
+      "used": "1"
+    },
+    {
+      "component": "16AHR",
+      "subnet": "Case A",
+      "type": "relay",
+      "unused": "-1",
+      "used": "1"
+    },
+    {
+      "component": "16AR",
+      "subnet": "Case A",
+      "type": "relay",
+      "unused": "-1",
+      "used": "1"
+    },
+    {
+      "component": "16ARGPR",
+      "subnet": "Case A",
+      "type": "relay",
+      "unused": "-1",
+      "used": "1"
+    },
+    {
+      "component": "16BDR",
+      "subnet": "Case A",
+      "type": "relay",
+      "unused": "-1",
+      "used": "1"
+    },
+    {
+      "component": "16BRGPR",
+      "subnet": "Case A",
+      "type": "relay",
+      "unused": "-1",
+      "used": "1"
+    },
+    {
+      "component": "16COSPR",
+      "subnet": "Case A",
+      "type": "relay",
+      "unused": "-2",
+      "used": "2"
+    },
+    {
+      "component": "16HDGPR",
+      "subnet": "Case A",
+      "type": "relay",
+      "unused": "0",
+      "used": "0"
+    },
+    {
+      "component": "B10-CASEA",
+      "subnet": "Case A",
+      "type": "bus",
+      "unused": "0",
+      "used": "0"
+    },
+    {
+      "component": "BX6",
+      "subnet": "Case A",
+      "type": "bus",
+      "unused": "0",
+      "used": "0"
+    },
+    {
+      "component": "BX10",
+      "subnet": "Case A",
+      "type": "bus",
+      "unused": "0",
+      "used": "0"
+    },
+    {
+      "component": "CASEA",
+      "subnet": "Case A",
+      "type": "terminal",
+      "unused": "0",
+      "used": "0"
+    },
+    {
+      "component": "CASEA-CRAGG",
+      "subnet": "Case A",
+      "type": "power supply",
+      "unused": "0",
+      "used": "0"
+    },
+    {
+      "component": "CX10",
+      "subnet": "Case A",
+      "type": "bus",
+      "unused": "0",
+      "used": "0"
+    },
+    {
+      "component": "N10-CASEA",
+      "subnet": "Case A",
+      "type": "bus",
+      "unused": "0",
+      "used": "0"
+    },
+    {
+      "component": "N10-TWR",
+      "subnet": "Case A",
+      "type": "bus",
+      "unused": "0",
+      "used": "0"
+    },
+    {
+      "component": "NX6",
+      "subnet": "Case A",
+      "type": "bus",
+      "unused": "0",
+      "used": "0"
+    },
+    {
+      "component": "1HDPR",
+      "subnet": "Case C",
+      "type": "relay",
+      "unused": "-4",
+      "used": "4"
+    },
+    {
+      "component": "1TR",
+      "subnet": "Case C",
+      "type": "relay",
+      "unused": "-2",
+      "used": "2"
+    },
+    {
+      "component": "6NLPR",
+      "subnet": "Case C",
+      "type": "relay",
+      "unused": "-2",
+      "used": "2"
+    },
+    {
+      "component": "6NWPR",
+      "subnet": "Case C",
+      "type": "relay",
+      "unused": "-4",
+      "used": "4"
+    },
+    {
+      "component": "6RLPR",
+      "subnet": "Case C",
+      "type": "relay",
+      "unused": "-2",
+      "used": "2"
+    },
+    {
+      "component": "6RWPR",
+      "subnet": "Case C",
+      "type": "relay",
+      "unused": "-2",
+      "used": "2"
+    },
+    {
+      "component": "6STI",
+      "subnet": "Case C",
+      "type": "terminal",
+      "unused": "0",
+      "used": "0"
+    },
+    {
+      "component": "6WCR",
+      "subnet": "Case C",
+      "type": "relay",
+      "unused": "-3",
+      "used": "3"
+    },
+    {
+      "component": "B10-CASEC",
+      "subnet": "Case C",
+      "type": "bus",
+      "unused": "0",
+      "used": "0"
+    },
+    {
+      "component": "CASEC",
+      "subnet": "Case C",
+      "type": "terminal",
+      "unused": "0",
+      "used": "0"
+    },
+    {
+      "component": "CASEC-CRAGG",
+      "subnet": "Case C",
+      "type": "power supply",
+      "unused": "0",
+      "used": "0"
+    },
+    {
+      "component": "CASEC-LTG",
+      "subnet": "Case C",
+      "type": "bus",
+      "unused": "0",
+      "used": "0"
+    },
+    {
+      "component": "N10-CASEC",
+      "subnet": "Case C",
+      "type": "bus",
+      "unused": "0",
+      "used": "0"
+    },
+    {
+      "component": "N10-TWR",
+      "subnet": "Case C",
+      "type": "bus",
+      "unused": "0",
+      "used": "0"
+    },
+    {
       "component": "1-2-3ASR",
       "subnet": "Tower",
       "location": "shelf 4",
@@ -840,14 +1141,6 @@
       "used": "0"
     },
     {
-      "component": "CRAGG",
-      "subnet": "Tower",
-      "location": "shelf top",
-      "type": "power supply",
-      "unused": "0",
-      "used": "0"
-    },
-    {
       "component": "CX110",
       "subnet": "Tower",
       "location": "shelf top",
@@ -1220,6 +1513,14 @@
       "subnet": "Tower",
       "location": "lever top",
       "type": "button",
+      "unused": "0",
+      "used": "0"
+    },
+    {
+      "component": "TWR-CRAGG",
+      "subnet": "Tower",
+      "location": "shelf top",
+      "type": "power supply",
       "unused": "0",
       "used": "0"
     }
@@ -1960,7 +2261,7 @@
     {
       "signal": "N10-CASEA",
       "from": "GRP-A T6",
-      "to": "N10-CASEA T1",
+      "to": "N10-CASEA-TWR T1",
       "page": "T5"
     },
     {
@@ -1989,13 +2290,13 @@
     },
     {
       "signal": "N-9-10LOSTE",
-      "from": "N10-CASEA T8",
+      "from": "N10-CASEA-TWR T8",
       "to": "9-10LOSTER COIL-",
       "page": "T5"
     },
     {
       "signal": "N-9-10TP",
-      "from": "N10-CASEA T9",
+      "from": "N10-CASEA-TWR T9",
       "to": "9-10TPR COIL-",
       "page": "T5"
     },
@@ -2199,13 +2500,13 @@
     },
     {
       "signal": "N-12LOSTE",
-      "from": "N10-CASEA T10",
+      "from": "N10-CASEA-TWR T10",
       "to": "12LOSTER COIL-",
       "page": "T6"
     },
     {
       "signal": "N-12TP",
-      "from": "N10-CASEA T11",
+      "from": "N10-CASEA-TWR T11",
       "to": "12TPR COIL-",
       "page": "T6"
     },
@@ -3298,25 +3599,25 @@
     },
     {
       "signal": "N10-CASEA",
-      "from": "N10-CASEA T2",
+      "from": "N10-CASEA-TWR T2",
       "to": "16APR COIL-",
       "page": "T13"
     },
     {
       "signal": "N10-CASEA",
-      "from": "N10-CASEA T3",
+      "from": "N10-CASEA-TWR T3",
       "to": "14RGPR COIL-",
       "page": "T13"
     },
     {
       "signal": "N10-CASEA",
-      "from": "N10-CASEA T4",
+      "from": "N10-CASEA-TWR T4",
       "to": "14HDGPR COIL-",
       "page": "T13"
     },
     {
       "signal": "N10-CASEA",
-      "from": "N10-CASEA T1",
+      "from": "N10-CASEA-TWR T1",
       "to": "GRP-A T6",
       "page": "T13"
     },
@@ -3650,19 +3951,19 @@
     },
     {
       "signal": "N10-CASEA",
-      "from": "N10-CASEA T5",
+      "from": "N10-CASEA-TWR T5",
       "to": "15RGPR COIL-",
       "page": "T15"
     },
     {
       "signal": "N10-CASEA",
-      "from": "N10-CASEA T7",
+      "from": "N10-CASEA-TWR T7",
       "to": "16RGPR COIL-",
       "page": "T15"
     },
     {
       "signal": "N10-CASEA",
-      "from": "N10-CASEA T6",
+      "from": "N10-CASEA-TWR T6",
       "to": "15HDGPR COIL-",
       "page": "T15"
     },
@@ -4028,13 +4329,13 @@
     },
     {
       "signal": "B10-TWR",
-      "from": "CRAGG +",
+      "from": "TWR-CRAGG +",
       "to": "B10-TWR MAIN T1",
       "page": "T18"
     },
     {
       "signal": "N10-TWR",
-      "from": "CRAGG -",
+      "from": "TWR-CRAGG -",
       "to": "N10-TWR MAIN T1",
       "page": "T18"
     },
@@ -4120,7 +4421,7 @@
   "caseAWires": [
     {
       "signal": "14AD",
-      "from": "T10",
+      "from": "CASEA T10",
       "to": "14ADR COIL+",
       "page": "A1"
     },
@@ -4132,7 +4433,7 @@
     },
     {
       "signal": "14BH",
-      "from": "T11",
+      "from": "CASEA T11",
       "to": "14BHR COIL+",
       "page": "A1"
     },
@@ -4144,7 +4445,7 @@
     },
     {
       "signal": "16AP",
-      "from": "T7",
+      "from": "CASEA T7",
       "to": "16AR 1F",
       "page": "A1"
     },
@@ -4156,20 +4457,26 @@
     },
     {
       "signal": "B10-CASEA",
-      "from": "T37",
+      "from": "CASEA T37",
       "to": "B10-CASEA",
       "page": "A1"
     },
     {
       "signal": "14HDGP",
-      "from": "T38",
-      "to": "T17",
+      "from": "CASEA T38",
+      "to": "CASEA T17",
       "page": "A1"
     },
     {
       "signal": "14RGP",
-      "from": "T39",
-      "to": "T12",
+      "from": "CASEA T39",
+      "to": "CASEA T12",
+      "page": "A1"
+    },
+    {
+      "signal": "N10-CASEA",
+      "from": "N10-CASEA",
+      "to": "CASEA T6",
       "page": "A1"
     },
     {
@@ -4181,7 +4488,7 @@
     {
       "signal": "14A-A+",
       "from": "14ADR 1H",
-      "to": "T33",
+      "to": "CASEA T33",
       "page": "A1"
     },
     {
@@ -4199,19 +4506,19 @@
     {
       "signal": "14A-A-",
       "from": "14ADR 2H",
-      "to": "T34",
+      "to": "CASEA T34",
       "page": "A1"
     },
     {
       "signal": "14A-L+",
       "from": "BX10",
-      "to": "T29",
+      "to": "CASEA T29",
       "page": "A1"
     },
     {
       "signal": "14A-L-",
-      "from": "NX10",
-      "to": "T31",
+      "from": "CX10",
+      "to": "CASEA T31",
       "page": "A1"
     },
     {
@@ -4223,7 +4530,7 @@
     {
       "signal": "14B-A+",
       "from": "14BHR 1H",
-      "to": "T36",
+      "to": "CASEA T36",
       "page": "A1"
     },
     {
@@ -4241,24 +4548,24 @@
     {
       "signal": "14B-A-",
       "from": "14BHR 2H",
-      "to": "T35",
+      "to": "CASEA T35",
       "page": "A1"
     },
     {
       "signal": "14B-L+",
       "from": "BX10",
-      "to": "T30",
+      "to": "CASEA T30",
       "page": "A1"
     },
     {
       "signal": "14B-L-",
-      "from": "NX10",
-      "to": "T32",
+      "from": "CX10",
+      "to": "CASEA T32",
       "page": "A1"
     },
     {
       "signal": "12RLP-1",
-      "from": "T2",
+      "from": "CASEA T2",
       "to": "12NLPR 1H",
       "page": "A2"
     },
@@ -4276,7 +4583,7 @@
     },
     {
       "signal": "12NLP-1",
-      "from": "T1",
+      "from": "CASEA T1",
       "to": "12RLPR 1H",
       "page": "A2"
     },
@@ -4295,12 +4602,12 @@
     {
       "signal": "N10-TWR",
       "from": "N10-TWR",
-      "to": "T3",
+      "to": "CASEA T3",
       "page": "A2"
     },
     {
       "signal": "12WPP",
-      "from": "T4",
+      "from": "CASEA T4",
       "to": "12NWPR COIL+",
       "page": "A2"
     },
@@ -4331,31 +4638,31 @@
     {
       "signal": "12SCCWP",
       "from": "12NWPR 1H",
-      "to": "T67",
+      "to": "CASEA T67",
       "page": "A2"
     },
     {
       "signal": "N-12SCCWP",
-      "from": "T5",
-      "to": "T68",
+      "from": "CASEA T5",
+      "to": "CASEA T68",
       "page": "A2"
     },
     {
       "signal": "12SCC-NIO",
       "from": "N10-CASEA",
-      "to": "T66",
+      "to": "CASEA T66",
       "page": "A2"
     },
     {
       "signal": "B10-CASEA",
       "from": "B10-CASEA",
-      "to": "SCC FUSE",
+      "to": "12SCC-FUSE +",
       "page": "A2"
     },
     {
       "signal": "12SCC-BIO",
-      "from": "T65",
-      "to": "SCC FUSE",
+      "from": "CASEA T65",
+      "to": "12SCC-FUSE -",
       "page": "A2"
     },
     {
@@ -4414,43 +4721,43 @@
     },
     {
       "signal": "12WKEZ",
-      "from": "12WKEZ",
+      "from": "12STI 12WKEZ",
       "to": "12WCR 1B",
       "page": "A2"
     },
     {
       "signal": "12WKE",
-      "from": "12WKE",
+      "from": "12STI 12WKE",
       "to": "12WCR 1F",
       "page": "A2"
     },
     {
       "signal": "N10-CASEA",
       "from": "N10-CASEA",
-      "to": "S.T.I. N10",
+      "to": "12STI N10",
       "page": "A2"
     },
     {
       "signal": "15HD",
-      "from": "T18",
+      "from": "CASEA T18",
       "to": "15HDR COIL+",
       "page": "A3"
     },
     {
       "signal": "N-15HD",
-      "from": "T19",
+      "from": "CASEA T19",
       "to": "15HDR COIL-",
       "page": "A3"
     },
     {
       "signal": "15HDGPR",
-      "from": "T21",
+      "from": "CASEA T21",
       "to": "15HDPR 1F",
       "page": "A3"
     },
     {
       "signal": "15RGPR",
-      "from": "T20",
+      "from": "CASEA T20",
       "to": "15HDPR 1B",
       "page": "A3"
     },
@@ -4462,7 +4769,7 @@
     },
     {
       "signal": "12TP-1",
-      "from": "T9",
+      "from": "CASEA T9",
       "to": "12TR 1F",
       "page": "A3"
     },
@@ -4474,7 +4781,7 @@
     },
     {
       "signal": "9-10TP-1A",
-      "from": "T8",
+      "from": "CASEA T8",
       "to": "9-10TR 1F",
       "page": "A3"
     },
@@ -4499,12 +4806,12 @@
     {
       "signal": "15ARG",
       "from": "BX10",
-      "to": "T43",
+      "to": "CASEA T43",
       "page": "A3"
     },
     {
-      "signal": "NX10",
-      "from": "NX10",
+      "signal": "CX10",
+      "from": "CX10",
       "to": "LTG RESISTOR",
       "page": "A3"
     },
@@ -4515,15 +4822,15 @@
       "page": "A3"
     },
     {
-      "signal": "15A-NX10",
+      "signal": "15A-CX10",
       "from": "LTG RESISTOR",
-      "to": "T44",
+      "to": "CASEA T44",
       "page": "A3"
     },
     {
-      "signal": "15B-NX10",
+      "signal": "15B-CX10",
       "from": "LTG RESISTOR",
-      "to": "T48",
+      "to": "CASEA T48",
       "page": "A3"
     },
     {
@@ -4540,7 +4847,7 @@
     {
       "signal": "15BRG",
       "from": "15HDPR 3B",
-      "to": "T45",
+      "to": "CASEA T45",
       "page": "A3"
     },
     {
@@ -4564,13 +4871,13 @@
     {
       "signal": "15BHG",
       "from": "15HDR 1-",
-      "to": "T46",
+      "to": "CASEA T46",
       "page": "A3"
     },
     {
       "signal": "15BDG",
       "from": "15HDR 1+",
-      "to": "T47",
+      "to": "CASEA T47",
       "page": "A3"
     },
     {
@@ -4675,67 +4982,67 @@
     },
     {
       "signal": "16AD",
-      "from": "T23",
+      "from": "CASEA T23",
       "to": "16ADR COIL+",
       "page": "A4"
     },
     {
       "signal": "16AH",
-      "from": "T22",
+      "from": "CASEA T22",
       "to": "16AHR COIL+",
       "page": "A4"
     },
     {
       "signal": "16BD",
-      "from": "T25",
+      "from": "CASEA T25",
       "to": "16BDR COIL+",
       "page": "A4"
     },
     {
       "signal": "16BH",
-      "from": "T24",
+      "from": "CASEA T24",
       "to": "16BHR COIL+",
       "page": "A4"
     },
     {
       "signal": "16COSP",
-      "from": "T26",
+      "from": "CASEA T26",
       "to": "16COSPR COIL+",
       "page": "A4"
     },
     {
       "signal": "N10-TWR",
-      "from": "N10-TWR",
+      "from": "N10-TWR-CASEA",
       "to": "16ADR COIL-",
       "page": "A4"
     },
     {
       "signal": "N10-TWR",
-      "from": "N10-TWR",
+      "from": "N10-TWR-CASEA",
       "to": "16AHR COIL-",
       "page": "A4"
     },
     {
       "signal": "N10-TWR",
-      "from": "N10-TWR",
+      "from": "N10-TWR-CASEA",
       "to": "16BDR COIL-",
       "page": "A4"
     },
     {
       "signal": "N10-TWR",
-      "from": "N10-TWR",
+      "from": "N10-TWR-CASEA",
       "to": "16BHR COIL-",
       "page": "A4"
     },
     {
       "signal": "N10-TWR",
-      "from": "N10-TWR",
+      "from": "N10-TWR-CASEA",
       "to": "16COSPR COIL-",
       "page": "A4"
     },
     {
       "signal": "16RGP",
-      "from": "T27",
+      "from": "CASEA T27",
       "to": "16COSPR 2H",
       "page": "A4"
     },
@@ -4784,25 +5091,25 @@
     {
       "signal": "16AD 90",
       "from": "16ADR 1F",
-      "to": "T55",
+      "to": "CASEA T55",
       "page": "A4"
     },
     {
       "signal": "16AH 45",
       "from": "16AHR 1F",
-      "to": "T56",
+      "to": "CASEA T56",
       "page": "A4"
     },
     {
       "signal": "16BD 90",
       "from": "16BDR 1F",
-      "to": "T58",
+      "to": "CASEA T58",
       "page": "A4"
     },
     {
       "signal": "16BH 45",
       "from": "16BHR 1F",
-      "to": "T59",
+      "to": "CASEA T59",
       "page": "A4"
     },
     {
@@ -4826,13 +5133,13 @@
     {
       "signal": "16A BX10",
       "from": "LTG RESISTOR",
-      "to": "T49",
+      "to": "CASEA T49",
       "page": "A4"
     },
     {
       "signal": "16B BX10",
       "from": "LTG RESISTOR",
-      "to": "T50",
+      "to": "CASEA T50",
       "page": "A4"
     },
     {
@@ -4844,98 +5151,120 @@
     {
       "signal": "16CRG",
       "from": "16COSPR 1F",
-      "to": "T51",
+      "to": "CASEA T51",
       "page": "A4"
     },
     {
-      "signal": "NX10",
-      "from": "NX10",
-      "to": "T53 STRAP",
+      "signal": "CX10",
+      "from": "CX10",
+      "to": "CASEA T52",
+      "page": "A4"
+    },
+    {
+      "signal": "**STRAP**",
+      "from": "CASEA T52",
+      "to": "CASEA T53",
+      "page": "A4"
+    },
+    {
+      "signal": "**STRAP**",
+      "from": "CASEA T53",
+      "to": "CASEA T54",
       "page": "A4"
     },
     {
       "signal": "N10-CASEA",
       "from": "N10-CASEA",
-      "to": "T60",
+      "to": "CASEA T60",
       "page": "A4"
     },
     {
       "signal": "N10-CASEA",
       "from": "N10-CASEA",
-      "to": "T57",
+      "to": "CASEA T57",
       "page": "A4"
     },
     {
       "signal": "B10-CASEA",
       "from": "B10-CASEA",
-      "to": "T61",
+      "to": "CASEA T61",
       "page": "A4"
     },
     {
       "signal": "N10-TWR",
-      "from": "N10-TWR",
+      "from": "N10-TWR-CASEA",
       "to": "16ARGPR COIL-",
       "page": "A4"
     },
     {
       "signal": "N10-TWR",
-      "from": "N10-TWR",
+      "from": "N10-TWR-CASEA",
       "to": "16BRGPR COIL-",
       "page": "A4"
     },
     {
       "signal": "N10-TWR",
-      "from": "N10-TWR",
+      "from": "N10-TWR-CASEA",
       "to": "16HDGPR COIL-",
       "page": "A4"
     },
     {
       "signal": "16A P0",
       "from": "16ARGPR COIL+",
-      "to": "T62",
+      "to": "CASEA T62",
       "page": "A4"
     },
     {
       "signal": "16B P0",
       "from": "16BRGPR COIL+",
-      "to": "T63",
+      "to": "CASEA T63",
       "page": "A4"
     },
     {
       "signal": "16A/16B P4590",
       "from": "16HDGPR COIL+",
-      "to": "T64",
+      "to": "CASEA T64",
       "page": "A4"
     },
     {
       "signal": "16A",
-      "from": "T13",
+      "from": "CASEA T13",
       "to": "16AR COIL+",
       "page": "A4"
     },
     {
       "signal": "N16-A",
-      "from": "T14",
+      "from": "CASEA T14",
       "to": "16AR COIL-",
       "page": "A4"
+    },
+    {
+      "signal": "N10-CASEA",
+      "from": "CASEA-CRAGG -",
+      "to": "N10-CASEA"
+    },
+    {
+      "signal": "B10-CASEA",
+      "from": "CASEA-CRAGG +",
+      "to": "B10-CASEA"
     }
   ],
   "caseBWires": [
     {
       "signal": "2D",
-      "from": "T3",
+      "from": "CASEB T3",
       "to": "2DR COIL+",
       "page": "B1"
     },
     {
       "signal": "2H",
-      "from": "T4",
+      "from": "CASEB T4",
       "to": "2HR COIL+",
       "page": "B1"
     },
     {
       "signal": "2COSP",
-      "from": "T2",
+      "from": "CASEB T2",
       "to": "2COSPR COIL+",
       "page": "B1"
     },
@@ -4959,7 +5288,7 @@
     },
     {
       "signal": "2RGP",
-      "from": "T9",
+      "from": "CASEB T9",
       "to": "2DR 1H",
       "page": "B1"
     },
@@ -4983,19 +5312,19 @@
     },
     {
       "signal": "3D",
-      "from": "T6",
+      "from": "CASEB T6",
       "to": "3DR COIL+",
       "page": "B1"
     },
     {
       "signal": "3H",
-      "from": "T7",
+      "from": "CASEB T7",
       "to": "3HR COIL+",
       "page": "B1"
     },
     {
       "signal": "3COSP",
-      "from": "T5",
+      "from": "CASEB T5",
       "to": "3COSPR COIL+",
       "page": "B1"
     },
@@ -5019,7 +5348,7 @@
     },
     {
       "signal": "3HDP",
-      "from": "T10",
+      "from": "CASEB T10",
       "to": "3COSPR 1F",
       "page": "B1"
     },
@@ -5053,7 +5382,7 @@
     },
     {
       "signal": "3RGP",
-      "from": "T11",
+      "from": "CASEB T11",
       "to": "3DR 2F",
       "page": "B1"
     },
@@ -5345,13 +5674,13 @@
     },
     {
       "signal": "B10-TWR",
-      "from": "T1",
+      "from": "CASEB T1",
       "to": "B10-TWR T1",
       "page": "B2"
     },
     {
       "signal": "4H",
-      "from": "T8",
+      "from": "CASEB T8",
       "to": "4HR COIL+",
       "page": "B2"
     },
@@ -5369,7 +5698,7 @@
     },
     {
       "signal": "4RGP",
-      "from": "T12",
+      "from": "CASEB T12",
       "to": "4HR 1B",
       "page": "B2"
     },
@@ -5424,298 +5753,613 @@
   ],
   "caseCWires": [
     {
-      "signal": "B10-CASE C BUS",
-      "from": "T1",
-      "to": "1TR-1F"
+      "signal": "B10-CASEC",
+      "from": "B10-CASEC T1",
+      "to": "1TR 1F"
     },
     {
-      "signal": "B10-CASE C BUS",
-      "from": "T2",
-      "to": "1HDPR-3H"
+      "signal": "B10-CASEC",
+      "from": "B10-CASEC T2",
+      "to": "1HDPR 3H"
     },
     {
-      "signal": "B10-CASE C BUS",
-      "from": "T3",
-      "to": "6WCR-1H"
+      "signal": "B10-CASEC",
+      "from": "B10-CASEC T3",
+      "to": "6WCR 1H"
     },
     {
-      "signal": "B10-CASE C BUS",
-      "from": "T4",
-      "to": "6NLPR-2H"
+      "signal": "B10-CASEC",
+      "from": "B10-CASEC T4",
+      "to": "6NLPR 2H"
     },
     {
-      "signal": "B10-CASE C BUS",
-      "from": "T5",
-      "to": "6SCC FUSE"
+      "signal": "B10-CASEC",
+      "from": "B10-CASEC T5",
+      "to": "6SCC-FUSE +"
     },
     {
-      "signal": "B10-CASE C BUS",
-      "from": "T6",
-      "to": "CRAGG +"
+      "signal": "B10-CASEC",
+      "from": "B10-CASEC T6",
+      "to": "CASEC-CRAGG +"
     },
     {
-      "signal": "N10-CASE C BUS",
-      "from": "T1",
-      "to": "1TR-2F"
+      "signal": "N10-CASEC",
+      "from": "N10-CASEC T1",
+      "to": "1TR 2F"
     },
     {
-      "signal": "N10-CASE C BUS",
-      "from": "T2",
-      "to": "1HDPR-4H"
+      "signal": "N10-CASEC",
+      "from": "N10-CASEC T2",
+      "to": "1HDPR 4H"
     },
     {
-      "signal": "N10-CASE C BUS",
-      "from": "T3",
-      "to": "6WCR -COIL"
+      "signal": "N10-CASEC",
+      "from": "N10-CASEC T3",
+      "to": "6WCR COIL-"
     },
     {
-      "signal": "N10-CASE C BUS",
-      "from": "T4"
-    },
-    {
-      "signal": "N10-CASE C BUS",
-      "from": "T5",
+      "signal": "N10-CASEC",
+      "from": "N10-CASEC T5",
       "to": "6SCC-N10"
     },
     {
-      "signal": "N10-CASE C BUS",
-      "from": "T6",
-      "to": "SWITCHTENDER INDICATION"
+      "signal": "N10-CASEC",
+      "from": "N10-CASEC T6",
+      "to": "6STI N10"
     },
     {
-      "signal": "N10-CASE C BUS",
-      "from": "T7",
-      "to": "CRAGG -"
+      "signal": "N10-CASEC",
+      "from": "N10-CASEC T7",
+      "to": "CASEC-CRAGG -"
     },
     {
-      "signal": "N10-TOWER BUS",
-      "from": "T1",
-      "to": "LINE ARRESTOR T1"
+      "signal": "N10-TWR",
+      "from": "N10-TWR-CASEC T1",
+      "to": "CASEC T1"
     },
     {
-      "signal": "N10-TOWER BUS",
-      "from": "T2",
-      "to": "6NLPR -COIL  N-6NLP"
+      "signal": "N-6NLP",
+      "from": "N10-TWR-CASEC T2",
+      "to": "6NLPR COIL-"
     },
     {
-      "signal": "N10-TOWER BUS",
-      "from": "T3",
-      "to": "6RLPR -COIL  N-6RLPR"
+      "signal": "N-6RLPR",
+      "from": "N10-TWR-CASEC T3",
+      "to": "6RLPR COIL-"
     },
     {
       "signal": "1HDP-1",
-      "from": "LINE ARRESTOR T4",
-      "to": "6WCR-3F"
+      "from": "CASEC T4",
+      "to": "6WCR 3F"
     },
     {
       "signal": "N-1HDP-1",
-      "from": "LINE ARRESTOR T5",
-      "to": "6WCR-4F"
+      "from": "CASEC T5",
+      "to": "6WCR 4F"
     },
     {
       "signal": "6NLP-1",
-      "from": "LINE ARRESTOR T2",
-      "to": "6RLPR-1H"
+      "from": "CASEC T2",
+      "to": "6RLPR 1H"
     },
     {
       "signal": "6RLP-1",
-      "from": "LINE ARRESTOR T3",
-      "to": "6NLPR-1H"
+      "from": "CASEC T3",
+      "to": "6NLPR 1H"
     },
     {
       "signal": "1RGP",
-      "from": "LINE ARRESTOR T6",
-      "to": "1HDPR-3B"
+      "from": "CASEC T6",
+      "to": "1HDPR 3B"
     },
     {
       "signal": "N-1RGP",
-      "from": "LINE ARRESTOR T7",
-      "to": "1HDPR-4B"
+      "from": "CASEC T7",
+      "to": "1HDPR 4B"
     },
     {
       "signal": "6WPP",
-      "from": "LINE ARRESTOR T8",
-      "to": "6NWPR -COIL"
+      "from": "CASEC T8",
+      "to": "6NWPR COIL-"
     },
     {
       "signal": "N-6WPP",
-      "from": "LINE ARRESTOR T9",
-      "to": "LINE ARRESTOR T 24"
+      "from": "CASEC T9",
+      "to": "CASEC T24"
     },
     {
       "signal": "1A",
-      "from": "LINE ARRESTOR T10",
-      "to": "1TH-1H"
+      "from": "CASEC T10",
+      "to": "1TR 1H"
     },
     {
       "signal": "N-1A",
-      "from": "LINE ARRESTOR T11",
-      "to": "1TR-2H"
+      "from": "CASEC T11",
+      "to": "1TR 2H"
     },
     {
       "signal": "1HDGPR",
-      "from": "LINE ARRESTOR T12",
-      "to": "1HDPR-3F"
+      "from": "CASEC T12",
+      "to": "1HDPR 3F"
     },
     {
       "signal": "N-1HDGPR",
-      "from": "LINE ARRESTOR T13",
-      "to": "1HDPR-4F"
+      "from": "CASEC T13",
+      "to": "1HDPR 4F"
     },
     {
       "signal": "1HDP",
-      "from": "1HDPR +COIL",
-      "to": "6WCR-3H"
+      "from": "1HDPR COIL+",
+      "to": "6WCR 3H"
     },
     {
       "signal": "N-1HDP",
-      "from": "1HDPR -COIL",
-      "to": "6WCR-4H"
+      "from": "1HDPR COIL-",
+      "to": "6WCR 4H"
+    },
+    {
+      "signal": "**STRAP**",
+      "from": "1HDPR 1P",
+      "to": "1HDPR 2P"
+    },
+    {
+      "signal": "**STRAP**",
+      "from": "1HDPR 1+",
+      "to": "1HDPR 2+"
+    },
+    {
+      "signal": "**STRAP**",
+      "from": "1HDPR 1-",
+      "to": "1HDPR 2-"
+    },
+    {
+      "signal": "**STRAP**",
+      "from": "1HDPR 1H",
+      "to": "1HDPR 2H"
+    },
+    {
+      "signal": "**STRAP**",
+      "from": "1HDPR 1F",
+      "to": "1HDPR 2F"
+    },
+    {
+      "signal": "**STRAP**",
+      "from": "1HDPR 1B",
+      "to": "1HDPR 2B"
+    },
+    {
+      "signal": "**STRAP**",
+      "from": "6NWPR 3H",
+      "to": "6NWPR 4H"
+    },
+    {
+      "signal": "**STRAP**",
+      "from": "6NWPR 3F",
+      "to": "6NWPR 4F"
+    },
+    {
+      "signal": "**STRAP**",
+      "from": "6NWPR 3B",
+      "to": "6NWPR 4B"
     },
     {
       "signal": "1TMG",
-      "from": "LIGHTING TERMINAL T4",
-      "to": "6NWPR-3&4 H"
+      "from": "CASEC-LTG T4",
+      "to": "6NWPR 3H"
     },
     {
       "signal": "1DG",
-      "from": "LIGHTING TERMINAL T1",
-      "to": "1HDPR 1P&2P +"
+      "from": "CASEC-LTG T1",
+      "to": "1HDPR 1+"
     },
     {
       "signal": "1HG",
-      "from": "LIGHTING TERMINAL T2",
-      "to": "1HDPR 1P&2P -"
+      "from": "CASEC-LTG T2",
+      "to": "1HDPR 1-"
     },
     {
       "signal": "1RG",
-      "from": "LIGHTING TERMINAL T3",
-      "to": "1HDPR-1&2B"
+      "from": "CASEC-LTG T3",
+      "to": "1HDPR 1B"
     },
     {
-      "signal": "NX10-MAIN",
-      "from": "LIGHTING TERMINAL T7",
-      "to": "LIGHTING RESISTOR"
+      "signal": "CX10-1G",
+      "from": "CASEC-LTG T7",
+      "to": "1GE RESISTOR +"
     },
     {
-      "signal": "NX10-MARKER",
-      "from": "LIGHTING TERMINAL T8",
-      "to": "LIGHTING RESISTOR"
+      "signal": "CX10-1MG",
+      "from": "CASEC-LTG T8",
+      "to": "1MGE RESISTOR +"
     },
     {
       "signal": "1TMG-1",
-      "from": "6NWPR-3&4F",
-      "to": "1HDPR-P1&P2 +"
+      "from": "6NWPR 3F",
+      "to": "1HDPR 1+"
     },
     {
       "signal": "6RLP",
-      "from": "6RLPR +COIL",
-      "to": "6NLPR-1B"
+      "from": "6RLPR COIL+",
+      "to": "6NLPR 1B"
     },
     {
       "signal": "6NLP",
-      "from": "6NLPR +COIL",
-      "to": "6RLPR-1B"
+      "from": "6NLPR COIL+",
+      "to": "6RLPR 1B"
     },
     {
       "signal": "6NWP",
-      "from": "6NWPR +COIL",
-      "to": "6RWPR-1B"
+      "from": "6NWPR COIL+",
+      "to": "6RWPR 1B"
     },
     {
       "signal": "6RWP",
-      "from": "6RWPR -COIL",
-      "to": "6NWPR-1B"
+      "from": "6RWPR COIL-",
+      "to": "6NWPR 1B"
     },
     {
       "signal": "6WPP-A",
-      "from": "6RWPR +COIL",
-      "to": "6NWPR -COIL"
+      "from": "6RWPR COIL+",
+      "to": "6NWPR COIL-"
     },
     {
       "signal": "6SCCWP-A",
-      "from": "6NWPR-1H",
-      "to": "6RWPR-1H"
+      "from": "6NWPR 1H",
+      "to": "6RWPR 1H"
     },
     {
       "signal": "6SCCWP",
-      "from": "LINE ARRESTOR T23",
-      "to": "6NWPR-1H"
+      "from": "CASEC T23",
+      "to": "6NWPR 1H"
     },
     {
       "signal": "6SCC B10",
-      "from": "LINE ARRESTOR T21",
-      "to": "SCC FUSE"
+      "from": "CASEC T21",
+      "to": "6SCC-FUSE -"
     },
     {
       "signal": "6WC",
-      "from": "6WCR  +COIL",
-      "to": "6RWPR-2H"
+      "from": "6WCR COIL+",
+      "to": "6RWPR 2H"
     },
     {
       "signal": "6WC-1",
-      "from": "6RWPR-2B",
-      "to": "6RLPR-2B"
+      "from": "6RWPR 2B",
+      "to": "6RLPR 2B"
     },
     {
       "signal": "6WC-2",
-      "from": "6RLPR-2H",
-      "to": "6NWPR-2H"
+      "from": "6RLPR 2H",
+      "to": "6NWPR 2H"
     },
     {
       "signal": "6WC-2A",
-      "from": "6NWPR-2B",
-      "to": "6NLPR-2B"
+      "from": "6NWPR 2B",
+      "to": "6NLPR 2B"
     },
     {
       "signal": "6WC-A",
-      "from": "6RWPR-2F",
-      "to": "6RLPR-2F"
+      "from": "6RWPR 2F",
+      "to": "6RLPR 2F"
     },
     {
       "signal": "6WC-3",
-      "from": "6NWPR-2F",
-      "to": "6NLPR-2F"
+      "from": "6NWPR 2F",
+      "to": "6NLPR 2F"
     },
     {
       "signal": "6WKEZ",
-      "from": "6WCR-1B",
-      "to": "SWITCHTENDER INDICATION"
+      "from": "6WCR 1B",
+      "to": "6STI 6WKEZ"
     },
     {
       "signal": "6WKE",
-      "from": "6WCR-1F",
-      "to": "SWITCHTENDER INDICATION"
+      "from": "6WCR 1F",
+      "to": "6STI 6WKE"
     },
     {
       "signal": "1TNX",
-      "from": "TRACK ARRESTOR",
-      "to": "1T TEST TERM"
+      "from": "1TNX ARRESTOR",
+      "to": "1T TEST TERM -"
     },
     {
       "signal": "1TBX",
-      "from": "TRACK ARRESTOR",
-      "to": "1T RESISTANCE UNIT"
+      "from": "1TBX ARRESTOR",
+      "to": "1T RESISTANCE UNIT 1+"
     },
     {
       "signal": "1T",
-      "from": "1TR  +COIL",
-      "to": "1T RESISTANCE UNIT"
+      "from": "1TR COIL+",
+      "to": "1T RESISTANCE UNIT 1-"
     },
     {
       "signal": "N-1T",
-      "from": "1TR  -COIL",
-      "to": "1T TEST TERM"
+      "from": "1TR COIL-",
+      "to": "1T TEST TERM +"
+    },
+    {
+      "signal": "**STRAP**",
+      "from": "1T RESISTANCE UNIT 1+",
+      "to": "1T RESISTANCE UNIT 2+"
     },
     {
       "signal": "BX6",
-      "from": "LIGHTING TRANS",
-      "to": "1T RESISTANCE UNIT"
+      "from": "CASEC-W10 BX6",
+      "to": "1T RESISTANCE UNIT 1+"
     },
     {
-      "signal": "NX6",
-      "from": "LIGHTING TRANS",
-      "to": "1T TEST TERM"
+      "signal": "CX6",
+      "from": "CASEC-W10 CX6",
+      "to": "1T TEST TERM +"
+    },
+    {
+      "signal": "BX10",
+      "from": "CASEC-W10 BX10",
+      "to": "1HDPR 1H"
+    },
+    {
+      "signal": "1HDG",
+      "from": "1HDPR 1F",
+      "to": "1HDPR 1P"
+    },
+    {
+      "signal": "CX10",
+      "from": "CASEC-W10 CX10",
+      "to": "1GE RESISTOR -"
+    }
+  ],
+  "crossConnections": [
+    {
+      "signal": "12NLP-1",
+      "fromSubnet": "Tower",
+      "from": "GRP-A T1",
+      "toSubnet": "Case A",
+      "to": "CASEA T1"
+    },
+    {
+      "signal": "12RLP-1",
+      "fromSubnet": "Tower",
+      "from": "GRP-A T2",
+      "toSubnet": "Case A",
+      "to": "CASEA T2"
+    },
+    {
+      "signal": "N10-TWR",
+      "fromSubnet": "Tower",
+      "from": "GRP-A T3",
+      "toSubnet": "Case A",
+      "to": "CASEA T3"
+    },
+    {
+      "signal": "12WPP",
+      "fromSubnet": "Tower",
+      "from": "GRP-A T4",
+      "toSubnet": "Case A",
+      "to": "CASEA T4"
+    },
+    {
+      "signal": "N-12WPP",
+      "fromSubnet": "Tower",
+      "from": "GRP-A T5",
+      "toSubnet": "Case A",
+      "to": "CASEA T5"
+    },
+    {
+      "signal": "N10-CASEA",
+      "fromSubnet": "Tower",
+      "from": "GRP-A T6",
+      "toSubnet": "Case A",
+      "to": "CASEA T6"
+    },
+    {
+      "signal": "16AP",
+      "fromSubnet": "Tower",
+      "from": "GRP-A T7",
+      "toSubnet": "Case A",
+      "to": "CASEA T7"
+    },
+    {
+      "signal": "9-10TP-1A",
+      "fromSubnet": "Tower",
+      "from": "GRP-A T8",
+      "toSubnet": "Case A",
+      "to": "CASEA T8"
+    },
+    {
+      "signal": "12TP-1A",
+      "fromSubnet": "Tower",
+      "from": "GRP-A T9",
+      "toSubnet": "Case A",
+      "to": "CASEA T9"
+    },
+    {
+      "signal": "14AD",
+      "fromSubnet": "Tower",
+      "from": "GRP-A T10",
+      "toSubnet": "Case A",
+      "to": "CASEA T10"
+    },
+    {
+      "signal": "14BH",
+      "fromSubnet": "Tower",
+      "from": "GRP-A T11",
+      "toSubnet": "Case A",
+      "to": "CASEA T11"
+    },
+    {
+      "signal": "14RGP",
+      "fromSubnet": "Tower",
+      "from": "GRP-A T12",
+      "toSubnet": "Case A",
+      "to": "CASEA T12"
+    },
+    {
+      "signal": "14HDGP",
+      "fromSubnet": "Tower",
+      "from": "GRP-B T1",
+      "toSubnet": "Case A",
+      "to": "CASEA T17"
+    },
+    {
+      "signal": "15HD",
+      "fromSubnet": "Tower",
+      "from": "GRP-B T2",
+      "toSubnet": "Case A",
+      "to": "CASEA T18"
+    },
+    {
+      "signal": "N-15HD",
+      "fromSubnet": "Tower",
+      "from": "GRP-B T3",
+      "toSubnet": "Case A",
+      "to": "CASEA T19"
+    },
+    {
+      "signal": "15RGP",
+      "fromSubnet": "Tower",
+      "from": "GRP-B T4",
+      "toSubnet": "Case A",
+      "to": "CASEA T20"
+    },
+    {
+      "signal": "15HDGP",
+      "fromSubnet": "Tower",
+      "from": "GRP-B T5",
+      "toSubnet": "Case A",
+      "to": "CASEA T21"
+    },
+    {
+      "signal": "16AH",
+      "fromSubnet": "Tower",
+      "from": "GRP-B T6",
+      "toSubnet": "Case A",
+      "to": "CASEA T22"
+    },
+    {
+      "signal": "16AD",
+      "fromSubnet": "Tower",
+      "from": "GRP-B T7",
+      "toSubnet": "Case A",
+      "to": "CASEA T23"
+    },
+    {
+      "signal": "16BH",
+      "fromSubnet": "Tower",
+      "from": "GRP-B T8",
+      "toSubnet": "Case A",
+      "to": "CASEA T24"
+    },
+    {
+      "signal": "16BD",
+      "fromSubnet": "Tower",
+      "from": "GRP-B T9",
+      "toSubnet": "Case A",
+      "to": "CASEA T25"
+    },
+    {
+      "signal": "16COSP",
+      "fromSubnet": "Tower",
+      "from": "GRP-B T10",
+      "toSubnet": "Case A",
+      "to": "CASEA T26"
+    },
+    {
+      "signal": "16RGP",
+      "fromSubnet": "Tower",
+      "from": "GRP-B T11",
+      "toSubnet": "Case A",
+      "to": "CASEA T27"
+    },
+    {
+      "signal": "N10-TWR",
+      "fromSubnet": "Tower",
+      "from": "GRP-F T1",
+      "toSubnet": "Case C",
+      "to": "CASEC T1"
+    },
+    {
+      "signal": "6NLP-1",
+      "fromSubnet": "Tower",
+      "from": "GRP-F T2",
+      "toSubnet": "Case C",
+      "to": "CASEC T2"
+    },
+    {
+      "signal": "6RLP-1",
+      "fromSubnet": "Tower",
+      "from": "GRP-F T3",
+      "toSubnet": "Case C",
+      "to": "CASEC T3"
+    },
+    {
+      "signal": "1HDP-1",
+      "fromSubnet": "Tower",
+      "from": "GRP-F T4",
+      "toSubnet": "Case C",
+      "to": "CASEC T4"
+    },
+    {
+      "signal": "N-1HDP-1",
+      "fromSubnet": "Tower",
+      "from": "GRP-F T5",
+      "toSubnet": "Case C",
+      "to": "CASEC T5"
+    },
+    {
+      "signal": "1RGP",
+      "fromSubnet": "Tower",
+      "from": "GRP-F T6",
+      "toSubnet": "Case C",
+      "to": "CASEC T6"
+    },
+    {
+      "signal": "N-1RGP",
+      "fromSubnet": "Tower",
+      "from": "GRP-F T7",
+      "toSubnet": "Case C",
+      "to": "CASEC T7"
+    },
+    {
+      "signal": "6WPP",
+      "fromSubnet": "Tower",
+      "from": "GRP-F T8",
+      "toSubnet": "Case C",
+      "to": "CASEC T8"
+    },
+    {
+      "signal": "N-6WPP",
+      "fromSubnet": "Tower",
+      "from": "GRP-F T9",
+      "toSubnet": "Case C",
+      "to": "CASEC T9"
+    },
+    {
+      "signal": "1A",
+      "fromSubnet": "Tower",
+      "from": "GRP-F T10",
+      "toSubnet": "Case C",
+      "to": "CASEC T10"
+    },
+    {
+      "signal": "N-1A",
+      "fromSubnet": "Tower",
+      "from": "GRP-F T11",
+      "toSubnet": "Case C",
+      "to": "CASEC T11"
+    },
+    {
+      "signal": "1HDGP",
+      "fromSubnet": "Tower",
+      "from": "GRP-F T12",
+      "toSubnet": "Case C",
+      "to": "CASEC T12"
+    },
+    {
+      "signal": "N-1HDGP",
+      "fromSubnet": "Tower",
+      "from": "GRP-G T1",
+      "toSubnet": "Case C",
+      "to": "CASEC T13"
     }
   ],
   "levers": [
