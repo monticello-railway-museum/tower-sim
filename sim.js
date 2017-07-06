@@ -1,14 +1,8 @@
-const xlsx = require('xlsx');
+const fs = require('fs');
+
 const Circuit = require('./circuit');
 
-const wb = xlsx.readFile('/home/bdowning/Documents/signal netlist.ods');
-
-const comps = xlsx.utils.sheet_to_json(wb.Sheets['Components']);
-const towerWires = xlsx.utils.sheet_to_json(wb.Sheets['Tower wires']);
-const caseaWires = xlsx.utils.sheet_to_json(wb.Sheets['Case A wires']);
-const casecWires = xlsx.utils.sheet_to_json(wb.Sheets['Case C wires']);
-const crossConnections = xlsx.utils.sheet_to_json(wb.Sheets['Cross-connections']);
-const levers = xlsx.utils.sheet_to_json(wb.Sheets['Tower levers']);
+const netlist = JSON.parse(fs.readFileSync('netlist.json'));
 
 const components = { };
 
@@ -167,16 +161,43 @@ class Switch extends Component {
     constructor(props, state = 'open') {
         super(props);
         this.state = state;
+        this.contacts = [ ];
     }
 
     walk(visit, terminal) {
-        visit(this.terminals['+']);
-        visit(this.terminals['-']);
+        const match = terminal.match(/^\d+/);
+        console.log('switch walk', this.name, terminal, match);
+        if (match) {
+            visit(this.terminals[`${match[0]}H`]);
+            visit(this.terminals[`${match[0]}F`]);
+            visit(this.terminals[`${match[0]}B`]);
+        }
+    }
+
+    prepare() {
+        this.forEachTerminal((term, node) => {
+            const match = term.match(/^(\d+)H$/);
+            if (match) {
+                this.contacts.push({
+                    number: parseInt(match[1]),
+                    heel: node,
+                    front: this.terminals[`${match[1]}F`],
+                    back: this.terminals[`${match[1]}B`],
+                });
+            }
+        });
     }
 
     preSolve(time) {
-        if (this.state === 'closed')
-            this.resistor(this.terminals[pair.from], this.terminals[pair.to], closed);
+        if (this.state === 'closed') {
+            this.contacts.forEach(c => {
+                this.resistor(c.heel, c.front, closed);
+            });
+        } else {
+            this.contacts.forEach(c => {
+                this.resistor(c.heel, c.back, closed);
+            });
+        }
     }
 }
 
@@ -185,7 +206,7 @@ class Lever extends Component {
         super(props);
         this.state = state;
         this.pairs = [ ];
-        for (let lever of levers) {
+        for (let lever of netlist.levers) {
             if (lever.lever !== this.name)
                 continue;
             if (lever.state)
@@ -224,8 +245,9 @@ class Relay extends Component {
         super(props);
         this.state = state;
         this.bias = 'forward';
-        this.coilResistance = 100;
+        this.coilResistance = this.resistance || 100;
         this.contacts = [ ];
+        this.polarContacts = [ ];
     }
 
     walk(visit, terminal) {
@@ -259,6 +281,15 @@ class Relay extends Component {
                     back: this.terminals[`${match[1]}B`],
                 });
             }
+            const match2 = term.match(/^(\d+)P$/);
+            if (match2) {
+                this.polarContacts.push({
+                    number: parseInt(match2[1]),
+                    heel: node,
+                    positive: this.terminals[`${match2[1]}+`],
+                    negative: this.terminals[`${match2[1]}-`],
+                });
+            }
         });
     }
 
@@ -272,6 +303,12 @@ class Relay extends Component {
             this.contacts.forEach(c => {
                 this.resistor(c.heel, c.front, closed);
             });
+            this.polarContacts.forEach(c => {
+                if (this.bias === 'forward')
+                    this.resistor(c.heel, c.positive, closed);
+                else
+                    this.resistor(c.heel, c.negative, closed);
+            });
         }
     }
 
@@ -281,15 +318,22 @@ class Relay extends Component {
         if (voltsP != null && voltsN != null) {
             const amps = (voltsP - voltsN) / this.coilResistance;
             const bias = amps >= 0 ? 'forward' : 'reverse';
-            //console.log(this.name, this.subnet, 'coil+ volts', voltsP, 'coil- volts', voltsN, 'current', amps);
-            if (Math.abs(amps) > 0.01) {
+            //console.log(this.name, this.subnet, 'coil+ volts', voltsP, 'coil- volts', voltsN, 'ohms', this.coilResistance, 'current', amps);
+            let pickup = Math.abs(amps) > 0.005;
+            if (this.subtype === 'biased neutral')
+                pickup = amps > 0.005;
+            if (pickup) {
                 if (this.state === 'down')
                     maybeSchedule(this, time + 0.1, bias, 'up');
                 else if (this.bias !== bias)
                     maybeSchedule(this, time + 0.01, bias, 'down');
+                else
+                    this.schedule = null;
             } else {
                 if (this.state === 'up')
                     maybeSchedule(this, time + 0.01, bias, 'down');
+                else
+                    this.schedule = null;
             }
         }
     }
@@ -304,13 +348,15 @@ const componentTypeMap = {
     'power supply': PowerSupply,
 };
 
-for (let comp of comps) {
+for (let comp of netlist.comps) {
     const type = componentTypeMap[comp.type] || Component;
     components[`${comp.subnet}/${comp.component}`] = new type({
         name: comp.component,
         type: comp.type,
+        subtype: comp.subtype,
         subnet: comp.subnet,
         location: comp.location,
+        resistance: comp.resistance ? parseFloat(comp.resistance) : undefined,
         terminals: { },
     });
 }
@@ -355,14 +401,17 @@ function wireComponent(wire, fromSubnet, toSubnet = fromSubnet) {
     // node.addName(`<${toComp.name} ${toTerm}>`);
 }
 
-for (let wire of towerWires)
+for (let wire of netlist.towerWires)
     wireComponent(wire, 'Tower');
-for (let wire of caseaWires)
+for (let wire of netlist.caseAWires)
     wireComponent(wire, 'Case A');
-for (let wire of casecWires)
+for (let wire of netlist.caseCWires)
     wireComponent(wire, 'Case C');
-for (let wire of crossConnections)
+for (let wire of netlist.crossConnections)
     wireComponent(wire, wire.fromSubnet, wire.toSubnet);
+
+wireComponent({ from: 'B10-TWR MAIN', to: '6TR COIL+' }, 'Tower');
+wireComponent({ from: 'N10-TWR MAIN', to: '6TR COIL-' }, 'Tower');
 
 //process.exit();
 
@@ -371,7 +420,7 @@ for (let name in components) {
     console.log(name);
 }
 
-const circuits = [];
+const circuits = [ ];
 
 const psus = [
     'Tower/TWR-CRAGG',
@@ -427,7 +476,7 @@ function sim(time) {
     for (let comp of activeComponents) {
         comp.preSolve(time);
     }
-    console.log('pre solve');
+    //console.log('pre solve');
 //    console.log(circuit);
 
     // for (let node of circuit.nodes.keys()) {
@@ -435,7 +484,7 @@ function sim(time) {
     // }
     for (let circuit of circuits)
         circuit.solve();
-    console.log('post solve');
+    //console.log('post solve');
 //    console.log(circuit);
     for (let node of visited) {
         // console.log('node', Array.from(node.names).join(' '));
