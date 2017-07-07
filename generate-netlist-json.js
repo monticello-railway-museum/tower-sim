@@ -11,6 +11,7 @@ const ob = {
     caseCWires: xlsx.utils.sheet_to_json(wb.Sheets['Case C wires']),
     crossConnections: xlsx.utils.sheet_to_json(wb.Sheets['Cross-connections']),
     levers: xlsx.utils.sheet_to_json(wb.Sheets['Tower levers']),
+    leverLocking: xlsx.utils.sheet_to_json(wb.Sheets['Lever locking']),
 };
 
 fs.writeFileSync('netlist.json', JSON.stringify(ob));
