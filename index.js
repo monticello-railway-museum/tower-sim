@@ -71,9 +71,9 @@ const circuitColors = [
     '#e6ab02',
     '#a6761d',
     '#666666',
-    // '#660000',
-    // '#006600',
-    // '#000066',
+    '#660000',
+    '#006600',
+    '#000066',
 ];
 
 class Turnout extends React.Component {
@@ -106,7 +106,7 @@ class Inspector extends React.Component {
             return (
                 <div>
                   <h2>Node {names}</h2>
-                  <p>Voltage: {num(node.circuit.nodeVoltage(node))}</p>
+                  <p>Voltage: {node.circuit ? num(node.circuit.nodeVoltage(node)) : 'unsimulated'}</p>
                   <p>Connections:</p>
                   <ul>
                     {Array.from(node.members)
@@ -130,7 +130,7 @@ class Inspector extends React.Component {
                            const names = Array.from(node.names).sort(mangledCompare).join(', ');
                            return (
                                <li><InspectLink inspect={inspect} target={node}>
-                                 {t}: Node {names}: {node.circuit ? num(node.circuit.nodeVoltage(node)) : 'unconnected'}
+                                 {t}: Node {names}: {node.circuit ? num(node.circuit.nodeVoltage(node)) : 'unsimulated'}
                                </InspectLink></li>
                            );
                        })}
@@ -237,7 +237,10 @@ class Top extends React.Component {
                 const chanN = psu.terminals[chan.negative];
                 psus.push(
                     <div style={{color: this.circuitColors.get(chanN.circuit())}}>
-                      {psu.name} {chan.negative} {chan.positive}: <span style={{float: 'right'}}>{num(chan.current, 'A')}</span>
+                      <InspectLink inspect={this.inspect} target={psu}>
+                        {psu.name} {chan.negative} {chan.positive}:
+                      </InspectLink>
+                      <span style={{float: 'right'}}>{num(chan.current, 'A')}</span>
                     </div>
                 );
             }

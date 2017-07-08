@@ -4,36 +4,59 @@
       "component": "9-10TR",
       "subnet": "Case A",
       "type": "relay",
-      "unused": "-1",
+      "resistance": "4",
+      "contacts": "4",
+      "unused": "3",
       "used": "1"
     },
     {
       "component": "12NLPR",
       "subnet": "Case A",
       "type": "relay",
-      "unused": "-2",
+      "resistance": "1000",
+      "index": "9",
+      "contacts": "4",
+      "unused": "2",
       "used": "2"
     },
     {
       "component": "12NWPR",
       "subnet": "Case A",
       "type": "relay",
-      "unused": "-2",
+      "subtype": "biased neutral",
+      "resistance": "300",
+      "index": "2",
+      "contacts": "4",
+      "unused": "2",
       "used": "2"
     },
     {
       "component": "12RLPR",
       "subnet": "Case A",
       "type": "relay",
-      "unused": "-2",
+      "resistance": "1000",
+      "index": "10",
+      "contacts": "4",
+      "unused": "2",
       "used": "2"
     },
     {
       "component": "12RWPR",
       "subnet": "Case A",
       "type": "relay",
-      "unused": "-2",
+      "subtype": "biased neutral",
+      "resistance": "300",
+      "index": "3",
+      "contacts": "4",
+      "unused": "2",
       "used": "2"
+    },
+    {
+      "component": "12SCC-FUSE",
+      "subnet": "Case A",
+      "type": "fuse",
+      "unused": "0",
+      "used": "0"
     },
     {
       "component": "12STI",
@@ -46,99 +69,136 @@
       "component": "12TR",
       "subnet": "Case A",
       "type": "relay",
-      "unused": "-1",
+      "resistance": "4",
+      "contacts": "4",
+      "unused": "3",
       "used": "1"
     },
     {
       "component": "12WCR",
       "subnet": "Case A",
       "type": "relay",
-      "unused": "-1",
+      "resistance": "1000",
+      "index": "11",
+      "contacts": "4",
+      "unused": "3",
       "used": "1"
     },
     {
       "component": "14ADR",
       "subnet": "Case A",
       "type": "relay",
-      "unused": "-2",
+      "resistance": "670",
+      "contacts": "4",
+      "unused": "2",
       "used": "2"
     },
     {
       "component": "14BHR",
       "subnet": "Case A",
       "type": "relay",
-      "unused": "-2",
+      "resistance": "670",
+      "contacts": "4",
+      "unused": "2",
       "used": "2"
     },
     {
       "component": "15HDPR",
       "subnet": "Case A",
       "type": "relay",
-      "unused": "-3",
+      "subtype": "slow release",
+      "resistance": "250",
+      "index": "4",
+      "contacts": "4",
+      "unused": "1",
       "used": "3"
     },
     {
       "component": "15HDR",
       "subnet": "Case A",
       "type": "relay",
-      "unused": "-1",
+      "subtype": "polar",
+      "resistance": "670",
+      "index": "1",
+      "contacts": "6",
+      "unused": "5",
       "used": "1"
     },
     {
       "component": "16ADR",
       "subnet": "Case A",
       "type": "relay",
-      "unused": "-1",
+      "resistance": "150",
+      "index": "6",
+      "contacts": "2",
+      "unused": "1",
       "used": "1"
     },
     {
       "component": "16AHR",
       "subnet": "Case A",
       "type": "relay",
-      "unused": "-1",
+      "resistance": "150",
+      "index": "5",
+      "contacts": "2",
+      "unused": "1",
       "used": "1"
     },
     {
       "component": "16AR",
       "subnet": "Case A",
       "type": "relay",
-      "unused": "-1",
+      "resistance": "670",
+      "contacts": "4",
+      "unused": "3",
       "used": "1"
     },
     {
       "component": "16ARGPR",
       "subnet": "Case A",
       "type": "relay",
-      "unused": "-1",
+      "resistance": "670",
+      "contacts": "4",
+      "unused": "3",
       "used": "1"
     },
     {
       "component": "16BDR",
       "subnet": "Case A",
       "type": "relay",
-      "unused": "-1",
+      "resistance": "150",
+      "index": "8",
+      "contacts": "2",
+      "unused": "1",
+      "used": "1"
+    },
+    {
+      "component": "16BHR",
+      "subnet": "Case A",
+      "type": "relay",
+      "resistance": "150",
+      "index": "7",
+      "contacts": "2",
+      "unused": "1",
       "used": "1"
     },
     {
       "component": "16BRGPR",
       "subnet": "Case A",
       "type": "relay",
-      "unused": "-1",
+      "resistance": "670",
+      "contacts": "4",
+      "unused": "3",
       "used": "1"
     },
     {
       "component": "16COSPR",
       "subnet": "Case A",
       "type": "relay",
-      "unused": "-2",
+      "resistance": "670",
+      "contacts": "4",
+      "unused": "2",
       "used": "2"
-    },
-    {
-      "component": "16HDGPR",
-      "subnet": "Case A",
-      "type": "relay",
-      "unused": "0",
-      "used": "0"
     },
     {
       "component": "B10-CASEA",
@@ -172,6 +232,7 @@
       "component": "CASEA-CRAGG",
       "subnet": "Case A",
       "type": "power supply",
+      "config": "{\"channels\":[[\"-\", \"+\", 10]]}",
       "unused": "0",
       "used": "0"
     },
@@ -204,46 +265,189 @@
       "used": "0"
     },
     {
+      "component": "2COSPR",
+      "subnet": "Case B",
+      "type": "relay",
+      "resistance": "670",
+      "index": "2",
+      "contacts": "4",
+      "unused": "1",
+      "used": "3"
+    },
+    {
+      "component": "2DR",
+      "subnet": "Case B",
+      "type": "relay",
+      "resistance": "670",
+      "index": "4",
+      "contacts": "4",
+      "unused": "1",
+      "used": "3"
+    },
+    {
+      "component": "2HR",
+      "subnet": "Case B",
+      "type": "relay",
+      "resistance": "670",
+      "index": "3",
+      "contacts": "4",
+      "unused": "1",
+      "used": "3"
+    },
+    {
+      "component": "3COSPR",
+      "subnet": "Case B",
+      "type": "relay",
+      "resistance": "670",
+      "index": "5",
+      "contacts": "4",
+      "unused": "0",
+      "used": "4"
+    },
+    {
+      "component": "3DR",
+      "subnet": "Case B",
+      "type": "relay",
+      "resistance": "670",
+      "index": "7",
+      "contacts": "4",
+      "unused": "0",
+      "used": "4"
+    },
+    {
+      "component": "3HR",
+      "subnet": "Case B",
+      "type": "relay",
+      "resistance": "670",
+      "index": "6",
+      "contacts": "4",
+      "unused": "0",
+      "used": "4"
+    },
+    {
+      "component": "4HR",
+      "subnet": "Case B",
+      "type": "relay",
+      "resistance": "670",
+      "index": "1",
+      "contacts": "4",
+      "unused": "1",
+      "used": "3"
+    },
+    {
+      "component": "1GE RESISTOR",
+      "subnet": "Case C",
+      "type": "resistor",
+      "unused": "0",
+      "used": "0"
+    },
+    {
       "component": "1HDPR",
       "subnet": "Case C",
       "type": "relay",
-      "unused": "-4",
+      "subtype": "polar",
+      "resistance": "250",
+      "contacts": "4",
+      "unused": "0",
       "used": "4"
+    },
+    {
+      "component": "1MGE RESISTOR",
+      "subnet": "Case C",
+      "type": "resistor",
+      "unused": "0",
+      "used": "0"
+    },
+    {
+      "component": "1T RESISTANCE UNIT 1",
+      "subnet": "Case C",
+      "type": "resistor",
+      "resistance": "5",
+      "unused": "0",
+      "used": "0"
+    },
+    {
+      "component": "1T RESISTANCE UNIT 2",
+      "subnet": "Case C",
+      "type": "resistor",
+      "resistance": "5",
+      "unused": "0",
+      "used": "0"
+    },
+    {
+      "component": "1T TEST TERM",
+      "subnet": "Case C",
+      "type": "test terminal",
+      "unused": "0",
+      "used": "0"
+    },
+    {
+      "component": "1TBX ARRESTOR",
+      "subnet": "Case C",
+      "type": "arrestor",
+      "unused": "0",
+      "used": "0"
+    },
+    {
+      "component": "1TNX ARRESTOR",
+      "subnet": "Case C",
+      "type": "arrestor",
+      "unused": "0",
+      "used": "0"
     },
     {
       "component": "1TR",
       "subnet": "Case C",
       "type": "relay",
-      "unused": "-2",
+      "resistance": "4",
+      "contacts": "4",
+      "unused": "2",
       "used": "2"
     },
     {
       "component": "6NLPR",
       "subnet": "Case C",
       "type": "relay",
-      "unused": "-2",
+      "resistance": "670",
+      "contacts": "4",
+      "unused": "2",
       "used": "2"
     },
     {
       "component": "6NWPR",
       "subnet": "Case C",
       "type": "relay",
-      "unused": "-4",
+      "subtype": "biased neutral",
+      "resistance": "300",
+      "contacts": "4",
+      "unused": "0",
       "used": "4"
     },
     {
       "component": "6RLPR",
       "subnet": "Case C",
       "type": "relay",
-      "unused": "-2",
+      "resistance": "670",
+      "contacts": "4",
+      "unused": "2",
       "used": "2"
     },
     {
       "component": "6RWPR",
       "subnet": "Case C",
       "type": "relay",
-      "unused": "-2",
+      "subtype": "biased neutral",
+      "resistance": "300",
+      "contacts": "4",
+      "unused": "2",
       "used": "2"
+    },
+    {
+      "component": "6SCC-FUSE",
+      "subnet": "Case C",
+      "type": "fuse",
+      "unused": "0",
+      "used": "0"
     },
     {
       "component": "6STI",
@@ -256,7 +460,9 @@
       "component": "6WCR",
       "subnet": "Case C",
       "type": "relay",
-      "unused": "-3",
+      "resistance": "670",
+      "contacts": "4",
+      "unused": "1",
       "used": "3"
     },
     {
@@ -277,6 +483,7 @@
       "component": "CASEC-CRAGG",
       "subnet": "Case C",
       "type": "power supply",
+      "config": "{\"channels\":[[\"-\", \"+\", 10]]}",
       "unused": "0",
       "used": "0"
     },
@@ -284,6 +491,15 @@
       "component": "CASEC-LTG",
       "subnet": "Case C",
       "type": "bus",
+      "unused": "0",
+      "used": "0"
+    },
+    {
+      "component": "CASEC-W10",
+      "subnet": "Case C",
+      "location": "shelf top",
+      "type": "power supply",
+      "config": "{\"channels\":[[\"CX10\", \"BX10\", 10], [\"CX6\", \"BX6\", 6]]}",
       "unused": "0",
       "used": "0"
     },
@@ -306,6 +522,7 @@
       "subnet": "Tower",
       "location": "shelf 4",
       "type": "relay",
+      "resistance": "150",
       "index": "2",
       "contacts": "2",
       "unused": "0",
@@ -316,6 +533,7 @@
       "subnet": "Tower",
       "location": "shelf 3",
       "type": "relay",
+      "resistance": "500",
       "index": "10",
       "contacts": "6",
       "unused": "1",
@@ -342,6 +560,7 @@
       "subnet": "Tower",
       "location": "shelf 1",
       "type": "relay",
+      "resistance": "670",
       "index": "10",
       "contacts": "4",
       "unused": "3",
@@ -352,6 +571,7 @@
       "subnet": "Tower",
       "location": "shelf 2",
       "type": "relay",
+      "resistance": "1000",
       "index": "11",
       "contacts": "2",
       "unused": "0",
@@ -362,6 +582,7 @@
       "subnet": "Tower",
       "location": "shelf 2",
       "type": "relay",
+      "resistance": "150",
       "index": "4",
       "contacts": "2",
       "unused": "0",
@@ -372,14 +593,15 @@
       "subnet": "Tower",
       "location": "lever top",
       "type": "button",
-      "unused": "0",
-      "used": "0"
+      "unused": "-1",
+      "used": "1"
     },
     {
       "component": "2-3COSR",
       "subnet": "Tower",
       "location": "shelf 2",
       "type": "relay",
+      "resistance": "1000",
       "index": "1",
       "contacts": "4",
       "unused": "1",
@@ -406,23 +628,14 @@
       "subnet": "Tower",
       "location": "shelf 2",
       "type": "relay",
+      "resistance": "1000",
       "index": "5",
       "contacts": "4",
       "unused": "0",
       "used": "4"
     },
     {
-      "component": "2TR",
-      "subnet": "Tower",
-      "location": "shelf 3",
-      "type": "relay",
-      "index": "9",
-      "contacts": "4",
-      "unused": "0",
-      "used": "4"
-    },
-    {
-      "component": "2TR TEST TERM",
+      "component": "2T TEST TERM",
       "subnet": "Tower",
       "location": "shelf 3",
       "type": "test terminal",
@@ -430,12 +643,33 @@
       "used": "0"
     },
     {
-      "component": "2TR TRK RESISTOR",
+      "component": "2T TRK RESISTOR 1",
       "subnet": "Tower",
       "location": "shelf 3",
-      "type": "track resistor",
+      "type": "resistor",
+      "resistance": "5",
       "unused": "0",
       "used": "0"
+    },
+    {
+      "component": "2T TRK RESISTOR 2",
+      "subnet": "Tower",
+      "location": "shelf 3",
+      "type": "resistor",
+      "resistance": "5",
+      "unused": "0",
+      "used": "0"
+    },
+    {
+      "component": "2TR",
+      "subnet": "Tower",
+      "location": "shelf 3",
+      "type": "relay",
+      "resistance": "4",
+      "index": "9",
+      "contacts": "4",
+      "unused": "0",
+      "used": "4"
     },
     {
       "component": "3GKE",
@@ -450,6 +684,7 @@
       "subnet": "Tower",
       "location": "shelf 2",
       "type": "relay",
+      "resistance": "1000",
       "index": "8",
       "contacts": "4",
       "unused": "2",
@@ -460,6 +695,7 @@
       "subnet": "Tower",
       "location": "shelf 2",
       "type": "relay",
+      "resistance": "1000",
       "index": "6",
       "contacts": "4",
       "unused": "1",
@@ -470,6 +706,7 @@
       "subnet": "Tower",
       "location": "shelf 2",
       "type": "relay",
+      "resistance": "150",
       "index": "3",
       "contacts": "2",
       "unused": "0",
@@ -488,6 +725,7 @@
       "subnet": "Tower",
       "location": "shelf 2",
       "type": "relay",
+      "resistance": "150",
       "index": "7",
       "contacts": "2",
       "unused": "-1",
@@ -506,6 +744,7 @@
       "subnet": "Tower",
       "location": "shelf 4",
       "type": "relay",
+      "resistance": "1000",
       "index": "1",
       "contacts": "4",
       "unused": "0",
@@ -515,7 +754,8 @@
       "component": "6LOSTER",
       "subnet": "Tower",
       "location": "shelf top",
-      "type": "time element (auto)",
+      "type": "relay",
+      "subtype": "time element",
       "unused": "-1",
       "used": "1"
     },
@@ -524,9 +764,11 @@
       "subnet": "Tower",
       "location": "shelf 1",
       "type": "relay",
+      "subtype": "biased neutral",
+      "resistance": "300",
       "index": "5",
-      "contacts": "6",
-      "unused": "2",
+      "contacts": "4",
+      "unused": "0",
       "used": "4"
     },
     {
@@ -534,16 +776,44 @@
       "subnet": "Tower",
       "location": "shelf 1",
       "type": "relay",
+      "subtype": "biased neutral",
+      "resistance": "300",
       "index": "6",
-      "contacts": "6",
-      "unused": "2",
+      "contacts": "4",
+      "unused": "0",
       "used": "4"
+    },
+    {
+      "component": "6T TEST TERM",
+      "subnet": "Tower",
+      "location": "shelf 3",
+      "type": "test terminal",
+      "unused": "0",
+      "used": "0"
+    },
+    {
+      "component": "6T TRK RESISTOR 1",
+      "subnet": "Tower",
+      "location": "shelf 3",
+      "type": "resistor",
+      "resistance": "5",
+      "unused": "0",
+      "used": "0"
+    },
+    {
+      "component": "6T TRK RESISTOR 2",
+      "subnet": "Tower",
+      "location": "shelf 3",
+      "type": "resistor",
+      "resistance": "5",
+      "unused": "0",
+      "used": "0"
     },
     {
       "component": "6TE",
       "subnet": "Tower",
       "location": "lever top",
-      "type": "time element (manual)",
+      "type": "time element",
       "unused": "-2",
       "used": "2"
     },
@@ -560,6 +830,7 @@
       "subnet": "Tower",
       "location": "shelf 4",
       "type": "relay",
+      "resistance": "1000",
       "index": "3",
       "contacts": "4",
       "unused": "2",
@@ -570,6 +841,7 @@
       "subnet": "Tower",
       "location": "shelf 4",
       "type": "relay",
+      "resistance": "500",
       "index": "4",
       "contacts": "6",
       "unused": "0",
@@ -580,26 +852,11 @@
       "subnet": "Tower",
       "location": "shelf 3",
       "type": "relay",
+      "resistance": "4",
       "index": "8",
       "contacts": "4",
       "unused": "3",
       "used": "1"
-    },
-    {
-      "component": "6TR TEST TERM",
-      "subnet": "Tower",
-      "location": "shelf 3",
-      "type": "test terminal",
-      "unused": "0",
-      "used": "0"
-    },
-    {
-      "component": "6TR TRK RESISTOR",
-      "subnet": "Tower",
-      "location": "shelf 3",
-      "type": "track resistor",
-      "unused": "0",
-      "used": "0"
     },
     {
       "component": "6WCKE",
@@ -613,7 +870,8 @@
       "component": "9-10LOSTER",
       "subnet": "Tower",
       "location": "shelf top",
-      "type": "time element (auto)",
+      "type": "relay",
+      "subtype": "time element",
       "unused": "-1",
       "used": "1"
     },
@@ -621,7 +879,7 @@
       "component": "9-10TE",
       "subnet": "Tower",
       "location": "lever top",
-      "type": "time element (manual)",
+      "type": "time element",
       "unused": "-2",
       "used": "2"
     },
@@ -638,6 +896,7 @@
       "subnet": "Tower",
       "location": "shelf 3",
       "type": "relay",
+      "resistance": "1370",
       "index": "7",
       "contacts": "4",
       "unused": "2",
@@ -648,6 +907,7 @@
       "subnet": "Tower",
       "location": "shelf 4",
       "type": "relay",
+      "resistance": "350",
       "index": "5",
       "contacts": "6",
       "unused": "0",
@@ -658,9 +918,10 @@
       "subnet": "Tower",
       "location": "shelf 1",
       "type": "relay",
+      "resistance": "500",
       "index": "1",
-      "contacts": "6",
-      "unused": "3",
+      "contacts": "4",
+      "unused": "1",
       "used": "3"
     },
     {
@@ -668,9 +929,10 @@
       "subnet": "Tower",
       "location": "shelf 1",
       "type": "relay",
+      "resistance": "500",
       "index": "2",
-      "contacts": "6",
-      "unused": "4",
+      "contacts": "4",
+      "unused": "2",
       "used": "2"
     },
     {
@@ -686,9 +948,10 @@
       "subnet": "Tower",
       "location": "shelf 1",
       "type": "relay",
+      "resistance": "500",
       "index": "3",
-      "contacts": "6",
-      "unused": "3",
+      "contacts": "4",
+      "unused": "1",
       "used": "3"
     },
     {
@@ -696,9 +959,10 @@
       "subnet": "Tower",
       "location": "shelf 1",
       "type": "relay",
+      "resistance": "500",
       "index": "4",
-      "contacts": "6",
-      "unused": "4",
+      "contacts": "4",
+      "unused": "2",
       "used": "2"
     },
     {
@@ -713,7 +977,8 @@
       "component": "12LOSTER",
       "subnet": "Tower",
       "location": "shelf top",
-      "type": "time element (auto)",
+      "type": "relay",
+      "subtype": "time element",
       "unused": "-1",
       "used": "1"
     },
@@ -722,9 +987,11 @@
       "subnet": "Tower",
       "location": "shelf 1",
       "type": "relay",
+      "subtype": "biased neutral",
+      "resistance": "300",
       "index": "7",
-      "contacts": "6",
-      "unused": "2",
+      "contacts": "4",
+      "unused": "0",
       "used": "4"
     },
     {
@@ -732,16 +999,18 @@
       "subnet": "Tower",
       "location": "shelf 1",
       "type": "relay",
+      "subtype": "biased neutral",
+      "resistance": "300",
       "index": "8",
-      "contacts": "6",
-      "unused": "2",
+      "contacts": "4",
+      "unused": "0",
       "used": "4"
     },
     {
       "component": "12TE",
       "subnet": "Tower",
       "location": "lever top",
-      "type": "time element (manual)",
+      "type": "time element",
       "unused": "-2",
       "used": "2"
     },
@@ -758,6 +1027,7 @@
       "subnet": "Tower",
       "location": "shelf 3",
       "type": "relay",
+      "resistance": "670",
       "index": "6",
       "contacts": "4",
       "unused": "2",
@@ -768,6 +1038,7 @@
       "subnet": "Tower",
       "location": "shelf 4",
       "type": "relay",
+      "resistance": "500",
       "index": "7",
       "contacts": "6",
       "unused": "0",
@@ -786,6 +1057,7 @@
       "subnet": "Tower",
       "location": "shelf 4",
       "type": "relay",
+      "resistance": "250",
       "index": "8",
       "contacts": "10",
       "unused": "0",
@@ -796,6 +1068,7 @@
       "subnet": "Tower",
       "location": "shelf 4",
       "type": "relay",
+      "resistance": "250",
       "index": "6",
       "contacts": "2",
       "unused": "0",
@@ -806,14 +1079,15 @@
       "subnet": "Tower",
       "location": "lever top",
       "type": "button",
-      "unused": "0",
-      "used": "0"
+      "unused": "-1",
+      "used": "1"
     },
     {
       "component": "14-16COSR",
       "subnet": "Tower",
       "location": "shelf 2",
       "type": "relay",
+      "resistance": "1000",
       "index": "2",
       "contacts": "4",
       "unused": "0",
@@ -824,10 +1098,37 @@
       "subnet": "Tower",
       "location": "shelf 4",
       "type": "relay",
+      "resistance": "1000",
       "index": "9",
       "contacts": "4",
       "unused": "1",
       "used": "3"
+    },
+    {
+      "component": "14AT TEST TERM",
+      "subnet": "Tower",
+      "location": "shelf 3",
+      "type": "test terminal",
+      "unused": "0",
+      "used": "0"
+    },
+    {
+      "component": "14AT TRK RESISTOR 1",
+      "subnet": "Tower",
+      "location": "shelf 3",
+      "type": "resistor",
+      "resistance": "5",
+      "unused": "0",
+      "used": "0"
+    },
+    {
+      "component": "14AT TRK RESISTOR 2",
+      "subnet": "Tower",
+      "location": "shelf 3",
+      "type": "resistor",
+      "resistance": "5",
+      "unused": "0",
+      "used": "0"
     },
     {
       "component": "14ATKE",
@@ -850,6 +1151,8 @@
       "subnet": "Tower",
       "location": "shelf 3",
       "type": "relay",
+      "subtype": "interlocking",
+      "resistance": "500",
       "index": "4",
       "contacts": "4",
       "unused": "1",
@@ -860,13 +1163,14 @@
       "subnet": "Tower",
       "location": "shelf 3",
       "type": "relay",
+      "resistance": "4",
       "index": "2",
       "contacts": "4",
       "unused": "2",
       "used": "2"
     },
     {
-      "component": "14ATR TEST TERM",
+      "component": "14BT TEST TERM",
       "subnet": "Tower",
       "location": "shelf 3",
       "type": "test terminal",
@@ -874,10 +1178,20 @@
       "used": "0"
     },
     {
-      "component": "14ATR TRK RESISTOR",
+      "component": "14BT TRK RESISTOR 1",
       "subnet": "Tower",
       "location": "shelf 3",
-      "type": "track resistor",
+      "type": "resistor",
+      "resistance": "5",
+      "unused": "0",
+      "used": "0"
+    },
+    {
+      "component": "14BT TRK RESISTOR 2",
+      "subnet": "Tower",
+      "location": "shelf 3",
+      "type": "resistor",
+      "resistance": "5",
       "unused": "0",
       "used": "0"
     },
@@ -902,6 +1216,8 @@
       "subnet": "Tower",
       "location": "shelf 3",
       "type": "relay",
+      "subtype": "interlocking",
+      "resistance": "500",
       "index": "5",
       "contacts": "4",
       "unused": "1",
@@ -912,26 +1228,11 @@
       "subnet": "Tower",
       "location": "shelf 3",
       "type": "relay",
+      "resistance": "2",
       "index": "3",
       "contacts": "4",
       "unused": "2",
       "used": "2"
-    },
-    {
-      "component": "14BTR TEST TERM",
-      "subnet": "Tower",
-      "location": "shelf 3",
-      "type": "test terminal",
-      "unused": "0",
-      "used": "0"
-    },
-    {
-      "component": "14BTR TRK RESISTOR",
-      "subnet": "Tower",
-      "location": "shelf 3",
-      "type": "track resistor",
-      "unused": "0",
-      "used": "0"
     },
     {
       "component": "14GKE",
@@ -994,6 +1295,7 @@
       "subnet": "Tower",
       "location": "shelf 3",
       "type": "relay",
+      "resistance": "1000",
       "index": "1",
       "contacts": "6",
       "unused": "0",
@@ -1028,6 +1330,7 @@
       "subnet": "Tower",
       "location": "shelf 2",
       "type": "relay",
+      "resistance": "1500",
       "index": "9",
       "contacts": "4",
       "unused": "2",
@@ -1038,6 +1341,7 @@
       "subnet": "Tower",
       "location": "shelf 2",
       "type": "relay",
+      "resistance": "1500",
       "index": "10",
       "contacts": "4",
       "unused": "3",
@@ -1137,6 +1441,7 @@
       "subnet": "Tower",
       "location": "shelf top",
       "type": "power supply",
+      "config": "{\"channels\":[[\"1TN\", \"1TB\", 6.3],[\"2TN\", \"2TB\", 6.3],[\"3TN\", \"3TB\", 6.3],[\"4TN\", \"4TB\", 6.3]]}",
       "unused": "0",
       "used": "0"
     },
@@ -1153,8 +1458,8 @@
       "subnet": "Tower",
       "location": "lever top",
       "type": "button",
-      "unused": "0",
-      "used": "0"
+      "unused": "-1",
+      "used": "1"
     },
     {
       "component": "FLOOR PB 8",
@@ -1169,16 +1474,16 @@
       "subnet": "Tower",
       "location": "lever top",
       "type": "button",
-      "unused": "0",
-      "used": "0"
+      "unused": "-1",
+      "used": "1"
     },
     {
       "component": "FLOOR PB 13",
       "subnet": "Tower",
       "location": "lever top",
       "type": "button",
-      "unused": "0",
-      "used": "0"
+      "unused": "-1",
+      "used": "1"
     },
     {
       "component": "GRP-A",
@@ -1497,8 +1802,8 @@
       "subnet": "Tower",
       "location": "lever top",
       "type": "button",
-      "unused": "0",
-      "used": "0"
+      "unused": "-1",
+      "used": "1"
     },
     {
       "component": "NX10-TWR",
@@ -1513,14 +1818,15 @@
       "subnet": "Tower",
       "location": "lever top",
       "type": "button",
-      "unused": "0",
-      "used": "0"
+      "unused": "-1",
+      "used": "1"
     },
     {
       "component": "TWR-CRAGG",
       "subnet": "Tower",
       "location": "shelf top",
       "type": "power supply",
+      "config": "{\"channels\":[[\"-\", \"+\", 10]]}",
       "unused": "0",
       "used": "0"
     }
@@ -1755,171 +2061,171 @@
       "page": "T3"
     },
     {
-      "signal": "1TN",
+      "signal": "2TNX-1",
       "from": "C-4 1TN",
-      "to": "2TR TEST TERM -",
+      "to": "2T TEST TERM -",
       "page": "T3"
     },
     {
       "signal": "2TNX",
-      "from": "2TR TEST TERM -",
-      "to": "2TR TRK ARRESTOR -",
-      "page": "T3"
-    },
-    {
-      "signal": "2T",
-      "from": "2TR TEST TERM +",
-      "to": "2TR COIL+",
+      "from": "2T TEST TERM -",
+      "to": "2T TRK ARRESTOR -",
       "page": "T3"
     },
     {
       "signal": "N-2T",
-      "from": "2TR COIL-",
-      "to": "2TR TRK RESISTOR",
+      "from": "2T TEST TERM +",
+      "to": "2TR COIL-",
+      "page": "T3"
+    },
+    {
+      "signal": "2T",
+      "from": "2TR COIL+",
+      "to": "2T TRK RESISTOR 1-",
       "page": "T3"
     },
     {
       "signal": "**STRAP**",
-      "from": "2TR TRK RESISTOR",
-      "to": "2TR TRK RESISTOR",
+      "from": "2T TRK RESISTOR 1+",
+      "to": "2T TRK RESISTOR 2+",
       "page": "T3"
     },
     {
       "signal": "2TBX",
-      "from": "2TR TRK RESISTOR",
-      "to": "2TR TRK ARRESTOR +",
+      "from": "2T TRK RESISTOR 2-",
+      "to": "2T TRK ARRESTOR +",
       "page": "T3"
     },
     {
-      "signal": "1TB",
+      "signal": "2TBX-1",
       "from": "C-4 1TB",
-      "to": "2TR TRK RESISTOR",
+      "to": "2T TRK RESISTOR 2+",
       "page": "T3"
     },
     {
-      "signal": "2TN",
+      "signal": "6TNX-1",
       "from": "C-4 2TN",
-      "to": "6TR TEST TERM -",
+      "to": "6T TEST TERM -",
       "page": "T3"
     },
     {
       "signal": "6TNX",
-      "from": "6TR TEST TERM -",
+      "from": "6T TEST TERM -",
       "to": "GRP-E T8",
       "page": "T3"
     },
     {
-      "signal": "6T",
-      "from": "6TR TEST TERM +",
-      "to": "6TR COIL+",
+      "signal": "N-6T",
+      "from": "6T TEST TERM +",
+      "to": "6TR COIL-",
       "page": "T3"
     },
     {
-      "signal": "N-6T",
-      "from": "6TR COIL-",
-      "to": "6TR TRK RESISTOR",
+      "signal": "6T",
+      "from": "6TR COIL+",
+      "to": "6T TRK RESISTOR 1-",
       "page": "T3"
     },
     {
       "signal": "**STRAP**",
-      "from": "6TR TRK RESISTOR",
-      "to": "6TR TRK RESISTOR",
+      "from": "6T TRK RESISTOR 1+",
+      "to": "6T TRK RESISTOR 2+",
       "page": "T3"
     },
     {
       "signal": "6TBX",
-      "from": "6TR TRK RESISTOR",
-      "to": "GRP-B T7",
+      "from": "6T TRK RESISTOR 2-",
+      "to": "GRP-E T7",
       "page": "T3"
     },
     {
-      "signal": "2TB",
+      "signal": "6TBX-1",
       "from": "C-4 2TB",
-      "to": "6TR TRK RESISTOR",
+      "to": "6T TRK RESISTOR 2+",
       "page": "T3"
     },
     {
-      "signal": "3TN",
+      "signal": "14ATNX-1",
       "from": "C-4 3TN",
-      "to": "14ATR TEST TERM -",
+      "to": "14AT TEST TERM -",
       "page": "T3"
     },
     {
       "signal": "14ATNX",
-      "from": "14ATR TEST TERM -",
-      "to": "14ATR TRK ARRESTOR -",
-      "page": "T3"
-    },
-    {
-      "signal": "14AT",
-      "from": "14ATR TEST TERM +",
-      "to": "14ATR COIL+",
+      "from": "14AT TEST TERM -",
+      "to": "14AT TRK ARRESTOR -",
       "page": "T3"
     },
     {
       "signal": "N-14AT",
-      "from": "14ATR COIL-",
-      "to": "14ATR TRK RESISTOR",
+      "from": "14AT TEST TERM +",
+      "to": "14ATR COIL-",
+      "page": "T3"
+    },
+    {
+      "signal": "14AT",
+      "from": "14ATR COIL+",
+      "to": "14AT TRK RESISTOR 1-",
       "page": "T3"
     },
     {
       "signal": "**STRAP**",
-      "from": "14ATR TRK RESISTOR",
-      "to": "14ATR TRK RESISTOR",
+      "from": "14AT TRK RESISTOR 1+",
+      "to": "14AT TRK RESISTOR 2+",
       "page": "T3"
     },
     {
       "signal": "14ATBX",
-      "from": "14ATR TRK RESISTOR",
-      "to": "14ATR TRK ARRESTOR +",
+      "from": "14AT TRK RESISTOR 2-",
+      "to": "14AT TRK ARRESTOR +",
       "page": "T3"
     },
     {
-      "signal": "3TB",
+      "signal": "14ATBX-1",
       "from": "C-4 3TB",
-      "to": "14ATR TRK RESISTOR",
+      "to": "14AT TRK RESISTOR 2+",
       "page": "T3"
     },
     {
-      "signal": "4TN",
+      "signal": "14BTNX-1",
       "from": "C-4 4TN",
-      "to": "14BTR TEST TERM -",
+      "to": "14BT TEST TERM -",
       "page": "T3"
     },
     {
       "signal": "14BTNX",
-      "from": "14BTR TEST TERM -",
-      "to": "14BTR TRK ARRESTOR -",
-      "page": "T3"
-    },
-    {
-      "signal": "14BT",
-      "from": "14BTR TEST TERM +",
-      "to": "14BTR COIL+",
+      "from": "14BT TEST TERM -",
+      "to": "14BT TRK ARRESTOR -",
       "page": "T3"
     },
     {
       "signal": "N-14BT",
-      "from": "14BTR COIL-",
-      "to": "14BTR TRK RESISTOR",
+      "from": "14BT TEST TERM +",
+      "to": "14BTR COIL-",
+      "page": "T3"
+    },
+    {
+      "signal": "14BT",
+      "from": "14BTR COIL+",
+      "to": "14BT TRK RESISTOR 1-",
       "page": "T3"
     },
     {
       "signal": "**STRAP**",
-      "from": "14BTR TRK RESISTOR",
-      "to": "14BTR TRK RESISTOR",
+      "from": "14BT TRK RESISTOR 1+",
+      "to": "14BT TRK RESISTOR 2+",
       "page": "T3"
     },
     {
       "signal": "14BTBX",
-      "from": "14BTR TRK RESISTOR",
-      "to": "14BTR TRK ARRESTOR +",
+      "from": "14BT TRK RESISTOR 2-",
+      "to": "14BT TRK ARRESTOR +",
       "page": "T3"
     },
     {
-      "signal": "4TB",
+      "signal": "14BTBX-1",
       "from": "C-4 4TB",
-      "to": "14BTR TRK RESISTOR",
+      "to": "14BT TRK RESISTOR 2+",
       "page": "T3"
     },
     {
@@ -1955,12 +2261,12 @@
     {
       "signal": "7L-1",
       "from": "6TE 1B",
-      "to": "FLOOR PB 7 +",
+      "to": "FLOOR PB 7 1H",
       "page": "T4"
     },
     {
       "signal": "7L",
-      "from": "FLOOR PB 7 -",
+      "from": "FLOOR PB 7 1F",
       "to": "LOCK-7 COIL+",
       "page": "T4"
     },
@@ -2062,7 +2368,7 @@
     },
     {
       "signal": "6LOSTE",
-      "from": "6TPR 1F",
+      "from": "6TPR 1B",
       "to": "6LOSTER COIL+",
       "page": "T4"
     },
@@ -2159,12 +2465,12 @@
     {
       "signal": "11L-1",
       "from": "9-10TE 1B",
-      "to": "FLOOR PB 11 +",
+      "to": "FLOOR PB 11 1H",
       "page": "T5"
     },
     {
       "signal": "11L",
-      "from": "FLOOR PB 11 -",
+      "from": "FLOOR PB 11 1F",
       "to": "LOCK-11 COIL+",
       "page": "T5"
     },
@@ -2393,12 +2699,12 @@
     {
       "signal": "13L-1",
       "from": "12TE 1B",
-      "to": "FLOOR PB 13 +",
+      "to": "FLOOR PB 13 1H",
       "page": "T6"
     },
     {
       "signal": "13L",
-      "from": "FLOOR PB 13 -",
+      "from": "FLOOR PB 13 1F",
       "to": "LOCK-13 COIL+",
       "page": "T6"
     },
@@ -2573,7 +2879,7 @@
     {
       "signal": "2-3COS-3",
       "from": "LVR-2 T6",
-      "to": "2-3COPB +",
+      "to": "2-3COPB 1F",
       "page": "T7"
     },
     {
@@ -2584,7 +2890,7 @@
     },
     {
       "signal": "2-3COS-2",
-      "from": "2-3COPB -",
+      "from": "2-3COPB 1H",
       "to": "2RGPR 3F",
       "page": "T7"
     },
@@ -2608,7 +2914,7 @@
     },
     {
       "signal": "2-3COS-A",
-      "from": "2-3COPB +",
+      "from": "2-3COPB 1F",
       "to": "2-3COSR 1H",
       "page": "T7"
     },
@@ -2633,7 +2939,7 @@
     {
       "signal": "14-16COS-3",
       "from": "LVR-14 T6",
-      "to": "14-16COPB +",
+      "to": "14-16COPB 1F",
       "page": "T7"
     },
     {
@@ -2644,7 +2950,7 @@
     },
     {
       "signal": "14-16COS-2",
-      "from": "14-16COPB -",
+      "from": "14-16COPB 1H",
       "to": "14RGPR 3F",
       "page": "T7"
     },
@@ -2668,7 +2974,7 @@
     },
     {
       "signal": "14-16COS-A",
-      "from": "14-16COPB +",
+      "from": "14-16COPB 1F",
       "to": "14-16COSR 1H",
       "page": "T7"
     },
@@ -3149,13 +3455,13 @@
     {
       "signal": "5HG",
       "from": "5HR 3F",
-      "to": "SIG5 T?",
+      "to": "GRP-C T4",
       "page": "T10"
     },
     {
       "signal": "5RG",
       "from": "5HR 3B",
-      "to": "SIG5 T?",
+      "to": "GRP-C T5",
       "page": "T10"
     },
     {
@@ -3179,13 +3485,13 @@
     {
       "signal": "NX10-TWR",
       "from": "NX10-TWR T?",
-      "to": "LTG RESISTER SIG5",
+      "to": "5NX10 RESISTOR -",
       "page": "T10"
     },
     {
       "signal": "5NX10",
-      "from": "LTG RESISTER SIG5",
-      "to": "SIG5 T?",
+      "from": "5NX10 RESISTOR +",
+      "to": "GRP-C T6",
       "page": "T10"
     },
     {
@@ -3377,12 +3683,12 @@
     {
       "signal": "14BTP-B1",
       "from": "14BTR 1F",
-      "to": "SB PB +",
+      "to": "SB PB 1H",
       "page": "T12"
     },
     {
       "signal": "14BTP-B",
-      "from": "SB PB -",
+      "from": "SB PB 1F",
       "to": "14BTPR COIL+",
       "page": "T12"
     },
@@ -3443,12 +3749,12 @@
     {
       "signal": "14ATP-B1",
       "from": "14ATR 1F",
-      "to": "NB PB +",
+      "to": "NB PB 1H",
       "page": "T12"
     },
     {
       "signal": "14ATP-B",
-      "from": "NB PB -",
+      "from": "NB PB 1F",
       "to": "14ATPR COIL+",
       "page": "T12"
     },
@@ -4608,24 +4914,24 @@
     {
       "signal": "12WPP",
       "from": "CASEA T4",
-      "to": "12NWPR COIL+",
+      "to": "12NWPR COIL-",
       "page": "A2"
     },
     {
       "signal": "12NWP",
-      "from": "12NWPR COIL-",
+      "from": "12NWPR COIL+",
       "to": "12RWPR 1B",
       "page": "A2"
     },
     {
       "signal": "12WPP-A",
-      "from": "12NWPR COIL+",
-      "to": "12RWPR COIL-",
+      "from": "12NWPR COIL-",
+      "to": "12RWPR COIL+",
       "page": "A2"
     },
     {
       "signal": "12RWP",
-      "from": "12RWPR COIL+",
+      "from": "12RWPR COIL-",
       "to": "12NWPR 1B",
       "page": "A2"
     },
@@ -5798,9 +6104,9 @@
       "to": "6WCR COIL-"
     },
     {
-      "signal": "N10-CASEC",
+      "signal": "6SCC-N10",
       "from": "N10-CASEC T5",
-      "to": "6SCC-N10"
+      "to": "CASEC T22"
     },
     {
       "signal": "N10-CASEC",
@@ -6114,252 +6420,360 @@
       "fromSubnet": "Tower",
       "from": "GRP-A T1",
       "toSubnet": "Case A",
-      "to": "CASEA T1"
+      "to": "CASEA T1",
+      "length": "450",
+      "gauge": "16",
+      "resistance": "1.8072"
     },
     {
       "signal": "12RLP-1",
       "fromSubnet": "Tower",
       "from": "GRP-A T2",
       "toSubnet": "Case A",
-      "to": "CASEA T2"
+      "to": "CASEA T2",
+      "length": "450",
+      "gauge": "16",
+      "resistance": "1.8072"
     },
     {
       "signal": "N10-TWR",
       "fromSubnet": "Tower",
       "from": "GRP-A T3",
       "toSubnet": "Case A",
-      "to": "CASEA T3"
+      "to": "CASEA T3",
+      "length": "450",
+      "gauge": "16",
+      "resistance": "1.8072"
     },
     {
       "signal": "12WPP",
       "fromSubnet": "Tower",
       "from": "GRP-A T4",
       "toSubnet": "Case A",
-      "to": "CASEA T4"
+      "to": "CASEA T4",
+      "length": "450",
+      "gauge": "16",
+      "resistance": "1.8072"
     },
     {
       "signal": "N-12WPP",
       "fromSubnet": "Tower",
       "from": "GRP-A T5",
       "toSubnet": "Case A",
-      "to": "CASEA T5"
+      "to": "CASEA T5",
+      "length": "450",
+      "gauge": "16",
+      "resistance": "1.8072"
     },
     {
       "signal": "N10-CASEA",
       "fromSubnet": "Tower",
       "from": "GRP-A T6",
       "toSubnet": "Case A",
-      "to": "CASEA T6"
+      "to": "CASEA T6",
+      "length": "450",
+      "gauge": "16",
+      "resistance": "1.8072"
     },
     {
       "signal": "16AP",
       "fromSubnet": "Tower",
       "from": "GRP-A T7",
       "toSubnet": "Case A",
-      "to": "CASEA T7"
+      "to": "CASEA T7",
+      "length": "450",
+      "gauge": "16",
+      "resistance": "1.8072"
     },
     {
       "signal": "9-10TP-1A",
       "fromSubnet": "Tower",
       "from": "GRP-A T8",
       "toSubnet": "Case A",
-      "to": "CASEA T8"
+      "to": "CASEA T8",
+      "length": "450",
+      "gauge": "16",
+      "resistance": "1.8072"
     },
     {
       "signal": "12TP-1A",
       "fromSubnet": "Tower",
       "from": "GRP-A T9",
       "toSubnet": "Case A",
-      "to": "CASEA T9"
+      "to": "CASEA T9",
+      "length": "450",
+      "gauge": "16",
+      "resistance": "1.8072"
     },
     {
       "signal": "14AD",
       "fromSubnet": "Tower",
       "from": "GRP-A T10",
       "toSubnet": "Case A",
-      "to": "CASEA T10"
+      "to": "CASEA T10",
+      "length": "450",
+      "gauge": "16",
+      "resistance": "1.8072"
     },
     {
       "signal": "14BH",
       "fromSubnet": "Tower",
       "from": "GRP-A T11",
       "toSubnet": "Case A",
-      "to": "CASEA T11"
+      "to": "CASEA T11",
+      "length": "450",
+      "gauge": "16",
+      "resistance": "1.8072"
     },
     {
       "signal": "14RGP",
       "fromSubnet": "Tower",
       "from": "GRP-A T12",
       "toSubnet": "Case A",
-      "to": "CASEA T12"
+      "to": "CASEA T12",
+      "length": "450",
+      "gauge": "16",
+      "resistance": "1.8072"
     },
     {
       "signal": "14HDGP",
       "fromSubnet": "Tower",
       "from": "GRP-B T1",
       "toSubnet": "Case A",
-      "to": "CASEA T17"
+      "to": "CASEA T17",
+      "length": "450",
+      "gauge": "16",
+      "resistance": "1.8072"
     },
     {
       "signal": "15HD",
       "fromSubnet": "Tower",
       "from": "GRP-B T2",
       "toSubnet": "Case A",
-      "to": "CASEA T18"
+      "to": "CASEA T18",
+      "length": "450",
+      "gauge": "16",
+      "resistance": "1.8072"
     },
     {
       "signal": "N-15HD",
       "fromSubnet": "Tower",
       "from": "GRP-B T3",
       "toSubnet": "Case A",
-      "to": "CASEA T19"
+      "to": "CASEA T19",
+      "length": "450",
+      "gauge": "16",
+      "resistance": "1.8072"
     },
     {
       "signal": "15RGP",
       "fromSubnet": "Tower",
       "from": "GRP-B T4",
       "toSubnet": "Case A",
-      "to": "CASEA T20"
+      "to": "CASEA T20",
+      "length": "450",
+      "gauge": "16",
+      "resistance": "1.8072"
     },
     {
       "signal": "15HDGP",
       "fromSubnet": "Tower",
       "from": "GRP-B T5",
       "toSubnet": "Case A",
-      "to": "CASEA T21"
+      "to": "CASEA T21",
+      "length": "450",
+      "gauge": "16",
+      "resistance": "1.8072"
     },
     {
       "signal": "16AH",
       "fromSubnet": "Tower",
       "from": "GRP-B T6",
       "toSubnet": "Case A",
-      "to": "CASEA T22"
+      "to": "CASEA T22",
+      "length": "450",
+      "gauge": "16",
+      "resistance": "1.8072"
     },
     {
       "signal": "16AD",
       "fromSubnet": "Tower",
       "from": "GRP-B T7",
       "toSubnet": "Case A",
-      "to": "CASEA T23"
+      "to": "CASEA T23",
+      "length": "450",
+      "gauge": "16",
+      "resistance": "1.8072"
     },
     {
       "signal": "16BH",
       "fromSubnet": "Tower",
       "from": "GRP-B T8",
       "toSubnet": "Case A",
-      "to": "CASEA T24"
+      "to": "CASEA T24",
+      "length": "450",
+      "gauge": "16",
+      "resistance": "1.8072"
     },
     {
       "signal": "16BD",
       "fromSubnet": "Tower",
       "from": "GRP-B T9",
       "toSubnet": "Case A",
-      "to": "CASEA T25"
+      "to": "CASEA T25",
+      "length": "450",
+      "gauge": "16",
+      "resistance": "1.8072"
     },
     {
       "signal": "16COSP",
       "fromSubnet": "Tower",
       "from": "GRP-B T10",
       "toSubnet": "Case A",
-      "to": "CASEA T26"
+      "to": "CASEA T26",
+      "length": "450",
+      "gauge": "16",
+      "resistance": "1.8072"
     },
     {
       "signal": "16RGP",
       "fromSubnet": "Tower",
       "from": "GRP-B T11",
       "toSubnet": "Case A",
-      "to": "CASEA T27"
+      "to": "CASEA T27",
+      "length": "450",
+      "gauge": "16",
+      "resistance": "1.8072"
     },
     {
       "signal": "N10-TWR",
       "fromSubnet": "Tower",
       "from": "GRP-F T1",
       "toSubnet": "Case C",
-      "to": "CASEC T1"
+      "to": "CASEC T1",
+      "length": "354",
+      "gauge": "16",
+      "resistance": "1.421664"
     },
     {
       "signal": "6NLP-1",
       "fromSubnet": "Tower",
       "from": "GRP-F T2",
       "toSubnet": "Case C",
-      "to": "CASEC T2"
+      "to": "CASEC T2",
+      "length": "354",
+      "gauge": "16",
+      "resistance": "1.421664"
     },
     {
       "signal": "6RLP-1",
       "fromSubnet": "Tower",
       "from": "GRP-F T3",
       "toSubnet": "Case C",
-      "to": "CASEC T3"
+      "to": "CASEC T3",
+      "length": "354",
+      "gauge": "16",
+      "resistance": "1.421664"
     },
     {
       "signal": "1HDP-1",
       "fromSubnet": "Tower",
       "from": "GRP-F T4",
       "toSubnet": "Case C",
-      "to": "CASEC T4"
+      "to": "CASEC T4",
+      "length": "354",
+      "gauge": "16",
+      "resistance": "1.421664"
     },
     {
       "signal": "N-1HDP-1",
       "fromSubnet": "Tower",
       "from": "GRP-F T5",
       "toSubnet": "Case C",
-      "to": "CASEC T5"
+      "to": "CASEC T5",
+      "length": "354",
+      "gauge": "16",
+      "resistance": "1.421664"
     },
     {
       "signal": "1RGP",
       "fromSubnet": "Tower",
       "from": "GRP-F T6",
       "toSubnet": "Case C",
-      "to": "CASEC T6"
+      "to": "CASEC T6",
+      "length": "354",
+      "gauge": "16",
+      "resistance": "1.421664"
     },
     {
       "signal": "N-1RGP",
       "fromSubnet": "Tower",
       "from": "GRP-F T7",
       "toSubnet": "Case C",
-      "to": "CASEC T7"
+      "to": "CASEC T7",
+      "length": "354",
+      "gauge": "16",
+      "resistance": "1.421664"
     },
     {
       "signal": "6WPP",
       "fromSubnet": "Tower",
       "from": "GRP-F T8",
       "toSubnet": "Case C",
-      "to": "CASEC T8"
+      "to": "CASEC T8",
+      "length": "354",
+      "gauge": "16",
+      "resistance": "1.421664"
     },
     {
       "signal": "N-6WPP",
       "fromSubnet": "Tower",
       "from": "GRP-F T9",
       "toSubnet": "Case C",
-      "to": "CASEC T9"
+      "to": "CASEC T9",
+      "length": "354",
+      "gauge": "16",
+      "resistance": "1.421664"
     },
     {
       "signal": "1A",
       "fromSubnet": "Tower",
       "from": "GRP-F T10",
       "toSubnet": "Case C",
-      "to": "CASEC T10"
+      "to": "CASEC T10",
+      "length": "354",
+      "gauge": "16",
+      "resistance": "1.421664"
     },
     {
       "signal": "N-1A",
       "fromSubnet": "Tower",
       "from": "GRP-F T11",
       "toSubnet": "Case C",
-      "to": "CASEC T11"
+      "to": "CASEC T11",
+      "length": "354",
+      "gauge": "16",
+      "resistance": "1.421664"
     },
     {
       "signal": "1HDGP",
       "fromSubnet": "Tower",
       "from": "GRP-F T12",
       "toSubnet": "Case C",
-      "to": "CASEC T12"
+      "to": "CASEC T12",
+      "length": "354",
+      "gauge": "16",
+      "resistance": "1.421664"
     },
     {
       "signal": "N-1HDGP",
       "fromSubnet": "Tower",
       "from": "GRP-G T1",
       "toSubnet": "Case C",
-      "to": "CASEC T13"
+      "to": "CASEC T13",
+      "length": "354",
+      "gauge": "16",
+      "resistance": "1.421664"
     }
   ],
   "levers": [
@@ -6683,6 +7097,358 @@
       "lever": "LVR-16",
       "from": "T15",
       "to": "T16"
+    }
+  ],
+  "leverLocking": [
+    {
+      "lever": "1",
+      "type": "signal",
+      "lock": "2 (7)"
+    },
+    {
+      "lever": "1",
+      "type": "signal",
+      "when": "(6)",
+      "lock": "3 (11)"
+    },
+    {
+      "lever": "1",
+      "type": "signal",
+      "when": "(6) 9 10 15",
+      "lock": "12"
+    },
+    {
+      "lever": "1",
+      "type": "signal",
+      "when": "(6) 9 (10)",
+      "lock": "5"
+    },
+    {
+      "lever": "1",
+      "type": "signal",
+      "when": "(6) (9)",
+      "lock": "4"
+    },
+    {
+      "lever": "2",
+      "type": "signal",
+      "lock": "6 (7)"
+    },
+    {
+      "lever": "3",
+      "type": "signal",
+      "lock": "(6) (7) 15"
+    },
+    {
+      "lever": "4",
+      "type": "signal",
+      "lock": "(3) (9) (11)"
+    },
+    {
+      "lever": "5",
+      "type": "signal",
+      "lock": "(3) 9 (10) (11)"
+    },
+    {
+      "lever": "6",
+      "type": "switch"
+    },
+    {
+      "lever": "7",
+      "type": "lock",
+      "lock": "6 (6)"
+    },
+    {
+      "lever": "8",
+      "type": "master",
+      "lock": "7 11 13"
+    },
+    {
+      "lever": "9",
+      "type": "switch",
+      "lock": "10 12"
+    },
+    {
+      "lever": "10",
+      "type": "switch",
+      "lock": "12"
+    },
+    {
+      "lever": "11",
+      "type": "lock",
+      "lock": "9 (9) 10 (10)"
+    },
+    {
+      "lever": "12",
+      "type": "switch"
+    },
+    {
+      "lever": "13",
+      "type": "lock",
+      "lock": "12 (12)"
+    },
+    {
+      "lever": "14",
+      "type": "signal",
+      "lock": "12 (13) 16"
+    },
+    {
+      "lever": "15",
+      "type": "signal",
+      "lock": "(12) (13) 16"
+    },
+    {
+      "lever": "16",
+      "type": "signal",
+      "lock": "(13)"
+    },
+    {
+      "lever": "16",
+      "type": "signal",
+      "when": "(12)",
+      "lock": "9 10 (11)"
+    }
+  ],
+  "simulation": [
+    {
+      "name": "SIM-6SCC",
+      "fromSubnet": "Sim",
+      "component": "sim-scc"
+    },
+    {
+      "fromSubnet": "Case C",
+      "from": "CASEC T21",
+      "toSubnet": "Sim",
+      "to": "SIM-6SCC 1H"
+    },
+    {
+      "fromSubnet": "Case C",
+      "from": "CASEC T22",
+      "toSubnet": "Sim",
+      "to": "SIM-6SCC 2H"
+    },
+    {
+      "fromSubnet": "Case C",
+      "from": "CASEC T23",
+      "toSubnet": "Sim",
+      "to": "SIM-6SCC 3H"
+    },
+    {
+      "fromSubnet": "Case C",
+      "from": "CASEC T24",
+      "toSubnet": "Sim",
+      "to": "SIM-6SCC 4H"
+    },
+    {
+      "fromSubnet": "Sim",
+      "from": "SIM-6SCC 1F",
+      "toSubnet": "Sim",
+      "to": "SIM-6SCC 3F"
+    },
+    {
+      "fromSubnet": "Sim",
+      "from": "SIM-6SCC 2F",
+      "toSubnet": "Sim",
+      "to": "SIM-6SCC 4F"
+    },
+    {
+      "fromSubnet": "Sim",
+      "from": "SIM-6SCC 1B",
+      "toSubnet": "Sim",
+      "to": "SIM-6SCC 4B"
+    },
+    {
+      "fromSubnet": "Sim",
+      "from": "SIM-6SCC 2B",
+      "toSubnet": "Sim",
+      "to": "SIM-6SCC 3B"
+    },
+    {
+      "name": "SIM-12SCC",
+      "fromSubnet": "Sim",
+      "component": "sim-scc"
+    },
+    {
+      "fromSubnet": "Case A",
+      "from": "CASEA T65",
+      "toSubnet": "Sim",
+      "to": "SIM-12SCC 1H"
+    },
+    {
+      "fromSubnet": "Case A",
+      "from": "CASEA T66",
+      "toSubnet": "Sim",
+      "to": "SIM-12SCC 2H"
+    },
+    {
+      "fromSubnet": "Case A",
+      "from": "CASEA T67",
+      "toSubnet": "Sim",
+      "to": "SIM-12SCC 3H"
+    },
+    {
+      "fromSubnet": "Case A",
+      "from": "CASEA T68",
+      "toSubnet": "Sim",
+      "to": "SIM-12SCC 4H"
+    },
+    {
+      "fromSubnet": "Sim",
+      "from": "SIM-12SCC 1F",
+      "toSubnet": "Sim",
+      "to": "SIM-12SCC 3F"
+    },
+    {
+      "fromSubnet": "Sim",
+      "from": "SIM-12SCC 2F",
+      "toSubnet": "Sim",
+      "to": "SIM-12SCC 4F"
+    },
+    {
+      "fromSubnet": "Sim",
+      "from": "SIM-12SCC 1B",
+      "toSubnet": "Sim",
+      "to": "SIM-12SCC 4B"
+    },
+    {
+      "fromSubnet": "Sim",
+      "from": "SIM-12SCC 2B",
+      "toSubnet": "Sim",
+      "to": "SIM-12SCC 3B"
+    },
+    {
+      "name": "SIM-2TRSW",
+      "fromSubnet": "Sim",
+      "component": "switch",
+      "config": "{\"state\":\"closed\"}"
+    },
+    {
+      "fromSubnet": "Tower",
+      "from": "2TR COIL+",
+      "toSubnet": "Sim",
+      "to": "SIM-2TRSW 1H",
+      "spliceSubnet": "Sim",
+      "splice": "SIM-2TRSW 1F"
+    },
+    {
+      "name": "SIM-6TRSW",
+      "fromSubnet": "Sim",
+      "component": "switch",
+      "config": "{\"state\":\"closed\"}"
+    },
+    {
+      "fromSubnet": "Tower",
+      "from": "6TR COIL+",
+      "toSubnet": "Sim",
+      "to": "SIM-6TRSW 1H",
+      "spliceSubnet": "Sim",
+      "splice": "SIM-6TRSW 1F"
+    },
+    {
+      "name": "SIM-14ATRSW",
+      "fromSubnet": "Sim",
+      "component": "switch",
+      "config": "{\"state\":\"closed\"}"
+    },
+    {
+      "fromSubnet": "Tower",
+      "from": "14ATR COIL+",
+      "toSubnet": "Sim",
+      "to": "SIM-14ATRSW 1H",
+      "spliceSubnet": "Sim",
+      "splice": "SIM-14ATRSW 1F"
+    },
+    {
+      "name": "SIM-14BTRSW",
+      "fromSubnet": "Sim",
+      "component": "switch",
+      "config": "{\"state\":\"closed\"}"
+    },
+    {
+      "fromSubnet": "Tower",
+      "from": "14BTR COIL+",
+      "toSubnet": "Sim",
+      "to": "SIM-14BTRSW 1H",
+      "spliceSubnet": "Sim",
+      "splice": "SIM-14BTRSW 1F"
+    },
+    {
+      "name": "SIM-1ARSW",
+      "fromSubnet": "Sim",
+      "component": "switch",
+      "config": "{\"state\":\"closed\"}"
+    },
+    {
+      "fromSubnet": "Tower",
+      "from": "1AR COIL+",
+      "toSubnet": "Sim",
+      "to": "SIM-1ARSW 1H"
+    },
+    {
+      "fromSubnet": "Sim",
+      "from": "SIM-1ARSW 1F",
+      "toSubnet": "Case C",
+      "to": "B10-CASEC"
+    },
+    {
+      "fromSubnet": "Tower",
+      "from": "1AR COIL-",
+      "toSubnet": "Case C",
+      "to": "N10-CASEC"
+    },
+    {
+      "name": "SIM-9-10TPRSW",
+      "fromSubnet": "Sim",
+      "component": "switch",
+      "config": "{\"state\":\"closed\"}"
+    },
+    {
+      "fromSubnet": "Tower",
+      "from": "9-10TPR COIL+",
+      "toSubnet": "Sim",
+      "to": "SIM-9-10TPRSW 1H"
+    },
+    {
+      "fromSubnet": "Sim",
+      "from": "SIM-9-10TPRSW 1F",
+      "toSubnet": "Case A",
+      "to": "B10-CASEA"
+    },
+    {
+      "name": "SIM-12TPRSW",
+      "fromSubnet": "Sim",
+      "component": "switch",
+      "config": "{\"state\":\"closed\"}"
+    },
+    {
+      "fromSubnet": "Tower",
+      "from": "12TPR COIL+",
+      "toSubnet": "Sim",
+      "to": "SIM-12TPRSW 1H"
+    },
+    {
+      "fromSubnet": "Sim",
+      "from": "SIM-12TPRSW 1F",
+      "toSubnet": "Case A",
+      "to": "B10-CASEA"
+    },
+    {
+      "name": "SIM-16APRSW",
+      "fromSubnet": "Sim",
+      "component": "switch",
+      "config": "{\"state\":\"closed\"}"
+    },
+    {
+      "fromSubnet": "Tower",
+      "from": "16APR COIL+",
+      "toSubnet": "Sim",
+      "to": "SIM-16APRSW 1H"
+    },
+    {
+      "fromSubnet": "Sim",
+      "from": "SIM-16APRSW 1F",
+      "toSubnet": "Case A",
+      "to": "B10-CASEA"
     }
   ]
 }
