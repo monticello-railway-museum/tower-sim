@@ -247,6 +247,15 @@
       "used": "2"
     },
     {
+      "component": "16HDGPR",
+      "subnet": "Case A",
+      "type": "relay",
+      "resistance": "670",
+      "contacts": "4",
+      "unused": "4",
+      "used": "0"
+    },
+    {
       "component": "B10-CASEA",
       "subnet": "Case A",
       "type": "bus",
@@ -254,14 +263,14 @@
       "used": "0"
     },
     {
-      "component": "BX6",
+      "component": "BX6-CASEA",
       "subnet": "Case A",
       "type": "bus",
       "unused": "0",
       "used": "0"
     },
     {
-      "component": "BX10",
+      "component": "BX10-CASEA",
       "subnet": "Case A",
       "type": "bus",
       "unused": "0",
@@ -291,7 +300,14 @@
       "used": "0"
     },
     {
-      "component": "CX10",
+      "component": "CX6-CASEA",
+      "subnet": "Case A",
+      "type": "bus",
+      "unused": "0",
+      "used": "0"
+    },
+    {
+      "component": "CX10-CASEA",
       "subnet": "Case A",
       "type": "bus",
       "unused": "0",
@@ -306,13 +322,6 @@
     },
     {
       "component": "N10-TWR",
-      "subnet": "Case A",
-      "type": "bus",
-      "unused": "0",
-      "used": "0"
-    },
-    {
-      "component": "NX6",
       "subnet": "Case A",
       "type": "bus",
       "unused": "0",
@@ -811,6 +820,8 @@
       "location": "shelf top",
       "type": "relay",
       "subtype": "time element",
+      "resistance": "10",
+      "config": "{\"pickupTime\":5}",
       "unused": "-1",
       "used": "1"
     },
@@ -927,6 +938,8 @@
       "location": "shelf top",
       "type": "relay",
       "subtype": "time element",
+      "resistance": "10",
+      "config": "{\"pickupTime\":5}",
       "unused": "-1",
       "used": "1"
     },
@@ -987,8 +1000,8 @@
       "resistance": "500",
       "index": "2",
       "contacts": "4",
-      "unused": "2",
-      "used": "2"
+      "unused": "1",
+      "used": "3"
     },
     {
       "component": "9WCKE",
@@ -1017,8 +1030,8 @@
       "resistance": "500",
       "index": "4",
       "contacts": "4",
-      "unused": "2",
-      "used": "2"
+      "unused": "1",
+      "used": "3"
     },
     {
       "component": "10WCKE",
@@ -1034,6 +1047,8 @@
       "location": "shelf top",
       "type": "relay",
       "subtype": "time element",
+      "resistance": "10",
+      "config": "{\"pickupTime\":5}",
       "unused": "-1",
       "used": "1"
     },
@@ -3325,13 +3340,13 @@
     },
     {
       "signal": "22HDGP",
-      "from": "ICJCT T?",
+      "from": "ICJCT T?1",
       "to": "22HDGPR COIL+",
       "page": "T9"
     },
     {
       "signal": "N-22HDGP",
-      "from": "ICJCT T?",
+      "from": "ICJCT T?2",
       "to": "22HDGPR COIL-",
       "page": "T9"
     },
@@ -3653,7 +3668,7 @@
     },
     {
       "signal": "9NWP-1",
-      "from": "9RWPR 1F",
+      "from": "9RWPR 1H",
       "to": "GRP-C T8",
       "page": "T11"
     },
@@ -3695,7 +3710,7 @@
     },
     {
       "signal": "10NWP-1",
-      "from": "10RWPR 1F",
+      "from": "10RWPR 1H",
       "to": "GRP-C T2",
       "page": "T11"
     },
@@ -4349,13 +4364,13 @@
     {
       "signal": "23HDG",
       "from": "23HDGPR COIL+",
-      "to": "ICJCT T?",
+      "to": "ICJCT T?3",
       "page": "T15"
     },
     {
       "signal": "N-23HDG",
       "from": "23HDGPR COIL-",
-      "to": "ICJCT T?",
+      "to": "ICJCT T?4",
       "page": "T15"
     },
     {
@@ -5165,6 +5180,12 @@
       "page": "A3"
     },
     {
+      "signal": "N15-HDPP",
+      "from": "N10-CASEA",
+      "to": "15HDPR COIL-",
+      "page": "A3"
+    },
+    {
       "signal": "15ARG",
       "from": "BX10-CASEA",
       "to": "CASEA T43",
@@ -5375,31 +5396,31 @@
     },
     {
       "signal": "N10-TWR",
-      "from": "N10-TWR-CASEA",
+      "from": "N10-TWR",
       "to": "16ADR COIL-",
       "page": "A4"
     },
     {
       "signal": "N10-TWR",
-      "from": "N10-TWR-CASEA",
+      "from": "N10-TWR",
       "to": "16AHR COIL-",
       "page": "A4"
     },
     {
       "signal": "N10-TWR",
-      "from": "N10-TWR-CASEA",
+      "from": "N10-TWR",
       "to": "16BDR COIL-",
       "page": "A4"
     },
     {
       "signal": "N10-TWR",
-      "from": "N10-TWR-CASEA",
+      "from": "N10-TWR",
       "to": "16BHR COIL-",
       "page": "A4"
     },
     {
       "signal": "N10-TWR",
-      "from": "N10-TWR-CASEA",
+      "from": "N10-TWR",
       "to": "16COSPR COIL-",
       "page": "A4"
     },
@@ -5411,7 +5432,7 @@
     },
     {
       "signal": "16RGP-1",
-      "from": "16COSPR 2F",
+      "from": "16COSPR 2B",
       "to": "16BRGPR 1H",
       "page": "A4"
     },
@@ -5554,20 +5575,20 @@
       "page": "A4"
     },
     {
-      "signal": "N10-TWR",
-      "from": "N10-TWR-CASEA",
+      "signal": "N10-CASEA",
+      "from": "N10-CASEA",
       "to": "16ARGPR COIL-",
       "page": "A4"
     },
     {
-      "signal": "N10-TWR",
-      "from": "N10-TWR-CASEA",
+      "signal": "N10-CASEA",
+      "from": "N10-CASEA",
       "to": "16BRGPR COIL-",
       "page": "A4"
     },
     {
-      "signal": "N10-TWR",
-      "from": "N10-TWR-CASEA",
+      "signal": "N10-CASEA",
+      "from": "N10-CASEA",
       "to": "16HDGPR COIL-",
       "page": "A4"
     },
@@ -7293,6 +7314,9 @@
   ],
   "simulation": [
     {
+      "name": "**** Switch Circuit Controllers ****"
+    },
+    {
       "name": "SIM-6SCC",
       "fromSubnet": "Sim",
       "component": "sim-scc"
@@ -7346,6 +7370,88 @@
       "to": "SIM-6SCC 3B"
     },
     {
+      "name": "SIM-9SCC",
+      "fromSubnet": "Sim",
+      "component": "sim-scc"
+    },
+    {
+      "fromSubnet": "Tower",
+      "from": "GRP-C T7",
+      "toSubnet": "Sim",
+      "to": "SIM-9SCC 1H"
+    },
+    {
+      "fromSubnet": "Tower",
+      "from": "GRP-C T7",
+      "toSubnet": "Sim",
+      "to": "SIM-9SCC 2H"
+    },
+    {
+      "fromSubnet": "Tower",
+      "from": "GRP-C T8",
+      "toSubnet": "Sim",
+      "to": "SIM-9SCC 3H"
+    },
+    {
+      "fromSubnet": "Tower",
+      "from": "GRP-C T9",
+      "toSubnet": "Sim",
+      "to": "SIM-9SCC 4H"
+    },
+    {
+      "fromSubnet": "Sim",
+      "from": "SIM-9SCC 1F",
+      "toSubnet": "Sim",
+      "to": "SIM-9SCC 3F"
+    },
+    {
+      "fromSubnet": "Sim",
+      "from": "SIM-9SCC 2B",
+      "toSubnet": "Sim",
+      "to": "SIM-9SCC 4B"
+    },
+    {
+      "name": "SIM-10SCC",
+      "fromSubnet": "Sim",
+      "component": "sim-scc"
+    },
+    {
+      "fromSubnet": "Tower",
+      "from": "GRP-C T1",
+      "toSubnet": "Sim",
+      "to": "SIM-10SCC 1H"
+    },
+    {
+      "fromSubnet": "Tower",
+      "from": "GRP-C T1",
+      "toSubnet": "Sim",
+      "to": "SIM-10SCC 2H"
+    },
+    {
+      "fromSubnet": "Tower",
+      "from": "GRP-C T2",
+      "toSubnet": "Sim",
+      "to": "SIM-10SCC 3H"
+    },
+    {
+      "fromSubnet": "Tower",
+      "from": "GRP-C T3",
+      "toSubnet": "Sim",
+      "to": "SIM-10SCC 4H"
+    },
+    {
+      "fromSubnet": "Sim",
+      "from": "SIM-10SCC 1F",
+      "toSubnet": "Sim",
+      "to": "SIM-10SCC 3F"
+    },
+    {
+      "fromSubnet": "Sim",
+      "from": "SIM-10SCC 2B",
+      "toSubnet": "Sim",
+      "to": "SIM-10SCC 4B"
+    },
+    {
       "name": "SIM-12SCC",
       "fromSubnet": "Sim",
       "component": "sim-scc"
@@ -7397,6 +7503,9 @@
       "from": "SIM-12SCC 2B",
       "toSubnet": "Sim",
       "to": "SIM-12SCC 3B"
+    },
+    {
+      "name": "**** Track/Approach Circuits ****"
     },
     {
       "name": "SIM-2TRSW",
@@ -7511,6 +7620,240 @@
     {
       "fromSubnet": "Sim",
       "from": "SIM-16APRSW 1F",
+      "toSubnet": "Case A",
+      "to": "B10-CASEA"
+    },
+    {
+      "name": "SIM-22HDGPRSW",
+      "fromSubnet": "Sim",
+      "component": "switch",
+      "config": "{\"state\":\"open\"}"
+    },
+    {
+      "fromSubnet": "Tower",
+      "from": "22HDGPR COIL+",
+      "toSubnet": "Sim",
+      "to": "SIM-22HDGPRSW 1H"
+    },
+    {
+      "fromSubnet": "Sim",
+      "from": "SIM-22HDGPRSW 1F",
+      "toSubnet": "Tower",
+      "to": "B10-TWR MAIN"
+    },
+    {
+      "fromSubnet": "Tower",
+      "from": "22HDGPR COIL-",
+      "toSubnet": "Tower",
+      "to": "N10-TWR MAIN"
+    },
+    {
+      "name": "SIM-23HDGPRSW",
+      "fromSubnet": "Sim",
+      "component": "switch",
+      "config": "{\"state\":\"open\"}"
+    },
+    {
+      "fromSubnet": "Tower",
+      "from": "23HDGPR COIL+",
+      "toSubnet": "Sim",
+      "to": "SIM-23HDGPRSW 1H"
+    },
+    {
+      "fromSubnet": "Sim",
+      "from": "SIM-23HDGPRSW 1F",
+      "toSubnet": "Tower",
+      "to": "B10-TWR MAIN"
+    },
+    {
+      "fromSubnet": "Tower",
+      "from": "23HDGPR COIL-",
+      "toSubnet": "Tower",
+      "to": "N10-TWR MAIN"
+    },
+    {
+      "name": "**** Missing Signal RGPR pullups ****"
+    },
+    {
+      "fromSubnet": "Tower",
+      "from": "2RGPR COIL+",
+      "toSubnet": "Tower",
+      "to": "B10-TWR MAIN"
+    },
+    {
+      "fromSubnet": "Tower",
+      "from": "3RGPR COIL+",
+      "toSubnet": "Tower",
+      "to": "B10-TWR MAIN"
+    },
+    {
+      "fromSubnet": "Tower",
+      "from": "4RGPR COIL+",
+      "toSubnet": "Tower",
+      "to": "B10-TWR MAIN"
+    },
+    {
+      "name": "**** Signals ****"
+    },
+    {
+      "name": "SIM-14AAR",
+      "fromSubnet": "Sim",
+      "component": "relay",
+      "config": "{\"subtype\":\"biased neutral\"}"
+    },
+    {
+      "fromSubnet": "Case A",
+      "from": "CASEA T33",
+      "toSubnet": "Sim",
+      "to": "SIM-14AAR COIL+"
+    },
+    {
+      "fromSubnet": "Case A",
+      "from": "CASEA T34",
+      "toSubnet": "Sim",
+      "to": "SIM-14AAR COIL-"
+    },
+    {
+      "name": "SIM-14BAR",
+      "fromSubnet": "Sim",
+      "component": "relay",
+      "config": "{\"subtype\":\"biased neutral\"}"
+    },
+    {
+      "fromSubnet": "Case A",
+      "from": "CASEA T36",
+      "toSubnet": "Sim",
+      "to": "SIM-14BAR COIL+"
+    },
+    {
+      "fromSubnet": "Case A",
+      "from": "CASEA T35",
+      "toSubnet": "Sim",
+      "to": "SIM-14BAR COIL-"
+    },
+    {
+      "fromSubnet": "Case A",
+      "from": "CASEA T37",
+      "toSubnet": "Sim",
+      "to": "SIM-14AAR 1B"
+    },
+    {
+      "fromSubnet": "Sim",
+      "from": "SIM-14AAR 1H",
+      "toSubnet": "Sim",
+      "to": "SIM-14BAR 1B"
+    },
+    {
+      "fromSubnet": "Sim",
+      "from": "SIM-14BAR 1H",
+      "toSubnet": "Case A",
+      "to": "CASEA T39"
+    },
+    {
+      "fromSubnet": "Case A",
+      "from": "CASEA T37",
+      "toSubnet": "Sim",
+      "to": "SIM-14AAR 2F"
+    },
+    {
+      "fromSubnet": "Case A",
+      "from": "CASEA T37",
+      "toSubnet": "Sim",
+      "to": "SIM-14BAR 2F"
+    },
+    {
+      "fromSubnet": "Sim",
+      "from": "SIM-14AAR 2H",
+      "toSubnet": "Case A",
+      "to": "CASEA T38"
+    },
+    {
+      "fromSubnet": "Sim",
+      "from": "SIM-14BAR 2H",
+      "toSubnet": "Case A",
+      "to": "CASEA T38"
+    },
+    {
+      "name": "SIM-16AHMR",
+      "fromSubnet": "Sim",
+      "component": "relay",
+      "config": "{\"pickupTime\":5,\"dropTime\":5}"
+    },
+    {
+      "fromSubnet": "Case A",
+      "from": "CASEA T56",
+      "toSubnet": "Sim",
+      "to": "SIM-16AHMR COIL+"
+    },
+    {
+      "fromSubnet": "Case A",
+      "from": "N10-CASEA",
+      "toSubnet": "Sim",
+      "to": "SIM-16AHMR COIL-"
+    },
+    {
+      "fromSubnet": "Case A",
+      "from": "CASEA T62",
+      "toSubnet": "Sim",
+      "to": "SIM-16AHMR 1B"
+    },
+    {
+      "fromSubnet": "Sim",
+      "from": "SIM-16AHMR 1H",
+      "toSubnet": "Case A",
+      "to": "B10-CASEA"
+    },
+    {
+      "fromSubnet": "Case A",
+      "from": "CASEA T64",
+      "toSubnet": "Sim",
+      "to": "SIM-16AHMR 2F"
+    },
+    {
+      "fromSubnet": "Sim",
+      "from": "SIM-16AHMR 2H",
+      "toSubnet": "Case A",
+      "to": "B10-CASEA"
+    },
+    {
+      "name": "SIM-16BHMR",
+      "fromSubnet": "Sim",
+      "component": "relay",
+      "config": "{\"pickupTime\":5,\"dropTime\":5}"
+    },
+    {
+      "fromSubnet": "Case A",
+      "from": "CASEA T59",
+      "toSubnet": "Sim",
+      "to": "SIM-16BHMR COIL+"
+    },
+    {
+      "fromSubnet": "Case A",
+      "from": "N10-CASEA",
+      "toSubnet": "Sim",
+      "to": "SIM-16BHMR COIL-"
+    },
+    {
+      "fromSubnet": "Case A",
+      "from": "CASEA T63",
+      "toSubnet": "Sim",
+      "to": "SIM-16BHMR 1B"
+    },
+    {
+      "fromSubnet": "Sim",
+      "from": "SIM-16BHMR 1H",
+      "toSubnet": "Case A",
+      "to": "B10-CASEA"
+    },
+    {
+      "fromSubnet": "Case A",
+      "from": "CASEA T64",
+      "toSubnet": "Sim",
+      "to": "SIM-16BHMR 2F"
+    },
+    {
+      "fromSubnet": "Sim",
+      "from": "SIM-16BHMR 2H",
       "toSubnet": "Case A",
       "to": "B10-CASEA"
     }

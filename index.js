@@ -258,13 +258,17 @@ class Top extends React.Component {
                 </div>
                 <div>
                   <Switch name="1TR" comp={sim.components['Sim/SIM-1TRSW']}/>
-                  <Switch name="2TR" comp={sim.components['Sim/SIM-2TRSW']}/>
                   <Switch name="6TR" comp={sim.components['Sim/SIM-6TRSW']}/>
+                  <Switch name="2TR" comp={sim.components['Sim/SIM-2TRSW']}/>
                   <Switch name="9-10TR" comp={sim.components['Sim/SIM-9-10TRSW']}/>
-                  <Switch name="12TR" comp={sim.components['Sim/SIM-12TRSW']}/>
-                  <Switch name="14ATR" comp={sim.components['Sim/SIM-14ATRSW']}/>
                   <Switch name="14BTR" comp={sim.components['Sim/SIM-14BTRSW']}/>
+                  <Switch name="14ATR" comp={sim.components['Sim/SIM-14ATRSW']}/>
+                  <Switch name="12TR" comp={sim.components['Sim/SIM-12TRSW']}/>
                   <Switch name="16APR" comp={sim.components['Sim/SIM-16APRSW']}/>
+                </div>
+                <div>
+                  <Switch name="22HDGPR" comp={sim.components['Sim/SIM-22HDGPRSW']}/>
+                  <Switch name="23HDGPR" comp={sim.components['Sim/SIM-23HDGPRSW']}/>
                   <div style={{float: 'right'}}>
                     <Switch name="2-3COPB" comp={sim.components['Tower/2-3COPB']}/>
                     <Switch name="14-16COPB" comp={sim.components['Tower/14-16COPB']}/>
