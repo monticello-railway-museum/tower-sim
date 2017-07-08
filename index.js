@@ -216,7 +216,7 @@ class Top extends React.Component {
         const renderWire = (n) => {
             const wire = this.wires.get(n);
             return (
-                <div style={{color: wire.color}}>
+                <div style={{color: wire.color, clear: 'right'}}>
                   <InspectLink inspect={this.inspect} target={wire.node}>
                     {n}: <div style={{float: 'right'}}>{voltage(wire)}</div>
                   </InspectLink>
@@ -252,8 +252,8 @@ class Top extends React.Component {
                 <Levers onPull={(name, state) => sim.components[`Tower/LVR-${name}`].state = state}/>
                 <div>
                   <Turnout name="switch 6" comp={sim.components['Sim/SIM-6SCC']}/>
-                switch 9 <input type='range' min='0' max='1'/>
-                switch 10 <input type='range' min='0' max='1'/>
+                  <Turnout name="switch 9" comp={sim.components['Sim/SIM-9SCC']}/>
+                  <Turnout name="switch 10" comp={sim.components['Sim/SIM-10SCC']}/>
                   <Turnout name="switch 12" comp={sim.components['Sim/SIM-12SCC']}/>
                 </div>
                 <div>
@@ -265,6 +265,12 @@ class Top extends React.Component {
                   <Switch name="14ATR" comp={sim.components['Sim/SIM-14ATRSW']}/>
                   <Switch name="14BTR" comp={sim.components['Sim/SIM-14BTRSW']}/>
                   <Switch name="16APR" comp={sim.components['Sim/SIM-16APRSW']}/>
+                  <div style={{float: 'right'}}>
+                    <Switch name="2-3COPB" comp={sim.components['Tower/2-3COPB']}/>
+                    <Switch name="14-16COPB" comp={sim.components['Tower/14-16COPB']}/>
+                    <Switch name="NB" comp={sim.components['Tower/NB PB']}/>
+                    <Switch name="SB" comp={sim.components['Tower/SB PB']}/>
+                  </div>
                 </div>
               </div>
               <div ref={top => this.topElement = top} style={{height: '80px'}}/>
@@ -276,9 +282,9 @@ class Top extends React.Component {
                 {Array.from(sim.activeComponents)
                    .filter(c => c.type === 'relay')
                    .sort((a, b) => mangleForSort(a.name) < mangleForSort(b.name) ? -1 : 1)
-                   .map(c => <div>
+                   .map(c => <div style={{clear: 'right'}}>
                         <InspectLink inspect={this.inspect} target={c}>{c.name}</InspectLink>:
-                        <div style={{float: 'right'}}><span style={((c.lastStateChange || -3) + 2 > time) ? {fontWeight: 'bold'} : {}}>{c.state}</span></div></div>)}
+                        <div style={{float: 'right'}}><span style={{marginRight: '10px'}}>{num(c.current, 'A', 3)}</span> <span style={((c.lastStateChange || -3) + 2 > time) ? {fontWeight: 'bold'} : {}}>{c.state}</span></div></div>)}
               </div>
               <p><b>Wire voltages:</b> <input type="text" placeholder="filter regex" value={this.state.wireFilter} onChange={e => this.setState({wireFilter: e.target.value})}/></p>
               <div style={{columnCount: 4}}>

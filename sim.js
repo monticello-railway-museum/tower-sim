@@ -318,6 +318,8 @@ class Relay extends Component {
         this.coilResistance = this.resistance || 100;
         this.contacts = [ ];
         this.polarContacts = [ ];
+        this.pickupTime = parseFloat(this.pickupTime) || 0.3;
+        this.dropTime = parseFloat(this.dropTime) || 0.05;
     }
 
     walk(visit, terminal) {
@@ -394,6 +396,7 @@ class Relay extends Component {
         const voltsN = this.nodeVoltage(this.coilN);
         if (voltsP != null && voltsN != null) {
             const amps = (voltsP - voltsN) / this.coilResistance;
+            this.current = amps;
             const bias = amps >= 0 ? 'forward' : 'reverse';
             //console.log(this.name, this.subnet, 'coil+ volts', voltsP, 'coil- volts', voltsN, 'ohms', this.coilResistance, 'current', amps);
             let pickup = Math.abs(amps) > 0.005;
@@ -401,14 +404,14 @@ class Relay extends Component {
                 pickup = amps > 0.005;
             if (pickup) {
                 if (this.state === 'down')
-                    maybeSchedule(this, time + 0.1, bias, 'up');
+                    maybeSchedule(this, time + this.pickupTime, bias, 'up');
                 else if (this.bias !== bias)
-                    maybeSchedule(this, time + 0.01, bias, 'down');
+                    maybeSchedule(this, time + this.dropTime, bias, 'down');
                 else
                     this.schedule = null;
             } else {
                 if (this.state === 'up')
-                    maybeSchedule(this, time + 0.01, bias, 'down');
+                    maybeSchedule(this, time + this.dropTime, bias, 'down');
                 else
                     this.schedule = null;
             }
@@ -444,7 +447,7 @@ class Sim {
 
         function spawnComponent(comp) {
             const type = componentTypeMap[comp.type] || Component;
-            const config = Object.assign(comp.config ? JSON.parse(comp.config) : { }, {
+            const config = Object.assign({ }, {
                 name: comp.component,
                 type: comp.type,
                 subtype: comp.subtype,
@@ -452,7 +455,7 @@ class Sim {
                 location: comp.location,
                 resistance: comp.resistance ? parseFloat(comp.resistance) : undefined,
                 terminals: { },
-            });
+            }, comp.config ? JSON.parse(comp.config) : { });
             components[`${comp.subnet}/${comp.component}`] = new type(config);
         }
 
@@ -537,7 +540,7 @@ function getComponentTerminal(subnet, spec) {
                     type: row.component,
                     config: row.config,
                 }));
-            } else {
+            } else if (row.from) {
                 wireComponent(row);
             }
         }
