@@ -145,7 +145,7 @@ class InspectLink extends React.Component {
     render() {
         const { inspect, target, children } = this.props;
         return (
-            <span onClick={() => inspect(target)}>{children}</span>
+            <span style={{cursor: 'pointer'}} onClick={() => inspect(target)}>{children}</span>
         );
     }
 }
@@ -179,7 +179,10 @@ class Top extends React.Component {
         }
         this.wireNames = Array.from(this.wires.keys()).sort(mangledCompare);
 
-        this.inspect = target => this.setState({inspected: target});
+        this.inspect = target => {
+            this.setState({inspected: target})
+            this.topElement.scrollIntoView();
+        };
     }
 
     componentDidMount() {
@@ -261,7 +264,7 @@ class Top extends React.Component {
                   <Switch name="16APR" comp={sim.components['Sim/SIM-16APRSW']}/>
                 </div>
               </div>
-              <div style={{height: '80px'}}/>
+              <div ref={top => this.topElement = top} style={{height: '80px'}}/>
               {inspected && (<Inspector inspect={this.inspect} inspected={inspected}/>)}
               <p><b>PSUs:</b></p>
               <div style={{columnCount: 4}}>{psus}</div>
