@@ -338,6 +338,7 @@
       "component": "1GE RESISTOR",
       "subnet": "Case C",
       "type": "resistor",
+      "resistance": "0.1",
       "unused": "0",
       "used": "0"
     },
@@ -355,6 +356,7 @@
       "component": "1MGE RESISTOR",
       "subnet": "Case C",
       "type": "resistor",
+      "resistance": "0.1",
       "unused": "0",
       "used": "0"
     },
@@ -490,7 +492,7 @@
     {
       "component": "CASEC-LTG",
       "subnet": "Case C",
-      "type": "bus",
+      "type": "terminal",
       "unused": "0",
       "used": "0"
     },
@@ -6412,6 +6414,11 @@
       "signal": "CX10",
       "from": "CASEC-W10 CX10",
       "to": "1GE RESISTOR -"
+    },
+    {
+      "signal": "**STRAP**",
+      "from": "1MGE RESISTOR -",
+      "to": "1GE RESISTOR -"
     }
   ],
   "crossConnections": [
@@ -7373,28 +7380,18 @@
       "splice": "SIM-14BTRSW 1F"
     },
     {
-      "name": "SIM-1ARSW",
+      "name": "SIM-1TRSW",
       "fromSubnet": "Sim",
       "component": "switch",
       "config": "{\"state\":\"closed\"}"
     },
     {
-      "fromSubnet": "Tower",
-      "from": "1AR COIL+",
+      "fromSubnet": "Case C",
+      "from": "1TR COIL+",
       "toSubnet": "Sim",
-      "to": "SIM-1ARSW 1H"
-    },
-    {
-      "fromSubnet": "Sim",
-      "from": "SIM-1ARSW 1F",
-      "toSubnet": "Case C",
-      "to": "B10-CASEC"
-    },
-    {
-      "fromSubnet": "Tower",
-      "from": "1AR COIL-",
-      "toSubnet": "Case C",
-      "to": "N10-CASEC"
+      "to": "SIM-1TRSW 1H",
+      "spliceSubnet": "Sim",
+      "splice": "SIM-1TRSW 1F"
     },
     {
       "name": "SIM-9-10TPRSW",

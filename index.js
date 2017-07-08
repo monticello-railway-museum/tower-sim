@@ -257,7 +257,7 @@ class Top extends React.Component {
                   <Turnout name="switch 12" comp={sim.components['Sim/SIM-12SCC']}/>
                 </div>
                 <div>
-                  <Switch name="1AR" comp={sim.components['Sim/SIM-1ARSW']}/>
+                  <Switch name="1TR" comp={sim.components['Sim/SIM-1TRSW']}/>
                   <Switch name="2TR" comp={sim.components['Sim/SIM-2TRSW']}/>
                   <Switch name="6TR" comp={sim.components['Sim/SIM-6TRSW']}/>
                   <Switch name="9-10TPR" comp={sim.components['Sim/SIM-9-10TPRSW']}/>
@@ -270,7 +270,7 @@ class Top extends React.Component {
               <div ref={top => this.topElement = top} style={{height: '80px'}}/>
               {inspected && (<Inspector inspect={this.inspect} inspected={inspected}/>)}
               <p><b>PSUs:</b></p>
-              <div style={{columnCount: 4}}>{psus}</div>
+              <div style={{columnCount: 3}}>{psus}</div>
               <p><b>Relays:</b></p>
               <div style={{columnCount: 4}}>
                 {Array.from(sim.activeComponents)

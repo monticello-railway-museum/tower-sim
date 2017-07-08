@@ -325,12 +325,19 @@ class Relay extends Component {
             visit(this.terminals['COIL-']);
         if (terminal === 'COIL-')
             visit(this.terminals['COIL+']);
-        const match = terminal.match(/^\d+/);
+        const match = terminal.match(/^(\d+)[HFB]/);
         console.log('relay walk', terminal, match);
         if (match) {
-            visit(this.terminals[`${match[0]}H`]);
-            visit(this.terminals[`${match[0]}F`]);
-            visit(this.terminals[`${match[0]}B`]);
+            visit(this.terminals[`${match[1]}H`]);
+            visit(this.terminals[`${match[1]}F`]);
+            visit(this.terminals[`${match[1]}B`]);
+        }
+        const polarMatch = terminal.match(/^(\d+)[P+-]/);
+        console.log('relay walk', terminal, match);
+        if (polarMatch) {
+            visit(this.terminals[`${polarMatch[1]}P`]);
+            visit(this.terminals[`${polarMatch[1]}+`]);
+            visit(this.terminals[`${polarMatch[1]}-`]);
         }
     }
 
