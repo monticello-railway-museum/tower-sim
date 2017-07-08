@@ -1,10 +1,6 @@
-const fs = require('fs');
-
 const Circuit = require('./circuit');
 
-const netlist = JSON.parse(fs.readFileSync('netlist.json'));
-
-const components = { };
+const netlist = require('./netlist.json');
 
 const closed = 1e-6;
 
@@ -112,24 +108,32 @@ class Component {
 }
 
 class PowerSupply extends Component {
-    constructor(props, voltage = 10) {
+    constructor(props) {
         super(props);
-        this.voltage = voltage;
+        this.channels = this.channels.map(([neg, pos, v]) => ({
+            negative: neg,
+            positive: pos,
+            voltage: v,
+        }));
     }
 
     walk(visit, terminal) {
-        visit(this.terminals['+']);
-        visit(this.terminals['-']);
+        for (let chan of this.channels) {
+            if (terminal === chan.negative)
+                visit(this.terminals[chan.positive]);
+            if (terminal === chan.positive)
+                visit(this.terminals[chan.negative]);
+        }
     }
 
     preSolve(time) {
-        //this.currentSource(this.terminals['-'], this.terminals['+'], this.voltage);
-        this.voltageSource(this, this.terminals['-'], this.terminals['+'], this.voltage);
+        for (let chan of this.channels)
+            this.voltageSource(chan, this.terminals[chan.negative], this.terminals[chan.positive], chan.voltage);
     }
 
     postSolve(time) {
-        const current = this.voltageSourceCurrent(this, this.terminals['-']);
-        console.log(this.name, 'current', current);
+        for (let chan of this.channels)
+            chan.current = this.voltageSourceCurrent(chan, this.terminals[chan.negative]);
     }
 }
 
@@ -146,6 +150,21 @@ class Bus extends Component {
     }
 }
 
+class Resistor extends Component {
+    constructor(props) {
+        super(props);
+    }
+    
+    walk(visit, terminal) {
+        visit(this.terminals['+']);
+        visit(this.terminals['-']);
+    }
+
+    preSolve(time) {
+        this.resistor(this.terminals['-'], this.terminals['+'], this.resistance);
+    }
+}
+
 class Light extends Component {
     constructor(props) {
         super(props);
@@ -158,9 +177,12 @@ class Light extends Component {
 }
 
 class Switch extends Component {
-    constructor(props, state = 'open') {
+    constructor(props, state) {
         super(props);
-        this.state = state;
+        if (state != null)
+            this.state = state;
+        if (this.state == null)
+            this.state = 'open';
         this.contacts = [ ];
     }
 
@@ -186,6 +208,7 @@ class Switch extends Component {
                 });
             }
         });
+        this.contacts.sort((a, b) => a.number - b.number);
     }
 
     preSolve(time) {
@@ -200,6 +223,53 @@ class Switch extends Component {
         }
     }
 }
+
+class SimSCC extends Switch {
+    constructor(props, state = 0) {
+        super(props, state);
+    }
+
+    prepare() {
+        super.prepare();
+        const { contacts: c } = this;
+        this.stateMap = [
+            [ { from: c[0].heel, to: c[0].front },
+              { from: c[1].heel, to: c[1].front },
+              { from: c[2].heel, to: c[2].front },
+              { from: c[3].heel, to: c[3].front } ],
+            [ { from: c[1].heel, to: c[1].front },
+              { from: c[2].heel, to: c[2].front },
+              { from: c[3].heel, to: c[3].front } ],
+            [ { from: c[2].heel, to: c[2].front },
+              { from: c[3].heel, to: c[3].front } ],
+            [ { from: c[0].heel, to: c[0].back },
+              { from: c[2].heel, to: c[2].front },
+              { from: c[3].heel, to: c[3].front } ],
+            [ { from: c[0].heel, to: c[0].back },
+              { from: c[1].heel, to: c[1].back },
+              { from: c[2].heel, to: c[2].front },
+              { from: c[3].heel, to: c[3].front } ],
+            [ { from: c[0].heel, to: c[0].back },
+              { from: c[1].heel, to: c[1].back },
+              { from: c[3].heel, to: c[3].front } ],
+            [ { from: c[0].heel, to: c[0].back },
+              { from: c[1].heel, to: c[1].back } ],
+            [ { from: c[0].heel, to: c[0].back },
+              { from: c[1].heel, to: c[1].back },
+              { from: c[2].heel, to: c[2].back } ],
+            [ { from: c[0].heel, to: c[0].back },
+              { from: c[1].heel, to: c[1].back },
+              { from: c[2].heel, to: c[2].back },
+              { from: c[3].heel, to: c[3].back } ],
+        ]
+    }
+
+    preSolve(time) {
+        for (let c of this.stateMap[this.state])
+            this.resistor(c.from, c.to, closed);
+    }
+}
+
 
 class Lever extends Component {
     constructor(props, state = 'normal') {
@@ -340,27 +410,49 @@ class Relay extends Component {
 }
 
 const componentTypeMap = {
-    relay: Relay,
-    button: Switch,
-    bus: Bus,
-    lever: Lever,
-    light: Light,
+    'bus': Bus,
+    'button': Switch,
+    'fuse': Bus,
+    'lever': Lever,
+    'light': Light,
     'power supply': PowerSupply,
+    'relay': Relay,
+    'resistor': Resistor,
+    'sim-scc': SimSCC,
+    'switch': Switch,
+    'test terminal': Bus,
 };
 
-for (let comp of netlist.comps) {
-    const type = componentTypeMap[comp.type] || Component;
-    components[`${comp.subnet}/${comp.component}`] = new type({
-        name: comp.component,
-        type: comp.type,
-        subtype: comp.subtype,
-        subnet: comp.subnet,
-        location: comp.location,
-        resistance: comp.resistance ? parseFloat(comp.resistance) : undefined,
-        terminals: { },
-    });
-}
+class Sim {
+    constructor() {
+        this.components = { };
+        this.circuits = [ ];
 
+        this.visited = new Set();
+        this.activeComponents = new Set();
+
+        this.psus = [ ];
+
+        const { components, circuits, psus, visited, activeComponents } = this;
+
+        function spawnComponent(comp) {
+            const type = componentTypeMap[comp.type] || Component;
+            const config = Object.assign(comp.config ? JSON.parse(comp.config) : { }, {
+                name: comp.component,
+                type: comp.type,
+                subtype: comp.subtype,
+                subnet: comp.subnet,
+                location: comp.location,
+                resistance: comp.resistance ? parseFloat(comp.resistance) : undefined,
+                terminals: { },
+            });
+            components[`${comp.subnet}/${comp.component}`] = new type(config);
+        }
+
+        for (let comp of netlist.comps)
+            spawnComponent(comp);
+
+        
 function getComponentTerminal(subnet, spec) {
     let match = "";
     for (let name in components) {
@@ -385,116 +477,141 @@ function getComponentTerminal(subnet, spec) {
 
 }
 
-function wireComponent(wire, fromSubnet, toSubnet = fromSubnet) {
-    const [ fromComp, fromTerm ] = getComponentTerminal(fromSubnet, wire.from);
-    const [ toComp, toTerm ] = getComponentTerminal(toSubnet, wire.to);
-    // console.log(`from <${fromComp.name}> ${fromTerm}`);
-    // console.log(`  to <${toComp.name}> ${toTerm}`);
-    if (!fromComp.terminals[fromTerm])
-        fromComp.terminals[fromTerm] = new Node([fromComp, fromTerm]);
-    if (!toComp.terminals[toTerm])
-        toComp.terminals[toTerm] = new Node([toComp, toTerm]);
-    fromComp.terminals[fromTerm].join(toComp.terminals[toTerm]);
-    const node = fromComp.terminals[fromTerm];
-    node.addName(wire.signal);
-    // node.addName(`<${fromComp.name} ${fromTerm}>`);
-    // node.addName(`<${toComp.name} ${toTerm}>`);
-}
+        function wireComponent(wire, fromSubnet, toSubnet = fromSubnet) {
+            const [ fromComp, fromTerm ] =
+                  getComponentTerminal(fromSubnet || wire.fromSubnet, wire.from);
+            const [ toComp, toTerm ] =
+                  getComponentTerminal(toSubnet || wire.toSubnet, wire.to);
+            if (wire.splice) {
+                const [ spliceComp, spliceTerm ] =
+                      getComponentTerminal(wire.spliceSubnet, wire.splice);
+                spliceComp.terminals[spliceTerm] = fromComp.terminals[fromTerm];
+                fromComp.terminals[fromTerm] = undefined;
+            }
+            // console.log(`from <${fromComp.name}> ${fromTerm}`);
+            // console.log(`  to <${toComp.name}> ${toTerm}`);
+            if (!fromComp.terminals[fromTerm])
+                fromComp.terminals[fromTerm] = new Node([fromComp, fromTerm]);
+            if (!toComp.terminals[toTerm])
+                toComp.terminals[toTerm] = new Node([toComp, toTerm]);
+            fromComp.terminals[fromTerm].join(toComp.terminals[toTerm]);
+            const node = fromComp.terminals[fromTerm];
+            node.addName(wire.signal);
+            // node.addName(`<${fromComp.name} ${fromTerm}>`);
+            // node.addName(`<${toComp.name} ${toTerm}>`);
+        }
 
-for (let wire of netlist.towerWires)
-    wireComponent(wire, 'Tower');
-for (let wire of netlist.caseAWires)
-    wireComponent(wire, 'Case A');
-for (let wire of netlist.caseCWires)
-    wireComponent(wire, 'Case C');
-for (let wire of netlist.crossConnections)
-    wireComponent(wire, wire.fromSubnet, wire.toSubnet);
+        for (let wire of netlist.towerWires)
+            wireComponent(wire, 'Tower');
+        for (let wire of netlist.caseAWires)
+            wireComponent(wire, 'Case A');
+        for (let wire of netlist.caseCWires)
+            wireComponent(wire, 'Case C');
+        for (let wire of netlist.crossConnections) {
+            if (!wire.resistance) {
+                wireComponent(wire);
+            } else {
+                const name = `WIRE-${wire.gauge}GA-${wire.length}FT-${wire.fromSubnet}/${wire.from}-${wire.toSubnet}/${wire.to}`;
+                spawnComponent({
+                    component: name,
+                    subnet: 'Interconnects',
+                    type: 'resistor',
+                    resistance: wire.resistance,
+                });
+                wireComponent({ from: wire.from, to: `${name} +` }, wire.fromSubnet, 'Interconnects');
+                wireComponent({ from: wire.to, to: `${name} -` }, wire.toSubnet, 'Interconnects');
+            }
+        }
+        for (let row of netlist.simulation) {
+            if (row.component) {
+                spawnComponent(Object.assign({
+                    component: row.name,
+                    subnet: row.fromSubnet,
+                    type: row.component,
+                    config: row.config,
+                }));
+            } else {
+                wireComponent(row);
+            }
+        }
 
-wireComponent({ from: 'B10-TWR MAIN', to: '6TR COIL+' }, 'Tower');
-wireComponent({ from: 'N10-TWR MAIN', to: '6TR COIL-' }, 'Tower');
+        for (let name in components) {
+            components[name].fixupNodes();
+            if (components[name].type === 'power supply')
+                psus.push(components[name]);
+        }
 
-//process.exit();
+        for (let psu of psus) {
+            for (let chan of psu.channels) {
+                const psuN = psu.terminals[chan.negative];
 
-for (let name in components) {
-    components[name].fixupNodes();
-    console.log(name);
-}
+                let circuit = psuN.circuit();
+                if (!circuit) {
+                    circuit = new Circuit(psuN.shared);
+                    circuits.push(circuit);
+                }
 
-const circuits = [ ];
+                function visit(node) {
+                    if (!node || visited.has(node.shared))
+                        return;
+                    visited.add(node.shared);
+                    node.setCircuit(circuit);
+                    for (let { payload: [ comp, term ] } of node.shared.members) {
+                        console.log(comp.subnet, comp.name, term);
+                        activeComponents.add(comp);
+                        comp.walk(visit, term);
+                    }
+                }
+                visit(psuN);
+            }
+        }
 
-const psus = [
-    'Tower/TWR-CRAGG',
-    'Case A/CASEA-CRAGG',
-    'Case C/CASEC-CRAGG',
-];
-
-const visited = new Set();
-const activeComponents = new Set();
-
-for (let psu of psus) {
-    const psuN = components[psu].terminals['-'];
-
-    let circuit = psuN.circuit();
-    if (!circuit) {
-        circuit = new Circuit(psuN.shared);
-        circuits.push(circuit);
-    }
-
-    function visit(node) {
-        if (!node || visited.has(node.shared))
-            return;
-        visited.add(node.shared);
-        node.setCircuit(circuit);
-        for (let { payload: [ comp, term ] } of node.shared.members) {
-            console.log(comp.subnet, comp.name, term);
-            activeComponents.add(comp);
-            comp.walk(visit, term);
+        for (let comp of activeComponents) {
+            comp.prepare();
         }
     }
-    visit(psuN);
-}
 
-for (let comp of activeComponents) {
-    comp.prepare();
-}
+    sim(time) {
+        const { activeComponents, circuits, visited } = this;
 
+        console.log(`*** sim ${time.toFixed(2)} ***`);
 
-function sim(time) {
-    console.log(`*** sim ${time.toFixed(2)} ***`);
+        for (let comp of activeComponents) {
+            if (comp.schedule && comp.schedule.time <= time) {
+                console.log(comp.name, comp.schedule);
+                comp.bias = comp.schedule.bias;
+                comp.state = comp.schedule.state;
+                comp.lastStateChange = comp.schedule.time;
+                comp.schedule = null;
+            }
+        }
 
-    for (let comp of activeComponents) {
-        if (comp.schedule && comp.schedule.time <= time) {
-            console.log(comp.name, comp.schedule);
-            comp.bias = comp.schedule.bias;
-            comp.state = comp.schedule.state;
-            comp.schedule = null;
+        for (let circuit of circuits)
+            circuit.reset();
+        for (let comp of activeComponents) {
+            comp.preSolve(time);
+        }
+        //console.log('pre solve');
+    //    console.log(circuit);
+
+        // for (let node of circuit.nodes.keys()) {
+        //     circuit.resistor(circuit.groundNode, node, 1e-3);
+        // }
+        for (let circuit of circuits)
+            circuit.solve();
+        //console.log('post solve');
+    //    console.log(circuit);
+        for (let node of visited) {
+            // console.log('node', Array.from(node.names).join(' '));
+            // console.log('  ', circuit.nodeVoltage(node.nodeNum), 'volts');
+        }
+        for (let comp of activeComponents) {
+            comp.postSolve(time);
         }
     }
-
-    for (let circuit of circuits)
-        circuit.reset();
-    for (let comp of activeComponents) {
-        comp.preSolve(time);
-    }
-    //console.log('pre solve');
-//    console.log(circuit);
-
-    // for (let node of circuit.nodes.keys()) {
-    //     circuit.resistor(circuit.groundNode, node, 1e-3);
-    // }
-    for (let circuit of circuits)
-        circuit.solve();
-    //console.log('post solve');
-//    console.log(circuit);
-    for (let node of visited) {
-        // console.log('node', Array.from(node.names).join(' '));
-        // console.log('  ', circuit.nodeVoltage(node.nodeNum), 'volts');
-    }
-    for (let comp of activeComponents) {
-        comp.postSolve(time);
-    }
 }
 
+module.exports = Sim;
 
 
 // function sim(time) {
@@ -646,29 +763,31 @@ function sim(time) {
 //     return minImpedance;
 // }
 
-let t = 0.0;
+// const s = new Sim();
 
-for (; t < 0.5; t += 0.05) {
-    sim(t);
-}
+// let t = 0.0;
 
-components['Tower/LVR-1'].state = 'reverse';
+// for (; t < 0.5; t += 0.05) {
+//     s.sim(t);
+// }
 
-for (; t < 1.0; t += 0.05) {
-    sim(t);
-}
+// s.components['Tower/LVR-1'].state = 'reverse';
 
-components['Tower/LVR-6'].state = 'reverse';
+// for (; t < 1.0; t += 0.05) {
+//     s.sim(t);
+// }
 
-for (; t < 1.5; t += 0.05) {
-    sim(t);
-}
+// s.components['Tower/LVR-6'].state = 'reverse';
 
-components['Tower/LVR-12'].state = 'reverse';
+// for (; t < 1.5; t += 0.05) {
+//     s.sim(t);
+// }
 
-for (; t < 2.0; t += 0.05) {
-    sim(t);
-}
+// s.components['Tower/LVR-12'].state = 'reverse';
+
+// for (; t < 2.0; t += 0.05) {
+//     s.sim(t);
+// }
 
 
 // for (let node of allNodes.values()) {
