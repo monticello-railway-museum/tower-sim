@@ -1,6 +1,29 @@
 {
   "comps": [
     {
+      "component": "9-10T TEST TERM",
+      "subnet": "Case A",
+      "type": "test terminal",
+      "unused": "0",
+      "used": "0"
+    },
+    {
+      "component": "9-10T TRK RESISTOR 1",
+      "subnet": "Case A",
+      "type": "resistor",
+      "resistance": "5",
+      "unused": "0",
+      "used": "0"
+    },
+    {
+      "component": "9-10T TRK RESISTOR 2",
+      "subnet": "Case A",
+      "type": "resistor",
+      "resistance": "5",
+      "unused": "0",
+      "used": "0"
+    },
+    {
       "component": "9-10TR",
       "subnet": "Case A",
       "type": "relay",
@@ -62,6 +85,29 @@
       "component": "12STI",
       "subnet": "Case A",
       "type": "terminal",
+      "unused": "0",
+      "used": "0"
+    },
+    {
+      "component": "12T TEST TERM",
+      "subnet": "Case A",
+      "type": "test terminal",
+      "unused": "0",
+      "used": "0"
+    },
+    {
+      "component": "12T TRK RESISTOR 1",
+      "subnet": "Case A",
+      "type": "resistor",
+      "resistance": "5",
+      "unused": "0",
+      "used": "0"
+    },
+    {
+      "component": "12T TRK RESISTOR 2",
+      "subnet": "Case A",
+      "type": "resistor",
+      "resistance": "5",
       "unused": "0",
       "used": "0"
     },
@@ -233,6 +279,14 @@
       "subnet": "Case A",
       "type": "power supply",
       "config": "{\"channels\":[[\"-\", \"+\", 10]]}",
+      "unused": "0",
+      "used": "0"
+    },
+    {
+      "component": "CASEA-W10",
+      "subnet": "Case A",
+      "type": "power supply",
+      "config": "{\"channels\":[[\"CX10\", \"BX10\", 10], [\"CX6\", \"BX6\", 6]]}",
       "unused": "0",
       "used": "0"
     },
@@ -499,7 +553,6 @@
     {
       "component": "CASEC-W10",
       "subnet": "Case C",
-      "location": "shelf top",
       "type": "power supply",
       "config": "{\"channels\":[[\"CX10\", \"BX10\", 10], [\"CX6\", \"BX6\", 6]]}",
       "unused": "0",
@@ -4819,13 +4872,13 @@
     },
     {
       "signal": "14A-L+",
-      "from": "BX10",
+      "from": "BX10-CASEA",
       "to": "CASEA T29",
       "page": "A1"
     },
     {
       "signal": "14A-L-",
-      "from": "CX10",
+      "from": "CX10-CASEA",
       "to": "CASEA T31",
       "page": "A1"
     },
@@ -4861,13 +4914,13 @@
     },
     {
       "signal": "14B-L+",
-      "from": "BX10",
+      "from": "BX10-CASEA",
       "to": "CASEA T30",
       "page": "A1"
     },
     {
       "signal": "14B-L-",
-      "from": "CX10",
+      "from": "CX10-CASEA",
       "to": "CASEA T32",
       "page": "A1"
     },
@@ -5113,13 +5166,13 @@
     },
     {
       "signal": "15ARG",
-      "from": "BX10",
+      "from": "BX10-CASEA",
       "to": "CASEA T43",
       "page": "A3"
     },
     {
-      "signal": "CX10",
-      "from": "CX10",
+      "signal": "CX10-CASEA",
+      "from": "CX10-CASEA",
       "to": "LTG RESISTOR",
       "page": "A3"
     },
@@ -5142,8 +5195,8 @@
       "page": "A3"
     },
     {
-      "signal": "BX10",
-      "from": "BX10",
+      "signal": "BX10-CASEA",
+      "from": "BX10-CASEA",
       "to": "15HDPR 3H",
       "page": "A3"
     },
@@ -5207,85 +5260,87 @@
       "page": "A3"
     },
     {
-      "signal": "NX6",
-      "from": "NX6",
-      "to": "9-10TR TEST TERM-",
+      "signal": "CX6-CASEA",
+      "from": "CX6-CASEA",
+      "to": "9-10T TEST TERM -",
       "page": "A3"
     },
     {
       "signal": "9-10TNX",
-      "from": "9-10TR TEST TERM-",
-      "to": "T?",
+      "from": "9-10T TEST TERM -",
+      "to": "9-10T ARRESTOR +",
       "page": "A3"
     },
     {
-      "signal": "**STRAP?*",
-      "from": "9-10TR TEST TERM+",
-      "to": "9-10TR COIL+",
+      "signal": "N-9-10T",
+      "from": "9-10T TEST TERM +",
+      "to": "9-10TR COIL-",
       "page": "A3"
     },
     {
-      "from": "9-10TR COIL-",
-      "to": "9-10TR TRK RESISTOR",
+      "signal": "9-10T",
+      "from": "9-10TR COIL+",
+      "to": "9-10T TRK RESISTOR 1-",
       "page": "A3"
     },
     {
       "signal": "**STRAP**",
-      "from": "9-10TR TRK RESISTOR",
-      "to": "9-10TR TRK RESISTOR",
+      "from": "9-10T TRK RESISTOR 1+",
+      "to": "9-10T TRK RESISTOR 2+",
       "page": "A3"
     },
     {
       "signal": "9-10TBX",
-      "from": "9-10TR TRK RESISTOR",
-      "to": "T?",
+      "from": "9-10T TRK RESISTOR 2-",
+      "to": "9-10T ARRESTOR -",
       "page": "A3"
     },
     {
-      "signal": "BX6",
-      "from": "BX6",
-      "to": "9-10TR TRK RESISTOR",
+      "signal": "BX6-CASEA",
+      "from": "BX6-CASEA",
+      "to": "9-10T TRK RESISTOR 1+",
       "page": "A3"
     },
     {
-      "signal": "NX6",
-      "from": "NX6",
-      "to": "12TR TEST TERM-",
+      "signal": "CX6-CASEA",
+      "from": "CX6-CASEA",
+      "to": "12T TEST TERM -",
       "page": "A3"
     },
     {
       "signal": "12TNX",
-      "from": "12TR TEST TERM-",
-      "to": "T?",
+      "from": "12T TEST TERM -",
+      "to": "12T ARRESTOR -",
       "page": "A3"
     },
     {
-      "signal": "**STRAP?*",
-      "from": "12TR TEST TERM+",
-      "to": "12TR COIL+",
+      "signal": "N-9-10T",
+      "from": "12T TEST TERM +",
+      "to": "12TR COIL-",
       "page": "A3"
     },
     {
-      "from": "12TR COIL-",
-      "to": "12TR TRK RESISTOR",
+      "signal": "9-10T",
+      "from": "12TR COIL+",
+      "to": "12T TRK RESISTOR 1-",
       "page": "A3"
     },
     {
       "signal": "**STRAP**",
-      "from": "12TR TRK RESISTOR",
-      "to": "12TR TRK RESISTOR",
+      "from": "12T TRK RESISTOR 1+",
+      "to": "12T TRK RESISTOR 2+",
       "page": "A3"
     },
     {
       "signal": "12TBX",
-      "from": "12TR TRK RESISTOR",
-      "to": "T?",
+      "from": "12T TRK RESISTOR 2-",
+      "to": "12T ARRESTOR +",
       "page": "A3"
     },
     {
-      "signal": "BX6",
-      "from": "BX6",
-      "to": "12TR TRK RESISTOR",
+      "signal": "BX6-CASEA",
+      "from": "BX6-CASEA",
+      "to": "12T TRK RESISTOR 1+",
       "page": "A3"
     },
     {
@@ -5421,20 +5476,20 @@
       "page": "A4"
     },
     {
-      "signal": "BX10",
-      "from": "BX10",
+      "signal": "BX10-CASEA",
+      "from": "BX10-CASEA",
       "to": "LTG RESISTOR",
       "page": "A4"
     },
     {
-      "signal": "BX10",
-      "from": "BX10",
+      "signal": "BX10-CASEA",
+      "from": "BX10-CASEA",
       "to": "LTG RESISTOR",
       "page": "A4"
     },
     {
-      "signal": "BX10",
-      "from": "BX10",
+      "signal": "BX10-CASEA",
+      "from": "BX10-CASEA",
       "to": "LTG RESISTOR",
       "page": "A4"
     },
@@ -5463,8 +5518,8 @@
       "page": "A4"
     },
     {
-      "signal": "CX10",
-      "from": "CX10",
+      "signal": "CX10-CASEA",
+      "from": "CX10-CASEA",
       "to": "CASEA T52",
       "page": "A4"
     },
@@ -5555,6 +5610,26 @@
       "signal": "B10-CASEA",
       "from": "CASEA-CRAGG +",
       "to": "B10-CASEA"
+    },
+    {
+      "signal": "BX6-CASEA",
+      "from": "CASEA-W10 BX6",
+      "to": "BX6-CASEA"
+    },
+    {
+      "signal": "CX6-CASEA",
+      "from": "CASEA-W10 CX6",
+      "to": "CX6-CASEA"
+    },
+    {
+      "signal": "BX10-CASEA",
+      "from": "CASEA-W10 BX10",
+      "to": "BX10-CASEA"
+    },
+    {
+      "signal": "CX10-CASEA",
+      "from": "CASEA-W10 CX10",
+      "to": "CX10-CASEA"
     }
   ],
   "caseBWires": [
@@ -7394,40 +7469,32 @@
       "splice": "SIM-1TRSW 1F"
     },
     {
-      "name": "SIM-9-10TPRSW",
+      "name": "SIM-9-10TRSW",
       "fromSubnet": "Sim",
       "component": "switch",
       "config": "{\"state\":\"closed\"}"
     },
     {
-      "fromSubnet": "Tower",
-      "from": "9-10TPR COIL+",
+      "fromSubnet": "Case A",
+      "from": "9-10TR COIL+",
       "toSubnet": "Sim",
-      "to": "SIM-9-10TPRSW 1H"
+      "to": "SIM-9-10TRSW 1H",
+      "spliceSubnet": "Sim",
+      "splice": "SIM-9-10TRSW 1F"
     },
     {
-      "fromSubnet": "Sim",
-      "from": "SIM-9-10TPRSW 1F",
-      "toSubnet": "Case A",
-      "to": "B10-CASEA"
-    },
-    {
-      "name": "SIM-12TPRSW",
+      "name": "SIM-12TRSW",
       "fromSubnet": "Sim",
       "component": "switch",
       "config": "{\"state\":\"closed\"}"
     },
     {
-      "fromSubnet": "Tower",
-      "from": "12TPR COIL+",
+      "fromSubnet": "Case A",
+      "from": "12TR COIL+",
       "toSubnet": "Sim",
-      "to": "SIM-12TPRSW 1H"
-    },
-    {
-      "fromSubnet": "Sim",
-      "from": "SIM-12TPRSW 1F",
-      "toSubnet": "Case A",
-      "to": "B10-CASEA"
+      "to": "SIM-12TRSW 1H",
+      "spliceSubnet": "Sim",
+      "splice": "SIM-12TRSW 1F"
     },
     {
       "name": "SIM-16APRSW",

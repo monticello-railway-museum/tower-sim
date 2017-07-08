@@ -240,7 +240,7 @@ class Top extends React.Component {
                       <InspectLink inspect={this.inspect} target={psu}>
                         {psu.name} {chan.negative} {chan.positive}:
                       </InspectLink>
-                      <span style={{float: 'right'}}>{num(chan.current, 'A')}</span>
+                      <span style={{float: 'right'}}>{num(chan.voltage)} {num(chan.current, 'A')}</span>
                     </div>
                 );
             }
@@ -260,8 +260,8 @@ class Top extends React.Component {
                   <Switch name="1TR" comp={sim.components['Sim/SIM-1TRSW']}/>
                   <Switch name="2TR" comp={sim.components['Sim/SIM-2TRSW']}/>
                   <Switch name="6TR" comp={sim.components['Sim/SIM-6TRSW']}/>
-                  <Switch name="9-10TPR" comp={sim.components['Sim/SIM-9-10TPRSW']}/>
-                  <Switch name="12TPR" comp={sim.components['Sim/SIM-12TPRSW']}/>
+                  <Switch name="9-10TR" comp={sim.components['Sim/SIM-9-10TRSW']}/>
+                  <Switch name="12TR" comp={sim.components['Sim/SIM-12TRSW']}/>
                   <Switch name="14ATR" comp={sim.components['Sim/SIM-14ATRSW']}/>
                   <Switch name="14BTR" comp={sim.components['Sim/SIM-14BTRSW']}/>
                   <Switch name="16APR" comp={sim.components['Sim/SIM-16APRSW']}/>
