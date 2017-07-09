@@ -658,8 +658,8 @@
       "subnet": "Tower",
       "type": "relay",
       "contacts": "2",
-      "unused": "2",
-      "used": "0"
+      "unused": "0",
+      "used": "2"
     },
     {
       "component": "2-3COPB",
@@ -3142,44 +3142,34 @@
       "page": "T8"
     },
     {
-      "signal": "B10-TWR",
-      "from": "B10-TWR LVR T3",
-      "to": "LVR-1 T9",
-      "page": "T8"
+      "from": "6RWPPR 2F",
+      "to": "LVR-1 T9"
     },
     {
-      "signal": "N10-TWR",
-      "from": "N10-TWR LVR T2",
-      "to": "LVR-1 T13",
-      "page": "T8"
-    },
-    {
-      "signal": "**STRAP**",
-      "from": "LVR-1 T12",
-      "to": "LVR-1 T16",
-      "page": "T8"
-    },
-    {
-      "signal": "**STRAP**",
       "from": "LVR-1 T10",
-      "to": "LVR-1 T11",
-      "page": "T8"
+      "to": "1VGR COIL+"
     },
     {
-      "signal": "**STRAP**",
-      "from": "LVR-1 T14",
-      "to": "LVR-1 T15",
-      "page": "T8"
+      "from": "1VGR COIL-",
+      "to": "N10-TWR S2 T?"
+    },
+    {
+      "from": "LVR-1 T8",
+      "to": "1VGR 1F"
+    },
+    {
+      "from": "LVR-1 T4",
+      "to": "1VGR 1B"
     },
     {
       "signal": "1HDP-2",
-      "from": "LVR-1 T10",
+      "from": "1VGR 1H",
       "to": "1HDR 1F",
       "page": "T8"
     },
     {
       "signal": "N-1HDP-2",
-      "from": "LVR-1 T14",
+      "from": "N10-TWR S2 T?",
       "to": "1HDR 2F",
       "page": "T8"
     },
@@ -4447,12 +4437,8 @@
       "page": "T16"
     },
     {
+      "signal": "**STRAP**",
       "from": "LVR-1 T6",
-      "to": "LVR-15 T7",
-      "page": "T16"
-    },
-    {
-      "from": "LVR-15 T8",
       "to": "LVR-1 T7",
       "page": "T16"
     },
@@ -4499,9 +4485,9 @@
       "page": "T16"
     },
     {
-      "signal": "H-6R-9",
-      "from": "6RWPPR 4F",
-      "to": "9-10TPSR 4H",
+      "signal": "H-6B",
+      "from": "6NWPPR 4H",
+      "to": "6RWPPR 4H",
       "page": "T16"
     },
     {
@@ -4511,9 +4497,21 @@
       "page": "T16"
     },
     {
-      "signal": "H-6B",
-      "from": "6NWPPR 4H",
-      "to": "6RWPPR 4H",
+      "signal": "H-6R-9",
+      "from": "6RWPPR 4F",
+      "to": "1VGR 2F",
+      "page": "T16"
+    },
+    {
+      "signal": "H-3-9-B10",
+      "from": "B10-TWR LVR T?",
+      "to": "1VGR 2B",
+      "page": "T16"
+    },
+    {
+      "signal": "H-3-9",
+      "from": "1VGR 2H",
+      "to": "9-10TPSR 4H",
       "page": "T16"
     },
     {
@@ -4697,12 +4695,8 @@
       "page": "T16"
     },
     {
+      "signal": "**STRAP**",
       "from": "LVR-16 T7",
-      "to": "LVR-3 T3",
-      "page": "T16"
-    },
-    {
-      "from": "LVR-3 T4",
       "to": "LVR-16 T6",
       "page": "T16"
     },
