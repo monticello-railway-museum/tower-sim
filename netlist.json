@@ -654,6 +654,14 @@
       "used": "2"
     },
     {
+      "component": "1VGR",
+      "subnet": "Tower",
+      "type": "relay",
+      "contacts": "2",
+      "unused": "2",
+      "used": "0"
+    },
+    {
       "component": "2-3COPB",
       "subnet": "Tower",
       "location": "lever top",
@@ -1397,6 +1405,14 @@
       "type": "relay",
       "unused": "-4",
       "used": "4"
+    },
+    {
+      "component": "16VGR",
+      "subnet": "Tower",
+      "type": "relay",
+      "contacts": "2",
+      "unused": "2",
+      "used": "0"
     },
     {
       "component": "22HDGPR",
@@ -3127,7 +3143,7 @@
     },
     {
       "signal": "B10-TWR",
-      "from": "B10-TWR LVR T4",
+      "from": "B10-TWR LVR T3",
       "to": "LVR-1 T9",
       "page": "T8"
     },
