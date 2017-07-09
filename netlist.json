@@ -3155,15 +3155,15 @@
     },
     {
       "from": "LVR-1 T8",
-      "to": "1VGR 1F"
+      "to": "1VGR 2F"
     },
     {
       "from": "LVR-1 T4",
-      "to": "1VGR 1B"
+      "to": "1VGR 2B"
     },
     {
       "signal": "1HDP-2",
-      "from": "1VGR 1H",
+      "from": "1VGR 2H",
       "to": "1HDR 1F",
       "page": "T8"
     },
@@ -4237,6 +4237,18 @@
       "page": "T14"
     },
     {
+      "from": "12RWPPR 2F",
+      "to": "LVR-16 T9"
+    },
+    {
+      "from": "LVR-16 T10",
+      "to": "16VGR COIL+"
+    },
+    {
+      "from": "16VGR COIL-",
+      "to": "N10-TWR S2 T?"
+    },
+    {
       "signal": "16AHD-2",
       "from": "LVR-16 T4",
       "to": "14-16COSR 3H",
@@ -4499,18 +4511,18 @@
     {
       "signal": "H-6R-9",
       "from": "6RWPPR 4F",
-      "to": "1VGR 2F",
+      "to": "1VGR 1F",
       "page": "T16"
     },
     {
       "signal": "H-3-9-B10",
       "from": "B10-TWR LVR T?",
-      "to": "1VGR 2B",
+      "to": "1VGR 1B",
       "page": "T16"
     },
     {
       "signal": "H-3-9",
-      "from": "1VGR 2H",
+      "from": "1VGR 1H",
       "to": "9-10TPSR 4H",
       "page": "T16"
     },
@@ -4605,15 +4617,36 @@
       "page": "T16"
     },
     {
-      "signal": "H-10N-12R",
+      "signal": "H-10N-15",
       "from": "10NWPR 3F",
-      "to": "LVR-15 T3",
-      "page": "T16"
+      "to": "16VGR 1H",
+      "page": "T16",
+      "notes": "rework"
+    },
+    {
+      "signal": "H-10N-15-B10",
+      "from": "B10-TWR S2 T?",
+      "to": "16VGR 1B",
+      "page": "T16",
+      "notes": "rework"
+    },
+    {
+      "signal": "H-10N-12R",
+      "from": "16VGR 1F",
+      "to": "12RWPPR 3F",
+      "page": "T16",
+      "notes": "rework"
     },
     {
       "signal": "**STRAP**",
       "from": "LVR-15 T2",
       "to": "LVR-15 T3",
+      "page": "T16"
+    },
+    {
+      "signal": "H-12R-15",
+      "from": "LVR-15 T3",
+      "to": "12RWPPR 3F",
       "page": "T16"
     },
     {
@@ -4638,12 +4671,6 @@
       "signal": "H-12A",
       "from": "12NWPPR 3H",
       "to": "12RWPPR 3H",
-      "page": "T16"
-    },
-    {
-      "signal": "H-12R-15",
-      "from": "LVR-15 T3",
-      "to": "12RWPPR 3F",
       "page": "T16"
     },
     {
@@ -7191,6 +7218,7 @@
     },
     {
       "lever": "LVR-16",
+      "state": "reverse",
       "from": "T9",
       "to": "T10"
     },
@@ -7226,8 +7254,8 @@
     {
       "lever": "1",
       "type": "signal",
-      "when": "(6) 9 10 15",
-      "lock": "12"
+      "when": "(6) 9 10 15 (12)",
+      "lock": "16"
     },
     {
       "lever": "1",
