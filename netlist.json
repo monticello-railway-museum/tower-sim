@@ -587,6 +587,7 @@
       "location": "shelf 4",
       "type": "relay",
       "resistance": "150",
+      "config": "{\"pickupTime\":2.3,\"dropTime\":1.3}",
       "index": "2",
       "contacts": "2",
       "unused": "0",
@@ -771,6 +772,7 @@
       "location": "shelf 2",
       "type": "relay",
       "resistance": "150",
+      "config": "{\"pickupTime\":2.3,\"dropTime\":1.3}",
       "index": "3",
       "contacts": "2",
       "unused": "0",
@@ -1139,6 +1141,7 @@
       "location": "shelf 4",
       "type": "relay",
       "resistance": "250",
+      "config": "{\"pickupTime\":2.3,\"dropTime\":1.3}",
       "index": "6",
       "contacts": "2",
       "unused": "0",
@@ -4428,8 +4431,12 @@
       "page": "T16"
     },
     {
-      "signal": "**STRAP**",
       "from": "LVR-1 T6",
+      "to": "LVR-15 T7",
+      "page": "T16"
+    },
+    {
+      "from": "LVR-15 T8",
       "to": "LVR-1 T7",
       "page": "T16"
     },
@@ -4478,13 +4485,13 @@
     {
       "signal": "H-6R-9",
       "from": "6RWPPR 4F",
-      "to": "LVR-3 T3",
+      "to": "9-10TPSR 4H",
       "page": "T16"
     },
     {
       "signal": "H-3-6R",
-      "from": "LVR-3 T1",
-      "to": "LVR-3 T3",
+      "from": "6RWPPR 4F",
+      "to": "LVR-3 T1",
       "page": "T16"
     },
     {
@@ -4509,12 +4516,6 @@
       "signal": "H-2-6N-B10",
       "from": "B10-TWR LVR T5",
       "to": "LVR-2 T1",
-      "page": "T16"
-    },
-    {
-      "signal": "H-6R-9-1",
-      "from": "LVR-3 T4",
-      "to": "9-10TPSR 4H",
       "page": "T16"
     },
     {
@@ -4592,12 +4593,6 @@
     {
       "signal": "H-10N-12R",
       "from": "10NWPR 3F",
-      "to": "LVR-15 T8",
-      "page": "T16"
-    },
-    {
-      "signal": "H-10N-12R-1",
-      "from": "LVR-15 T7",
       "to": "LVR-15 T3",
       "page": "T16"
     },
@@ -4686,8 +4681,12 @@
       "page": "T16"
     },
     {
-      "signal": "**STRAP**",
       "from": "LVR-16 T7",
+      "to": "LVR-3 T3",
+      "page": "T16"
+    },
+    {
+      "from": "LVR-3 T4",
       "to": "LVR-16 T6",
       "page": "T16"
     },
@@ -5174,13 +5173,13 @@
       "page": "A3"
     },
     {
-      "signal": "15HDPP",
+      "signal": "15HDP",
       "from": "15HDR 1F",
       "to": "15HDPR COIL+",
       "page": "A3"
     },
     {
-      "signal": "N15-HDPP",
+      "signal": "N-15HDP",
       "from": "N10-CASEA",
       "to": "15HDPR COIL-",
       "page": "A3"
