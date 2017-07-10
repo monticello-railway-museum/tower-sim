@@ -74,6 +74,9 @@ const circuitColors = [
     '#660000',
     '#006600',
     '#000066',
+    '#660066',
+    '#666600',
+    '#006666',
 ];
 
 class Turnout extends React.Component {

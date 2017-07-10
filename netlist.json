@@ -1054,6 +1054,14 @@
       "used": "3"
     },
     {
+      "component": "5GE RESISTOR",
+      "subnet": "Tower",
+      "type": "resistor",
+      "resistance": "0.1",
+      "unused": "0",
+      "used": "0"
+    },
+    {
       "component": "5GKE",
       "subnet": "Tower",
       "location": "model board",
@@ -1762,15 +1770,6 @@
       "used": "0"
     },
     {
-      "component": "C-4",
-      "subnet": "Tower",
-      "location": "shelf top",
-      "type": "power supply",
-      "config": "{\"channels\":[[\"1TN\", \"1TB\", 6.3],[\"2TN\", \"2TB\", 6.3],[\"3TN\", \"3TB\", 6.3],[\"4TN\", \"4TB\", 6.3]]}",
-      "unused": "0",
-      "used": "0"
-    },
-    {
       "component": "CX110",
       "subnet": "Tower",
       "location": "shelf top",
@@ -2147,11 +2146,29 @@
       "used": "1"
     },
     {
+      "component": "TWR-C4",
+      "subnet": "Tower",
+      "location": "shelf top",
+      "type": "power supply",
+      "config": "{\"channels\":[[\"1TN\", \"1TB\", 6.3],[\"2TN\", \"2TB\", 6.3],[\"3TN\", \"3TB\", 6.3],[\"4TN\", \"4TB\", 6.3]]}",
+      "unused": "0",
+      "used": "0"
+    },
+    {
       "component": "TWR-CRAGG",
       "subnet": "Tower",
       "location": "shelf top",
       "type": "power supply",
       "config": "{\"channels\":[[\"-\", \"+\", 10]]}",
+      "unused": "0",
+      "used": "0"
+    },
+    {
+      "component": "TWR-W10",
+      "subnet": "Tower",
+      "location": "shelf top",
+      "type": "power supply",
+      "config": "{\"channels\":[[\"NX10\", \"BX10\", 10]]}",
       "unused": "0",
       "used": "0"
     }
@@ -2376,18 +2393,18 @@
     {
       "signal": "BX110",
       "from": "BX110",
-      "to": "C-4 BX",
+      "to": "TWR-C4 BX",
       "page": "T3"
     },
     {
       "signal": "CX110",
       "from": "CX110",
-      "to": "C-4 CX",
+      "to": "TWR-C4 CX",
       "page": "T3"
     },
     {
       "signal": "2TNX-1",
-      "from": "C-4 1TN",
+      "from": "TWR-C4 1TN",
       "to": "2T TEST TERM -",
       "page": "T3"
     },
@@ -2423,13 +2440,13 @@
     },
     {
       "signal": "2TBX-1",
-      "from": "C-4 1TB",
+      "from": "TWR-C4 1TB",
       "to": "2T TRK RESISTOR 2+",
       "page": "T3"
     },
     {
       "signal": "6TNX-1",
-      "from": "C-4 2TN",
+      "from": "TWR-C4 2TN",
       "to": "6T TEST TERM -",
       "page": "T3"
     },
@@ -2465,13 +2482,13 @@
     },
     {
       "signal": "6TBX-1",
-      "from": "C-4 2TB",
+      "from": "TWR-C4 2TB",
       "to": "6T TRK RESISTOR 2+",
       "page": "T3"
     },
     {
       "signal": "14ATNX-1",
-      "from": "C-4 3TN",
+      "from": "TWR-C4 3TN",
       "to": "14AT TEST TERM -",
       "page": "T3"
     },
@@ -2507,13 +2524,13 @@
     },
     {
       "signal": "14ATBX-1",
-      "from": "C-4 3TB",
+      "from": "TWR-C4 3TB",
       "to": "14AT TRK RESISTOR 2+",
       "page": "T3"
     },
     {
       "signal": "14BTNX-1",
-      "from": "C-4 4TN",
+      "from": "TWR-C4 4TN",
       "to": "14BT TEST TERM -",
       "page": "T3"
     },
@@ -2549,7 +2566,7 @@
     },
     {
       "signal": "14BTBX-1",
-      "from": "C-4 4TB",
+      "from": "TWR-C4 4TB",
       "to": "14BT TRK RESISTOR 2+",
       "page": "T3"
     },
@@ -5039,6 +5056,16 @@
       "from": "N10-TWR MAIN T9",
       "to": "GRP-D T2",
       "page": "T18"
+    },
+    {
+      "signal": "BX10-TWR",
+      "from": "TWR-W10 BX10",
+      "to": "BX10-TWR T?"
+    },
+    {
+      "signal": "NX10-TWR",
+      "from": "TWR-W10 NX10",
+      "to": "NX10-TWR T?"
     }
   ],
   "caseAWires": [
@@ -6225,25 +6252,25 @@
     {
       "signal": "2ANX10",
       "from": "SIG2 T6",
-      "to": "2A RESISTOR +",
+      "to": "2AGE RESISTOR +",
       "page": "B1"
     },
     {
       "signal": "2BNX10",
       "from": "SIG2 T7",
-      "to": "2B RESISTOR +",
+      "to": "2BGE RESISTOR +",
       "page": "B1"
     },
     {
       "signal": "**STRAP**",
-      "from": "2A RESISTOR -",
-      "to": "2B RESISTOR -",
+      "from": "2AGE RESISTOR -",
+      "to": "2BGE RESISTOR -",
       "page": "B1"
     },
     {
       "signal": "NX10-CASEB",
       "from": "NX10-CASEB T?",
-      "to": "2A RESISTOR -",
+      "to": "2AGE RESISTOR -",
       "page": "B1"
     },
     {
@@ -6358,13 +6385,13 @@
     {
       "signal": "3NX10",
       "from": "SIG3 T6",
-      "to": "3 RESISTOR +",
+      "to": "3GE RESISTOR +",
       "page": "B1"
     },
     {
       "signal": "NX10-CASEB",
       "from": "NX10-CASEB T?",
-      "to": "3 RESISTOR -",
+      "to": "3GE RESISTOR -",
       "page": "B1"
     },
     {
@@ -6484,12 +6511,12 @@
     {
       "signal": "NX10-CASEB",
       "from": "NX10-CASEB T?",
-      "to": "4 RESISTOR -",
+      "to": "4GE RESISTOR -",
       "page": "B2"
     },
     {
       "signal": "4NX10",
-      "from": "4 RESISTOR +",
+      "from": "4GE RESISTOR +",
       "to": "SIG4 T4",
       "page": "B2"
     }
@@ -8404,6 +8431,222 @@
       "from": "CASEC-LTG T7",
       "toSubnet": "Sim",
       "to": "SIM-1RGE -"
+    },
+    {
+      "name": "SIM-2ADGE",
+      "fromSubnet": "Sim",
+      "component": "light",
+      "config": "{\"volts\":10,\"watts\":20}"
+    },
+    {
+      "fromSubnet": "Case B",
+      "from": "SIG2 T3",
+      "toSubnet": "Sim",
+      "to": "SIM-2ADGE +"
+    },
+    {
+      "fromSubnet": "Case B",
+      "from": "SIG2 T6",
+      "toSubnet": "Sim",
+      "to": "SIM-2ADGE -"
+    },
+    {
+      "name": "SIM-2AHGE",
+      "fromSubnet": "Sim",
+      "component": "light",
+      "config": "{\"volts\":10,\"watts\":20}"
+    },
+    {
+      "fromSubnet": "Case B",
+      "from": "SIG2 T2",
+      "toSubnet": "Sim",
+      "to": "SIM-2AHGE +"
+    },
+    {
+      "fromSubnet": "Case B",
+      "from": "SIG2 T6",
+      "toSubnet": "Sim",
+      "to": "SIM-2AHGE -"
+    },
+    {
+      "name": "SIM-2ARGE",
+      "fromSubnet": "Sim",
+      "component": "light",
+      "config": "{\"volts\":10,\"watts\":20}"
+    },
+    {
+      "fromSubnet": "Case B",
+      "from": "SIG2 T1",
+      "toSubnet": "Sim",
+      "to": "SIM-2ARGE +"
+    },
+    {
+      "fromSubnet": "Case B",
+      "from": "SIG2 T6",
+      "toSubnet": "Sim",
+      "to": "SIM-2ARGE -"
+    },
+    {
+      "name": "SIM-2BHGE",
+      "fromSubnet": "Sim",
+      "component": "light",
+      "config": "{\"volts\":10,\"watts\":20}"
+    },
+    {
+      "fromSubnet": "Case B",
+      "from": "SIG2 T4",
+      "toSubnet": "Sim",
+      "to": "SIM-2BHGE +"
+    },
+    {
+      "fromSubnet": "Case B",
+      "from": "SIG2 T7",
+      "toSubnet": "Sim",
+      "to": "SIM-2BHGE -"
+    },
+    {
+      "name": "SIM-3DGE",
+      "fromSubnet": "Sim",
+      "component": "light",
+      "config": "{\"volts\":10,\"watts\":20}"
+    },
+    {
+      "fromSubnet": "Case B",
+      "from": "SIG3 T3",
+      "toSubnet": "Sim",
+      "to": "SIM-3DGE +"
+    },
+    {
+      "fromSubnet": "Case B",
+      "from": "SIG3 T6",
+      "toSubnet": "Sim",
+      "to": "SIM-3DGE -"
+    },
+    {
+      "name": "SIM-3HGE",
+      "fromSubnet": "Sim",
+      "component": "light",
+      "config": "{\"volts\":10,\"watts\":20}"
+    },
+    {
+      "fromSubnet": "Case B",
+      "from": "SIG3 T2",
+      "toSubnet": "Sim",
+      "to": "SIM-3HGE +"
+    },
+    {
+      "fromSubnet": "Case B",
+      "from": "SIG3 T6",
+      "toSubnet": "Sim",
+      "to": "SIM-3HGE -"
+    },
+    {
+      "name": "SIM-3RGE",
+      "fromSubnet": "Sim",
+      "component": "light",
+      "config": "{\"volts\":10,\"watts\":20}"
+    },
+    {
+      "fromSubnet": "Case B",
+      "from": "SIG3 T1",
+      "toSubnet": "Sim",
+      "to": "SIM-3RGE +"
+    },
+    {
+      "fromSubnet": "Case B",
+      "from": "SIG3 T6",
+      "toSubnet": "Sim",
+      "to": "SIM-3RGE -"
+    },
+    {
+      "name": "SIM-3MGE",
+      "fromSubnet": "Sim",
+      "component": "light",
+      "config": "{\"volts\":10,\"watts\":20}"
+    },
+    {
+      "fromSubnet": "Case B",
+      "from": "SIG3 T4",
+      "toSubnet": "Sim",
+      "to": "SIM-3MGE +"
+    },
+    {
+      "fromSubnet": "Case B",
+      "from": "SIG3 T6",
+      "toSubnet": "Sim",
+      "to": "SIM-3MGE -"
+    },
+    {
+      "name": "SIM-4HGE",
+      "fromSubnet": "Sim",
+      "component": "light",
+      "config": "{\"volts\":10,\"watts\":20}"
+    },
+    {
+      "fromSubnet": "Case B",
+      "from": "SIG4 T2",
+      "toSubnet": "Sim",
+      "to": "SIM-4HGE +"
+    },
+    {
+      "fromSubnet": "Case B",
+      "from": "SIG4 T4",
+      "toSubnet": "Sim",
+      "to": "SIM-4HGE -"
+    },
+    {
+      "name": "SIM-4RGE",
+      "fromSubnet": "Sim",
+      "component": "light",
+      "config": "{\"volts\":10,\"watts\":20}"
+    },
+    {
+      "fromSubnet": "Case B",
+      "from": "SIG4 T1",
+      "toSubnet": "Sim",
+      "to": "SIM-4RGE +"
+    },
+    {
+      "fromSubnet": "Case B",
+      "from": "SIG4 T4",
+      "toSubnet": "Sim",
+      "to": "SIM-4RGE -"
+    },
+    {
+      "name": "SIM-5HGE",
+      "fromSubnet": "Sim",
+      "component": "light",
+      "config": "{\"volts\":10,\"watts\":20}"
+    },
+    {
+      "fromSubnet": "Tower",
+      "from": "GRP-C T4",
+      "toSubnet": "Sim",
+      "to": "SIM-5HGE +"
+    },
+    {
+      "fromSubnet": "Tower",
+      "from": "GRP-C T6",
+      "toSubnet": "Sim",
+      "to": "SIM-5HGE -"
+    },
+    {
+      "name": "SIM-5RGE",
+      "fromSubnet": "Sim",
+      "component": "light",
+      "config": "{\"volts\":10,\"watts\":20}"
+    },
+    {
+      "fromSubnet": "Tower",
+      "from": "GRP-C T5",
+      "toSubnet": "Sim",
+      "to": "SIM-5RGE +"
+    },
+    {
+      "fromSubnet": "Tower",
+      "from": "GRP-C T6",
+      "toSubnet": "Sim",
+      "to": "SIM-5RGE -"
     },
     {
       "name": "SIM-14AGE",
