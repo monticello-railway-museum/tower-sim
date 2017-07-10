@@ -290,6 +290,15 @@ class Top extends React.Component {
                         <InspectLink inspect={this.inspect} target={c}>{c.name}</InspectLink>:
                         <div style={{float: 'right'}}><span style={{marginRight: '10px'}}>{num(c.current, 'A', 3)}</span> <span style={((c.lastStateChange || -3) + 2 > time) ? {fontWeight: 'bold'} : {}}>{c.state}</span></div></div>)}
               </div>
+              <p><b>Lights:</b></p>
+              <div style={{columnCount: 4}}>
+                {Array.from(sim.activeComponents)
+                   .filter(c => c.type === 'light')
+                   .sort((a, b) => mangleForSort(a.name) < mangleForSort(b.name) ? -1 : 1)
+                   .map(c => <div style={{clear: 'right'}}>
+                        <InspectLink inspect={this.inspect} target={c}>{c.name}</InspectLink>:
+                        <div style={{float: 'right'}}><span style={{marginRight: '10px'}}>{num(c.current, 'A', 3)}</span> <span style={c.on ? {fontWeight: 'bold'} : {}}>{c.on ? 'on' : 'off'}</span></div></div>)}
+              </div>
               <p><b>Wire voltages:</b> <input type="text" placeholder="filter regex" value={this.state.wireFilter} onChange={e => this.setState({wireFilter: e.target.value})}/></p>
               <div style={{columnCount: 4}}>
                 {this.wireNames.filter(wireFilterFn).map(renderWire)}

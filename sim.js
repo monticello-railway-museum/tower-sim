@@ -174,6 +174,29 @@ class Light extends Component {
         visit(this.terminals['+']);
         visit(this.terminals['-']);
     }
+
+    prepare() {
+        if (this.volts == null)
+            this.volts = 10;
+        if (this.watts == null)
+            this.watts = 2;
+        this.resistance = this.volts / (this.watts / this.volts);
+        this.onThreshold = this.watts / this.volts / 20;
+    }
+
+    preSolve(time) {
+        this.resistor(this.terminals['-'], this.terminals['+'], this.resistance);
+    }
+
+    postSolve(time) {
+        const voltsP = this.nodeVoltage(this.terminals['+']);
+        const voltsN = this.nodeVoltage(this.terminals['-']);
+        if (voltsP != null && voltsN != null) {
+            const amps = (voltsP - voltsN) / this.resistance;
+            this.current = amps;
+            this.on = (Math.abs(this.current) > this.onThreshold);
+        }
+    }
 }
 
 class Switch extends Component {

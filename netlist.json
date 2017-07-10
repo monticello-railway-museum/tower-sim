@@ -205,6 +205,22 @@
       "used": "2"
     },
     {
+      "component": "15A RESISTOR",
+      "subnet": "Case A",
+      "type": "resistor",
+      "resistance": "0.1",
+      "unused": "0",
+      "used": "0"
+    },
+    {
+      "component": "15B RESISTOR",
+      "subnet": "Case A",
+      "type": "resistor",
+      "resistance": "0.1",
+      "unused": "0",
+      "used": "0"
+    },
+    {
       "component": "15HDPR",
       "subnet": "Case A",
       "type": "relay",
@@ -226,6 +242,14 @@
       "contacts": "6",
       "unused": "5",
       "used": "1"
+    },
+    {
+      "component": "16A RESISTOR",
+      "subnet": "Case A",
+      "type": "resistor",
+      "resistance": "0.1",
+      "unused": "0",
+      "used": "0"
     },
     {
       "component": "16ADR",
@@ -266,6 +290,14 @@
       "used": "1"
     },
     {
+      "component": "16B RESISTOR",
+      "subnet": "Case A",
+      "type": "resistor",
+      "resistance": "0.1",
+      "unused": "0",
+      "used": "0"
+    },
+    {
       "component": "16BDR",
       "subnet": "Case A",
       "type": "relay",
@@ -302,6 +334,14 @@
       "contacts": "4",
       "unused": "2",
       "used": "2"
+    },
+    {
+      "component": "16CRG RESISTOR",
+      "subnet": "Case A",
+      "type": "resistor",
+      "resistance": "0.1",
+      "unused": "0",
+      "used": "0"
     },
     {
       "component": "16HDGPR",
@@ -352,21 +392,7 @@
       "component": "CASEA-W10",
       "subnet": "Case A",
       "type": "power supply",
-      "config": "{\"channels\":[[\"CX10\", \"BX10\", 10], [\"CX6\", \"BX6\", 6]]}",
-      "unused": "0",
-      "used": "0"
-    },
-    {
-      "component": "CX6-CASEA",
-      "subnet": "Case A",
-      "type": "bus",
-      "unused": "0",
-      "used": "0"
-    },
-    {
-      "component": "CX10-CASEA",
-      "subnet": "Case A",
-      "type": "bus",
+      "config": "{\"channels\":[[\"NX10\", \"BX10\", 10], [\"NX6\", \"BX6\", 6]]}",
       "unused": "0",
       "used": "0"
     },
@@ -379,6 +405,20 @@
     },
     {
       "component": "N10-TWR",
+      "subnet": "Case A",
+      "type": "bus",
+      "unused": "0",
+      "used": "0"
+    },
+    {
+      "component": "NX6-CASEA",
+      "subnet": "Case A",
+      "type": "bus",
+      "unused": "0",
+      "used": "0"
+    },
+    {
+      "component": "NX10-CASEA",
       "subnet": "Case A",
       "type": "bus",
       "unused": "0",
@@ -588,6 +628,46 @@
       "used": "3"
     },
     {
+      "component": "15A RESISTOR",
+      "subnet": "Case C",
+      "type": "resistor",
+      "resistance": "0.1",
+      "unused": "0",
+      "used": "0"
+    },
+    {
+      "component": "15B RESISTOR",
+      "subnet": "Case C",
+      "type": "resistor",
+      "resistance": "0.1",
+      "unused": "0",
+      "used": "0"
+    },
+    {
+      "component": "16A RESISTOR",
+      "subnet": "Case C",
+      "type": "resistor",
+      "resistance": "0.1",
+      "unused": "0",
+      "used": "0"
+    },
+    {
+      "component": "16B RESISTOR",
+      "subnet": "Case C",
+      "type": "resistor",
+      "resistance": "0.1",
+      "unused": "0",
+      "used": "0"
+    },
+    {
+      "component": "16CRG RESISTOR",
+      "subnet": "Case C",
+      "type": "resistor",
+      "resistance": "0.1",
+      "unused": "0",
+      "used": "0"
+    },
+    {
       "component": "B10-CASEC",
       "subnet": "Case C",
       "type": "bus",
@@ -620,7 +700,7 @@
       "component": "CASEC-W10",
       "subnet": "Case C",
       "type": "power supply",
-      "config": "{\"channels\":[[\"CX10\", \"BX10\", 10], [\"CX6\", \"BX6\", 6]]}",
+      "config": "{\"channels\":[[\"NX10\", \"BX10\", 10], [\"NX6\", \"BX6\", 6]]}",
       "unused": "0",
       "used": "0"
     },
@@ -665,6 +745,7 @@
       "subnet": "Tower",
       "location": "model board",
       "type": "light",
+      "config": "{\"volts\":12,\"watts\":2}",
       "unused": "0",
       "used": "0"
     },
@@ -673,6 +754,7 @@
       "subnet": "Tower",
       "location": "model board",
       "type": "light",
+      "config": "{\"volts\":12,\"watts\":2}",
       "unused": "0",
       "used": "0"
     },
@@ -742,6 +824,7 @@
       "subnet": "Tower",
       "location": "model board",
       "type": "light",
+      "config": "{\"volts\":12,\"watts\":2}",
       "unused": "0",
       "used": "0"
     },
@@ -750,6 +833,7 @@
       "subnet": "Tower",
       "location": "model board",
       "type": "light",
+      "config": "{\"volts\":12,\"watts\":2}",
       "unused": "0",
       "used": "0"
     },
@@ -805,6 +889,7 @@
       "subnet": "Tower",
       "location": "model board",
       "type": "light",
+      "config": "{\"volts\":12,\"watts\":2}",
       "unused": "0",
       "used": "0"
     },
@@ -844,6 +929,7 @@
       "subnet": "Tower",
       "location": "model board",
       "type": "light",
+      "config": "{\"volts\":12,\"watts\":2}",
       "unused": "0",
       "used": "0"
     },
@@ -862,6 +948,7 @@
       "subnet": "Tower",
       "location": "model board",
       "type": "light",
+      "config": "{\"volts\":12,\"watts\":2}",
       "unused": "0",
       "used": "0"
     },
@@ -950,6 +1037,7 @@
       "subnet": "Tower",
       "location": "model board",
       "type": "light",
+      "config": "{\"volts\":12,\"watts\":4}",
       "unused": "0",
       "used": "0"
     },
@@ -991,6 +1079,7 @@
       "subnet": "Tower",
       "location": "model board",
       "type": "light",
+      "config": "{\"volts\":12,\"watts\":6}",
       "unused": "0",
       "used": "0"
     },
@@ -999,6 +1088,7 @@
       "subnet": "Tower",
       "location": "model board",
       "type": "light",
+      "config": "{\"volts\":12,\"watts\":6}",
       "unused": "0",
       "used": "0"
     },
@@ -1053,6 +1143,7 @@
       "subnet": "Tower",
       "location": "model board",
       "type": "light",
+      "config": "{\"volts\":12,\"watts\":6}",
       "unused": "0",
       "used": "0"
     },
@@ -1083,6 +1174,7 @@
       "subnet": "Tower",
       "location": "model board",
       "type": "light",
+      "config": "{\"volts\":12,\"watts\":6}",
       "unused": "0",
       "used": "0"
     },
@@ -1115,6 +1207,7 @@
       "subnet": "Tower",
       "location": "model board",
       "type": "light",
+      "config": "{\"volts\":12,\"watts\":4}",
       "unused": "0",
       "used": "0"
     },
@@ -1145,6 +1238,7 @@
       "subnet": "Tower",
       "location": "model board",
       "type": "light",
+      "config": "{\"volts\":12,\"watts\":6}",
       "unused": "0",
       "used": "0"
     },
@@ -1231,6 +1325,7 @@
       "subnet": "Tower",
       "location": "model board",
       "type": "light",
+      "config": "{\"volts\":12,\"watts\":2}",
       "unused": "0",
       "used": "0"
     },
@@ -1239,6 +1334,7 @@
       "subnet": "Tower",
       "location": "model board",
       "type": "light",
+      "config": "{\"volts\":12,\"watts\":6}",
       "unused": "0",
       "used": "0"
     },
@@ -1296,6 +1392,7 @@
       "subnet": "Tower",
       "location": "model board",
       "type": "light",
+      "config": "{\"volts\":12,\"watts\":2}",
       "unused": "0",
       "used": "0"
     },
@@ -1304,6 +1401,7 @@
       "subnet": "Tower",
       "location": "model board",
       "type": "light",
+      "config": "{\"volts\":12,\"watts\":6}",
       "unused": "0",
       "used": "0"
     },
@@ -1335,6 +1433,7 @@
       "subnet": "Tower",
       "location": "model board",
       "type": "light",
+      "config": "{\"volts\":12,\"watts\":2}",
       "unused": "0",
       "used": "0"
     },
@@ -1370,6 +1469,7 @@
       "subnet": "Tower",
       "location": "model board",
       "type": "light",
+      "config": "{\"volts\":12,\"watts\":2}",
       "unused": "0",
       "used": "0"
     },
@@ -1407,6 +1507,7 @@
       "subnet": "Tower",
       "location": "model board",
       "type": "light",
+      "config": "{\"volts\":12,\"watts\":2}",
       "unused": "0",
       "used": "0"
     },
@@ -1415,6 +1516,7 @@
       "subnet": "Tower",
       "location": "model board",
       "type": "light",
+      "config": "{\"volts\":12,\"watts\":2}",
       "unused": "0",
       "used": "0"
     },
@@ -2391,7 +2493,7 @@
     },
     {
       "signal": "B10-TWR",
-      "from": "B10-TWR S2 T2",
+      "from": "B10-TWR RACK T?",
       "to": "1RGPR 1H",
       "page": "T4"
     },
@@ -2595,7 +2697,7 @@
     },
     {
       "signal": "N10-TWR",
-      "from": "N10-TWR S2 T7",
+      "from": "N10-TWR RACK T?",
       "to": "4RGPR COIL-",
       "page": "T5"
     },
@@ -2699,7 +2801,7 @@
     },
     {
       "signal": "B10-TWR",
-      "from": "B10-TWR S2 T5",
+      "from": "B10-TWR RACK T?",
       "to": "4RGPR 4H",
       "page": "T5"
     },
@@ -3305,7 +3407,7 @@
     },
     {
       "signal": "B10-TWR",
-      "from": "B10-TWR S1 T6",
+      "from": "B10-TWR RACK T?",
       "to": "1HDGPR 1H",
       "page": "T8"
     },
@@ -3415,19 +3517,19 @@
     },
     {
       "signal": "N10-TWR",
-      "from": "N10-TWR S2 T8",
+      "from": "N10-TWR RACK T?",
       "to": "3HDGPR COIL-",
       "page": "T9"
     },
     {
       "signal": "N10-TWR",
-      "from": "N10-TWR S2 T5",
+      "from": "N10-TWR RACK T?",
       "to": "2RGPR COIL-",
       "page": "T9"
     },
     {
       "signal": "N10-TWR",
-      "from": "N10-TWR S2 T6",
+      "from": "N10-TWR RACK T?",
       "to": "3RGPR COIL-",
       "page": "T9"
     },
@@ -3445,7 +3547,7 @@
     },
     {
       "signal": "B10-TWR",
-      "from": "B10-TWR S2 T3",
+      "from": "B10-TWR RACK T?",
       "to": "2RGPR 4H",
       "page": "T9"
     },
@@ -3463,7 +3565,7 @@
     },
     {
       "signal": "B10-TWR",
-      "from": "B10-TWR S2 T4",
+      "from": "B10-TWR RACK T?",
       "to": "3HDGPR 4H",
       "page": "T9"
     },
@@ -3946,25 +4048,25 @@
     },
     {
       "signal": "N10-CASEA",
-      "from": "N10-CASEA-TWR T2",
+      "from": "N10-CASEA T2",
       "to": "16APR COIL-",
       "page": "T13"
     },
     {
       "signal": "N10-CASEA",
-      "from": "N10-CASEA-TWR T3",
+      "from": "N10-CASEA T3",
       "to": "14RGPR COIL-",
       "page": "T13"
     },
     {
       "signal": "N10-CASEA",
-      "from": "N10-CASEA-TWR T4",
+      "from": "N10-CASEA T4",
       "to": "14HDGPR COIL-",
       "page": "T13"
     },
     {
       "signal": "N10-CASEA",
-      "from": "N10-CASEA-TWR T1",
+      "from": "N10-CASEA T1",
       "to": "GRP-A T6",
       "page": "T13"
     },
@@ -4109,7 +4211,7 @@
     {
       "signal": "14GK",
       "from": "14GKE +",
-      "to": "14HDGPR 1B",
+      "to": "14HDGPR 1F",
       "page": "T13"
     },
     {
@@ -4310,19 +4412,19 @@
     },
     {
       "signal": "N10-CASEA",
-      "from": "N10-CASEA-TWR T5",
+      "from": "N10-CASEA T5",
       "to": "15RGPR COIL-",
       "page": "T15"
     },
     {
       "signal": "N10-CASEA",
-      "from": "N10-CASEA-TWR T7",
+      "from": "N10-CASEA T7",
       "to": "16RGPR COIL-",
       "page": "T15"
     },
     {
       "signal": "N10-CASEA",
-      "from": "N10-CASEA-TWR T6",
+      "from": "N10-CASEA T6",
       "to": "15HDGPR COIL-",
       "page": "T15"
     },
@@ -4916,7 +5018,7 @@
     },
     {
       "signal": "14A-L-",
-      "from": "CX10-CASEA",
+      "from": "NX10-CASEA",
       "to": "CASEA T31",
       "page": "A1"
     },
@@ -4958,7 +5060,7 @@
     },
     {
       "signal": "14B-L-",
-      "from": "CX10-CASEA",
+      "from": "NX10-CASEA",
       "to": "CASEA T32",
       "page": "A1"
     },
@@ -5215,26 +5317,26 @@
       "page": "A3"
     },
     {
-      "signal": "CX10-CASEA",
-      "from": "CX10-CASEA",
-      "to": "LTG RESISTOR",
+      "signal": "NX10-CASEA",
+      "from": "NX10-CASEA",
+      "to": "15A RESISTOR -",
       "page": "A3"
     },
     {
       "signal": "**STRAP**",
-      "from": "LTG RESISTOR",
-      "to": "LTG RESISTOR",
+      "from": "15A RESISTOR -",
+      "to": "15B RESISTOR -",
       "page": "A3"
     },
     {
-      "signal": "15A-CX10",
-      "from": "LTG RESISTOR",
+      "signal": "15A-NX10",
+      "from": "15A RESISTOR +",
       "to": "CASEA T44",
       "page": "A3"
     },
     {
-      "signal": "15B-CX10",
-      "from": "LTG RESISTOR",
+      "signal": "15B-NX10",
+      "from": "15B RESISTOR +",
       "to": "CASEA T48",
       "page": "A3"
     },
@@ -5304,8 +5406,8 @@
       "page": "A3"
     },
     {
-      "signal": "CX6-CASEA",
-      "from": "CX6-CASEA",
+      "signal": "NX6-CASEA",
+      "from": "NX6-CASEA",
       "to": "9-10T TEST TERM -",
       "page": "A3"
     },
@@ -5346,8 +5448,8 @@
       "page": "A3"
     },
     {
-      "signal": "CX6-CASEA",
-      "from": "CX6-CASEA",
+      "signal": "NX6-CASEA",
+      "from": "NX6-CASEA",
       "to": "12T TEST TERM -",
       "page": "A3"
     },
@@ -5522,36 +5624,36 @@
     {
       "signal": "BX10-CASEA",
       "from": "BX10-CASEA",
-      "to": "LTG RESISTOR",
+      "to": "16CRG RESISTOR +",
       "page": "A4"
     },
     {
       "signal": "BX10-CASEA",
       "from": "BX10-CASEA",
-      "to": "LTG RESISTOR",
+      "to": "16A RESISTOR +",
       "page": "A4"
     },
     {
       "signal": "BX10-CASEA",
       "from": "BX10-CASEA",
-      "to": "LTG RESISTOR",
+      "to": "16B RESISTOR +",
       "page": "A4"
     },
     {
       "signal": "16A BX10",
-      "from": "LTG RESISTOR",
+      "from": "16A RESISTOR -",
       "to": "CASEA T49",
       "page": "A4"
     },
     {
       "signal": "16B BX10",
-      "from": "LTG RESISTOR",
+      "from": "16B RESISTOR -",
       "to": "CASEA T50",
       "page": "A4"
     },
     {
       "signal": "16C BX10",
-      "from": "LTG RESISTOR",
+      "from": "16CRG RESISTOR -",
       "to": "16COSPR 1H",
       "page": "A4"
     },
@@ -5562,8 +5664,8 @@
       "page": "A4"
     },
     {
-      "signal": "CX10-CASEA",
-      "from": "CX10-CASEA",
+      "signal": "NX10-CASEA",
+      "from": "NX10-CASEA",
       "to": "CASEA T52",
       "page": "A4"
     },
@@ -5661,9 +5763,9 @@
       "to": "BX6-CASEA"
     },
     {
-      "signal": "CX6-CASEA",
-      "from": "CASEA-W10 CX6",
-      "to": "CX6-CASEA"
+      "signal": "NX6-CASEA",
+      "from": "CASEA-W10 NX6",
+      "to": "NX6-CASEA"
     },
     {
       "signal": "BX10-CASEA",
@@ -5671,9 +5773,9 @@
       "to": "BX10-CASEA"
     },
     {
-      "signal": "CX10-CASEA",
-      "from": "CASEA-W10 CX10",
-      "to": "CX10-CASEA"
+      "signal": "NX10-CASEA",
+      "from": "CASEA-W10 NX10",
+      "to": "NX10-CASEA"
     },
     {
       "signal": "B10-CASEA",
@@ -6470,12 +6572,12 @@
       "to": "1HDPR 1B"
     },
     {
-      "signal": "CX10-1G",
+      "signal": "NX10-1G",
       "from": "CASEC-LTG T7",
       "to": "1GE RESISTOR +"
     },
     {
-      "signal": "CX10-1MG",
+      "signal": "NX10-1MG",
       "from": "CASEC-LTG T8",
       "to": "1MGE RESISTOR +"
     },
@@ -6595,8 +6697,8 @@
       "to": "1T RESISTANCE UNIT 1+"
     },
     {
-      "signal": "CX6",
-      "from": "CASEC-W10 CX6",
+      "signal": "NX6",
+      "from": "CASEC-W10 NX6",
       "to": "1T TEST TERM +"
     },
     {
@@ -6610,8 +6712,8 @@
       "to": "1HDPR 1P"
     },
     {
-      "signal": "CX10",
-      "from": "CASEC-W10 CX10",
+      "signal": "NX10",
+      "from": "CASEC-W10 NX10",
       "to": "1GE RESISTOR -"
     },
     {
@@ -6850,6 +6952,186 @@
       "length": "450",
       "gauge": "16",
       "resistance": "1.8072"
+    },
+    {
+      "fromSubnet": "Tower",
+      "from": "GRP-D T1",
+      "toSubnet": "Case B",
+      "to": "CASEB T1",
+      "length": "90",
+      "gauge": "14",
+      "resistance": "0.22725"
+    },
+    {
+      "fromSubnet": "Tower",
+      "from": "GRP-D T2",
+      "toSubnet": "Case B",
+      "to": "CASEB T2",
+      "length": "90",
+      "gauge": "14",
+      "resistance": "0.22725"
+    },
+    {
+      "fromSubnet": "Tower",
+      "from": "GRP-D T3",
+      "toSubnet": "Case B",
+      "to": "CASEB T3",
+      "length": "90",
+      "gauge": "16",
+      "resistance": "0.36144"
+    },
+    {
+      "fromSubnet": "Tower",
+      "from": "GRP-D T4",
+      "toSubnet": "Case B",
+      "to": "CASEB T4",
+      "length": "90",
+      "gauge": "16",
+      "resistance": "0.36144"
+    },
+    {
+      "fromSubnet": "Tower",
+      "from": "GRP-D T5",
+      "toSubnet": "Case B",
+      "to": "CASEB T5",
+      "length": "90",
+      "gauge": "16",
+      "resistance": "0.36144"
+    },
+    {
+      "fromSubnet": "Tower",
+      "from": "GRP-D T6",
+      "toSubnet": "Case B",
+      "to": "CASEB T6",
+      "length": "90",
+      "gauge": "16",
+      "resistance": "0.36144"
+    },
+    {
+      "fromSubnet": "Tower",
+      "from": "GRP-D T7",
+      "toSubnet": "Case B",
+      "to": "CASEB T7",
+      "length": "90",
+      "gauge": "16",
+      "resistance": "0.36144"
+    },
+    {
+      "fromSubnet": "Tower",
+      "from": "GRP-D T8",
+      "toSubnet": "Case B",
+      "to": "CASEB T8",
+      "length": "90",
+      "gauge": "16",
+      "resistance": "0.36144"
+    },
+    {
+      "fromSubnet": "Tower",
+      "from": "GRP-D T9",
+      "toSubnet": "Case B",
+      "to": "CASEB T9",
+      "length": "90",
+      "gauge": "16",
+      "resistance": "0.36144"
+    },
+    {
+      "fromSubnet": "Tower",
+      "from": "GRP-D T10",
+      "toSubnet": "Case B",
+      "to": "CASEB T10",
+      "length": "90",
+      "gauge": "16",
+      "resistance": "0.36144"
+    },
+    {
+      "fromSubnet": "Tower",
+      "from": "GRP-D T11",
+      "toSubnet": "Case B",
+      "to": "CASEB T11",
+      "length": "90",
+      "gauge": "16",
+      "resistance": "0.36144"
+    },
+    {
+      "fromSubnet": "Tower",
+      "from": "GRP-D T12",
+      "toSubnet": "Case B",
+      "to": "CASEB T12",
+      "length": "90",
+      "gauge": "16",
+      "resistance": "0.36144"
+    },
+    {
+      "fromSubnet": "Tower",
+      "from": "GRP-E T1",
+      "toSubnet": "Case B",
+      "to": "CASEB T13",
+      "length": "90",
+      "gauge": "16",
+      "resistance": "0.36144"
+    },
+    {
+      "fromSubnet": "Tower",
+      "from": "GRP-E T2",
+      "toSubnet": "Case B",
+      "to": "CASEB T14",
+      "length": "90",
+      "gauge": "16",
+      "resistance": "0.36144"
+    },
+    {
+      "fromSubnet": "Tower",
+      "from": "GRP-E T3",
+      "toSubnet": "Case B",
+      "to": "CASEB T15",
+      "length": "90",
+      "gauge": "16",
+      "resistance": "0.36144"
+    },
+    {
+      "fromSubnet": "Tower",
+      "from": "GRP-E T4",
+      "toSubnet": "Case B",
+      "to": "CASEB T16",
+      "length": "90",
+      "gauge": "16",
+      "resistance": "0.36144"
+    },
+    {
+      "fromSubnet": "Tower",
+      "from": "GRP-E T5",
+      "toSubnet": "Case B",
+      "to": "CASEB T17",
+      "length": "90",
+      "gauge": "16",
+      "resistance": "0.36144"
+    },
+    {
+      "fromSubnet": "Tower",
+      "from": "GRP-E T6",
+      "toSubnet": "Case B",
+      "to": "CASEB T18",
+      "length": "90",
+      "gauge": "16",
+      "resistance": "0.36144"
+    },
+    {
+      "fromSubnet": "Tower",
+      "from": "GRP-E T7",
+      "toSubnet": "Case B",
+      "to": "CASEB T19",
+      "length": "90",
+      "gauge": "10",
+      "resistance": "0.089901"
+    },
+    {
+      "fromSubnet": "Tower",
+      "from": "GRP-E T8",
+      "toSubnet": "Case B",
+      "to": "CASEB T20",
+      "length": "90",
+      "gauge": "10",
+      "resistance": "0.089901"
     },
     {
       "signal": "N10-TWR",
@@ -7964,6 +8246,243 @@
       "from": "SIM-16BHMR 2H",
       "toSubnet": "Case A",
       "to": "B10-CASEA"
+    },
+    {
+      "name": "**** Signal lights ****"
+    },
+    {
+      "name": "SIM-1TMGE",
+      "fromSubnet": "Sim",
+      "component": "light",
+      "config": "{\"volts\":10,\"watts\":20}"
+    },
+    {
+      "fromSubnet": "Case C",
+      "from": "CASEC-LTG T4",
+      "toSubnet": "Sim",
+      "to": "SIM-1TMGE +"
+    },
+    {
+      "fromSubnet": "Case C",
+      "from": "CASEC-LTG T8",
+      "toSubnet": "Sim",
+      "to": "SIM-1TMGE -"
+    },
+    {
+      "name": "SIM-1DGE",
+      "fromSubnet": "Sim",
+      "component": "light",
+      "config": "{\"volts\":10,\"watts\":40}"
+    },
+    {
+      "fromSubnet": "Case C",
+      "from": "CASEC-LTG T1",
+      "toSubnet": "Sim",
+      "to": "SIM-1DGE +"
+    },
+    {
+      "fromSubnet": "Case C",
+      "from": "CASEC-LTG T7",
+      "toSubnet": "Sim",
+      "to": "SIM-1DGE -"
+    },
+    {
+      "name": "SIM-1HGE",
+      "fromSubnet": "Sim",
+      "component": "light",
+      "config": "{\"volts\":10,\"watts\":40}"
+    },
+    {
+      "fromSubnet": "Case C",
+      "from": "CASEC-LTG T2",
+      "toSubnet": "Sim",
+      "to": "SIM-1HGE +"
+    },
+    {
+      "fromSubnet": "Case C",
+      "from": "CASEC-LTG T7",
+      "toSubnet": "Sim",
+      "to": "SIM-1HGE -"
+    },
+    {
+      "name": "SIM-1RGE",
+      "fromSubnet": "Sim",
+      "component": "light",
+      "config": "{\"volts\":10,\"watts\":40}"
+    },
+    {
+      "fromSubnet": "Case C",
+      "from": "CASEC-LTG T3",
+      "toSubnet": "Sim",
+      "to": "SIM-1RGE +"
+    },
+    {
+      "fromSubnet": "Case C",
+      "from": "CASEC-LTG T7",
+      "toSubnet": "Sim",
+      "to": "SIM-1RGE -"
+    },
+    {
+      "name": "SIM-14AGE",
+      "fromSubnet": "Sim",
+      "component": "light",
+      "config": "{\"volts\":10,\"watts\":20}"
+    },
+    {
+      "fromSubnet": "Case A",
+      "from": "CASEA T29",
+      "toSubnet": "Sim",
+      "to": "SIM-14AGE +"
+    },
+    {
+      "fromSubnet": "Case A",
+      "from": "CASEA T31",
+      "toSubnet": "Sim",
+      "to": "SIM-14AGE -"
+    },
+    {
+      "name": "SIM-14BGE",
+      "fromSubnet": "Sim",
+      "component": "light",
+      "config": "{\"volts\":10,\"watts\":20}"
+    },
+    {
+      "fromSubnet": "Case A",
+      "from": "CASEA T30",
+      "toSubnet": "Sim",
+      "to": "SIM-14BGE +"
+    },
+    {
+      "fromSubnet": "Case A",
+      "from": "CASEA T32",
+      "toSubnet": "Sim",
+      "to": "SIM-14BGE -"
+    },
+    {
+      "name": "SIM-15ARGE",
+      "fromSubnet": "Sim",
+      "component": "light",
+      "config": "{\"volts\":10,\"watts\":20}"
+    },
+    {
+      "fromSubnet": "Case A",
+      "from": "CASEA T43",
+      "toSubnet": "Sim",
+      "to": "SIM-15ARGE +"
+    },
+    {
+      "fromSubnet": "Case A",
+      "from": "CASEA T44",
+      "toSubnet": "Sim",
+      "to": "SIM-15ARGE -"
+    },
+    {
+      "name": "SIM-15BRGE",
+      "fromSubnet": "Sim",
+      "component": "light",
+      "config": "{\"volts\":10,\"watts\":20}"
+    },
+    {
+      "fromSubnet": "Case A",
+      "from": "CASEA T45",
+      "toSubnet": "Sim",
+      "to": "SIM-15BRGE +"
+    },
+    {
+      "fromSubnet": "Case A",
+      "from": "CASEA T48",
+      "toSubnet": "Sim",
+      "to": "SIM-15BRGE -"
+    },
+    {
+      "name": "SIM-15BHGE",
+      "fromSubnet": "Sim",
+      "component": "light",
+      "config": "{\"volts\":10,\"watts\":20}"
+    },
+    {
+      "fromSubnet": "Case A",
+      "from": "CASEA T46",
+      "toSubnet": "Sim",
+      "to": "SIM-15BHGE +"
+    },
+    {
+      "fromSubnet": "Case A",
+      "from": "CASEA T48",
+      "toSubnet": "Sim",
+      "to": "SIM-15BHGE -"
+    },
+    {
+      "name": "SIM-15BDGE",
+      "fromSubnet": "Sim",
+      "component": "light",
+      "config": "{\"volts\":10,\"watts\":20}"
+    },
+    {
+      "fromSubnet": "Case A",
+      "from": "CASEA T47",
+      "toSubnet": "Sim",
+      "to": "SIM-15BDGE +"
+    },
+    {
+      "fromSubnet": "Case A",
+      "from": "CASEA T48",
+      "toSubnet": "Sim",
+      "to": "SIM-15BDGE -"
+    },
+    {
+      "name": "SIM-16AGE",
+      "fromSubnet": "Sim",
+      "component": "light",
+      "config": "{\"volts\":10,\"watts\":20}"
+    },
+    {
+      "fromSubnet": "Case A",
+      "from": "CASEA T49",
+      "toSubnet": "Sim",
+      "to": "SIM-16AGE +"
+    },
+    {
+      "fromSubnet": "Case A",
+      "from": "CASEA T52",
+      "toSubnet": "Sim",
+      "to": "SIM-16AGE -"
+    },
+    {
+      "name": "SIM-16BGE",
+      "fromSubnet": "Sim",
+      "component": "light",
+      "config": "{\"volts\":10,\"watts\":20}"
+    },
+    {
+      "fromSubnet": "Case A",
+      "from": "CASEA T50",
+      "toSubnet": "Sim",
+      "to": "SIM-16BGE +"
+    },
+    {
+      "fromSubnet": "Case A",
+      "from": "CASEA T53",
+      "toSubnet": "Sim",
+      "to": "SIM-16BGE -"
+    },
+    {
+      "name": "SIM-16CRGE",
+      "fromSubnet": "Sim",
+      "component": "light",
+      "config": "{\"volts\":10,\"watts\":20}"
+    },
+    {
+      "fromSubnet": "Case A",
+      "from": "CASEA T51",
+      "toSubnet": "Sim",
+      "to": "SIM-16CRGE +"
+    },
+    {
+      "fromSubnet": "Case A",
+      "from": "CASEA T54",
+      "toSubnet": "Sim",
+      "to": "SIM-16CRGE -"
     }
   ]
 }
