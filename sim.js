@@ -132,8 +132,10 @@ class PowerSupply extends Component {
     }
 
     postSolve(time) {
-        for (let chan of this.channels)
+        for (let chan of this.channels) {
             chan.current = this.voltageSourceCurrent(chan, this.terminals[chan.negative]);
+            chan.power = chan.voltage * chan.current;
+        }
     }
 }
 
@@ -195,6 +197,7 @@ class Light extends Component {
             const amps = (voltsP - voltsN) / this.resistance;
             this.current = amps;
             this.on = (Math.abs(this.current) > this.onThreshold);
+            this.power = this.current * (voltsP - voltsN);
         }
     }
 }

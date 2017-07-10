@@ -203,6 +203,7 @@ class Top extends React.Component {
     render() {
         const { time, sim, inspected } = this.state;
         const psus = [ ];
+        let totalPower = 0;
 
         function voltage(wire) {
             if (wire === 'multiple')
@@ -240,11 +241,18 @@ class Top extends React.Component {
                       <InspectLink inspect={this.inspect} target={psu}>
                         {psu.name} {chan.negative} {chan.positive}:
                       </InspectLink>
-                      <span style={{float: 'right'}}>{num(chan.voltage)} {num(chan.current, 'A')}</span>
+                      <span style={{float: 'right'}}>{num(chan.voltage)} {num(chan.power, 'W')} {num(chan.current, 'A')}</span>
                     </div>
                 );
+                totalPower += chan.power;
             }
         }
+        psus.push(
+            <div style={{fontWeight: 'bold'}}>
+              Total System Power:
+              <span style={{float: 'right'}}>{num(totalPower, 'W')}</span>
+            </div>
+        );
 
         return (
             <div>
@@ -280,7 +288,7 @@ class Top extends React.Component {
               <div ref={top => this.topElement = top} style={{height: '80px'}}/>
               {inspected && (<Inspector inspect={this.inspect} inspected={inspected}/>)}
               <p><b>PSUs:</b></p>
-              <div style={{columnCount: 3}}>{psus}</div>
+              <div style={{columnCount: 2}}>{psus}</div>
               <p><b>Relays:</b></p>
               <div style={{columnCount: 4}}>
                 {Array.from(sim.activeComponents)
