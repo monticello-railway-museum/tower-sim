@@ -205,7 +205,7 @@
       "used": "2"
     },
     {
-      "component": "15A RESISTOR",
+      "component": "15AGE RESISTOR",
       "subnet": "Case A",
       "type": "resistor",
       "resistance": "0.1",
@@ -213,7 +213,7 @@
       "used": "0"
     },
     {
-      "component": "15B RESISTOR",
+      "component": "15BGE RESISTOR",
       "subnet": "Case A",
       "type": "resistor",
       "resistance": "0.1",
@@ -244,14 +244,6 @@
       "used": "1"
     },
     {
-      "component": "16A RESISTOR",
-      "subnet": "Case A",
-      "type": "resistor",
-      "resistance": "0.1",
-      "unused": "0",
-      "used": "0"
-    },
-    {
       "component": "16ADR",
       "subnet": "Case A",
       "type": "relay",
@@ -260,6 +252,14 @@
       "contacts": "2",
       "unused": "1",
       "used": "1"
+    },
+    {
+      "component": "16AGE RESISTOR",
+      "subnet": "Case A",
+      "type": "resistor",
+      "resistance": "0.1",
+      "unused": "0",
+      "used": "0"
     },
     {
       "component": "16AHR",
@@ -290,14 +290,6 @@
       "used": "1"
     },
     {
-      "component": "16B RESISTOR",
-      "subnet": "Case A",
-      "type": "resistor",
-      "resistance": "0.1",
-      "unused": "0",
-      "used": "0"
-    },
-    {
       "component": "16BDR",
       "subnet": "Case A",
       "type": "relay",
@@ -306,6 +298,14 @@
       "contacts": "2",
       "unused": "1",
       "used": "1"
+    },
+    {
+      "component": "16BGE RESISTOR",
+      "subnet": "Case A",
+      "type": "resistor",
+      "resistance": "0.1",
+      "unused": "0",
+      "used": "0"
     },
     {
       "component": "16BHR",
@@ -336,7 +336,7 @@
       "used": "2"
     },
     {
-      "component": "16CRG RESISTOR",
+      "component": "16CRGE RESISTOR",
       "subnet": "Case A",
       "type": "resistor",
       "resistance": "0.1",
@@ -425,6 +425,22 @@
       "used": "0"
     },
     {
+      "component": "2AGE RESISTOR",
+      "subnet": "Case B",
+      "type": "resistor",
+      "resistance": "0.1",
+      "unused": "0",
+      "used": "0"
+    },
+    {
+      "component": "2BGE RESISTOR",
+      "subnet": "Case B",
+      "type": "resistor",
+      "resistance": "0.1",
+      "unused": "0",
+      "used": "0"
+    },
+    {
       "component": "2COSPR",
       "subnet": "Case B",
       "type": "relay",
@@ -455,6 +471,13 @@
       "used": "3"
     },
     {
+      "component": "2T TRK ARRESTOR",
+      "subnet": "Case B",
+      "type": "arrestor",
+      "unused": "0",
+      "used": "0"
+    },
+    {
       "component": "3COSPR",
       "subnet": "Case B",
       "type": "relay",
@@ -475,6 +498,14 @@
       "used": "4"
     },
     {
+      "component": "3GE RESISTOR",
+      "subnet": "Case B",
+      "type": "resistor",
+      "resistance": "0.1",
+      "unused": "0",
+      "used": "0"
+    },
+    {
       "component": "3HR",
       "subnet": "Case B",
       "type": "relay",
@@ -485,6 +516,14 @@
       "used": "4"
     },
     {
+      "component": "4GE RESISTOR",
+      "subnet": "Case B",
+      "type": "resistor",
+      "resistance": "0.1",
+      "unused": "0",
+      "used": "0"
+    },
+    {
       "component": "4HR",
       "subnet": "Case B",
       "type": "relay",
@@ -493,6 +532,77 @@
       "contacts": "4",
       "unused": "1",
       "used": "3"
+    },
+    {
+      "component": "B10-TWR",
+      "subnet": "Case B",
+      "type": "bus",
+      "unused": "0",
+      "used": "0"
+    },
+    {
+      "component": "BX10-CASEB",
+      "subnet": "Case B",
+      "type": "bus",
+      "unused": "0",
+      "used": "0"
+    },
+    {
+      "component": "BX110 FUSE",
+      "subnet": "Case B",
+      "type": "fuse",
+      "unused": "0",
+      "used": "0"
+    },
+    {
+      "component": "CASEB",
+      "subnet": "Case B",
+      "type": "terminal",
+      "unused": "0",
+      "used": "0"
+    },
+    {
+      "component": "CASEB-W10",
+      "subnet": "Case B",
+      "type": "power supply",
+      "config": "{\"channels\":[[\"NX10\", \"BX10\", 10]]}",
+      "unused": "0",
+      "used": "0"
+    },
+    {
+      "component": "N10-TWR",
+      "subnet": "Case B",
+      "type": "bus",
+      "unused": "0",
+      "used": "0"
+    },
+    {
+      "component": "NX10-CASEB",
+      "subnet": "Case B",
+      "type": "bus",
+      "unused": "0",
+      "used": "0"
+    },
+    {
+      "component": "SIG2",
+      "subnet": "Case B",
+      "type": "terminal",
+      "unused": "0",
+      "used": "0"
+    },
+    {
+      "component": "SIG3",
+      "subnet": "Case B",
+      "type": "terminal",
+      "unused": "0",
+      "used": "0"
+    },
+    {
+      "component": "SIG4",
+      "subnet": "Case B",
+      "type": "terminal",
+      "unused": "0",
+      "used": "0"
     },
     {
       "component": "1GE RESISTOR",
@@ -628,7 +738,7 @@
       "used": "3"
     },
     {
-      "component": "15A RESISTOR",
+      "component": "15AGE RESISTOR",
       "subnet": "Case C",
       "type": "resistor",
       "resistance": "0.1",
@@ -636,7 +746,7 @@
       "used": "0"
     },
     {
-      "component": "15B RESISTOR",
+      "component": "15BGE RESISTOR",
       "subnet": "Case C",
       "type": "resistor",
       "resistance": "0.1",
@@ -644,7 +754,7 @@
       "used": "0"
     },
     {
-      "component": "16A RESISTOR",
+      "component": "16AGE RESISTOR",
       "subnet": "Case C",
       "type": "resistor",
       "resistance": "0.1",
@@ -652,7 +762,7 @@
       "used": "0"
     },
     {
-      "component": "16B RESISTOR",
+      "component": "16BGE RESISTOR",
       "subnet": "Case C",
       "type": "resistor",
       "resistance": "0.1",
@@ -660,7 +770,7 @@
       "used": "0"
     },
     {
-      "component": "16CRG RESISTOR",
+      "component": "16CRGE RESISTOR",
       "subnet": "Case C",
       "type": "resistor",
       "resistance": "0.1",
@@ -2284,7 +2394,7 @@
     {
       "signal": "2TNX",
       "from": "2T TEST TERM -",
-      "to": "2T TRK ARRESTOR -",
+      "to": "GRP-E T8",
       "page": "T3"
     },
     {
@@ -2308,7 +2418,7 @@
     {
       "signal": "2TBX",
       "from": "2T TRK RESISTOR 2-",
-      "to": "2T TRK ARRESTOR +",
+      "to": "GRP-E T7",
       "page": "T3"
     },
     {
@@ -2326,7 +2436,7 @@
     {
       "signal": "6TNX",
       "from": "6T TEST TERM -",
-      "to": "GRP-E T8",
+      "to": "6T TRK ARRESTOR -",
       "page": "T3"
     },
     {
@@ -2350,7 +2460,7 @@
     {
       "signal": "6TBX",
       "from": "6T TRK RESISTOR 2-",
-      "to": "GRP-E T7",
+      "to": "6T TRK ARRESTOR +",
       "page": "T3"
     },
     {
@@ -2704,7 +2814,7 @@
     {
       "signal": "4RGP",
       "from": "4RGPR COIL+",
-      "to": "GRP-D T12",
+      "to": "GRP-E T1",
       "page": "T5"
     },
     {
@@ -3433,7 +3543,7 @@
     {
       "signal": "2COSP",
       "from": "2-3COSR 2F",
-      "to": "GRP-D T2",
+      "to": "GRP-D T3",
       "page": "T9"
     },
     {
@@ -3451,13 +3561,13 @@
     {
       "signal": "2D",
       "from": "22HDGPR 1F",
-      "to": "GRP-D T3",
+      "to": "GRP-D T4",
       "page": "T9"
     },
     {
       "signal": "2H",
       "from": "22HDGPR 1B",
-      "to": "GRP-D T4",
+      "to": "GRP-D T5",
       "page": "T9"
     },
     {
@@ -3470,7 +3580,7 @@
     {
       "signal": "3COSP",
       "from": "2-3COSR 3F",
-      "to": "GRP-D T5",
+      "to": "GRP-D T6",
       "page": "T9"
     },
     {
@@ -3488,30 +3598,30 @@
     {
       "signal": "3D",
       "from": "22HDGPR 2F",
-      "to": "GRP-D T6",
+      "to": "GRP-D T7",
       "page": "T9"
     },
     {
       "signal": "3H",
       "from": "22HDGPR 2B",
-      "to": "GRP-D T7",
+      "to": "GRP-D T8",
       "page": "T9"
     },
     {
       "signal": "3HDGP",
-      "from": "GRP-D T10",
+      "from": "GRP-D T11",
       "to": "3HDGPR COIL+",
       "page": "T9"
     },
     {
       "signal": "2RGP",
-      "from": "GRP-D T9",
+      "from": "GRP-D T10",
       "to": "2RGPR COIL+",
       "page": "T9"
     },
     {
       "signal": "3RGP",
-      "from": "GRP-D T11",
+      "from": "GRP-D T12",
       "to": "3RGPR COIL+",
       "page": "T9"
     },
@@ -3572,7 +3682,7 @@
     {
       "signal": "4H",
       "from": "LVR-4 T4",
-      "to": "GRP-D T8",
+      "to": "GRP-D T9",
       "page": "T10",
       "notes": "H-NETWORK 4H"
     },
@@ -3628,12 +3738,12 @@
     {
       "signal": "NX10-TWR",
       "from": "NX10-TWR T?",
-      "to": "5NX10 RESISTOR -",
+      "to": "5GE RESISTOR -",
       "page": "T10"
     },
     {
       "signal": "5NX10",
-      "from": "5NX10 RESISTOR +",
+      "from": "5GE RESISTOR +",
       "to": "GRP-C T6",
       "page": "T10"
     },
@@ -4877,6 +4987,12 @@
       "page": "T18"
     },
     {
+      "signal": "B10-TWR",
+      "from": "B10-TWR MAIN T9",
+      "to": "GRP-D T1",
+      "page": "T18"
+    },
+    {
       "signal": "N10-TWR",
       "from": "N10-TWR MAIN T2",
       "to": "N10-TWR S1 T1",
@@ -4916,6 +5032,12 @@
       "signal": "N10-TWR",
       "from": "N10-TWR LVR T4",
       "to": "N10-TWR MB",
+      "page": "T18"
+    },
+    {
+      "signal": "N10-TWR",
+      "from": "N10-TWR MAIN T9",
+      "to": "GRP-D T2",
       "page": "T18"
     }
   ],
@@ -5319,24 +5441,24 @@
     {
       "signal": "NX10-CASEA",
       "from": "NX10-CASEA",
-      "to": "15A RESISTOR -",
+      "to": "15AGE RESISTOR -",
       "page": "A3"
     },
     {
       "signal": "**STRAP**",
-      "from": "15A RESISTOR -",
-      "to": "15B RESISTOR -",
+      "from": "15AGE RESISTOR -",
+      "to": "15BGE RESISTOR -",
       "page": "A3"
     },
     {
       "signal": "15A-NX10",
-      "from": "15A RESISTOR +",
+      "from": "15AGE RESISTOR +",
       "to": "CASEA T44",
       "page": "A3"
     },
     {
       "signal": "15B-NX10",
-      "from": "15B RESISTOR +",
+      "from": "15BGE RESISTOR +",
       "to": "CASEA T48",
       "page": "A3"
     },
@@ -5624,36 +5746,36 @@
     {
       "signal": "BX10-CASEA",
       "from": "BX10-CASEA",
-      "to": "16CRG RESISTOR +",
+      "to": "16CRGE RESISTOR +",
       "page": "A4"
     },
     {
       "signal": "BX10-CASEA",
       "from": "BX10-CASEA",
-      "to": "16A RESISTOR +",
+      "to": "16AGE RESISTOR +",
       "page": "A4"
     },
     {
       "signal": "BX10-CASEA",
       "from": "BX10-CASEA",
-      "to": "16B RESISTOR +",
+      "to": "16BGE RESISTOR +",
       "page": "A4"
     },
     {
       "signal": "16A BX10",
-      "from": "16A RESISTOR -",
+      "from": "16AGE RESISTOR -",
       "to": "CASEA T49",
       "page": "A4"
     },
     {
       "signal": "16B BX10",
-      "from": "16B RESISTOR -",
+      "from": "16BGE RESISTOR -",
       "to": "CASEA T50",
       "page": "A4"
     },
     {
       "signal": "16C BX10",
-      "from": "16CRG RESISTOR -",
+      "from": "16CRGE RESISTOR -",
       "to": "16COSPR 1H",
       "page": "A4"
     },
@@ -5861,19 +5983,19 @@
   "caseBWires": [
     {
       "signal": "2D",
-      "from": "CASEB T3",
+      "from": "CASEB T4",
       "to": "2DR COIL+",
       "page": "B1"
     },
     {
       "signal": "2H",
-      "from": "CASEB T4",
+      "from": "CASEB T5",
       "to": "2HR COIL+",
       "page": "B1"
     },
     {
       "signal": "2COSP",
-      "from": "CASEB T2",
+      "from": "CASEB T3",
       "to": "2COSPR COIL+",
       "page": "B1"
     },
@@ -5897,43 +6019,43 @@
     },
     {
       "signal": "2RGP",
-      "from": "CASEB T9",
+      "from": "CASEB T10",
       "to": "2DR 1H",
       "page": "B1"
     },
     {
       "signal": "2RGP-1",
-      "from": "2DR 1F",
+      "from": "2DR 1B",
       "to": "2HR 1H",
       "page": "B1"
     },
     {
       "signal": "2RGP-2",
-      "from": "2HR 1F",
+      "from": "2HR 1B",
       "to": "2COSPR 1H",
       "page": "B1"
     },
     {
       "signal": "B10-TWR",
       "from": "B10-TWR T?",
-      "to": "2COSPR 1F",
+      "to": "2COSPR 1B",
       "page": "B1"
     },
     {
       "signal": "3D",
-      "from": "CASEB T6",
+      "from": "CASEB T7",
       "to": "3DR COIL+",
       "page": "B1"
     },
     {
       "signal": "3H",
-      "from": "CASEB T7",
+      "from": "CASEB T8",
       "to": "3HR COIL+",
       "page": "B1"
     },
     {
       "signal": "3COSP",
-      "from": "CASEB T5",
+      "from": "CASEB T6",
       "to": "3COSPR COIL+",
       "page": "B1"
     },
@@ -5957,7 +6079,7 @@
     },
     {
       "signal": "3HDP",
-      "from": "CASEB T10",
+      "from": "CASEB T11",
       "to": "3COSPR 1F",
       "page": "B1"
     },
@@ -5991,13 +6113,13 @@
     },
     {
       "signal": "3RGP",
-      "from": "CASEB T11",
-      "to": "3DR 2F",
+      "from": "CASEB T12",
+      "to": "3DR 2B",
       "page": "B1"
     },
     {
       "from": "3DR 2H",
-      "to": "3HR 2F",
+      "to": "3HR 2B",
       "page": "B1"
     },
     {
@@ -6006,14 +6128,14 @@
       "page": "B1"
     },
     {
-      "signal": "BX10",
-      "from": "BX10 T?",
+      "signal": "BX10-CASEB",
+      "from": "BX10-CASEB T?",
       "to": "2DR 3H",
       "page": "B1"
     },
     {
       "signal": "2ADGE",
-      "from": "SIG2 T?",
+      "from": "SIG2 T3",
       "to": "2DR 3F",
       "page": "B1"
     },
@@ -6024,13 +6146,13 @@
     },
     {
       "signal": "2AHGE",
-      "from": "SIG2 T?",
+      "from": "SIG2 T2",
       "to": "2HR 3F",
       "page": "B1"
     },
     {
       "signal": "2ARGE",
-      "from": "SIG2 T?",
+      "from": "SIG2 T1",
       "to": "2HR 3B",
       "page": "B1"
     },
@@ -6071,14 +6193,14 @@
       "page": "B1"
     },
     {
-      "signal": "BX10",
-      "from": "BX10 T?",
+      "signal": "BX10-CASEB",
+      "from": "BX10-CASEB T?",
       "to": "2COSPR 3H",
       "page": "B1"
     },
     {
       "signal": "2BHGE",
-      "from": "SIG2 T?",
+      "from": "SIG2 T4",
       "to": "2COSPR 3F",
       "page": "B1"
     },
@@ -6102,26 +6224,26 @@
     },
     {
       "signal": "2ANX10",
-      "from": "SIG2 T?",
-      "to": "2A LTG RESISTOR +",
+      "from": "SIG2 T6",
+      "to": "2A RESISTOR +",
       "page": "B1"
     },
     {
       "signal": "2BNX10",
-      "from": "SIG2 T?",
-      "to": "2B LTG RESISTOR +",
+      "from": "SIG2 T7",
+      "to": "2B RESISTOR +",
       "page": "B1"
     },
     {
       "signal": "**STRAP**",
-      "from": "2A LTG RESISTOR -",
-      "to": "2B LTG RESISTOR -",
+      "from": "2A RESISTOR -",
+      "to": "2B RESISTOR -",
       "page": "B1"
     },
     {
-      "signal": "NX10",
-      "from": "NX10 T?",
-      "to": "2A LTG RESISTOR -",
+      "signal": "NX10-CASEB",
+      "from": "NX10-CASEB T?",
+      "to": "2A RESISTOR -",
       "page": "B1"
     },
     {
@@ -6179,8 +6301,8 @@
       "page": "B1"
     },
     {
-      "signal": "BX10",
-      "from": "BX10 T?",
+      "signal": "BX10-CASEB",
+      "from": "BX10-CASEB T?",
       "to": "3COSPR 3H",
       "page": "B1"
     },
@@ -6196,13 +6318,13 @@
     },
     {
       "signal": "3MGE",
-      "from": "SIG3 T?",
+      "from": "SIG3 T4",
       "to": "3DR 3H",
       "page": "B1"
     },
     {
       "signal": "3DGE",
-      "from": "SIG3 T?",
+      "from": "SIG3 T3",
       "to": "3DR 3F",
       "page": "B1"
     },
@@ -6218,7 +6340,7 @@
     },
     {
       "signal": "3HGE",
-      "from": "SIG3 T?",
+      "from": "SIG3 T2",
       "to": "3HR 3F",
       "page": "B1"
     },
@@ -6229,20 +6351,20 @@
     },
     {
       "signal": "3RGE",
-      "from": "SIG3 T?",
+      "from": "SIG3 T1",
       "to": "3COSPR 2H",
       "page": "B1"
     },
     {
       "signal": "3NX10",
-      "from": "SIG3 T?",
-      "to": "3 LTG RESISTOR +",
+      "from": "SIG3 T6",
+      "to": "3 RESISTOR +",
       "page": "B1"
     },
     {
-      "signal": "NX10",
-      "from": "NX10 T?",
-      "to": "3 LTG RESISTOR -",
+      "signal": "NX10-CASEB",
+      "from": "NX10-CASEB T?",
+      "to": "3 RESISTOR -",
       "page": "B1"
     },
     {
@@ -6253,31 +6375,43 @@
     },
     {
       "signal": "BX110-1",
-      "from": "W-10 LTG TRANS 1P",
+      "from": "CASEB-W10 1P",
       "to": "BX110 FUSE -",
       "page": "B2"
     },
     {
       "signal": "CX110",
       "from": "T?",
-      "to": "W-10 LTG TRANS 3P",
+      "to": "CASEB-W10 3P",
+      "page": "B2"
+    },
+    {
+      "signal": "BX10-CASEB",
+      "from": "CASEB-W10 BX10",
+      "to": "BX10-CASEB T?",
+      "page": "B2"
+    },
+    {
+      "signal": "NX10-CASEB",
+      "from": "CASEB-W10 NX10",
+      "to": "NX10-CASEB T?",
       "page": "B2"
     },
     {
       "signal": "2TNX",
-      "from": "T?",
-      "to": "???",
+      "from": "2T TRK ARRESTOR -",
+      "to": "???a",
       "page": "B2"
     },
     {
       "signal": "2TBX",
-      "from": "T?",
-      "to": "???",
+      "from": "2T TRK ARRESTOR +",
+      "to": "???b",
       "page": "B2"
     },
     {
       "signal": "N10-TWR",
-      "from": "Tlast",
+      "from": "CASEB T2",
       "to": "N10-TWR T1",
       "page": "B2"
     },
@@ -6289,7 +6423,7 @@
     },
     {
       "signal": "4H",
-      "from": "CASEB T8",
+      "from": "CASEB T9",
       "to": "4HR COIL+",
       "page": "B2"
     },
@@ -6307,25 +6441,25 @@
     },
     {
       "signal": "4RGP",
-      "from": "CASEB T12",
+      "from": "CASEB T13",
       "to": "4HR 1B",
       "page": "B2"
     },
     {
-      "signal": "BX10",
-      "from": "BX10 T?",
+      "signal": "BX10-CASEB",
+      "from": "BX10-CASEB T?",
       "to": "4HR 3H",
       "page": "B2"
     },
     {
       "signal": "4HGE",
-      "from": "SIG4 T?",
+      "from": "SIG4 T2",
       "to": "4HR 3F",
       "page": "B2"
     },
     {
       "signal": "4RGE",
-      "from": "SIG4 T?",
+      "from": "SIG4 T1",
       "to": "4HR 3B",
       "page": "B2"
     },
@@ -6348,15 +6482,15 @@
       "page": "B2"
     },
     {
-      "signal": "NX10",
-      "from": "NX10 T?",
-      "to": "4 LTG RESISTOR -",
+      "signal": "NX10-CASEB",
+      "from": "NX10-CASEB T?",
+      "to": "4 RESISTOR -",
       "page": "B2"
     },
     {
       "signal": "4NX10",
-      "from": "4 LTG RESISTOR +",
-      "to": "SIG4 T?",
+      "from": "4 RESISTOR +",
+      "to": "SIG4 T4",
       "page": "B2"
     }
   ],
@@ -6954,6 +7088,7 @@
       "resistance": "1.8072"
     },
     {
+      "signal": "N10-TWR",
       "fromSubnet": "Tower",
       "from": "GRP-D T1",
       "toSubnet": "Case B",
@@ -6963,6 +7098,7 @@
       "resistance": "0.22725"
     },
     {
+      "signal": "B10-TWR",
       "fromSubnet": "Tower",
       "from": "GRP-D T2",
       "toSubnet": "Case B",
@@ -6972,6 +7108,7 @@
       "resistance": "0.22725"
     },
     {
+      "signal": "2COSP\n2COSP",
       "fromSubnet": "Tower",
       "from": "GRP-D T3",
       "toSubnet": "Case B",
@@ -6981,6 +7118,7 @@
       "resistance": "0.36144"
     },
     {
+      "signal": "2D\n2D",
       "fromSubnet": "Tower",
       "from": "GRP-D T4",
       "toSubnet": "Case B",
@@ -6990,6 +7128,7 @@
       "resistance": "0.36144"
     },
     {
+      "signal": "2H\n2H",
       "fromSubnet": "Tower",
       "from": "GRP-D T5",
       "toSubnet": "Case B",
@@ -6999,6 +7138,7 @@
       "resistance": "0.36144"
     },
     {
+      "signal": "3COSP\n3COSP",
       "fromSubnet": "Tower",
       "from": "GRP-D T6",
       "toSubnet": "Case B",
@@ -7008,6 +7148,7 @@
       "resistance": "0.36144"
     },
     {
+      "signal": "3D\n3D",
       "fromSubnet": "Tower",
       "from": "GRP-D T7",
       "toSubnet": "Case B",
@@ -7017,6 +7158,7 @@
       "resistance": "0.36144"
     },
     {
+      "signal": "3H\n3H",
       "fromSubnet": "Tower",
       "from": "GRP-D T8",
       "toSubnet": "Case B",
@@ -7026,6 +7168,7 @@
       "resistance": "0.36144"
     },
     {
+      "signal": "4H\n4H",
       "fromSubnet": "Tower",
       "from": "GRP-D T9",
       "toSubnet": "Case B",
@@ -7035,6 +7178,7 @@
       "resistance": "0.36144"
     },
     {
+      "signal": "2RGP\n2RGP",
       "fromSubnet": "Tower",
       "from": "GRP-D T10",
       "toSubnet": "Case B",
@@ -7044,6 +7188,7 @@
       "resistance": "0.36144"
     },
     {
+      "signal": "3HDGP\n3HDGP",
       "fromSubnet": "Tower",
       "from": "GRP-D T11",
       "toSubnet": "Case B",
@@ -7053,6 +7198,7 @@
       "resistance": "0.36144"
     },
     {
+      "signal": "3RGP\n3RGP",
       "fromSubnet": "Tower",
       "from": "GRP-D T12",
       "toSubnet": "Case B",
@@ -7062,6 +7208,7 @@
       "resistance": "0.36144"
     },
     {
+      "signal": "4RGP\n4RGP",
       "fromSubnet": "Tower",
       "from": "GRP-E T1",
       "toSubnet": "Case B",
@@ -7071,64 +7218,21 @@
       "resistance": "0.36144"
     },
     {
-      "fromSubnet": "Tower",
-      "from": "GRP-E T2",
-      "toSubnet": "Case B",
-      "to": "CASEB T14",
-      "length": "90",
-      "gauge": "16",
-      "resistance": "0.36144"
-    },
-    {
-      "fromSubnet": "Tower",
-      "from": "GRP-E T3",
-      "toSubnet": "Case B",
-      "to": "CASEB T15",
-      "length": "90",
-      "gauge": "16",
-      "resistance": "0.36144"
-    },
-    {
-      "fromSubnet": "Tower",
-      "from": "GRP-E T4",
-      "toSubnet": "Case B",
-      "to": "CASEB T16",
-      "length": "90",
-      "gauge": "16",
-      "resistance": "0.36144"
-    },
-    {
-      "fromSubnet": "Tower",
-      "from": "GRP-E T5",
-      "toSubnet": "Case B",
-      "to": "CASEB T17",
-      "length": "90",
-      "gauge": "16",
-      "resistance": "0.36144"
-    },
-    {
-      "fromSubnet": "Tower",
-      "from": "GRP-E T6",
-      "toSubnet": "Case B",
-      "to": "CASEB T18",
-      "length": "90",
-      "gauge": "16",
-      "resistance": "0.36144"
-    },
-    {
+      "signal": "2TBX",
       "fromSubnet": "Tower",
       "from": "GRP-E T7",
       "toSubnet": "Case B",
-      "to": "CASEB T19",
+      "to": "2T TRK ARRESTOR +",
       "length": "90",
       "gauge": "10",
       "resistance": "0.089901"
     },
     {
+      "signal": "2TNX",
       "fromSubnet": "Tower",
       "from": "GRP-E T8",
       "toSubnet": "Case B",
-      "to": "CASEB T20",
+      "to": "2T TRK ARRESTOR -",
       "length": "90",
       "gauge": "10",
       "resistance": "0.089901"
@@ -7607,7 +7711,7 @@
     {
       "lever": "1",
       "type": "signal",
-      "when": "(6) 9 10 15 (12)",
+      "when": "(6) 9 10 (12)",
       "lock": "16"
     },
     {
@@ -8060,27 +8164,6 @@
       "from": "23HDGPR COIL-",
       "toSubnet": "Tower",
       "to": "N10-TWR MAIN"
-    },
-    {
-      "name": "**** Missing Signal RGPR pullups ****"
-    },
-    {
-      "fromSubnet": "Tower",
-      "from": "2RGPR COIL+",
-      "toSubnet": "Tower",
-      "to": "B10-TWR MAIN"
-    },
-    {
-      "fromSubnet": "Tower",
-      "from": "3RGPR COIL+",
-      "toSubnet": "Tower",
-      "to": "B10-TWR MAIN"
-    },
-    {
-      "fromSubnet": "Tower",
-      "from": "4RGPR COIL+",
-      "toSubnet": "Tower",
-      "to": "B10-TWR MAIN"
     },
     {
       "name": "**** Signals ****"

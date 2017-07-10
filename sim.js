@@ -354,7 +354,7 @@ class Relay extends Component {
         if (terminal === 'COIL-')
             visit(this.terminals['COIL+']);
         const match = terminal.match(/^(\d+)[HFB]/);
-        console.log('relay walk', terminal, match);
+        console.log('relay walk', this.subnet, this.name, terminal, match);
         if (match) {
             visit(this.terminals[`${match[1]}H`]);
             visit(this.terminals[`${match[1]}F`]);
@@ -541,6 +541,8 @@ function getComponentTerminal(subnet, spec) {
             wireComponent(wire, 'Tower');
         for (let wire of netlist.caseAWires)
             wireComponent(wire, 'Case A');
+        for (let wire of netlist.caseBWires)
+            wireComponent(wire, 'Case B');
         for (let wire of netlist.caseCWires)
             wireComponent(wire, 'Case C');
         for (let wire of netlist.crossConnections) {
