@@ -1,6 +1,16 @@
 {
   "comps": [
     {
+      "component": "9-10LOSTER",
+      "subnet": "Case A",
+      "type": "relay",
+      "subtype": "time element",
+      "resistance": "10",
+      "config": "{\"pickupTime\":5}",
+      "unused": "-1",
+      "used": "1"
+    },
+    {
       "component": "9-10T TEST TERM",
       "subnet": "Case A",
       "type": "test terminal",
@@ -24,12 +34,40 @@
       "used": "0"
     },
     {
+      "component": "9-10TE",
+      "subnet": "Case A",
+      "location": "lever top",
+      "type": "time element",
+      "unused": "0",
+      "used": "0"
+    },
+    {
+      "component": "9-10TPR",
+      "subnet": "Case A",
+      "type": "relay",
+      "resistance": "150",
+      "index": "9",
+      "contacts": "2",
+      "unused": "0",
+      "used": "2"
+    },
+    {
       "component": "9-10TR",
       "subnet": "Case A",
       "type": "relay",
       "resistance": "4",
       "contacts": "4",
-      "unused": "3",
+      "unused": "4",
+      "used": "0"
+    },
+    {
+      "component": "12LOSTER",
+      "subnet": "Case A",
+      "type": "relay",
+      "subtype": "time element",
+      "resistance": "10",
+      "config": "{\"pickupTime\":5}",
+      "unused": "-1",
       "used": "1"
     },
     {
@@ -112,13 +150,31 @@
       "used": "0"
     },
     {
+      "component": "12TE",
+      "subnet": "Case A",
+      "location": "lever top",
+      "type": "time element",
+      "unused": "0",
+      "used": "0"
+    },
+    {
+      "component": "12TPR",
+      "subnet": "Case A",
+      "type": "relay",
+      "resistance": "150",
+      "index": "9",
+      "contacts": "2",
+      "unused": "0",
+      "used": "2"
+    },
+    {
       "component": "12TR",
       "subnet": "Case A",
       "type": "relay",
       "resistance": "4",
       "contacts": "4",
-      "unused": "3",
-      "used": "1"
+      "unused": "4",
+      "used": "0"
     },
     {
       "component": "12WCR",
@@ -939,25 +995,6 @@
       "used": "0"
     },
     {
-      "component": "9-10LOSTER",
-      "subnet": "Tower",
-      "location": "shelf top",
-      "type": "relay",
-      "subtype": "time element",
-      "resistance": "10",
-      "config": "{\"pickupTime\":5}",
-      "unused": "-1",
-      "used": "1"
-    },
-    {
-      "component": "9-10TE",
-      "subnet": "Tower",
-      "location": "lever top",
-      "type": "time element",
-      "unused": "-2",
-      "used": "2"
-    },
-    {
       "component": "9-10TKE",
       "subnet": "Tower",
       "location": "model board",
@@ -966,15 +1003,17 @@
       "used": "0"
     },
     {
-      "component": "9-10TPR",
+      "component": "9-10TPPR",
       "subnet": "Tower",
       "location": "shelf 3",
       "type": "relay",
+      "subtype": "slow pickup",
       "resistance": "1370",
+      "config": "{\"pickupTime\":1.2}",
       "index": "7",
       "contacts": "4",
-      "unused": "2",
-      "used": "2"
+      "unused": "3",
+      "used": "1"
     },
     {
       "component": "9-10TPSR",
@@ -1048,17 +1087,6 @@
       "used": "0"
     },
     {
-      "component": "12LOSTER",
-      "subnet": "Tower",
-      "location": "shelf top",
-      "type": "relay",
-      "subtype": "time element",
-      "resistance": "10",
-      "config": "{\"pickupTime\":5}",
-      "unused": "-1",
-      "used": "1"
-    },
-    {
       "component": "12NWPPR",
       "subnet": "Tower",
       "location": "shelf 1",
@@ -1083,14 +1111,6 @@
       "used": "4"
     },
     {
-      "component": "12TE",
-      "subnet": "Tower",
-      "location": "lever top",
-      "type": "time element",
-      "unused": "-2",
-      "used": "2"
-    },
-    {
       "component": "12TKE",
       "subnet": "Tower",
       "location": "model board",
@@ -1099,15 +1119,15 @@
       "used": "0"
     },
     {
-      "component": "12TPR",
+      "component": "12TPPR",
       "subnet": "Tower",
       "location": "shelf 3",
       "type": "relay",
       "resistance": "670",
       "index": "6",
       "contacts": "4",
-      "unused": "2",
-      "used": "2"
+      "unused": "3",
+      "used": "1"
     },
     {
       "component": "12TPSR",
@@ -2652,52 +2672,18 @@
       "page": "T5"
     },
     {
-      "signal": "9-10TP-1A",
+      "signal": "9-10TPP",
       "from": "GRP-A T8",
-      "to": "9-10LOSTER 1H",
-      "page": "T5"
+      "to": "9-10TPPR COIL+",
+      "page": "T5",
+      "row": "*"
     },
     {
-      "signal": "N10-CASEA",
-      "from": "GRP-A T6",
-      "to": "N10-CASEA-TWR T1",
-      "page": "T5"
-    },
-    {
-      "signal": "9-10TP-1",
-      "from": "9-10LOSTER 1H",
-      "to": "9-10TPR 1H",
-      "page": "T5"
-    },
-    {
-      "signal": "9-10TP",
-      "from": "9-10LOSTER 1F",
-      "to": "9-10TPR COIL+",
-      "page": "T5"
-    },
-    {
-      "signal": "**STRAP**",
-      "from": "9-10TPR 1F",
-      "to": "9-10TPR COIL+",
-      "page": "T5"
-    },
-    {
-      "signal": "9-10TP-A",
-      "from": "9-10TPR 1B",
-      "to": "9-10LOSTER COIL+",
-      "page": "T5"
-    },
-    {
-      "signal": "N-9-10LOSTE",
-      "from": "N10-CASEA-TWR T8",
-      "to": "9-10LOSTER COIL-",
-      "page": "T5"
-    },
-    {
-      "signal": "N-9-10TP",
-      "from": "N10-CASEA-TWR T9",
-      "to": "9-10TPR COIL-",
-      "page": "T5"
+      "signal": "N-9-10TPP",
+      "from": "9-10TPPR COIL-",
+      "to": "N10-CASEA T8",
+      "page": "T5",
+      "row": "*"
     },
     {
       "signal": "4GK",
@@ -2720,18 +2706,18 @@
     {
       "signal": "B10-TWR",
       "from": "B10-TWR S3 T7",
-      "to": "9-10TPR 2H",
+      "to": "9-10TPPR 2H",
       "page": "T5"
     },
     {
       "signal": "9-10TPS-2",
-      "from": "9-10TPR 2F",
+      "from": "9-10TPPR 2F",
       "to": "5HR 2H",
       "page": "T5"
     },
     {
       "signal": "9-10TPS-A",
-      "from": "9-10TPR 2F",
+      "from": "9-10TPPR 2F",
       "to": "9-10TPSR 1H",
       "page": "T5"
     },
@@ -2868,62 +2854,34 @@
       "page": "T6"
     },
     {
-      "signal": "12TP-1A",
+      "signal": "12TPP",
       "from": "GRP-A T9",
-      "to": "12LOSTER 1H",
-      "page": "T6"
+      "to": "12TPPR COIL+",
+      "page": "T6",
+      "row": "*"
     },
     {
-      "signal": "12TP-1",
-      "from": "12LOSTER 1H",
-      "to": "12TPR 1H",
-      "page": "T6"
-    },
-    {
-      "signal": "12TP",
-      "from": "12LOSTER 1F",
-      "to": "12TPR COIL+",
-      "page": "T6"
-    },
-    {
-      "signal": "**STRAP**",
-      "from": "12TPR 1F",
-      "to": "12TPR COIL+",
-      "page": "T6"
-    },
-    {
-      "signal": "12LOSTE",
-      "from": "12TPR 1B",
-      "to": "12LOSTER COIL+",
-      "page": "T6"
-    },
-    {
-      "signal": "N-12LOSTE",
-      "from": "N10-CASEA-TWR T10",
-      "to": "12LOSTER COIL-",
-      "page": "T6"
-    },
-    {
-      "signal": "N-12TP",
-      "from": "N10-CASEA-TWR T11",
-      "to": "12TPR COIL-",
-      "page": "T6"
+      "signal": "N-12TPP",
+      "from": "12TPPR COIL-",
+      "to": "N10-CASEA T11",
+      "page": "T6",
+      "row": "*"
     },
     {
       "signal": "B10-TWR",
       "from": "B10-TWR S3 T6",
-      "to": "12TPR 2H",
+      "to": "12TPPR 2H",
       "page": "T6"
     },
     {
       "signal": "12TPS-3",
-      "from": "12TPR 2F",
+      "from": "12TPPR 2F",
       "to": "14RGPR 2H",
       "page": "T6"
     },
     {
       "signal": "12TPS-A",
-      "from": "12TPR 2F",
+      "from": "12TPPR 2F",
       "to": "12TPSR 1H",
       "page": "T6"
     },
@@ -5209,27 +5167,27 @@
       "page": "A3"
     },
     {
-      "signal": "12TP-1",
+      "signal": "12TPP",
       "from": "CASEA T9",
-      "to": "12TR 1F",
+      "to": "12TPR 2F",
       "page": "A3"
     },
     {
       "signal": "B10-CASEA",
       "from": "B10-CASEA",
-      "to": "12TR 1H",
+      "to": "12TPR 2H",
       "page": "A3"
     },
     {
-      "signal": "9-10TP-1A",
+      "signal": "9-10TPP",
       "from": "CASEA T8",
-      "to": "9-10TR 1F",
+      "to": "9-10TPR 2F",
       "page": "A3"
     },
     {
       "signal": "B10-CASEA",
       "from": "B10-CASEA",
-      "to": "9-10TR 1H",
+      "to": "9-10TPR 2H",
       "page": "A3"
     },
     {
@@ -5716,6 +5674,86 @@
       "signal": "CX10-CASEA",
       "from": "CASEA-W10 CX10",
       "to": "CX10-CASEA"
+    },
+    {
+      "signal": "B10-CASEA",
+      "from": "B10-CASEA",
+      "to": "9-10TR 1H"
+    },
+    {
+      "signal": "9-10TP-1A",
+      "from": "9-10TR 1F",
+      "to": "9-10LOSTER 1H"
+    },
+    {
+      "signal": "9-10TP-1",
+      "from": "9-10LOSTER 1H",
+      "to": "9-10TPR 1H"
+    },
+    {
+      "signal": "9-10TP",
+      "from": "9-10LOSTER 1F",
+      "to": "9-10TPR COIL+"
+    },
+    {
+      "signal": "**STRAP**",
+      "from": "9-10TPR 1F",
+      "to": "9-10TPR COIL+"
+    },
+    {
+      "signal": "9-10LOSTE",
+      "from": "9-10TPR 1B",
+      "to": "9-10LOSTER COIL+"
+    },
+    {
+      "signal": "N-9-10LOSTE",
+      "from": "N10-CASEA",
+      "to": "9-10LOSTER COIL-"
+    },
+    {
+      "signal": "N-9-10TP",
+      "from": "N10-CASEA",
+      "to": "9-10TPR COIL-"
+    },
+    {
+      "signal": "B10-CASEA",
+      "from": "B10-CASEA",
+      "to": "12TR 1H"
+    },
+    {
+      "signal": "12TP-1A",
+      "from": "12TR 1F",
+      "to": "12LOSTER 1H"
+    },
+    {
+      "signal": "12TP-1",
+      "from": "12LOSTER 1H",
+      "to": "12TPR 1H"
+    },
+    {
+      "signal": "12TP",
+      "from": "12LOSTER 1F",
+      "to": "12TPR COIL+"
+    },
+    {
+      "signal": "**STRAP**",
+      "from": "12TPR 1F",
+      "to": "12TPR COIL+"
+    },
+    {
+      "signal": "12LOSTE",
+      "from": "12TPR 1B",
+      "to": "12LOSTER COIL+"
+    },
+    {
+      "signal": "N-12LOSTE",
+      "from": "N10-CASEA-TWR T10",
+      "to": "12LOSTER COIL-"
+    },
+    {
+      "signal": "N-12TP",
+      "from": "N10-CASEA-TWR T11",
+      "to": "12TPR COIL-"
     }
   ],
   "caseBWires": [
