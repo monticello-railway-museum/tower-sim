@@ -40,7 +40,8 @@ function gauss(A) {
 
 
     // Solve equation Ax=b for an upper triangular matrix A
-    var x= new Array(n);
+    var x = [];
+    x.length = n;
     for (var i=n-1; i>-1; i--) {
         if (A[i][i] === 0)
             x[i] = 0;
