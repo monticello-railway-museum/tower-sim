@@ -285,12 +285,18 @@ class Top extends React.Component {
     }
 
     sim() {
-        let { time, sim, locks } = this.state;
+        let { time, sim, levers, locks, autoSwitches } = this.state;
         time += 0.1;
         sim.sim(time);
         locks['7'] = sim.components['Tower/FLOOR PB 7'].terminals['1H'].voltage(0) < 5;
         locks['11'] = sim.components['Tower/FLOOR PB 11'].terminals['1H'].voltage(0) < 5;
         locks['13'] = sim.components['Tower/FLOOR PB 13'].terminals['1H'].voltage(0) < 5;
+        ['6', '9', '10', '12'].forEach(sw => {
+            if (levers.states()[sw] == 'normal' && sim.components[`Sim/SIM-${sw}SCC`].state > 0)
+                sim.components[`Sim/SIM-${sw}SCC`].state--;
+            if (levers.states()[sw] == 'reverse' && sim.components[`Sim/SIM-${sw}SCC`].state < 8)
+                sim.components[`Sim/SIM-${sw}SCC`].state++;
+        });
         this.setState({ time, sim, locks });
         this.tid = setTimeout(() => this.sim(), 100);
     }
@@ -538,22 +544,31 @@ class Top extends React.Component {
                     </span>
                   </div>
                 </div>
-                <div>
-                  <span style={{padding: '3px'}}>
-                    1 locks 16, not 12
-                    <input type="checkbox" checked={this.state.levers.mods.modified}
-                           onChange={e => this.state.levers.mods['1lock16'] = e.target.checked}/>
-                  </span>
-                  <span style={{padding: '3px'}}>
-                    No 9, 10, 12 interlocks
-                    <input type="checkbox" checked={this.state.levers.mods.modified}
-                           onChange={e => this.state.levers.mods.noSwInterlocks = e.target.checked}/>
-                  </span>
-                  <span style={{padding: '3px'}}>
-                    Override interlocking
-                    <input type="checkbox" checked={this.state.overrideInterlocking}
-                           onChange={e => this.changeOverrideInterlocking(e.target.checked)}/>
-                  </span>
+                <div style={{display: 'flex', justifyContent: 'space-between'}}>
+                  <div>
+                    <span style={{padding: '3px'}}>
+                      Automatic switch tending
+                      <input type="checkbox" checked={this.state.autoSwitches}
+                             onChange={e => this.state.autoSwitches = e.target.checked}/>
+                    </span>
+                  </div>
+                  <div>
+                    <span style={{padding: '3px'}}>
+                      1 locks 16, not 12
+                      <input type="checkbox" checked={this.state.levers.mods.modified}
+                             onChange={e => this.state.levers.mods['1lock16'] = e.target.checked}/>
+                    </span>
+                    <span style={{padding: '3px'}}>
+                      No 9, 10, 12 interlocks
+                      <input type="checkbox" checked={this.state.levers.mods.modified}
+                             onChange={e => this.state.levers.mods.noSwInterlocks = e.target.checked}/>
+                    </span>
+                    <span style={{padding: '3px'}}>
+                      Override interlocking
+                      <input type="checkbox" checked={this.state.overrideInterlocking}
+                             onChange={e => this.changeOverrideInterlocking(e.target.checked)}/>
+                    </span>
+                  </div>
                 </div>
               </div>
               <div ref={top => this.topElement = top} style={{height: '140px'}}/>
