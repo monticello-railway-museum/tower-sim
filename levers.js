@@ -79,6 +79,12 @@ class Levers {
         return locked;
     }
 
+    reset() {
+        const { levers } = this;
+        for (let name in levers)
+            levers[name].state = 'normal';
+    }
+
     canPull(states = this.states()) {
         const { levers } = this;
         const locked = this.locked(states);
@@ -96,11 +102,12 @@ class Levers {
         return ret;
     }
 
-    pull(name) {
+    pull(name, override) {
         const { levers } = this;
         const newState = levers[name].state === 'normal' ? 'reverse' : 'normal';
         //console.log('pull', name);
-        this.locked(Object.assign(this.states(), { [name]: newState }));
+        if (!override)
+            this.locked(Object.assign(this.states(), { [name]: newState }));
         levers[name].state = newState;
     }
 

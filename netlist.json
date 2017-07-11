@@ -1202,6 +1202,14 @@
       "used": "0"
     },
     {
+      "component": "9-10TE",
+      "subnet": "Tower",
+      "location": "lever top",
+      "type": "time element",
+      "unused": "-2",
+      "used": "2"
+    },
+    {
       "component": "9-10TKE",
       "subnet": "Tower",
       "location": "model board",
@@ -1319,6 +1327,14 @@
       "contacts": "4",
       "unused": "0",
       "used": "4"
+    },
+    {
+      "component": "12TE",
+      "subnet": "Tower",
+      "location": "lever top",
+      "type": "time element",
+      "unused": "-2",
+      "used": "2"
     },
     {
       "component": "12TKE",

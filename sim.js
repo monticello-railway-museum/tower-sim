@@ -39,6 +39,19 @@ class Node {
     circuit() {
         return this.shared.circuit;
     }
+
+    voltage(dfl) {
+        const circuit = this.circuit();
+        if (circuit) {
+            const v = circuit.nodeVoltage(this.shared);
+            if (v != null)
+                return v;
+            else
+                return dfl;
+        } else {
+            return dfl;
+        }
+    }
 }
 
 class Component {
@@ -457,6 +470,7 @@ const componentTypeMap = {
     'sim-scc': SimSCC,
     'switch': Switch,
     'test terminal': Bus,
+    'time element': Switch,
 };
 
 class Sim {

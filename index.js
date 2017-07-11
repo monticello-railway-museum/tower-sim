@@ -8,39 +8,27 @@ const Sim = require('./sim');
 
 class Lever extends React.Component {
     render() {
-        const { name, state, locked, onClick } = this.props;
-        return <div>
+        const { name, state, locked, onClick, electricLocked, override } = this.props;
+        return <div style={electricLocked ? {background: '#ff8888'} : {}}>
             {name}
-            <input type='checkbox' checked={state === 'reverse'} disabled={locked}
+            <input type='checkbox' checked={state === 'reverse'}
+                   disabled={!override && (locked || electricLocked)}
                    onClick={onClick} />
         </div>;
     }
 }
 
 class Levers extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            levers: new levers(netlist.leverLocking),
-        };
-    }
-
-    pullLever(name) {
-        const { levers } = this.state;
-        levers.pull(name);
-        this.setState({ levers });
-        if (this.props.onPull)
-            this.props.onPull(name, levers.states()[name]);
-    }
-
     render() {
-        const { levers } = this.state;
+        const { levers, locks, override, onPull } = this.props;
         const states = levers.states();
-        const canPull = levers.canPull();
+        const canPull = override ? [] : levers.canPull();
         return <div style={{columnCount: 16}}>
             {levers.names().map(n => (
                  <Lever name={n} state={states[n]} locked={!canPull[n]}
-                        onClick={() => this.pullLever(n)} />))}
+                        onClick={() => onPull(n)}
+                        electricLocked={locks && locks[n]}
+                        override={override} />))}
         </div>;
     }
 }
@@ -220,6 +208,9 @@ class Top extends React.Component {
             time: 0,
             wireFilter: '',
             inspected: null,
+            locks: { },
+            overrideInterlocking: false,
+            levers: new levers(netlist.leverLocking),
         }
         let nextColor = 0;
         this.wires = new Map();
@@ -261,11 +252,31 @@ class Top extends React.Component {
     componentWillUnmount() {
     }
 
+    pullLever(name) {
+        const { levers, sim } = this.state;
+        levers.pull(name, this.state.overrideInterlocking);
+        this.setState({ levers });
+        sim.components[`Tower/LVR-${name}`].state = levers.states()[name];
+    }
+
+    changeOverrideInterlocking(state) {
+        const { levers, sim } = this.state;
+        this.setState({ overrideInterlocking: state });
+        if (!state) {
+            levers.reset();
+            for (let name in levers.levers)
+                sim.components[`Tower/LVR-${name}`].state = levers.states()[name];
+        }
+    }
+
     sim() {
-        let { time, sim } = this.state;
+        let { time, sim, locks } = this.state;
         time += 0.1;
         sim.sim(time);
-        this.setState({ time, sim });
+        locks['7'] = sim.components['Tower/FLOOR PB 7'].terminals['1H'].voltage(0) < 5;
+        locks['11'] = sim.components['Tower/FLOOR PB 11'].terminals['1H'].voltage(0) < 5;
+        locks['13'] = sim.components['Tower/FLOOR PB 13'].terminals['1H'].voltage(0) < 5;
+        this.setState({ time, sim, locks });
         this.tid = setTimeout(() => this.sim(), 100);
     }
 
@@ -306,7 +317,9 @@ class Top extends React.Component {
         return (
             <div>
               <div style={{background: 'white', position: 'fixed', top: '0px', left: '0px', padding: '10px'}}>
-                <Levers onPull={(name, state) => sim.components[`Tower/LVR-${name}`].state = state}/>
+                <Levers levers={this.state.levers} locks={this.state.locks}
+                        onPull={name => this.pullLever(name)}
+                        override={this.state.overrideInterlocking}/>
                 <div>
                   <Turnout name="switch 6" comp={sim.components['Sim/SIM-6SCC']}/>
                   <Turnout name="switch 9" comp={sim.components['Sim/SIM-9SCC']}/>
@@ -327,14 +340,22 @@ class Top extends React.Component {
                   <Switch name="22HDGPR" comp={sim.components['Sim/SIM-22HDGPRSW']}/>
                   <Switch name="23HDGPR" comp={sim.components['Sim/SIM-23HDGPRSW']}/>
                   <div style={{float: 'right'}}>
+                    <Switch name="6TE" comp={sim.components['Tower/6TE']}/>
+                    <Switch name="9-10TE" comp={sim.components['Tower/9-10TE']}/>
+                    <Switch name="12TE" comp={sim.components['Tower/12TE']}/>
                     <Switch name="2-3COPB" comp={sim.components['Tower/2-3COPB']}/>
                     <Switch name="14-16COPB" comp={sim.components['Tower/14-16COPB']}/>
                     <Switch name="NB" comp={sim.components['Tower/NB PB']}/>
                     <Switch name="SB" comp={sim.components['Tower/SB PB']}/>
                   </div>
                 </div>
+                <div>
+                  Override Interlocking
+                  <input type="checkbox" checked={this.state.overrideInterlocking}
+                         onChange={e => this.changeOverrideInterlocking(e.target.checked)}/>
+                </div>
               </div>
-              <div ref={top => this.topElement = top} style={{height: '80px'}}/>
+              <div ref={top => this.topElement = top} style={{height: '100px'}}/>
               {inspected && (<Inspector inspect={this.inspect} inspected={inspected}/>)}
               <p><b>PSUs:</b></p>
               <div style={{columnCount: 2}}>{psus}</div>
