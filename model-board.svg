@@ -22,7 +22,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -45,9 +45,9 @@
      fit-margin-left="0"
      fit-margin-right="0"
      fit-margin-bottom="0"
-     inkscape:zoom="0.19422743"
-     inkscape:cx="2556.8408"
-     inkscape:cy="1626.3631"
+     inkscape:zoom="0.54935813"
+     inkscape:cx="1915.3756"
+     inkscape:cy="633.90795"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="0"
@@ -30186,4 +30186,100 @@
        id="path29153-3-6-6-61"
        style="color:#000000;display:inline;overflow:visible;visibility:visible;fill:#4d4d4d;fill-opacity:1;stroke:none;stroke-width:0.49999985;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none;enable-background:accumulate" />
   </g>
+  <text
+     xml:space="preserve"
+     style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:13.125px;line-height:18.75px;font-family:'DejaVu Serif';-inkscape-font-specification:'DejaVu Serif';text-align:start;text-anchor:start;display:inline;overflow:visible;visibility:visible;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.375;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none;enable-background:accumulate"
+     x="1620.6526"
+     y="507.73071"
+     id="sig4-state"
+     inkscape:label="#text10547"><tspan
+       sodipodi:role="line"
+       id="tspan10545"
+       x="1620.6526"
+       y="507.73071"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:40px;line-height:18.75px;font-family:Arial;-inkscape-font-specification:'Arial Bold';fill:#000000;stroke-width:0.375">STOP</tspan></text>
+  <text
+     xml:space="preserve"
+     style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:13.125px;line-height:18.75px;font-family:'DejaVu Serif';-inkscape-font-specification:'DejaVu Serif';text-align:start;text-anchor:start;display:inline;overflow:visible;visibility:visible;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.375;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none;enable-background:accumulate"
+     x="1895.2151"
+     y="780.12793"
+     id="sig5-state"
+     inkscape:label="#text10547-9"><tspan
+       sodipodi:role="line"
+       id="tspan10545-8"
+       x="1895.2151"
+       y="780.12793"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:40px;line-height:18.75px;font-family:Arial;-inkscape-font-specification:'Arial Bold';fill:#000000;stroke-width:0.375">STOP</tspan></text>
+  <text
+     xml:space="preserve"
+     style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:13.125px;line-height:18.75px;font-family:'DejaVu Serif';-inkscape-font-specification:'DejaVu Serif';text-align:start;text-anchor:start;display:inline;overflow:visible;visibility:visible;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.375;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none;enable-background:accumulate"
+     x="2245.1956"
+     y="1131.3962"
+     id="sig16-state"
+     inkscape:label="#text10547-9-7"><tspan
+       sodipodi:role="line"
+       id="tspan10545-8-2"
+       x="2245.1956"
+       y="1131.3962"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:40px;line-height:18.75px;font-family:Arial;-inkscape-font-specification:'Arial Bold';fill:#000000;stroke-width:0.375">STOP</tspan></text>
+  <text
+     xml:space="preserve"
+     style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:13.125px;line-height:18.75px;font-family:'DejaVu Serif';-inkscape-font-specification:'DejaVu Serif';text-align:start;text-anchor:start;display:inline;overflow:visible;visibility:visible;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.375;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none;enable-background:accumulate"
+     x="1386.3915"
+     y="398.95929"
+     id="sig3-state"
+     inkscape:label="#text10547-9-7-8"><tspan
+       sodipodi:role="line"
+       id="tspan10545-8-2-2"
+       x="1386.3915"
+       y="398.95929"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:40px;line-height:18.75px;font-family:Arial;-inkscape-font-specification:'Arial Bold';fill:#000000;stroke-width:0.375">STOP</tspan></text>
+  <text
+     xml:space="preserve"
+     style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:13.125px;line-height:18.75px;font-family:'DejaVu Serif';-inkscape-font-specification:'DejaVu Serif';text-align:start;text-anchor:start;display:inline;overflow:visible;visibility:visible;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.375;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none;enable-background:accumulate"
+     x="1370.0087"
+     y="224.20992"
+     id="sig2-state"
+     inkscape:label="#text10547-9-7-9"><tspan
+       sodipodi:role="line"
+       id="tspan10545-8-2-9"
+       x="1370.0087"
+       y="224.20992"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:40px;line-height:18.75px;font-family:Arial;-inkscape-font-specification:'Arial Bold';fill:#000000;stroke-width:0.375">STOP</tspan></text>
+  <text
+     xml:space="preserve"
+     style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:13.125px;line-height:18.75px;font-family:'DejaVu Serif';-inkscape-font-specification:'DejaVu Serif';text-align:start;text-anchor:start;display:inline;overflow:visible;visibility:visible;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.375;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none;enable-background:accumulate"
+     x="977.87378"
+     y="471.94318"
+     id="sig1-state"
+     inkscape:label="#text10547-9-7-6"><tspan
+       sodipodi:role="line"
+       id="tspan10545-8-2-0"
+       x="977.87378"
+       y="471.94318"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:40px;line-height:18.75px;font-family:Arial;-inkscape-font-specification:'Arial Bold';text-align:end;text-anchor:end;fill:#000000;stroke-width:0.375">STOP</tspan></text>
+  <text
+     xml:space="preserve"
+     style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:13.125px;line-height:18.75px;font-family:'DejaVu Serif';-inkscape-font-specification:'DejaVu Serif';text-align:start;text-anchor:start;display:inline;overflow:visible;visibility:visible;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.375;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none;enable-background:accumulate"
+     x="1815.3494"
+     y="1154.0486"
+     id="sig15-state"
+     inkscape:label="#text10547-9-7-6-7"><tspan
+       sodipodi:role="line"
+       id="tspan10545-8-2-0-6"
+       x="1815.3494"
+       y="1154.0486"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:40px;line-height:18.75px;font-family:Arial;-inkscape-font-specification:'Arial Bold';text-align:end;text-anchor:end;fill:#000000;stroke-width:0.375">STOP</tspan></text>
+  <text
+     xml:space="preserve"
+     style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:13.125px;line-height:18.75px;font-family:'DejaVu Serif';-inkscape-font-specification:'DejaVu Serif';text-align:start;text-anchor:start;display:inline;overflow:visible;visibility:visible;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.375;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none;enable-background:accumulate"
+     x="1848.5839"
+     y="1373.0419"
+     id="sig14-state"
+     inkscape:label="#text10547-9-7-6-1"><tspan
+       sodipodi:role="line"
+       id="tspan10545-8-2-0-3"
+       x="1848.5839"
+       y="1373.0419"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:40px;line-height:18.75px;font-family:Arial;-inkscape-font-specification:'Arial Bold';text-align:end;text-anchor:end;fill:#000000;stroke-width:0.375">STOP</tspan></text>
 </svg>

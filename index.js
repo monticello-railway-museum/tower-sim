@@ -348,6 +348,120 @@ class Top extends React.Component {
             }
         }
 
+        function lightOn(name) {
+            return sim.components[`Sim/SIM-${name}`].on;
+        }
+
+        function relayUp(name) {
+            return sim.components[name].state === 'up';
+        }
+
+        function updateSignalState(signal, state) {
+            const el = document.getElementById(`sig${signal}-state`);
+            if (el)
+                el.firstElementChild.textContent = state;
+        }
+
+        {
+            let state = 'BAD ASPECT';
+            if (lightOn('1RGE') && !lightOn('1HGE') && !lightOn('1DGE') && !lightOn('1TMGE'))
+                state = 'STOP';
+            if (!lightOn('1RGE') && lightOn('1HGE') && !lightOn('1DGE') && !lightOn('1TMGE'))
+                state = 'Restricting';
+            if (!lightOn('1RGE') && !lightOn('1HGE') && lightOn('1DGE') && !lightOn('1TMGE'))
+                state = 'Slow Clear';
+            if (!lightOn('1RGE') && !lightOn('1HGE') && lightOn('1DGE') && lightOn('1TMGE'))
+                state = 'Clear';
+            updateSignalState(1, state);
+        }
+
+        {
+            let state = 'BAD ASPECT';
+            if (lightOn('2ARGE') && !lightOn('2AHGE') && !lightOn('2ADGE') && !lightOn('2BHGE'))
+                state = 'STOP';
+            if (!lightOn('2ARGE') && lightOn('2AHGE') && !lightOn('2ADGE') && !lightOn('2BHGE'))
+                state = 'Approach';
+            if (!lightOn('2ARGE') && !lightOn('2AHGE') && lightOn('2ADGE') && !lightOn('2BHGE'))
+                state = 'Clear';
+            if (lightOn('2ARGE') && !lightOn('2AHGE') && !lightOn('2ADGE') && lightOn('2BHGE'))
+                state = 'Restricting';
+            updateSignalState(2, state);
+        }
+
+        {
+            let state = 'BAD ASPECT';
+            if (lightOn('3RGE') && !lightOn('3HGE') && !lightOn('3DGE') && lightOn('3MGE'))
+                state = 'STOP';
+            if (!lightOn('3RGE') && lightOn('3HGE') && !lightOn('3DGE') && lightOn('3MGE'))
+                state = 'Approach';
+            if (!lightOn('3RGE') && !lightOn('3HGE') && lightOn('3DGE') && lightOn('3MGE'))
+                state = 'Clear';
+            if (lightOn('3RGE') && !lightOn('3HGE') && lightOn('3DGE') && !lightOn('3MGE'))
+                state = 'Restricting';
+            updateSignalState(3, state);
+        }
+
+        {
+            let state = 'BAD ASPECT';
+            if (lightOn('4RGE') && !lightOn('4HGE'))
+                state = 'STOP';
+            if (!lightOn('4RGE') && lightOn('4HGE'))
+                state = 'Approach';
+            updateSignalState(4, state);
+        }
+
+        {
+            let state = 'BAD ASPECT';
+            if (lightOn('5RGE') && !lightOn('5HGE'))
+                state = 'STOP';
+            if (!lightOn('5RGE') && lightOn('5HGE'))
+                state = 'Approach';
+            updateSignalState(5, state);
+        }
+
+        {
+            let state = 'BAD ASPECT';
+            if (lightOn('14AGE') && lightOn('14BGE') && !relayUp('Sim/SIM-14AAR') && !relayUp('Sim/SIM-14BAR'))
+                state = 'STOP';
+            if (lightOn('14AGE') && lightOn('14BGE') && !relayUp('Sim/SIM-14AAR') && relayUp('Sim/SIM-14BAR'))
+                state = 'Restricting';
+            if (lightOn('14AGE') && lightOn('14BGE') && relayUp('Sim/SIM-14AAR') && !relayUp('Sim/SIM-14BAR'))
+                state = 'Clear';
+            updateSignalState(14, state);
+        }
+
+        {
+            let state = 'BAD ASPECT';
+            if (lightOn('15ARGE') && lightOn('15BRGE') && !lightOn('15BHGE') && !lightOn('15BDGE'))
+                state = 'STOP';
+            if (lightOn('15ARGE') && !lightOn('15BRGE') && lightOn('15BHGE') && !lightOn('15BDGE'))
+                state = 'Restricting';
+            if (lightOn('15ARGE') && !lightOn('15BRGE') && !lightOn('15BHGE') && lightOn('15BDGE'))
+                state = 'Diverging Clear';
+            updateSignalState(15, state);
+        }
+
+        {
+            let state = 'BAD ASPECT';
+            if (!lightOn('16AGE') && !lightOn('16BGE'))
+                updateSignalState(16, state);
+            if (!relayUp('Sim/SIM-16AHMR') && !relayUp('Sim/SIM-16BHMR') && !lightOn('16CRGE'))
+                state = 'STOP';
+            if (!relayUp('Sim/SIM-16AHMR') && !relayUp('Sim/SIM-16BHMR') && lightOn('16CRGE'))
+                state = 'Restricting';
+            if (relayUp('Sim/SIM-16AHMR') && !relayUp('Sim/SIM-16BHMR') && !lightOn('16CRGE')) {
+                state = 'Approach';
+                if (relayUp('Case A/16ADR'))
+                    state = 'Clear';
+            }
+            if (!relayUp('Sim/SIM-16AHMR') && relayUp('Sim/SIM-16BHMR') && !lightOn('16CRGE')) {
+                state = 'Diverging Approach';
+                if (relayUp('Case A/16BDR'))
+                    state = 'Diverging Clear';
+            }
+            updateSignalState(16, state);
+        }
+
         return (
             <div>
               <div style={{background: 'white',
