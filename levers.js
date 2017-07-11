@@ -1,6 +1,7 @@
 class Levers {
     constructor(spec) {
         this.levers = { };
+        this.mods = { };
 
         const { levers } = this;
 
@@ -34,6 +35,8 @@ class Levers {
             lever.rules.push({
                 when: row.when ? decode(row.when) : null,
                 lock: row.lock ? decode(row.lock) : { },
+                removeWhen: row.removeWhen,
+                addWhen: row.addWhen,
             });
         }
     }
@@ -58,6 +61,10 @@ class Levers {
             const lever = levers[name];
             if (states[name] === 'reverse') {
                 for (let rule of lever.rules) {
+                    if (rule.removeWhen && this.mods[rule.removeWhen])
+                        continue;
+                    if (rule.addWhen && !this.mods[rule.addWhen])
+                        continue;
                     let condition = true;
                     if (rule.when) {
                         for (let test in rule.when) {

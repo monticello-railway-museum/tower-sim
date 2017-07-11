@@ -373,23 +373,34 @@ class Top extends React.Component {
                   </div>
                 </div>
                 <div>
-                  Override Interlocking
-                  <input type="checkbox" checked={this.state.overrideInterlocking}
-                         onChange={e => this.changeOverrideInterlocking(e.target.checked)}/>
+                  <span>
+                    Modified interlocking rules
+                    <input type="checkbox" checked={this.state.levers.mods.modified}
+                           onChange={e => this.state.levers.mods.modified = e.target.checked}/>
+                  </span>
+                  <span>
+                    Override interlocking
+                    <input type="checkbox" checked={this.state.overrideInterlocking}
+                           onChange={e => this.changeOverrideInterlocking(e.target.checked)}/>
+                  </span>
                 </div>
               </div>
               <div ref={top => this.topElement = top} style={{height: '120px'}}/>
               {inspected && (<Inspector inspect={this.inspect} inspected={inspected}/>)}
+
               <p><b>PSUs:</b></p>
               <div style={{columnCount: 2}}>{psus}</div>
-              <p><b>Relays:</b></p>
-              <div style={{columnCount: 4}}>
-                {this.relays.map(c => <Relay comp={c} time={time} inspect={this.inspect}/>)}
-              </div>
+
               <p><b>Lights:</b></p>
               <div style={{columnCount: 4}}>
                 {this.lights.map(c => <Light comp={c} inspect={this.inspect}/>)}
               </div>
+
+              <p><b>Relays:</b></p>
+              <div style={{columnCount: 4}}>
+                {this.relays.map(c => <Relay comp={c} time={time} inspect={this.inspect}/>)}
+              </div>
+
               <p><b>Wire voltages:</b> <input type="text" placeholder="filter regex" value={this.state.wireFilter} onChange={e => this.setState({wireFilter: e.target.value})}/></p>
               <div style={{columnCount: 4}}>
                 {this.wireNames.filter(wireFilterFn).map(n => <Wire name={n} wire={this.wires.get(n)} inspect={this.inspect}/>)}

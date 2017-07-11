@@ -7799,8 +7799,16 @@
     {
       "lever": "1",
       "type": "signal",
+      "when": "(6) 9 10 15",
+      "lock": "12",
+      "removeWhen": "modified"
+    },
+    {
+      "lever": "1",
+      "type": "signal",
       "when": "(6) 9 10 (12)",
-      "lock": "16"
+      "lock": "16",
+      "addWhen": "modified"
     },
     {
       "lever": "1",
