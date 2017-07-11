@@ -896,8 +896,8 @@
       "type": "relay",
       "resistance": "500",
       "contacts": "2",
-      "unused": "0",
-      "used": "2"
+      "unused": "-1",
+      "used": "3"
     },
     {
       "component": "1VGR",
@@ -907,8 +907,8 @@
       "resistance": "150",
       "index": "10",
       "contacts": "2",
-      "unused": "0",
-      "used": "2"
+      "unused": "-1",
+      "used": "3"
     },
     {
       "component": "2-3COPB",
@@ -1167,8 +1167,8 @@
       "resistance": "1000",
       "index": "3",
       "contacts": "4",
-      "unused": "2",
-      "used": "2"
+      "unused": "1",
+      "used": "3"
     },
     {
       "component": "6TPSR",
@@ -1481,8 +1481,8 @@
       "resistance": "500",
       "index": "4",
       "contacts": "4",
-      "unused": "1",
-      "used": "3"
+      "unused": "2",
+      "used": "2"
     },
     {
       "component": "14ATR",
@@ -1548,8 +1548,8 @@
       "resistance": "500",
       "index": "5",
       "contacts": "4",
-      "unused": "1",
-      "used": "3"
+      "unused": "2",
+      "used": "2"
     },
     {
       "component": "14BTR",
@@ -1660,8 +1660,8 @@
       "location": "rack",
       "type": "relay",
       "resistance": "500",
-      "unused": "-4",
-      "used": "4"
+      "unused": "-5",
+      "used": "5"
     },
     {
       "component": "16VGR",
@@ -1671,8 +1671,8 @@
       "resistance": "150",
       "index": "9",
       "contacts": "2",
-      "unused": "1",
-      "used": "1"
+      "unused": "0",
+      "used": "2"
     },
     {
       "component": "22HDGPR",
@@ -1701,6 +1701,7 @@
       "subnet": "Tower",
       "location": "lever bed",
       "type": "relay",
+      "resistance": "150",
       "contacts": "2",
       "unused": "1",
       "used": "1"
@@ -2150,6 +2151,14 @@
       "subnet": "Tower",
       "location": "shelf top",
       "type": "bus",
+      "unused": "0",
+      "used": "0"
+    },
+    {
+      "component": "POSR",
+      "subnet": "Tower",
+      "type": "relay",
+      "resistance": "500",
       "unused": "0",
       "used": "0"
     },
@@ -4015,18 +4024,6 @@
       "page": "T12"
     },
     {
-      "signal": "14BTP-A1",
-      "from": "14BTPR 2H",
-      "to": "14ATPR 8H",
-      "page": "T12"
-    },
-    {
-      "signal": "14BTP-A",
-      "from": "14ATPR 8B",
-      "to": "14BTPR COIL+",
-      "page": "T12"
-    },
-    {
       "signal": "14BTK1",
       "from": "14BTKE1 +",
       "to": "14BTPR 4B",
@@ -4077,18 +4074,6 @@
     {
       "signal": "14ATP",
       "from": "14ATPR 7F",
-      "to": "14ATPR COIL+",
-      "page": "T12"
-    },
-    {
-      "signal": "14ATP-A1",
-      "from": "14ATPR 7H",
-      "to": "14BTPR 1H",
-      "page": "T12"
-    },
-    {
-      "signal": "14ATP-A",
-      "from": "14BTPR 1B",
       "to": "14ATPR COIL+",
       "page": "T12"
     },
@@ -5106,6 +5091,42 @@
       "signal": "NX10-TWR",
       "from": "TWR-W10 NX10",
       "to": "NX10-TWR T?"
+    },
+    {
+      "signal": "**STRAP**",
+      "from": "6TPR 2H",
+      "to": "6TPR 3H"
+    },
+    {
+      "from": "6TPR 3F",
+      "to": "POSR COIL+"
+    },
+    {
+      "signal": "N10-TWR",
+      "from": "N10-TWR MAIN T?",
+      "to": "POSR COIL-"
+    },
+    {
+      "signal": "B10-TWR",
+      "from": "B10-TWR MAIN T?",
+      "to": "POSR 1H"
+    },
+    {
+      "from": "POSR 1F",
+      "to": "POSR COIL+"
+    },
+    {
+      "from": "POSR 1B",
+      "to": "14BTPR COIL+"
+    },
+    {
+      "signal": "**STRAP**",
+      "from": "POSR 1H",
+      "to": "POSR 2H"
+    },
+    {
+      "from": "POSR 2B",
+      "to": "14ATPR COIL+"
     }
   ],
   "caseAWires": [
