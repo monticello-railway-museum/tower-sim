@@ -2877,18 +2877,42 @@
     {
       "signal": "4-5AS-B1",
       "from": "4RGPR 1F",
-      "to": "9-10TPSR 2B",
+      "to": "1VGR 2H",
       "page": "T5"
     },
     {
+      "from": "1VGR 2F",
+      "to": "1RGPR 3H"
+    },
+    {
+      "from": "1RGPR 3F",
+      "to": "16VGR 2H"
+    },
+    {
+      "from": "1VGR 2B",
+      "to": "16VGR 2H"
+    },
+    {
+      "from": "16VGR 2F",
+      "to": "16RGPR 5H"
+    },
+    {
+      "from": "16RGPR 5F",
+      "to": "9-10TPSR 2B"
+    },
+    {
+      "from": "16VGR 2B",
+      "to": "9-10TPSR 2B"
+    },
+    {
       "signal": "4-5AS-1",
-      "from": "4RGPR 1F",
+      "from": "9-10TPSR 2B",
       "to": "9-10TE 5H",
       "page": "T5"
     },
     {
       "signal": "4-5AS-A",
-      "from": "4RGPR 1F",
+      "from": "9-10TPSR 2B",
       "to": "4-5ASR 1H",
       "page": "T5"
     },
@@ -3362,15 +3386,15 @@
     },
     {
       "from": "LVR-1 T8",
-      "to": "1VGR 2F"
+      "to": "1VGR 3F"
     },
     {
       "from": "LVR-1 T4",
-      "to": "1VGR 2B"
+      "to": "1VGR 3B"
     },
     {
       "signal": "1HDP-2",
-      "from": "1VGR 2H",
+      "from": "1VGR 3H",
       "to": "1HDR 1F",
       "page": "T8"
     },
