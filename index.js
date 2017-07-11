@@ -13,7 +13,7 @@ class Lever extends React.Component {
             {name}
             <input type='checkbox' checked={state === 'reverse'}
                    disabled={!override && (locked || electricLocked)}
-                   onClick={onClick} />
+                   onClick={onClick}/>
         </div>;
     }
 }
@@ -23,7 +23,7 @@ class Levers extends React.Component {
         const { levers, locks, override, onPull } = this.props;
         const states = levers.states();
         const canPull = override ? [] : levers.canPull();
-        return <div style={{columnCount: 16}}>
+        return <div style={{display: 'flex', justifyContent: 'space-between'}}>
             {levers.names().map(n => (
                  <Lever name={n} state={states[n]} locked={!canPull[n]}
                         onClick={() => onPull(n)}
@@ -71,8 +71,11 @@ class Turnout extends React.Component {
     render() {
         const { name, comp } = this.props;
         return (
-            <span>{name} <input type='range' min='0' max='8'
-                value={comp.state} onChange={e => comp.state = e.target.value}/></span>
+            <span style={{padding: '3px'}}>
+              <span style={{paddingRight: '5px'}}>{name}</span>
+              <input type='range' min='0' max='8'
+                     value={comp.state} onChange={e => comp.state = e.target.value}/>
+            </span>
         );
     }
 }
@@ -81,9 +84,12 @@ class Switch extends React.Component {
     render() {
         const { name, comp } = this.props;
         return (
-            <span style={{paddingRight: '8px'}}>{name}<input type='checkbox'
-                checked={comp.state === 'closed'}
-                onChange={e => {comp.state = (e.target.checked ? 'closed' : 'open'); e.preventDefault();}}/></span>
+            <span style={{padding: '3px'}}>
+              {name}
+              <input type='checkbox'
+                     checked={comp.state === 'closed'}
+                     onChange={e => {comp.state = (e.target.checked ? 'closed' : 'open'); e.preventDefault();}}/>
+            </span>
         );
     }
 }
@@ -316,11 +322,18 @@ class Top extends React.Component {
 
         return (
             <div>
-              <div style={{background: 'white', position: 'fixed', top: '0px', left: '0px', padding: '10px'}}>
+              <div style={{background: 'white',
+                           position: 'fixed',
+                           top: '0px',
+                           left: '0px',
+                           padding: '10px',
+                           width: '100%',
+                           padding: '10px',
+                           boxSizing: 'border-box'}}>
                 <Levers levers={this.state.levers} locks={this.state.locks}
                         onPull={name => this.pullLever(name)}
                         override={this.state.overrideInterlocking}/>
-                <div>
+                <div style={{display: 'flex', justifyContent: 'space-between'}}>
                   <Turnout name="switch 6" comp={sim.components['Sim/SIM-6SCC']}/>
                   <Turnout name="switch 9" comp={sim.components['Sim/SIM-9SCC']}/>
                   <Turnout name="switch 10" comp={sim.components['Sim/SIM-10SCC']}/>
@@ -340,13 +353,23 @@ class Top extends React.Component {
                   <Switch name="22HDGPR" comp={sim.components['Sim/SIM-22HDGPRSW']}/>
                   <Switch name="23HDGPR" comp={sim.components['Sim/SIM-23HDGPRSW']}/>
                   <div style={{float: 'right'}}>
-                    <Switch name="6TE" comp={sim.components['Tower/6TE']}/>
-                    <Switch name="9-10TE" comp={sim.components['Tower/9-10TE']}/>
-                    <Switch name="12TE" comp={sim.components['Tower/12TE']}/>
+                    <span style={sim.components['Tower/1-2-3ASR'].state === 'down' ? {background: '#ff8888'} : {}}>
+                      <Switch name="6TE" comp={sim.components['Tower/6TE']}/>
+                    </span>
+                    <span style={sim.components['Tower/4-5ASR'].state === 'down' ? {background: '#ff8888'} : {}}>
+                      <Switch name="9-10TE" comp={sim.components['Tower/9-10TE']}/>
+                    </span>
+                    <span style={sim.components['Tower/14-15-16ASR'].state === 'down' ? {background: '#ff8888'} : {}}>
+                      <Switch name="12TE" comp={sim.components['Tower/12TE']}/>
+                    </span>
                     <Switch name="2-3COPB" comp={sim.components['Tower/2-3COPB']}/>
                     <Switch name="14-16COPB" comp={sim.components['Tower/14-16COPB']}/>
-                    <Switch name="NB" comp={sim.components['Tower/NB PB']}/>
-                    <Switch name="SB" comp={sim.components['Tower/SB PB']}/>
+                    <span style={sim.components['Tower/14ATKE1'].on ? {background: '#bbbbff'} : {}}>
+                      <Switch name="NB" comp={sim.components['Tower/NB PB']}/>
+                    </span>
+                    <span style={sim.components['Tower/14BTKE1'].on ? {background: '#bbbbff'} : {}}>
+                      <Switch name="SB" comp={sim.components['Tower/SB PB']}/>
+                    </span>
                   </div>
                 </div>
                 <div>
@@ -355,7 +378,7 @@ class Top extends React.Component {
                          onChange={e => this.changeOverrideInterlocking(e.target.checked)}/>
                 </div>
               </div>
-              <div ref={top => this.topElement = top} style={{height: '100px'}}/>
+              <div ref={top => this.topElement = top} style={{height: '120px'}}/>
               {inspected && (<Inspector inspect={this.inspect} inspected={inspected}/>)}
               <p><b>PSUs:</b></p>
               <div style={{columnCount: 2}}>{psus}</div>
