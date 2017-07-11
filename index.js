@@ -529,9 +529,9 @@ class Top extends React.Component {
               </div>
               <div ref={top => this.topElement = top} style={{height: '140px'}}/>
 
-              <Isvg uniquifyIDs={false} src="model-board.svg"/>
-
               {inspected && (<Inspector inspect={this.inspect} inspected={inspected}/>)}
+
+              <Isvg uniquifyIDs={false} src="model-board.svg"/>
 
               <p><b>PSUs:</b></p>
               <div style={{columnCount: 2}}>{psus}</div>
