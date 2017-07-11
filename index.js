@@ -6,6 +6,8 @@ const netlist = require('./netlist.json');
 const levers = require('./levers');
 const Sim = require('./sim');
 
+const Isvg = require('react-inlinesvg');
+
 class Lever extends React.Component {
     render() {
         const { name, state, locked, onClick, electricLocked, override } = this.props;
@@ -320,6 +322,32 @@ class Top extends React.Component {
             </div>
         );
 
+        for (let light of this.lights) {
+            const offColor = '#4d4d4d';
+            let onColor = '#ff3333';
+            if (light.name.match(/GKE$/))
+                onColor = '#33ff33';
+            else if (light.name.match(/[AB]TKE$/))
+                onColor = '#eeeeee';
+            else if (light.name.match(/[AB]TKE1$/))
+                onColor = '#33ff33';
+            else if (light.name.match(/WCKE$/))
+                onColor = '#ffcc00';
+            let num = 1;
+            if (light.name === '6TKE')
+                num = 2;
+            else if (light.name === '9-10TKE')
+                num = 3;
+            else if (light.name === '12TKE')
+                num = 2;
+            for (let i = 1; i <= num; ++i) {
+                const el = document.getElementById(num > 1 ? `${light.name}-${i}` : light.name);
+                if (el) {
+                    el.lastElementChild.style.fill = light.on ? onColor : offColor;
+                }
+            }
+        }
+
         return (
             <div>
               <div style={{background: 'white',
@@ -385,7 +413,10 @@ class Top extends React.Component {
                   </span>
                 </div>
               </div>
-              <div ref={top => this.topElement = top} style={{height: '120px'}}/>
+              <div ref={top => this.topElement = top} style={{height: '140px'}}/>
+
+              <Isvg uniquifyIDs={false} src="model-board.svg"/>
+
               {inspected && (<Inspector inspect={this.inspect} inspected={inspected}/>)}
 
               <p><b>PSUs:</b></p>
