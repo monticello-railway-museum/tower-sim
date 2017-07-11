@@ -57,8 +57,8 @@
       "type": "relay",
       "resistance": "4",
       "contacts": "4",
-      "unused": "4",
-      "used": "0"
+      "unused": "3",
+      "used": "1"
     },
     {
       "component": "12LOSTER",
@@ -173,8 +173,8 @@
       "type": "relay",
       "resistance": "4",
       "contacts": "4",
-      "unused": "4",
-      "used": "0"
+      "unused": "3",
+      "used": "1"
     },
     {
       "component": "12WCR",
@@ -2159,8 +2159,8 @@
       "subnet": "Tower",
       "type": "relay",
       "resistance": "500",
-      "unused": "0",
-      "used": "0"
+      "unused": "-2",
+      "used": "2"
     },
     {
       "component": "SB PB",
