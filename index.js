@@ -291,12 +291,14 @@ class Top extends React.Component {
         locks['7'] = sim.components['Tower/FLOOR PB 7'].terminals['1H'].voltage(0) < 5;
         locks['11'] = sim.components['Tower/FLOOR PB 11'].terminals['1H'].voltage(0) < 5;
         locks['13'] = sim.components['Tower/FLOOR PB 13'].terminals['1H'].voltage(0) < 5;
-        ['6', '9', '10', '12'].forEach(sw => {
-            if (levers.states()[sw] == 'normal' && sim.components[`Sim/SIM-${sw}SCC`].state > 0)
-                sim.components[`Sim/SIM-${sw}SCC`].state--;
-            if (levers.states()[sw] == 'reverse' && sim.components[`Sim/SIM-${sw}SCC`].state < 8)
-                sim.components[`Sim/SIM-${sw}SCC`].state++;
-        });
+        if (autoSwitches) {
+            ['6', '9', '10', '12'].forEach(sw => {
+                if (levers.states()[sw] == 'normal' && sim.components[`Sim/SIM-${sw}SCC`].state > 0)
+                    sim.components[`Sim/SIM-${sw}SCC`].state--;
+                if (levers.states()[sw] == 'reverse' && sim.components[`Sim/SIM-${sw}SCC`].state < 8)
+                    sim.components[`Sim/SIM-${sw}SCC`].state++;
+            });
+        }
         this.setState({ time, sim, locks });
         this.tid = setTimeout(() => this.sim(), 100);
     }
