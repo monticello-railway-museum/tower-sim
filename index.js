@@ -347,10 +347,27 @@ class Top extends React.Component {
                 num = 3;
             else if (light.name === '12TKE')
                 num = 2;
+            function maybeClickable(el, name, sw) {
+                if (!el.onclick) {
+                    if (light.name === name) {
+                        el.style.cursor = 'hand';
+                        const comp = sim.components[sw];
+                        el.onclick = e => comp.state = (comp.state === 'closed') ? 'open' : 'closed';
+                    }
+                }
+            }
             for (let i = 1; i <= num; ++i) {
                 const el = document.getElementById(num > 1 ? `${light.name}-${i}` : light.name);
                 if (el) {
                     el.lastElementChild.style.fill = light.on ? onColor : offColor;
+                    maybeClickable(el, '1ATKE', 'Sim/SIM-1TRSW');
+                    maybeClickable(el, '2ATKE', 'Sim/SIM-2TRSW');
+                    maybeClickable(el, '6TKE', 'Sim/SIM-6TRSW');
+                    maybeClickable(el, '9-10TKE', 'Sim/SIM-9-10TRSW');
+                    maybeClickable(el, '12TKE', 'Sim/SIM-12TRSW');
+                    maybeClickable(el, '14ATKE', 'Sim/SIM-14ATRSW');
+                    maybeClickable(el, '14BTKE', 'Sim/SIM-14BTRSW');
+                    maybeClickable(el, '16ATKE', 'Sim/SIM-16APRSW');
                 }
             }
         }
