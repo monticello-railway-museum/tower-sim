@@ -108,7 +108,7 @@ class Inspector extends React.Component {
             const names = Array.from(node.names).sort(mangledCompare).join(', ');
             return (
                 <div>
-                  <h2>Node {names}</h2>
+                  <h2>Node {names} <InspectLink inspect={inspect} target={null}>[x]</InspectLink></h2>
                   <p>Voltage: {node.circuit ? num(node.circuit.nodeVoltage(node)) : 'unsimulated'}</p>
                   <p>Connections:</p>
                   <ul>
@@ -124,7 +124,7 @@ class Inspector extends React.Component {
             const comp = inspected;
             return (
                 <div>
-                  <h2>Component {comp.name}</h2>
+                  <h2>Component {comp.name} <InspectLink inspect={inspect} target={null}>[x]</InspectLink></h2>
                   <p>Terminals:</p>
                   <ul>
                     {Object.keys(comp.terminals).sort(mangledCompare)
@@ -153,19 +153,78 @@ class InspectLink extends React.Component {
     }
 }
 
+class Relay extends React.Component {
+    render() {
+        const { comp, time, inspect } = this.props;
+        return (
+            <div style={{clear: 'right'}}>
+              <InspectLink inspect={inspect} target={comp}>{comp.name}</InspectLink>:
+              <div style={{float: 'right'}}>
+                <span style={{marginRight: '10px'}}>{num(comp.current, 'A', 3)}</span>
+                <span style={((comp.lastStateChange || -3) + 2 > time) ? {fontWeight: 'bold'} : {}}>
+                  {comp.state}
+                </span>
+              </div>
+            </div>
+        );
+    }
+}
+
+class Light extends React.Component {
+    render() {
+        const { comp, inspect } = this.props;
+        return (
+            <div style={{clear: 'right'}}>
+              <InspectLink inspect={inspect} target={comp}>{comp.name}</InspectLink>:
+              <div style={{float: 'right'}}>
+                <span style={{marginRight: '10px'}}>{num(comp.current, 'A', 3)}</span>
+                <span style={comp.on ? {fontWeight: 'bold'} : {}}>
+                  {comp.on ? 'on' : 'off'}
+                </span>
+              </div>
+            </div>
+        );
+    }
+}
+
+function voltage(wire) {
+    if (wire === 'multiple')
+        return 'multiple';
+    else if (wire === undefined)
+        return 'undefined'
+    else
+        return num(wire.circuit.nodeVoltage(wire.node));
+}
+
+class Wire extends React.Component {
+    render() {
+        const { wire, name, inspect } = this.props;
+        return (
+            <div style={{color: wire.color, clear: 'right'}}>
+              <InspectLink inspect={inspect} target={wire.node}>
+                {name}: <div style={{float: 'right'}}>{voltage(wire)}</div>
+              </InspectLink>
+            </div>
+        );
+    }
+}
+
 class Top extends React.Component {
     constructor(props) {
         super(props);
+
+        const sim = new Sim();
+
         this.state = {
+            sim,
             time: 0,
-            sim: new Sim(),
             wireFilter: '',
             inspected: null,
         }
         let nextColor = 0;
         this.wires = new Map();
         this.circuitColors = new Map();
-        for (let node of this.state.sim.visited) {
+        for (let node of sim.visited) {
             if (!this.circuitColors.has(node.circuit))
                 this.circuitColors.set(node.circuit, circuitColors[nextColor++]);
             for (let name of node.names) {
@@ -180,7 +239,14 @@ class Top extends React.Component {
                 }
             }
         }
-        this.wireNames = Array.from(this.wires.keys()).sort(mangledCompare);
+        this.wireNames = Array.from(this.wires.keys())
+            .sort(mangledCompare);
+        this.relays = Array.from(sim.activeComponents)
+            .filter(c => c.type === 'relay')
+            .sort((a, b) => mangleForSort(a.name) < mangleForSort(b.name) ? -1 : 1);
+        this.lights = Array.from(sim.activeComponents)
+            .filter(c => c.type === 'light')
+            .sort((a, b) => mangleForSort(a.name) < mangleForSort(b.name) ? -1 : 1);
 
         this.inspect = target => {
             this.setState({inspected: target})
@@ -208,30 +274,10 @@ class Top extends React.Component {
         const psus = [ ];
         let totalPower = 0;
 
-        function voltage(wire) {
-            if (wire === 'multiple')
-                return 'multiple';
-            else if (wire === undefined)
-                return 'undefined'
-            else
-                return num(wire.circuit.nodeVoltage(wire.node));
-        }
-
-        const renderWire = (n) => {
-            const wire = this.wires.get(n);
-            return (
-                <div style={{color: wire.color, clear: 'right'}}>
-                  <InspectLink inspect={this.inspect} target={wire.node}>
-                    {n}: <div style={{float: 'right'}}>{voltage(wire)}</div>
-                  </InspectLink>
-                </div>
-            );
-        }
-
-        let wireFilterFn = n => true;
+        let wireFilterFn = n => false;
         if (this.state.wireFilter) {
             try {
-                const filterRe = new RegExp(this.state.wireFilter);
+                const filterRe = new RegExp(this.state.wireFilter, 'i');
                 wireFilterFn = n => n && n.match(filterRe);
             } catch (e) {}
         }
@@ -294,25 +340,15 @@ class Top extends React.Component {
               <div style={{columnCount: 2}}>{psus}</div>
               <p><b>Relays:</b></p>
               <div style={{columnCount: 4}}>
-                {Array.from(sim.activeComponents)
-                   .filter(c => c.type === 'relay')
-                   .sort((a, b) => mangleForSort(a.name) < mangleForSort(b.name) ? -1 : 1)
-                   .map(c => <div style={{clear: 'right'}}>
-                        <InspectLink inspect={this.inspect} target={c}>{c.name}</InspectLink>:
-                        <div style={{float: 'right'}}><span style={{marginRight: '10px'}}>{num(c.current, 'A', 3)}</span> <span style={((c.lastStateChange || -3) + 2 > time) ? {fontWeight: 'bold'} : {}}>{c.state}</span></div></div>)}
+                {this.relays.map(c => <Relay comp={c} time={time} inspect={this.inspect}/>)}
               </div>
               <p><b>Lights:</b></p>
               <div style={{columnCount: 4}}>
-                {Array.from(sim.activeComponents)
-                   .filter(c => c.type === 'light')
-                   .sort((a, b) => mangleForSort(a.name) < mangleForSort(b.name) ? -1 : 1)
-                   .map(c => <div style={{clear: 'right'}}>
-                        <InspectLink inspect={this.inspect} target={c}>{c.name}</InspectLink>:
-                        <div style={{float: 'right'}}><span style={{marginRight: '10px'}}>{num(c.current, 'A', 3)}</span> <span style={c.on ? {fontWeight: 'bold'} : {}}>{c.on ? 'on' : 'off'}</span></div></div>)}
+                {this.lights.map(c => <Light comp={c} inspect={this.inspect}/>)}
               </div>
               <p><b>Wire voltages:</b> <input type="text" placeholder="filter regex" value={this.state.wireFilter} onChange={e => this.setState({wireFilter: e.target.value})}/></p>
               <div style={{columnCount: 4}}>
-                {this.wireNames.filter(wireFilterFn).map(renderWire)}
+                {this.wireNames.filter(wireFilterFn).map(n => <Wire name={n} wire={this.wires.get(n)} inspect={this.inspect}/>)}
               </div>
             </div>
         );
