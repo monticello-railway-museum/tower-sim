@@ -3369,9 +3369,17 @@
       "page": "T8"
     },
     {
+      "from": "10NWPR 4F",
+      "to": "16APR 2H"
+    },
+    {
+      "from": "9NWPR 4F",
+      "to": "10NWPR 4H"
+    },
+    {
       "signal": "1HD-A2",
       "from": "LVR-1 T8",
-      "to": "16APR 2H",
+      "to": "9NWPR 4H",
       "page": "T8",
       "notes": "H-NETWORK 1HD-A2"
     },
@@ -7801,14 +7809,14 @@
       "type": "signal",
       "when": "(6) 9 10 15",
       "lock": "12",
-      "removeWhen": "modified"
+      "removeWhen": "1lock16"
     },
     {
       "lever": "1",
       "type": "signal",
       "when": "(6) 9 10 (12)",
       "lock": "16",
-      "addWhen": "modified"
+      "addWhen": "1lock16"
     },
     {
       "lever": "1",
@@ -7859,12 +7867,14 @@
     {
       "lever": "9",
       "type": "switch",
-      "lock": "10 12"
+      "lock": "10 12",
+      "removeWhen": "noSwInterlocks"
     },
     {
       "lever": "10",
       "type": "switch",
-      "lock": "12"
+      "lock": "12",
+      "removeWhen": "noSwInterlocks"
     },
     {
       "lever": "11",

@@ -1,7 +1,7 @@
 const fs = require('fs');
 const xlsx = require('xlsx');
 
-const wb = xlsx.readFile('/home/bdowning/Documents/signal netlist.ods');
+const wb = xlsx.readFile('signal netlist.ods');
 
 const ob = {
     comps: xlsx.utils.sheet_to_json(wb.Sheets['Components']),

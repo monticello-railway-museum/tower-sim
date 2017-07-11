@@ -539,12 +539,17 @@ class Top extends React.Component {
                   </div>
                 </div>
                 <div>
-                  <span>
-                    Modified interlocking rules
+                  <span style={{padding: '3px'}}>
+                    1 locks 16, not 12
                     <input type="checkbox" checked={this.state.levers.mods.modified}
-                           onChange={e => this.state.levers.mods.modified = e.target.checked}/>
+                           onChange={e => this.state.levers.mods['1lock16'] = e.target.checked}/>
                   </span>
-                  <span>
+                  <span style={{padding: '3px'}}>
+                    No 9, 10, 12 interlocks
+                    <input type="checkbox" checked={this.state.levers.mods.modified}
+                           onChange={e => this.state.levers.mods.noSwInterlocks = e.target.checked}/>
+                  </span>
+                  <span style={{padding: '3px'}}>
                     Override interlocking
                     <input type="checkbox" checked={this.state.overrideInterlocking}
                            onChange={e => this.changeOverrideInterlocking(e.target.checked)}/>
