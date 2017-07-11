@@ -345,8 +345,25 @@ class Lever extends Component {
 
 function maybeSchedule(comp, time, bias, state) {
     if (comp.schedule && comp.schedule.bias === bias && comp.schedule.state === state)
-            return;
-    comp.schedule = { time, bias, state };
+        return;
+    const thunk = () => {
+        console.log(comp.name, comp.schedule);
+        comp.bias = comp.schedule.bias;
+        comp.state = comp.schedule.state;
+        if (comp.interlocked) {
+            if (comp.state === 'down') {
+                if (comp.interlocked.count >= 1) {
+                    comp.state = 'interlocked';
+                }
+                ++comp.interlocked.count;
+            } else if (comp.state === 'up') {
+                --comp.interlocked.count;
+            }
+        }
+        comp.lastStateChange = comp.schedule.time;
+        comp.schedule = null;
+    };
+    comp.schedule = { time, bias, state, thunk };
 }
 
 class Relay extends Component {
@@ -417,7 +434,7 @@ class Relay extends Component {
             this.contacts.forEach(c => {
                 this.resistor(c.heel, c.back, closed);
             });
-        } else if (this.state === 'up') {
+        } else {
             this.contacts.forEach(c => {
                 this.resistor(c.heel, c.front, closed);
             });
@@ -442,7 +459,7 @@ class Relay extends Component {
             if (this.subtype === 'biased neutral')
                 pickup = amps > 0.005;
             if (pickup) {
-                if (this.state === 'down')
+                if (this.state !== 'up')
                     maybeSchedule(this, time + this.pickupTime, bias, 'up');
                 else if (this.bias !== bias)
                     maybeSchedule(this, time + this.dropTime, bias, 'down');
@@ -587,6 +604,10 @@ function getComponentTerminal(subnet, spec) {
             }
         }
 
+        const interlock = { count: 2 };
+        this.components['Tower/14ATPR'].interlocked = interlock;
+        this.components['Tower/14BTPR'].interlocked = interlock;
+
         for (let name in components) {
             components[name].fixupNodes();
             if (components[name].type === 'power supply')
@@ -630,11 +651,7 @@ function getComponentTerminal(subnet, spec) {
 
         for (let comp of activeComponents) {
             if (comp.schedule && comp.schedule.time <= time) {
-                console.log(comp.name, comp.schedule);
-                comp.bias = comp.schedule.bias;
-                comp.state = comp.schedule.state;
-                comp.lastStateChange = comp.schedule.time;
-                comp.schedule = null;
+                comp.schedule.thunk();
             }
         }
 
