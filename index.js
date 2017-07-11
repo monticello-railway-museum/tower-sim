@@ -104,8 +104,10 @@ class Inspector extends React.Component {
             const names = Array.from(node.names).sort(mangledCompare).join(', ');
             return (
                 <div>
-                  <h2>Node {names} <InspectLink inspect={inspect} target={null}>[x]</InspectLink></h2>
-                  <p>Voltage: {node.circuit ? num(node.circuit.nodeVoltage(node)) : 'unsimulated'}</p>
+                  <div style={{color: node.circuit && node.circuit.color}}>
+                    <h2>Node {names} <InspectLink inspect={inspect} target={null}>[x]</InspectLink></h2>
+                    <p>Voltage: {node.circuit ? num(node.circuit.nodeVoltage(node)) : 'unsimulated'}</p>
+                  </div>
                   <p>Connections:</p>
                   <ul>
                     {Array.from(node.members)
@@ -128,9 +130,11 @@ class Inspector extends React.Component {
                            const node = comp.terminals[t].shared;
                            const names = Array.from(node.names).sort(mangledCompare).join(', ');
                            return (
-                               <li><InspectLink inspect={inspect} target={node}>
-                                 {t}: Node {names}: {node.circuit ? num(node.circuit.nodeVoltage(node)) : 'unsimulated'}
-                               </InspectLink></li>
+                               <li style={{color: node.circuit && node.circuit.color}}>
+                                 <InspectLink inspect={inspect} target={node}>
+                                   {t}: Node {names}: {node.circuit ? num(node.circuit.nodeVoltage(node)) : 'unsimulated'}
+                                 </InspectLink>
+                               </li>
                            );
                        })}
                   </ul>
@@ -224,8 +228,11 @@ class Top extends React.Component {
         this.wires = new Map();
         this.circuitColors = new Map();
         for (let node of sim.visited) {
-            if (!this.circuitColors.has(node.circuit))
-                this.circuitColors.set(node.circuit, circuitColors[nextColor++]);
+            if (!this.circuitColors.has(node.circuit)) {
+                const color = circuitColors[nextColor++];
+                this.circuitColors.set(node.circuit, color);
+                node.circuit.color = color;
+            }
             for (let name of node.names) {
                 if (this.wires.has(name)) {
                     this.wires.set(name, 'multiple');
