@@ -50,6 +50,10 @@ class Levers extends React.Component {
 function mangleForSort(s) {
     if (s === undefined)
         return 'undefined';
+    if (s === '**STRAP**')
+        s = '~~~~STRAP';
+    if (s === '')
+        s = '~~~~';
     return s.toString().replace(/\d+/g, m => ('00000'+m).substr(-5));
 }
 
@@ -105,19 +109,30 @@ class Switch extends React.Component {
     }
 }
 
+class NodeName extends React.Component {
+    render() {
+        const { node } = this.props;
+        let names = Array.from(node.names).sort(mangledCompare());
+        const primaryName = node.primaryName || names[0];
+        names = names.filter(x => x != primaryName);
+        return (
+            <span><b>{primaryName}</b>{names.length ? <span> ({names.join(', ')})</span> : null}</span>
+        );
+    }
+}
+
 class Inspector extends React.Component {
     render() {
         const { inspected, inspect } = this.props;
         if (inspected.names) {
             const node = inspected;
-            const names = Array.from(node.names).sort(mangledCompare()).join(', ');
             return (
                 <div>
                   <div style={{color: node.circuit && node.circuit.color}}>
-                    <h2>Node {names} <InspectLink inspect={inspect} target={null}>[x]</InspectLink></h2>
-                    <p>Voltage: {node.circuit ? num(node.circuit.nodeVoltage(node)) : 'unsimulated'}</p>
+                    <h2>Node <NodeName node={node}/> <InspectLink inspect={inspect} target={null}>[x]</InspectLink></h2>
+                    <p>Voltage: <b>{node.circuit ? num(node.circuit.nodeVoltage(node)) : 'unsimulated'}</b></p>
                   </div>
-                  <p>Connections:</p>
+                  <h3>Connections:</h3>
                   <ul>
                     {Array.from(node.members)
                        .map(m => m.payload)
@@ -133,31 +148,34 @@ class Inspector extends React.Component {
             return (
                 <div>
                   <h2>Component {comp.name} <InspectLink inspect={inspect} target={null}>[x]</InspectLink></h2>
-                  <p>Properties:</p>
-                  <ul>
+                  <h3>Properties:</h3>
+                  <table style={{paddingLeft: '20px'}}>
                     {Object.keys(comp)
                        .filter(k => typeof(comp[k]) === 'number' || typeof(comp[k]) === 'string')
                        .map(k => {
                            return (
-                               <li>{k}: <tt>{JSON.stringify(comp[k])}</tt></li>
+                               <tr>
+                                 <td><b>{k}</b>:</td>
+                                 <td><tt>{JSON.stringify(comp[k])}</tt></td>
+                               </tr>
                            );
                        })}
-                  </ul>
-                  <p>Terminals:</p>
-                  <ul>
+                  </table>
+                  <h3>Terminals:</h3>
+                  <table style={{paddingLeft: '20px'}}>
                     {Object.keys(comp.terminals).sort(mangledCompare())
                        .map(t => {
                            const node = comp.terminals[t].shared;
-                           const names = Array.from(node.names).sort(mangledCompare()).join(', ');
                            return (
-                               <li style={{color: node.circuit && node.circuit.color}}>
-                                 <InspectLink inspect={inspect} target={node}>
-                                   {t}: Node {names}: {node.circuit ? num(node.circuit.nodeVoltage(node)) : 'unsimulated'}
-                                 </InspectLink>
-                               </li>
+                               <InspectLink tag="tr" inspect={inspect} target={node}
+                                            style={{color: node.circuit && node.circuit.color}}>
+                                 <td><b>{t}</b>:</td>
+                                 <td style={{textAlign: 'right'}}><b>{node.circuit ? num(node.circuit.nodeVoltage(node)) : 'unsimulated'}</b></td>
+                                 <td>Node <NodeName node={node}/></td>
+                               </InspectLink>
                            );
                        })}
-                  </ul>
+                  </table>
                 </div>
             );
         }
@@ -166,9 +184,9 @@ class Inspector extends React.Component {
 
 class InspectLink extends React.Component {
     render() {
-        const { inspect, target, children } = this.props;
+        const { inspect, target, children, style, tag: Tag = 'span' } = this.props;
         return (
-            <span style={{cursor: 'pointer'}} onClick={() => inspect(target)}>{children}</span>
+            <Tag style={Object.assign({cursor: 'pointer'}, style)} onClick={() => inspect(target)}>{children}</Tag>
         );
     }
 }

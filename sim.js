@@ -14,12 +14,21 @@ class Node {
     }
 
     addName(name) {
+        if (!name)
+            return;
+        let m;
+        if (m = name.match(/(.*) \*$/)) {
+            name = m[1];
+            this.shared.primaryName = name;
+        }
         this.shared.names.add(name);
     }
 
     join(other) {
         if (other.shared === this.shared)
             return;
+        if (!this.shared.primaryName)
+            this.shared.primaryName = other.shared.primaryName;
         for (let name of other.shared.names) {
             this.shared.names.add(name);
         }
@@ -582,30 +591,28 @@ class Sim {
         for (let comp of netlist.comps)
             spawnComponent(comp);
 
-        
-function getComponentTerminal(subnet, spec) {
-    let match = "";
-    for (let name in components) {
-        const comp = components[name];
-        if (subnet === comp.subnet && spec.substr(0, comp.name.length) === comp.name) {
-            if (comp.name.length > match.length)
-                match = comp.name;
+        function getComponentTerminal(subnet, spec) {
+            let match = "";
+            for (let name in components) {
+                const comp = components[name];
+                if (subnet === comp.subnet && spec.substr(0, comp.name.length) === comp.name) {
+                    if (comp.name.length > match.length)
+                        match = comp.name;
+                }
+            }
+            if (match !== "") {
+                return [ components[`${subnet}/${match}`], spec.substr(match.length).trim() ];
+            } else {
+                console.warn('Unknown component', subnet, spec);
+                components[`${subnet}/${spec}`] = new Component({
+                    name: spec,
+                    subnet: subnet,
+                    type: 'terminal',
+                    terminals: { },
+                });
+                return [ components[`${subnet}/${spec}`], '' ];
+            }
         }
-    }
-    if (match !== "") {
-        return [ components[`${subnet}/${match}`], spec.substr(match.length).trim() ];
-    } else {
-        console.warn('Unknown component', subnet, spec);
-        components[`${subnet}/${spec}`] = new Component({
-            name: spec,
-            subnet: subnet,
-            type: 'terminal',
-            terminals: { },
-        });
-        return [ components[`${subnet}/${spec}`], '' ];
-    }
-
-}
 
         function wireComponent(wire, fromSubnet, toSubnet = fromSubnet) {
             const [ fromComp, fromTerm ] =

@@ -4225,7 +4225,7 @@
       "page": "T13"
     },
     {
-      "signal": "N10-CASEA",
+      "signal": "N10-CASEA *",
       "from": "N10-CASEA T1",
       "to": "GRP-A T6",
       "page": "T13"
@@ -4989,13 +4989,13 @@
       "page": "T16"
     },
     {
-      "signal": "B10-TWR",
+      "signal": "B10-TWR *",
       "from": "TWR-CRAGG +",
       "to": "B10-TWR MAIN T1",
       "page": "T18"
     },
     {
-      "signal": "N10-TWR",
+      "signal": "N10-TWR *",
       "from": "TWR-CRAGG -",
       "to": "N10-TWR MAIN T1",
       "page": "T18"
@@ -5091,12 +5091,12 @@
       "page": "T18"
     },
     {
-      "signal": "BX10-TWR",
+      "signal": "BX10-TWR *",
       "from": "TWR-W10 BX10",
       "to": "BX10-TWR T?"
     },
     {
-      "signal": "NX10-TWR",
+      "signal": "NX10-TWR *",
       "from": "TWR-W10 NX10",
       "to": "NX10-TWR T?"
     },
@@ -5319,7 +5319,7 @@
       "page": "A2"
     },
     {
-      "signal": "N10-TWR",
+      "signal": "N10-TWR *",
       "from": "N10-TWR",
       "to": "CASEA T3",
       "page": "A2"
@@ -5966,32 +5966,32 @@
       "page": "A4"
     },
     {
-      "signal": "N10-CASEA",
+      "signal": "N10-CASEA *",
       "from": "CASEA-CRAGG -",
       "to": "N10-CASEA"
     },
     {
-      "signal": "B10-CASEA",
+      "signal": "B10-CASEA *",
       "from": "CASEA-CRAGG +",
       "to": "B10-CASEA"
     },
     {
-      "signal": "BX6-CASEA",
+      "signal": "BX6-CASEA *",
       "from": "CASEA-W10 BX6",
       "to": "BX6-CASEA"
     },
     {
-      "signal": "NX6-CASEA",
+      "signal": "NX6-CASEA *",
       "from": "CASEA-W10 NX6",
       "to": "NX6-CASEA"
     },
     {
-      "signal": "BX10-CASEA",
+      "signal": "BX10-CASEA *",
       "from": "CASEA-W10 BX10",
       "to": "BX10-CASEA"
     },
     {
-      "signal": "NX10-CASEA",
+      "signal": "NX10-CASEA *",
       "from": "CASEA-W10 NX10",
       "to": "NX10-CASEA"
     },
@@ -6482,13 +6482,13 @@
       "page": "B2"
     },
     {
-      "signal": "BX10-CASEB",
+      "signal": "BX10-CASEB *",
       "from": "CASEB-W10 BX10",
       "to": "BX10-CASEB T?",
       "page": "B2"
     },
     {
-      "signal": "NX10-CASEB",
+      "signal": "NX10-CASEB *",
       "from": "CASEB-W10 NX10",
       "to": "NX10-CASEB T?",
       "page": "B2"
@@ -6506,13 +6506,13 @@
       "page": "B2"
     },
     {
-      "signal": "N10-TWR",
+      "signal": "N10-TWR *",
       "from": "CASEB T1",
       "to": "N10-TWR T1",
       "page": "B2"
     },
     {
-      "signal": "B10-TWR",
+      "signal": "B10-TWR *",
       "from": "CASEB T2",
       "to": "B10-TWR T1",
       "page": "B2"
@@ -6617,7 +6617,7 @@
       "to": "6SCC-FUSE +"
     },
     {
-      "signal": "B10-CASEC",
+      "signal": "B10-CASEC *",
       "from": "B10-CASEC T6",
       "to": "CASEC-CRAGG +"
     },
@@ -6647,7 +6647,7 @@
       "to": "6STI N10"
     },
     {
-      "signal": "N10-CASEC",
+      "signal": "N10-CASEC *",
       "from": "N10-CASEC T7",
       "to": "CASEC-CRAGG -"
     },
@@ -6922,17 +6922,17 @@
       "to": "1T RESISTANCE UNIT 2+"
     },
     {
-      "signal": "BX6",
+      "signal": "BX6-CASEC *",
       "from": "CASEC-W10 BX6",
       "to": "1T RESISTANCE UNIT 1+"
     },
     {
-      "signal": "NX6",
+      "signal": "NX6-CASEC *",
       "from": "CASEC-W10 NX6",
       "to": "1T TEST TERM +"
     },
     {
-      "signal": "BX10",
+      "signal": "BX10-CASEC *",
       "from": "CASEC-W10 BX10",
       "to": "1HDPR 1H"
     },
@@ -6942,7 +6942,7 @@
       "to": "1HDPR 1P"
     },
     {
-      "signal": "NX10",
+      "signal": "NX10-CASEC *",
       "from": "CASEC-W10 NX10",
       "to": "1GE RESISTOR -"
     },
