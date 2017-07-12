@@ -580,7 +580,7 @@ function getComponentTerminal(subnet, spec) {
             if (!wire.resistance) {
                 wireComponent(wire);
             } else {
-                const name = `WIRE-${wire.gauge}GA-${wire.length}FT-${wire.fromSubnet}/${wire.from}-${wire.toSubnet}/${wire.to}`;
+                const name = `WIRE---${wire.fromSubnet}/${wire.from}---${wire.toSubnet}/${wire.to}---${wire.gauge}GA-${wire.length}FT`;
                 spawnComponent({
                     component: name,
                     subnet: 'Interconnects',

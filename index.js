@@ -41,8 +41,8 @@ function mangleForSort(s) {
     return s.toString().replace(/\d+/g, m => ('00000'+m).substr(-5));
 }
 
-function mangledCompare(a, b) {
-    return mangleForSort(a) < mangleForSort(b) ? -1 : 1;
+function mangledCompare(key = x => x) {
+    return (a, b) => mangleForSort(key(a)) < mangleForSort(key(b)) ? -1 : 1;
 }
 
 function num(x, units = 'V', d = 2) {
@@ -101,7 +101,7 @@ class Inspector extends React.Component {
         const { inspected, inspect } = this.props;
         if (inspected.names) {
             const node = inspected;
-            const names = Array.from(node.names).sort(mangledCompare).join(', ');
+            const names = Array.from(node.names).sort(mangledCompare()).join(', ');
             return (
                 <div>
                   <div style={{color: node.circuit && node.circuit.color}}>
@@ -112,6 +112,7 @@ class Inspector extends React.Component {
                   <ul>
                     {Array.from(node.members)
                        .map(m => m.payload)
+                       .sort(mangledCompare(([comp, terminal]) => `${comp.subnet}/${comp.name}/${terminal}`))
                        .map(([comp, terminal]) => (
                            <li><InspectLink inspect={inspect} target={comp}>({comp.subnet}) {comp.name} {terminal}</InspectLink></li>
                        ))}
@@ -125,10 +126,10 @@ class Inspector extends React.Component {
                   <h2>Component {comp.name} <InspectLink inspect={inspect} target={null}>[x]</InspectLink></h2>
                   <p>Terminals:</p>
                   <ul>
-                    {Object.keys(comp.terminals).sort(mangledCompare)
+                    {Object.keys(comp.terminals).sort(mangledCompare())
                        .map(t => {
                            const node = comp.terminals[t].shared;
-                           const names = Array.from(node.names).sort(mangledCompare).join(', ');
+                           const names = Array.from(node.names).sort(mangledCompare()).join(', ');
                            return (
                                <li style={{color: node.circuit && node.circuit.color}}>
                                  <InspectLink inspect={inspect} target={node}>
@@ -246,13 +247,13 @@ class Top extends React.Component {
             }
         }
         this.wireNames = Array.from(this.wires.keys())
-            .sort(mangledCompare);
+            .sort(mangledCompare());
         this.relays = Array.from(sim.activeComponents)
             .filter(c => c.type === 'relay')
-            .sort((a, b) => mangleForSort(a.name) < mangleForSort(b.name) ? -1 : 1);
+            .sort(mangledCompare(x => x.name));
         this.lights = Array.from(sim.activeComponents)
             .filter(c => c.type === 'light')
-            .sort((a, b) => mangleForSort(a.name) < mangleForSort(b.name) ? -1 : 1);
+            .sort(mangledCompare(x => x.name));
 
         this.inspect = target => {
             this.setState({inspected: target})
