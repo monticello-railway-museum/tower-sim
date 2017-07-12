@@ -8,14 +8,26 @@ const Sim = require('./sim');
 
 const Isvg = require('react-inlinesvg');
 
+class Checkbox extends React.Component {
+    render() {
+        const { label, checked, disabled, onChange } = this.props;
+        return (
+            <label style={{padding: '3px'}}>
+              {label}
+              <input type='checkbox' checked={checked} disabled={disabled}
+                     onChange={e => { onChange(e.target.checked); e.preventDefault(); }}/>
+            </label>
+        );
+    }
+}
+
 class Lever extends React.Component {
     render() {
         const { name, state, locked, onClick, electricLocked, override } = this.props;
         return <div style={electricLocked ? {background: '#ff8888'} : {}}>
-            {name}
-            <input type='checkbox' checked={state === 'reverse'}
-                   disabled={!override && (locked || electricLocked)}
-                   onClick={onClick}/>
+            <Checkbox label={name} checked={state === 'reverse'}
+                      disabled={!override && (locked || electricLocked)}
+                      onChange={onClick}/>
         </div>;
     }
 }
@@ -86,12 +98,9 @@ class Switch extends React.Component {
     render() {
         const { name, comp } = this.props;
         return (
-            <span style={{padding: '3px'}}>
-              {name}
-              <input type='checkbox'
-                     checked={comp.state === 'closed'}
-                     onChange={e => {comp.state = (e.target.checked ? 'closed' : 'open'); e.preventDefault();}}/>
-            </span>
+            <Checkbox label={name}
+                      checked={comp.state === 'closed'}
+                      onChange={v => comp.state = (v ? 'closed' : 'open')}/>
         );
     }
 }
@@ -549,28 +558,20 @@ class Top extends React.Component {
                 </div>
                 <div style={{display: 'flex', justifyContent: 'space-between'}}>
                   <div>
-                    <span style={{padding: '3px'}}>
-                      Automatic switch tending
-                      <input type="checkbox" checked={this.state.autoSwitches}
-                             onChange={e => this.state.autoSwitches = e.target.checked}/>
-                    </span>
+                    <Checkbox label="Automatic switch tending"
+                              checked={this.state.autoSwitches}
+                              onChange={v => this.state.autoSwitches = v}/>
                   </div>
                   <div>
-                    <span style={{padding: '3px'}}>
-                      1 locks 16, not 12
-                      <input type="checkbox" checked={this.state.levers.mods.modified}
-                             onChange={e => this.state.levers.mods['1lock16'] = e.target.checked}/>
-                    </span>
-                    <span style={{padding: '3px'}}>
-                      No 9, 10, 12 interlocks
-                      <input type="checkbox" checked={this.state.levers.mods.modified}
-                             onChange={e => this.state.levers.mods.noSwInterlocks = e.target.checked}/>
-                    </span>
-                    <span style={{padding: '3px'}}>
-                      Override interlocking
-                      <input type="checkbox" checked={this.state.overrideInterlocking}
-                             onChange={e => this.changeOverrideInterlocking(e.target.checked)}/>
-                    </span>
+                    <Checkbox label="1 locks 16, not 12"
+                              checked={this.state.levers.mods['1lock16']}
+                              onChange={v => this.state.levers.mods['1lock16'] = v}/>
+                    <Checkbox label="No 9, 10, 12 interlocks"
+                              checked={this.state.levers.mods['noSwInterlocks']}
+                              onChange={v => this.state.levers.mods['noSwInterlocks'] = v}/>
+                    <Checkbox label="Override interlocking"
+                              checked={this.state.overrideInterlocking}
+                              onChange={v => this.changeOverrideInterlocking(v)}/>
                   </div>
                 </div>
               </div>
