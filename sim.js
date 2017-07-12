@@ -269,7 +269,7 @@ class SimSemaphore extends Component {
         this.angle = 0;
         this.travelTime = 10;
         this.p0Cutoff = 5;
-        this.p4590Cutoff = 40;
+        this.p4590Cutoff = 35;
         this.target = 0;
         this.lastUpdate = 0;
     }
@@ -290,15 +290,17 @@ class SimSemaphore extends Component {
     preSolve(time) {
         const dps = 90 / this.travelTime;
         const dT = time - this.lastUpdate;
+        const mTerm = this.angle > 45 ? this.terminals['M90'] : this.terminals['M45'];
+
         if (this.angle < this.target)
             this.angle = Math.min(this.target, this.angle + dps * dT);
         else if (this.angle > this.target)
             this.angle = Math.max(this.target, this.angle - dps * dT);
 
         if (this.angle < this.target)
-            this.resistor(this.terminals['MCOM'], this.terminals['M45'], 5);
+            this.resistor(this.terminals['MCOM'], mTerm, 5);
         else
-            this.resistor(this.terminals['MCOM'], this.terminals['M45'], 100);
+            this.resistor(this.terminals['MCOM'], mTerm, 100);
 
         if (this.angle < this.p0Cutoff)
             this.resistor(this.terminals['PCOM'], this.terminals['P0'], closed);
@@ -312,9 +314,9 @@ class SimSemaphore extends Component {
         const m45V = this.nodeVoltage(this.terminals['M45']) - mcomV;
         const m90V = this.nodeVoltage(this.terminals['M90']) - mcomV;
 
-        if (m45V) {
+        if (m45V > 9) {
             this.target = 45;
-            if (m90V) {
+            if (m90V > 9) {
                 this.target = 90;
             }
         } else {
