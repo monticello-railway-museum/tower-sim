@@ -133,6 +133,16 @@ class Inspector extends React.Component {
             return (
                 <div>
                   <h2>Component {comp.name} <InspectLink inspect={inspect} target={null}>[x]</InspectLink></h2>
+                  <p>Properties:</p>
+                  <ul>
+                    {Object.keys(comp)
+                       .filter(k => typeof(comp[k]) === 'number' || typeof(comp[k]) === 'string')
+                       .map(k => {
+                           return (
+                               <li>{k}: <tt>{JSON.stringify(comp[k])}</tt></li>
+                           );
+                       })}
+                  </ul>
                   <p>Terminals:</p>
                   <ul>
                     {Object.keys(comp.terminals).sort(mangledCompare())
