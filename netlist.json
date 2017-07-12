@@ -8353,88 +8353,86 @@
       "to": "CASEA T38"
     },
     {
-      "name": "SIM-16AHMR",
+      "name": "SIM-16AG",
       "fromSubnet": "Sim",
-      "component": "relay",
-      "config": "{\"pickupTime\":5,\"dropTime\":5}"
+      "component": "sim-semaphore"
+    },
+    {
+      "name": "SIM-16BG",
+      "fromSubnet": "Sim",
+      "component": "sim-semaphore"
+    },
+    {
+      "fromSubnet": "Case A",
+      "from": "CASEA T55",
+      "toSubnet": "Sim",
+      "to": "SIM-16AG M90"
     },
     {
       "fromSubnet": "Case A",
       "from": "CASEA T56",
       "toSubnet": "Sim",
-      "to": "SIM-16AHMR COIL+"
+      "to": "SIM-16AG M45"
     },
     {
       "fromSubnet": "Case A",
-      "from": "N10-CASEA",
+      "from": "CASEA T57",
       "toSubnet": "Sim",
-      "to": "SIM-16AHMR COIL-"
+      "to": "SIM-16AG MCOM"
     },
     {
       "fromSubnet": "Case A",
-      "from": "CASEA T62",
+      "from": "CASEA T58",
       "toSubnet": "Sim",
-      "to": "SIM-16AHMR 1B"
-    },
-    {
-      "fromSubnet": "Sim",
-      "from": "SIM-16AHMR 1H",
-      "toSubnet": "Case A",
-      "to": "B10-CASEA"
-    },
-    {
-      "fromSubnet": "Case A",
-      "from": "CASEA T64",
-      "toSubnet": "Sim",
-      "to": "SIM-16AHMR 2F"
-    },
-    {
-      "fromSubnet": "Sim",
-      "from": "SIM-16AHMR 2H",
-      "toSubnet": "Case A",
-      "to": "B10-CASEA"
-    },
-    {
-      "name": "SIM-16BHMR",
-      "fromSubnet": "Sim",
-      "component": "relay",
-      "config": "{\"pickupTime\":5,\"dropTime\":5}"
+      "to": "SIM-16BG M90"
     },
     {
       "fromSubnet": "Case A",
       "from": "CASEA T59",
       "toSubnet": "Sim",
-      "to": "SIM-16BHMR COIL+"
+      "to": "SIM-16BG M45"
     },
     {
       "fromSubnet": "Case A",
-      "from": "N10-CASEA",
+      "from": "CASEA T60",
       "toSubnet": "Sim",
-      "to": "SIM-16BHMR COIL-"
+      "to": "SIM-16BG MCOM"
+    },
+    {
+      "fromSubnet": "Case A",
+      "from": "CASEA T61",
+      "toSubnet": "Sim",
+      "to": "SIM-16AG PCOM"
+    },
+    {
+      "fromSubnet": "Case A",
+      "from": "CASEA T61",
+      "toSubnet": "Sim",
+      "to": "SIM-16BG PCOM"
+    },
+    {
+      "fromSubnet": "Case A",
+      "from": "CASEA T62",
+      "toSubnet": "Sim",
+      "to": "SIM-16AG P0"
     },
     {
       "fromSubnet": "Case A",
       "from": "CASEA T63",
       "toSubnet": "Sim",
-      "to": "SIM-16BHMR 1B"
-    },
-    {
-      "fromSubnet": "Sim",
-      "from": "SIM-16BHMR 1H",
-      "toSubnet": "Case A",
-      "to": "B10-CASEA"
+      "to": "SIM-16BG P0"
     },
     {
       "fromSubnet": "Case A",
       "from": "CASEA T64",
       "toSubnet": "Sim",
-      "to": "SIM-16BHMR 2F"
+      "to": "SIM-16AG P4590"
     },
     {
-      "fromSubnet": "Sim",
-      "from": "SIM-16BHMR 2H",
-      "toSubnet": "Case A",
-      "to": "B10-CASEA"
+      "fromSubnet": "Case A",
+      "from": "CASEA T64",
+      "toSubnet": "Sim",
+      "to": "SIM-16BG P4590"
     },
     {
       "name": "**** Signal lights ****"

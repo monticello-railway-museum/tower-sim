@@ -494,23 +494,31 @@ class Top extends React.Component {
         }
 
         {
-            let state = 'BAD ASPECT';
             if (!lightOn('16AGE') && !lightOn('16BGE'))
-                updateSignalState(16, state);
-            if (!relayUp('Sim/SIM-16AHMR') && !relayUp('Sim/SIM-16BHMR') && !lightOn('16CRGE'))
+                updateSignalState(16, 'BAD ASPECT');
+            const g16a = sim.components['Sim/SIM-16AG'];
+            const g16b = sim.components['Sim/SIM-16BG'];
+            let state = `BAD ASPECT: 16A: ${g16a.angle.toFixed(0)}° 16B: ${g16b.angle.toFixed(0)}° ${lightOn('16CRGE') ? "Call-on" : ""}`;
+            if (g16a.angle === 0 && g16b.angle === 0 && !lightOn('16CRGE'))
                 state = 'STOP';
-            if (!relayUp('Sim/SIM-16AHMR') && !relayUp('Sim/SIM-16BHMR') && lightOn('16CRGE'))
-                state = 'Restricting';
-            if (relayUp('Sim/SIM-16AHMR') && !relayUp('Sim/SIM-16BHMR') && !lightOn('16CRGE')) {
-                state = 'Approach';
-                if (relayUp('Case A/16ADR'))
+            if (g16a.angle > 0 && g16b.angle === 0 && !lightOn('16CRGE')) {
+                if (g16a.angle === 45)
+                    state = 'Approach';
+                else if (g16a.angle === 90)
                     state = 'Clear';
+                else
+                    state = `16A: ${g16a.angle.toFixed(0)}°`;
             }
-            if (!relayUp('Sim/SIM-16AHMR') && relayUp('Sim/SIM-16BHMR') && !lightOn('16CRGE')) {
-                state = 'Diverging Approach';
-                if (relayUp('Case A/16BDR'))
+            if (g16a.angle === 0 && g16b.angle > 0 && !lightOn('16CRGE')) {
+                if (g16b.angle === 45)
+                    state = 'Diverging Approach';
+                else if (g16b.angle === 90)
                     state = 'Diverging Clear';
+                else
+                    state = `16B: ${g16b.angle.toFixed(0)}°`;
             }
+            if (g16a.angle === 0 && g16b.angle === 0 && lightOn('16CRGE'))
+                state = 'Restricting';
             updateSignalState(16, state);
         }
 

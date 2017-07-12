@@ -263,6 +263,60 @@ class Switch extends Component {
     }
 }
 
+class SimSemaphore extends Component {
+    constructor(props) {
+        super(props);
+        this.angle = 0;
+        this.travelTime = 10;
+        this.p0Cutoff = 5;
+        this.p4590Cutoff = 40;
+        this.target = 0;
+        this.lastUpdate = 0;
+    }
+
+    walk(visit, terminal) {
+        if (terminal.match(/^M/)) {
+            visit(this.terminals['MCOM']);
+            visit(this.terminals['M45']);
+            visit(this.terminals['M90']);
+        }
+        if (terminal.match(/^P/)) {
+            visit(this.terminals['PCOM']);
+            visit(this.terminals['P0']);
+            visit(this.terminals['P4590']);
+        }
+    }
+
+    preSolve(time) {
+        const dps = 90 / this.travelTime;
+        const dT = time - this.lastUpdate;
+        if (this.angle < this.target)
+            this.angle = Math.min(this.target, this.angle + dps * dT);
+        else if (this.angle > this.target)
+            this.angle = Math.max(this.target, this.angle - dps * dT);
+        if (this.angle < this.p0Cutoff)
+            this.resistor(this.terminals['PCOM'], this.terminals['P0'], closed);
+        if (this.angle > this.p4590Cutoff)
+            this.resistor(this.terminals['PCOM'], this.terminals['P4590'], closed);
+        this.lastUpdate = time;
+    }
+
+    postSolve(time) {
+        const mcomV = this.nodeVoltage(this.terminals['MCOM']);
+        const m45V = this.nodeVoltage(this.terminals['M45']) - mcomV;
+        const m90V = this.nodeVoltage(this.terminals['M90']) - mcomV;
+
+        if (m45V) {
+            this.target = 45;
+            if (m90V) {
+                this.target = 90;
+            }
+        } else {
+            this.target = 0;
+        }
+    }
+};
+
 class SimSCC extends Switch {
     constructor(props, state = 0) {
         super(props, state);
@@ -485,6 +539,7 @@ const componentTypeMap = {
     'relay': Relay,
     'resistor': Resistor,
     'sim-scc': SimSCC,
+    'sim-semaphore': SimSemaphore,
     'switch': Switch,
     'test terminal': Bus,
     'time element': Switch,
