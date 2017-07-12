@@ -294,6 +294,12 @@ class SimSemaphore extends Component {
             this.angle = Math.min(this.target, this.angle + dps * dT);
         else if (this.angle > this.target)
             this.angle = Math.max(this.target, this.angle - dps * dT);
+
+        if (this.angle < this.target)
+            this.resistor(this.terminals['MCOM'], this.terminals['M45'], 5);
+        else
+            this.resistor(this.terminals['MCOM'], this.terminals['M45'], 100);
+
         if (this.angle < this.p0Cutoff)
             this.resistor(this.terminals['PCOM'], this.terminals['P0'], closed);
         if (this.angle > this.p4590Cutoff)
