@@ -5039,7 +5039,7 @@
     {
       "signal": "B10-TWR",
       "from": "B10-TWR MAIN T9",
-      "to": "GRP-D T1",
+      "to": "GRP-D T2",
       "page": "T18"
     },
     {
@@ -5087,7 +5087,7 @@
     {
       "signal": "N10-TWR",
       "from": "N10-TWR MAIN T9",
-      "to": "GRP-D T2",
+      "to": "GRP-D T1",
       "page": "T18"
     },
     {
@@ -6067,12 +6067,12 @@
     },
     {
       "signal": "N-12LOSTE",
-      "from": "N10-CASEA-TWR T10",
+      "from": "N10-CASEA",
       "to": "12LOSTER COIL-"
     },
     {
       "signal": "N-12TP",
-      "from": "N10-CASEA-TWR T11",
+      "from": "N10-CASEA",
       "to": "12TPR COIL-"
     }
   ],
@@ -6507,13 +6507,13 @@
     },
     {
       "signal": "N10-TWR",
-      "from": "CASEB T2",
+      "from": "CASEB T1",
       "to": "N10-TWR T1",
       "page": "B2"
     },
     {
       "signal": "B10-TWR",
-      "from": "CASEB T1",
+      "from": "CASEB T2",
       "to": "B10-TWR T1",
       "page": "B2"
     },
@@ -7204,7 +7204,7 @@
       "resistance": "0.22725"
     },
     {
-      "signal": "2COSP\n2COSP",
+      "signal": "2COSP",
       "fromSubnet": "Tower",
       "from": "GRP-D T3",
       "toSubnet": "Case B",
@@ -7214,7 +7214,7 @@
       "resistance": "0.36144"
     },
     {
-      "signal": "2D\n2D",
+      "signal": "2D",
       "fromSubnet": "Tower",
       "from": "GRP-D T4",
       "toSubnet": "Case B",
@@ -7224,7 +7224,7 @@
       "resistance": "0.36144"
     },
     {
-      "signal": "2H\n2H",
+      "signal": "2H",
       "fromSubnet": "Tower",
       "from": "GRP-D T5",
       "toSubnet": "Case B",
@@ -7234,7 +7234,7 @@
       "resistance": "0.36144"
     },
     {
-      "signal": "3COSP\n3COSP",
+      "signal": "3COSP",
       "fromSubnet": "Tower",
       "from": "GRP-D T6",
       "toSubnet": "Case B",
@@ -7244,7 +7244,7 @@
       "resistance": "0.36144"
     },
     {
-      "signal": "3D\n3D",
+      "signal": "3D",
       "fromSubnet": "Tower",
       "from": "GRP-D T7",
       "toSubnet": "Case B",
@@ -7254,7 +7254,7 @@
       "resistance": "0.36144"
     },
     {
-      "signal": "3H\n3H",
+      "signal": "3H",
       "fromSubnet": "Tower",
       "from": "GRP-D T8",
       "toSubnet": "Case B",
@@ -7264,7 +7264,7 @@
       "resistance": "0.36144"
     },
     {
-      "signal": "4H\n4H",
+      "signal": "4H",
       "fromSubnet": "Tower",
       "from": "GRP-D T9",
       "toSubnet": "Case B",
@@ -7274,7 +7274,7 @@
       "resistance": "0.36144"
     },
     {
-      "signal": "2RGP\n2RGP",
+      "signal": "2RGP",
       "fromSubnet": "Tower",
       "from": "GRP-D T10",
       "toSubnet": "Case B",
@@ -7284,7 +7284,7 @@
       "resistance": "0.36144"
     },
     {
-      "signal": "3HDGP\n3HDGP",
+      "signal": "3HDGP",
       "fromSubnet": "Tower",
       "from": "GRP-D T11",
       "toSubnet": "Case B",
@@ -7294,7 +7294,7 @@
       "resistance": "0.36144"
     },
     {
-      "signal": "3RGP\n3RGP",
+      "signal": "3RGP",
       "fromSubnet": "Tower",
       "from": "GRP-D T12",
       "toSubnet": "Case B",
@@ -7304,7 +7304,7 @@
       "resistance": "0.36144"
     },
     {
-      "signal": "4RGP\n4RGP",
+      "signal": "4RGP",
       "fromSubnet": "Tower",
       "from": "GRP-E T1",
       "toSubnet": "Case B",
