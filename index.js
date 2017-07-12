@@ -13,7 +13,7 @@ class Checkbox extends React.Component {
         const { label, checked, disabled, onChange } = this.props;
         return (
             <label style={{padding: '3px'}}>
-              {label}
+              <span style={disabled ? {color: '#808080'} : {}}>{label}</span>
               <input type='checkbox' checked={checked} disabled={disabled}
                      onChange={e => { onChange(e.target.checked); e.preventDefault(); }}/>
             </label>
