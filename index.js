@@ -412,12 +412,22 @@ class Top extends React.Component {
             else if (light.name.match(/WCKE$/))
                 onColor = '#ffcc00';
             let num = 1;
-            if (light.name === '6TKE')
+            if (light.name === '6TKE') {
                 num = 2;
-            else if (light.name === '9-10TKE')
+                if (sim.components['Tower/6LOSTER'].current > 0.1
+                    || sim.components['Tower/6TPR'].state === 'up')
+                    onColor = '#ff9933';
+            } else if (light.name === '9-10TKE') {
                 num = 3;
-            else if (light.name === '12TKE')
+                if (sim.components['Case A/9-10LOSTER'].current > 0.1
+                    || sim.components['Case A/9-10TPR'].state === 'up')
+                    onColor = '#ff9933';
+            } else if (light.name === '12TKE') {
                 num = 2;
+                if (sim.components['Case A/12LOSTER'].current > 0.1
+                    || sim.components['Case A/12TPR'].state === 'up')
+                    onColor = '#ff9933';
+            }
             function maybeClickable(el, name, sw) {
                 if (!el.onclick) {
                     if (light.name === name) {
