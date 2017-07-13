@@ -414,18 +414,15 @@ class Top extends React.Component {
             let num = 1;
             if (light.name === '6TKE') {
                 num = 2;
-                if (sim.components['Tower/6LOSTER'].current > 0.1
-                    || sim.components['Tower/6TPR'].state === 'up')
+                if (sim.components['Tower/6TR'].state === 'up')
                     onColor = '#ff9933';
             } else if (light.name === '9-10TKE') {
                 num = 3;
-                if (sim.components['Case A/9-10LOSTER'].current > 0.1
-                    || sim.components['Case A/9-10TPR'].state === 'up')
+                if (sim.components['Case A/9-10TR'].state === 'up')
                     onColor = '#ff9933';
             } else if (light.name === '12TKE') {
                 num = 2;
-                if (sim.components['Case A/12LOSTER'].current > 0.1
-                    || sim.components['Case A/12TPR'].state === 'up')
+                if (sim.components['Case A/12TR'].state === 'up')
                     onColor = '#ff9933';
             }
             function maybeClickable(el, name, sw) {
