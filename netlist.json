@@ -610,8 +610,8 @@
       "type": "relay",
       "resistance": "670",
       "contacts": "4",
-      "unused": "2",
-      "used": "2"
+      "unused": "0",
+      "used": "4"
     },
     {
       "component": "1GE RESISTOR",
@@ -5493,8 +5493,11 @@
     {
       "signal": "15HDGPR",
       "from": "CASEA T21",
-      "to": "15HDPR 1F",
-      "page": "A3"
+      "to": "15HDR 3+"
+    },
+    {
+      "from": "15HDR 3P",
+      "to": "15HDPR 1F"
     },
     {
       "signal": "15RGPR",
@@ -6198,7 +6201,7 @@
     {
       "signal": "3HDP",
       "from": "CASEB T11",
-      "to": "3COSPR 1F",
+      "to": "3HR 1F",
       "page": "B1"
     },
     {
@@ -6217,11 +6220,6 @@
       "signal": "B10-TWR",
       "from": "3HR 1H",
       "to": "3DR 1H",
-      "page": "B1"
-    },
-    {
-      "from": "3COSPR 1F",
-      "to": "3HR 1F",
       "page": "B1"
     },
     {
@@ -6741,12 +6739,12 @@
     {
       "signal": "1HDGPR",
       "from": "CASEC T12",
-      "to": "1HDPR 3F"
+      "to": "1COR 3B"
     },
     {
       "signal": "N-1HDGPR",
       "from": "CASEC T13",
-      "to": "1HDPR 4F"
+      "to": "1COR 4B"
     },
     {
       "signal": "1HDP",
@@ -7003,6 +7001,14 @@
       "signal": "1HDG",
       "from": "1HDPR 1F",
       "to": "1HDPR 1P"
+    },
+    {
+      "from": "1HDPR 3F",
+      "to": "1COR 3H"
+    },
+    {
+      "from": "1HDPR 4F",
+      "to": "1COR 4H"
     }
   ],
   "crossConnections": [
@@ -8406,12 +8412,6 @@
     {
       "fromSubnet": "Sim",
       "from": "SIM-14AAR 2H",
-      "toSubnet": "Case A",
-      "to": "CASEA T38"
-    },
-    {
-      "fromSubnet": "Sim",
-      "from": "SIM-14BAR 2H",
       "toSubnet": "Case A",
       "to": "CASEA T38"
     },
