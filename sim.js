@@ -532,9 +532,12 @@ class Relay extends Component {
             if (pickup) {
                 if (this.state !== 'up')
                     maybeSchedule(this, time + this.pickupTime, bias, 'up');
-                else if (this.bias !== bias)
-                    maybeSchedule(this, time + this.dropTime, bias, 'down');
-                else
+                else if (this.bias !== bias) {
+                    if (this.retainedNeutral)
+                        maybeSchedule(this, time + this.pickupTime, bias, 'up');
+                    else
+                        maybeSchedule(this, time + this.dropTime, bias, 'down');
+                } else
                     this.schedule = null;
             } else {
                 if (this.state === 'up')

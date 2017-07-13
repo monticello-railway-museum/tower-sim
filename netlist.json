@@ -605,6 +605,15 @@
       "used": "0"
     },
     {
+      "component": "1COR",
+      "subnet": "Case C",
+      "type": "relay",
+      "resistance": "670",
+      "contacts": "4",
+      "unused": "2",
+      "used": "2"
+    },
+    {
       "component": "1GE RESISTOR",
       "subnet": "Case C",
       "type": "resistor",
@@ -618,6 +627,7 @@
       "type": "relay",
       "subtype": "polar",
       "resistance": "250",
+      "config": "{\"retainedNeutral\": true}",
       "contacts": "4",
       "unused": "0",
       "used": "4"
@@ -875,8 +885,8 @@
       "type": "relay",
       "resistance": "500",
       "contacts": "4",
-      "unused": "3",
-      "used": "1"
+      "unused": "4",
+      "used": "0"
     },
     {
       "component": "1HDR",
@@ -896,8 +906,8 @@
       "type": "relay",
       "resistance": "500",
       "contacts": "2",
-      "unused": "-1",
-      "used": "3"
+      "unused": "-2",
+      "used": "4"
     },
     {
       "component": "1VGR",
@@ -1010,8 +1020,8 @@
       "type": "relay",
       "resistance": "500",
       "contacts": "4",
-      "unused": "2",
-      "used": "2"
+      "unused": "3",
+      "used": "1"
     },
     {
       "component": "3RGPR",
@@ -1020,8 +1030,8 @@
       "type": "relay",
       "resistance": "500",
       "contacts": "4",
-      "unused": "1",
-      "used": "3"
+      "unused": "0",
+      "used": "4"
     },
     {
       "component": "4-5ASR",
@@ -1250,8 +1260,8 @@
       "resistance": "500",
       "index": "1",
       "contacts": "4",
-      "unused": "1",
-      "used": "3"
+      "unused": "0",
+      "used": "4"
     },
     {
       "component": "9RWPR",
@@ -1281,8 +1291,8 @@
       "resistance": "500",
       "index": "3",
       "contacts": "4",
-      "unused": "1",
-      "used": "3"
+      "unused": "0",
+      "used": "4"
     },
     {
       "component": "10RWPR",
@@ -1577,8 +1587,8 @@
       "location": "rack",
       "type": "relay",
       "resistance": "500",
-      "unused": "-1",
-      "used": "1"
+      "unused": "0",
+      "used": "0"
     },
     {
       "component": "14RGPR",
@@ -1586,8 +1596,8 @@
       "location": "rack",
       "type": "relay",
       "resistance": "500",
-      "unused": "-3",
-      "used": "3"
+      "unused": "-4",
+      "used": "4"
     },
     {
       "component": "15DR",
@@ -1613,8 +1623,8 @@
       "location": "rack",
       "type": "relay",
       "resistance": "500",
-      "unused": "-2",
-      "used": "2"
+      "unused": "-1",
+      "used": "1"
     },
     {
       "component": "15RGPR",
@@ -1622,8 +1632,8 @@
       "location": "rack",
       "type": "relay",
       "resistance": "500",
-      "unused": "-2",
-      "used": "2"
+      "unused": "-3",
+      "used": "3"
     },
     {
       "component": "16APR",
@@ -1633,8 +1643,8 @@
       "resistance": "1000",
       "index": "1",
       "contacts": "6",
-      "unused": "0",
-      "used": "6"
+      "unused": "1",
+      "used": "5"
     },
     {
       "component": "16ATKE",
@@ -3365,16 +3375,28 @@
     {
       "signal": "1HD-A1",
       "from": "15HDGPR 1H",
-      "to": "16APR 2F",
+      "to": "10NWPR 4F",
       "page": "T8"
     },
     {
-      "from": "10NWPR 4F",
-      "to": "16APR 2H"
+      "from": "10NWPR 4H",
+      "to": "9NWPR 4F"
     },
     {
-      "from": "9NWPR 4F",
-      "to": "10NWPR 4H"
+      "from": "9NWPR 4B",
+      "to": "1CO"
+    },
+    {
+      "from": "10NWPR 4B",
+      "to": "1CO"
+    },
+    {
+      "from": "2TR 2B",
+      "to": "1CO"
+    },
+    {
+      "from": "1CO",
+      "to": "GRP-G T2"
     },
     {
       "signal": "1HD-A2",
@@ -3580,7 +3602,7 @@
     {
       "signal": "1GK",
       "from": "1GKE +",
-      "to": "1HDGPR 1F",
+      "to": "1RGPR 4B",
       "page": "T8"
     },
     {
@@ -3592,7 +3614,7 @@
     {
       "signal": "B10-TWR",
       "from": "B10-TWR RACK T?",
-      "to": "1HDGPR 1H",
+      "to": "1RGPR 4H",
       "page": "T8"
     },
     {
@@ -3738,7 +3760,7 @@
     {
       "signal": "3GK",
       "from": "3GKE +",
-      "to": "3HDGPR 4F",
+      "to": "3RGPR 4B",
       "page": "T9"
     },
     {
@@ -3750,7 +3772,7 @@
     {
       "signal": "B10-TWR",
       "from": "B10-TWR RACK T?",
-      "to": "3HDGPR 4H",
+      "to": "3RGPR 4H",
       "page": "T9"
     },
     {
@@ -4371,7 +4393,7 @@
     {
       "signal": "14GK",
       "from": "14GKE +",
-      "to": "14HDGPR 1F",
+      "to": "14RGPR 4B",
       "page": "T13"
     },
     {
@@ -4383,7 +4405,7 @@
     {
       "signal": "B10-TWR",
       "from": "B10-TWR RACK T?",
-      "to": "14HDGPR 1H",
+      "to": "14RGPR 4H",
       "page": "T13"
     },
     {
@@ -4621,7 +4643,7 @@
     {
       "signal": "15GK",
       "from": "15GKE +",
-      "to": "15HDGPR 2F",
+      "to": "15RGPR 3B",
       "page": "T15"
     },
     {
@@ -4633,7 +4655,7 @@
     {
       "signal": "B10-TWR",
       "from": "B10-TWR RACK T?",
-      "to": "15HDGPR 2H",
+      "to": "15RGPR 3H",
       "page": "T15"
     },
     {
@@ -6814,7 +6836,7 @@
     {
       "signal": "1TMG-1",
       "from": "6NWPR 3F",
-      "to": "1HDPR 1+"
+      "to": "1HDPR 1P"
     },
     {
       "signal": "6RLP",
@@ -6934,12 +6956,7 @@
     {
       "signal": "BX10-CASEC *",
       "from": "CASEC-W10 BX10",
-      "to": "1HDPR 1H"
-    },
-    {
-      "signal": "1HDG",
-      "from": "1HDPR 1F",
-      "to": "1HDPR 1P"
+      "to": "1COR 1H"
     },
     {
       "signal": "NX10-CASEC *",
@@ -6950,6 +6967,42 @@
       "signal": "**STRAP**",
       "from": "1MGE RESISTOR -",
       "to": "1GE RESISTOR -"
+    },
+    {
+      "from": "1COR 1B",
+      "to": "1HDPR 1H"
+    },
+    {
+      "from": "1COR 1F",
+      "to": "CASEC-LTG T5"
+    },
+    {
+      "signal": "**STRAP**",
+      "from": "1COR 1H",
+      "to": "1COR 2H"
+    },
+    {
+      "signal": "**STRAP**",
+      "from": "1COR 1B",
+      "to": "1COR 2B"
+    },
+    {
+      "signal": "**STRAP**",
+      "from": "1COR 1F",
+      "to": "1COR 2F"
+    },
+    {
+      "from": "CASEC T14",
+      "to": "1COR COIL+"
+    },
+    {
+      "from": "N10-TWR",
+      "to": "1COR COIL-"
+    },
+    {
+      "signal": "1HDG",
+      "from": "1HDPR 1F",
+      "to": "1HDPR 1P"
     }
   ],
   "crossConnections": [
@@ -7459,6 +7512,16 @@
       "from": "GRP-G T1",
       "toSubnet": "Case C",
       "to": "CASEC T13",
+      "length": "354",
+      "gauge": "16",
+      "resistance": "1.421664"
+    },
+    {
+      "signal": "1CO",
+      "fromSubnet": "Tower",
+      "from": "GRP-G T2",
+      "toSubnet": "Case C",
+      "to": "CASEC T14",
       "length": "354",
       "gauge": "16",
       "resistance": "1.421664"
@@ -8490,6 +8553,24 @@
       "from": "CASEC-LTG T7",
       "toSubnet": "Sim",
       "to": "SIM-1HGE -"
+    },
+    {
+      "name": "SIM-1CRGE",
+      "fromSubnet": "Sim",
+      "component": "light",
+      "config": "{\"volts\":10,\"watts\":40}"
+    },
+    {
+      "fromSubnet": "Case C",
+      "from": "CASEC-LTG T5",
+      "toSubnet": "Sim",
+      "to": "SIM-1CRGE +"
+    },
+    {
+      "fromSubnet": "Case C",
+      "from": "CASEC-LTG T7",
+      "toSubnet": "Sim",
+      "to": "SIM-1CRGE -"
     },
     {
       "name": "SIM-1RGE",

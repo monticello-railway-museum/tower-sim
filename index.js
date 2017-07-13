@@ -459,13 +459,17 @@ class Top extends React.Component {
 
         {
             let state = 'BAD ASPECT';
-            if (lightOn('1RGE') && !lightOn('1HGE') && !lightOn('1DGE') && !lightOn('1TMGE'))
+            if (lightOn('1RGE') && !lightOn('1HGE') && !lightOn('1DGE') && !lightOn('1CRGE') && !lightOn('1TMGE'))
                 state = 'STOP';
-            if (!lightOn('1RGE') && lightOn('1HGE') && !lightOn('1DGE') && !lightOn('1TMGE'))
+            if (!lightOn('1RGE') && !lightOn('1HGE') && !lightOn('1DGE') && lightOn('1CRGE') && !lightOn('1TMGE'))
                 state = 'Restricting';
-            if (!lightOn('1RGE') && !lightOn('1HGE') && lightOn('1DGE') && !lightOn('1TMGE'))
+            if (!lightOn('1RGE') && lightOn('1HGE') && !lightOn('1DGE') && !lightOn('1CRGE') && !lightOn('1TMGE'))
+                state = 'Slow Approach';
+            if (!lightOn('1RGE') && lightOn('1HGE') && !lightOn('1DGE') && !lightOn('1CRGE') && lightOn('1TMGE'))
+                state = 'Approach';
+            if (!lightOn('1RGE') && !lightOn('1HGE') && lightOn('1DGE') && !lightOn('1CRGE') && !lightOn('1TMGE'))
                 state = 'Slow Clear';
-            if (!lightOn('1RGE') && !lightOn('1HGE') && lightOn('1DGE') && lightOn('1TMGE'))
+            if (!lightOn('1RGE') && !lightOn('1HGE') && lightOn('1DGE') && !lightOn('1CRGE') && lightOn('1TMGE'))
                 state = 'Clear';
             updateSignalState(1, state);
         }
