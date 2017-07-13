@@ -63,7 +63,7 @@ function mangledCompare(key = x => x) {
 
 function num(x, units = 'V', d = 2) {
     if (typeof(x) === 'number')
-        return `${x.toFixed(d)} ${units}`;
+        return `${x.toFixed(d)}\u00a0${units}`;
     else
         return 'floating';
 }
@@ -122,10 +122,29 @@ class NodeName extends React.Component {
 }
 
 class Inspector extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = { };
+    }
+
     render() {
         const { inspected, inspect } = this.props;
         if (inspected.names) {
             const node = inspected;
+            let compare = mangledCompare(([comp, terminal]) => `${comp.subnet}/${comp.name}/${terminal}`)
+            let Comp = ({comp, terminal}) => (
+                <span>
+                  ({comp.subnet}) <b>{comp.name} {terminal}</b> ({comp.location ? `${comp.location}` : ''}{comp.index ? ` index ${comp.index}` : ''})
+                </span>
+            );
+            if (this.state.sortByLocation) {
+                compare = mangledCompare(([comp, terminal]) => `${comp.subnet}/${comp.location || ''}/${comp.index || ''}/${comp.name}/${terminal}`);
+                Comp = ({comp, terminal}) => (
+                    <span>
+                      ({comp.subnet}{comp.location ? ` ${comp.location}` : ''}{comp.index ? ` index ${comp.index}` : ''}) <b>{comp.name} {terminal}</b>
+                    </span>
+                );
+            }
             return (
                 <div>
                   <div style={{color: node.circuit && node.circuit.color}}>
@@ -133,12 +152,18 @@ class Inspector extends React.Component {
                     <p>Voltage: <b>{node.circuit ? num(node.circuit.nodeVoltage(node)) : 'unsimulated'}</b></p>
                   </div>
                   <h3>Connections:</h3>
+                  <Checkbox label="Sort by location" checked={this.state.sortByLocation}
+                            onChange={v => this.setState({sortByLocation: v})}/>
                   <ul>
                     {Array.from(node.members)
                        .map(m => m.payload)
-                       .sort(mangledCompare(([comp, terminal]) => `${comp.subnet}/${comp.name}/${terminal}`))
+                       .sort(compare)
                        .map(([comp, terminal]) => (
-                           <li><InspectLink inspect={inspect} target={comp}>({comp.subnet}) {comp.name} {terminal}</InspectLink></li>
+                           <li>
+                             <InspectLink inspect={inspect} target={comp}>
+                               <Comp comp={comp} terminal={terminal}/>
+                             </InspectLink>
+                           </li>
                        ))}
                   </ul>
                 </div>

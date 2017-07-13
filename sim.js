@@ -582,6 +582,7 @@ class Sim {
                 subtype: comp.subtype,
                 subnet: comp.subnet,
                 location: comp.location,
+                index: comp.index,
                 resistance: comp.resistance ? parseFloat(comp.resistance) : undefined,
                 terminals: { },
             }, comp.config ? JSON.parse(comp.config) : { });
