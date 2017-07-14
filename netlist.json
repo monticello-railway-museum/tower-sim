@@ -5409,42 +5409,42 @@
     {
       "signal": "B10-CASEA",
       "from": "B10-CASEA",
-      "to": "12NLPR 2H",
+      "to": "12RWPR 2H",
       "page": "A2"
     },
     {
       "signal": "12WC-3",
-      "from": "12NLPR 2F",
-      "to": "12NWPR 2F",
+      "from": "12RWPR 2F",
+      "to": "12RLPR 2F",
       "page": "A2"
     },
     {
       "signal": "12WC-2A",
-      "from": "12NLPR 2B",
-      "to": "12NWPR 2B",
+      "from": "12RWPR 2B",
+      "to": "12RLPR 2B",
       "page": "A2"
     },
     {
       "signal": "12WC-2",
-      "from": "12NWPR 2H",
-      "to": "12RLPR 2H",
+      "from": "12RLPR 2H",
+      "to": "12NWPR 2H",
       "page": "A2"
     },
     {
       "signal": "12WC-2A",
-      "from": "12RLPR 2F",
-      "to": "12RWPR 2F",
+      "from": "12NWPR 2F",
+      "to": "12NLPR 2F",
       "page": "A2"
     },
     {
       "signal": "12WC-1",
-      "from": "12RLPR 2B",
-      "to": "12RWPR 2B",
+      "from": "12NWPR 2B",
+      "to": "12NLPR 2B",
       "page": "A2"
     },
     {
       "signal": "12WC",
-      "from": "12RWPR 2H",
+      "from": "12NLPR 2H",
       "to": "12WCR COIL+",
       "page": "A2"
     },
@@ -6099,6 +6099,91 @@
       "signal": "N-12TP",
       "from": "N10-CASEA",
       "to": "12TPR COIL-"
+    },
+    {
+      "signal": "N10-CASEA",
+      "from": "N10-CASEA",
+      "to": "CASEA T72"
+    },
+    {
+      "signal": "16DGD1",
+      "from": "CASEA T69",
+      "to": "16AR 2H"
+    },
+    {
+      "signal": "16DGD2",
+      "from": "CASEA T70",
+      "to": "16AR 3H"
+    },
+    {
+      "signal": "16DGD3",
+      "from": "CASEA T71",
+      "to": "16AR 4H"
+    },
+    {
+      "signal": "B10-CASEA",
+      "from": "B10-CASEA",
+      "to": "16AR 2B"
+    },
+    {
+      "signal": "B10-CASEA",
+      "from": "B10-CASEA",
+      "to": "16AR 3B"
+    },
+    {
+      "signal": "16DGD1-1",
+      "from": "16AR 2F",
+      "to": "16HDGPR 1H"
+    },
+    {
+      "signal": "16DGD2-1",
+      "from": "16AR 3F",
+      "to": "16HDGPR 2H"
+    },
+    {
+      "signal": "16DGD3-1",
+      "from": "16AR 4F",
+      "to": "16HDGPR 3H"
+    },
+    {
+      "signal": "B10-CASEA",
+      "from": "B10-CASEA",
+      "to": "16HDGPR 1B"
+    },
+    {
+      "signal": "16DGD1-2",
+      "from": "16HDGPR 1F",
+      "to": "12RWPR 3H"
+    },
+    {
+      "signal": "16DGD2-2",
+      "from": "16HDGPR 2F",
+      "to": "12RWPR 4H"
+    },
+    {
+      "signal": "16DGD3-2",
+      "from": "16HDGPR 3F",
+      "to": "12RWPR 2B"
+    },
+    {
+      "signal": "B10-CASEA",
+      "from": "B10-CASEA",
+      "to": "12RWPR 4F"
+    },
+    {
+      "signal": "16DGD1-3",
+      "from": "12RWPR 3B",
+      "to": "16ADR 1F"
+    },
+    {
+      "signal": "16DGD2-3",
+      "from": "12RWPR 4B",
+      "to": "16ADR 2H"
+    },
+    {
+      "signal": "B10-CASEA",
+      "from": "B10-CASEA",
+      "to": "16ADR 2B"
     }
   ],
   "caseBWires": [
@@ -8281,8 +8366,8 @@
       "config": "{\"state\":\"closed\"}"
     },
     {
-      "fromSubnet": "Tower",
-      "from": "16APR COIL+",
+      "fromSubnet": "Case A",
+      "from": "16AR COIL+",
       "toSubnet": "Sim",
       "to": "SIM-16APRSW 1H"
     },
@@ -8291,6 +8376,12 @@
       "from": "SIM-16APRSW 1F",
       "toSubnet": "Case A",
       "to": "B10-CASEA"
+    },
+    {
+      "fromSubnet": "Case A",
+      "from": "16AR COIL-",
+      "toSubnet": "Case A",
+      "to": "N10-CASEA"
     },
     {
       "name": "SIM-22HDGPRSW",

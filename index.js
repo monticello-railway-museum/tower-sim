@@ -548,6 +548,26 @@ class Top extends React.Component {
         }
 
         {
+            let state = 'BAD ASPECT';
+            const d1 = sim.components['Case A/CASEA'].terminals['T69'].voltage() > 8;
+            const d2 = sim.components['Case A/CASEA'].terminals['T70'].voltage() > 8;
+            const d3 = sim.components['Case A/CASEA'].terminals['T71'].voltage() > 8;
+            if (!d1 && !d2 && !d3)
+                state = 'Off';
+            if (d1 && d2 && !d3)
+                state = 'Restricting';
+            if (d1 && !d2 && !d3)
+                state = 'Approach';
+            if (!d1 && d2 && !d3)
+                state = 'Approach Diverging';
+            if (!d1 && d2 && d3)
+                state = 'Advance Approach';
+            if (d1 && !d2 && d3)
+                state = 'Clear';
+            updateSignalState('16d', state);
+        }
+
+        {
             if (!lightOn('16AGE') && !lightOn('16BGE'))
                 updateSignalState(16, 'BAD ASPECT');
             const g16a = sim.components['Sim/SIM-16AG'];

@@ -46,8 +46,8 @@
      fit-margin-right="0"
      fit-margin-bottom="0"
      inkscape:zoom="0.54935813"
-     inkscape:cx="1915.3756"
-     inkscape:cy="633.90795"
+     inkscape:cx="3141.9628"
+     inkscape:cy="470.2835"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="0"
@@ -30282,4 +30282,28 @@
        x="1848.5839"
        y="1373.0419"
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:40px;line-height:18.75px;font-family:Arial;-inkscape-font-specification:'Arial Bold';text-align:end;text-anchor:end;fill:#000000;stroke-width:0.375">STOP</tspan></text>
+  <text
+     xml:space="preserve"
+     style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:13.125px;line-height:18.75px;font-family:'DejaVu Serif';-inkscape-font-specification:'DejaVu Serif';text-align:start;text-anchor:start;display:inline;overflow:visible;visibility:visible;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.375;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none;enable-background:accumulate"
+     x="3178.4934"
+     y="1185.8942"
+     id="sig16d-state"
+     inkscape:label="#text10547-9-7-6-7"><tspan
+       sodipodi:role="line"
+       id="tspan10545-8-2-0-6-6"
+       x="3178.4934"
+       y="1185.8942"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:40px;line-height:18.75px;font-family:Arial;-inkscape-font-specification:'Arial Bold';text-align:end;text-anchor:end;fill:#000000;stroke-width:0.375">Restricting</tspan></text>
+  <text
+     xml:space="preserve"
+     style="color:#000000;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:13.125px;line-height:18.75px;font-family:'DejaVu Serif';-inkscape-font-specification:'DejaVu Serif';text-align:start;text-anchor:start;display:inline;overflow:visible;visibility:visible;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.375;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none;enable-background:accumulate"
+     x="3178.4934"
+     y="1134.4785"
+     id="sig16d-state-7"
+     inkscape:label="#text10547-9-7-6-7"><tspan
+       sodipodi:role="line"
+       id="tspan10545-8-2-0-6-6-5"
+       x="3178.4934"
+       y="1134.4785"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:40px;line-height:18.75px;font-family:Arial;-inkscape-font-specification:'Arial Bold';text-align:end;text-anchor:end;fill:#000000;stroke-width:0.375">Distant Signal 16:</tspan></text>
 </svg>
