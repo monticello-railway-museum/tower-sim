@@ -275,8 +275,8 @@
       "resistance": "150",
       "index": "21",
       "contacts": "2",
-      "unused": "1",
-      "used": "1"
+      "unused": "0",
+      "used": "2"
     },
     {
       "component": "16AR",
@@ -313,8 +313,8 @@
       "resistance": "670",
       "index": "36",
       "contacts": "4",
-      "unused": "3",
-      "used": "1"
+      "unused": "1",
+      "used": "3"
     },
     {
       "component": "16BHR",
@@ -323,8 +323,8 @@
       "resistance": "150",
       "index": "23",
       "contacts": "2",
-      "unused": "1",
-      "used": "1"
+      "unused": "0",
+      "used": "2"
     },
     {
       "component": "16COSPR",
@@ -8644,7 +8644,7 @@
     },
     {
       "fromSubnet": "Case C",
-      "from": "CASEC-LTG T4",
+      "from": "CASEC-LTG T5",
       "toSubnet": "Sim",
       "to": "SIM-1TMGE +"
     },
@@ -8698,7 +8698,7 @@
     },
     {
       "fromSubnet": "Case C",
-      "from": "CASEC-LTG T5",
+      "from": "CASEC-LTG T4",
       "toSubnet": "Sim",
       "to": "SIM-1CRGE +"
     },
