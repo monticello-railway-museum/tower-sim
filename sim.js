@@ -278,7 +278,8 @@ class SimSemaphore extends Component {
         this.angle = 0;
         this.travelTime = 10;
         this.p0Cutoff = 5;
-        this.p4590Cutoff = 35;
+        this.p4590Cutoff = 25;
+        this.p90Cutoff = 80;
         this.target = 0;
         this.lastUpdate = 0;
     }
@@ -289,10 +290,10 @@ class SimSemaphore extends Component {
             visit(this.terminals['M45']);
             visit(this.terminals['M90']);
         }
-        if (terminal.match(/^P/)) {
-            visit(this.terminals['PCOM']);
-            visit(this.terminals['P0']);
-            visit(this.terminals['P4590']);
+        let match;
+        if (match = terminal.match(/^(?:N-)?(P.*)/)) {
+            visit(this.terminals[match[1]]);
+            visit(this.terminals[`N-${match[1]}`]);
         }
     }
 
@@ -312,9 +313,11 @@ class SimSemaphore extends Component {
             this.resistor(this.terminals['MCOM'], mTerm, 100);
 
         if (this.angle < this.p0Cutoff)
-            this.resistor(this.terminals['PCOM'], this.terminals['P0'], closed);
+            this.resistor(this.terminals['N-P0'], this.terminals['P0'], closed);
         if (this.angle > this.p4590Cutoff)
-            this.resistor(this.terminals['PCOM'], this.terminals['P4590'], closed);
+            this.resistor(this.terminals['N-P4590'], this.terminals['P4590'], closed);
+        if (this.angle > this.p90Cutoff)
+            this.resistor(this.terminals['N-P90'], this.terminals['P90'], closed);
         this.lastUpdate = time;
     }
 

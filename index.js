@@ -549,9 +549,9 @@ class Top extends React.Component {
 
         {
             let state = 'BAD ASPECT';
-            const d1 = sim.components['Case A/CASEA'].terminals['T69'].voltage() > 8;
-            const d2 = sim.components['Case A/CASEA'].terminals['T70'].voltage() > 8;
-            const d3 = sim.components['Case A/CASEA'].terminals['T71'].voltage() > 8;
+            const d1 = sim.components['Case A/CASEA'].terminals['T75'].voltage() > 8;
+            const d2 = sim.components['Case A/CASEA'].terminals['T76'].voltage() > 8;
+            const d3 = sim.components['Case A/CASEA'].terminals['T77'].voltage() > 8;
             if (!d1 && !d2 && !d3)
                 state = 'Off';
             if (d1 && d2 && !d3)
@@ -562,7 +562,7 @@ class Top extends React.Component {
                 state = 'Approach Diverging';
             if (!d1 && d2 && d3)
                 state = 'Advance Approach';
-            if (d1 && !d2 && d3)
+            if (d1 && d2 && d3)
                 state = 'Clear';
             updateSignalState('16d', state);
         }
