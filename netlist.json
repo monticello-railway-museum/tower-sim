@@ -457,7 +457,7 @@
       "subnet": "Case B",
       "type": "relay",
       "resistance": "670",
-      "index": "2",
+      "index": "21",
       "contacts": "4",
       "unused": "1",
       "used": "3"
@@ -467,7 +467,7 @@
       "subnet": "Case B",
       "type": "relay",
       "resistance": "670",
-      "index": "4",
+      "index": "23",
       "contacts": "4",
       "unused": "1",
       "used": "3"
@@ -477,7 +477,7 @@
       "subnet": "Case B",
       "type": "relay",
       "resistance": "670",
-      "index": "3",
+      "index": "22",
       "contacts": "4",
       "unused": "1",
       "used": "3"
@@ -494,7 +494,7 @@
       "subnet": "Case B",
       "type": "relay",
       "resistance": "670",
-      "index": "5",
+      "index": "31",
       "contacts": "4",
       "unused": "0",
       "used": "4"
@@ -504,7 +504,7 @@
       "subnet": "Case B",
       "type": "relay",
       "resistance": "670",
-      "index": "7",
+      "index": "33",
       "contacts": "4",
       "unused": "0",
       "used": "4"
@@ -522,7 +522,7 @@
       "subnet": "Case B",
       "type": "relay",
       "resistance": "670",
-      "index": "6",
+      "index": "32",
       "contacts": "4",
       "unused": "0",
       "used": "4"
@@ -540,7 +540,7 @@
       "subnet": "Case B",
       "type": "relay",
       "resistance": "670",
-      "index": "1",
+      "index": "13",
       "contacts": "4",
       "unused": "1",
       "used": "3"
@@ -621,6 +621,7 @@
       "subnet": "Case C",
       "type": "relay",
       "resistance": "670",
+      "index": "23",
       "contacts": "4",
       "unused": "0",
       "used": "4"
@@ -640,6 +641,7 @@
       "subtype": "polar",
       "resistance": "250",
       "config": "{\"retainedNeutral\": true}",
+      "index": "24",
       "contacts": "4",
       "unused": "0",
       "used": "4"
@@ -694,6 +696,7 @@
       "subnet": "Case C",
       "type": "relay",
       "resistance": "4",
+      "index": "31",
       "contacts": "4",
       "unused": "2",
       "used": "2"
@@ -703,6 +706,7 @@
       "subnet": "Case C",
       "type": "relay",
       "resistance": "670",
+      "index": "12",
       "contacts": "4",
       "unused": "2",
       "used": "2"
@@ -713,6 +717,7 @@
       "type": "relay",
       "subtype": "biased neutral",
       "resistance": "300",
+      "index": "21",
       "contacts": "4",
       "unused": "0",
       "used": "4"
@@ -722,6 +727,7 @@
       "subnet": "Case C",
       "type": "relay",
       "resistance": "670",
+      "index": "13",
       "contacts": "4",
       "unused": "2",
       "used": "2"
@@ -732,6 +738,7 @@
       "type": "relay",
       "subtype": "biased neutral",
       "resistance": "300",
+      "index": "22",
       "contacts": "4",
       "unused": "2",
       "used": "2"
@@ -755,6 +762,7 @@
       "subnet": "Case C",
       "type": "relay",
       "resistance": "670",
+      "index": "14",
       "contacts": "4",
       "unused": "1",
       "used": "3"
@@ -6900,7 +6908,7 @@
     },
     {
       "signal": "1TMG",
-      "from": "CASEC-LTG T4",
+      "from": "CASEC-LTG T5",
       "to": "6NWPR 3H"
     },
     {
@@ -7064,12 +7072,14 @@
       "to": "1GE RESISTOR -"
     },
     {
+      "signal": "1RHDG",
       "from": "1COR 1B",
       "to": "1HDPR 1H"
     },
     {
+      "signal": "1CRG",
       "from": "1COR 1F",
-      "to": "CASEC-LTG T5"
+      "to": "CASEC-LTG T4"
     },
     {
       "signal": "**STRAP**",
@@ -7087,10 +7097,12 @@
       "to": "1COR 2F"
     },
     {
+      "signal": "1CO",
       "from": "CASEC T14",
       "to": "1COR COIL+"
     },
     {
+      "signal": "N-1CO",
       "from": "N10-TWR",
       "to": "1COR COIL-"
     },
@@ -7100,10 +7112,12 @@
       "to": "1HDPR 1P"
     },
     {
+      "signal": "1HDGPR-1",
       "from": "1HDPR 3F",
       "to": "1COR 3H"
     },
     {
+      "signal": "N-1HDGPR-1",
       "from": "1HDPR 4F",
       "to": "1COR 4H"
     }
