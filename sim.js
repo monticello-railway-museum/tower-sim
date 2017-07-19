@@ -552,7 +552,23 @@ class Relay extends Component {
     }
 }
 
+class Bell extends Relay {
+    constructor(props) {
+        super(props);
+        this.hasRung = false;
+        this.pickupTime = 0.05;
+    }
+
+    postSolve(time) {
+        super.postSolve(time);
+        if (this.lastState === 'down' && this.state === 'up')
+            this.hasRung = true;
+        this.lastState = this.state;
+    }
+}
+
 const componentTypeMap = {
+    'bell': Bell,
     'bus': Bus,
     'button': Switch,
     'fuse': Bus,

@@ -856,8 +856,18 @@
       "config": "{\"pickupTime\":2.3,\"dropTime\":1.3}",
       "index": "2",
       "contacts": "4",
-      "unused": "4",
-      "used": "0"
+      "unused": "2",
+      "used": "2"
+    },
+    {
+      "component": "1AKSR",
+      "subnet": "Tower",
+      "location": "rack",
+      "type": "relay",
+      "resistance": "500",
+      "contacts": "4",
+      "unused": "3",
+      "used": "1"
     },
     {
       "component": "1AR",
@@ -867,8 +877,8 @@
       "resistance": "500",
       "index": "10",
       "contacts": "6",
-      "unused": "5",
-      "used": "1"
+      "unused": "1",
+      "used": "5"
     },
     {
       "component": "1ATKE",
@@ -916,8 +926,8 @@
       "type": "relay",
       "resistance": "500",
       "contacts": "2",
-      "unused": "2",
-      "used": "0"
+      "unused": "-2",
+      "used": "4"
     },
     {
       "component": "1VGR",
@@ -927,8 +937,8 @@
       "resistance": "150",
       "index": "10",
       "contacts": "2",
-      "unused": "0",
-      "used": "2"
+      "unused": "-1",
+      "used": "3"
     },
     {
       "component": "2-3COPB",
@@ -946,8 +956,18 @@
       "resistance": "1000",
       "index": "1",
       "contacts": "4",
-      "unused": "4",
-      "used": "0"
+      "unused": "1",
+      "used": "3"
+    },
+    {
+      "component": "2AKSR",
+      "subnet": "Tower",
+      "location": "rack",
+      "type": "relay",
+      "resistance": "500",
+      "contacts": "4",
+      "unused": "3",
+      "used": "1"
     },
     {
       "component": "2ATKE",
@@ -974,8 +994,8 @@
       "type": "relay",
       "resistance": "500",
       "contacts": "4",
-      "unused": "3",
-      "used": "1"
+      "unused": "0",
+      "used": "4"
     },
     {
       "component": "2T TEST TERM",
@@ -1011,8 +1031,8 @@
       "resistance": "4",
       "index": "9",
       "contacts": "4",
-      "unused": "4",
-      "used": "0"
+      "unused": "0",
+      "used": "4"
     },
     {
       "component": "3GKE",
@@ -1040,8 +1060,8 @@
       "type": "relay",
       "resistance": "500",
       "contacts": "4",
-      "unused": "3",
-      "used": "1"
+      "unused": "0",
+      "used": "4"
     },
     {
       "component": "4-5ASR",
@@ -1051,8 +1071,8 @@
       "config": "{\"pickupTime\":2.3,\"dropTime\":1.3}",
       "index": "3",
       "contacts": "4",
-      "unused": "4",
-      "used": "0"
+      "unused": "2",
+      "used": "2"
     },
     {
       "component": "4GKE",
@@ -1070,8 +1090,8 @@
       "type": "relay",
       "resistance": "500",
       "contacts": "2",
-      "unused": "2",
-      "used": "0"
+      "unused": "-1",
+      "used": "3"
     },
     {
       "component": "5GE RESISTOR",
@@ -1098,8 +1118,8 @@
       "resistance": "1000",
       "index": "1",
       "contacts": "4",
-      "unused": "3",
-      "used": "1"
+      "unused": "0",
+      "used": "4"
     },
     {
       "component": "6LOSTER",
@@ -1109,8 +1129,8 @@
       "subtype": "time element",
       "resistance": "10",
       "config": "{\"pickupTime\":5}",
-      "unused": "0",
-      "used": "0"
+      "unused": "-1",
+      "used": "1"
     },
     {
       "component": "6NWPPR",
@@ -1121,8 +1141,8 @@
       "resistance": "300",
       "index": "5",
       "contacts": "4",
-      "unused": "2",
-      "used": "2"
+      "unused": "0",
+      "used": "4"
     },
     {
       "component": "6RWPPR",
@@ -1133,8 +1153,8 @@
       "resistance": "300",
       "index": "6",
       "contacts": "4",
-      "unused": "2",
-      "used": "2"
+      "unused": "0",
+      "used": "4"
     },
     {
       "component": "6T TEST TERM",
@@ -1167,8 +1187,8 @@
       "subnet": "Tower",
       "location": "lever top",
       "type": "time element",
-      "unused": "0",
-      "used": "0"
+      "unused": "-2",
+      "used": "2"
     },
     {
       "component": "6TKE",
@@ -1187,8 +1207,8 @@
       "resistance": "1000",
       "index": "3",
       "contacts": "4",
-      "unused": "3",
-      "used": "1"
+      "unused": "1",
+      "used": "3"
     },
     {
       "component": "6TPSR",
@@ -1198,8 +1218,8 @@
       "resistance": "500",
       "index": "4",
       "contacts": "6",
-      "unused": "4",
-      "used": "2"
+      "unused": "0",
+      "used": "6"
     },
     {
       "component": "6TR",
@@ -1209,8 +1229,8 @@
       "resistance": "4",
       "index": "8",
       "contacts": "4",
-      "unused": "4",
-      "used": "0"
+      "unused": "3",
+      "used": "1"
     },
     {
       "component": "6WCKE",
@@ -1226,8 +1246,8 @@
       "subnet": "Tower",
       "location": "lever top",
       "type": "time element",
-      "unused": "0",
-      "used": "0"
+      "unused": "-2",
+      "used": "2"
     },
     {
       "component": "9-10TKE",
@@ -1248,8 +1268,8 @@
       "config": "{\"pickupTime\":1.2}",
       "index": "7",
       "contacts": "4",
-      "unused": "4",
-      "used": "0"
+      "unused": "3",
+      "used": "1"
     },
     {
       "component": "9-10TPSR",
@@ -1259,8 +1279,8 @@
       "resistance": "350",
       "index": "5",
       "contacts": "6",
-      "unused": "5",
-      "used": "1"
+      "unused": "2",
+      "used": "4"
     },
     {
       "component": "9NWPR",
@@ -1270,8 +1290,8 @@
       "resistance": "500",
       "index": "1",
       "contacts": "4",
-      "unused": "3",
-      "used": "1"
+      "unused": "0",
+      "used": "4"
     },
     {
       "component": "9RWPR",
@@ -1281,8 +1301,8 @@
       "resistance": "500",
       "index": "2",
       "contacts": "4",
-      "unused": "2",
-      "used": "2"
+      "unused": "1",
+      "used": "3"
     },
     {
       "component": "9WCKE",
@@ -1301,8 +1321,8 @@
       "resistance": "500",
       "index": "3",
       "contacts": "4",
-      "unused": "2",
-      "used": "2"
+      "unused": "0",
+      "used": "4"
     },
     {
       "component": "10RWPR",
@@ -1312,8 +1332,8 @@
       "resistance": "500",
       "index": "4",
       "contacts": "4",
-      "unused": "2",
-      "used": "2"
+      "unused": "1",
+      "used": "3"
     },
     {
       "component": "10WCKE",
@@ -1333,8 +1353,8 @@
       "resistance": "300",
       "index": "7",
       "contacts": "4",
-      "unused": "2",
-      "used": "2"
+      "unused": "0",
+      "used": "4"
     },
     {
       "component": "12RWPPR",
@@ -1345,16 +1365,16 @@
       "resistance": "300",
       "index": "8",
       "contacts": "4",
-      "unused": "3",
-      "used": "1"
+      "unused": "0",
+      "used": "4"
     },
     {
       "component": "12TE",
       "subnet": "Tower",
       "location": "lever top",
       "type": "time element",
-      "unused": "0",
-      "used": "0"
+      "unused": "-2",
+      "used": "2"
     },
     {
       "component": "12TKE",
@@ -1373,8 +1393,8 @@
       "resistance": "670",
       "index": "6",
       "contacts": "4",
-      "unused": "4",
-      "used": "0"
+      "unused": "3",
+      "used": "1"
     },
     {
       "component": "12TPSR",
@@ -1384,8 +1404,8 @@
       "resistance": "500",
       "index": "7",
       "contacts": "6",
-      "unused": "4",
-      "used": "2"
+      "unused": "0",
+      "used": "6"
     },
     {
       "component": "12WCKE",
@@ -1404,8 +1424,8 @@
       "resistance": "250",
       "index": "8",
       "contacts": "10",
-      "unused": "8",
-      "used": "2"
+      "unused": "0",
+      "used": "10"
     },
     {
       "component": "14-15-16ASR",
@@ -1415,8 +1435,8 @@
       "config": "{\"pickupTime\":2.3,\"dropTime\":1.3}",
       "index": "6",
       "contacts": "4",
-      "unused": "4",
-      "used": "0"
+      "unused": "2",
+      "used": "2"
     },
     {
       "component": "14-16COPB",
@@ -1434,8 +1454,18 @@
       "resistance": "1000",
       "index": "2",
       "contacts": "4",
-      "unused": "4",
-      "used": "0"
+      "unused": "0",
+      "used": "4"
+    },
+    {
+      "component": "14AKSR",
+      "subnet": "Tower",
+      "location": "rack",
+      "type": "relay",
+      "resistance": "500",
+      "contacts": "4",
+      "unused": "3",
+      "used": "1"
     },
     {
       "component": "14AR",
@@ -1445,8 +1475,8 @@
       "resistance": "1000",
       "index": "9",
       "contacts": "4",
-      "unused": "4",
-      "used": "0"
+      "unused": "1",
+      "used": "3"
     },
     {
       "component": "14AT TEST TERM",
@@ -1501,8 +1531,8 @@
       "resistance": "500",
       "index": "4",
       "contacts": "4",
-      "unused": "4",
-      "used": "0"
+      "unused": "2",
+      "used": "2"
     },
     {
       "component": "14ATR",
@@ -1512,8 +1542,8 @@
       "resistance": "4",
       "index": "2",
       "contacts": "4",
-      "unused": "3",
-      "used": "1"
+      "unused": "2",
+      "used": "2"
     },
     {
       "component": "14BT TEST TERM",
@@ -1568,8 +1598,8 @@
       "resistance": "500",
       "index": "5",
       "contacts": "4",
-      "unused": "3",
-      "used": "1"
+      "unused": "2",
+      "used": "2"
     },
     {
       "component": "14BTR",
@@ -1579,8 +1609,8 @@
       "resistance": "2",
       "index": "3",
       "contacts": "4",
-      "unused": "3",
-      "used": "1"
+      "unused": "2",
+      "used": "2"
     },
     {
       "component": "14GKE",
@@ -1606,8 +1636,8 @@
       "location": "rack",
       "type": "relay",
       "resistance": "500",
-      "unused": "-1",
-      "used": "1"
+      "unused": "-4",
+      "used": "4"
     },
     {
       "component": "15DR",
@@ -1615,8 +1645,8 @@
       "location": "rack",
       "type": "relay",
       "resistance": "500",
-      "unused": "0",
-      "used": "0"
+      "unused": "-2",
+      "used": "2"
     },
     {
       "component": "15GKE",
@@ -1642,8 +1672,18 @@
       "location": "rack",
       "type": "relay",
       "resistance": "500",
-      "unused": "0",
-      "used": "0"
+      "unused": "-3",
+      "used": "3"
+    },
+    {
+      "component": "16AKSR",
+      "subnet": "Tower",
+      "location": "rack",
+      "type": "relay",
+      "resistance": "500",
+      "contacts": "4",
+      "unused": "3",
+      "used": "1"
     },
     {
       "component": "16APR",
@@ -1653,8 +1693,8 @@
       "resistance": "1000",
       "index": "1",
       "contacts": "6",
-      "unused": "6",
-      "used": "0"
+      "unused": "1",
+      "used": "5"
     },
     {
       "component": "16ATKE",
@@ -1680,8 +1720,8 @@
       "location": "rack",
       "type": "relay",
       "resistance": "500",
-      "unused": "-1",
-      "used": "1"
+      "unused": "-5",
+      "used": "5"
     },
     {
       "component": "16VGR",
@@ -1691,8 +1731,8 @@
       "resistance": "150",
       "index": "9",
       "contacts": "2",
-      "unused": "2",
-      "used": "0"
+      "unused": "0",
+      "used": "2"
     },
     {
       "component": "22HDGPR",
@@ -1702,8 +1742,8 @@
       "resistance": "1500",
       "index": "9",
       "contacts": "4",
-      "unused": "4",
-      "used": "0"
+      "unused": "2",
+      "used": "2"
     },
     {
       "component": "23HDGPR",
@@ -1819,8 +1859,8 @@
       "subnet": "Tower",
       "location": "lever top",
       "type": "button",
-      "unused": "0",
-      "used": "0"
+      "unused": "-1",
+      "used": "1"
     },
     {
       "component": "FLOOR PB 8",
@@ -1835,16 +1875,16 @@
       "subnet": "Tower",
       "location": "lever top",
       "type": "button",
-      "unused": "0",
-      "used": "0"
+      "unused": "-1",
+      "used": "1"
     },
     {
       "component": "FLOOR PB 13",
       "subnet": "Tower",
       "location": "lever top",
       "type": "button",
-      "unused": "0",
-      "used": "0"
+      "unused": "-1",
+      "used": "1"
     },
     {
       "component": "GRP-A",
@@ -2163,8 +2203,8 @@
       "subnet": "Tower",
       "location": "lever top",
       "type": "button",
-      "unused": "0",
-      "used": "0"
+      "unused": "-1",
+      "used": "1"
     },
     {
       "component": "NX10-TWR",
@@ -2179,16 +2219,16 @@
       "subnet": "Tower",
       "type": "relay",
       "resistance": "500",
-      "unused": "-1",
-      "used": "1"
+      "unused": "-2",
+      "used": "2"
     },
     {
       "component": "SB PB",
       "subnet": "Tower",
       "location": "lever top",
       "type": "button",
-      "unused": "0",
-      "used": "0"
+      "unused": "-1",
+      "used": "1"
     },
     {
       "component": "TWR-C4",
@@ -2220,202 +2260,169 @@
   ],
   "towerWires": [
     {
-      "signal": "B10-TWR",
-      "from": "B10-TWR S3 T10",
-      "to": "1AR 5H",
-      "page": "T2"
+      "signal": "1AKS-A1",
+      "from": "B10-TWR S4 T?",
+      "to": "6TPSR 5H"
     },
     {
-      "signal": "N10-TWR",
-      "from": "N10-TWR S3 T3",
-      "to": "1AR 6H",
-      "page": "T2"
-    },
-    {
-      "signal": "**STRAP**",
-      "from": "1AR 5F",
-      "to": "1AR 6B",
-      "page": "T2"
-    },
-    {
-      "signal": "**STRAP**",
-      "from": "1AR 5B",
-      "to": "1AR 6F",
-      "page": "T2"
-    },
-    {
-      "signal": "AX-6",
-      "from": "1AR 5F",
-      "to": "2TR 3H",
-      "page": "T2"
-    },
-    {
-      "signal": "N-AX-6",
-      "from": "1AR 5B",
-      "to": "2TR 4H",
-      "page": "T2"
-    },
-    {
-      "signal": "**STRAP**",
-      "from": "2TR 3F",
-      "to": "2TR 4B",
-      "page": "T2"
-    },
-    {
-      "signal": "**STRAP**",
-      "from": "2TR 3B",
-      "to": "2TR 4F",
-      "page": "T2"
-    },
-    {
-      "signal": "AX-5",
-      "from": "2TR 3F",
-      "to": "6TPSR 5H",
-      "page": "T2"
-    },
-    {
-      "signal": "N-AX-5",
-      "from": "2TR 3B",
-      "to": "6TPSR 6H",
-      "page": "T2"
-    },
-    {
-      "signal": "**STRAP**",
-      "from": "6TPSR 5F",
-      "to": "6TPSR 6B",
-      "page": "T2"
-    },
-    {
-      "signal": "**STRAP**",
+      "signal": "1AKS-A",
       "from": "6TPSR 5B",
-      "to": "6TPSR 6F",
-      "page": "T2"
+      "to": "1AR 5B"
     },
     {
-      "signal": "AX-4",
-      "from": "6TPSR 5F",
-      "to": "9-10TPSR 5H",
-      "page": "T2"
+      "signal": "1AKS-1",
+      "from": "B10-TWR S3 T?",
+      "to": "1AR 5H"
     },
     {
-      "signal": "N-AX-4",
-      "from": "6TPSR 5B",
-      "to": "9-10TPSR 6H",
-      "page": "T2"
+      "signal": "1AKS",
+      "from": "1AR 5B",
+      "to": "1AKSR COIL+"
     },
     {
-      "signal": "**STRAP**",
-      "from": "9-10TPSR 5F",
-      "to": "9-10TPSR 6B",
-      "page": "T2"
+      "signal": "N-1AKS",
+      "from": "N10-TWR RACK T?",
+      "to": "1AKSR COIL-"
     },
     {
-      "signal": "**STRAP**",
-      "from": "9-10TPSR 5B",
-      "to": "9-10TPSR 6F",
-      "page": "T2"
+      "signal": "1AX-1",
+      "from": "B10-TWR S3 T?",
+      "to": "1AR 6H"
+    },
+    {
+      "signal": "1AX",
+      "from": "1AR 6B",
+      "to": "1AKSR 1H"
+    },
+    {
+      "signal": "2AKS-A1",
+      "from": "B10-TWR S4 T?",
+      "to": "6TPSR 6H"
+    },
+    {
+      "signal": "2AKS-A",
+      "from": "6TPSR 6B",
+      "to": "2TR 3B"
+    },
+    {
+      "signal": "2AKS-1",
+      "from": "B10-TWR S3 T?",
+      "to": "2TR 3H"
+    },
+    {
+      "signal": "2AKS",
+      "from": "2TR 3B",
+      "to": "2AKSR COIL+"
+    },
+    {
+      "signal": "N-2AKS",
+      "from": "N10-TWR RACK T?",
+      "to": "2AKSR COIL-"
+    },
+    {
+      "signal": "2AX-1",
+      "from": "B10-TWR S3 T?",
+      "to": "2TR 4H"
+    },
+    {
+      "signal": "2AX",
+      "from": "2TR 4B",
+      "to": "2AKSR 1H"
+    },
+    {
+      "signal": "14AKS-A1",
+      "from": "B10-TWR S4 T?",
+      "to": "12TPSR 5H"
+    },
+    {
+      "signal": "14AKS-A",
+      "from": "12TPSR 5B",
+      "to": "14AR 3B"
+    },
+    {
+      "signal": "14AKS-1",
+      "from": "B10-TWR S4 T?",
+      "to": "14AR 3H"
+    },
+    {
+      "signal": "14AKS",
+      "from": "14AR 3B",
+      "to": "14AKSR COIL+"
+    },
+    {
+      "signal": "N-14AKS",
+      "from": "N10-TWR RACK T?",
+      "to": "14AKSR COIL-"
+    },
+    {
+      "signal": "14AX-1",
+      "from": "B10-TWR S4 T?",
+      "to": "14AR 4H"
+    },
+    {
+      "signal": "14AX",
+      "from": "14AR 4B",
+      "to": "14AKSR 1H"
+    },
+    {
+      "signal": "16AKS-A1",
+      "from": "B10-TWR S4 T?",
+      "to": "12TPSR 6H"
+    },
+    {
+      "signal": "16AKS-A",
+      "from": "12TPSR 6B",
+      "to": "16APR 5B"
+    },
+    {
+      "signal": "16AKS-1",
+      "from": "B10-TWR S3 T?",
+      "to": "16APR 5H"
+    },
+    {
+      "signal": "16AKS",
+      "from": "16APR 5B",
+      "to": "16AKSR COIL+"
+    },
+    {
+      "signal": "N-16AKS",
+      "from": "N10-TWR RACK T?",
+      "to": "16AKSR COIL-"
+    },
+    {
+      "signal": "16AX-1",
+      "from": "B10-TWR S3 T?",
+      "to": "16APR 6H"
+    },
+    {
+      "signal": "16AX",
+      "from": "16APR 6B",
+      "to": "16AKSR 1H"
     },
     {
       "signal": "AX-3",
-      "from": "9-10TPSR 5F",
-      "to": "12TPSR 5H",
-      "page": "T2"
-    },
-    {
-      "signal": "N-AX-3",
-      "from": "9-10TPSR 5B",
-      "to": "12TPSR 6H",
-      "page": "T2"
-    },
-    {
-      "signal": "**STRAP**",
-      "from": "12TPSR 5F",
-      "to": "12TPSR 6B",
-      "page": "T2"
-    },
-    {
-      "signal": "**STRAP**",
-      "from": "12TPSR 5B",
-      "to": "12TPSR 6F",
-      "page": "T2"
+      "from": "1AKSR 1B",
+      "to": "2AKSR 1B"
     },
     {
       "signal": "AX-2",
-      "from": "12TPSR 5F",
-      "to": "14AR 3H",
-      "page": "T2"
-    },
-    {
-      "signal": "N-AX-2",
-      "from": "12TPSR 5B",
-      "to": "14AR 4H",
-      "page": "T2"
-    },
-    {
-      "signal": "**STRAP**",
-      "from": "14AR 3F",
-      "to": "14AR 4B",
-      "page": "T2"
-    },
-    {
-      "signal": "**STRAP**",
-      "from": "14AR 3B",
-      "to": "14AR 4F",
-      "page": "T2"
+      "from": "2AKSR 1B",
+      "to": "14AKSR 1B"
     },
     {
       "signal": "AX-1",
-      "from": "14AR 3F",
-      "to": "16APR 5H",
-      "page": "T2"
-    },
-    {
-      "signal": "N-AX-1",
-      "from": "14AR 3B",
-      "to": "16APR 6H",
-      "page": "T2"
-    },
-    {
-      "signal": "**STRAP**",
-      "from": "16APR 5F",
-      "to": "16APR 6B",
-      "page": "T2"
-    },
-    {
-      "signal": "**STRAP**",
-      "from": "16APR 5B",
-      "to": "16APR 6F",
-      "page": "T2"
+      "from": "14AKSR 1B",
+      "to": "16AKSR 1B"
     },
     {
       "signal": "AX",
-      "from": "16APR 5F",
-      "to": "AXR COIL+",
-      "page": "T2"
+      "from": "16AKSR 1B",
+      "to": "BELL COIL+"
     },
     {
       "signal": "N-AX",
-      "from": "16APR 5B",
-      "to": "AXR COIL-",
-      "page": "T2"
-    },
-    {
-      "signal": "B10-TWR",
-      "from": "B10-TWR LVR T18",
-      "to": "AXR 1H",
-      "page": "T2"
-    },
-    {
-      "signal": "BELL",
-      "from": "AXR 1F",
-      "to": "BELL COIL+",
-      "page": "T2"
-    },
-    {
-      "signal": "N10-TWR",
       "from": "N10-TWR LVR T3",
-      "to": "BELL COIL-",
-      "page": "T2"
+      "to": "BELL COIL-"
     },
     {
       "signal": "2ATK",

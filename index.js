@@ -311,7 +311,7 @@ class Top extends React.Component {
         this.wireNames = Array.from(this.wires.keys())
             .sort(mangledCompare());
         this.relays = Array.from(sim.activeComponents)
-            .filter(c => c.type === 'relay')
+            .filter(c => c.type === 'relay' || c.type === 'bell')
             .sort(mangledCompare(x => x.name));
         this.lights = Array.from(sim.activeComponents)
             .filter(c => c.type === 'light')
@@ -361,6 +361,18 @@ class Top extends React.Component {
                 if (levers.states()[sw] == 'reverse' && sim.components[`Sim/SIM-${sw}SCC`].state < 8)
                     sim.components[`Sim/SIM-${sw}SCC`].state++;
             });
+        }
+        if (!this.state.noBell && sim.components['Tower/BELL'].hasRung && this.bell && this.cowbell) {
+            this.ringCount = this.ringCount || 1;
+            if (this.ringCount % 5 === 0 || this.state.moreCowbell) {
+                this.cowbell.currentTime = 0;
+                this.cowbell.play();
+            } else {
+                this.bell.currentTime = 0;
+                this.bell.play();
+            }
+            sim.components['Tower/BELL'].hasRung = false;
+            ++this.ringCount;
         }
         this.setState({ time, sim, locks });
         this.tid = setTimeout(() => this.sim(), 100);
@@ -653,6 +665,13 @@ class Top extends React.Component {
                     <Checkbox label="Automatic switch tending"
                               checked={this.state.autoSwitches}
                               onChange={v => this.state.autoSwitches = v}/>
+                    <Checkbox label="No bell"
+                              checked={this.state.noBell}
+                              onChange={v => this.state.noBell = v}/>
+                    {this.ringCount > 10 &&
+                      <Checkbox label="More cowbell"
+                                checked={this.state.moreCowbell}
+                                onChange={v => this.state.moreCowbell = v}/>}
                   </div>
                   <div>
                     <Checkbox label="1 locks 16, not 12"
@@ -690,6 +709,9 @@ class Top extends React.Component {
               <div style={{columnCount: 4}}>
                 {this.wireNames.filter(wireFilterFn).map(n => <Wire name={n} wire={this.wires.get(n)} inspect={this.inspect}/>)}
               </div>
+
+              <audio ref={x => this.bell = x} src="bell.mp3"/>
+              <audio ref={x => this.cowbell = x} src="cowbell.mp3"/>
             </div>
         );
     }
