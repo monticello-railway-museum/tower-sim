@@ -4407,7 +4407,7 @@
     },
     {
       "signal": "15D-1",
-      "from": "LVR-15 T4",
+      "from": "LVR-15 T1",
       "to": "16APR 4H",
       "page": "T14",
       "notes": "H-NETWORK 15D-1"
@@ -4426,10 +4426,9 @@
     },
     {
       "signal": "15HD-2",
-      "from": "LVR-15 T1",
+      "from": "16APR 4H",
       "to": "15DR 1H",
-      "page": "T14",
-      "notes": "H-NETWORK 15HD-2"
+      "page": "T14"
     },
     {
       "signal": "N10-TWR",
@@ -4906,14 +4905,8 @@
       "notes": "rework"
     },
     {
-      "signal": "**STRAP**",
-      "from": "LVR-15 T2",
-      "to": "LVR-15 T3",
-      "page": "T16"
-    },
-    {
       "signal": "H-12R-15",
-      "from": "LVR-15 T3",
+      "from": "LVR-15 T2",
       "to": "12RWPPR 3F",
       "page": "T16"
     },
@@ -7892,7 +7885,6 @@
     },
     {
       "lever": "LVR-15",
-      "state": "reverse",
       "from": "T3",
       "to": "T4"
     },
