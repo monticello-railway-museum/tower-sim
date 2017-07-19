@@ -67,6 +67,7 @@ class Component {
     constructor(props) {
         Object.assign(this, props);
         this.terminals = { };
+        this.wireTerminals = { };
         this.schedule = null;
     }
 
@@ -236,7 +237,7 @@ class Switch extends Component {
 
     walk(visit, terminal) {
         const match = terminal.match(/^\d+/);
-        console.log('switch walk', this.name, terminal, match);
+        //console.log('switch walk', this.name, terminal, match);
         if (match) {
             visit(this.terminals[`${match[0]}H`]);
             visit(this.terminals[`${match[0]}F`]);
@@ -458,14 +459,14 @@ class Relay extends Component {
         if (terminal === 'COIL-')
             visit(this.terminals['COIL+']);
         const match = terminal.match(/^(\d+)[HFB]/);
-        console.log('relay walk', this.subnet, this.name, terminal, match);
+        //console.log('relay walk', this.subnet, this.name, terminal, match);
         if (match) {
             visit(this.terminals[`${match[1]}H`]);
             visit(this.terminals[`${match[1]}F`]);
             visit(this.terminals[`${match[1]}B`]);
         }
         const polarMatch = terminal.match(/^(\d+)[P+-]/);
-        console.log('relay walk', terminal, match);
+        //console.log('relay walk', terminal, match);
         if (polarMatch) {
             visit(this.terminals[`${polarMatch[1]}P`]);
             visit(this.terminals[`${polarMatch[1]}+`]);
@@ -594,7 +595,9 @@ class Sim {
 
         this.psus = [ ];
 
-        const { components, circuits, psus, visited, activeComponents } = this;
+        this.wires = [ ];
+
+        const { components, circuits, psus, visited, activeComponents, wires } = this;
 
         function spawnComponent(comp) {
             const type = componentTypeMap[comp.type] || Component;
@@ -606,7 +609,6 @@ class Sim {
                 location: comp.location,
                 index: comp.index,
                 resistance: comp.resistance ? parseFloat(comp.resistance) : undefined,
-                terminals: { },
             }, comp.config ? JSON.parse(comp.config) : { });
             components[`${comp.subnet}/${comp.component}`] = new type(config);
         }
@@ -657,6 +659,15 @@ class Sim {
             fromComp.terminals[fromTerm].join(toComp.terminals[toTerm]);
             const node = fromComp.terminals[fromTerm];
             node.addName(wire.signal);
+
+            if (!fromComp.wireTerminals[fromTerm])
+                fromComp.wireTerminals[fromTerm] = [];
+            if (!toComp.wireTerminals[toTerm])
+                toComp.wireTerminals[toTerm] = [];
+            const w = { name: wire.signal, fromSubnet, fromComp, fromTerm, toSubnet, toComp, toTerm, page: wire.page };
+            wires.push(w);
+            fromComp.wireTerminals[fromTerm].push({ wire: w, toSubnet, toComp, toTerm });
+            toComp.wireTerminals[toTerm].push({ wire: w, toSubnet: fromSubnet, toComp: fromComp, toTerm: fromTerm });
             // node.addName(`<${fromComp.name} ${fromTerm}>`);
             // node.addName(`<${toComp.name} ${toTerm}>`);
         }
@@ -723,7 +734,7 @@ class Sim {
                     visited.add(node.shared);
                     node.setCircuit(circuit);
                     for (let { payload: [ comp, term ] } of node.shared.members) {
-                        console.log(comp.subnet, comp.name, term);
+                        //console.log(comp.subnet, comp.name, term);
                         activeComponents.add(comp);
                         comp.walk(visit, term);
                     }

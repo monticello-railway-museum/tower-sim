@@ -3351,48 +3351,48 @@
       "page": "T8"
     },
     {
-      "signal": "1HD",
+      "signal": "1HD-6N",
       "from": "1HDR COIL+",
       "to": "2TR 2F",
       "page": "T8"
     },
     {
-      "signal": "1HD-A",
+      "signal": "1HD-6R",
       "from": "1HDR COIL+",
       "to": "15HDGPR 1F",
       "page": "T8"
     },
     {
-      "signal": "1HD-1",
+      "signal": "1HD-6N-1",
       "from": "LVR-1 T4",
       "to": "2TR 2H",
       "page": "T8",
       "notes": "H-NETWORK 1HD-1"
     },
     {
-      "signal": "1HD-A1",
+      "signal": "1HD-6R-1",
       "from": "15HDGPR 1H",
       "to": "10NWPR 4F",
       "page": "T8"
     },
     {
+      "signal": "1HD-6R-2",
       "from": "10NWPR 4H",
       "to": "9NWPR 4F"
     },
     {
+      "signal": "1CO-6R-1",
       "from": "9NWPR 4B",
-      "to": "1CO"
+      "to": "10NWPR 4B"
     },
     {
+      "signal": "1CO-6R",
       "from": "10NWPR 4B",
-      "to": "1CO"
+      "to": "2TR 2B"
     },
     {
+      "signal": "1CO",
       "from": "2TR 2B",
-      "to": "1CO"
-    },
-    {
-      "from": "1CO",
       "to": "GRP-G T2"
     },
     {
