@@ -192,12 +192,19 @@ class Inspector extends React.Component {
                        .map(t => {
                            const node = comp.terminals[t].shared;
                            return (
-                               <InspectLink tag="tr" inspect={inspect} target={node}
-                                            style={{color: node.circuit && node.circuit.color}}>
+                               <tr style={{color: node.circuit && node.circuit.color}}>
                                  <td><b>{t}</b>:</td>
                                  <td style={{textAlign: 'right'}}><b>{node.circuit ? num(node.circuit.nodeVoltage(node)) : 'unsimulated'}</b></td>
-                                 <td>Node <NodeName node={node}/></td>
-                               </InspectLink>
+                                 <td>
+                                   {comp.wireTerminals[t].map(w =>
+                                      <InspectLink tag="div" inspect={inspect} target={w.toComp}>
+                                        Wire <b>{w.wire.name}</b> to <b>{w.toComp.name} {w.toTerm}</b>
+                                      </InspectLink>)}
+                                   <InspectLink tag="div" inspect={inspect} target={node}>
+                                     Node <NodeName node={node}/>
+                                   </InspectLink>
+                                 </td>
+                               </tr>
                            );
                        })}
                   </table>
@@ -211,7 +218,8 @@ class InspectLink extends React.Component {
     render() {
         const { inspect, target, children, style, tag: Tag = 'span' } = this.props;
         return (
-            <Tag style={Object.assign({cursor: 'pointer'}, style)} onClick={() => inspect(target)}>{children}</Tag>
+            <Tag style={Object.assign({cursor: 'pointer'}, style)}
+                 onClick={e => { inspect(target); e.stopPropagation(); }}>{children}</Tag>
         );
     }
 }
