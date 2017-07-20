@@ -16,11 +16,6 @@ class Node {
     addName(name) {
         if (!name)
             return;
-        let m;
-        if (m = name.match(/(.*) \*$/)) {
-            name = m[1];
-            this.shared.primaryName = name;
-        }
         this.shared.names.add(name);
     }
 
@@ -658,6 +653,11 @@ class Sim {
                 toComp.terminals[toTerm] = new Node([toComp, toTerm]);
             fromComp.terminals[fromTerm].join(toComp.terminals[toTerm]);
             const node = fromComp.terminals[fromTerm];
+            let m;
+            if (wire.signal && (m = wire.signal.match(/(.*) \*$/))) {
+                wire.signal = m[1];
+                node.shared.primaryName = wire.signal;
+            }
             node.addName(wire.signal);
 
             if (!fromComp.wireTerminals[fromTerm])
