@@ -111,10 +111,12 @@ class Switch extends React.Component {
 
 class NodeName extends React.Component {
     render() {
-        const { node } = this.props;
+        const { node, max } = this.props;
         let names = Array.from(node.names).sort(mangledCompare());
         const primaryName = node.primaryName || names[0];
         names = names.filter(x => x != primaryName);
+        if (max && names.length > max)
+            names = [ ...names.slice(0, max), '...' ];
         return (
             <span><b>{primaryName}</b>{names.length ? <span> ({names.join(', ')})</span> : null}</span>
         );
@@ -201,7 +203,7 @@ class Inspector extends React.Component {
                                         Wire <b>{w.wire.name}</b> to <b>{w.toComp.name} {w.toTerm}</b>
                                       </InspectLink>)}
                                    <InspectLink tag="div" inspect={inspect} target={node}>
-                                     Node <NodeName node={node}/>
+                                     Node <NodeName node={node} max={3}/>
                                    </InspectLink>
                                  </td>
                                </tr>
