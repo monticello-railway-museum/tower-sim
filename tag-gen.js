@@ -11,8 +11,8 @@ const margin = 0.5 * 72;
 const paperWidth = 8.5 * 72;
 const paperHeight = 11 * 72;
 
-const tagHeight = 0.63 * 72;
-const tagWidth = 1.22 * 72;
+const tagHeight = 0.675 * 72;
+const tagWidth = 1.25 * 72;
 const tagMargin = 0.05 * 72;
 
 //const tagHeight = 1.00;
@@ -64,7 +64,7 @@ pdf.addPage();
 function inTag(c, r, fn) {
     pdf.save();
     pdf.translate(x0 + c * tagWidth, y0 + r * tagHeight);
-    if (c % 2 === 0)
+    if (c % 2 === 1)
         pdf.rotate(180, { origin: [ tagWidth / 2, tagHeight / 2 ] });
     fn();
     pdf.restore();
@@ -117,6 +117,10 @@ for (let wire of sim.wires) {
 
         [0, 2].forEach(c => {
             inTag(c, r, () => {
+                pdf.font('Helvetica');
+                pdf.fontSize(4);
+                pdf.text(`Wire`, tagMargin, tagMargin);
+
                 pdf.font('Helvetica-Bold');
                 pdf.fontSize(10);
 
@@ -139,22 +143,21 @@ for (let wire of sim.wires) {
             });
         });
 
-        inTag(1, r, () => {
-            pdf.font('Helvetica-Bold');
-            pdf.fontSize(10);
-            center(`${wire.fromComp.name} ${fromTerm}`, xc, yc);
+        function doTerm(comp, term, otherComp, otherTerm) {
             pdf.font('Helvetica');
             pdf.fontSize(4);
-            pdf.text(`${wire.toComp.name} ${toTerm}`, tagMargin, tagHeight - tagMargin - pdf.currentLineHeight());
-        });
-        inTag(3, r, () => {
+            pdf.text(`Terminal`, tagMargin, tagMargin);
+
             pdf.font('Helvetica-Bold');
             pdf.fontSize(10);
-            center(`${wire.toComp.name} ${toTerm}`, xc, yc);
+            center(`${comp.name} ${term}`, xc, yc);
             pdf.font('Helvetica');
             pdf.fontSize(4);
-            pdf.text(`${wire.fromComp.name} ${fromTerm}`, tagMargin, tagHeight - tagMargin - pdf.currentLineHeight());
-        });
+            pdf.text(`This:  ${otherComp.name} ${otherTerm}`, tagMargin, tagHeight - tagMargin - pdf.currentLineHeight());
+        }
+
+        inTag(1, r, () => doTerm(wire.fromComp, fromTerm, wire.toComp, toTerm));
+        inTag(3, r, () => doTerm(wire.toComp, toTerm, wire.fromComp, fromTerm));
 
         if (++r >= tagsPerPage) {
             pdf.addPage();

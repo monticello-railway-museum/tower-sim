@@ -12,25 +12,25 @@
       "used": "1"
     },
     {
+      "component": "9-10T RESISTOR 1",
+      "subnet": "Case A",
+      "type": "resistor",
+      "resistance": "5",
+      "unused": "0",
+      "used": "0"
+    },
+    {
+      "component": "9-10T RESISTOR 2",
+      "subnet": "Case A",
+      "type": "resistor",
+      "resistance": "5",
+      "unused": "0",
+      "used": "0"
+    },
+    {
       "component": "9-10T TEST TERM",
       "subnet": "Case A",
       "type": "test terminal",
-      "unused": "0",
-      "used": "0"
-    },
-    {
-      "component": "9-10T TRK RESISTOR 1",
-      "subnet": "Case A",
-      "type": "resistor",
-      "resistance": "5",
-      "unused": "0",
-      "used": "0"
-    },
-    {
-      "component": "9-10T TRK RESISTOR 2",
-      "subnet": "Case A",
-      "type": "resistor",
-      "resistance": "5",
       "unused": "0",
       "used": "0"
     },
@@ -130,14 +130,7 @@
       "used": "0"
     },
     {
-      "component": "12T TEST TERM",
-      "subnet": "Case A",
-      "type": "test terminal",
-      "unused": "0",
-      "used": "0"
-    },
-    {
-      "component": "12T TRK RESISTOR 1",
+      "component": "12T RESISTOR 1",
       "subnet": "Case A",
       "type": "resistor",
       "resistance": "5",
@@ -145,11 +138,18 @@
       "used": "0"
     },
     {
-      "component": "12T TRK RESISTOR 2",
+      "component": "12T RESISTOR 2",
       "subnet": "Case A",
       "type": "resistor",
       "resistance": "5",
       "index": "3",
+      "unused": "0",
+      "used": "0"
+    },
+    {
+      "component": "12T TEST TERM",
+      "subnet": "Case A",
+      "type": "test terminal",
       "unused": "0",
       "used": "0"
     },
@@ -473,7 +473,7 @@
       "used": "3"
     },
     {
-      "component": "2T TRK ARRESTOR",
+      "component": "2T ARRESTOR",
       "subnet": "Case B",
       "type": "arrestor",
       "unused": "0",
@@ -645,7 +645,7 @@
       "used": "0"
     },
     {
-      "component": "1T RESISTANCE UNIT 1",
+      "component": "1T RESISTOR 1",
       "subnet": "Case C",
       "type": "resistor",
       "resistance": "5",
@@ -653,7 +653,7 @@
       "used": "0"
     },
     {
-      "component": "1T RESISTANCE UNIT 2",
+      "component": "1T RESISTOR 2",
       "subnet": "Case C",
       "type": "resistor",
       "resistance": "5",
@@ -998,28 +998,28 @@
       "used": "4"
     },
     {
+      "component": "2T RESISTOR 1",
+      "subnet": "Tower",
+      "location": "shelf 3",
+      "type": "resistor",
+      "resistance": "5",
+      "unused": "0",
+      "used": "0"
+    },
+    {
+      "component": "2T RESISTOR 2",
+      "subnet": "Tower",
+      "location": "shelf 3",
+      "type": "resistor",
+      "resistance": "5",
+      "unused": "0",
+      "used": "0"
+    },
+    {
       "component": "2T TEST TERM",
       "subnet": "Tower",
       "location": "shelf 3",
       "type": "test terminal",
-      "unused": "0",
-      "used": "0"
-    },
-    {
-      "component": "2T TRK RESISTOR 1",
-      "subnet": "Tower",
-      "location": "shelf 3",
-      "type": "resistor",
-      "resistance": "5",
-      "unused": "0",
-      "used": "0"
-    },
-    {
-      "component": "2T TRK RESISTOR 2",
-      "subnet": "Tower",
-      "location": "shelf 3",
-      "type": "resistor",
-      "resistance": "5",
       "unused": "0",
       "used": "0"
     },
@@ -1157,28 +1157,28 @@
       "used": "4"
     },
     {
+      "component": "6T RESISTOR 1",
+      "subnet": "Tower",
+      "location": "shelf 3",
+      "type": "resistor",
+      "resistance": "5",
+      "unused": "0",
+      "used": "0"
+    },
+    {
+      "component": "6T RESISTOR 2",
+      "subnet": "Tower",
+      "location": "shelf 3",
+      "type": "resistor",
+      "resistance": "5",
+      "unused": "0",
+      "used": "0"
+    },
+    {
       "component": "6T TEST TERM",
       "subnet": "Tower",
       "location": "shelf 3",
       "type": "test terminal",
-      "unused": "0",
-      "used": "0"
-    },
-    {
-      "component": "6T TRK RESISTOR 1",
-      "subnet": "Tower",
-      "location": "shelf 3",
-      "type": "resistor",
-      "resistance": "5",
-      "unused": "0",
-      "used": "0"
-    },
-    {
-      "component": "6T TRK RESISTOR 2",
-      "subnet": "Tower",
-      "location": "shelf 3",
-      "type": "resistor",
-      "resistance": "5",
       "unused": "0",
       "used": "0"
     },
@@ -1479,28 +1479,28 @@
       "used": "2"
     },
     {
+      "component": "14AT RESISTOR 1",
+      "subnet": "Tower",
+      "location": "shelf 3",
+      "type": "resistor",
+      "resistance": "5",
+      "unused": "0",
+      "used": "0"
+    },
+    {
+      "component": "14AT RESISTOR 2",
+      "subnet": "Tower",
+      "location": "shelf 3",
+      "type": "resistor",
+      "resistance": "5",
+      "unused": "0",
+      "used": "0"
+    },
+    {
       "component": "14AT TEST TERM",
       "subnet": "Tower",
       "location": "shelf 3",
       "type": "test terminal",
-      "unused": "0",
-      "used": "0"
-    },
-    {
-      "component": "14AT TRK RESISTOR 1",
-      "subnet": "Tower",
-      "location": "shelf 3",
-      "type": "resistor",
-      "resistance": "5",
-      "unused": "0",
-      "used": "0"
-    },
-    {
-      "component": "14AT TRK RESISTOR 2",
-      "subnet": "Tower",
-      "location": "shelf 3",
-      "type": "resistor",
-      "resistance": "5",
       "unused": "0",
       "used": "0"
     },
@@ -1546,28 +1546,28 @@
       "used": "2"
     },
     {
+      "component": "14BT RESISTOR 1",
+      "subnet": "Tower",
+      "location": "shelf 3",
+      "type": "resistor",
+      "resistance": "5",
+      "unused": "0",
+      "used": "0"
+    },
+    {
+      "component": "14BT RESISTOR 2",
+      "subnet": "Tower",
+      "location": "shelf 3",
+      "type": "resistor",
+      "resistance": "5",
+      "unused": "0",
+      "used": "0"
+    },
+    {
       "component": "14BT TEST TERM",
       "subnet": "Tower",
       "location": "shelf 3",
       "type": "test terminal",
-      "unused": "0",
-      "used": "0"
-    },
-    {
-      "component": "14BT TRK RESISTOR 1",
-      "subnet": "Tower",
-      "location": "shelf 3",
-      "type": "resistor",
-      "resistance": "5",
-      "unused": "0",
-      "used": "0"
-    },
-    {
-      "component": "14BT TRK RESISTOR 2",
-      "subnet": "Tower",
-      "location": "shelf 3",
-      "type": "resistor",
-      "resistance": "5",
       "unused": "0",
       "used": "0"
     },
@@ -2457,25 +2457,25 @@
     {
       "signal": "2T",
       "from": "2TR COIL+",
-      "to": "2T TRK RESISTOR 1-",
+      "to": "2T RESISTOR 1-",
       "page": "T3"
     },
     {
       "signal": "**STRAP**",
-      "from": "2T TRK RESISTOR 1+",
-      "to": "2T TRK RESISTOR 2+",
+      "from": "2T RESISTOR 1+",
+      "to": "2T RESISTOR 2+",
       "page": "T3"
     },
     {
       "signal": "2TBX",
-      "from": "2T TRK RESISTOR 2-",
+      "from": "2T RESISTOR 2-",
       "to": "GRP-E T7",
       "page": "T3"
     },
     {
       "signal": "2TBX-1",
       "from": "TWR-C4 1TB",
-      "to": "2T TRK RESISTOR 2+",
+      "to": "2T RESISTOR 2+",
       "page": "T3"
     },
     {
@@ -2487,7 +2487,7 @@
     {
       "signal": "6TNX",
       "from": "6T TEST TERM -",
-      "to": "6T TRK ARRESTOR -",
+      "to": "6T ARRESTOR -",
       "page": "T3"
     },
     {
@@ -2499,25 +2499,25 @@
     {
       "signal": "6T",
       "from": "6TR COIL+",
-      "to": "6T TRK RESISTOR 1-",
+      "to": "6T RESISTOR 1-",
       "page": "T3"
     },
     {
       "signal": "**STRAP**",
-      "from": "6T TRK RESISTOR 1+",
-      "to": "6T TRK RESISTOR 2+",
+      "from": "6T RESISTOR 1+",
+      "to": "6T RESISTOR 2+",
       "page": "T3"
     },
     {
       "signal": "6TBX",
-      "from": "6T TRK RESISTOR 2-",
-      "to": "6T TRK ARRESTOR +",
+      "from": "6T RESISTOR 2-",
+      "to": "6T ARRESTOR +",
       "page": "T3"
     },
     {
       "signal": "6TBX-1",
       "from": "TWR-C4 2TB",
-      "to": "6T TRK RESISTOR 2+",
+      "to": "6T RESISTOR 2+",
       "page": "T3"
     },
     {
@@ -2529,7 +2529,7 @@
     {
       "signal": "14ATNX",
       "from": "14AT TEST TERM -",
-      "to": "14AT TRK ARRESTOR -",
+      "to": "14AT ARRESTOR -",
       "page": "T3"
     },
     {
@@ -2541,25 +2541,25 @@
     {
       "signal": "14AT",
       "from": "14ATR COIL+",
-      "to": "14AT TRK RESISTOR 1-",
+      "to": "14AT RESISTOR 1-",
       "page": "T3"
     },
     {
       "signal": "**STRAP**",
-      "from": "14AT TRK RESISTOR 1+",
-      "to": "14AT TRK RESISTOR 2+",
+      "from": "14AT RESISTOR 1+",
+      "to": "14AT RESISTOR 2+",
       "page": "T3"
     },
     {
       "signal": "14ATBX",
-      "from": "14AT TRK RESISTOR 2-",
-      "to": "14AT TRK ARRESTOR +",
+      "from": "14AT RESISTOR 2-",
+      "to": "14AT ARRESTOR +",
       "page": "T3"
     },
     {
       "signal": "14ATBX-1",
       "from": "TWR-C4 3TB",
-      "to": "14AT TRK RESISTOR 2+",
+      "to": "14AT RESISTOR 2+",
       "page": "T3"
     },
     {
@@ -2571,7 +2571,7 @@
     {
       "signal": "14BTNX",
       "from": "14BT TEST TERM -",
-      "to": "14BT TRK ARRESTOR -",
+      "to": "14BT ARRESTOR -",
       "page": "T3"
     },
     {
@@ -2583,25 +2583,25 @@
     {
       "signal": "14BT",
       "from": "14BTR COIL+",
-      "to": "14BT TRK RESISTOR 1-",
+      "to": "14BT RESISTOR 1-",
       "page": "T3"
     },
     {
       "signal": "**STRAP**",
-      "from": "14BT TRK RESISTOR 1+",
-      "to": "14BT TRK RESISTOR 2+",
+      "from": "14BT RESISTOR 1+",
+      "to": "14BT RESISTOR 2+",
       "page": "T3"
     },
     {
       "signal": "14BTBX",
-      "from": "14BT TRK RESISTOR 2-",
-      "to": "14BT TRK ARRESTOR +",
+      "from": "14BT RESISTOR 2-",
+      "to": "14BT ARRESTOR +",
       "page": "T3"
     },
     {
       "signal": "14BTBX-1",
       "from": "TWR-C4 4TB",
-      "to": "14BT TRK RESISTOR 2+",
+      "to": "14BT RESISTOR 2+",
       "page": "T3"
     },
     {
@@ -5661,25 +5661,25 @@
     {
       "signal": "9-10T",
       "from": "9-10TR COIL+",
-      "to": "9-10T TRK RESISTOR 1-",
+      "to": "9-10T RESISTOR 1-",
       "page": "A3"
     },
     {
       "signal": "**STRAP**",
-      "from": "9-10T TRK RESISTOR 1+",
-      "to": "9-10T TRK RESISTOR 2+",
+      "from": "9-10T RESISTOR 1+",
+      "to": "9-10T RESISTOR 2+",
       "page": "A3"
     },
     {
       "signal": "9-10TBX",
-      "from": "9-10T TRK RESISTOR 2-",
+      "from": "9-10T RESISTOR 2-",
       "to": "9-10T ARRESTOR -",
       "page": "A3"
     },
     {
       "signal": "BX6-CASEA",
       "from": "BX6-CASEA",
-      "to": "9-10T TRK RESISTOR 1+",
+      "to": "9-10T RESISTOR 1+",
       "page": "A3"
     },
     {
@@ -5703,25 +5703,25 @@
     {
       "signal": "9-10T",
       "from": "12TR COIL+",
-      "to": "12T TRK RESISTOR 1-",
+      "to": "12T RESISTOR 1-",
       "page": "A3"
     },
     {
       "signal": "**STRAP**",
-      "from": "12T TRK RESISTOR 1+",
-      "to": "12T TRK RESISTOR 2+",
+      "from": "12T RESISTOR 1+",
+      "to": "12T RESISTOR 2+",
       "page": "A3"
     },
     {
       "signal": "12TBX",
-      "from": "12T TRK RESISTOR 2-",
+      "from": "12T RESISTOR 2-",
       "to": "12T ARRESTOR +",
       "page": "A3"
     },
     {
       "signal": "BX6-CASEA",
       "from": "BX6-CASEA",
-      "to": "12T TRK RESISTOR 1+",
+      "to": "12T RESISTOR 1+",
       "page": "A3"
     },
     {
@@ -6597,13 +6597,13 @@
     },
     {
       "signal": "2TNX",
-      "from": "2T TRK ARRESTOR -",
+      "from": "2T ARRESTOR -",
       "to": "???a",
       "page": "B2"
     },
     {
       "signal": "2TBX",
-      "from": "2T TRK ARRESTOR +",
+      "from": "2T ARRESTOR +",
       "to": "???b",
       "page": "B2"
     },
@@ -7006,12 +7006,12 @@
     {
       "signal": "1TBX",
       "from": "1TBX ARRESTOR",
-      "to": "1T RESISTANCE UNIT 1+"
+      "to": "1T RESISTOR 1+"
     },
     {
       "signal": "1T",
       "from": "1TR COIL+",
-      "to": "1T RESISTANCE UNIT 1-"
+      "to": "1T RESISTOR 1-"
     },
     {
       "signal": "N-1T",
@@ -7020,13 +7020,13 @@
     },
     {
       "signal": "**STRAP**",
-      "from": "1T RESISTANCE UNIT 1+",
-      "to": "1T RESISTANCE UNIT 2+"
+      "from": "1T RESISTOR 1+",
+      "to": "1T RESISTOR 2+"
     },
     {
       "signal": "BX6-CASEC *",
       "from": "CASEC-W10 BX6",
-      "to": "1T RESISTANCE UNIT 1+"
+      "to": "1T RESISTOR 1+"
     },
     {
       "signal": "NX6-CASEC *",
