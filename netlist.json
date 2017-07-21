@@ -198,8 +198,8 @@
       "resistance": "670",
       "index": "26",
       "contacts": "4",
-      "unused": "2",
-      "used": "2"
+      "unused": "1",
+      "used": "3"
     },
     {
       "component": "14BHR",
@@ -208,8 +208,8 @@
       "resistance": "670",
       "index": "27",
       "contacts": "4",
-      "unused": "2",
-      "used": "2"
+      "unused": "1",
+      "used": "3"
     },
     {
       "component": "15AGE RESISTOR",
@@ -236,8 +236,8 @@
       "config": "{\"dropTime\":1.1}",
       "index": "14",
       "contacts": "4",
-      "unused": "1",
-      "used": "3"
+      "unused": "0",
+      "used": "4"
     },
     {
       "component": "15HDR",
@@ -285,8 +285,8 @@
       "resistance": "670",
       "index": "47",
       "contacts": "4",
-      "unused": "0",
-      "used": "4"
+      "unused": "2",
+      "used": "2"
     },
     {
       "component": "16BDR",
@@ -311,7 +311,7 @@
       "subnet": "Case A",
       "type": "relay",
       "resistance": "670",
-      "index": "36",
+      "index": "35",
       "contacts": "4",
       "unused": "1",
       "used": "3"
@@ -345,11 +345,21 @@
       "used": "0"
     },
     {
-      "component": "16HDGPR",
+      "component": "16DRGR",
       "subnet": "Case A",
       "type": "relay",
       "resistance": "670",
       "index": "37",
+      "contacts": "4",
+      "unused": "1",
+      "used": "3"
+    },
+    {
+      "component": "16HDGPR",
+      "subnet": "Case A",
+      "type": "relay",
+      "resistance": "670",
+      "index": "36",
       "contacts": "4",
       "unused": "1",
       "used": "3"
@@ -6105,41 +6115,41 @@
     {
       "signal": "16DGD1",
       "from": "CASEA T75",
-      "to": "16AR 2H"
+      "to": "16DRGR 1H"
     },
     {
       "signal": "16DGD2",
       "from": "CASEA T76",
-      "to": "16AR 3H"
+      "to": "16DRGR 2H"
     },
     {
       "signal": "16DGD3",
       "from": "CASEA T77",
-      "to": "16AR 4H"
+      "to": "16DRGR 3H"
     },
     {
       "signal": "B10-CASEA",
       "from": "B10-CASEA",
-      "to": "16AR 2B"
+      "to": "16DRGR 1B"
     },
     {
       "signal": "B10-CASEA",
       "from": "B10-CASEA",
-      "to": "16AR 3B"
+      "to": "16DRGR 2B"
     },
     {
       "signal": "16DGD1-1",
-      "from": "16AR 2F",
+      "from": "16DRGR 1F",
       "to": "16HDGPR 1H"
     },
     {
       "signal": "16DGD2-1",
-      "from": "16AR 3F",
+      "from": "16DRGR 2F",
       "to": "16HDGPR 2H"
     },
     {
       "signal": "16DGD3-1",
-      "from": "16AR 4F",
+      "from": "16DRGR 3F",
       "to": "16HDGPR 3H"
     },
     {
@@ -6181,6 +6191,36 @@
       "signal": "B10-CASEA",
       "from": "B10-CASEA",
       "to": "16ADR 2F"
+    },
+    {
+      "signal": "16DRGR-4",
+      "from": "B10-CASEA",
+      "to": "16AR 2H"
+    },
+    {
+      "signal": "16DRGR-3",
+      "from": "16AR 2F",
+      "to": "15HDPR 2H"
+    },
+    {
+      "signal": "16DRGR-2",
+      "from": "15HDPR 2B",
+      "to": "14ADR 3H"
+    },
+    {
+      "signal": "16DRGR-1",
+      "from": "14ADR 3B",
+      "to": "14BHR 3H"
+    },
+    {
+      "signal": "16DRGR",
+      "from": "14BHR 3B",
+      "to": "16DRGR COIL+"
+    },
+    {
+      "signal": "N-16DRGR",
+      "from": "N10-CASEA",
+      "to": "16DRGR COIL-"
     }
   ],
   "caseBWires": [
