@@ -2897,52 +2897,58 @@
       "page": "T5"
     },
     {
-      "signal": "4-5AS-2",
+      "signal": "4-5AS-4",
       "from": "5HR 1B",
       "to": "4RGPR 1H",
       "page": "T5"
     },
     {
-      "signal": "4-5AS-B1",
+      "signal": "4-5AS-3",
       "from": "4RGPR 1F",
       "to": "1VGR 2H",
       "page": "T5"
     },
     {
+      "signal": "4-5AS-D1",
       "from": "1VGR 2F",
       "to": "1RGPR 3H"
     },
     {
+      "signal": "4-5AS-D",
       "from": "1RGPR 3F",
       "to": "16VGR 2H"
     },
     {
+      "signal": "4-5AS-2",
       "from": "1VGR 2B",
       "to": "16VGR 2H"
     },
     {
+      "signal": "4-5AS-C1",
       "from": "16VGR 2F",
       "to": "16RGPR 5H"
     },
     {
+      "signal": "4-5AS-C",
       "from": "16RGPR 5F",
-      "to": "9-10TPSR 2B"
-    },
-    {
-      "from": "16VGR 2B",
-      "to": "9-10TPSR 2B"
+      "to": "16VGR 2B"
     },
     {
       "signal": "4-5AS-1",
-      "from": "9-10TPSR 2B",
+      "from": "16VGR 2B",
       "to": "9-10TE 5H",
       "page": "T5"
     },
     {
       "signal": "4-5AS-A",
-      "from": "9-10TPSR 2B",
+      "from": "16VGR 2B",
       "to": "4-5ASR 1H",
       "page": "T5"
+    },
+    {
+      "signal": "4-5AS-B1",
+      "from": "16VGR 2B",
+      "to": "9-10TPSR 2B"
     },
     {
       "signal": "4-5AS-B",
@@ -3421,14 +3427,17 @@
       "page": "T8"
     },
     {
+      "signal": "1VG-1",
       "from": "6RWPPR 2F",
       "to": "LVR-1 T9"
     },
     {
+      "signal": "1VG",
       "from": "LVR-1 T10",
       "to": "1VGR COIL+"
     },
     {
+      "signal": "N-1VG",
       "from": "1VGR COIL-",
       "to": "N10-TWR S2 T?"
     },
@@ -6193,32 +6202,32 @@
       "to": "16ADR 2F"
     },
     {
-      "signal": "16DRGR-4",
+      "signal": "16DRG-4",
       "from": "B10-CASEA",
       "to": "16AR 2H"
     },
     {
-      "signal": "16DRGR-3",
+      "signal": "16DRG-3",
       "from": "16AR 2F",
       "to": "15HDPR 2H"
     },
     {
-      "signal": "16DRGR-2",
+      "signal": "16DRG-2",
       "from": "15HDPR 2B",
       "to": "14ADR 3H"
     },
     {
-      "signal": "16DRGR-1",
+      "signal": "16DRG-1",
       "from": "14ADR 3B",
       "to": "14BHR 3H"
     },
     {
-      "signal": "16DRGR",
+      "signal": "16DRG",
       "from": "14BHR 3B",
       "to": "16DRGR COIL+"
     },
     {
-      "signal": "N-16DRGR",
+      "signal": "N-16DRG",
       "from": "N10-CASEA",
       "to": "16DRGR COIL-"
     }
@@ -6794,7 +6803,7 @@
       "to": "CASEC-CRAGG -"
     },
     {
-      "signal": "N10-TWR",
+      "signal": "N10-TWR *",
       "from": "N10-TWR T1",
       "to": "CASEC T1"
     },
