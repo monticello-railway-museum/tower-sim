@@ -6744,408 +6744,501 @@
   "caseCWires": [
     {
       "signal": "B10-CASEC",
-      "from": "B10-CASEC T1",
-      "to": "1TR 1F"
-    },
-    {
-      "signal": "B10-CASEC",
       "from": "B10-CASEC T2",
-      "to": "1HDPR 3H"
-    },
-    {
-      "signal": "B10-CASEC",
-      "from": "B10-CASEC T3",
-      "to": "6WCR 1H"
-    },
-    {
-      "signal": "B10-CASEC",
-      "from": "B10-CASEC T4",
-      "to": "6NLPR 2H"
-    },
-    {
-      "signal": "B10-CASEC",
-      "from": "B10-CASEC T5",
-      "to": "6WCC-FUSE +"
-    },
-    {
-      "signal": "B10-CASEC *",
-      "from": "B10-CASEC T6",
-      "to": "CASEC-CRAGG +"
-    },
-    {
-      "signal": "N10-CASEC",
-      "from": "N10-CASEC T1",
-      "to": "1TR 2F"
+      "to": "1HDPR 3H",
+      "page": "C1"
     },
     {
       "signal": "N10-CASEC",
       "from": "N10-CASEC T2",
-      "to": "1HDPR 4H"
-    },
-    {
-      "signal": "N10-CASEC",
-      "from": "N10-CASEC T3",
-      "to": "6WCR COIL-"
-    },
-    {
-      "signal": "6WCC-N10",
-      "from": "N10-CASEC T5",
-      "to": "CASEC T22"
-    },
-    {
-      "signal": "N10-CASEC",
-      "from": "N10-CASEC T6",
-      "to": "6WTI N10"
-    },
-    {
-      "signal": "N10-CASEC *",
-      "from": "N10-CASEC T7",
-      "to": "CASEC-CRAGG -"
-    },
-    {
-      "signal": "N10-TWR *",
-      "from": "N10-TWR T1",
-      "to": "CASEC T1"
-    },
-    {
-      "signal": "N-6NLP",
-      "from": "N10-TWR T2",
-      "to": "6NLPR COIL-"
-    },
-    {
-      "signal": "N-6RLPR",
-      "from": "N10-TWR T3",
-      "to": "6RLPR COIL-"
+      "to": "1HDPR 4H",
+      "page": "C1"
     },
     {
       "signal": "1HDP-1",
       "from": "CASEC T4",
-      "to": "6WCR 3F"
+      "to": "6WCR 3F",
+      "page": "C1"
     },
     {
       "signal": "N-1HDP-1",
       "from": "CASEC T5",
-      "to": "6WCR 4F"
-    },
-    {
-      "signal": "6NLP-1",
-      "from": "CASEC T2",
-      "to": "6RLPR 1H"
-    },
-    {
-      "signal": "6RLP-1",
-      "from": "CASEC T3",
-      "to": "6NLPR 1H"
+      "to": "6WCR 4F",
+      "page": "C1"
     },
     {
       "signal": "1RGP",
       "from": "CASEC T6",
-      "to": "1HDPR 3B"
+      "to": "1HDPR 3B",
+      "page": "C1"
     },
     {
       "signal": "N-1RGP",
       "from": "CASEC T7",
-      "to": "1HDPR 4B"
+      "to": "1HDPR 4B",
+      "page": "C1"
     },
     {
-      "signal": "6WPP",
-      "from": "CASEC T8",
-      "to": "6NWPR COIL-"
-    },
-    {
-      "signal": "N-6WPP",
-      "from": "CASEC T9",
-      "to": "CASEC T24"
-    },
-    {
-      "signal": "1A",
-      "from": "CASEC T10",
-      "to": "1TR 1H"
-    },
-    {
-      "signal": "N-1A",
-      "from": "CASEC T11",
-      "to": "1TR 2H"
-    },
-    {
-      "signal": "1HDGPR",
+      "signal": "1HDGP",
       "from": "CASEC T12",
-      "to": "1COR 3B"
+      "to": "1COR 3B",
+      "page": "C1"
     },
     {
-      "signal": "N-1HDGPR",
+      "signal": "N-1HDGP",
       "from": "CASEC T13",
-      "to": "1COR 4B"
+      "to": "1COR 4B",
+      "page": "C1"
+    },
+    {
+      "signal": "**STRAP**",
+      "from": "6WCR 3B",
+      "to": "6WCR 4B",
+      "page": "C1"
     },
     {
       "signal": "1HDP",
       "from": "1HDPR COIL+",
-      "to": "6WCR 3H"
+      "to": "6WCR 3H",
+      "page": "C1"
     },
     {
       "signal": "N-1HDP",
       "from": "1HDPR COIL-",
-      "to": "6WCR 4H"
+      "to": "6WCR 4H",
+      "page": "C1"
     },
     {
       "signal": "**STRAP**",
       "from": "1HDPR 1P",
-      "to": "1HDPR 2P"
+      "to": "1HDPR 2P",
+      "page": "C1"
     },
     {
       "signal": "**STRAP**",
       "from": "1HDPR 1+",
-      "to": "1HDPR 2+"
+      "to": "1HDPR 2+",
+      "page": "C1"
     },
     {
       "signal": "**STRAP**",
       "from": "1HDPR 1-",
-      "to": "1HDPR 2-"
+      "to": "1HDPR 2-",
+      "page": "C1"
     },
     {
       "signal": "**STRAP**",
       "from": "1HDPR 1H",
-      "to": "1HDPR 2H"
+      "to": "1HDPR 2H",
+      "page": "C1"
     },
     {
       "signal": "**STRAP**",
       "from": "1HDPR 1F",
-      "to": "1HDPR 2F"
+      "to": "1HDPR 2F",
+      "page": "C1"
     },
     {
       "signal": "**STRAP**",
       "from": "1HDPR 1B",
-      "to": "1HDPR 2B"
+      "to": "1HDPR 2B",
+      "page": "C1"
     },
     {
       "signal": "**STRAP**",
       "from": "6NWPR 3H",
-      "to": "6NWPR 4H"
+      "to": "6NWPR 4H",
+      "page": "C1"
     },
     {
       "signal": "**STRAP**",
       "from": "6NWPR 3F",
-      "to": "6NWPR 4F"
+      "to": "6NWPR 4F",
+      "page": "C1"
     },
     {
       "signal": "**STRAP**",
       "from": "6NWPR 3B",
-      "to": "6NWPR 4B"
+      "to": "6NWPR 4B",
+      "page": "C1"
     },
     {
       "signal": "1TMG",
       "from": "CASEC-LTG T5",
-      "to": "6NWPR 3H"
+      "to": "6NWPR 3H",
+      "page": "C1"
     },
     {
       "signal": "1DG",
       "from": "CASEC-LTG T1",
-      "to": "1HDPR 1+"
+      "to": "1HDPR 1+",
+      "page": "C1"
     },
     {
       "signal": "1HG",
       "from": "CASEC-LTG T2",
-      "to": "1HDPR 1-"
+      "to": "1HDPR 1-",
+      "page": "C1"
     },
     {
       "signal": "1RG",
       "from": "CASEC-LTG T3",
-      "to": "1HDPR 1B"
+      "to": "1HDPR 1B",
+      "page": "C1"
     },
     {
       "signal": "NX10-1G",
       "from": "CASEC-LTG T7",
-      "to": "1GE RESISTOR +"
+      "to": "1GE RESISTOR +",
+      "page": "C1"
     },
     {
       "signal": "NX10-1MG",
       "from": "CASEC-LTG T8",
-      "to": "1MGE RESISTOR +"
+      "to": "1MGE RESISTOR +",
+      "page": "C1"
     },
     {
       "signal": "1TMG-1",
       "from": "6NWPR 3F",
-      "to": "1HDPR 1P"
-    },
-    {
-      "signal": "6RLP",
-      "from": "6RLPR COIL+",
-      "to": "6NLPR 1B"
-    },
-    {
-      "signal": "6NLP",
-      "from": "6NLPR COIL+",
-      "to": "6RLPR 1B"
-    },
-    {
-      "signal": "6NWP",
-      "from": "6NWPR COIL+",
-      "to": "6RWPR 1B"
-    },
-    {
-      "signal": "6RWP",
-      "from": "6RWPR COIL-",
-      "to": "6NWPR 1B"
-    },
-    {
-      "signal": "6WPP-A",
-      "from": "6RWPR COIL+",
-      "to": "6NWPR COIL-"
-    },
-    {
-      "signal": "6WCCWP-A",
-      "from": "6NWPR 1H",
-      "to": "6RWPR 1H"
-    },
-    {
-      "signal": "6WCCWP",
-      "from": "CASEC T23",
-      "to": "6NWPR 1H"
-    },
-    {
-      "signal": "6WCC B10",
-      "from": "CASEC T21",
-      "to": "6WCC-FUSE -"
-    },
-    {
-      "signal": "6WC",
-      "from": "6WCR COIL+",
-      "to": "6RWPR 2H"
-    },
-    {
-      "signal": "6WC-1",
-      "from": "6RWPR 2B",
-      "to": "6RLPR 2B"
-    },
-    {
-      "signal": "6WC-2",
-      "from": "6RLPR 2H",
-      "to": "6NWPR 2H"
-    },
-    {
-      "signal": "6WC-2A",
-      "from": "6NWPR 2B",
-      "to": "6NLPR 2B"
-    },
-    {
-      "signal": "6WC-A",
-      "from": "6RWPR 2F",
-      "to": "6RLPR 2F"
-    },
-    {
-      "signal": "6WC-3",
-      "from": "6NWPR 2F",
-      "to": "6NLPR 2F"
-    },
-    {
-      "signal": "6WKEZ",
-      "from": "6WCR 1B",
-      "to": "6WTI 6WKEZ"
-    },
-    {
-      "signal": "6WKE",
-      "from": "6WCR 1F",
-      "to": "6WTI 6WKE"
-    },
-    {
-      "signal": "1TNX",
-      "from": "1TNX ARRESTOR",
-      "to": "1T TEST TERM -"
-    },
-    {
-      "signal": "1TBX",
-      "from": "1TBX ARRESTOR",
-      "to": "1T RESISTOR 1+"
-    },
-    {
-      "signal": "1T",
-      "from": "1TR COIL+",
-      "to": "1T RESISTOR 1-"
-    },
-    {
-      "signal": "N-1T",
-      "from": "1TR COIL-",
-      "to": "1T TEST TERM +"
-    },
-    {
-      "signal": "**STRAP**",
-      "from": "1T RESISTOR 1+",
-      "to": "1T RESISTOR 2+"
-    },
-    {
-      "signal": "BX6-CASEC *",
-      "from": "CASEC-W10 BX6",
-      "to": "1T RESISTOR 1+"
-    },
-    {
-      "signal": "NX6-CASEC *",
-      "from": "CASEC-W10 NX6",
-      "to": "1T TEST TERM +"
+      "to": "1HDPR 1P",
+      "page": "C1"
     },
     {
       "signal": "BX10-CASEC *",
       "from": "CASEC-W10 BX10",
-      "to": "1COR 1H"
+      "to": "1COR 1H",
+      "page": "C1"
     },
     {
       "signal": "NX10-CASEC *",
       "from": "CASEC-W10 NX10",
-      "to": "1GE RESISTOR -"
+      "to": "1GE RESISTOR -",
+      "page": "C1"
     },
     {
       "signal": "**STRAP**",
       "from": "1MGE RESISTOR -",
-      "to": "1GE RESISTOR -"
+      "to": "1GE RESISTOR -",
+      "page": "C1"
     },
     {
       "signal": "1RHDG",
       "from": "1COR 1B",
-      "to": "1HDPR 1H"
+      "to": "1HDPR 1H",
+      "page": "C1"
     },
     {
       "signal": "1CRG",
       "from": "1COR 1F",
-      "to": "CASEC-LTG T4"
+      "to": "CASEC-LTG T4",
+      "page": "C1"
     },
     {
       "signal": "**STRAP**",
       "from": "1COR 1H",
-      "to": "1COR 2H"
+      "to": "1COR 2H",
+      "page": "C1"
     },
     {
       "signal": "**STRAP**",
       "from": "1COR 1B",
-      "to": "1COR 2B"
+      "to": "1COR 2B",
+      "page": "C1"
     },
     {
       "signal": "**STRAP**",
       "from": "1COR 1F",
-      "to": "1COR 2F"
+      "to": "1COR 2F",
+      "page": "C1"
     },
     {
       "signal": "1CO",
       "from": "CASEC T14",
-      "to": "1COR COIL+"
+      "to": "1COR COIL+",
+      "page": "C1"
     },
     {
       "signal": "N-1CO",
       "from": "N10-TWR",
-      "to": "1COR COIL-"
+      "to": "1COR COIL-",
+      "page": "C1"
     },
     {
       "signal": "1HDG",
       "from": "1HDPR 1F",
-      "to": "1HDPR 1P"
+      "to": "1HDPR 1P",
+      "page": "C1"
     },
     {
-      "signal": "1HDGPR-1",
+      "signal": "1HDGP-1",
       "from": "1HDPR 3F",
-      "to": "1COR 3H"
+      "to": "1COR 3H",
+      "page": "C1"
     },
     {
-      "signal": "N-1HDGPR-1",
+      "signal": "N-1HDGP-1",
       "from": "1HDPR 4F",
-      "to": "1COR 4H"
+      "to": "1COR 4H",
+      "page": "C1"
+    },
+    {
+      "signal": "B10-CASEC",
+      "from": "B10-CASEC T3",
+      "to": "6WCR 1H",
+      "page": "C2"
+    },
+    {
+      "signal": "B10-CASEC",
+      "from": "B10-CASEC T4",
+      "to": "6NLPR 2H",
+      "page": "C2"
+    },
+    {
+      "signal": "B10-CASEC",
+      "from": "B10-CASEC T5",
+      "to": "6WCC-FUSE +",
+      "page": "C2"
+    },
+    {
+      "signal": "N10-CASEC",
+      "from": "N10-CASEC T3",
+      "to": "6WCR COIL-",
+      "page": "C2"
+    },
+    {
+      "signal": "6WCC-N10",
+      "from": "N10-CASEC T5",
+      "to": "CASEC T22",
+      "page": "C2"
+    },
+    {
+      "signal": "N10-CASEC",
+      "from": "N10-CASEC T6",
+      "to": "6WTI N10",
+      "page": "C2"
+    },
+    {
+      "signal": "N10-TWR *",
+      "from": "N10-TWR T1",
+      "to": "CASEC T1",
+      "page": "C2"
+    },
+    {
+      "signal": "N-6NLP",
+      "from": "N10-TWR T2",
+      "to": "6NLPR COIL-",
+      "page": "C2"
+    },
+    {
+      "signal": "N-6RLPR",
+      "from": "N10-TWR T3",
+      "to": "6RLPR COIL-",
+      "page": "C2"
+    },
+    {
+      "signal": "6NLP-1",
+      "from": "CASEC T2",
+      "to": "6RLPR 1H",
+      "page": "C2"
+    },
+    {
+      "signal": "6RLP-1",
+      "from": "CASEC T3",
+      "to": "6NLPR 1H",
+      "page": "C2"
+    },
+    {
+      "signal": "6WPP",
+      "from": "CASEC T8",
+      "to": "6NWPR COIL-",
+      "page": "C2"
+    },
+    {
+      "signal": "N-6WPP",
+      "from": "CASEC T9",
+      "to": "CASEC T24",
+      "page": "C2"
+    },
+    {
+      "signal": "6RLP",
+      "from": "6RLPR COIL+",
+      "to": "6NLPR 1B",
+      "page": "C2"
+    },
+    {
+      "signal": "6NLP",
+      "from": "6NLPR COIL+",
+      "to": "6RLPR 1B",
+      "page": "C2"
+    },
+    {
+      "signal": "6NWP",
+      "from": "6NWPR COIL+",
+      "to": "6RWPR 1B",
+      "page": "C2"
+    },
+    {
+      "signal": "6RWP",
+      "from": "6RWPR COIL-",
+      "to": "6NWPR 1B",
+      "page": "C2"
+    },
+    {
+      "signal": "6WPP-A",
+      "from": "6RWPR COIL+",
+      "to": "6NWPR COIL-",
+      "page": "C2"
+    },
+    {
+      "signal": "6WCCWP-A",
+      "from": "6NWPR 1H",
+      "to": "6RWPR 1H",
+      "page": "C2"
+    },
+    {
+      "signal": "6WCCWP",
+      "from": "CASEC T23",
+      "to": "6NWPR 1H",
+      "page": "C2"
+    },
+    {
+      "signal": "B10-6WCC",
+      "from": "CASEC T21",
+      "to": "6WCC-FUSE -",
+      "page": "C2"
+    },
+    {
+      "signal": "6WC",
+      "from": "6WCR COIL+",
+      "to": "6RWPR 2H",
+      "page": "C2"
+    },
+    {
+      "signal": "6WC-1",
+      "from": "6RWPR 2B",
+      "to": "6RLPR 2B",
+      "page": "C2"
+    },
+    {
+      "signal": "6WC-2",
+      "from": "6RLPR 2H",
+      "to": "6NWPR 2H",
+      "page": "C2"
+    },
+    {
+      "signal": "6WC-2A",
+      "from": "6NWPR 2B",
+      "to": "6NLPR 2B",
+      "page": "C2"
+    },
+    {
+      "signal": "6WC-A",
+      "from": "6RWPR 2F",
+      "to": "6RLPR 2F",
+      "page": "C2"
+    },
+    {
+      "signal": "6WC-3",
+      "from": "6NWPR 2F",
+      "to": "6NLPR 2F",
+      "page": "C2"
+    },
+    {
+      "signal": "6WKEZ",
+      "from": "6WCR 1B",
+      "to": "6WTI 6WKEZ",
+      "page": "C2"
+    },
+    {
+      "signal": "6WKE",
+      "from": "6WCR 1F",
+      "to": "6WTI 6WKE",
+      "page": "C2"
+    },
+    {
+      "signal": "B10-CASEC",
+      "from": "B10-CASEC T1",
+      "to": "1TR 1F",
+      "page": "C4"
+    },
+    {
+      "signal": "B10-CASEC *",
+      "from": "B10-CASEC T6",
+      "to": "CASEC-CRAGG +",
+      "page": "C4"
+    },
+    {
+      "signal": "N10-CASEC",
+      "from": "N10-CASEC T1",
+      "to": "1TR 2F",
+      "page": "C4"
+    },
+    {
+      "signal": "N10-CASEC *",
+      "from": "N10-CASEC T7",
+      "to": "CASEC-CRAGG -",
+      "page": "C4"
+    },
+    {
+      "signal": "1A",
+      "from": "CASEC T10",
+      "to": "1TR 1H",
+      "page": "C4"
+    },
+    {
+      "signal": "N-1A",
+      "from": "CASEC T11",
+      "to": "1TR 2H",
+      "page": "C4"
+    },
+    {
+      "signal": "**STRAP**",
+      "from": "1TR 1B",
+      "to": "1TR 2B",
+      "page": "C4"
+    },
+    {
+      "signal": "1TNX",
+      "from": "1TNX ARRESTOR",
+      "to": "1T TEST TERM -",
+      "page": "C4"
+    },
+    {
+      "signal": "1TBX",
+      "from": "1TBX ARRESTOR",
+      "to": "1T RESISTOR 1+",
+      "page": "C4"
+    },
+    {
+      "signal": "1T",
+      "from": "1TR COIL+",
+      "to": "1T RESISTOR 1-",
+      "page": "C4"
+    },
+    {
+      "signal": "N-1T",
+      "from": "1TR COIL-",
+      "to": "1T TEST TERM +",
+      "page": "C4"
+    },
+    {
+      "signal": "**STRAP**",
+      "from": "1T RESISTOR 1+",
+      "to": "1T RESISTOR 2+",
+      "page": "C4"
+    },
+    {
+      "signal": "BX6-CASEC *",
+      "from": "CASEC-W10 BX6",
+      "to": "1T RESISTOR 1+",
+      "page": "C4"
+    },
+    {
+      "signal": "NX6-CASEC *",
+      "from": "CASEC-W10 NX6",
+      "to": "1T TEST TERM +",
+      "page": "C4"
     }
   ],
   "crossConnections": [
