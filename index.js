@@ -344,7 +344,7 @@ class Top extends React.Component {
         const { levers, sim } = this.state;
         levers.pull(name, this.state.overrideInterlocking);
         this.setState({ levers });
-        sim.components[`Tower/LVR-${name}`].state = levers.states()[name];
+        sim.components[`Tower/${name}TCC`].state = levers.states()[name];
     }
 
     changeOverrideInterlocking(state) {
@@ -353,7 +353,7 @@ class Top extends React.Component {
         if (!state) {
             levers.reset();
             for (let name in levers.levers)
-                sim.components[`Tower/LVR-${name}`].state = levers.states()[name];
+                sim.components[`Tower/${name}TCC`].state = levers.states()[name];
         }
     }
 
@@ -366,10 +366,10 @@ class Top extends React.Component {
         locks['13'] = sim.components['Tower/FLOOR PB 13'].terminals['1H'].voltage(0) < 5;
         if (autoSwitches) {
             ['6', '9', '10', '12'].forEach(sw => {
-                if (levers.states()[sw] == 'normal' && sim.components[`Sim/SIM-${sw}SCC`].state > 0)
-                    sim.components[`Sim/SIM-${sw}SCC`].state--;
-                if (levers.states()[sw] == 'reverse' && sim.components[`Sim/SIM-${sw}SCC`].state < 8)
-                    sim.components[`Sim/SIM-${sw}SCC`].state++;
+                if (levers.states()[sw] == 'normal' && sim.components[`Sim/SIM-${sw}WCC`].state > 0)
+                    sim.components[`Sim/SIM-${sw}WCC`].state--;
+                if (levers.states()[sw] == 'reverse' && sim.components[`Sim/SIM-${sw}WCC`].state < 8)
+                    sim.components[`Sim/SIM-${sw}WCC`].state++;
             });
         }
         if (!this.state.noBell && sim.components['Tower/BELL'].hasRung && this.bell && this.cowbell) {
@@ -632,10 +632,10 @@ class Top extends React.Component {
                         onPull={name => this.pullLever(name)}
                         override={this.state.overrideInterlocking}/>
                 <div style={{display: 'flex', justifyContent: 'space-between'}}>
-                  <Turnout name="switch 6" comp={sim.components['Sim/SIM-6SCC']}/>
-                  <Turnout name="switch 9" comp={sim.components['Sim/SIM-9SCC']}/>
-                  <Turnout name="switch 10" comp={sim.components['Sim/SIM-10SCC']}/>
-                  <Turnout name="switch 12" comp={sim.components['Sim/SIM-12SCC']}/>
+                  <Turnout name="switch 6" comp={sim.components['Sim/SIM-6WCC']}/>
+                  <Turnout name="switch 9" comp={sim.components['Sim/SIM-9WCC']}/>
+                  <Turnout name="switch 10" comp={sim.components['Sim/SIM-10WCC']}/>
+                  <Turnout name="switch 12" comp={sim.components['Sim/SIM-12WCC']}/>
                 </div>
                 <div>
                   <Switch name="1TR" comp={sim.components['Sim/SIM-1TRSW']}/>

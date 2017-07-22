@@ -944,19 +944,19 @@ module.exports = Sim;
 //     s.sim(t);
 // }
 
-// s.components['Tower/LVR-1'].state = 'reverse';
+// s.components['Tower/1TCC'].state = 'reverse';
 
 // for (; t < 1.0; t += 0.05) {
 //     s.sim(t);
 // }
 
-// s.components['Tower/LVR-6'].state = 'reverse';
+// s.components['Tower/6TCC'].state = 'reverse';
 
 // for (; t < 1.5; t += 0.05) {
 //     s.sim(t);
 // }
 
-// s.components['Tower/LVR-12'].state = 'reverse';
+// s.components['Tower/12TCC'].state = 'reverse';
 
 // for (; t < 2.0; t += 0.05) {
 //     s.sim(t);

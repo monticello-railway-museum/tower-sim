@@ -940,6 +940,14 @@
       "used": "4"
     },
     {
+      "component": "1TCC",
+      "subnet": "Tower",
+      "location": "lever bed",
+      "type": "lever",
+      "unused": "0",
+      "used": "0"
+    },
+    {
       "component": "1VGR",
       "subnet": "Tower",
       "location": "shelf 1",
@@ -1034,6 +1042,14 @@
       "used": "0"
     },
     {
+      "component": "2TCC",
+      "subnet": "Tower",
+      "location": "lever bed",
+      "type": "lever",
+      "unused": "0",
+      "used": "0"
+    },
+    {
       "component": "2TR",
       "subnet": "Tower",
       "location": "shelf 3",
@@ -1074,6 +1090,14 @@
       "used": "4"
     },
     {
+      "component": "3TCC",
+      "subnet": "Tower",
+      "location": "lever bed",
+      "type": "lever",
+      "unused": "0",
+      "used": "0"
+    },
+    {
       "component": "4-5ASR",
       "subnet": "Tower",
       "location": "shelf 2",
@@ -1104,6 +1128,14 @@
       "used": "3"
     },
     {
+      "component": "4TCC",
+      "subnet": "Tower",
+      "location": "lever bed",
+      "type": "lever",
+      "unused": "0",
+      "used": "0"
+    },
+    {
       "component": "5GE RESISTOR",
       "subnet": "Tower",
       "type": "resistor",
@@ -1130,6 +1162,14 @@
       "contacts": "4",
       "unused": "0",
       "used": "4"
+    },
+    {
+      "component": "5TCC",
+      "subnet": "Tower",
+      "location": "lever bed",
+      "type": "lever",
+      "unused": "0",
+      "used": "0"
     },
     {
       "component": "6LOSTER",
@@ -1193,6 +1233,14 @@
       "used": "0"
     },
     {
+      "component": "6TCC",
+      "subnet": "Tower",
+      "location": "lever bed",
+      "type": "lever",
+      "unused": "0",
+      "used": "0"
+    },
+    {
       "component": "6TE",
       "subnet": "Tower",
       "location": "lever top",
@@ -1248,6 +1296,22 @@
       "location": "model board",
       "type": "light",
       "config": "{\"volts\":12,\"watts\":6}",
+      "unused": "0",
+      "used": "0"
+    },
+    {
+      "component": "7TCC",
+      "subnet": "Tower",
+      "location": "lever bed",
+      "type": "lever",
+      "unused": "0",
+      "used": "0"
+    },
+    {
+      "component": "8TCC",
+      "subnet": "Tower",
+      "location": "lever bed",
+      "type": "lever",
       "unused": "0",
       "used": "0"
     },
@@ -1315,6 +1379,14 @@
       "used": "3"
     },
     {
+      "component": "9TCC",
+      "subnet": "Tower",
+      "location": "lever bed",
+      "type": "lever",
+      "unused": "0",
+      "used": "0"
+    },
+    {
       "component": "9WCKE",
       "subnet": "Tower",
       "location": "model board",
@@ -1346,11 +1418,27 @@
       "used": "3"
     },
     {
+      "component": "10TCC",
+      "subnet": "Tower",
+      "location": "lever bed",
+      "type": "lever",
+      "unused": "0",
+      "used": "0"
+    },
+    {
       "component": "10WCKE",
       "subnet": "Tower",
       "location": "model board",
       "type": "light",
       "config": "{\"volts\":12,\"watts\":6}",
+      "unused": "0",
+      "used": "0"
+    },
+    {
+      "component": "11TCC",
+      "subnet": "Tower",
+      "location": "lever bed",
+      "type": "lever",
       "unused": "0",
       "used": "0"
     },
@@ -1377,6 +1465,14 @@
       "contacts": "4",
       "unused": "0",
       "used": "4"
+    },
+    {
+      "component": "12TCC",
+      "subnet": "Tower",
+      "location": "lever bed",
+      "type": "lever",
+      "unused": "0",
+      "used": "0"
     },
     {
       "component": "12TE",
@@ -1436,6 +1532,14 @@
       "contacts": "10",
       "unused": "0",
       "used": "10"
+    },
+    {
+      "component": "13TCC",
+      "subnet": "Tower",
+      "location": "lever bed",
+      "type": "lever",
+      "unused": "0",
+      "used": "0"
     },
     {
       "component": "14-15-16ASR",
@@ -1650,6 +1754,14 @@
       "used": "4"
     },
     {
+      "component": "14TCC",
+      "subnet": "Tower",
+      "location": "lever bed",
+      "type": "lever",
+      "unused": "0",
+      "used": "0"
+    },
+    {
       "component": "15DR",
       "subnet": "Tower",
       "location": "rack",
@@ -1684,6 +1796,14 @@
       "resistance": "500",
       "unused": "-3",
       "used": "3"
+    },
+    {
+      "component": "15TCC",
+      "subnet": "Tower",
+      "location": "lever bed",
+      "type": "lever",
+      "unused": "0",
+      "used": "0"
     },
     {
       "component": "16AKSR",
@@ -1732,6 +1852,14 @@
       "resistance": "500",
       "unused": "-5",
       "used": "5"
+    },
+    {
+      "component": "16TCC",
+      "subnet": "Tower",
+      "location": "lever bed",
+      "type": "lever",
+      "unused": "0",
+      "used": "0"
     },
     {
       "component": "16VGR",
@@ -2005,134 +2133,6 @@
       "subnet": "Tower",
       "location": "lever top",
       "type": "lock",
-      "unused": "0",
-      "used": "0"
-    },
-    {
-      "component": "LVR-1",
-      "subnet": "Tower",
-      "location": "lever bed",
-      "type": "lever",
-      "unused": "0",
-      "used": "0"
-    },
-    {
-      "component": "LVR-2",
-      "subnet": "Tower",
-      "location": "lever bed",
-      "type": "lever",
-      "unused": "0",
-      "used": "0"
-    },
-    {
-      "component": "LVR-3",
-      "subnet": "Tower",
-      "location": "lever bed",
-      "type": "lever",
-      "unused": "0",
-      "used": "0"
-    },
-    {
-      "component": "LVR-4",
-      "subnet": "Tower",
-      "location": "lever bed",
-      "type": "lever",
-      "unused": "0",
-      "used": "0"
-    },
-    {
-      "component": "LVR-5",
-      "subnet": "Tower",
-      "location": "lever bed",
-      "type": "lever",
-      "unused": "0",
-      "used": "0"
-    },
-    {
-      "component": "LVR-6",
-      "subnet": "Tower",
-      "location": "lever bed",
-      "type": "lever",
-      "unused": "0",
-      "used": "0"
-    },
-    {
-      "component": "LVR-7",
-      "subnet": "Tower",
-      "location": "lever bed",
-      "type": "lever",
-      "unused": "0",
-      "used": "0"
-    },
-    {
-      "component": "LVR-8",
-      "subnet": "Tower",
-      "location": "lever bed",
-      "type": "lever",
-      "unused": "0",
-      "used": "0"
-    },
-    {
-      "component": "LVR-9",
-      "subnet": "Tower",
-      "location": "lever bed",
-      "type": "lever",
-      "unused": "0",
-      "used": "0"
-    },
-    {
-      "component": "LVR-10",
-      "subnet": "Tower",
-      "location": "lever bed",
-      "type": "lever",
-      "unused": "0",
-      "used": "0"
-    },
-    {
-      "component": "LVR-11",
-      "subnet": "Tower",
-      "location": "lever bed",
-      "type": "lever",
-      "unused": "0",
-      "used": "0"
-    },
-    {
-      "component": "LVR-12",
-      "subnet": "Tower",
-      "location": "lever bed",
-      "type": "lever",
-      "unused": "0",
-      "used": "0"
-    },
-    {
-      "component": "LVR-13",
-      "subnet": "Tower",
-      "location": "lever bed",
-      "type": "lever",
-      "unused": "0",
-      "used": "0"
-    },
-    {
-      "component": "LVR-14",
-      "subnet": "Tower",
-      "location": "lever bed",
-      "type": "lever",
-      "unused": "0",
-      "used": "0"
-    },
-    {
-      "component": "LVR-15",
-      "subnet": "Tower",
-      "location": "lever bed",
-      "type": "lever",
-      "unused": "0",
-      "used": "0"
-    },
-    {
-      "component": "LVR-16",
-      "subnet": "Tower",
-      "location": "lever bed",
-      "type": "lever",
       "unused": "0",
       "used": "0"
     },
@@ -3221,25 +3221,25 @@
     {
       "signal": "B10-TWR",
       "from": "B10-TWR LVR T6",
-      "to": "LVR-2 T5",
+      "to": "2TCC T5",
       "page": "T7"
     },
     {
       "signal": "B10-TWR",
       "from": "B10-TWR LVR T7",
-      "to": "LVR-3 T5",
+      "to": "3TCC T5",
       "page": "T7"
     },
     {
       "signal": "2-3COS-3",
-      "from": "LVR-2 T6",
+      "from": "2TCC T6",
       "to": "2-3COPB 1F",
       "page": "T7"
     },
     {
       "signal": "2-3COS-3A",
-      "from": "LVR-3 T6",
-      "to": "LVR-2 T6",
+      "from": "3TCC T6",
+      "to": "2TCC T6",
       "page": "T7"
     },
     {
@@ -3281,25 +3281,25 @@
     {
       "signal": "B10-TWR",
       "from": "B10-TWR LVR T13",
-      "to": "LVR-14 T5",
+      "to": "14TCC T5",
       "page": "T7"
     },
     {
       "signal": "B10-TWR",
       "from": "B10-TWR LVR T14",
-      "to": "LVR-16 T13",
+      "to": "16TCC T13",
       "page": "T7"
     },
     {
       "signal": "14-16COS-3",
-      "from": "LVR-14 T6",
+      "from": "14TCC T6",
       "to": "14-16COPB 1F",
       "page": "T7"
     },
     {
       "signal": "14-16COS-3A",
-      "from": "LVR-16 T14",
-      "to": "LVR-14 T6",
+      "from": "16TCC T14",
+      "to": "14TCC T6",
       "page": "T7"
     },
     {
@@ -3341,24 +3341,24 @@
     {
       "signal": "B10-TWR",
       "from": "B10-TWR LVR T10",
-      "to": "LVR-6 T2",
+      "to": "6TCC T2",
       "page": "T8"
     },
     {
       "signal": "**STRAP**",
-      "from": "LVR-6 T2",
-      "to": "LVR-6 T3",
+      "from": "6TCC T2",
+      "to": "6TCC T3",
       "page": "T8"
     },
     {
       "signal": "6NLP-1",
-      "from": "LVR-6 T1",
+      "from": "6TCC T1",
       "to": "GRP-F T2",
       "page": "T8"
     },
     {
       "signal": "6RLP-1",
-      "from": "LVR-6 T4",
+      "from": "6TCC T4",
       "to": "GRP-F T3",
       "page": "T8"
     },
@@ -3382,7 +3382,7 @@
     },
     {
       "signal": "1HD-6N-1",
-      "from": "LVR-1 T4",
+      "from": "1TCC T4",
       "to": "2TR 2H",
       "page": "T8",
       "notes": "H-NETWORK 1HD-1"
@@ -3415,7 +3415,7 @@
     },
     {
       "signal": "1HD-A2",
-      "from": "LVR-1 T8",
+      "from": "1TCC T8",
       "to": "9NWPR 4H",
       "page": "T8",
       "notes": "H-NETWORK 1HD-A2"
@@ -3429,11 +3429,11 @@
     {
       "signal": "1VG-1",
       "from": "6RWPPR 2F",
-      "to": "LVR-1 T9"
+      "to": "1TCC T9"
     },
     {
       "signal": "1VG",
-      "from": "LVR-1 T10",
+      "from": "1TCC T10",
       "to": "1VGR COIL+"
     },
     {
@@ -3442,11 +3442,11 @@
       "to": "N10-TWR S2 T?"
     },
     {
-      "from": "LVR-1 T8",
+      "from": "1TCC T8",
       "to": "1VGR 3F"
     },
     {
-      "from": "LVR-1 T4",
+      "from": "1TCC T4",
       "to": "1VGR 3B"
     },
     {
@@ -3572,24 +3572,24 @@
     {
       "signal": "6WCK-1",
       "from": "6NWPPR 2F",
-      "to": "LVR-6 T6",
+      "to": "6TCC T6",
       "page": "T8"
     },
     {
       "signal": "6WCK-A",
       "from": "6NWPPR 2B",
-      "to": "LVR-6 T8",
+      "to": "6TCC T8",
       "page": "T8"
     },
     {
       "signal": "6WCK-A1",
-      "from": "LVR-6 T7",
+      "from": "6TCC T7",
       "to": "6RWPPR 2F",
       "page": "T8"
     },
     {
       "signal": "6WCK-2",
-      "from": "LVR-6 T5",
+      "from": "6TCC T5",
       "to": "6RWPPR 2B",
       "page": "T8"
     },
@@ -3649,7 +3649,7 @@
     },
     {
       "signal": "2HD-2",
-      "from": "LVR-2 T4",
+      "from": "2TCC T4",
       "to": "2-3COSR 2H",
       "page": "T9",
       "notes": "H-NETWORK 2HD-2"
@@ -3686,7 +3686,7 @@
     },
     {
       "signal": "3HD-2",
-      "from": "LVR-3 T2",
+      "from": "3TCC T2",
       "to": "2-3COSR 3H",
       "page": "T9",
       "notes": "H-NETWORK 3HD-2"
@@ -3795,14 +3795,14 @@
     },
     {
       "signal": "4H",
-      "from": "LVR-4 T4",
+      "from": "4TCC T4",
       "to": "GRP-D T9",
       "page": "T10",
       "notes": "H-NETWORK 4H"
     },
     {
       "signal": "5H",
-      "from": "LVR-5 T4",
+      "from": "5TCC T4",
       "to": "5HR COIL+",
       "page": "T10",
       "notes": "H-NETWORK 5H"
@@ -3876,24 +3876,24 @@
     {
       "signal": "9WCK-1",
       "from": "9RWPR 2F",
-      "to": "LVR-9 T4",
+      "to": "9TCC T4",
       "page": "T10"
     },
     {
       "signal": "9WCK-A",
       "from": "9RWPR 2B",
-      "to": "LVR-9 T2",
+      "to": "9TCC T2",
       "page": "T10"
     },
     {
       "signal": "9WCK-2",
-      "from": "LVR-9 T3",
+      "from": "9TCC T3",
       "to": "9NWPR 2B",
       "page": "T10"
     },
     {
       "signal": "9WCK-A1",
-      "from": "LVR-9 T1",
+      "from": "9TCC T1",
       "to": "9NWPR 2F",
       "page": "T10"
     },
@@ -3918,24 +3918,24 @@
     {
       "signal": "10WCK-1",
       "from": "10RWPR 2F",
-      "to": "LVR-10 T4",
+      "to": "10TCC T4",
       "page": "T10"
     },
     {
       "signal": "10WCK-A",
       "from": "10RWPR 2B",
-      "to": "LVR-10 T2",
+      "to": "10TCC T2",
       "page": "T10"
     },
     {
       "signal": "10WCK-2",
-      "from": "LVR-10 T3",
+      "from": "10TCC T3",
       "to": "10NWPR 2B",
       "page": "T10"
     },
     {
       "signal": "10WCK-A1",
-      "from": "LVR-10 T1",
+      "from": "10TCC T1",
       "to": "10NWPR 2F",
       "page": "T10"
     },
@@ -4188,30 +4188,30 @@
     {
       "signal": "B10-TWR",
       "from": "B10-TWR LVR T11",
-      "to": "LVR-12 T2",
+      "to": "12TCC T2",
       "page": "T13"
     },
     {
       "signal": "**STRAP**",
-      "from": "LVR-12 T2",
-      "to": "LVR-12 T3",
+      "from": "12TCC T2",
+      "to": "12TCC T3",
       "page": "T13"
     },
     {
       "signal": "12NLP-1",
-      "from": "LVR-12 T1",
+      "from": "12TCC T1",
       "to": "GRP-A T1",
       "page": "T13"
     },
     {
       "signal": "12RLP-1",
-      "from": "LVR-12 T4",
+      "from": "12TCC T4",
       "to": "GRP-A T2",
       "page": "T13"
     },
     {
       "signal": "14HD",
-      "from": "LVR-14 T4",
+      "from": "14TCC T4",
       "to": "14-16COSR 2H",
       "page": "T13",
       "notes": "H-NETWORK 14HD"
@@ -4345,24 +4345,24 @@
     {
       "signal": "12WCK-1",
       "from": "12NWPPR 2F",
-      "to": "LVR-12 T6",
+      "to": "12TCC T6",
       "page": "T13"
     },
     {
       "signal": "12WCK-A",
       "from": "12NWPPR 2B",
-      "to": "LVR-12 T8",
+      "to": "12TCC T8",
       "page": "T13"
     },
     {
       "signal": "12WCK-2",
-      "from": "LVR-12 T5",
+      "from": "12TCC T5",
       "to": "12RWPPR 2B",
       "page": "T13"
     },
     {
       "signal": "12WCK-A1",
-      "from": "LVR-12 T7",
+      "from": "12TCC T7",
       "to": "12RWPPR 2F",
       "page": "T13"
     },
@@ -4428,7 +4428,7 @@
     },
     {
       "signal": "15D-1",
-      "from": "LVR-15 T1",
+      "from": "15TCC T1",
       "to": "16APR 4H",
       "page": "T14",
       "notes": "H-NETWORK 15D-1"
@@ -4501,10 +4501,10 @@
     },
     {
       "from": "12RWPPR 2F",
-      "to": "LVR-16 T9"
+      "to": "16TCC T9"
     },
     {
-      "from": "LVR-16 T10",
+      "from": "16TCC T10",
       "to": "16VGR COIL+"
     },
     {
@@ -4513,14 +4513,14 @@
     },
     {
       "signal": "16AHD-2",
-      "from": "LVR-16 T4",
+      "from": "16TCC T4",
       "to": "14-16COSR 3H",
       "page": "T15",
       "notes": "H-NETWORK 16AHD-2"
     },
     {
       "signal": "16BHD-1",
-      "from": "LVR-16 T8",
+      "from": "16TCC T8",
       "to": "14-16COSR 4H",
       "page": "T15",
       "notes": "H-NETWORK 16BHD-1"
@@ -4696,30 +4696,30 @@
     {
       "signal": "H-1-6N-B10",
       "from": "B10-TWR LVR T2",
-      "to": "LVR-1 T1",
+      "to": "1TCC T1",
       "page": "T16"
     },
     {
       "signal": "H-1-6R-B10",
       "from": "B10-TWR LVR T3",
-      "to": "LVR-1 T5",
+      "to": "1TCC T5",
       "page": "T16"
     },
     {
       "signal": "**STRAP**",
-      "from": "LVR-1 T2",
-      "to": "LVR-1 T3",
+      "from": "1TCC T2",
+      "to": "1TCC T3",
       "page": "T16"
     },
     {
       "signal": "**STRAP**",
-      "from": "LVR-1 T6",
-      "to": "LVR-1 T7",
+      "from": "1TCC T6",
+      "to": "1TCC T7",
       "page": "T16"
     },
     {
       "signal": "H-1-6N",
-      "from": "LVR-1 T3",
+      "from": "1TCC T3",
       "to": "6NWPPR 3F",
       "page": "T16"
     },
@@ -4731,7 +4731,7 @@
     },
     {
       "signal": "H-1-6R",
-      "from": "LVR-1 T7",
+      "from": "1TCC T7",
       "to": "6RWPPR 3F",
       "page": "T16"
     },
@@ -4768,7 +4768,7 @@
     {
       "signal": "H-3-6R",
       "from": "6RWPPR 4F",
-      "to": "LVR-3 T1",
+      "to": "3TCC T1",
       "page": "T16"
     },
     {
@@ -4791,43 +4791,43 @@
     },
     {
       "signal": "H-2-6N",
-      "from": "LVR-2 T3",
+      "from": "2TCC T3",
       "to": "6NWPPR 4F",
       "page": "T16"
     },
     {
       "signal": "**STRAP**",
-      "from": "LVR-2 T3",
-      "to": "LVR-2 T2",
+      "from": "2TCC T3",
+      "to": "2TCC T2",
       "page": "T16"
     },
     {
       "signal": "H-2-6N-B10",
       "from": "B10-TWR LVR T5",
-      "to": "LVR-2 T1",
+      "to": "2TCC T1",
       "page": "T16"
     },
     {
       "signal": "**STRAP**",
-      "from": "LVR-4 T2",
-      "to": "LVR-4 T3",
+      "from": "4TCC T2",
+      "to": "4TCC T3",
       "page": "T16"
     },
     {
       "signal": "H-4-9R-B10",
       "from": "B10-TWR LVR T8",
-      "to": "LVR-4 T1",
+      "to": "4TCC T1",
       "page": "T16"
     },
     {
       "signal": "H-4-9R",
-      "from": "LVR-4 T3",
-      "to": "LVR-9 T7",
+      "from": "4TCC T3",
+      "to": "9TCC T7",
       "page": "T16"
     },
     {
       "signal": "H-4-9R-1",
-      "from": "LVR-9 T8",
+      "from": "9TCC T8",
       "to": "9RWPR 3F",
       "page": "T16"
     },
@@ -4852,12 +4852,12 @@
     {
       "signal": "H-9N-10",
       "from": "9NWPR 3F",
-      "to": "LVR-9 T5",
+      "to": "9TCC T5",
       "page": "T16"
     },
     {
       "signal": "H-9N-10-1",
-      "from": "LVR-9 T6",
+      "from": "9TCC T6",
       "to": "10RWPR 3B",
       "page": "T16"
     },
@@ -4876,37 +4876,37 @@
     {
       "signal": "H-5-10R-1",
       "from": "10RWPR 3F",
-      "to": "LVR-10 T7",
+      "to": "10TCC T7",
       "page": "T16"
     },
     {
       "signal": "H-5-10R",
-      "from": "LVR-10 T8",
-      "to": "LVR-5 T3",
+      "from": "10TCC T8",
+      "to": "5TCC T3",
       "page": "T16"
     },
     {
       "signal": "**STRAP**",
-      "from": "LVR-5 T3",
-      "to": "LVR-5 T2",
+      "from": "5TCC T3",
+      "to": "5TCC T2",
       "page": "T16"
     },
     {
       "signal": "H-5-10R-B10",
       "from": "B10-TWR LVR T9",
-      "to": "LVR-5 T1",
+      "to": "5TCC T1",
       "page": "T16"
     },
     {
       "signal": "H-10N-15",
       "from": "10NWPR 3F",
-      "to": "LVR-10 T6",
+      "to": "10TCC T6",
       "page": "T16",
       "notes": "rework"
     },
     {
       "signal": "H-10N-15-1",
-      "from": "LVR-10 T5",
+      "from": "10TCC T5",
       "to": "16VGR 1H",
       "page": "T16",
       "notes": "rework"
@@ -4927,25 +4927,25 @@
     },
     {
       "signal": "H-12R-15",
-      "from": "LVR-15 T2",
+      "from": "15TCC T2",
       "to": "12RWPPR 3F",
       "page": "T16"
     },
     {
       "signal": "H-12N-14-B10",
       "from": "B10-TWR LVR T12",
-      "to": "LVR-14 T1",
+      "to": "14TCC T1",
       "page": "T16"
     },
     {
       "signal": "**STRAP**",
-      "from": "LVR-14 T2",
-      "to": "LVR-14 T3",
+      "from": "14TCC T2",
+      "to": "14TCC T3",
       "page": "T16"
     },
     {
       "signal": "H-12N-14",
-      "from": "LVR-14 T3",
+      "from": "14TCC T3",
       "to": "12NWPPR 3F",
       "page": "T16"
     },
@@ -4981,7 +4981,7 @@
     },
     {
       "signal": "H-12R-16",
-      "from": "LVR-16 T7",
+      "from": "16TCC T7",
       "to": "12RWPPR 4F",
       "page": "T16"
     },
@@ -4993,32 +4993,32 @@
     },
     {
       "signal": "H-12N-16",
-      "from": "LVR-16 T3",
+      "from": "16TCC T3",
       "to": "12NWPPR 4F",
       "page": "T16"
     },
     {
       "signal": "**STRAP**",
-      "from": "LVR-16 T3",
-      "to": "LVR-16 T2",
+      "from": "16TCC T3",
+      "to": "16TCC T2",
       "page": "T16"
     },
     {
       "signal": "**STRAP**",
-      "from": "LVR-16 T7",
-      "to": "LVR-16 T6",
+      "from": "16TCC T7",
+      "to": "16TCC T6",
       "page": "T16"
     },
     {
       "signal": "H-12N-16-B10",
       "from": "B10-TWR LVR T16",
-      "to": "LVR-16 T1",
+      "to": "16TCC T1",
       "page": "T16"
     },
     {
       "signal": "H-12R-16-B10",
       "from": "B10-TWR LVR T17",
-      "to": "LVR-16 T5",
+      "to": "16TCC T5",
       "page": "T16"
     },
     {
@@ -7672,327 +7672,327 @@
   ],
   "levers": [
     {
-      "lever": "LVR-1",
+      "lever": "1TCC",
       "state": "normal",
       "from": "T1",
       "to": "T2"
     },
     {
-      "lever": "LVR-1",
+      "lever": "1TCC",
       "state": "reverse",
       "from": "T3",
       "to": "T4"
     },
     {
-      "lever": "LVR-1",
+      "lever": "1TCC",
       "state": "normal",
       "from": "T5",
       "to": "T6"
     },
     {
-      "lever": "LVR-1",
+      "lever": "1TCC",
       "state": "reverse",
       "from": "T7",
       "to": "T8"
     },
     {
-      "lever": "LVR-1",
+      "lever": "1TCC",
       "state": "reverse",
       "from": "T9",
       "to": "T10"
     },
     {
-      "lever": "LVR-1",
+      "lever": "1TCC",
       "state": "normal",
       "from": "T11",
       "to": "T12"
     },
     {
-      "lever": "LVR-1",
+      "lever": "1TCC",
       "state": "reverse",
       "from": "T13",
       "to": "T14"
     },
     {
-      "lever": "LVR-1",
+      "lever": "1TCC",
       "state": "normal",
       "from": "T15",
       "to": "T16"
     },
     {
-      "lever": "LVR-2",
+      "lever": "2TCC",
       "state": "normal",
       "from": "T1",
       "to": "T2"
     },
     {
-      "lever": "LVR-2",
+      "lever": "2TCC",
       "state": "reverse",
       "from": "T3",
       "to": "T4"
     },
     {
-      "lever": "LVR-2",
+      "lever": "2TCC",
       "state": "reverse",
       "from": "T5",
       "to": "T6"
     },
     {
-      "lever": "LVR-2",
+      "lever": "2TCC",
       "from": "T7",
       "to": "T8"
     },
     {
-      "lever": "LVR-3",
+      "lever": "3TCC",
       "state": "reverse",
       "from": "T1",
       "to": "T2"
     },
     {
-      "lever": "LVR-3",
+      "lever": "3TCC",
       "state": "normal",
       "from": "T3",
       "to": "T4"
     },
     {
-      "lever": "LVR-3",
+      "lever": "3TCC",
       "state": "reverse",
       "from": "T5",
       "to": "T6"
     },
     {
-      "lever": "LVR-3",
+      "lever": "3TCC",
       "from": "T7",
       "to": "T8"
     },
     {
-      "lever": "LVR-4",
+      "lever": "4TCC",
       "state": "normal",
       "from": "T1",
       "to": "T2"
     },
     {
-      "lever": "LVR-4",
+      "lever": "4TCC",
       "state": "reverse",
       "from": "T3",
       "to": "T4"
     },
     {
-      "lever": "LVR-4",
+      "lever": "4TCC",
       "from": "T5",
       "to": "T6"
     },
     {
-      "lever": "LVR-4",
+      "lever": "4TCC",
       "from": "T7",
       "to": "T8"
     },
     {
-      "lever": "LVR-5",
+      "lever": "5TCC",
       "state": "normal",
       "from": "T1",
       "to": "T2"
     },
     {
-      "lever": "LVR-5",
+      "lever": "5TCC",
       "state": "reverse",
       "from": "T3",
       "to": "T4"
     },
     {
-      "lever": "LVR-5",
+      "lever": "5TCC",
       "from": "T5",
       "to": "T6"
     },
     {
-      "lever": "LVR-5",
+      "lever": "5TCC",
       "from": "T7",
       "to": "T8"
     },
     {
-      "lever": "LVR-6",
+      "lever": "6TCC",
       "state": "normal",
       "from": "T1",
       "to": "T2"
     },
     {
-      "lever": "LVR-6",
+      "lever": "6TCC",
       "state": "reverse",
       "from": "T3",
       "to": "T4"
     },
     {
-      "lever": "LVR-6",
+      "lever": "6TCC",
       "state": "normal",
       "from": "T5",
       "to": "T6"
     },
     {
-      "lever": "LVR-6",
+      "lever": "6TCC",
       "state": "reverse",
       "from": "T7",
       "to": "T8"
     },
     {
-      "lever": "LVR-9",
+      "lever": "9TCC",
       "state": "normal",
       "from": "T1",
       "to": "T2"
     },
     {
-      "lever": "LVR-9",
+      "lever": "9TCC",
       "state": "reverse",
       "from": "T3",
       "to": "T4"
     },
     {
-      "lever": "LVR-9",
+      "lever": "9TCC",
       "state": "normal",
       "from": "T5",
       "to": "T6"
     },
     {
-      "lever": "LVR-9",
+      "lever": "9TCC",
       "state": "reverse",
       "from": "T7",
       "to": "T8"
     },
     {
-      "lever": "LVR-10",
+      "lever": "10TCC",
       "state": "normal",
       "from": "T1",
       "to": "T2"
     },
     {
-      "lever": "LVR-10",
+      "lever": "10TCC",
       "state": "reverse",
       "from": "T3",
       "to": "T4"
     },
     {
-      "lever": "LVR-10",
+      "lever": "10TCC",
       "state": "normal",
       "from": "T5",
       "to": "T6"
     },
     {
-      "lever": "LVR-10",
+      "lever": "10TCC",
       "state": "reverse",
       "from": "T7",
       "to": "T8"
     },
     {
-      "lever": "LVR-12",
+      "lever": "12TCC",
       "state": "normal",
       "from": "T1",
       "to": "T2"
     },
     {
-      "lever": "LVR-12",
+      "lever": "12TCC",
       "state": "reverse",
       "from": "T3",
       "to": "T4"
     },
     {
-      "lever": "LVR-12",
+      "lever": "12TCC",
       "state": "normal",
       "from": "T5",
       "to": "T6"
     },
     {
-      "lever": "LVR-12",
+      "lever": "12TCC",
       "state": "reverse",
       "from": "T7",
       "to": "T8"
     },
     {
-      "lever": "LVR-14",
+      "lever": "14TCC",
       "state": "normal",
       "from": "T1",
       "to": "T2"
     },
     {
-      "lever": "LVR-14",
+      "lever": "14TCC",
       "state": "reverse",
       "from": "T3",
       "to": "T4"
     },
     {
-      "lever": "LVR-14",
+      "lever": "14TCC",
       "state": "reverse",
       "from": "T5",
       "to": "T6"
     },
     {
-      "lever": "LVR-14",
+      "lever": "14TCC",
       "from": "T7",
       "to": "T8"
     },
     {
-      "lever": "LVR-15",
+      "lever": "15TCC",
       "state": "reverse",
       "from": "T1",
       "to": "T2"
     },
     {
-      "lever": "LVR-15",
+      "lever": "15TCC",
       "from": "T3",
       "to": "T4"
     },
     {
-      "lever": "LVR-15",
+      "lever": "15TCC",
       "from": "T5",
       "to": "T6"
     },
     {
-      "lever": "LVR-15",
+      "lever": "15TCC",
       "state": "normal",
       "from": "T7",
       "to": "T8"
     },
     {
-      "lever": "LVR-16",
+      "lever": "16TCC",
       "state": "normal",
       "from": "T1",
       "to": "T2"
     },
     {
-      "lever": "LVR-16",
+      "lever": "16TCC",
       "state": "reverse",
       "from": "T3",
       "to": "T4"
     },
     {
-      "lever": "LVR-16",
+      "lever": "16TCC",
       "state": "normal",
       "from": "T5",
       "to": "T6"
     },
     {
-      "lever": "LVR-16",
+      "lever": "16TCC",
       "state": "reverse",
       "from": "T7",
       "to": "T8"
     },
     {
-      "lever": "LVR-16",
+      "lever": "16TCC",
       "state": "reverse",
       "from": "T9",
       "to": "T10"
     },
     {
-      "lever": "LVR-16",
+      "lever": "16TCC",
       "from": "T11",
       "to": "T12"
     },
     {
-      "lever": "LVR-16",
+      "lever": "16TCC",
       "state": "reverse",
       "from": "T13",
       "to": "T14"
     },
     {
-      "lever": "LVR-16",
+      "lever": "16TCC",
       "from": "T15",
       "to": "T16"
     }
