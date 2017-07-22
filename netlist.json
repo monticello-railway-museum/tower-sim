@@ -116,20 +116,6 @@
       "used": "2"
     },
     {
-      "component": "12SCC-FUSE",
-      "subnet": "Case A",
-      "type": "fuse",
-      "unused": "0",
-      "used": "0"
-    },
-    {
-      "component": "12STI",
-      "subnet": "Case A",
-      "type": "terminal",
-      "unused": "0",
-      "used": "0"
-    },
-    {
       "component": "12T RESISTOR 1",
       "subnet": "Case A",
       "type": "resistor",
@@ -182,6 +168,13 @@
       "used": "1"
     },
     {
+      "component": "12WCC-FUSE",
+      "subnet": "Case A",
+      "type": "fuse",
+      "unused": "0",
+      "used": "0"
+    },
+    {
       "component": "12WCR",
       "subnet": "Case A",
       "type": "relay",
@@ -190,6 +183,13 @@
       "contacts": "4",
       "unused": "3",
       "used": "1"
+    },
+    {
+      "component": "12WTI",
+      "subnet": "Case A",
+      "type": "terminal",
+      "unused": "0",
+      "used": "0"
     },
     {
       "component": "14ADR",
@@ -744,16 +744,9 @@
       "used": "2"
     },
     {
-      "component": "6SCC-FUSE",
+      "component": "6WCC-FUSE",
       "subnet": "Case C",
       "type": "fuse",
-      "unused": "0",
-      "used": "0"
-    },
-    {
-      "component": "6STI",
-      "subnet": "Case C",
-      "type": "terminal",
       "unused": "0",
       "used": "0"
     },
@@ -766,6 +759,13 @@
       "contacts": "4",
       "unused": "1",
       "used": "3"
+    },
+    {
+      "component": "6WTI",
+      "subnet": "Case C",
+      "type": "terminal",
+      "unused": "0",
+      "used": "0"
     },
     {
       "component": "15AGE RESISTOR",
@@ -3946,7 +3946,7 @@
       "page": "T10"
     },
     {
-      "signal": "B10-9SCC",
+      "signal": "B10-9WCC",
       "from": "B10-TWR S1 T7",
       "to": "GRP-C T7",
       "page": "T11"
@@ -3988,7 +3988,7 @@
       "page": "T11"
     },
     {
-      "signal": "B10-10SCC",
+      "signal": "B10-10WCC",
       "from": "B10-TWR S1 T8",
       "to": "GRP-C T1",
       "page": "T11"
@@ -5382,25 +5382,25 @@
       "page": "A2"
     },
     {
-      "signal": "12SCCWP-A",
+      "signal": "12WCCWP-A",
       "from": "12RWPR 1H",
       "to": "12NWPR 1H",
       "page": "A2"
     },
     {
-      "signal": "12SCCWP",
+      "signal": "12WCCWP",
       "from": "12NWPR 1H",
       "to": "CASEA T73",
       "page": "A2"
     },
     {
-      "signal": "N-12SCCWP",
+      "signal": "N-12WCCWP",
       "from": "CASEA T5",
       "to": "CASEA T74",
       "page": "A2"
     },
     {
-      "signal": "12SCC-NIO",
+      "signal": "12WCC-NIO",
       "from": "N10-CASEA",
       "to": "CASEA T72",
       "page": "A2"
@@ -5408,13 +5408,13 @@
     {
       "signal": "B10-CASEA",
       "from": "B10-CASEA",
-      "to": "12SCC-FUSE +",
+      "to": "12WCC-FUSE +",
       "page": "A2"
     },
     {
-      "signal": "12SCC-BIO",
+      "signal": "12WCC-BIO",
       "from": "CASEA T71",
-      "to": "12SCC-FUSE -",
+      "to": "12WCC-FUSE -",
       "page": "A2"
     },
     {
@@ -5473,20 +5473,20 @@
     },
     {
       "signal": "12WKEZ",
-      "from": "12STI 12WKEZ",
+      "from": "12WTI 12WKEZ",
       "to": "12WCR 1B",
       "page": "A2"
     },
     {
       "signal": "12WKE",
-      "from": "12STI 12WKE",
+      "from": "12WTI 12WKE",
       "to": "12WCR 1F",
       "page": "A2"
     },
     {
       "signal": "N10-CASEA",
       "from": "N10-CASEA",
-      "to": "12STI N10",
+      "to": "12WTI N10",
       "page": "A2"
     },
     {
@@ -6765,7 +6765,7 @@
     {
       "signal": "B10-CASEC",
       "from": "B10-CASEC T5",
-      "to": "6SCC-FUSE +"
+      "to": "6WCC-FUSE +"
     },
     {
       "signal": "B10-CASEC *",
@@ -6788,14 +6788,14 @@
       "to": "6WCR COIL-"
     },
     {
-      "signal": "6SCC-N10",
+      "signal": "6WCC-N10",
       "from": "N10-CASEC T5",
       "to": "CASEC T22"
     },
     {
       "signal": "N10-CASEC",
       "from": "N10-CASEC T6",
-      "to": "6STI N10"
+      "to": "6WTI N10"
     },
     {
       "signal": "N10-CASEC *",
@@ -6993,19 +6993,19 @@
       "to": "6NWPR COIL-"
     },
     {
-      "signal": "6SCCWP-A",
+      "signal": "6WCCWP-A",
       "from": "6NWPR 1H",
       "to": "6RWPR 1H"
     },
     {
-      "signal": "6SCCWP",
+      "signal": "6WCCWP",
       "from": "CASEC T23",
       "to": "6NWPR 1H"
     },
     {
-      "signal": "6SCC B10",
+      "signal": "6WCC B10",
       "from": "CASEC T21",
-      "to": "6SCC-FUSE -"
+      "to": "6WCC-FUSE -"
     },
     {
       "signal": "6WC",
@@ -7040,12 +7040,12 @@
     {
       "signal": "6WKEZ",
       "from": "6WCR 1B",
-      "to": "6STI 6WKEZ"
+      "to": "6WTI 6WKEZ"
     },
     {
       "signal": "6WKE",
       "from": "6WCR 1F",
-      "to": "6STI 6WKE"
+      "to": "6WTI 6WKE"
     },
     {
       "signal": "1TNX",
@@ -8122,7 +8122,7 @@
       "name": "**** Switch Circuit Controllers ****"
     },
     {
-      "name": "SIM-6SCC",
+      "name": "SIM-6WCC",
       "fromSubnet": "Sim",
       "component": "sim-scc"
     },
@@ -8130,52 +8130,52 @@
       "fromSubnet": "Case C",
       "from": "CASEC T21",
       "toSubnet": "Sim",
-      "to": "SIM-6SCC 1H"
+      "to": "SIM-6WCC 1H"
     },
     {
       "fromSubnet": "Case C",
       "from": "CASEC T22",
       "toSubnet": "Sim",
-      "to": "SIM-6SCC 2H"
+      "to": "SIM-6WCC 2H"
     },
     {
       "fromSubnet": "Case C",
       "from": "CASEC T23",
       "toSubnet": "Sim",
-      "to": "SIM-6SCC 3H"
+      "to": "SIM-6WCC 3H"
     },
     {
       "fromSubnet": "Case C",
       "from": "CASEC T24",
       "toSubnet": "Sim",
-      "to": "SIM-6SCC 4H"
+      "to": "SIM-6WCC 4H"
     },
     {
       "fromSubnet": "Sim",
-      "from": "SIM-6SCC 1F",
+      "from": "SIM-6WCC 1F",
       "toSubnet": "Sim",
-      "to": "SIM-6SCC 3F"
+      "to": "SIM-6WCC 3F"
     },
     {
       "fromSubnet": "Sim",
-      "from": "SIM-6SCC 2F",
+      "from": "SIM-6WCC 2F",
       "toSubnet": "Sim",
-      "to": "SIM-6SCC 4F"
+      "to": "SIM-6WCC 4F"
     },
     {
       "fromSubnet": "Sim",
-      "from": "SIM-6SCC 1B",
+      "from": "SIM-6WCC 1B",
       "toSubnet": "Sim",
-      "to": "SIM-6SCC 4B"
+      "to": "SIM-6WCC 4B"
     },
     {
       "fromSubnet": "Sim",
-      "from": "SIM-6SCC 2B",
+      "from": "SIM-6WCC 2B",
       "toSubnet": "Sim",
-      "to": "SIM-6SCC 3B"
+      "to": "SIM-6WCC 3B"
     },
     {
-      "name": "SIM-9SCC",
+      "name": "SIM-9WCC",
       "fromSubnet": "Sim",
       "component": "sim-scc"
     },
@@ -8183,40 +8183,40 @@
       "fromSubnet": "Tower",
       "from": "GRP-C T7",
       "toSubnet": "Sim",
-      "to": "SIM-9SCC 1H"
+      "to": "SIM-9WCC 1H"
     },
     {
       "fromSubnet": "Tower",
       "from": "GRP-C T7",
       "toSubnet": "Sim",
-      "to": "SIM-9SCC 2H"
+      "to": "SIM-9WCC 2H"
     },
     {
       "fromSubnet": "Tower",
       "from": "GRP-C T8",
       "toSubnet": "Sim",
-      "to": "SIM-9SCC 3H"
+      "to": "SIM-9WCC 3H"
     },
     {
       "fromSubnet": "Tower",
       "from": "GRP-C T9",
       "toSubnet": "Sim",
-      "to": "SIM-9SCC 4H"
+      "to": "SIM-9WCC 4H"
     },
     {
       "fromSubnet": "Sim",
-      "from": "SIM-9SCC 1F",
+      "from": "SIM-9WCC 1F",
       "toSubnet": "Sim",
-      "to": "SIM-9SCC 3F"
+      "to": "SIM-9WCC 3F"
     },
     {
       "fromSubnet": "Sim",
-      "from": "SIM-9SCC 2B",
+      "from": "SIM-9WCC 2B",
       "toSubnet": "Sim",
-      "to": "SIM-9SCC 4B"
+      "to": "SIM-9WCC 4B"
     },
     {
-      "name": "SIM-10SCC",
+      "name": "SIM-10WCC",
       "fromSubnet": "Sim",
       "component": "sim-scc"
     },
@@ -8224,40 +8224,40 @@
       "fromSubnet": "Tower",
       "from": "GRP-C T1",
       "toSubnet": "Sim",
-      "to": "SIM-10SCC 1H"
+      "to": "SIM-10WCC 1H"
     },
     {
       "fromSubnet": "Tower",
       "from": "GRP-C T1",
       "toSubnet": "Sim",
-      "to": "SIM-10SCC 2H"
+      "to": "SIM-10WCC 2H"
     },
     {
       "fromSubnet": "Tower",
       "from": "GRP-C T2",
       "toSubnet": "Sim",
-      "to": "SIM-10SCC 3H"
+      "to": "SIM-10WCC 3H"
     },
     {
       "fromSubnet": "Tower",
       "from": "GRP-C T3",
       "toSubnet": "Sim",
-      "to": "SIM-10SCC 4H"
+      "to": "SIM-10WCC 4H"
     },
     {
       "fromSubnet": "Sim",
-      "from": "SIM-10SCC 1F",
+      "from": "SIM-10WCC 1F",
       "toSubnet": "Sim",
-      "to": "SIM-10SCC 3F"
+      "to": "SIM-10WCC 3F"
     },
     {
       "fromSubnet": "Sim",
-      "from": "SIM-10SCC 2B",
+      "from": "SIM-10WCC 2B",
       "toSubnet": "Sim",
-      "to": "SIM-10SCC 4B"
+      "to": "SIM-10WCC 4B"
     },
     {
-      "name": "SIM-12SCC",
+      "name": "SIM-12WCC",
       "fromSubnet": "Sim",
       "component": "sim-scc"
     },
@@ -8265,49 +8265,49 @@
       "fromSubnet": "Case A",
       "from": "CASEA T71",
       "toSubnet": "Sim",
-      "to": "SIM-12SCC 1H"
+      "to": "SIM-12WCC 1H"
     },
     {
       "fromSubnet": "Case A",
       "from": "CASEA T72",
       "toSubnet": "Sim",
-      "to": "SIM-12SCC 2H"
+      "to": "SIM-12WCC 2H"
     },
     {
       "fromSubnet": "Case A",
       "from": "CASEA T73",
       "toSubnet": "Sim",
-      "to": "SIM-12SCC 3H"
+      "to": "SIM-12WCC 3H"
     },
     {
       "fromSubnet": "Case A",
       "from": "CASEA T74",
       "toSubnet": "Sim",
-      "to": "SIM-12SCC 4H"
+      "to": "SIM-12WCC 4H"
     },
     {
       "fromSubnet": "Sim",
-      "from": "SIM-12SCC 1F",
+      "from": "SIM-12WCC 1F",
       "toSubnet": "Sim",
-      "to": "SIM-12SCC 3F"
+      "to": "SIM-12WCC 3F"
     },
     {
       "fromSubnet": "Sim",
-      "from": "SIM-12SCC 2F",
+      "from": "SIM-12WCC 2F",
       "toSubnet": "Sim",
-      "to": "SIM-12SCC 4F"
+      "to": "SIM-12WCC 4F"
     },
     {
       "fromSubnet": "Sim",
-      "from": "SIM-12SCC 1B",
+      "from": "SIM-12WCC 1B",
       "toSubnet": "Sim",
-      "to": "SIM-12SCC 4B"
+      "to": "SIM-12WCC 4B"
     },
     {
       "fromSubnet": "Sim",
-      "from": "SIM-12SCC 2B",
+      "from": "SIM-12WCC 2B",
       "toSubnet": "Sim",
-      "to": "SIM-12SCC 3B"
+      "to": "SIM-12WCC 3B"
     },
     {
       "name": "**** Track/Approach Circuits ****"
