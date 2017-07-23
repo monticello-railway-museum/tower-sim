@@ -3409,7 +3409,7 @@
       "to": "2TR 2B"
     },
     {
-      "signal": "1CO",
+      "signal": "1CO-1",
       "from": "2TR 2B",
       "to": "GRP-G T2"
     },
@@ -6953,8 +6953,14 @@
       "page": "C1"
     },
     {
-      "signal": "1CO",
+      "signal": "1CO-1",
       "from": "CASEC T14",
+      "to": "6WCR 2F",
+      "page": "C1"
+    },
+    {
+      "signal": "1CO",
+      "from": "6WCR 2H",
       "to": "1COR COIL+",
       "page": "C1"
     },
@@ -7753,7 +7759,7 @@
       "resistance": "1.421664"
     },
     {
-      "signal": "1CO",
+      "signal": "1CO-1",
       "fromSubnet": "Tower",
       "from": "GRP-G T2",
       "toSubnet": "Case C",
