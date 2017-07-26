@@ -3484,12 +3484,14 @@
       "notes": "*"
     },
     {
+      "signal": "1HDP-2-6R",
       "from": "1TCC T8",
       "to": "1VGR 3F",
       "page": "T8",
       "notes": "*"
     },
     {
+      "signal": "1HDP-2-6N",
       "from": "1TCC T4",
       "to": "1VGR 3B",
       "page": "T8",
