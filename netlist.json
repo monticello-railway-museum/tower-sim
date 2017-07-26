@@ -876,8 +876,8 @@
       "type": "relay",
       "resistance": "500",
       "contacts": "4",
-      "unused": "3",
-      "used": "1"
+      "unused": "4",
+      "used": "0"
     },
     {
       "component": "1AR",
@@ -984,8 +984,8 @@
       "type": "relay",
       "resistance": "500",
       "contacts": "4",
-      "unused": "3",
-      "used": "1"
+      "unused": "4",
+      "used": "0"
     },
     {
       "component": "2ATKE",
@@ -1057,8 +1057,8 @@
       "resistance": "4",
       "index": "9",
       "contacts": "4",
-      "unused": "1",
-      "used": "3"
+      "unused": "2",
+      "used": "2"
     },
     {
       "component": "3GKE",
@@ -1578,8 +1578,8 @@
       "type": "relay",
       "resistance": "500",
       "contacts": "4",
-      "unused": "3",
-      "used": "1"
+      "unused": "4",
+      "used": "0"
     },
     {
       "component": "14AR",
@@ -1589,8 +1589,8 @@
       "resistance": "1000",
       "index": "9",
       "contacts": "4",
-      "unused": "2",
-      "used": "2"
+      "unused": "3",
+      "used": "1"
     },
     {
       "component": "14AT RESISTOR 1",
@@ -1812,8 +1812,8 @@
       "type": "relay",
       "resistance": "500",
       "contacts": "4",
-      "unused": "3",
-      "used": "1"
+      "unused": "4",
+      "used": "0"
     },
     {
       "component": "16APR",
@@ -1823,8 +1823,8 @@
       "resistance": "1000",
       "index": "1",
       "contacts": "6",
-      "unused": "2",
-      "used": "4"
+      "unused": "3",
+      "used": "3"
     },
     {
       "component": "16ATKE",
@@ -2270,23 +2270,30 @@
   ],
   "towerWires": [
     {
-      "signal": "1AX-1",
+      "signal": "1AKS-1",
       "from": "B10-TWR S3 T?",
-      "to": "1AR 6H",
+      "to": "1AR 5H",
       "page": "T2",
       "notes": "*"
     },
     {
       "signal": "1AKS",
-      "from": "1AR 6B",
+      "from": "1AR 5B",
       "to": "1AKSR COIL+",
       "page": "T2",
       "notes": "*"
     },
     {
       "signal": "N-1AKS",
-      "from": "1AKSR COIL-",
-      "to": "N10-TWR RACK T?",
+      "from": "N10-TWR RACK T?",
+      "to": "1AKSR COIL-",
+      "page": "T2",
+      "notes": "*"
+    },
+    {
+      "signal": "1AX-1",
+      "from": "B10-TWR S3 T?",
+      "to": "1AR 6H",
       "page": "T2",
       "notes": "*"
     },
@@ -2298,23 +2305,30 @@
       "notes": "*"
     },
     {
-      "signal": "2AX-1",
+      "signal": "2AKS-1",
       "from": "B10-TWR S3 T?",
-      "to": "2TR 4H",
+      "to": "2TR 3H",
       "page": "T2",
       "notes": "*"
     },
     {
       "signal": "2AKS",
-      "from": "2TR 4B",
+      "from": "2TR 3B",
       "to": "2AKSR COIL+",
       "page": "T2",
       "notes": "*"
     },
     {
       "signal": "N-2AKS",
-      "from": "2AKSR COIL-",
-      "to": "N10-TWR RACK T?",
+      "from": "N10-TWR RACK T?",
+      "to": "2AKSR COIL-",
+      "page": "T2",
+      "notes": "*"
+    },
+    {
+      "signal": "2AX-1",
+      "from": "B10-TWR S3 T?",
+      "to": "2TR 4H",
       "page": "T2",
       "notes": "*"
     },
@@ -2326,23 +2340,30 @@
       "notes": "*"
     },
     {
-      "signal": "14AX-1",
-      "from": "B10-TWR S3 T?",
-      "to": "14AR 4H",
+      "signal": "14AKS-1",
+      "from": "B10-TWR S4 T?",
+      "to": "14AR 3H",
       "page": "T2",
       "notes": "*"
     },
     {
       "signal": "14AKS",
-      "from": "14AR 4B",
+      "from": "14AR 3B",
       "to": "14AKSR COIL+",
       "page": "T2",
       "notes": "*"
     },
     {
       "signal": "N-14AKS",
-      "from": "14AKSR COIL-",
-      "to": "N10-TWR RACK T?",
+      "from": "N10-TWR RACK T?",
+      "to": "14AKSR COIL-",
+      "page": "T2",
+      "notes": "*"
+    },
+    {
+      "signal": "14AX-1",
+      "from": "B10-TWR S4 T?",
+      "to": "14AR 4H",
       "page": "T2",
       "notes": "*"
     },
@@ -2354,23 +2375,30 @@
       "notes": "*"
     },
     {
-      "signal": "16AX-1",
+      "signal": "16AKS-1",
       "from": "B10-TWR S3 T?",
-      "to": "16APR 6H",
+      "to": "16APR 5H",
       "page": "T2",
       "notes": "*"
     },
     {
       "signal": "16AKS",
-      "from": "16APR 6B",
+      "from": "16APR 5B",
       "to": "16AKSR COIL+",
       "page": "T2",
       "notes": "*"
     },
     {
       "signal": "N-16AKS",
-      "from": "16AKSR COIL-",
-      "to": "N10-TWR RACK T?",
+      "from": "N10-TWR RACK T?",
+      "to": "16AKSR COIL-",
+      "page": "T2",
+      "notes": "*"
+    },
+    {
+      "signal": "16AX-1",
+      "from": "B10-TWR S3 T?",
+      "to": "16APR 6H",
       "page": "T2",
       "notes": "*"
     },
