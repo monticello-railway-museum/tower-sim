@@ -476,8 +476,11 @@ class Top extends React.Component {
             return sim.components[`Sim/SIM-${name}`].on;
         }
 
-        function relayUp(name) {
-            return sim.components[name].state === 'up';
+        function relayUp(name, bias) {
+            if (bias)
+                return sim.components[name].state === 'up' && sim.components[name].bias === bias;
+            else
+                return sim.components[name].state === 'up';
         }
 
         function updateSignalState(signal, state) {
@@ -551,9 +554,11 @@ class Top extends React.Component {
             let state = 'BAD ASPECT';
             if (lightOn('14AGE') && lightOn('14BGE') && !relayUp('Sim/SIM-14AAR') && !relayUp('Sim/SIM-14BAR'))
                 state = 'STOP';
-            if (lightOn('14AGE') && lightOn('14BGE') && !relayUp('Sim/SIM-14AAR') && relayUp('Sim/SIM-14BAR'))
+            if (lightOn('14AGE') && lightOn('14BGE') && !relayUp('Sim/SIM-14AAR') && relayUp('Sim/SIM-14BAR', 'forward'))
                 state = 'Restricting';
-            if (lightOn('14AGE') && lightOn('14BGE') && relayUp('Sim/SIM-14AAR') && !relayUp('Sim/SIM-14BAR'))
+            if (lightOn('14AGE') && lightOn('14BGE') && relayUp('Sim/SIM-14AAR', 'forward') && !relayUp('Sim/SIM-14BAR'))
+                state = 'Approach';
+            if (lightOn('14AGE') && lightOn('14BGE') && relayUp('Sim/SIM-14AAR', 'reverse') && !relayUp('Sim/SIM-14BAR'))
                 state = 'Clear';
             updateSignalState(14, state);
         }

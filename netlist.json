@@ -5280,9 +5280,9 @@
       "page": "A1"
     },
     {
-      "signal": "B10-CASEA",
+      "signal": "N10-CASEA",
       "from": "14ADR 1F",
-      "to": "B10-CASEA",
+      "to": "N10-CASEA",
       "page": "A1"
     },
     {
@@ -5298,9 +5298,9 @@
       "page": "A1"
     },
     {
-      "signal": "N10-CASEA",
+      "signal": "B10-CASEA",
       "from": "14ADR 2F",
-      "to": "N10-CASEA",
+      "to": "B10-CASEA",
       "page": "A1"
     },
     {
@@ -5330,7 +5330,7 @@
     {
       "signal": "14B-A+",
       "from": "14BHR 1H",
-      "to": "CASEA T36",
+      "to": "CASEA T35",
       "page": "A1"
     },
     {
@@ -5348,7 +5348,7 @@
     {
       "signal": "14B-A-",
       "from": "14BHR 2H",
-      "to": "CASEA T35",
+      "to": "CASEA T36",
       "page": "A1"
     },
     {
@@ -5550,7 +5550,7 @@
       "page": "A3"
     },
     {
-      "signal": "15HDGPR",
+      "signal": "15HDGP",
       "from": "CASEA T21",
       "to": "15HDR 3+"
     },
@@ -5559,7 +5559,7 @@
       "to": "15HDPR 1F"
     },
     {
-      "signal": "15RGPR",
+      "signal": "15RGP",
       "from": "CASEA T20",
       "to": "15HDPR 1B",
       "page": "A3"
@@ -8722,8 +8722,7 @@
     {
       "name": "SIM-14AAR",
       "fromSubnet": "Sim",
-      "component": "relay",
-      "config": "{\"subtype\":\"biased neutral\"}"
+      "component": "relay"
     },
     {
       "fromSubnet": "Case A",
@@ -8740,18 +8739,17 @@
     {
       "name": "SIM-14BAR",
       "fromSubnet": "Sim",
-      "component": "relay",
-      "config": "{\"subtype\":\"biased neutral\"}"
+      "component": "relay"
     },
     {
       "fromSubnet": "Case A",
-      "from": "CASEA T36",
+      "from": "CASEA T35",
       "toSubnet": "Sim",
       "to": "SIM-14BAR COIL+"
     },
     {
       "fromSubnet": "Case A",
-      "from": "CASEA T35",
+      "from": "CASEA T36",
       "toSubnet": "Sim",
       "to": "SIM-14BAR COIL-"
     },
