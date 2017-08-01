@@ -327,6 +327,14 @@
       "used": "2"
     },
     {
+      "component": "16COGE RESISTOR",
+      "subnet": "Case A",
+      "type": "resistor",
+      "resistance": "0.1",
+      "unused": "0",
+      "used": "0"
+    },
+    {
       "component": "16COSPR",
       "subnet": "Case A",
       "type": "relay",
@@ -335,14 +343,6 @@
       "contacts": "4",
       "unused": "2",
       "used": "2"
-    },
-    {
-      "component": "16CRGE RESISTOR",
-      "subnet": "Case A",
-      "type": "resistor",
-      "resistance": "0.1",
-      "unused": "0",
-      "used": "0"
     },
     {
       "component": "16DRGR",
@@ -800,7 +800,7 @@
       "used": "0"
     },
     {
-      "component": "16CRGE RESISTOR",
+      "component": "16COGE RESISTOR",
       "subnet": "Case C",
       "type": "resistor",
       "resistance": "0.1",
@@ -5923,7 +5923,7 @@
     {
       "signal": "BX10-CASEA",
       "from": "BX10-CASEA",
-      "to": "16CRGE RESISTOR +",
+      "to": "16COGE RESISTOR +",
       "page": "A4"
     },
     {
@@ -5952,12 +5952,12 @@
     },
     {
       "signal": "16C BX10",
-      "from": "16CRGE RESISTOR -",
+      "from": "16COGE RESISTOR -",
       "to": "16COSPR 1H",
       "page": "A4"
     },
     {
-      "signal": "16CRG",
+      "signal": "16COG",
       "from": "16COSPR 1F",
       "to": "CASEA T51",
       "page": "A4"
@@ -6977,7 +6977,7 @@
       "page": "C1"
     },
     {
-      "signal": "1CRG",
+      "signal": "1COG",
       "from": "1COR 1F",
       "to": "CASEC-LTG T4",
       "page": "C1"
@@ -8953,7 +8953,7 @@
       "to": "SIM-1HGE -"
     },
     {
-      "name": "SIM-1CRGE",
+      "name": "SIM-1COGE",
       "fromSubnet": "Sim",
       "component": "light",
       "config": "{\"volts\":10,\"watts\":40}"
@@ -8962,13 +8962,13 @@
       "fromSubnet": "Case C",
       "from": "CASEC-LTG T4",
       "toSubnet": "Sim",
-      "to": "SIM-1CRGE +"
+      "to": "SIM-1COGE +"
     },
     {
       "fromSubnet": "Case C",
       "from": "CASEC-LTG T7",
       "toSubnet": "Sim",
-      "to": "SIM-1CRGE -"
+      "to": "SIM-1COGE -"
     },
     {
       "name": "SIM-1RGE",
@@ -9349,7 +9349,7 @@
       "to": "SIM-16BGE -"
     },
     {
-      "name": "SIM-16CRGE",
+      "name": "SIM-16COGE",
       "fromSubnet": "Sim",
       "component": "light",
       "config": "{\"volts\":10,\"watts\":20}"
@@ -9358,13 +9358,13 @@
       "fromSubnet": "Case A",
       "from": "CASEA T51",
       "toSubnet": "Sim",
-      "to": "SIM-16CRGE +"
+      "to": "SIM-16COGE +"
     },
     {
       "fromSubnet": "Case A",
       "from": "CASEA T54",
       "toSubnet": "Sim",
-      "to": "SIM-16CRGE -"
+      "to": "SIM-16COGE -"
     }
   ]
 }

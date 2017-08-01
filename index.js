@@ -491,17 +491,17 @@ class Top extends React.Component {
 
         {
             let state = 'BAD ASPECT';
-            if (lightOn('1RGE') && !lightOn('1HGE') && !lightOn('1DGE') && !lightOn('1CRGE') && !lightOn('1TMGE'))
+            if (lightOn('1RGE') && !lightOn('1HGE') && !lightOn('1DGE') && !lightOn('1COGE') && !lightOn('1TMGE'))
                 state = 'STOP';
-            if (!lightOn('1RGE') && !lightOn('1HGE') && !lightOn('1DGE') && lightOn('1CRGE') && !lightOn('1TMGE'))
+            if (!lightOn('1RGE') && !lightOn('1HGE') && !lightOn('1DGE') && lightOn('1COGE') && !lightOn('1TMGE'))
                 state = 'Restricting';
-            if (!lightOn('1RGE') && lightOn('1HGE') && !lightOn('1DGE') && !lightOn('1CRGE') && !lightOn('1TMGE'))
+            if (!lightOn('1RGE') && lightOn('1HGE') && !lightOn('1DGE') && !lightOn('1COGE') && !lightOn('1TMGE'))
                 state = 'Slow Approach';
-            if (!lightOn('1RGE') && lightOn('1HGE') && !lightOn('1DGE') && !lightOn('1CRGE') && lightOn('1TMGE'))
+            if (!lightOn('1RGE') && lightOn('1HGE') && !lightOn('1DGE') && !lightOn('1COGE') && lightOn('1TMGE'))
                 state = 'Approach';
-            if (!lightOn('1RGE') && !lightOn('1HGE') && lightOn('1DGE') && !lightOn('1CRGE') && !lightOn('1TMGE'))
+            if (!lightOn('1RGE') && !lightOn('1HGE') && lightOn('1DGE') && !lightOn('1COGE') && !lightOn('1TMGE'))
                 state = 'Slow Clear';
-            if (!lightOn('1RGE') && !lightOn('1HGE') && lightOn('1DGE') && !lightOn('1CRGE') && lightOn('1TMGE'))
+            if (!lightOn('1RGE') && !lightOn('1HGE') && lightOn('1DGE') && !lightOn('1COGE') && lightOn('1TMGE'))
                 state = 'Clear';
             updateSignalState(1, state);
         }
@@ -599,10 +599,10 @@ class Top extends React.Component {
                 updateSignalState(16, 'BAD ASPECT');
             const g16a = sim.components['Sim/SIM-16AG'];
             const g16b = sim.components['Sim/SIM-16BG'];
-            let state = `BAD ASPECT: 16A: ${g16a.angle.toFixed(0)}° 16B: ${g16b.angle.toFixed(0)}° ${lightOn('16CRGE') ? "Call-on" : ""}`;
-            if (g16a.angle === 0 && g16b.angle === 0 && !lightOn('16CRGE'))
+            let state = `BAD ASPECT: 16A: ${g16a.angle.toFixed(0)}° 16B: ${g16b.angle.toFixed(0)}° ${lightOn('16COGE') ? "Call-on" : ""}`;
+            if (g16a.angle === 0 && g16b.angle === 0 && !lightOn('16COGE'))
                 state = 'STOP';
-            if (g16a.angle > 0 && g16b.angle === 0 && !lightOn('16CRGE')) {
+            if (g16a.angle > 0 && g16b.angle === 0 && !lightOn('16COGE')) {
                 if (g16a.angle === 45)
                     state = 'Approach';
                 else if (g16a.angle === 90)
@@ -610,7 +610,7 @@ class Top extends React.Component {
                 else
                     state = `16A: ${g16a.angle.toFixed(0)}°`;
             }
-            if (g16a.angle === 0 && g16b.angle > 0 && !lightOn('16CRGE')) {
+            if (g16a.angle === 0 && g16b.angle > 0 && !lightOn('16COGE')) {
                 if (g16b.angle === 45)
                     state = 'Diverging Approach';
                 else if (g16b.angle === 90)
@@ -618,7 +618,7 @@ class Top extends React.Component {
                 else
                     state = `16B: ${g16b.angle.toFixed(0)}°`;
             }
-            if (g16a.angle === 0 && g16b.angle === 0 && lightOn('16CRGE'))
+            if (g16a.angle === 0 && g16b.angle === 0 && lightOn('16COGE'))
                 state = 'Restricting';
             updateSignalState(16, state);
         }
