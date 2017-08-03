@@ -6,6 +6,9 @@ const Sim = require('./sim');
 
 const sim = new Sim();
 
+const bigSize = 12;
+const smallSize = 6;
+
 const margin = 0.5 * 72;
 
 const paperWidth = 8.5 * 72;
@@ -118,41 +121,41 @@ for (let wire of sim.wires) {
         [0, 2].forEach(c => {
             inTag(c, r, () => {
                 pdf.font('Helvetica');
-                pdf.fontSize(4);
+                pdf.fontSize(smallSize);
                 pdf.text(`Wire`, tagMargin, tagMargin);
 
                 pdf.font('Helvetica-Bold');
-                pdf.fontSize(10);
+                pdf.fontSize(bigSize);
 
                 const th = pdf.currentLineHeight();
 
                 if (primaryName && primaryName !== wire.name) {
                     center(wire.name || '', xc, yc - th/2);
                     pdf.font('Helvetica');
-                    pdf.fontSize(8);
+                    pdf.fontSize(bigSize * 0.8);
                     center(`(${primaryName})`, xc, yc + th/2);
                 } else {
                     center(wire.name || '', xc, yc);
                 }
 
-                if (wire.page) {
-                    pdf.font('Helvetica');
-                    pdf.fontSize(4);
-                    pdf.text(`Page ${wire.page}`, tagMargin, tagHeight - tagMargin - pdf.currentLineHeight());
-                }
+                // if (wire.page) {
+                //     pdf.font('Helvetica');
+                //     pdf.fontSize(smallSize);
+                //     pdf.text(`Page ${wire.page}`, tagMargin, tagHeight - tagMargin - pdf.currentLineHeight());
+                // }
             });
         });
 
         function doTerm(comp, term, otherComp, otherTerm) {
             pdf.font('Helvetica');
-            pdf.fontSize(4);
+            pdf.fontSize(smallSize);
             pdf.text(`Terminal`, tagMargin, tagMargin);
 
             pdf.font('Helvetica-Bold');
-            pdf.fontSize(10);
+            pdf.fontSize(bigSize);
             center(`${comp.name} ${term}`, xc, yc);
             pdf.font('Helvetica');
-            pdf.fontSize(4);
+            pdf.fontSize(smallSize);
             pdf.text(`This:  ${otherComp.name} ${otherTerm}`, tagMargin, tagHeight - tagMargin - pdf.currentLineHeight());
         }
 
