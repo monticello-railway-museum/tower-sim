@@ -14,14 +14,14 @@ const margin = 0.5 * 72;
 const paperWidth = 8.5 * 72;
 const paperHeight = 11 * 72;
 
-const tagHeight = 0.675 * 72;
+const tagHeight = 0.66 * 72;
 const tagWidth = 1.25 * 72;
 const tagMargin = 0.05 * 72;
 
 //const tagHeight = 1.00;
 //const tagWidth = 0.87;
 
-const tagsPerPage = Math.floor((paperHeight - margin * 2) / tagHeight);
+const tagsPerPage = Math.floor((paperHeight - margin * 2) / tagHeight) - 1;
 
 const pdf = new PDFDocument({ autoFirstPage: false, size: [ paperWidth, paperHeight ], margin });
 pdf.pipe(fs.createWriteStream('out.pdf'));
