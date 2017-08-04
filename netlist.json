@@ -5850,12 +5850,12 @@
     {
       "signal": "16RGP",
       "from": "CASEA T27",
-      "to": "16COSPR 2H",
+      "to": "16COSPR 3H",
       "page": "A4"
     },
     {
       "signal": "16RGP-1",
-      "from": "16COSPR 2B",
+      "from": "16COSPR 3B",
       "to": "CASEA T62"
     },
     {
@@ -5957,6 +5957,16 @@
       "from": "16COSPR 1F",
       "to": "CASEA T51",
       "page": "A4"
+    },
+    {
+      "signal": "**STRAP**",
+      "from": "16COSPR 1F",
+      "to": "16COSPR 2F"
+    },
+    {
+      "signal": "**STRAP**",
+      "from": "16COSPR 1H",
+      "to": "16COSPR 2H"
     },
     {
       "signal": "NX10-CASEA",
