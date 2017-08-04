@@ -5227,7 +5227,7 @@
     },
     {
       "signal": "N10-TWR",
-      "from": "N10-TWR",
+      "from": "16COSPR COIL-",
       "to": "14ADR COIL-",
       "page": "A1"
     },
@@ -5239,7 +5239,7 @@
     },
     {
       "signal": "N10-TWR",
-      "from": "N10-TWR",
+      "from": "14ADR COIL-",
       "to": "14BHR COIL-",
       "page": "A1"
     },
@@ -5252,13 +5252,13 @@
     {
       "signal": "B10-CASEA",
       "from": "16AR 1H",
-      "to": "B10-CASEA",
+      "to": "B10-CASEA T8",
       "page": "A1"
     },
     {
       "signal": "B10-CASEA",
       "from": "CASEA T37",
-      "to": "B10-CASEA",
+      "to": "14ADR 2F",
       "page": "A1"
     },
     {
@@ -5275,14 +5275,14 @@
     },
     {
       "signal": "N10-CASEA",
-      "from": "N10-CASEA",
+      "from": "N10-CASEA T8",
       "to": "CASEA T6",
       "page": "A1"
     },
     {
       "signal": "N10-CASEA",
       "from": "14ADR 1F",
-      "to": "N10-CASEA",
+      "to": "14BHR 2F",
       "page": "A1"
     },
     {
@@ -5300,7 +5300,7 @@
     {
       "signal": "B10-CASEA",
       "from": "14ADR 2F",
-      "to": "B10-CASEA",
+      "to": "14BHR 1F",
       "page": "A1"
     },
     {
@@ -5324,7 +5324,7 @@
     {
       "signal": "B10-CASEA",
       "from": "14BHR 1F",
-      "to": "B10-CASEA",
+      "to": "B10-CASEA T5",
       "page": "A1"
     },
     {
@@ -5342,7 +5342,7 @@
     {
       "signal": "N10-CASEA",
       "from": "14BHR 2F",
-      "to": "N10-CASEA",
+      "to": "N10-CASEA T5",
       "page": "A1"
     },
     {
@@ -5377,7 +5377,7 @@
     },
     {
       "signal": "N10-TWR",
-      "from": "N10-TWR",
+      "from": "12NLPR COIL-",
       "to": "12RLPR COIL-",
       "page": "A2"
     },
@@ -5395,14 +5395,8 @@
     },
     {
       "signal": "N10-TWR",
-      "from": "N10-TWR",
+      "from": "16COSPR COIL-",
       "to": "12NLPR COIL-",
-      "page": "A2"
-    },
-    {
-      "signal": "N10-TWR *",
-      "from": "N10-TWR",
-      "to": "CASEA T3",
       "page": "A2"
     },
     {
@@ -5455,7 +5449,7 @@
     },
     {
       "signal": "B10-CASEA",
-      "from": "B10-CASEA",
+      "from": "12WCR 1H",
       "to": "12WCC-FUSE +",
       "page": "A2"
     },
@@ -5467,7 +5461,7 @@
     },
     {
       "signal": "B10-CASEA",
-      "from": "B10-CASEA",
+      "from": "12WCR 1H",
       "to": "12RWPR 2H",
       "page": "A2"
     },
@@ -5509,13 +5503,13 @@
     },
     {
       "signal": "N10-CASEA",
-      "from": "N10-CASEA",
+      "from": "N10-CASEA T4",
       "to": "12WCR COIL-",
       "page": "A2"
     },
     {
       "signal": "B10-CASEA",
-      "from": "B10-CASEA",
+      "from": "B10-CASEA T4",
       "to": "12WCR 1H",
       "page": "A2"
     },
@@ -5533,7 +5527,7 @@
     },
     {
       "signal": "N10-CASEA",
-      "from": "N10-CASEA",
+      "from": "12WCR COIL-",
       "to": "12WTI N10",
       "page": "A2"
     },
@@ -5566,7 +5560,7 @@
     },
     {
       "signal": "B10-CASEA",
-      "from": "B10-CASEA",
+      "from": "B10-CASEA T6",
       "to": "15HDPR 1H",
       "page": "A3"
     },
@@ -5578,7 +5572,7 @@
     },
     {
       "signal": "B10-CASEA",
-      "from": "B10-CASEA",
+      "from": "12TR 1H",
       "to": "12TPR 2H",
       "page": "A3"
     },
@@ -5590,13 +5584,13 @@
     },
     {
       "signal": "B10-CASEA",
-      "from": "B10-CASEA",
+      "from": "9-10TR 1H",
       "to": "9-10TPR 2H",
       "page": "A3"
     },
     {
       "signal": "B10-CASEA",
-      "from": "B10-CASEA",
+      "from": "15HDPR 1H",
       "to": "15HDR 1H",
       "page": "A3"
     },
@@ -5608,7 +5602,7 @@
     },
     {
       "signal": "N-15HDP",
-      "from": "N10-CASEA",
+      "from": "N10-CASEA T6",
       "to": "15HDPR COIL-",
       "page": "A3"
     },
@@ -5823,31 +5817,31 @@
     },
     {
       "signal": "N10-TWR",
-      "from": "N10-TWR",
+      "from": "16AHR COIL-",
       "to": "16ADR COIL-",
       "page": "A4"
     },
     {
-      "signal": "N10-TWR",
-      "from": "N10-TWR",
+      "signal": "N10-TWR *",
+      "from": "CASEA T3",
       "to": "16AHR COIL-",
       "page": "A4"
     },
     {
       "signal": "N10-TWR",
-      "from": "N10-TWR",
+      "from": "16BHR COIL-",
       "to": "16BDR COIL-",
       "page": "A4"
     },
     {
       "signal": "N10-TWR",
-      "from": "N10-TWR",
+      "from": "16ADR COIL-",
       "to": "16BHR COIL-",
       "page": "A4"
     },
     {
       "signal": "N10-TWR",
-      "from": "N10-TWR",
+      "from": "16BDR COIL-",
       "to": "16COSPR COIL-",
       "page": "A4"
     },
@@ -5870,29 +5864,29 @@
     {
       "signal": "B10-CASEA",
       "from": "CASEA T63",
-      "to": "B10-CASEA"
+      "to": "16AHR 1H"
     },
     {
       "signal": "B10-CASEA",
-      "from": "B10-CASEA",
+      "from": "16BHR 1H",
       "to": "16ADR 1H",
       "page": "A4"
     },
     {
       "signal": "B10-CASEA",
-      "from": "B10-CASEA",
+      "from": "16ADR 1H",
       "to": "16AHR 1H",
       "page": "A4"
     },
     {
       "signal": "B10-CASEA",
-      "from": "B10-CASEA",
+      "from": "16BHDGPR 2B",
       "to": "16BDR 1H",
       "page": "A4"
     },
     {
       "signal": "B10-CASEA",
-      "from": "B10-CASEA",
+      "from": "16BDR 1H",
       "to": "16BHR 1H",
       "page": "A4"
     },
@@ -5982,19 +5976,19 @@
     },
     {
       "signal": "N10-CASEA",
-      "from": "N10-CASEA",
+      "from": "CASEA T57",
       "to": "CASEA T60",
       "page": "A4"
     },
     {
       "signal": "N10-CASEA",
-      "from": "N10-CASEA",
+      "from": "16BHDGPR COIL-",
       "to": "CASEA T57",
       "page": "A4"
     },
     {
-      "signal": "16BHDGP-2",
-      "from": "B10-CASEA",
+      "signal": "**STRAP**",
+      "from": "16BHR 1F",
       "to": "16BHR 2F"
     },
     {
@@ -6010,11 +6004,11 @@
     {
       "signal": "N-16BHDGP",
       "from": "16BHDGPR COIL-",
-      "to": "N10-CASEA"
+      "to": "16HDGPR COIL-"
     },
     {
-      "signal": "16HDGP-A2",
-      "from": "B10-CASEA",
+      "signal": "**STRAP**",
+      "from": "16AHR 1H",
       "to": "16AHR 2F"
     },
     {
@@ -6028,8 +6022,8 @@
       "to": "16HDGPR COIL+"
     },
     {
-      "signal": "16HDGP-1",
-      "from": "B10-CASEA",
+      "signal": "**STRAP**",
+      "from": "16BHDGPR 2B",
       "to": "16BHDGPR 4F"
     },
     {
@@ -6040,7 +6034,7 @@
     {
       "signal": "N-16HDGP",
       "from": "16HDGPR COIL-",
-      "to": "N10-CASEA"
+      "to": "16DRGR COIL-"
     },
     {
       "signal": "16A",
@@ -6057,12 +6051,12 @@
     {
       "signal": "N10-CASEA *",
       "from": "CASEA-CRAGG -",
-      "to": "N10-CASEA"
+      "to": "N10-CASEA T1"
     },
     {
       "signal": "B10-CASEA *",
       "from": "CASEA-CRAGG +",
-      "to": "B10-CASEA"
+      "to": "B10-CASEA T1"
     },
     {
       "signal": "BX6-CASEA *",
@@ -6086,7 +6080,7 @@
     },
     {
       "signal": "B10-CASEA",
-      "from": "B10-CASEA",
+      "from": "B10-CASEA T2",
       "to": "9-10TR 1H"
     },
     {
@@ -6116,17 +6110,17 @@
     },
     {
       "signal": "N-9-10LOSTE",
-      "from": "N10-CASEA",
+      "from": "9-10TPR COIL-",
       "to": "9-10LOSTER COIL-"
     },
     {
       "signal": "N-9-10TP",
-      "from": "N10-CASEA",
+      "from": "N10-CASEA T2",
       "to": "9-10TPR COIL-"
     },
     {
       "signal": "B10-CASEA",
-      "from": "B10-CASEA",
+      "from": "B10-CASEA T3",
       "to": "12TR 1H"
     },
     {
@@ -6156,12 +6150,12 @@
     },
     {
       "signal": "N-12LOSTE",
-      "from": "N10-CASEA",
+      "from": "12TPR COIL-",
       "to": "12LOSTER COIL-"
     },
     {
       "signal": "N-12TP",
-      "from": "N10-CASEA",
+      "from": "N10-CASEA T3",
       "to": "12TPR COIL-"
     },
     {
@@ -6186,12 +6180,12 @@
     },
     {
       "signal": "B10-CASEA",
-      "from": "B10-CASEA",
+      "from": "B10-CASEA T7",
       "to": "16DRGR 1B"
     },
     {
-      "signal": "B10-CASEA",
-      "from": "B10-CASEA",
+      "signal": "**STRAP**",
+      "from": "16DRGR 1B",
       "to": "16DRGR 2B"
     },
     {
@@ -6211,12 +6205,12 @@
     },
     {
       "signal": "B10-CASEA",
-      "from": "B10-CASEA",
+      "from": "16DRGR 1B",
       "to": "16HDGPR 1B"
     },
     {
-      "signal": "B10-CASEA",
-      "from": "B10-CASEA",
+      "signal": "**STRAP**",
+      "from": "16HDGPR 1B",
       "to": "16HDGPR 2F"
     },
     {
@@ -6231,7 +6225,7 @@
     },
     {
       "signal": "B10-CASEA",
-      "from": "B10-CASEA",
+      "from": "16HDGPR 1B",
       "to": "16BHDGPR 2B"
     },
     {
@@ -6245,13 +6239,13 @@
       "to": "16ADR 2H"
     },
     {
-      "signal": "B10-CASEA",
-      "from": "B10-CASEA",
+      "signal": "**STRAP**",
+      "from": "16ADR 1H",
       "to": "16ADR 2F"
     },
     {
-      "signal": "16DRG-4",
-      "from": "B10-CASEA",
+      "signal": "**STRAP**",
+      "from": "16AR 1H",
       "to": "16AR 2H"
     },
     {
@@ -6276,7 +6270,7 @@
     },
     {
       "signal": "N-16DRG",
-      "from": "N10-CASEA",
+      "from": "N10-CASEA T7",
       "to": "16DRGR COIL-"
     }
   ],
