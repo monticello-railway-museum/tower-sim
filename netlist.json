@@ -5432,19 +5432,19 @@
     {
       "signal": "12WCCWP",
       "from": "12NWPR 1H",
-      "to": "CASEA T73",
+      "to": "CASEA T75",
       "page": "A2"
     },
     {
       "signal": "N-12WCCWP",
       "from": "CASEA T5",
-      "to": "CASEA T74",
+      "to": "CASEA T76",
       "page": "A2"
     },
     {
       "signal": "12WCC-NIO",
-      "from": "N10-CASEA",
-      "to": "CASEA T72",
+      "from": "12WTI N10",
+      "to": "CASEA T74",
       "page": "A2"
     },
     {
@@ -5455,7 +5455,7 @@
     },
     {
       "signal": "12WCC-BIO",
-      "from": "CASEA T71",
+      "from": "CASEA T73",
       "to": "12WCC-FUSE -",
       "page": "A2"
     },
@@ -5549,6 +5549,7 @@
       "to": "15HDR 3+"
     },
     {
+      "signal": "15HDGP-1",
       "from": "15HDR 3P",
       "to": "15HDPR 1F"
     },
@@ -5643,6 +5644,7 @@
       "page": "A3"
     },
     {
+      "signal": "15BHDG",
       "from": "15HDPR 3F",
       "to": "15HDR 1P",
       "page": "A3"
@@ -6160,22 +6162,22 @@
     },
     {
       "signal": "N10-CASEA",
-      "from": "N10-CASEA",
-      "to": "CASEA T78"
+      "from": "CASEA T60",
+      "to": "CASEA T80"
     },
     {
       "signal": "16DGD1",
-      "from": "CASEA T75",
+      "from": "CASEA T77",
       "to": "16DRGR 1H"
     },
     {
       "signal": "16DGD2",
-      "from": "CASEA T76",
+      "from": "CASEA T78",
       "to": "16DRGR 2H"
     },
     {
       "signal": "16DGD3",
-      "from": "CASEA T77",
+      "from": "CASEA T79",
       "to": "16DRGR 3H"
     },
     {
@@ -8491,25 +8493,25 @@
     },
     {
       "fromSubnet": "Case A",
-      "from": "CASEA T71",
+      "from": "CASEA T73",
       "toSubnet": "Sim",
       "to": "SIM-12WCC 1H"
     },
     {
       "fromSubnet": "Case A",
-      "from": "CASEA T72",
+      "from": "CASEA T74",
       "toSubnet": "Sim",
       "to": "SIM-12WCC 2H"
     },
     {
       "fromSubnet": "Case A",
-      "from": "CASEA T73",
+      "from": "CASEA T75",
       "toSubnet": "Sim",
       "to": "SIM-12WCC 3H"
     },
     {
       "fromSubnet": "Case A",
-      "from": "CASEA T74",
+      "from": "CASEA T76",
       "toSubnet": "Sim",
       "to": "SIM-12WCC 4H"
     },
