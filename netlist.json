@@ -5311,13 +5311,13 @@
     },
     {
       "signal": "14A-L+",
-      "from": "BX10-CASEA",
+      "from": "16AGE RESISTOR +",
       "to": "CASEA T29",
       "page": "A1"
     },
     {
       "signal": "14A-L-",
-      "from": "NX10-CASEA",
+      "from": "15AGE RESISTOR -",
       "to": "CASEA T31",
       "page": "A1"
     },
@@ -5353,13 +5353,13 @@
     },
     {
       "signal": "14B-L+",
-      "from": "BX10-CASEA",
+      "from": "CASEA T29",
       "to": "CASEA T30",
       "page": "A1"
     },
     {
       "signal": "14B-L-",
-      "from": "NX10-CASEA",
+      "from": "CASEA T31",
       "to": "CASEA T32",
       "page": "A1"
     },
@@ -5609,13 +5609,13 @@
     },
     {
       "signal": "15ARG",
-      "from": "BX10-CASEA",
+      "from": "16BGE RESISTOR +",
       "to": "CASEA T43",
       "page": "A3"
     },
     {
       "signal": "NX10-CASEA",
-      "from": "NX10-CASEA",
+      "from": "CASEA-W10 NX10",
       "to": "15AGE RESISTOR -",
       "page": "A3"
     },
@@ -5639,7 +5639,7 @@
     },
     {
       "signal": "BX10-CASEA",
-      "from": "BX10-CASEA",
+      "from": "16COGE RESISTOR +",
       "to": "15HDPR 3H",
       "page": "A3"
     },
@@ -5917,20 +5917,20 @@
       "page": "A4"
     },
     {
-      "signal": "BX10-CASEA",
-      "from": "BX10-CASEA",
+      "signal": "**STRAP**",
+      "from": "16BGE RESISTOR +",
       "to": "16COGE RESISTOR +",
       "page": "A4"
     },
     {
       "signal": "BX10-CASEA",
-      "from": "BX10-CASEA",
+      "from": "CASEA-W10 BX10",
       "to": "16AGE RESISTOR +",
       "page": "A4"
     },
     {
-      "signal": "BX10-CASEA",
-      "from": "BX10-CASEA",
+      "signal": "**STRAP**",
+      "from": "16AGE RESISTOR +",
       "to": "16BGE RESISTOR +",
       "page": "A4"
     },
@@ -5960,7 +5960,7 @@
     },
     {
       "signal": "NX10-CASEA",
-      "from": "NX10-CASEA",
+      "from": "15BGE RESISTOR -",
       "to": "CASEA T52",
       "page": "A4"
     },
