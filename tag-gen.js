@@ -86,8 +86,10 @@ for (let wire of sim.wires) {
         function resolveStrap(comp, term) {
             const terms = [ term ];
             for (let w of comp.wireTerminals[term]) {
-                if (w.wire.name === '**STRAP**' && w.toComp === comp)
+                if (w.wire.name === '**STRAP**' && w.toComp === comp
+                    && w.toTerm.slice(-1) === term.slice(-1)) {
                     terms.push(w.toTerm);
+                }
             }
             terms.sort();
             return terms.join(',');
