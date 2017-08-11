@@ -18,6 +18,8 @@ const tagHeight = 0.66 * 72;
 const tagWidth = 1.25 * 72;
 const tagMargin = 0.05 * 72;
 
+const flip = false;
+
 //const tagHeight = 1.00;
 //const tagWidth = 0.87;
 
@@ -49,11 +51,22 @@ pdf.on('pageAdded', () => {
 
     for (let r = 0; r <= tagsPerPage; ++r) {
         const y = y0 + tagHeight * r;
-        pdf.moveTo(margin, y)
-            .lineTo(paperWidth - margin, y)
-            .stroke();
+        if (flip) {
+            pdf.moveTo(margin, y)
+                .lineTo(x0 - tagMargin, y)
+                .stroke();
+            pdf.moveTo(paperWidth - margin, y)
+                .lineTo(paperWidth - (x0 - tagMargin), y)
+                .stroke();
+        } else {
+            pdf.moveTo(margin, y)
+                .lineTo(paperWidth - margin, y)
+                .stroke();
+        }
     }
     for (let c = 0; c <= 4; ++c) {
+        if (flip && (c === 1 || c === 3))
+            continue;
         const x = x0 + tagWidth * c;
         pdf.moveTo(x, margin)
             .lineTo(x, paperHeight - margin)
@@ -67,18 +80,34 @@ pdf.addPage();
 function inTag(c, r, fn) {
     pdf.save();
     pdf.translate(x0 + c * tagWidth, y0 + r * tagHeight);
-    if (c % 2 === 1)
+    if (flip && c % 2 === 1)
         pdf.rotate(180, { origin: [ tagWidth / 2, tagHeight / 2 ] });
     fn();
     pdf.restore();
 }
 
+const circuits = {
+    'X10-CASEA': sim.components['Case A/CASEA-W10'].terminals['BX10'].circuit(),
+    'X6-CASEA': sim.components['Case A/CASEA-W10'].terminals['BX6'].circuit(),
+    '10-CASEA': sim.components['Case A/CASEA-CRAGG'].terminals['+'].circuit(),
+    'X10-CASEB': sim.components['Case B/CASEB-W10'].terminals['BX10'].circuit(),
+    '10-TWR': sim.components['Tower/TWR-CRAGG'].terminals['+'].circuit(),
+};
+
 let r = 0;
 for (let wire of sim.wires) {
-    if (wire.fromSubnet === wire.toSubnet && wire.fromSubnet === 'Case A') {
+    const node = wire.fromComp.terminals[wire.fromTerm];
+    let circuitName;
+    for (let name in circuits) {
+        if (node.circuit() === circuits[name]) {
+            circuitName = name;
+            break;
+        }
+    }
+
+    if (wire.fromSubnet === wire.toSubnet && wire.fromSubnet === 'Case B' && circuitName !== 'XX10-CASEA') {
         if (wire.name === '**STRAP**')
             continue;
-        const node = wire.fromComp.terminals[wire.fromTerm];
         const primaryName = node.shared.primaryName;
         let name = `${wire.name}`.replace(/ \*$/, '');
         if (primaryName && primaryName != name)
@@ -99,10 +128,11 @@ for (let wire of sim.wires) {
             page = '';
         const fromTerm = resolveStrap(wire.fromComp, wire.fromTerm);
         const toTerm = resolveStrap(wire.toComp, wire.toTerm);
+
         console.log(`FRONT: ${name} ${page}`);
         console.log(`BACK1: ${wire.fromComp.name} ${fromTerm}`);
         console.log(`BACK2: ${wire.toComp.name} ${toTerm}`);
-        console.log('');
+        console.log(`CIRCUIT: ${circuitName}`);
 
         function center(string, xc, yc) {
             const w = pdf.widthOfString(string);
@@ -119,6 +149,14 @@ for (let wire of sim.wires) {
 
         const xc = tagWidth / 2;
         const yc = tagHeight / 2;
+
+        if (circuitName) {
+            inTag(4, r, () => {
+                pdf.font('Helvetica-Bold');
+                pdf.fontSize(bigSize);
+                pdf.text(circuitName, tagMargin, yc - pdf.currentLineHeight()/2);
+            });
+        }
 
         [0, 2].forEach(c => {
             inTag(c, r, () => {
@@ -168,6 +206,9 @@ for (let wire of sim.wires) {
             pdf.addPage();
             r = 0;
         }
+
+        console.log('');
+
     }
 }
 
