@@ -6642,9 +6642,9 @@
       "page": "B1"
     },
     {
-      "signal": "3RGE-A",
-      "from": "3DR 3F",
-      "to": "3COSPR 2F",
+      "signal": "**STRAP**",
+      "from": "3COSPR 2F",
+      "to": "3COSPR 3F",
       "page": "B1"
     },
     {

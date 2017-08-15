@@ -18,7 +18,7 @@ const tagHeight = 0.66 * 72;
 const tagWidth = 1.25 * 72;
 const tagMargin = 0.05 * 72;
 
-const flip = false;
+const flip = true;
 
 //const tagHeight = 1.00;
 //const tagWidth = 0.87;
@@ -95,6 +95,7 @@ const circuits = {
 };
 
 let r = 0;
+let n = 0;
 for (let wire of sim.wires) {
     const node = wire.fromComp.terminals[wire.fromTerm];
     let circuitName;
@@ -149,6 +150,12 @@ for (let wire of sim.wires) {
 
         const xc = tagWidth / 2;
         const yc = tagHeight / 2;
+
+        inTag(-1, r, () => {
+            pdf.font('Helvetica-Bold');
+            pdf.fontSize(bigSize);
+            pdf.text(`${++n}`, tagMargin, yc - pdf.currentLineHeight()/2);
+        });
 
         if (circuitName) {
             inTag(4, r, () => {
