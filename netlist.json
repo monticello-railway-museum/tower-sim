@@ -893,8 +893,8 @@
       "resistance": "500",
       "index": "10",
       "contacts": "4",
-      "unused": "1",
-      "used": "3"
+      "unused": "0",
+      "used": "4"
     },
     {
       "component": "1GKE",
@@ -1829,8 +1829,8 @@
       "resistance": "500",
       "index": "9",
       "contacts": "4",
-      "unused": "2",
-      "used": "2"
+      "unused": "1",
+      "used": "3"
     },
     {
       "component": "16GKE",
@@ -3450,7 +3450,7 @@
     },
     {
       "signal": "1HDP-2-6R",
-      "from": "1TCC T8",
+      "from": "1BRLPR 4F",
       "to": "1BRLPR 3F",
       "page": "T8",
       "notes": "*"
@@ -4521,7 +4521,7 @@
     },
     {
       "signal": "16BHD-1",
-      "from": "16TCC T8",
+      "from": "16BRLPR 4F",
       "to": "14-16COSR 4H",
       "page": "T15",
       "notes": "H-NETWORK 16BHD-1"
@@ -4702,20 +4702,14 @@
     },
     {
       "signal": "H-1-6R-B10",
-      "from": "B10-TWR LVR T3",
-      "to": "1TCC T5",
+      "from": "B10-TWR S1 T?",
+      "to": "1BRLPR 4B",
       "page": "T16"
     },
     {
       "signal": "**STRAP**",
       "from": "1TCC T2",
       "to": "1TCC T3",
-      "page": "T16"
-    },
-    {
-      "signal": "**STRAP**",
-      "from": "1TCC T6",
-      "to": "1TCC T7",
       "page": "T16"
     },
     {
@@ -4732,7 +4726,7 @@
     },
     {
       "signal": "H-1-6R",
-      "from": "1TCC T7",
+      "from": "1BRLPR 4H",
       "to": "6RWPPR 3F",
       "page": "T16"
     },
@@ -4982,7 +4976,7 @@
     },
     {
       "signal": "H-12R-16",
-      "from": "16TCC T7",
+      "from": "16BRLPR 4H",
       "to": "12RWPPR 4F",
       "page": "T16"
     },
@@ -5005,12 +4999,6 @@
       "page": "T16"
     },
     {
-      "signal": "**STRAP**",
-      "from": "16TCC T7",
-      "to": "16TCC T6",
-      "page": "T16"
-    },
-    {
       "signal": "H-12N-16-B10",
       "from": "B10-TWR LVR T16",
       "to": "16TCC T1",
@@ -5018,8 +5006,8 @@
     },
     {
       "signal": "H-12R-16-B10",
-      "from": "B10-TWR LVR T17",
-      "to": "16TCC T5",
+      "from": "B10-TWR S1 T?",
+      "to": "16BRLPR 4B",
       "page": "T16"
     },
     {
@@ -5173,11 +5161,11 @@
     {
       "signal": "1BRLP-1",
       "from": "6TCC T4",
-      "to": "1TCC T9"
+      "to": "1TCC T7"
     },
     {
       "signal": "1BRLP",
-      "from": "1TCC T10",
+      "from": "1TCC T8",
       "to": "1BRLPR COIL+"
     },
     {
@@ -5188,11 +5176,11 @@
     {
       "signal": "16BRLP-1",
       "from": "12TCC T4",
-      "to": "16TCC T9"
+      "to": "16TCC T7"
     },
     {
       "signal": "16BRLP",
-      "from": "16TCC T10",
+      "from": "16TCC T8",
       "to": "16BRLPR COIL+"
     },
     {
@@ -7859,21 +7847,21 @@
       "state": "normal",
       "from": "T5",
       "to": "T6",
-      "wires": "1"
+      "wires": "0"
     },
     {
       "lever": "1TCC",
       "state": "reverse",
       "from": "T7",
       "to": "T8",
-      "wires": "2"
+      "wires": "1"
     },
     {
       "lever": "1TCC",
       "state": "reverse",
       "from": "T9",
       "to": "T10",
-      "wires": "1"
+      "wires": "0"
     },
     {
       "lever": "1TCC",
