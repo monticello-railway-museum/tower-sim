@@ -862,8 +862,8 @@
       "type": "relay",
       "resistance": "500",
       "contacts": "4",
-      "unused": "4",
-      "used": "0"
+      "unused": "3",
+      "used": "1"
     },
     {
       "component": "1AR",
@@ -873,8 +873,8 @@
       "resistance": "500",
       "index": "10",
       "contacts": "6",
-      "unused": "2",
-      "used": "4"
+      "unused": "1",
+      "used": "5"
     },
     {
       "component": "1ATKE",
@@ -884,6 +884,17 @@
       "config": "{\"volts\":12,\"watts\":2}",
       "unused": "0",
       "used": "0"
+    },
+    {
+      "component": "1BRLPR",
+      "subnet": "Tower",
+      "location": "shelf 1",
+      "type": "relay",
+      "resistance": "500",
+      "index": "10",
+      "contacts": "4",
+      "unused": "1",
+      "used": "3"
     },
     {
       "component": "1GKE",
@@ -934,17 +945,6 @@
       "used": "0"
     },
     {
-      "component": "1VGR",
-      "subnet": "Tower",
-      "location": "shelf 1",
-      "type": "relay",
-      "resistance": "150",
-      "index": "10",
-      "contacts": "2",
-      "unused": "-1",
-      "used": "3"
-    },
-    {
       "component": "2-3COPB",
       "subnet": "Tower",
       "location": "lever top",
@@ -970,8 +970,8 @@
       "type": "relay",
       "resistance": "500",
       "contacts": "4",
-      "unused": "4",
-      "used": "0"
+      "unused": "3",
+      "used": "1"
     },
     {
       "component": "2ATKE",
@@ -1043,8 +1043,8 @@
       "resistance": "4",
       "index": "9",
       "contacts": "4",
-      "unused": "2",
-      "used": "2"
+      "unused": "0",
+      "used": "4"
     },
     {
       "component": "3GKE",
@@ -1564,8 +1564,8 @@
       "type": "relay",
       "resistance": "500",
       "contacts": "4",
-      "unused": "4",
-      "used": "0"
+      "unused": "3",
+      "used": "1"
     },
     {
       "component": "14AR",
@@ -1575,8 +1575,8 @@
       "resistance": "1000",
       "index": "9",
       "contacts": "4",
-      "unused": "3",
-      "used": "1"
+      "unused": "1",
+      "used": "3"
     },
     {
       "component": "14AT RESISTOR 1",
@@ -1798,8 +1798,8 @@
       "type": "relay",
       "resistance": "500",
       "contacts": "4",
-      "unused": "4",
-      "used": "0"
+      "unused": "3",
+      "used": "1"
     },
     {
       "component": "16APR",
@@ -1809,8 +1809,8 @@
       "resistance": "1000",
       "index": "1",
       "contacts": "6",
-      "unused": "3",
-      "used": "3"
+      "unused": "1",
+      "used": "5"
     },
     {
       "component": "16ATKE",
@@ -1820,6 +1820,17 @@
       "config": "{\"volts\":12,\"watts\":2}",
       "unused": "0",
       "used": "0"
+    },
+    {
+      "component": "16BRLPR",
+      "subnet": "Tower",
+      "location": "shelf 1",
+      "type": "relay",
+      "resistance": "500",
+      "index": "9",
+      "contacts": "4",
+      "unused": "2",
+      "used": "2"
     },
     {
       "component": "16GKE",
@@ -1846,17 +1857,6 @@
       "type": "lever",
       "unused": "0",
       "used": "0"
-    },
-    {
-      "component": "16VGR",
-      "subnet": "Tower",
-      "location": "shelf 1",
-      "type": "relay",
-      "resistance": "150",
-      "index": "9",
-      "contacts": "2",
-      "unused": "0",
-      "used": "2"
     },
     {
       "component": "22HDGPR",
@@ -2919,49 +2919,49 @@
     {
       "signal": "4-5AS-3",
       "from": "4RGPR 1F",
-      "to": "1VGR 2H",
+      "to": "1BRLPR 2H",
       "page": "T5"
     },
     {
       "signal": "4-5AS-D1",
-      "from": "1VGR 2F",
+      "from": "1BRLPR 2F",
       "to": "1RGPR 3H"
     },
     {
       "signal": "4-5AS-D",
       "from": "1RGPR 3F",
-      "to": "16VGR 2H"
+      "to": "16BRLPR 2H"
     },
     {
       "signal": "4-5AS-2",
-      "from": "1VGR 2B",
-      "to": "16VGR 2H"
+      "from": "1BRLPR 2B",
+      "to": "16BRLPR 2H"
     },
     {
       "signal": "4-5AS-C1",
-      "from": "16VGR 2F",
+      "from": "16BRLPR 2F",
       "to": "16RGPR 5H"
     },
     {
       "signal": "4-5AS-C",
       "from": "16RGPR 5F",
-      "to": "16VGR 2B"
+      "to": "16BRLPR 2B"
     },
     {
       "signal": "4-5AS-1",
-      "from": "16VGR 2B",
+      "from": "16BRLPR 2B",
       "to": "9-10TE 5H",
       "page": "T5"
     },
     {
       "signal": "4-5AS-A",
-      "from": "16VGR 2B",
+      "from": "16BRLPR 2B",
       "to": "4-5ASR 1H",
       "page": "T5"
     },
     {
       "signal": "4-5AS-B1",
-      "from": "16VGR 2B",
+      "from": "16BRLPR 2B",
       "to": "9-10TPSR 2B"
     },
     {
@@ -3449,43 +3449,22 @@
       "page": "T8"
     },
     {
-      "signal": "1VG-1",
-      "from": "6RWPPR 2F",
-      "to": "1TCC T9",
-      "page": "T8",
-      "notes": "*"
-    },
-    {
-      "signal": "1VG",
-      "from": "1TCC T10",
-      "to": "1VGR COIL+",
-      "page": "T8",
-      "notes": "*"
-    },
-    {
-      "signal": "N-1VG",
-      "from": "1VGR COIL-",
-      "to": "N10-TWR S2 T?",
-      "page": "T8",
-      "notes": "*"
-    },
-    {
       "signal": "1HDP-2-6R",
       "from": "1TCC T8",
-      "to": "1VGR 3F",
+      "to": "1BRLPR 3F",
       "page": "T8",
       "notes": "*"
     },
     {
       "signal": "1HDP-2-6N",
       "from": "1TCC T4",
-      "to": "1VGR 3B",
+      "to": "1BRLPR 3B",
       "page": "T8",
       "notes": "*"
     },
     {
       "signal": "1HDP-2",
-      "from": "1VGR 3H",
+      "from": "1BRLPR 3H",
       "to": "1HDR 1F",
       "page": "T8"
     },
@@ -4534,18 +4513,6 @@
       "page": "T14"
     },
     {
-      "from": "12RWPPR 2F",
-      "to": "16TCC T9"
-    },
-    {
-      "from": "16TCC T10",
-      "to": "16VGR COIL+"
-    },
-    {
-      "from": "16VGR COIL-",
-      "to": "N10-TWR S2 T?"
-    },
-    {
       "signal": "16AHD-2",
       "from": "16TCC T4",
       "to": "14-16COSR 3H",
@@ -4808,18 +4775,18 @@
     {
       "signal": "H-6R-9",
       "from": "6RWPPR 4F",
-      "to": "1VGR 1F",
+      "to": "1BRLPR 1F",
       "page": "T16"
     },
     {
       "signal": "H-3-9-B10",
       "from": "B10-TWR S1 T?",
-      "to": "1VGR 1B",
+      "to": "1BRLPR 1B",
       "page": "T16"
     },
     {
       "signal": "H-3-9",
-      "from": "1VGR 1H",
+      "from": "1BRLPR 1H",
       "to": "9-10TPSR 4H",
       "page": "T16"
     },
@@ -4941,20 +4908,20 @@
     {
       "signal": "H-10N-15-1",
       "from": "10TCC T5",
-      "to": "16VGR 1H",
+      "to": "16BRLPR 1H",
       "page": "T16",
       "notes": "rework"
     },
     {
       "signal": "H-10N-15-B10",
       "from": "B10-TWR S2 T?",
-      "to": "16VGR 1B",
+      "to": "16BRLPR 1B",
       "page": "T16",
       "notes": "rework"
     },
     {
       "signal": "H-10N-12R",
-      "from": "16VGR 1F",
+      "from": "16BRLPR 1F",
       "to": "12RWPPR 3F",
       "page": "T16",
       "notes": "rework"
@@ -5202,6 +5169,36 @@
     {
       "from": "POSR 2B",
       "to": "14ATPR COIL+"
+    },
+    {
+      "signal": "1BRLP-1",
+      "from": "6TCC T4",
+      "to": "1TCC T9"
+    },
+    {
+      "signal": "1BRLP",
+      "from": "1TCC T10",
+      "to": "1BRLPR COIL+"
+    },
+    {
+      "signal": "N-1BRLP",
+      "from": "1BRLPR COIL-",
+      "to": "N10-TWR S1 T?"
+    },
+    {
+      "signal": "16BRLP-1",
+      "from": "12TCC T4",
+      "to": "16TCC T9"
+    },
+    {
+      "signal": "16BRLP",
+      "from": "16TCC T10",
+      "to": "16BRLPR COIL+"
+    },
+    {
+      "signal": "N-16BRLP",
+      "from": "16BRLPR COIL-",
+      "to": "N10-TWR S1 T?"
     }
   ],
   "caseAWires": [
