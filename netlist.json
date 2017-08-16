@@ -1002,6 +1002,17 @@
       "used": "4"
     },
     {
+      "component": "2RLPR",
+      "subnet": "Tower",
+      "location": "shelf 2",
+      "type": "relay",
+      "resistance": "500",
+      "index": "9",
+      "contacts": "4",
+      "unused": "2",
+      "used": "2"
+    },
+    {
       "component": "2T RESISTOR 1",
       "subnet": "Tower",
       "location": "shelf 3",
@@ -1074,6 +1085,17 @@
       "contacts": "4",
       "unused": "0",
       "used": "4"
+    },
+    {
+      "component": "3RLPR",
+      "subnet": "Tower",
+      "location": "shelf 2",
+      "type": "relay",
+      "resistance": "500",
+      "index": "9",
+      "contacts": "4",
+      "unused": "2",
+      "used": "2"
     },
     {
       "component": "3TCC",
@@ -1811,6 +1833,17 @@
       "contacts": "6",
       "unused": "1",
       "used": "5"
+    },
+    {
+      "component": "16ARLPR",
+      "subnet": "Tower",
+      "location": "shelf 2",
+      "type": "relay",
+      "resistance": "500",
+      "index": "9",
+      "contacts": "4",
+      "unused": "2",
+      "used": "2"
     },
     {
       "component": "16ATKE",
@@ -3234,26 +3267,26 @@
     },
     {
       "signal": "B10-TWR",
-      "from": "B10-TWR LVR T6",
-      "to": "2TCC T5",
+      "from": "B10-TWR S2 T?",
+      "to": "2RLPR 2H",
       "page": "T7"
     },
     {
       "signal": "B10-TWR",
-      "from": "B10-TWR LVR T7",
-      "to": "3TCC T5",
+      "from": "B10-TWR S2 T?",
+      "to": "3RLPR 2H",
       "page": "T7"
     },
     {
       "signal": "2-3COS-3",
-      "from": "2TCC T6",
+      "from": "2RLPR 2F",
       "to": "2-3COPB 1F",
       "page": "T7"
     },
     {
       "signal": "2-3COS-3A",
-      "from": "3TCC T6",
-      "to": "2TCC T6",
+      "from": "3RLPR 2F",
+      "to": "2RLPR 2F",
       "page": "T7"
     },
     {
@@ -3300,8 +3333,8 @@
     },
     {
       "signal": "B10-TWR",
-      "from": "B10-TWR LVR T14",
-      "to": "16TCC T13",
+      "from": "B10-TWR S2 T?",
+      "to": "16ARLPR 2H",
       "page": "T7"
     },
     {
@@ -3312,8 +3345,8 @@
     },
     {
       "signal": "14-16COS-3A",
-      "from": "16TCC T14",
-      "to": "14TCC T6",
+      "from": "16ARLPR 2F",
+      "to": "14-16COPB 1F",
       "page": "T7"
     },
     {
@@ -3662,7 +3695,7 @@
     },
     {
       "signal": "2HD-2",
-      "from": "2TCC T4",
+      "from": "2RLPR 1F",
       "to": "2-3COSR 2H",
       "page": "T9",
       "notes": "H-NETWORK 2HD-2"
@@ -3699,7 +3732,7 @@
     },
     {
       "signal": "3HD-2",
-      "from": "3TCC T2",
+      "from": "3RLPR 1F",
       "to": "2-3COSR 3H",
       "page": "T9",
       "notes": "H-NETWORK 3HD-2"
@@ -4514,7 +4547,7 @@
     },
     {
       "signal": "16AHD-2",
-      "from": "16TCC T4",
+      "from": "16ARLPR 1F",
       "to": "14-16COSR 3H",
       "page": "T15",
       "notes": "H-NETWORK 16AHD-2"
@@ -4763,7 +4796,7 @@
     {
       "signal": "H-3-6R",
       "from": "6RWPPR 4F",
-      "to": "3TCC T1",
+      "to": "3RLPR 1H",
       "page": "T16"
     },
     {
@@ -4786,20 +4819,14 @@
     },
     {
       "signal": "H-2-6N",
-      "from": "2TCC T3",
+      "from": "2RLPR 1H",
       "to": "6NWPPR 4F",
-      "page": "T16"
-    },
-    {
-      "signal": "**STRAP**",
-      "from": "2TCC T3",
-      "to": "2TCC T2",
       "page": "T16"
     },
     {
       "signal": "H-2-6N-B10",
       "from": "B10-TWR LVR T5",
-      "to": "2TCC T1",
+      "to": "2RLPR 1B",
       "page": "T16"
     },
     {
@@ -4988,20 +5015,14 @@
     },
     {
       "signal": "H-12N-16",
-      "from": "16TCC T3",
+      "from": "16ARLPR 1H",
       "to": "12NWPPR 4F",
       "page": "T16"
     },
     {
-      "signal": "**STRAP**",
-      "from": "16TCC T3",
-      "to": "16TCC T2",
-      "page": "T16"
-    },
-    {
       "signal": "H-12N-16-B10",
-      "from": "B10-TWR LVR T16",
-      "to": "16TCC T1",
+      "from": "B10-TWR S2 T?",
+      "to": "16ARLPR 1B",
       "page": "T16"
     },
     {
@@ -5171,6 +5192,51 @@
     {
       "signal": "N-1BRLP",
       "from": "1BRLPR COIL-",
+      "to": "N10-TWR S1 T?"
+    },
+    {
+      "signal": "2RLP-1",
+      "from": "B10-TWR LVR T?",
+      "to": "2TCC T1"
+    },
+    {
+      "signal": "3RLP-1",
+      "from": "2TCC T1",
+      "to": "3TCC T1"
+    },
+    {
+      "signal": "2RLP",
+      "from": "2TCC T2",
+      "to": "2RLPR COIL+"
+    },
+    {
+      "signal": "N-2RLP",
+      "from": "2RLPR COIL-",
+      "to": "N10-TWR S2 T?"
+    },
+    {
+      "signal": "3RLP",
+      "from": "3TCC T2",
+      "to": "3RLPR COIL+"
+    },
+    {
+      "signal": "N-3RLP",
+      "from": "3RLPR COIL-",
+      "to": "N10-TWR S2 T?"
+    },
+    {
+      "signal": "16ARLP-1",
+      "from": "12TCC T1",
+      "to": "16TCC T3"
+    },
+    {
+      "signal": "16ARLP",
+      "from": "16TCC T4",
+      "to": "16ARLPR COIL+"
+    },
+    {
+      "signal": "N-16ARLP",
+      "from": "16ARLPR COIL-",
       "to": "N10-TWR S1 T?"
     },
     {
@@ -7858,7 +7924,6 @@
     },
     {
       "lever": "1TCC",
-      "state": "reverse",
       "from": "T9",
       "to": "T10",
       "wires": "0"
@@ -7883,24 +7948,22 @@
     },
     {
       "lever": "2TCC",
-      "state": "normal",
+      "state": "reverse",
       "from": "T1",
       "to": "T2",
-      "wires": "1"
-    },
-    {
-      "lever": "2TCC",
-      "state": "reverse",
-      "from": "T3",
-      "to": "T4",
       "wires": "2"
     },
     {
       "lever": "2TCC",
-      "state": "reverse",
+      "from": "T3",
+      "to": "T4",
+      "wires": "0"
+    },
+    {
+      "lever": "2TCC",
       "from": "T5",
       "to": "T6",
-      "wires": "1"
+      "wires": "0"
     },
     {
       "lever": "2TCC",
@@ -7923,10 +7986,9 @@
     },
     {
       "lever": "3TCC",
-      "state": "reverse",
       "from": "T5",
       "to": "T6",
-      "wires": "1"
+      "wires": "0"
     },
     {
       "lever": "3TCC",
@@ -8075,7 +8137,7 @@
       "state": "normal",
       "from": "T1",
       "to": "T2",
-      "wires": "1"
+      "wires": "2"
     },
     {
       "lever": "12TCC",
@@ -8155,35 +8217,34 @@
       "state": "normal",
       "from": "T1",
       "to": "T2",
-      "wires": "1"
+      "wires": "0"
     },
     {
       "lever": "16TCC",
       "state": "reverse",
       "from": "T3",
       "to": "T4",
-      "wires": "2"
+      "wires": "1"
     },
     {
       "lever": "16TCC",
       "state": "normal",
       "from": "T5",
       "to": "T6",
-      "wires": "1"
+      "wires": "0"
     },
     {
       "lever": "16TCC",
       "state": "reverse",
       "from": "T7",
       "to": "T8",
-      "wires": "2"
+      "wires": "1"
     },
     {
       "lever": "16TCC",
-      "state": "reverse",
       "from": "T9",
       "to": "T10",
-      "wires": "1"
+      "wires": "0"
     },
     {
       "lever": "16TCC",
@@ -8193,10 +8254,9 @@
     },
     {
       "lever": "16TCC",
-      "state": "reverse",
       "from": "T13",
       "to": "T14",
-      "wires": "1"
+      "wires": "0"
     },
     {
       "lever": "16TCC",
