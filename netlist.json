@@ -3005,49 +3005,49 @@
     {
       "signal": "4-5AS-3",
       "from": "4RGPR 1F",
-      "to": "1BRLPR 2H",
+      "to": "1BRLPR 3H",
       "page": "T5"
     },
     {
       "signal": "4-5AS-D1",
-      "from": "1BRLPR 2F",
+      "from": "1BRLPR 3F",
       "to": "1RGPR 3H"
     },
     {
       "signal": "4-5AS-D",
       "from": "1RGPR 3F",
-      "to": "16BRLPR 2H"
+      "to": "16BRLPR 3H"
     },
     {
       "signal": "4-5AS-2",
-      "from": "1BRLPR 2B",
-      "to": "16BRLPR 2H"
+      "from": "1BRLPR 3B",
+      "to": "16BRLPR 3H"
     },
     {
       "signal": "4-5AS-C1",
-      "from": "16BRLPR 2F",
+      "from": "16BRLPR 3F",
       "to": "16RGPR 5H"
     },
     {
       "signal": "4-5AS-C",
       "from": "16RGPR 5F",
-      "to": "16BRLPR 2B"
+      "to": "16BRLPR 3B"
     },
     {
       "signal": "4-5AS-1",
-      "from": "16BRLPR 2B",
+      "from": "16BRLPR 3B",
       "to": "9-10TE 5H",
       "page": "T5"
     },
     {
       "signal": "4-5AS-A",
-      "from": "16BRLPR 2B",
+      "from": "16BRLPR 3B",
       "to": "4-5ASR 1H",
       "page": "T5"
     },
     {
       "signal": "4-5AS-B1",
-      "from": "16BRLPR 2B",
+      "from": "16BRLPR 3B",
       "to": "9-10TPSR 2B"
     },
     {
@@ -3319,14 +3319,14 @@
       "page": "T6"
     },
     {
-      "signal": "B10-TWR",
-      "from": "B10-TWR S2 T?",
+      "signal": "**STRAP**",
+      "from": "2RLPR 1B",
       "to": "2RLPR 2H",
       "page": "T7"
     },
     {
       "signal": "B10-TWR",
-      "from": "B10-TWR S2 T?",
+      "from": "B10-TWR S2 T4",
       "to": "3RLPR 2H",
       "page": "T7"
     },
@@ -3385,8 +3385,8 @@
       "page": "T7"
     },
     {
-      "signal": "B10-TWR",
-      "from": "B10-TWR S2 T?",
+      "signal": "**STRAP**",
+      "from": "16ARLPR 1B",
       "to": "16ARLPR 2H",
       "page": "T7"
     },
@@ -3536,21 +3536,21 @@
     },
     {
       "signal": "1HDP-2-6R",
-      "from": "1BRLPR 4F",
-      "to": "1BRLPR 3F",
+      "from": "1BRLPR 1F",
+      "to": "1BRLPR 4F",
       "page": "T8",
       "notes": "*"
     },
     {
       "signal": "1HDP-2-6N",
       "from": "1TCC T4",
-      "to": "1BRLPR 3B",
+      "to": "1BRLPR 4B",
       "page": "T8",
       "notes": "*"
     },
     {
       "signal": "1HDP-2",
-      "from": "1BRLPR 3H",
+      "from": "1BRLPR 4H",
       "to": "1HDR 1F",
       "page": "T8"
     },
@@ -4607,7 +4607,7 @@
     },
     {
       "signal": "16BHD-1",
-      "from": "16BRLPR 4F",
+      "from": "16BRLPR 1F",
       "to": "14-16COSR 4H",
       "page": "T15",
       "notes": "H-NETWORK 16BHD-1"
@@ -4788,8 +4788,8 @@
     },
     {
       "signal": "H-1-6R-B10",
-      "from": "B10-TWR S1 T?",
-      "to": "1BRLPR 4B",
+      "from": "B10-TWR S2 T6",
+      "to": "1BRLPR 1B",
       "page": "T16"
     },
     {
@@ -4812,7 +4812,7 @@
     },
     {
       "signal": "H-1-6R",
-      "from": "1BRLPR 4H",
+      "from": "1BRLPR 1H",
       "to": "6RWPPR 3F",
       "page": "T16"
     },
@@ -4855,18 +4855,18 @@
     {
       "signal": "H-6R-9",
       "from": "6RWPPR 4F",
-      "to": "1BRLPR 1F",
+      "to": "1BRLPR 2F",
       "page": "T16"
     },
     {
-      "signal": "H-3-9-B10",
-      "from": "B10-TWR S1 T?",
-      "to": "1BRLPR 1B",
+      "signal": "**STRAP**",
+      "from": "1BRLPR 1B",
+      "to": "1BRLPR 2B",
       "page": "T16"
     },
     {
       "signal": "H-3-9",
-      "from": "1BRLPR 1H",
+      "from": "1BRLPR 2H",
       "to": "9-10TPSR 4H",
       "page": "T16"
     },
@@ -4878,7 +4878,7 @@
     },
     {
       "signal": "H-2-6N-B10",
-      "from": "B10-TWR LVR T5",
+      "from": "B10-TWR S2 T5",
       "to": "2RLPR 1B",
       "page": "T16"
     },
@@ -4982,20 +4982,20 @@
     {
       "signal": "H-10N-15-1",
       "from": "10TCC T5",
-      "to": "16BRLPR 1H",
+      "to": "16BRLPR 2H",
       "page": "T16",
       "notes": "rework"
     },
     {
-      "signal": "H-10N-15-B10",
-      "from": "B10-TWR S2 T?",
-      "to": "16BRLPR 1B",
+      "signal": "**STRAP**",
+      "from": "16BRLPR 1B",
+      "to": "16BRLPR 2B",
       "page": "T16",
       "notes": "rework"
     },
     {
       "signal": "H-10N-12R",
-      "from": "16BRLPR 1F",
+      "from": "16BRLPR 2F",
       "to": "12RWPPR 3F",
       "page": "T16",
       "notes": "rework"
@@ -5056,7 +5056,7 @@
     },
     {
       "signal": "H-12R-16",
-      "from": "16BRLPR 4H",
+      "from": "16BRLPR 1H",
       "to": "12RWPPR 4F",
       "page": "T16"
     },
@@ -5074,14 +5074,14 @@
     },
     {
       "signal": "H-12N-16-B10",
-      "from": "B10-TWR S2 T?",
+      "from": "B10-TWR S2 T2",
       "to": "16ARLPR 1B",
       "page": "T16"
     },
     {
       "signal": "H-12R-16-B10",
-      "from": "B10-TWR S1 T?",
-      "to": "16BRLPR 4B",
+      "from": "B10-TWR S2 T3",
+      "to": "16BRLPR 1B",
       "page": "T16"
     },
     {
@@ -5212,7 +5212,7 @@
     },
     {
       "signal": "B10-TWR",
-      "from": "B10-TWR MAIN T?",
+      "from": "B10-TWR S2 T7",
       "to": "POSR 1H"
     },
     {
@@ -5249,7 +5249,7 @@
     },
     {
       "signal": "2RLP-1",
-      "from": "B10-TWR LVR T?",
+      "from": "21BRLPR 2B",
       "to": "2TCC T1"
     },
     {
@@ -5278,13 +5278,18 @@
       "to": "N10-TWR S2 T7"
     },
     {
-      "signal": "16ARLP-1",
+      "signal": "16ARLP-2",
       "from": "12TCC T1",
       "to": "16TCC T3"
     },
     {
-      "signal": "16ARLP",
+      "signal": "16ARLP-1",
       "from": "16TCC T4",
+      "to": "21ARLPR 2H"
+    },
+    {
+      "signal": "16ARLP",
+      "from": "21ARLPR 2B",
       "to": "16ARLPR COIL+"
     },
     {
@@ -5306,6 +5311,21 @@
       "signal": "N-16BRLP",
       "from": "16BRLPR COIL-",
       "to": "N10-TWR S2 T6"
+    },
+    {
+      "signal": "B10-TWR",
+      "from": "B10-TWR S2 T?",
+      "to": "21ARLPR 1H"
+    },
+    {
+      "signal": "B10-TWR",
+      "from": "B10-TWR S2 T?",
+      "to": "21BRLPR 1H"
+    },
+    {
+      "signal": "**STRAP**",
+      "from": "21BRLPR 1H",
+      "to": "21BRLPR 2H"
     }
   ],
   "caseAWires": [
