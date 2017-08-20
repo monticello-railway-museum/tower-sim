@@ -1929,8 +1929,8 @@
       "resistance": "500",
       "index": "9",
       "contacts": "4",
-      "unused": "4",
-      "used": "0"
+      "unused": "2",
+      "used": "2"
     },
     {
       "component": "21BRLPR",
@@ -1940,8 +1940,8 @@
       "resistance": "500",
       "index": "10",
       "contacts": "4",
-      "unused": "4",
-      "used": "0"
+      "unused": "2",
+      "used": "2"
     },
     {
       "component": "22HDGPR",
@@ -3380,7 +3380,7 @@
     },
     {
       "signal": "B10-TWR",
-      "from": "B10-TWR LVR T13",
+      "from": "14TCC T1",
       "to": "14TCC T5",
       "page": "T7"
     },
@@ -3440,7 +3440,7 @@
     },
     {
       "signal": "B10-TWR",
-      "from": "B10-TWR LVR T10",
+      "from": "B10-TWR LVR T5",
       "to": "6TCC T2",
       "page": "T8"
     },
@@ -4286,7 +4286,7 @@
     },
     {
       "signal": "B10-TWR",
-      "from": "B10-TWR LVR T11",
+      "from": "B10-TWR LVR T6",
       "to": "12TCC T2",
       "page": "T13"
     },
@@ -4890,7 +4890,7 @@
     },
     {
       "signal": "H-4-9R-B10",
-      "from": "B10-TWR LVR T8",
+      "from": "B10-TWR LVR T3",
       "to": "4TCC T1",
       "page": "T16"
     },
@@ -4968,7 +4968,7 @@
     },
     {
       "signal": "H-5-10R-B10",
-      "from": "B10-TWR LVR T9",
+      "from": "B10-TWR LVR T4",
       "to": "5TCC T1",
       "page": "T16"
     },
@@ -5008,7 +5008,7 @@
     },
     {
       "signal": "H-12N-14-B10",
-      "from": "B10-TWR LVR T12",
+      "from": "B10-TWR LVR T7",
       "to": "14TCC T1",
       "page": "T16"
     },
@@ -5212,7 +5212,7 @@
     },
     {
       "signal": "B10-TWR",
-      "from": "B10-TWR S2 T7",
+      "from": "B10-TWR S2 T9",
       "to": "POSR 1H"
     },
     {
@@ -5314,12 +5314,12 @@
     },
     {
       "signal": "B10-TWR",
-      "from": "B10-TWR S2 T?",
+      "from": "B10-TWR S2 T7",
       "to": "21ARLPR 1H"
     },
     {
       "signal": "B10-TWR",
-      "from": "B10-TWR S2 T?",
+      "from": "B10-TWR S2 T8",
       "to": "21BRLPR 1H"
     },
     {
@@ -8238,7 +8238,7 @@
       "state": "normal",
       "from": "T1",
       "to": "T2",
-      "wires": "1"
+      "wires": "2"
     },
     {
       "lever": "14TCC",
