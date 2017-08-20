@@ -8,7 +8,8 @@
       "resistance": "10",
       "config": "{\"pickupTime\":5}",
       "index": "31",
-      "unused": "-1",
+      "contacts": "1",
+      "unused": "0",
       "used": "1"
     },
     {
@@ -70,7 +71,8 @@
       "resistance": "10",
       "config": "{\"pickupTime\":5}",
       "index": "33",
-      "unused": "-1",
+      "contacts": "1",
+      "unused": "0",
       "used": "1"
     },
     {
@@ -847,10 +849,10 @@
     {
       "component": "1-2-3ASR",
       "subnet": "Tower",
-      "location": "shelf 4",
+      "location": "shelf 2",
       "type": "relay",
       "config": "{\"pickupTime\":2.3,\"dropTime\":1.3}",
-      "index": "2",
+      "index": "3",
       "contacts": "4",
       "unused": "2",
       "used": "2"
@@ -858,11 +860,12 @@
     {
       "component": "1AKSR",
       "subnet": "Tower",
-      "location": "rack",
+      "location": "shelf 4",
       "type": "relay",
       "resistance": "500",
-      "contacts": "4",
-      "unused": "3",
+      "index": "12",
+      "contacts": "2",
+      "unused": "1",
       "used": "1"
     },
     {
@@ -871,7 +874,7 @@
       "location": "shelf 3",
       "type": "relay",
       "resistance": "500",
-      "index": "10",
+      "index": "11",
       "contacts": "6",
       "unused": "1",
       "used": "5"
@@ -888,10 +891,10 @@
     {
       "component": "1BRLPR",
       "subnet": "Tower",
-      "location": "shelf 1",
+      "location": "shelf 2",
       "type": "relay",
       "resistance": "500",
-      "index": "10",
+      "index": "7",
       "contacts": "4",
       "unused": "0",
       "used": "4"
@@ -911,14 +914,14 @@
       "location": "rack",
       "type": "relay",
       "resistance": "500",
-      "contacts": "4",
-      "unused": "4",
+      "index": "32",
+      "unused": "0",
       "used": "0"
     },
     {
       "component": "1HDR",
       "subnet": "Tower",
-      "location": "shelf 2",
+      "location": "shelf 4",
       "type": "relay",
       "resistance": "1000",
       "index": "11",
@@ -932,8 +935,8 @@
       "location": "rack",
       "type": "relay",
       "resistance": "500",
-      "contacts": "2",
-      "unused": "-2",
+      "index": "21",
+      "unused": "-4",
       "used": "4"
     },
     {
@@ -955,10 +958,10 @@
     {
       "component": "2-3COSR",
       "subnet": "Tower",
-      "location": "shelf 2",
+      "location": "shelf 1",
       "type": "relay",
       "resistance": "1000",
-      "index": "1",
+      "index": "10",
       "contacts": "4",
       "unused": "1",
       "used": "3"
@@ -966,11 +969,12 @@
     {
       "component": "2AKSR",
       "subnet": "Tower",
-      "location": "rack",
+      "location": "shelf 4",
       "type": "relay",
       "resistance": "500",
-      "contacts": "4",
-      "unused": "3",
+      "index": "10",
+      "contacts": "2",
+      "unused": "1",
       "used": "1"
     },
     {
@@ -997,8 +1001,8 @@
       "location": "rack",
       "type": "relay",
       "resistance": "500",
-      "contacts": "4",
-      "unused": "0",
+      "index": "16",
+      "unused": "-4",
       "used": "4"
     },
     {
@@ -1007,7 +1011,7 @@
       "location": "shelf 2",
       "type": "relay",
       "resistance": "500",
-      "index": "9",
+      "index": "6",
       "contacts": "4",
       "unused": "2",
       "used": "2"
@@ -1052,7 +1056,7 @@
       "location": "shelf 3",
       "type": "relay",
       "resistance": "4",
-      "index": "9",
+      "index": "10",
       "contacts": "4",
       "unused": "0",
       "used": "4"
@@ -1072,8 +1076,8 @@
       "location": "rack",
       "type": "relay",
       "resistance": "500",
-      "contacts": "4",
-      "unused": "3",
+      "index": "31",
+      "unused": "-1",
       "used": "1"
     },
     {
@@ -1082,8 +1086,8 @@
       "location": "rack",
       "type": "relay",
       "resistance": "500",
-      "contacts": "4",
-      "unused": "0",
+      "index": "15",
+      "unused": "-4",
       "used": "4"
     },
     {
@@ -1092,7 +1096,7 @@
       "location": "shelf 2",
       "type": "relay",
       "resistance": "500",
-      "index": "9",
+      "index": "5",
       "contacts": "4",
       "unused": "2",
       "used": "2"
@@ -1111,7 +1115,7 @@
       "location": "shelf 2",
       "type": "relay",
       "config": "{\"pickupTime\":2.3,\"dropTime\":1.3}",
-      "index": "3",
+      "index": "2",
       "contacts": "4",
       "unused": "2",
       "used": "2"
@@ -1131,8 +1135,8 @@
       "location": "rack",
       "type": "relay",
       "resistance": "500",
-      "contacts": "2",
-      "unused": "-1",
+      "index": "14",
+      "unused": "-3",
       "used": "3"
     },
     {
@@ -1166,7 +1170,7 @@
       "location": "shelf 4",
       "type": "relay",
       "resistance": "1000",
-      "index": "1",
+      "index": "9",
       "contacts": "4",
       "unused": "0",
       "used": "4"
@@ -1187,7 +1191,8 @@
       "subtype": "time element",
       "resistance": "10",
       "config": "{\"pickupTime\":5}",
-      "unused": "-1",
+      "contacts": "1",
+      "unused": "0",
       "used": "1"
     },
     {
@@ -1197,7 +1202,7 @@
       "type": "relay",
       "subtype": "biased neutral",
       "resistance": "300",
-      "index": "5",
+      "index": "7",
       "contacts": "4",
       "unused": "0",
       "used": "4"
@@ -1209,7 +1214,7 @@
       "type": "relay",
       "subtype": "biased neutral",
       "resistance": "300",
-      "index": "6",
+      "index": "8",
       "contacts": "4",
       "unused": "0",
       "used": "4"
@@ -1268,10 +1273,10 @@
     {
       "component": "6TPR",
       "subnet": "Tower",
-      "location": "shelf 4",
+      "location": "shelf 3",
       "type": "relay",
       "resistance": "1000",
-      "index": "3",
+      "index": "8",
       "contacts": "4",
       "unused": "1",
       "used": "3"
@@ -1282,7 +1287,7 @@
       "location": "shelf 4",
       "type": "relay",
       "resistance": "500",
-      "index": "4",
+      "index": "8",
       "contacts": "6",
       "unused": "2",
       "used": "4"
@@ -1293,7 +1298,7 @@
       "location": "shelf 3",
       "type": "relay",
       "resistance": "4",
-      "index": "8",
+      "index": "9",
       "contacts": "4",
       "unused": "3",
       "used": "1"
@@ -1359,7 +1364,7 @@
       "location": "shelf 4",
       "type": "relay",
       "resistance": "350",
-      "index": "5",
+      "index": "7",
       "contacts": "6",
       "unused": "2",
       "used": "4"
@@ -1370,7 +1375,7 @@
       "location": "shelf 1",
       "type": "relay",
       "resistance": "500",
-      "index": "1",
+      "index": "5",
       "contacts": "4",
       "unused": "0",
       "used": "4"
@@ -1381,7 +1386,7 @@
       "location": "shelf 1",
       "type": "relay",
       "resistance": "500",
-      "index": "2",
+      "index": "6",
       "contacts": "4",
       "unused": "1",
       "used": "3"
@@ -1457,7 +1462,7 @@
       "type": "relay",
       "subtype": "biased neutral",
       "resistance": "300",
-      "index": "7",
+      "index": "1",
       "contacts": "4",
       "unused": "0",
       "used": "4"
@@ -1469,7 +1474,7 @@
       "type": "relay",
       "subtype": "biased neutral",
       "resistance": "300",
-      "index": "8",
+      "index": "2",
       "contacts": "4",
       "unused": "0",
       "used": "4"
@@ -1516,7 +1521,7 @@
       "location": "shelf 4",
       "type": "relay",
       "resistance": "500",
-      "index": "7",
+      "index": "6",
       "contacts": "6",
       "unused": "2",
       "used": "4"
@@ -1536,7 +1541,7 @@
       "location": "shelf 4",
       "type": "relay",
       "resistance": "250",
-      "index": "8",
+      "index": "5",
       "contacts": "10",
       "unused": "0",
       "used": "10"
@@ -1552,10 +1557,10 @@
     {
       "component": "14-15-16ASR",
       "subnet": "Tower",
-      "location": "shelf 4",
+      "location": "shelf 2",
       "type": "relay",
       "config": "{\"pickupTime\":2.3,\"dropTime\":1.3}",
-      "index": "6",
+      "index": "1",
       "contacts": "4",
       "unused": "2",
       "used": "2"
@@ -1571,10 +1576,10 @@
     {
       "component": "14-16COSR",
       "subnet": "Tower",
-      "location": "shelf 2",
+      "location": "shelf 1",
       "type": "relay",
       "resistance": "1000",
-      "index": "2",
+      "index": "9",
       "contacts": "4",
       "unused": "0",
       "used": "4"
@@ -1582,11 +1587,12 @@
     {
       "component": "14AKSR",
       "subnet": "Tower",
-      "location": "rack",
+      "location": "shelf 4",
       "type": "relay",
       "resistance": "500",
-      "contacts": "4",
-      "unused": "3",
+      "index": "4",
+      "contacts": "2",
+      "unused": "1",
       "used": "1"
     },
     {
@@ -1595,7 +1601,7 @@
       "location": "shelf 4",
       "type": "relay",
       "resistance": "1000",
-      "index": "9",
+      "index": "3",
       "contacts": "4",
       "unused": "1",
       "used": "3"
@@ -1749,6 +1755,7 @@
       "location": "rack",
       "type": "relay",
       "resistance": "500",
+      "index": "26",
       "unused": "0",
       "used": "0"
     },
@@ -1758,6 +1765,7 @@
       "location": "rack",
       "type": "relay",
       "resistance": "500",
+      "index": "13",
       "unused": "-4",
       "used": "4"
     },
@@ -1772,10 +1780,12 @@
     {
       "component": "15DR",
       "subnet": "Tower",
-      "location": "rack",
+      "location": "shelf 4",
       "type": "relay",
       "resistance": "500",
-      "unused": "-2",
+      "index": "2",
+      "contacts": "2",
+      "unused": "0",
       "used": "2"
     },
     {
@@ -1793,6 +1803,7 @@
       "location": "rack",
       "type": "relay",
       "resistance": "500",
+      "index": "25",
       "unused": "-1",
       "used": "1"
     },
@@ -1802,6 +1813,7 @@
       "location": "rack",
       "type": "relay",
       "resistance": "500",
+      "index": "12",
       "unused": "-3",
       "used": "3"
     },
@@ -1816,11 +1828,12 @@
     {
       "component": "16AKSR",
       "subnet": "Tower",
-      "location": "rack",
+      "location": "shelf 4",
       "type": "relay",
       "resistance": "500",
-      "contacts": "4",
-      "unused": "3",
+      "index": "1",
+      "contacts": "2",
+      "unused": "1",
       "used": "1"
     },
     {
@@ -1840,7 +1853,7 @@
       "location": "shelf 2",
       "type": "relay",
       "resistance": "500",
-      "index": "9",
+      "index": "4",
       "contacts": "4",
       "unused": "2",
       "used": "2"
@@ -1857,10 +1870,10 @@
     {
       "component": "16BRLPR",
       "subnet": "Tower",
-      "location": "shelf 1",
+      "location": "shelf 2",
       "type": "relay",
       "resistance": "500",
-      "index": "9",
+      "index": "5",
       "contacts": "4",
       "unused": "1",
       "used": "3"
@@ -1880,6 +1893,7 @@
       "location": "rack",
       "type": "relay",
       "resistance": "500",
+      "index": "11",
       "unused": "-5",
       "used": "5"
     },
@@ -1892,25 +1906,45 @@
       "used": "0"
     },
     {
-      "component": "22HDGPR",
+      "component": "21ARLPR",
       "subnet": "Tower",
       "location": "shelf 2",
       "type": "relay",
-      "resistance": "1500",
+      "resistance": "500",
+      "index": "8",
+      "contacts": "4",
+      "unused": "4",
+      "used": "0"
+    },
+    {
+      "component": "21BRLPR",
+      "subnet": "Tower",
+      "location": "shelf 2",
+      "type": "relay",
+      "resistance": "500",
       "index": "9",
       "contacts": "4",
-      "unused": "2",
+      "unused": "4",
+      "used": "0"
+    },
+    {
+      "component": "22HDGPR",
+      "subnet": "Tower",
+      "location": "rack",
+      "type": "relay",
+      "resistance": "500",
+      "index": "34",
+      "unused": "-2",
       "used": "2"
     },
     {
       "component": "23HDGPR",
       "subnet": "Tower",
-      "location": "shelf 2",
+      "location": "rack",
       "type": "relay",
-      "resistance": "1500",
-      "index": "10",
-      "contacts": "4",
-      "unused": "3",
+      "resistance": "500",
+      "index": "33",
+      "unused": "-1",
       "used": "1"
     },
     {
@@ -2246,9 +2280,12 @@
     {
       "component": "POSR",
       "subnet": "Tower",
+      "location": "shelf 2",
       "type": "relay",
       "resistance": "500",
-      "unused": "-2",
+      "index": "10",
+      "contacts": "4",
+      "unused": "2",
       "used": "2"
     },
     {
@@ -2345,8 +2382,8 @@
       "notes": "*"
     },
     {
-      "signal": "2AX-1",
-      "from": "B10-TWR S3 T?",
+      "signal": "**STRAP**",
+      "from": "2TR 3H",
       "to": "2TR 4H",
       "page": "T2",
       "notes": "*"
@@ -2359,8 +2396,8 @@
       "notes": "*"
     },
     {
-      "signal": "14AKS-1",
-      "from": "B10-TWR S4 T?",
+      "signal": "**STRAP**",
+      "from": "14AR 4H",
       "to": "14AR 3H",
       "page": "T2",
       "notes": "*"
@@ -2394,8 +2431,8 @@
       "notes": "*"
     },
     {
-      "signal": "16AKS-1",
-      "from": "B10-TWR S3 T?",
+      "signal": "**STRAP**",
+      "from": "16APR 1H",
       "to": "16APR 5H",
       "page": "T2",
       "notes": "*"
@@ -2415,8 +2452,8 @@
       "notes": "*"
     },
     {
-      "signal": "16AX-1",
-      "from": "B10-TWR S3 T?",
+      "signal": "**STRAP**",
+      "from": "16APR 5H",
       "to": "16APR 6H",
       "page": "T2",
       "notes": "*"
@@ -3502,8 +3539,8 @@
       "page": "T8"
     },
     {
-      "signal": "N-1HDP-2",
-      "from": "N10-TWR S2 T?",
+      "signal": "**STRAP**",
+      "from": "1HDR COIL-",
       "to": "1HDR 2F",
       "page": "T8"
     },
@@ -4498,8 +4535,8 @@
       "page": "T14"
     },
     {
-      "signal": "N10-TWR",
-      "from": "N10-TWR RACK T?",
+      "signal": "**STRAP**",
+      "from": "15DR COIL-",
       "to": "15DR 2H",
       "page": "T14"
     },
