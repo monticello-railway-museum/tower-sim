@@ -18,7 +18,7 @@ const tagHeight = 0.66 * 72;
 const tagWidth = 1.25 * 72;
 const tagMargin = 0.05 * 72;
 
-const flip = true;
+const flip = false;
 
 //const tagHeight = 1.00;
 //const tagWidth = 0.87;
@@ -91,7 +91,15 @@ const circuits = {
     'X6-CASEA': sim.components['Case A/CASEA-W10'].terminals['BX6'].circuit(),
     '10-CASEA': sim.components['Case A/CASEA-CRAGG'].terminals['+'].circuit(),
     'X10-CASEB': sim.components['Case B/CASEB-W10'].terminals['BX10'].circuit(),
+    '10-CASEC': sim.components['Case C/CASEC-CRAGG'].terminals['+'].circuit(),
+    'X10-CASEC': sim.components['Case C/CASEC-W10'].terminals['BX10'].circuit(),
+    'X6-CASEC': sim.components['Case C/CASEC-W10'].terminals['BX6'].circuit(),
     '10-TWR': sim.components['Tower/TWR-CRAGG'].terminals['+'].circuit(),
+    'X10-TWR': sim.components['Tower/TWR-W10'].terminals['BX10'].circuit(),
+    '1T-TWR': sim.components['Tower/TWR-C4'].terminals['1TB'].circuit(),
+    '2T-TWR': sim.components['Tower/TWR-C4'].terminals['2TB'].circuit(),
+    '3T-TWR': sim.components['Tower/TWR-C4'].terminals['3TB'].circuit(),
+    '4T-TWR': sim.components['Tower/TWR-C4'].terminals['4TB'].circuit(),
 };
 
 let r = 0;
@@ -106,7 +114,7 @@ for (let wire of sim.wires) {
         }
     }
 
-    if (wire.fromSubnet === wire.toSubnet && wire.fromSubnet === 'Case B' && circuitName !== 'XX10-CASEA') {
+    if (wire.fromSubnet === wire.toSubnet && wire.fromSubnet === 'Tower' && circuitName !== 'XX10-CASEA') {
         if (wire.name === '**STRAP**')
             continue;
         const primaryName = node.shared.primaryName;
