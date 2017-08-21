@@ -2364,7 +2364,7 @@
     },
     {
       "signal": "1AX-1",
-      "from": "B10-TWR S3 T11",
+      "from": "B10-TWR S3 T2",
       "to": "1AR 6H",
       "page": "T2",
       "notes": "*"
@@ -2434,7 +2434,7 @@
     },
     {
       "signal": "14AX-1",
-      "from": "B10-TWR S4 T2",
+      "from": "B10-TWR S4 T7",
       "to": "14AR 4H",
       "page": "T2",
       "notes": "*"
@@ -2483,28 +2483,28 @@
     },
     {
       "signal": "AX-3",
-      "from": "1AKSR 1B",
-      "to": "2AKSR 1B",
-      "page": "T2",
-      "notes": "*"
-    },
-    {
-      "signal": "AX-2",
-      "from": "2AKSR 1B",
+      "from": "16AKSR 1B",
       "to": "14AKSR 1B",
       "page": "T2",
       "notes": "*"
     },
     {
-      "signal": "AX-1",
+      "signal": "AX-2",
       "from": "14AKSR 1B",
-      "to": "16AKSR 1B",
+      "to": "2AKSR 1B",
+      "page": "T2",
+      "notes": "*"
+    },
+    {
+      "signal": "AX-1",
+      "from": "2AKSR 1B",
+      "to": "1AKSR 1B",
       "page": "T2",
       "notes": "*"
     },
     {
       "signal": "AX",
-      "from": "16AKSR 1B",
+      "from": "1AKSR 1B",
       "to": "BELL COIL+",
       "page": "T2",
       "notes": "*"
@@ -2530,7 +2530,7 @@
     },
     {
       "signal": "B10-TWR",
-      "from": "B10-TWR S3 T10",
+      "from": "B10-TWR S3 T3",
       "to": "2TR 1H",
       "page": "T3"
     },
@@ -2567,25 +2567,25 @@
     {
       "signal": "2T",
       "from": "2TR COIL+",
-      "to": "2T RESISTOR 1-",
+      "to": "2T RESISTOR 2-",
       "page": "T3"
     },
     {
       "signal": "**STRAP**",
-      "from": "2T RESISTOR 1+",
+      "from": "2T RESISTOR 1-",
       "to": "2T RESISTOR 2+",
       "page": "T3"
     },
     {
       "signal": "2TBX",
-      "from": "2T RESISTOR 2-",
+      "from": "2T RESISTOR 1-",
       "to": "GRP-E T7",
       "page": "T3"
     },
     {
       "signal": "2TBX-1",
       "from": "TWR-C4 1TB",
-      "to": "2T RESISTOR 2+",
+      "to": "2T RESISTOR 1+",
       "page": "T3"
     },
     {
@@ -2609,25 +2609,25 @@
     {
       "signal": "6T",
       "from": "6TR COIL+",
-      "to": "6T RESISTOR 1-",
+      "to": "6T RESISTOR 2-",
       "page": "T3"
     },
     {
       "signal": "**STRAP**",
-      "from": "6T RESISTOR 1+",
+      "from": "6T RESISTOR 1-",
       "to": "6T RESISTOR 2+",
       "page": "T3"
     },
     {
       "signal": "6TBX",
-      "from": "6T RESISTOR 2-",
+      "from": "6T RESISTOR 1-",
       "to": "6T ARRESTOR +",
       "page": "T3"
     },
     {
       "signal": "6TBX-1",
       "from": "TWR-C4 2TB",
-      "to": "6T RESISTOR 2+",
+      "to": "6T RESISTOR 1+",
       "page": "T3"
     },
     {
@@ -2651,25 +2651,25 @@
     {
       "signal": "14AT",
       "from": "14ATR COIL+",
-      "to": "14AT RESISTOR 1-",
+      "to": "14AT RESISTOR 2-",
       "page": "T3"
     },
     {
       "signal": "**STRAP**",
-      "from": "14AT RESISTOR 1+",
+      "from": "14AT RESISTOR 1-",
       "to": "14AT RESISTOR 2+",
       "page": "T3"
     },
     {
       "signal": "14ATBX",
-      "from": "14AT RESISTOR 2-",
+      "from": "14AT RESISTOR 1-",
       "to": "14AT ARRESTOR +",
       "page": "T3"
     },
     {
       "signal": "14ATBX-1",
       "from": "TWR-C4 3TB",
-      "to": "14AT RESISTOR 2+",
+      "to": "14AT RESISTOR 1+",
       "page": "T3"
     },
     {
@@ -2693,30 +2693,30 @@
     {
       "signal": "14BT",
       "from": "14BTR COIL+",
-      "to": "14BT RESISTOR 1-",
+      "to": "14BT RESISTOR 2-",
       "page": "T3"
     },
     {
       "signal": "**STRAP**",
-      "from": "14BT RESISTOR 1+",
+      "from": "14BT RESISTOR 1-",
       "to": "14BT RESISTOR 2+",
       "page": "T3"
     },
     {
       "signal": "14BTBX",
-      "from": "14BT RESISTOR 2-",
+      "from": "14BT RESISTOR 1-",
       "to": "14BT ARRESTOR +",
       "page": "T3"
     },
     {
       "signal": "14BTBX-1",
       "from": "TWR-C4 4TB",
-      "to": "14BT RESISTOR 2+",
+      "to": "14BT RESISTOR 1+",
       "page": "T3"
     },
     {
       "signal": "B10-TWR",
-      "from": "B10-TWR S4 T6",
+      "from": "B10-TWR S4 T3",
       "to": "6TPSR 3H",
       "page": "T4"
     },
@@ -2824,7 +2824,7 @@
     },
     {
       "signal": "B10-TWR",
-      "from": "B10-TWR S3 T9",
+      "from": "B10-TWR S3 T4",
       "to": "6TR 1H",
       "page": "T4"
     },
@@ -2872,7 +2872,7 @@
     },
     {
       "signal": "B10-TWR",
-      "from": "B10-TWR S3 T8",
+      "from": "B10-TWR S3 T5",
       "to": "6TPR 2H",
       "page": "T4"
     },
@@ -2920,7 +2920,7 @@
     },
     {
       "signal": "B10-TWR",
-      "from": "B10-TWR S4 T5",
+      "from": "B10-TWR S4 T4",
       "to": "9-10TPSR 3H",
       "page": "T5"
     },
@@ -2980,7 +2980,7 @@
     },
     {
       "signal": "B10-TWR",
-      "from": "B10-TWR S4 T7",
+      "from": "B10-TWR S4 T2",
       "to": "5HR 1H",
       "page": "T5"
     },
@@ -3108,7 +3108,7 @@
     },
     {
       "signal": "B10-TWR",
-      "from": "B10-TWR S3 T7",
+      "from": "B10-TWR S3 T6",
       "to": "9-10TPPR 2H",
       "page": "T5"
     },
@@ -3150,7 +3150,7 @@
     },
     {
       "signal": "B10-TWR",
-      "from": "B10-TWR S4 T4",
+      "from": "B10-TWR S4 T5",
       "to": "12TPSR 3H",
       "page": "T6"
     },
@@ -3272,7 +3272,7 @@
     },
     {
       "signal": "B10-TWR",
-      "from": "B10-TWR S3 T6",
+      "from": "B10-TWR S3 T7",
       "to": "12TPPR 2H",
       "page": "T6"
     },
@@ -3326,7 +3326,7 @@
     },
     {
       "signal": "B10-TWR",
-      "from": "B10-TWR S2 T4",
+      "from": "B10-TWR S2 T7",
       "to": "3RLPR 2H",
       "page": "T7"
     },
@@ -3695,7 +3695,7 @@
     {
       "signal": "B10-TWR",
       "from": "6RWPPR 2H",
-      "to": "B10-TWR S1 T5",
+      "to": "B10-TWR S1 T2",
       "page": "T8"
     },
     {
@@ -3998,7 +3998,7 @@
     },
     {
       "signal": "B10-TWR",
-      "from": "B10-TWR S1 T4",
+      "from": "B10-TWR S1 T3",
       "to": "9NWPR 2H",
       "page": "T10"
     },
@@ -4040,7 +4040,7 @@
     },
     {
       "signal": "B10-TWR",
-      "from": "B10-TWR S1 T3",
+      "from": "B10-TWR S1 T4",
       "to": "10NWPR 2H",
       "page": "T10"
     },
@@ -4142,7 +4142,7 @@
     },
     {
       "signal": "B10-TWR",
-      "from": "B10-TWR S3 T4",
+      "from": "B10-TWR S3 T9",
       "to": "14BTR 1H",
       "page": "T12"
     },
@@ -4196,7 +4196,7 @@
     },
     {
       "signal": "B10-TWR",
-      "from": "B10-TWR S3 T3",
+      "from": "B10-TWR S3 T10",
       "to": "14ATR 1H",
       "page": "T12"
     },
@@ -4250,7 +4250,7 @@
     },
     {
       "signal": "B10-TWR",
-      "from": "B10-TWR S3 T5",
+      "from": "B10-TWR S3 T8",
       "to": "14BTPR 4H",
       "page": "T12"
     },
@@ -4467,7 +4467,7 @@
     },
     {
       "signal": "B10-TWR",
-      "from": "B10-TWR S1 T2",
+      "from": "B10-TWR S1 T5",
       "to": "12RWPPR 2H",
       "page": "T13"
     },
@@ -4485,7 +4485,7 @@
     },
     {
       "signal": "B10-TWR",
-      "from": "B10-TWR S4 T3",
+      "from": "B10-TWR S4 T6",
       "to": "12WCKR 1H",
       "page": "T13"
     },
@@ -4503,7 +4503,7 @@
     },
     {
       "signal": "B10-TWR",
-      "from": "B10-TWR S3 T2",
+      "from": "B10-TWR S3 T11",
       "to": "16APR 1H",
       "page": "T13"
     },
@@ -4788,7 +4788,7 @@
     },
     {
       "signal": "H-1-6R-B10",
-      "from": "B10-TWR S2 T6",
+      "from": "B10-TWR S2 T5",
       "to": "1BRLPR 1B",
       "page": "T16"
     },
@@ -4878,7 +4878,7 @@
     },
     {
       "signal": "H-2-6N-B10",
-      "from": "B10-TWR S2 T5",
+      "from": "B10-TWR S2 T6",
       "to": "2RLPR 1B",
       "page": "T16"
     },
@@ -5074,13 +5074,13 @@
     },
     {
       "signal": "H-12N-16-B10",
-      "from": "B10-TWR S2 T2",
+      "from": "B10-TWR S2 T9",
       "to": "16ARLPR 1B",
       "page": "T16"
     },
     {
       "signal": "H-12R-16-B10",
-      "from": "B10-TWR S2 T3",
+      "from": "B10-TWR S2 T8",
       "to": "16BRLPR 1B",
       "page": "T16"
     },
@@ -5212,7 +5212,7 @@
     },
     {
       "signal": "B10-TWR",
-      "from": "B10-TWR S2 T9",
+      "from": "B10-TWR S2 T2",
       "to": "POSR 1H"
     },
     {
@@ -5314,12 +5314,12 @@
     },
     {
       "signal": "B10-TWR",
-      "from": "B10-TWR S2 T7",
+      "from": "B10-TWR S2 T4",
       "to": "21ARLPR 1H"
     },
     {
       "signal": "B10-TWR",
-      "from": "B10-TWR S2 T8",
+      "from": "B10-TWR S2 T3",
       "to": "21BRLPR 1H"
     },
     {
@@ -5834,18 +5834,18 @@
     {
       "signal": "9-10T",
       "from": "9-10TR COIL+",
-      "to": "9-10T RESISTOR 1-",
+      "to": "9-10T RESISTOR 2-",
       "page": "A3"
     },
     {
       "signal": "**STRAP**",
-      "from": "9-10T RESISTOR 1+",
+      "from": "9-10T RESISTOR 1-",
       "to": "9-10T RESISTOR 2+",
       "page": "A3"
     },
     {
       "signal": "9-10TBX",
-      "from": "9-10T RESISTOR 2-",
+      "from": "9-10T RESISTOR 1-",
       "to": "9-10T ARRESTOR -",
       "page": "A3"
     },
@@ -5876,18 +5876,18 @@
     {
       "signal": "9-10T",
       "from": "12TR COIL+",
-      "to": "12T RESISTOR 1-",
+      "to": "12T RESISTOR 2-",
       "page": "A3"
     },
     {
       "signal": "**STRAP**",
-      "from": "12T RESISTOR 1+",
+      "from": "12T RESISTOR 1-",
       "to": "12T RESISTOR 2+",
       "page": "A3"
     },
     {
       "signal": "12TBX",
-      "from": "12T RESISTOR 2-",
+      "from": "12T RESISTOR 1-",
       "to": "12T ARRESTOR +",
       "page": "A3"
     },
@@ -7410,13 +7410,13 @@
     {
       "signal": "1TBX",
       "from": "1TBX ARRESTOR",
-      "to": "1T RESISTOR 1+",
+      "to": "1T RESISTOR 1-",
       "page": "C4"
     },
     {
       "signal": "1T",
       "from": "1TR COIL+",
-      "to": "1T RESISTOR 1-",
+      "to": "1T RESISTOR 2-",
       "page": "C4"
     },
     {
@@ -7427,7 +7427,7 @@
     },
     {
       "signal": "**STRAP**",
-      "from": "1T RESISTOR 1+",
+      "from": "1T RESISTOR 1-",
       "to": "1T RESISTOR 2+",
       "page": "C4"
     },
@@ -7440,7 +7440,7 @@
     {
       "signal": "NX6-CASEC *",
       "from": "CASEC-W10 NX6",
-      "to": "1T TEST TERM +",
+      "to": "1T TEST TERM -",
       "page": "C4"
     }
   ],
