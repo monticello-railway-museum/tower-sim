@@ -3921,14 +3921,16 @@
     {
       "signal": "5HG",
       "from": "5HR 3F",
-      "to": "GRP-C T4",
-      "page": "T10"
+      "to": "GRP-C T1",
+      "page": "T10",
+      "notes": "reprint"
     },
     {
       "signal": "5RG",
       "from": "5HR 3B",
-      "to": "GRP-C T5",
-      "page": "T10"
+      "to": "GRP-C T2",
+      "page": "T10",
+      "notes": "reprint"
     },
     {
       "signal": "**STRAP**",
@@ -3957,8 +3959,9 @@
     {
       "signal": "5NX10",
       "from": "5GE RESISTOR +",
-      "to": "GRP-C T6",
-      "page": "T10"
+      "to": "GRP-C T3",
+      "page": "T10",
+      "notes": "reprint"
     },
     {
       "signal": "9WCK",
@@ -4089,8 +4092,9 @@
     {
       "signal": "B10-10WCC",
       "from": "B10-TWR S1 T7",
-      "to": "GRP-C T1",
-      "page": "T11"
+      "to": "GRP-C T4",
+      "page": "T11",
+      "notes": "reprint"
     },
     {
       "signal": "N10-TWR",
@@ -4107,8 +4111,9 @@
     {
       "signal": "10NWP-1",
       "from": "10RWPR 1H",
-      "to": "GRP-C T2",
-      "page": "T11"
+      "to": "GRP-C T5",
+      "page": "T11",
+      "notes": "reprint"
     },
     {
       "signal": "N10-TWR",
@@ -4125,8 +4130,9 @@
     {
       "signal": "10RWP-1",
       "from": "10NWPR 1H",
-      "to": "GRP-C T3",
-      "page": "T11"
+      "to": "GRP-C T6",
+      "page": "T11",
+      "notes": "reprint"
     },
     {
       "signal": "14BTK",
@@ -8599,25 +8605,25 @@
     },
     {
       "fromSubnet": "Tower",
-      "from": "GRP-C T1",
+      "from": "GRP-C T4",
       "toSubnet": "Sim",
       "to": "SIM-10WCC 1H"
     },
     {
       "fromSubnet": "Tower",
-      "from": "GRP-C T1",
+      "from": "GRP-C T4",
       "toSubnet": "Sim",
       "to": "SIM-10WCC 2H"
     },
     {
       "fromSubnet": "Tower",
-      "from": "GRP-C T2",
+      "from": "GRP-C T5",
       "toSubnet": "Sim",
       "to": "SIM-10WCC 3H"
     },
     {
       "fromSubnet": "Tower",
-      "from": "GRP-C T3",
+      "from": "GRP-C T6",
       "toSubnet": "Sim",
       "to": "SIM-10WCC 4H"
     },
@@ -9319,13 +9325,13 @@
     },
     {
       "fromSubnet": "Tower",
-      "from": "GRP-C T4",
+      "from": "GRP-C T1",
       "toSubnet": "Sim",
       "to": "SIM-5HGE +"
     },
     {
       "fromSubnet": "Tower",
-      "from": "GRP-C T6",
+      "from": "GRP-C T3",
       "toSubnet": "Sim",
       "to": "SIM-5HGE -"
     },
@@ -9337,13 +9343,13 @@
     },
     {
       "fromSubnet": "Tower",
-      "from": "GRP-C T5",
+      "from": "GRP-C T2",
       "toSubnet": "Sim",
       "to": "SIM-5RGE +"
     },
     {
       "fromSubnet": "Tower",
-      "from": "GRP-C T6",
+      "from": "GRP-C T3",
       "toSubnet": "Sim",
       "to": "SIM-5RGE -"
     },

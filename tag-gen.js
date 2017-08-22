@@ -162,7 +162,7 @@ for (let wire of sim.wires) {
         inTag(-1, r, () => {
             pdf.font('Helvetica-Bold');
             pdf.fontSize(bigSize);
-            pdf.text(`${++n}`, tagMargin, yc - pdf.currentLineHeight()/2);
+            pdf.text(`${++n} — ${wire.page || ''}`, tagMargin, yc - pdf.currentLineHeight()/2);
         });
 
         if (circuitName) {
