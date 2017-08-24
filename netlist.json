@@ -851,7 +851,6 @@
       "subnet": "Tower",
       "location": "shelf 2",
       "type": "relay",
-      "config": "{\"pickupTime\":2.3,\"dropTime\":1.3}",
       "index": "3",
       "contacts": "4",
       "unused": "2",
@@ -1295,8 +1294,8 @@
       "resistance": "500",
       "index": "8",
       "contacts": "6",
-      "unused": "2",
-      "used": "4"
+      "unused": "3",
+      "used": "3"
     },
     {
       "component": "6TR",
@@ -1363,8 +1362,8 @@
       "config": "{\"pickupTime\":1.2}",
       "index": "7",
       "contacts": "4",
-      "unused": "3",
-      "used": "1"
+      "unused": "2",
+      "used": "2"
     },
     {
       "component": "9-10TPSR",
@@ -1374,8 +1373,8 @@
       "resistance": "350",
       "index": "7",
       "contacts": "6",
-      "unused": "2",
-      "used": "4"
+      "unused": "3",
+      "used": "3"
     },
     {
       "component": "9NWPR",
@@ -1524,8 +1523,8 @@
       "resistance": "670",
       "index": "6",
       "contacts": "4",
-      "unused": "3",
-      "used": "1"
+      "unused": "2",
+      "used": "2"
     },
     {
       "component": "12TPSR",
@@ -1535,8 +1534,8 @@
       "resistance": "500",
       "index": "6",
       "contacts": "6",
-      "unused": "2",
-      "used": "4"
+      "unused": "3",
+      "used": "3"
     },
     {
       "component": "12WCKE",
@@ -1572,7 +1571,6 @@
       "subnet": "Tower",
       "location": "shelf 2",
       "type": "relay",
-      "config": "{\"pickupTime\":2.3,\"dropTime\":1.3}",
       "index": "1",
       "contacts": "4",
       "unused": "2",
@@ -2298,7 +2296,9 @@
       "subnet": "Tower",
       "location": "shelf 2",
       "type": "relay",
+      "subtype": "slow pickup",
       "resistance": "500",
+      "config": "{\"pickupTime\":2.3,\"dropTime\":1.3}",
       "index": "11",
       "contacts": "4",
       "unused": "2",
@@ -2763,8 +2763,8 @@
       "page": "T4"
     },
     {
-      "signal": "B10-TWR",
-      "from": "B10-TWR RACK T?",
+      "signal": "**STRAP**",
+      "from": "1RGPR 4H",
       "to": "1RGPR 1H",
       "page": "T4"
     },
@@ -2783,20 +2783,23 @@
     {
       "signal": "1-2-3AS-B1",
       "from": "3RGPR 1F",
-      "to": "6TPSR 2B",
-      "page": "T4"
+      "to": "6TPR 3B",
+      "page": "T4",
+      "notes": "reprint"
     },
     {
       "signal": "1-2-3AS-A1",
-      "from": "3RGPR 1F",
+      "from": "6TPR 3B",
       "to": "6TE 5H",
-      "page": "T4"
+      "page": "T4",
+      "notes": "reprint"
     },
     {
       "signal": "1-2-3AS-A",
-      "from": "3RGPR 1F",
+      "from": "6TPR 3B",
       "to": "1-2-3ASR 1H",
-      "page": "T4"
+      "page": "T4",
+      "notes": "reprint"
     },
     {
       "signal": "**STRAP**",
@@ -2806,9 +2809,10 @@
     },
     {
       "signal": "1-2-3AS-B",
-      "from": "6TPSR 2H",
+      "from": "6TPR 3H",
       "to": "1-2-3ASR COIL+",
-      "page": "T4"
+      "page": "T4",
+      "notes": "reprint"
     },
     {
       "signal": "1-2-3AS",
@@ -2968,9 +2972,10 @@
     },
     {
       "signal": "N10-TWR",
-      "from": "N10-TWR RACK T?",
+      "from": "N10-TWR RACK T2",
       "to": "4RGPR COIL-",
-      "page": "T5"
+      "page": "T5",
+      "notes": "reprint"
     },
     {
       "signal": "4RGP",
@@ -3048,13 +3053,15 @@
     {
       "signal": "4-5AS-B1",
       "from": "16BRLPR 3B",
-      "to": "9-10TPSR 2B"
+      "to": "9-10TPPR 3B",
+      "notes": "reprint"
     },
     {
       "signal": "4-5AS-B",
-      "from": "9-10TPSR 2H",
+      "from": "9-10TPPR 3H",
       "to": "4-5ASR COIL+",
-      "page": "T5"
+      "page": "T5",
+      "notes": "reprint"
     },
     {
       "signal": "4-5AS",
@@ -3102,9 +3109,10 @@
     },
     {
       "signal": "B10-TWR",
-      "from": "B10-TWR RACK T?",
+      "from": "B10-TWR RACK T5",
       "to": "4RGPR 4H",
-      "page": "T5"
+      "page": "T5",
+      "notes": "reprint"
     },
     {
       "signal": "B10-TWR",
@@ -3197,8 +3205,8 @@
       "page": "T6"
     },
     {
-      "signal": "B10-TWR",
-      "from": "B10-TWR RACK T?",
+      "signal": "**STRAP**",
+      "from": "14RGPR 4H",
       "to": "14RGPR 1H",
       "page": "T6"
     },
@@ -3217,26 +3225,30 @@
     {
       "signal": "14-15-16AS-B1",
       "from": "16RGPR 1F",
-      "to": "12TPSR 2B",
-      "page": "T6"
+      "to": "12TPPR 3B",
+      "page": "T6",
+      "notes": "reprint"
     },
     {
       "signal": "14-15-16AS-1",
-      "from": "16RGPR 1F",
+      "from": "12TPPR 3B",
       "to": "12TE 5H",
-      "page": "T6"
+      "page": "T6",
+      "notes": "reprint"
     },
     {
       "signal": "14-15-16AS-A",
-      "from": "16RGPR 1F",
+      "from": "12TPPR 3B",
       "to": "14-15-16ASR 1H",
-      "page": "T6"
+      "page": "T6",
+      "notes": "reprint"
     },
     {
       "signal": "14-15-16AS-B",
-      "from": "12TPSR 2H",
+      "from": "12TPPR 3H",
       "to": "14-15-16ASR COIL+",
-      "page": "T6"
+      "page": "T6",
+      "notes": "reprint"
     },
     {
       "signal": "14-15-16AS",
@@ -3730,9 +3742,10 @@
     },
     {
       "signal": "B10-TWR",
-      "from": "B10-TWR RACK T?",
+      "from": "B10-TWR RACK T8",
       "to": "1RGPR 4H",
-      "page": "T8"
+      "page": "T8",
+      "notes": "reprint"
     },
     {
       "signal": "22HDGP",
@@ -3840,21 +3853,24 @@
     },
     {
       "signal": "N10-TWR",
-      "from": "N10-TWR RACK T?",
+      "from": "N10-TWR RACK T5",
       "to": "3HDGPR COIL-",
-      "page": "T9"
+      "page": "T9",
+      "notes": "reprint"
     },
     {
       "signal": "N10-TWR",
-      "from": "N10-TWR RACK T?",
+      "from": "N10-TWR RACK T4",
       "to": "2RGPR COIL-",
-      "page": "T9"
+      "page": "T9",
+      "notes": "reprint"
     },
     {
       "signal": "N10-TWR",
-      "from": "N10-TWR RACK T?",
+      "from": "N10-TWR RACK T3",
       "to": "3RGPR COIL-",
-      "page": "T9"
+      "page": "T9",
+      "notes": "reprint"
     },
     {
       "signal": "2GK",
@@ -3870,9 +3886,10 @@
     },
     {
       "signal": "B10-TWR",
-      "from": "B10-TWR RACK T?",
+      "from": "B10-TWR RACK T7",
       "to": "2RGPR 4H",
-      "page": "T9"
+      "page": "T9",
+      "notes": "reprint"
     },
     {
       "signal": "3GK",
@@ -3888,9 +3905,10 @@
     },
     {
       "signal": "B10-TWR",
-      "from": "B10-TWR RACK T?",
+      "from": "B10-TWR RACK T6",
       "to": "3RGPR 4H",
-      "page": "T9"
+      "page": "T9",
+      "notes": "reprint"
     },
     {
       "signal": "4H",
@@ -3914,9 +3932,10 @@
     },
     {
       "signal": "BX10-TWR",
-      "from": "BX10-TWR T?",
+      "from": "TWR-W10 BX10",
       "to": "5HR 3H",
-      "page": "T10"
+      "page": "T10",
+      "notes": "reprint"
     },
     {
       "signal": "5HG",
@@ -3952,9 +3971,10 @@
     },
     {
       "signal": "NX10-TWR",
-      "from": "NX10-TWR T?",
+      "from": "TWR-W10 NX10",
       "to": "5GE RESISTOR -",
-      "page": "T10"
+      "page": "T10",
+      "notes": "reprint"
     },
     {
       "signal": "5NX10",
@@ -4527,9 +4547,10 @@
     },
     {
       "signal": "B10-TWR",
-      "from": "B10-TWR RACK T?",
+      "from": "B10-TWR RACK T4",
       "to": "14RGPR 4H",
-      "page": "T13"
+      "page": "T13",
+      "notes": "reprint"
     },
     {
       "signal": "15D-1",
@@ -4650,9 +4671,10 @@
     },
     {
       "signal": "16AH-1",
-      "from": "23HDGPR 1H",
+      "from": "14AR 1F",
       "to": "12WCKR 8H",
-      "page": "T15"
+      "page": "T15",
+      "notes": "reprint"
     },
     {
       "signal": "16BHD",
@@ -4668,9 +4690,10 @@
     },
     {
       "signal": "16BH-1",
-      "from": "3HDGPR 1H",
+      "from": "14-16COSR 4B",
       "to": "12WCKR 10H",
-      "page": "T15"
+      "page": "T15",
+      "notes": "reprint"
     },
     {
       "signal": "16COSP",
@@ -4764,9 +4787,10 @@
     },
     {
       "signal": "B10-TWR",
-      "from": "B10-TWR RACK T?",
+      "from": "B10-TWR RACK T3",
       "to": "15RGPR 3H",
-      "page": "T15"
+      "page": "T15",
+      "notes": "reprint"
     },
     {
       "signal": "16GK",
@@ -4782,9 +4806,10 @@
     },
     {
       "signal": "B10-TWR",
-      "from": "B10-TWR RACK T?",
+      "from": "B10-TWR RACK T2",
       "to": "16RGPR 4H",
-      "page": "T15"
+      "page": "T15",
+      "notes": "reprint"
     },
     {
       "signal": "H-1-6N-B10",
@@ -5193,50 +5218,40 @@
       "page": "T18"
     },
     {
-      "signal": "BX10-TWR *",
-      "from": "TWR-W10 BX10",
-      "to": "BX10-TWR T?"
-    },
-    {
-      "signal": "NX10-TWR *",
-      "from": "TWR-W10 NX10",
-      "to": "NX10-TWR T?"
-    },
-    {
-      "signal": "**STRAP**",
-      "from": "6TPR 2H",
-      "to": "6TPR 3H"
-    },
-    {
-      "from": "6TPR 3F",
-      "to": "POSR COIL+"
-    },
-    {
       "signal": "N10-TWR",
       "from": "N10-TWR S2 T12",
-      "to": "POSR COIL-"
+      "to": "POSR COIL-",
+      "notes": "reprint"
     },
     {
       "signal": "B10-TWR",
       "from": "B10-TWR S2 T2",
-      "to": "POSR 1H"
-    },
-    {
-      "from": "POSR 1F",
-      "to": "POSR COIL+"
-    },
-    {
-      "from": "POSR 1B",
-      "to": "14BTPR COIL+"
+      "to": "POSR 1H",
+      "notes": "reprint"
     },
     {
       "signal": "**STRAP**",
       "from": "POSR 1H",
-      "to": "POSR 2H"
+      "to": "POSR COIL+",
+      "notes": "reprint"
     },
     {
+      "signal": "14BTP-C",
+      "from": "POSR 1B",
+      "to": "14BTPR COIL+",
+      "notes": "reprint"
+    },
+    {
+      "signal": "**STRAP**",
+      "from": "POSR 1H",
+      "to": "POSR 2H",
+      "notes": "reprint"
+    },
+    {
+      "signal": "14ATP-C",
       "from": "POSR 2B",
-      "to": "14ATPR COIL+"
+      "to": "14ATPR COIL+",
+      "notes": "reprint"
     },
     {
       "signal": "1BRLP-1",
