@@ -664,7 +664,12 @@ class Sim {
                 fromComp.wireTerminals[fromTerm] = [];
             if (!toComp.wireTerminals[toTerm])
                 toComp.wireTerminals[toTerm] = [];
-            const w = { name: wire.signal, fromSubnet, fromComp, fromTerm, toSubnet, toComp, toTerm, page: wire.page };
+            const w = {
+                name: wire.signal,
+                fromSubnet, fromComp, fromTerm, toSubnet, toComp, toTerm,
+                page: wire.page,
+                notes: wire.notes || '',
+            };
             wires.push(w);
             fromComp.wireTerminals[fromTerm].push({ wire: w, toSubnet, toComp, toTerm });
             toComp.wireTerminals[toTerm].push({ wire: w, toSubnet: fromSubnet, toComp: fromComp, toTerm: fromTerm });

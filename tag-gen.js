@@ -18,7 +18,7 @@ const tagHeight = 0.66 * 72;
 const tagWidth = 1.25 * 72;
 const tagMargin = 0.05 * 72;
 
-const flip = false;
+const flip = true;
 
 //const tagHeight = 1.00;
 //const tagWidth = 0.87;
@@ -114,7 +114,9 @@ for (let wire of sim.wires) {
         }
     }
 
-    if (wire.fromSubnet === wire.toSubnet && wire.fromSubnet === 'Tower' && circuitName !== 'XX10-CASEA') {
+    if (wire.fromSubnet === wire.toSubnet && wire.fromSubnet === 'Tower' && circuitName !== 'XX10-CASEA'
+        && wire.notes.match(/reprint/)
+       ) {
         if (wire.name === '**STRAP**')
             continue;
         const primaryName = node.shared.primaryName;

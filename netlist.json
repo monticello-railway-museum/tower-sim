@@ -3346,8 +3346,9 @@
     {
       "signal": "2-3COS-3",
       "from": "2RLPR 2F",
-      "to": "2-3COPB 1F",
-      "page": "T7"
+      "to": "2-3COSR 1H",
+      "page": "T7",
+      "notes": "reprint"
     },
     {
       "signal": "2-3COS-3A",
@@ -3406,14 +3407,16 @@
     {
       "signal": "14-16COS-3",
       "from": "14TCC T6",
-      "to": "14-16COPB 1F",
-      "page": "T7"
+      "to": "14-16COSR 1H",
+      "page": "T7",
+      "notes": "reprint"
     },
     {
       "signal": "14-16COS-3A",
       "from": "16ARLPR 2F",
-      "to": "14-16COPB 1F",
-      "page": "T7"
+      "to": "14-16COSR 1H",
+      "page": "T7",
+      "notes": "reprint"
     },
     {
       "signal": "14-16COS-2",
