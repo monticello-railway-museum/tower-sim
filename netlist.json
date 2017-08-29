@@ -2786,21 +2786,21 @@
       "from": "3RGPR 1F",
       "to": "6TPR 3B",
       "page": "T4",
-      "notes": "reprint"
+      "notes": "xprint"
     },
     {
       "signal": "1-2-3AS-A1",
       "from": "6TPR 3B",
       "to": "6TE 5H",
       "page": "T4",
-      "notes": "reprint"
+      "notes": "xprint"
     },
     {
       "signal": "1-2-3AS-A",
       "from": "6TPR 3B",
       "to": "1-2-3ASR 1H",
       "page": "T4",
-      "notes": "reprint"
+      "notes": "xprint"
     },
     {
       "signal": "**STRAP**",
@@ -2813,7 +2813,7 @@
       "from": "6TPR 3H",
       "to": "1-2-3ASR COIL+",
       "page": "T4",
-      "notes": "reprint"
+      "notes": "xprint"
     },
     {
       "signal": "1-2-3AS",
@@ -2976,7 +2976,7 @@
       "from": "N10-TWR RACK T2",
       "to": "4RGPR COIL-",
       "page": "T5",
-      "notes": "reprint"
+      "notes": "xprint"
     },
     {
       "signal": "4RGP",
@@ -3055,14 +3055,14 @@
       "signal": "4-5AS-B1",
       "from": "16BRLPR 3B",
       "to": "9-10TPPR 3B",
-      "notes": "reprint"
+      "notes": "xprint"
     },
     {
       "signal": "4-5AS-B",
       "from": "9-10TPPR 3H",
       "to": "4-5ASR COIL+",
       "page": "T5",
-      "notes": "reprint"
+      "notes": "xprint"
     },
     {
       "signal": "4-5AS",
@@ -3092,9 +3092,10 @@
     {
       "signal": "N-9-10TPP",
       "from": "9-10TPPR COIL-",
-      "to": "N10-CASEA T8",
+      "to": "N10-CASEA T9",
       "page": "T5",
-      "row": "*"
+      "row": "*",
+      "notes": "reprint"
     },
     {
       "signal": "4GK",
@@ -3113,7 +3114,7 @@
       "from": "B10-TWR RACK T5",
       "to": "4RGPR 4H",
       "page": "T5",
-      "notes": "reprint"
+      "notes": "xprint"
     },
     {
       "signal": "B10-TWR",
@@ -3228,28 +3229,28 @@
       "from": "16RGPR 1F",
       "to": "12TPPR 3B",
       "page": "T6",
-      "notes": "reprint"
+      "notes": "xprint"
     },
     {
       "signal": "14-15-16AS-1",
       "from": "12TPPR 3B",
       "to": "12TE 5H",
       "page": "T6",
-      "notes": "reprint"
+      "notes": "xprint"
     },
     {
       "signal": "14-15-16AS-A",
       "from": "12TPPR 3B",
       "to": "14-15-16ASR 1H",
       "page": "T6",
-      "notes": "reprint"
+      "notes": "xprint"
     },
     {
       "signal": "14-15-16AS-B",
       "from": "12TPPR 3H",
       "to": "14-15-16ASR COIL+",
       "page": "T6",
-      "notes": "reprint"
+      "notes": "xprint"
     },
     {
       "signal": "14-15-16AS",
@@ -3279,9 +3280,10 @@
     {
       "signal": "N-12TPP",
       "from": "12TPPR COIL-",
-      "to": "N10-CASEA T11",
+      "to": "N10-CASEA T8",
       "page": "T6",
-      "row": "*"
+      "row": "*",
+      "notes": "reprint"
     },
     {
       "signal": "B10-TWR",
@@ -3749,7 +3751,7 @@
       "from": "B10-TWR RACK T8",
       "to": "1RGPR 4H",
       "page": "T8",
-      "notes": "reprint"
+      "notes": "xprint"
     },
     {
       "signal": "22HDGP",
@@ -3860,21 +3862,21 @@
       "from": "N10-TWR RACK T5",
       "to": "3HDGPR COIL-",
       "page": "T9",
-      "notes": "reprint"
+      "notes": "xprint"
     },
     {
       "signal": "N10-TWR",
       "from": "N10-TWR RACK T4",
       "to": "2RGPR COIL-",
       "page": "T9",
-      "notes": "reprint"
+      "notes": "xprint"
     },
     {
       "signal": "N10-TWR",
       "from": "N10-TWR RACK T3",
       "to": "3RGPR COIL-",
       "page": "T9",
-      "notes": "reprint"
+      "notes": "xprint"
     },
     {
       "signal": "2GK",
@@ -3893,7 +3895,7 @@
       "from": "B10-TWR RACK T7",
       "to": "2RGPR 4H",
       "page": "T9",
-      "notes": "reprint"
+      "notes": "xprint"
     },
     {
       "signal": "3GK",
@@ -3912,7 +3914,7 @@
       "from": "B10-TWR RACK T6",
       "to": "3RGPR 4H",
       "page": "T9",
-      "notes": "reprint"
+      "notes": "xprint"
     },
     {
       "signal": "4H",
@@ -3939,21 +3941,21 @@
       "from": "TWR-W10 BX10",
       "to": "5HR 3H",
       "page": "T10",
-      "notes": "reprint"
+      "notes": "xprint"
     },
     {
       "signal": "5HG",
       "from": "5HR 3F",
       "to": "GRP-C T1",
       "page": "T10",
-      "notes": "reprint"
+      "notes": "xprint"
     },
     {
       "signal": "5RG",
       "from": "5HR 3B",
       "to": "GRP-C T2",
       "page": "T10",
-      "notes": "reprint"
+      "notes": "xprint"
     },
     {
       "signal": "**STRAP**",
@@ -3978,14 +3980,14 @@
       "from": "TWR-W10 NX10",
       "to": "5GE RESISTOR -",
       "page": "T10",
-      "notes": "reprint"
+      "notes": "xprint"
     },
     {
       "signal": "5NX10",
       "from": "5GE RESISTOR +",
       "to": "GRP-C T3",
       "page": "T10",
-      "notes": "reprint"
+      "notes": "xprint"
     },
     {
       "signal": "9WCK",
@@ -4118,7 +4120,7 @@
       "from": "B10-TWR S1 T7",
       "to": "GRP-C T4",
       "page": "T11",
-      "notes": "reprint"
+      "notes": "xprint"
     },
     {
       "signal": "N10-TWR",
@@ -4137,7 +4139,7 @@
       "from": "10RWPR 1H",
       "to": "GRP-C T5",
       "page": "T11",
-      "notes": "reprint"
+      "notes": "xprint"
     },
     {
       "signal": "N10-TWR",
@@ -4156,7 +4158,7 @@
       "from": "10NWPR 1H",
       "to": "GRP-C T6",
       "page": "T11",
-      "notes": "reprint"
+      "notes": "xprint"
     },
     {
       "signal": "14BTK",
@@ -4377,21 +4379,24 @@
     },
     {
       "signal": "N10-CASEA",
-      "from": "N10-CASEA T2",
+      "from": "N10-CASEA T7",
       "to": "16APR COIL-",
-      "page": "T13"
-    },
-    {
-      "signal": "N10-CASEA",
-      "from": "N10-CASEA T3",
-      "to": "14RGPR COIL-",
-      "page": "T13"
+      "page": "T13",
+      "notes": "reprint"
     },
     {
       "signal": "N10-CASEA",
       "from": "N10-CASEA T4",
+      "to": "14RGPR COIL-",
+      "page": "T13",
+      "notes": "reprint"
+    },
+    {
+      "signal": "N10-CASEA",
+      "from": "N10-CASEA T6",
       "to": "14HDGPR COIL-",
-      "page": "T13"
+      "page": "T13",
+      "notes": "reprint"
     },
     {
       "signal": "N10-CASEA *",
@@ -4554,7 +4559,7 @@
       "from": "B10-TWR RACK T4",
       "to": "14RGPR 4H",
       "page": "T13",
-      "notes": "reprint"
+      "notes": "xprint"
     },
     {
       "signal": "15D-1",
@@ -4678,7 +4683,7 @@
       "from": "14AR 1F",
       "to": "12WCKR 8H",
       "page": "T15",
-      "notes": "reprint"
+      "notes": "xprint"
     },
     {
       "signal": "16BHD",
@@ -4697,7 +4702,7 @@
       "from": "14-16COSR 4B",
       "to": "12WCKR 10H",
       "page": "T15",
-      "notes": "reprint"
+      "notes": "xprint"
     },
     {
       "signal": "16COSP",
@@ -4731,21 +4736,24 @@
     },
     {
       "signal": "N10-CASEA",
-      "from": "N10-CASEA T5",
+      "from": "N10-CASEA T3",
       "to": "15RGPR COIL-",
-      "page": "T15"
+      "page": "T15",
+      "notes": "reprint"
     },
     {
       "signal": "N10-CASEA",
-      "from": "N10-CASEA T7",
+      "from": "N10-CASEA T2",
       "to": "16RGPR COIL-",
-      "page": "T15"
+      "page": "T15",
+      "notes": "reprint"
     },
     {
       "signal": "N10-CASEA",
-      "from": "N10-CASEA T6",
+      "from": "N10-CASEA T5",
       "to": "15HDGPR COIL-",
-      "page": "T15"
+      "page": "T15",
+      "notes": "reprint"
     },
     {
       "signal": "15RGP",
@@ -4794,7 +4802,7 @@
       "from": "B10-TWR RACK T3",
       "to": "15RGPR 3H",
       "page": "T15",
-      "notes": "reprint"
+      "notes": "xprint"
     },
     {
       "signal": "16GK",
@@ -4813,7 +4821,7 @@
       "from": "B10-TWR RACK T2",
       "to": "16RGPR 4H",
       "page": "T15",
-      "notes": "reprint"
+      "notes": "xprint"
     },
     {
       "signal": "H-1-6N-B10",
@@ -5225,37 +5233,37 @@
       "signal": "N10-TWR",
       "from": "N10-TWR S2 T12",
       "to": "POSR COIL-",
-      "notes": "reprint"
+      "notes": "xprint"
     },
     {
       "signal": "B10-TWR",
       "from": "B10-TWR S2 T2",
       "to": "POSR 1H",
-      "notes": "reprint"
+      "notes": "xprint"
     },
     {
       "signal": "**STRAP**",
       "from": "POSR 1H",
       "to": "POSR COIL+",
-      "notes": "reprint"
+      "notes": "xprint"
     },
     {
       "signal": "14BTP-C",
       "from": "POSR 1B",
       "to": "14BTPR COIL+",
-      "notes": "reprint"
+      "notes": "xprint"
     },
     {
       "signal": "**STRAP**",
       "from": "POSR 1H",
       "to": "POSR 2H",
-      "notes": "reprint"
+      "notes": "xprint"
     },
     {
       "signal": "14ATP-C",
       "from": "POSR 2B",
       "to": "14ATPR COIL+",
-      "notes": "reprint"
+      "notes": "xprint"
     },
     {
       "signal": "1BRLP-1",
