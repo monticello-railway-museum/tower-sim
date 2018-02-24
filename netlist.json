@@ -745,8 +745,8 @@
       "resistance": "670",
       "index": "14",
       "contacts": "4",
-      "unused": "1",
-      "used": "3"
+      "unused": "0",
+      "used": "4"
     },
     {
       "component": "6WTI",
@@ -5712,25 +5712,29 @@
       "signal": "12TPP",
       "from": "CASEA T9",
       "to": "12TPR 2F",
-      "page": "A3"
+      "page": "A3",
+      "notes": "*"
     },
     {
       "signal": "B10-CASEA",
       "from": "12TR 1H",
       "to": "12TPR 2H",
-      "page": "A3"
+      "page": "A3",
+      "notes": "*"
     },
     {
       "signal": "9-10TPP",
       "from": "CASEA T8",
       "to": "9-10TPR 2F",
-      "page": "A3"
+      "page": "A3",
+      "notes": "*"
     },
     {
       "signal": "B10-CASEA",
       "from": "9-10TR 1H",
       "to": "9-10TPR 2H",
-      "page": "A3"
+      "page": "A3",
+      "notes": "*"
     },
     {
       "signal": "B10-CASEA",
@@ -6256,82 +6260,98 @@
     {
       "signal": "B10-CASEA",
       "from": "B10-CASEA T2",
-      "to": "9-10TR 1H"
+      "to": "9-10TR 1H",
+      "notes": "*"
     },
     {
       "signal": "9-10TP-1A",
       "from": "9-10TR 1F",
-      "to": "9-10LOSTER 1H"
+      "to": "9-10LOSTER 1H",
+      "notes": "*"
     },
     {
       "signal": "9-10TP-1",
       "from": "9-10LOSTER 1H",
-      "to": "9-10TPR 1H"
+      "to": "9-10TPR 1H",
+      "notes": "*"
     },
     {
       "signal": "9-10TP",
       "from": "9-10LOSTER 1F",
-      "to": "9-10TPR COIL+"
+      "to": "9-10TPR COIL+",
+      "notes": "*"
     },
     {
       "signal": "**STRAP**",
       "from": "9-10TPR 1F",
-      "to": "9-10TPR COIL+"
+      "to": "9-10TPR COIL+",
+      "notes": "*"
     },
     {
       "signal": "9-10LOSTE",
       "from": "9-10TPR 1B",
-      "to": "9-10LOSTER COIL+"
+      "to": "9-10LOSTER COIL+",
+      "notes": "*"
     },
     {
       "signal": "N-9-10LOSTE",
       "from": "9-10TPR COIL-",
-      "to": "9-10LOSTER COIL-"
+      "to": "9-10LOSTER COIL-",
+      "notes": "*"
     },
     {
       "signal": "N-9-10TP",
       "from": "N10-CASEA T2",
-      "to": "9-10TPR COIL-"
+      "to": "9-10TPR COIL-",
+      "notes": "*"
     },
     {
       "signal": "B10-CASEA",
       "from": "B10-CASEA T3",
-      "to": "12TR 1H"
+      "to": "12TR 1H",
+      "notes": "*"
     },
     {
       "signal": "12TP-1A",
       "from": "12TR 1F",
-      "to": "12LOSTER 1H"
+      "to": "12LOSTER 1H",
+      "notes": "*"
     },
     {
       "signal": "12TP-1",
       "from": "12LOSTER 1H",
-      "to": "12TPR 1H"
+      "to": "12TPR 1H",
+      "notes": "*"
     },
     {
       "signal": "12TP",
       "from": "12LOSTER 1F",
-      "to": "12TPR COIL+"
+      "to": "12TPR COIL+",
+      "notes": "*"
     },
     {
       "signal": "**STRAP**",
       "from": "12TPR 1F",
-      "to": "12TPR COIL+"
+      "to": "12TPR COIL+",
+      "notes": "*"
     },
     {
       "signal": "12LOSTE",
       "from": "12TPR 1B",
-      "to": "12LOSTER COIL+"
+      "to": "12LOSTER COIL+",
+      "notes": "*"
     },
     {
       "signal": "N-12LOSTE",
       "from": "12TPR COIL-",
-      "to": "12LOSTER COIL-"
+      "to": "12LOSTER COIL-",
+      "notes": "*"
     },
     {
       "signal": "N-12TP",
       "from": "N10-CASEA T3",
-      "to": "12TPR COIL-"
+      "to": "12TPR COIL-",
+      "notes": "*"
     },
     {
       "signal": "N10-CASEA",
@@ -8005,370 +8025,426 @@
       "state": "normal",
       "from": "T1",
       "to": "T2",
-      "wires": "1"
+      "wiresFrom": "1",
+      "wiresTo": "1"
     },
     {
       "lever": "1TCC",
       "state": "reverse",
       "from": "T3",
       "to": "T4",
-      "wires": "2"
+      "wiresFrom": "2",
+      "wiresTo": "2"
     },
     {
       "lever": "1TCC",
       "state": "normal",
       "from": "T5",
       "to": "T6",
-      "wires": "0"
+      "wiresFrom": "0",
+      "wiresTo": "0"
     },
     {
       "lever": "1TCC",
       "state": "reverse",
       "from": "T7",
       "to": "T8",
-      "wires": "1"
+      "wiresFrom": "1",
+      "wiresTo": "1"
     },
     {
       "lever": "1TCC",
       "from": "T9",
       "to": "T10",
-      "wires": "0"
+      "wiresFrom": "0",
+      "wiresTo": "0"
     },
     {
       "lever": "1TCC",
       "from": "T11",
       "to": "T12",
-      "wires": "0"
+      "wiresFrom": "0",
+      "wiresTo": "0"
     },
     {
       "lever": "1TCC",
       "from": "T13",
       "to": "T14",
-      "wires": "0"
+      "wiresFrom": "0",
+      "wiresTo": "0"
     },
     {
       "lever": "1TCC",
       "from": "T15",
       "to": "T16",
-      "wires": "0"
+      "wiresFrom": "0",
+      "wiresTo": "0"
     },
     {
       "lever": "2TCC",
       "state": "reverse",
       "from": "T1",
       "to": "T2",
-      "wires": "2"
+      "wiresFrom": "2",
+      "wiresTo": "1"
     },
     {
       "lever": "2TCC",
       "from": "T3",
       "to": "T4",
-      "wires": "0"
+      "wiresFrom": "0",
+      "wiresTo": "0"
     },
     {
       "lever": "2TCC",
       "from": "T5",
       "to": "T6",
-      "wires": "0"
+      "wiresFrom": "0",
+      "wiresTo": "0"
     },
     {
       "lever": "2TCC",
       "from": "T7",
       "to": "T8",
-      "wires": "0"
+      "wiresFrom": "0",
+      "wiresTo": "0"
     },
     {
       "lever": "3TCC",
       "state": "reverse",
       "from": "T1",
       "to": "T2",
-      "wires": "1"
+      "wiresFrom": "1",
+      "wiresTo": "1"
     },
     {
       "lever": "3TCC",
       "from": "T3",
       "to": "T4",
-      "wires": "0"
+      "wiresFrom": "0",
+      "wiresTo": "0"
     },
     {
       "lever": "3TCC",
       "from": "T5",
       "to": "T6",
-      "wires": "0"
+      "wiresFrom": "0",
+      "wiresTo": "0"
     },
     {
       "lever": "3TCC",
       "from": "T7",
       "to": "T8",
-      "wires": "0"
+      "wiresFrom": "0",
+      "wiresTo": "0"
     },
     {
       "lever": "4TCC",
       "state": "normal",
       "from": "T1",
       "to": "T2",
-      "wires": "1"
+      "wiresFrom": "1",
+      "wiresTo": "1"
     },
     {
       "lever": "4TCC",
       "state": "reverse",
       "from": "T3",
       "to": "T4",
-      "wires": "2"
+      "wiresFrom": "2",
+      "wiresTo": "1"
     },
     {
       "lever": "4TCC",
       "from": "T5",
       "to": "T6",
-      "wires": "0"
+      "wiresFrom": "0",
+      "wiresTo": "0"
     },
     {
       "lever": "4TCC",
       "from": "T7",
       "to": "T8",
-      "wires": "0"
+      "wiresFrom": "0",
+      "wiresTo": "0"
     },
     {
       "lever": "5TCC",
       "state": "normal",
       "from": "T1",
       "to": "T2",
-      "wires": "1"
+      "wiresFrom": "1",
+      "wiresTo": "1"
     },
     {
       "lever": "5TCC",
       "state": "reverse",
       "from": "T3",
       "to": "T4",
-      "wires": "2"
+      "wiresFrom": "2",
+      "wiresTo": "1"
     },
     {
       "lever": "5TCC",
       "from": "T5",
       "to": "T6",
-      "wires": "0"
+      "wiresFrom": "0",
+      "wiresTo": "0"
     },
     {
       "lever": "5TCC",
       "from": "T7",
       "to": "T8",
-      "wires": "0"
+      "wiresFrom": "0",
+      "wiresTo": "0"
     },
     {
       "lever": "6TCC",
       "state": "normal",
       "from": "T1",
       "to": "T2",
-      "wires": "1"
+      "wiresFrom": "1",
+      "wiresTo": "2"
     },
     {
       "lever": "6TCC",
       "state": "reverse",
       "from": "T3",
       "to": "T4",
-      "wires": "1"
+      "wiresFrom": "1",
+      "wiresTo": "2"
     },
     {
       "lever": "6TCC",
       "state": "normal",
       "from": "T5",
       "to": "T6",
-      "wires": "1"
+      "wiresFrom": "1",
+      "wiresTo": "1"
     },
     {
       "lever": "6TCC",
       "state": "reverse",
       "from": "T7",
       "to": "T8",
-      "wires": "1"
+      "wiresFrom": "1",
+      "wiresTo": "1"
     },
     {
       "lever": "9TCC",
       "state": "normal",
       "from": "T1",
       "to": "T2",
-      "wires": "1"
+      "wiresFrom": "1",
+      "wiresTo": "1"
     },
     {
       "lever": "9TCC",
       "state": "reverse",
       "from": "T3",
       "to": "T4",
-      "wires": "1"
+      "wiresFrom": "1",
+      "wiresTo": "1"
     },
     {
       "lever": "9TCC",
       "state": "normal",
       "from": "T5",
       "to": "T6",
-      "wires": "1"
+      "wiresFrom": "1",
+      "wiresTo": "1"
     },
     {
       "lever": "9TCC",
       "state": "reverse",
       "from": "T7",
       "to": "T8",
-      "wires": "1"
+      "wiresFrom": "1",
+      "wiresTo": "1"
     },
     {
       "lever": "10TCC",
       "state": "normal",
       "from": "T1",
       "to": "T2",
-      "wires": "1"
+      "wiresFrom": "1",
+      "wiresTo": "1"
     },
     {
       "lever": "10TCC",
       "state": "reverse",
       "from": "T3",
       "to": "T4",
-      "wires": "1"
+      "wiresFrom": "1",
+      "wiresTo": "1"
     },
     {
       "lever": "10TCC",
       "state": "normal",
       "from": "T5",
       "to": "T6",
-      "wires": "1"
+      "wiresFrom": "1",
+      "wiresTo": "1"
     },
     {
       "lever": "10TCC",
       "state": "reverse",
       "from": "T7",
       "to": "T8",
-      "wires": "1"
+      "wiresFrom": "1",
+      "wiresTo": "1"
     },
     {
       "lever": "12TCC",
       "state": "normal",
       "from": "T1",
       "to": "T2",
-      "wires": "2"
+      "wiresFrom": "2",
+      "wiresTo": "2"
     },
     {
       "lever": "12TCC",
       "state": "reverse",
       "from": "T3",
       "to": "T4",
-      "wires": "1"
+      "wiresFrom": "1",
+      "wiresTo": "2"
     },
     {
       "lever": "12TCC",
       "state": "normal",
       "from": "T5",
       "to": "T6",
-      "wires": "1"
+      "wiresFrom": "1",
+      "wiresTo": "1"
     },
     {
       "lever": "12TCC",
       "state": "reverse",
       "from": "T7",
       "to": "T8",
-      "wires": "1"
+      "wiresFrom": "1",
+      "wiresTo": "1"
     },
     {
       "lever": "14TCC",
       "state": "normal",
       "from": "T1",
       "to": "T2",
-      "wires": "2"
+      "wiresFrom": "2",
+      "wiresTo": "1"
     },
     {
       "lever": "14TCC",
       "state": "reverse",
       "from": "T3",
       "to": "T4",
-      "wires": "2"
+      "wiresFrom": "2",
+      "wiresTo": "1"
     },
     {
       "lever": "14TCC",
       "state": "reverse",
       "from": "T5",
       "to": "T6",
-      "wires": "1"
+      "wiresFrom": "1",
+      "wiresTo": "1"
     },
     {
       "lever": "14TCC",
       "from": "T7",
       "to": "T8",
-      "wires": "0"
+      "wiresFrom": "0",
+      "wiresTo": "0"
     },
     {
       "lever": "15TCC",
       "state": "reverse",
       "from": "T1",
       "to": "T2",
-      "wires": "1"
+      "wiresFrom": "1",
+      "wiresTo": "1"
     },
     {
       "lever": "15TCC",
       "from": "T3",
       "to": "T4",
-      "wires": "0"
+      "wiresFrom": "0",
+      "wiresTo": "0"
     },
     {
       "lever": "15TCC",
       "from": "T5",
       "to": "T6",
-      "wires": "0"
+      "wiresFrom": "0",
+      "wiresTo": "0"
     },
     {
       "lever": "15TCC",
       "from": "T7",
       "to": "T8",
-      "wires": "0"
+      "wiresFrom": "0",
+      "wiresTo": "0"
     },
     {
       "lever": "16TCC",
       "state": "normal",
       "from": "T1",
       "to": "T2",
-      "wires": "0"
+      "wiresFrom": "0",
+      "wiresTo": "0"
     },
     {
       "lever": "16TCC",
       "state": "reverse",
       "from": "T3",
       "to": "T4",
-      "wires": "1"
+      "wiresFrom": "1",
+      "wiresTo": "1"
     },
     {
       "lever": "16TCC",
       "state": "normal",
       "from": "T5",
       "to": "T6",
-      "wires": "0"
+      "wiresFrom": "0",
+      "wiresTo": "0"
     },
     {
       "lever": "16TCC",
       "state": "reverse",
       "from": "T7",
       "to": "T8",
-      "wires": "1"
+      "wiresFrom": "1",
+      "wiresTo": "1"
     },
     {
       "lever": "16TCC",
       "from": "T9",
       "to": "T10",
-      "wires": "0"
+      "wiresFrom": "0",
+      "wiresTo": "0"
     },
     {
       "lever": "16TCC",
       "from": "T11",
       "to": "T12",
-      "wires": "0"
+      "wiresFrom": "0",
+      "wiresTo": "0"
     },
     {
       "lever": "16TCC",
       "from": "T13",
       "to": "T14",
-      "wires": "0"
+      "wiresFrom": "0",
+      "wiresTo": "0"
     },
     {
       "lever": "16TCC",
       "from": "T15",
       "to": "T16",
-      "wires": "0"
+      "wiresFrom": "0",
+      "wiresTo": "0"
     }
   ],
   "leverLocking": [
