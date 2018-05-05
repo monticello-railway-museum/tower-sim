@@ -600,21 +600,31 @@ class Top extends React.Component {
 
         {
             let state = 'BAD ASPECT';
-            const d1 = sim.components['Case A/CASEA'].terminals['T77'].voltage() > 8;
-            const d2 = sim.components['Case A/CASEA'].terminals['T78'].voltage() > 8;
-            const d3 = sim.components['Case A/CASEA'].terminals['T79'].voltage() > 8;
-            if (!d1 && !d2 && !d3)
-                state = 'Off';
-            if (d1 && d2 && !d3)
+            // const d1 = sim.components['Case A/CASEA'].terminals['T77'].voltage() > 8;
+            // const d2 = sim.components['Case A/CASEA'].terminals['T78'].voltage() > 8;
+            // const d3 = sim.components['Case A/CASEA'].terminals['T79'].voltage() > 8;
+            // if (!d1 && !d2 && !d3)
+            //     state = 'Off';
+            // if (d1 && d2 && !d3)
+            //     state = 'Restricting';
+            // if (d1 && !d2 && !d3)
+            //     state = 'Approach';
+            // if (!d1 && d2 && !d3)
+            //     state = 'Approach Diverging';
+            // if (!d1 && d2 && d3)
+            //     state = 'Advance Approach';
+            // if (d1 && d2 && d3)
+            //     state = 'Clear';
+            if (!relayUp('Sim/SIM-36AAR') && !relayUp('Sim/SIM-36BAR'))
                 state = 'Restricting';
-            if (d1 && !d2 && !d3)
+            if (relayUp('Sim/SIM-36AAR', 'forward') && !relayUp('Sim/SIM-36BAR'))
                 state = 'Approach';
-            if (!d1 && d2 && !d3)
-                state = 'Approach Diverging';
-            if (!d1 && d2 && d3)
-                state = 'Advance Approach';
-            if (d1 && d2 && d3)
+            if (relayUp('Sim/SIM-36AAR', 'reverse') && !relayUp('Sim/SIM-36BAR'))
                 state = 'Clear';
+            if (relayUp('Sim/SIM-36AAR', 'forward') && relayUp('Sim/SIM-36BAR', 'forward'))
+                state = 'Advance Approach';
+            if (relayUp('Sim/SIM-36AAR', 'forward') && relayUp('Sim/SIM-36BAR', 'reverse'))
+                state = 'Approach Diverging';
             updateSignalState('16d', state);
         }
 

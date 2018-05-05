@@ -253,6 +253,16 @@
       "used": "1"
     },
     {
+      "component": "16ADGPR",
+      "subnet": "Case A",
+      "type": "relay",
+      "resistance": "670",
+      "index": "36",
+      "contacts": "4",
+      "unused": "0",
+      "used": "4"
+    },
+    {
       "component": "16ADR",
       "subnet": "Case A",
       "type": "relay",
@@ -347,24 +357,24 @@
       "used": "3"
     },
     {
-      "component": "16DRGR",
-      "subnet": "Case A",
-      "type": "relay",
-      "resistance": "670",
-      "index": "37",
-      "contacts": "4",
-      "unused": "1",
-      "used": "3"
-    },
-    {
       "component": "16HDGPR",
       "subnet": "Case A",
       "type": "relay",
       "resistance": "670",
       "index": "36",
       "contacts": "4",
-      "unused": "1",
-      "used": "3"
+      "unused": "0",
+      "used": "4"
+    },
+    {
+      "component": "36RGR",
+      "subnet": "Case A",
+      "type": "relay",
+      "resistance": "670",
+      "index": "37",
+      "contacts": "4",
+      "unused": "0",
+      "used": "4"
     },
     {
       "component": "B10-CASEA",
@@ -6029,9 +6039,10 @@
     },
     {
       "signal": "B10-CASEA",
-      "from": "16BHDGPR 2B",
+      "from": "16BHDGPR 1B",
       "to": "16BDR 1H",
-      "page": "A4"
+      "page": "A4",
+      "notes": "reprint"
     },
     {
       "signal": "B10-CASEA",
@@ -6182,18 +6193,21 @@
     },
     {
       "signal": "**STRAP**",
-      "from": "16BHDGPR 2B",
-      "to": "16BHDGPR 4F"
+      "from": "16BHDGPR 1B",
+      "to": "16BHDGPR 4H",
+      "notes": "reprint"
     },
     {
       "signal": "16HDGP",
-      "from": "16BHDGPR 4H",
-      "to": "16HDGPR COIL+"
+      "from": "16BHDGPR 4F",
+      "to": "16HDGPR COIL+",
+      "notes": "reprint"
     },
     {
       "signal": "N-16HDGP",
       "from": "16HDGPR COIL-",
-      "to": "16DRGR COIL-"
+      "to": "36RGR COIL-",
+      "notes": "reprint"
     },
     {
       "signal": "16A",
@@ -6354,119 +6368,256 @@
       "notes": "*"
     },
     {
-      "signal": "N10-CASEA",
-      "from": "CASEA T60",
-      "to": "CASEA T80"
-    },
-    {
-      "signal": "16DGD1",
+      "signal": "36AHD",
       "from": "CASEA T77",
-      "to": "16DRGR 1H"
+      "to": "36RGR 1H",
+      "notes": "reprint"
     },
     {
-      "signal": "16DGD2",
+      "signal": "N-36AHD",
       "from": "CASEA T78",
-      "to": "16DRGR 2H"
+      "to": "36RGR 2H",
+      "notes": "reprint"
     },
     {
-      "signal": "16DGD3",
+      "signal": "36BHD",
       "from": "CASEA T79",
-      "to": "16DRGR 3H"
+      "to": "36RGR 3H",
+      "notes": "reprint"
+    },
+    {
+      "signal": "N-36BHD",
+      "from": "CASEA T80",
+      "to": "36RGR 4H",
+      "notes": "reprint"
     },
     {
       "signal": "B10-CASEA",
-      "from": "B10-CASEA T7",
-      "to": "16DRGR 1B"
-    },
-    {
-      "signal": "**STRAP**",
-      "from": "16DRGR 1B",
-      "to": "16DRGR 2B"
-    },
-    {
-      "signal": "16DGD1-1",
-      "from": "16DRGR 1F",
-      "to": "16HDGPR 1H"
-    },
-    {
-      "signal": "16DGD2-1",
-      "from": "16DRGR 2F",
-      "to": "16HDGPR 2H"
-    },
-    {
-      "signal": "16DGD3-1",
-      "from": "16DRGR 3F",
-      "to": "16HDGPR 3H"
+      "from": "B10-CASEA T?",
+      "to": "36RGR 1B",
+      "notes": "reprint"
     },
     {
       "signal": "B10-CASEA",
-      "from": "16DRGR 1B",
-      "to": "16HDGPR 1B"
+      "from": "B10-CASEA T?",
+      "to": "36RGR 2B",
+      "notes": "reprint"
     },
     {
-      "signal": "**STRAP**",
-      "from": "16HDGPR 1B",
-      "to": "16HDGPR 2F"
+      "signal": "N10-CASEA",
+      "from": "N10-CASEA T?",
+      "to": "36RGR 3B",
+      "notes": "reprint"
     },
     {
-      "signal": "16DGD1-2",
+      "signal": "N10-CASEA",
+      "from": "N10-CASEA T?",
+      "to": "36RGR 4B",
+      "notes": "reprint"
+    },
+    {
+      "signal": "36AHD-1",
+      "from": "36RGR 1F",
+      "to": "16HDGPR 1H",
+      "notes": "reprint"
+    },
+    {
+      "signal": "N-36AHD-1",
+      "from": "36RGR 2F",
+      "to": "16HDGPR 2H",
+      "notes": "reprint"
+    },
+    {
+      "signal": "36BHD-1",
+      "from": "36RGR 3F",
+      "to": "16HDGPR 3H",
+      "notes": "reprint"
+    },
+    {
+      "signal": "N-36BHD-1",
+      "from": "36RGR 4F",
+      "to": "16HDGPR 4H",
+      "notes": "reprint"
+    },
+    {
+      "signal": "B10-CASEA",
+      "from": "B10-CASEA T?",
+      "to": "16HDGPR 1B",
+      "notes": "reprint"
+    },
+    {
+      "signal": "N10-CASEA",
+      "from": "N10-CASEA T?",
+      "to": "16HDGPR 2B",
+      "notes": "reprint"
+    },
+    {
+      "signal": "N10-CASEA",
+      "from": "N10-CASEA T?",
+      "to": "16HDGPR 3B",
+      "notes": "reprint"
+    },
+    {
+      "signal": "N10-CASEA",
+      "from": "N10-CASEA T?",
+      "to": "16HDGPR 4B",
+      "notes": "reprint"
+    },
+    {
+      "signal": "36AHD-2",
       "from": "16HDGPR 1F",
-      "to": "16BHDGPR 1H"
+      "to": "16ADGPR 1H",
+      "notes": "reprint"
     },
     {
-      "signal": "16DGD3-2",
+      "signal": "N-36AHD-2",
+      "from": "16HDGPR 2F",
+      "to": "16ADGPR 2H",
+      "notes": "reprint"
+    },
+    {
+      "signal": "36BHD-2",
       "from": "16HDGPR 3F",
-      "to": "16BHDGPR 2H"
+      "to": "16ADGPR 3H",
+      "notes": "reprint"
+    },
+    {
+      "signal": "N-36BHD-2",
+      "from": "16HDGPR 4F",
+      "to": "16ADGPR 4H",
+      "notes": "reprint"
+    },
+    {
+      "signal": "N10-CASEA",
+      "from": "N10-CASEA T?",
+      "to": "16ADGPR 1F",
+      "notes": "reprint"
     },
     {
       "signal": "B10-CASEA",
-      "from": "16HDGPR 1B",
-      "to": "16BHDGPR 2B"
+      "from": "B10-CASEA T?",
+      "to": "16ADGPR 2F",
+      "notes": "reprint"
     },
     {
-      "signal": "16DGD1-3",
-      "from": "16BHDGPR 1B",
-      "to": "CASEA T70"
+      "signal": "N10-CASEA",
+      "from": "N10-CASEA T?",
+      "to": "16ADGPR 3F",
+      "notes": "reprint"
     },
     {
-      "signal": "16DGD2-4",
+      "signal": "N10-CASEA",
+      "from": "N10-CASEA T?",
+      "to": "16ADGPR 4F",
+      "notes": "reprint"
+    },
+    {
+      "signal": "B10-CASEA",
+      "from": "B10-CASEA T?",
+      "to": "16ADGPR 1B",
+      "notes": "reprint"
+    },
+    {
+      "signal": "N10-CASEA",
+      "from": "N10-CASEA T?",
+      "to": "16ADGPR 2B",
+      "notes": "reprint"
+    },
+    {
+      "signal": "36BHD-3",
+      "from": "16BHDGPR 1H",
+      "to": "16ADGPR 3B",
+      "notes": "reprint"
+    },
+    {
+      "signal": "N-36BHD-3",
+      "from": "16BHDGPR 2H",
+      "to": "16ADGPR 4B",
+      "notes": "reprint"
+    },
+    {
+      "signal": "N10-CASEA",
+      "from": "N10-CASEA T?",
+      "to": "16BHDGPR 1F",
+      "notes": "reprint"
+    },
+    {
+      "signal": "B10-CASEA",
+      "from": "B10-CASEA T?",
+      "to": "16BHDGPR 2F",
+      "notes": "reprint"
+    },
+    {
+      "signal": "B10-CASEA",
+      "from": "B10-CASEA T?",
+      "to": "16BHDGPR 1B",
+      "notes": "reprint"
+    },
+    {
+      "signal": "N10-CASEA",
+      "from": "N10-CASEA T?",
+      "to": "16BHDGPR 2B",
+      "notes": "reprint"
+    },
+    {
+      "signal": "N-16ADGP",
+      "from": "16ADGPR COIL-",
+      "to": "N10-CASEA T?",
+      "notes": "reprint"
+    },
+    {
+      "signal": "16ADGP",
+      "from": "16ADGPR COIL+",
+      "to": "CASEA T70",
+      "notes": "reprint"
+    },
+    {
+      "signal": "16ADGP-1",
       "from": "CASEA T69",
-      "to": "16ADR 2H"
+      "to": "16ADR 2H",
+      "notes": "reprint"
     },
     {
-      "signal": "**STRAP**",
-      "from": "16ADR 1H",
-      "to": "16ADR 2F"
+      "signal": "16ADGP-2",
+      "from": "16BHDGPR 4B",
+      "to": "16ADR 2F",
+      "notes": "reprint"
     },
     {
       "signal": "**STRAP**",
       "from": "16AR 1H",
-      "to": "16AR 2H"
+      "to": "16AR 2H",
+      "notes": "reprint"
     },
     {
-      "signal": "16DRG-3",
+      "signal": "36RG-3",
       "from": "16AR 2F",
-      "to": "15HDPR 2H"
+      "to": "15HDPR 2H",
+      "notes": "reprint"
     },
     {
-      "signal": "16DRG-2",
+      "signal": "36RG-2",
       "from": "15HDPR 2B",
-      "to": "14ADR 3H"
+      "to": "14ADR 3H",
+      "notes": "reprint"
     },
     {
-      "signal": "16DRG-1",
+      "signal": "36RG-1",
       "from": "14ADR 3B",
-      "to": "14BHR 3H"
+      "to": "14BHR 3H",
+      "notes": "reprint"
     },
     {
-      "signal": "16DRG",
+      "signal": "36RG",
       "from": "14BHR 3B",
-      "to": "16DRGR COIL+"
+      "to": "36RGR COIL+",
+      "notes": "reprint"
     },
     {
-      "signal": "N-16DRG",
+      "signal": "N-36RG",
       "from": "N10-CASEA T7",
-      "to": "16DRGR COIL-"
+      "to": "36RGR COIL-",
+      "notes": "reprint"
     }
   ],
   "caseBWires": [
@@ -9110,6 +9261,40 @@
       "from": "CASEA T70",
       "toSubnet": "Sim",
       "to": "SIM-16AG N-P90"
+    },
+    {
+      "name": "SIM-36AAR",
+      "fromSubnet": "Sim",
+      "component": "relay"
+    },
+    {
+      "fromSubnet": "Case A",
+      "from": "CASEA T77",
+      "toSubnet": "Sim",
+      "to": "SIM-36AAR COIL+"
+    },
+    {
+      "fromSubnet": "Case A",
+      "from": "CASEA T78",
+      "toSubnet": "Sim",
+      "to": "SIM-36AAR COIL-"
+    },
+    {
+      "name": "SIM-36BAR",
+      "fromSubnet": "Sim",
+      "component": "relay"
+    },
+    {
+      "fromSubnet": "Case A",
+      "from": "CASEA T79",
+      "toSubnet": "Sim",
+      "to": "SIM-36BAR COIL+"
+    },
+    {
+      "fromSubnet": "Case A",
+      "from": "CASEA T80",
+      "toSubnet": "Sim",
+      "to": "SIM-36BAR COIL-"
     },
     {
       "name": "**** Signal lights ****"
