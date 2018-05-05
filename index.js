@@ -1,12 +1,36 @@
-const React = require('react');
-const ReactDOM = require('react-dom');
+import React from 'react';
+import ReactDOM from 'react-dom';
 
-const netlist = require('./netlist.json');
+import netlist from  './netlist.json';
 
-const levers = require('./levers');
-const Sim = require('./sim');
+import levers from './levers';
+import Sim from './sim';
 
-const Isvg = require('react-inlinesvg');
+import Isvg from 'react-inlinesvg';
+
+console.log('Isvg: ', Isvg);
+
+class ErrorBoundary extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { hasError: false };
+  }
+
+  componentDidCatch(error, info) {
+    // Display fallback UI
+    this.setState({ hasError: true });
+    // You can also log the error to an error reporting service
+    console.log(error, info);
+  }
+
+  render() {
+    if (this.state.hasError) {
+      // You can render any custom fallback UI
+      return <h1>Something went wrong.</h1>;
+    }
+    return this.props.children;
+  }
+}
 
 class Checkbox extends React.Component {
     render() {
@@ -705,7 +729,12 @@ class Top extends React.Component {
 
               {inspected && (<Inspector inspect={this.inspect} inspected={inspected}/>)}
 
-              <Isvg uniquifyIDs={false} src="model-board.svg"/>
+            <ErrorBoundary>
+            <Isvg
+                uniquifyIDs={false}
+                src="model-board.svg"
+                preloader={ <div>Loading...</div> }>what</Isvg>
+            </ErrorBoundary>
 
               <p><b>PSUs:</b></p>
               <div style={{columnCount: 2}}>{psus}</div>
