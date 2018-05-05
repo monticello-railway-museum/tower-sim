@@ -157,20 +157,34 @@ class Inspector extends React.Component {
         const { inspected, inspect } = this.props;
         if (inspected.names) {
             const node = inspected;
-            let compare = mangledCompare(([comp, terminal]) => `${comp.subnet}/${comp.name}/${terminal}`)
+            let compSortKey = ([comp, terminal]) => `${comp.subnet}/${comp.name}/${terminal}`
+            let compare = mangledCompare(compSortKey);
+            let wireCompare = mangledCompare((wire) => `${compSortKey([wire.fromComp, wire.fromTerm])}/${compSortKey([wire.toComp, wire.toTerm])}`);
             let Comp = ({comp, terminal}) => (
                 <span>
                   ({comp.subnet}) <b>{comp.name} {terminal}</b> ({comp.location ? `${comp.location}` : ''}{comp.index ? ` index ${comp.index}` : ''})
                 </span>
             );
             if (this.state.sortByLocation) {
-                compare = mangledCompare(([comp, terminal]) => `${comp.subnet}/${comp.location || ''}/${comp.index || ''}/${comp.name}/${terminal}`);
+                compSortKey = ([comp, terminal]) => `${comp.subnet}/${comp.location || ''}/${comp.index || ''}/${comp.name}/${terminal}`;
                 Comp = ({comp, terminal}) => (
                     <span>
                       ({comp.subnet}{comp.location ? ` ${comp.location}` : ''}{comp.index ? ` index ${comp.index}` : ''}) <b>{comp.name} {terminal}</b>
                     </span>
                 );
             }
+            let sortWire = (wire) => {
+                if (compSortKey([wire.toComp, wire.toTerm]) < compSortKey([wire.fromComp, wire.fromTerm])) {
+                    return Object.assign({}, wire, {
+                        fromComp: wire.toComp,
+                        fromTerm: wire.toTerm,
+                        toComp: wire.fromComp,
+                        toTerm: wire.fromTerm,
+                    });
+                } else {
+                    return wire;
+                }
+            };
             return (
                 <div>
                   <div style={{color: node.circuit && node.circuit.color}}>
@@ -192,6 +206,27 @@ class Inspector extends React.Component {
                            </li>
                        ))}
                   </ul>
+                  <h3>Wires:</h3>
+                  <table>
+                    {Array.from(node.wires)
+                       .map(sortWire)
+                       .sort(wireCompare)
+                       .map((w) => (
+                           <tr>
+                             <td>{w.name}</td>
+                             <td> 
+                               <InspectLink inspect={inspect} target={w.fromComp}>
+                                 <Comp comp={w.fromComp} terminal={w.fromTerm}/>
+                               </InspectLink>
+                             </td>
+                             <td> 
+                               <InspectLink inspect={inspect} target={w.toComp}>
+                                 <Comp comp={w.toComp} terminal={w.toTerm}/>
+                               </InspectLink>
+                             </td>
+                           </tr>
+                       ))}
+                  </table>
                 </div>
             );
         } else {

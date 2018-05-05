@@ -9,6 +9,7 @@ class Node {
         this.shared = {
             names: new Set(),
             members: new Set([this]),
+            wires: new Set(),
         };
         this.payload = payload;
     }
@@ -17,6 +18,10 @@ class Node {
         if (!name)
             return;
         this.shared.names.add(name);
+    }
+
+    addWire(wire) {
+        this.shared.wires.add(wire);
     }
 
     join(other) {
@@ -31,6 +36,9 @@ class Node {
         for (let member of otherShared.members) {
             this.shared.members.add(member);
             member.shared = this.shared;
+        }
+        for (let wire of otherShared.wires) {
+            this.shared.wires.add(wire);
         }
     }
 
@@ -671,6 +679,8 @@ class Sim {
                 notes: wire.notes || '',
             };
             wires.push(w);
+            node.addWire(w);
+
             fromComp.wireTerminals[fromTerm].push({ wire: w, toSubnet, toComp, toTerm });
             toComp.wireTerminals[toTerm].push({ wire: w, toSubnet: fromSubnet, toComp: fromComp, toTerm: fromTerm });
             // node.addName(`<${fromComp.name} ${fromTerm}>`);
